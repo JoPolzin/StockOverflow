@@ -1,2 +1,3 @@
 # ShadyTrady
-Trade the Shade
+Shade the Trade
+Now featuring 50 Shades of Trade
