@@ -3,14 +3,11 @@
  */
 package control;
 
-import java.io.BufferedReader;
 import java.io.IOException;
-import java.io.InputStreamReader;
-import java.net.MalformedURLException;
-import java.net.URL;
 import java.util.Hashtable;
-import org.jsoup.Jsoup;
-import org.jsoup.nodes.Document;
+//import org.jsoup.Jsoup;
+//import org.jsoup.nodes.Document;
+import org.w3c.dom.Document;
 
 /**
  * OA = Online-Aktien Diese statische Klasse beeinhaltet alle Funktionen zum
@@ -39,12 +36,13 @@ public class OA {
      */
     public float getAsk(String ISIN) {
         try {
-            Document doc = Jsoup.connect("https://www.tradegate.de/orderbuch.php?isin=" + ISIN).get();
-            return Float.parseFloat(doc.getElementById("ask").text().replace(',', '.').replaceAll(" ", ""));
+            //Document doc = Jsoup.connect("https://www.tradegate.de/orderbuch.php?isin=" + ISIN).get();
+            //return Float.parseFloat(doc.getElementById("ask").text().replace(',', '.').replaceAll(" ", ""));
         } catch (Exception e) {
             System.out.println(e.getMessage());
             return 0f;
         }
+        return 0;
     }
     /**
      * Konfiguriert die DNS-Liste.

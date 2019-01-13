@@ -1,32 +1,30 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
 package shadytrady;
 
 import com.google.auth.oauth2.GoogleCredentials;
+import com.google.firebase.FirebaseApp;
+import com.google.firebase.FirebaseOptions;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
-//import com.javaquery.bean.Item;
-import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
-import java.util.concurrent.CountDownLatch;
-import com.google.firebase.FirebaseApp;
-import com.google.firebase.FirebaseOptions;
 import java.io.IOException;
+import java.util.concurrent.CountDownLatch;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
-/**
- * Example of Firebase save.
- *
- * @author javaQuery
- * @date 7th September, 2016
- * @Github: https://github.com/javaquery/Examples
- */
 public class FirebaseSaveObject {
 
     public static void main(String[] args) {
         Item item = new Item();
-        item.setId(1L);
-        item.setName("MotoG");
-        item.setPrice(100.12);
+        item.setId(25L);
+        item.setName("AutoG");
+        item.setPrice(800.00);
 
         // save item objec to firebase.
         new FirebaseSaveObject().save(item);
@@ -37,27 +35,21 @@ public class FirebaseSaveObject {
     /**
      * initialize firebase.
      */
-    private void initFirebase() throws IOException {
+    private void initFirebase() {
         try {
-            // .setDatabaseUrl("https://fir-66f50.firebaseio.com") - Firebase project url.
-
-            // Firebase private key(Generated while creating service account) file path.
-            // .setServiceAccount(new FileInputStream(new File("filepath")))
-            FirebaseOptions firebaseOptions = new FirebaseOptions.Builder()
-                    .setDatabaseUrl("https://aktienspiel-97ea0.firebaseio.com")
-                    .setServiceAccount(new FileInputStream(new File("aktienspiel-97ea0-firebase-adminsdk-27qmq-4a3a6ba14e.json")))
+            FileInputStream serviceAccount = new FileInputStream("aktienspiel-97ea0-c6776b4f804e.json");
+            
+            FirebaseOptions options = new FirebaseOptions.Builder()
+                    .setCredentials(GoogleCredentials.fromStream(serviceAccount))
+                    .setDatabaseUrl("https://aktienspiel-97ea0.firebaseio.com/")
                     .build();
-            FileInputStream serviceAccount
-                    = new FileInputStream("path/to/serviceAccountKey.json");
-
-            FirebaseOptions options = new FirebaseOptions.Builder().setCredentials(GoogleCredentials.fromStream(serviceAccount)).setDatabaseUrl("https://aktienspiel-97ea0.firebaseio.com").build();
 
             FirebaseApp.initializeApp(options);
-            /*
-            FirebaseApp.initializeApp(firebaseOptions);
-            firebaseDatabase = FirebaseDatabase.getInstance();*/
+            firebaseDatabase = FirebaseDatabase.getInstance();
         } catch (FileNotFoundException ex) {
             ex.printStackTrace();
+        } catch (IOException ex) {
+            Logger.getLogger(FirebaseSaveObject.class.getName()).log(Level.SEVERE, null, ex);
         }
     }
 
@@ -74,7 +66,7 @@ public class FirebaseSaveObject {
             DatabaseReference databaseReference = firebaseDatabase.getReference("/");
 
             /* Get existing child or will be created new child. */
-            DatabaseReference childReference = databaseReference.child("item");
+            DatabaseReference childReference = databaseReference.child("item2");
 
             /**
              * The Firebase Java client uses daemon threads, meaning it will not
