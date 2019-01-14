@@ -5,7 +5,7 @@
  */
 package TEST;
 
-import control.OA;
+import model.OA;
 import javax.swing.*;
 
 /**
@@ -33,7 +33,7 @@ public class OAtest {
 
         JLabel label = new JLabel(i);
 
-        System.out.println("Adding Image Label");
+        
         panel.add(label);
 
         frame.setSize(950, 650);
