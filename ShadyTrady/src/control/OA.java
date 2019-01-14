@@ -16,11 +16,12 @@ import org.w3c.dom.Document;
  * @author walle
  */
 public class OA {
+
     /**
-     * Hashtable mit Börsennamen und den dazugrhörigen ISIN's
-     * ISIN = Internationale Wertpapierkennnummer
+     * Hashtable mit Börsennamen und den dazugrhörigen ISIN's ISIN =
+     * Internationale Wertpapierkennnummer
      */
-    private  Hashtable<String, String> DNS = new Hashtable();
+    private Hashtable<String, String> DNS = new Hashtable();
 
     public static void main(String[] args) {
         OA t = new OA();
@@ -30,6 +31,7 @@ public class OA {
 
     /**
      * Gibt bei gegebener ISIN den "ask"-Wert der Aktie zurück.
+     *
      * @param ID
      * @return
      * @throws IOException
@@ -44,6 +46,7 @@ public class OA {
         }
         return 0;
     }
+
     /**
      * Konfiguriert die DNS-Liste.
      */

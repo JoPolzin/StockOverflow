@@ -10,5 +10,5 @@ package model;
  * @author zochrab.blume
  */
 public class Aktienkonto {
-    
+
 }

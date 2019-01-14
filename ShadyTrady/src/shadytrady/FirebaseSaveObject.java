@@ -8,7 +8,6 @@ package shadytrady;
 import com.google.auth.oauth2.GoogleCredentials;
 import com.google.firebase.FirebaseApp;
 import com.google.firebase.FirebaseOptions;
-import com.google.firebase.database.ChildEventListener;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
@@ -17,6 +16,8 @@ import com.google.firebase.database.ValueEventListener;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
+import java.util.HashMap;
+import java.util.Map;
 import java.util.concurrent.CountDownLatch;
 import java.util.logging.Level;
 import java.util.logging.Logger;
@@ -53,19 +54,19 @@ public class FirebaseSaveObject {
             FirebaseApp.initializeApp(options);
             firebaseDatabase = FirebaseDatabase.getInstance();
             firebaseDatabase.getReference("/").addValueEventListener(
-                new ValueEventListener() {
-                    @Override
-                    public void onDataChange(DataSnapshot dataSnapshot) {
-                        // for example: if you're expecting your user's data as an object of the "User" class.
-                        System.out.println(dataSnapshot.getValue());
-                        ;
-                    }
-                    
-                    @Override
-                    public void onCancelled(DatabaseError databaseError) {
-                        // read query is cancelled.
-                    }
-                });
+                    new ValueEventListener() {
+                @Override
+                public void onDataChange(DataSnapshot dataSnapshot) {
+                    // for example: if you're expecting your user's data as an object of the "User" class.
+                    System.out.println(dataSnapshot.getValue());
+                    ;
+                }
+
+                @Override
+                public void onCancelled(DatabaseError databaseError) {
+                    // read query is cancelled.
+                }
+            });
         } catch (FileNotFoundException ex) {
             ex.printStackTrace();
         } catch (IOException ex) {
@@ -87,7 +88,13 @@ public class FirebaseSaveObject {
 
             /* Get existing child or will be created new child. */
             DatabaseReference childReference = databaseReference.child("item2");
+            Map<String, Object> userUpdates = new HashMap<>();
+            userUpdates.put("alanisawesome/nickname", "Alan The Machine");
+            userUpdates.put("alanisawesome/passwort", "geheim");
+            userUpdates.put("gracehop/nickname", "Amazing Grace");
+            userUpdates.put("teacher/nickname", "Muster");
 
+            databaseReference.updateChildrenAsync(userUpdates);
             /**
              * The Firebase Java client uses daemon threads, meaning it will not
              * prevent a process from exiting. So we'll
@@ -117,7 +124,7 @@ public class FirebaseSaveObject {
 
     public void receive() {
         //final FirebaseDatabase database = FirebaseDatabase.getInstance();
-        DatabaseReference ref = firebaseDatabase.getReference("/");
+        DatabaseReference ref = firebaseDatabase.getReference("/item2");
 
 // Attach a listener to read the data at our posts reference
         ref.addValueEventListener(new ValueEventListener() {
@@ -125,6 +132,8 @@ public class FirebaseSaveObject {
             public void onDataChange(DataSnapshot dataSnapshot) {
                 //Post post = dataSnapshot.getValue(Post.class);
                 System.out.println(dataSnapshot.getValue());
+                Item it = dataSnapshot.getValue(Item.class);
+                System.out.println(it.getId());
             }
 
             @Override
