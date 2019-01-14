@@ -53,7 +53,7 @@ public class OA {
 
             return Float.parseFloat(this.doc.getElementById("ask").text().replace(',', '.').replaceAll(" ", ""));
         } catch (Exception e) {
-            System.out.println(e.getMessage());
+            System.out.println("Fehler in getAsk()");
             return 0f;
         }
 
@@ -71,7 +71,7 @@ public class OA {
 
             return Float.parseFloat(this.doc.getElementById("bid").text().replace(',', '.').replaceAll(" ", ""));
         } catch (Exception e) {
-            System.out.println(e.getMessage());
+            System.out.println("Fehler in getBid()");
             return 0f;
         }
 
@@ -89,7 +89,7 @@ public class OA {
 
             return Float.parseFloat(this.doc.getElementById("delta").text().replace(',', '.').replaceAll(" ", "").replaceAll("%", ""));
         } catch (Exception e) {
-            System.out.println(e.getMessage());
+            System.out.println("Fehler in getChange()");
             return 0f;
         }
 
@@ -119,13 +119,19 @@ public class OA {
             doc = Jsoup.connect("https://www.tradegate.de/orderbuch.php?isin=" + ISIN).get();
             
         } catch (Exception e) {
-            System.err.println(e.getMessage());
-            System.out.println("error");
+System.out.println("Fehler in prepareDocument()");
             
 
         }
 
     }
+    /**
+     * 
+     * Gibt ein ImageIcon mit dem Graphen von einem bestimmten Zeitraum zurück.
+     * Akzeptierte Zeiträume sind: intraday,woche,monat,monat6 und jahr.
+     * @param Zeitraum
+     * @return 
+     */
 
 
 
@@ -136,7 +142,7 @@ public class OA {
             
             return new ImageIcon(new URL(completeLink));
         } catch (Exception e) {
-            System.err.println(e.getMessage());
+            System.out.println("Fehler in getGraph()");
             return null;
         }
 
