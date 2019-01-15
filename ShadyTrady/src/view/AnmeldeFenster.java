@@ -62,6 +62,11 @@ public class AnmeldeFenster extends javax.swing.JFrame {
 
         jButton2.setFont(new java.awt.Font("Penultimate", 0, 14)); // NOI18N
         jButton2.setText("Abbrechen");
+        jButton2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton2ActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -107,6 +112,10 @@ public class AnmeldeFenster extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+       this.c.switchTo("StockOverflowGUI");
+    }//GEN-LAST:event_jButton2ActionPerformed
 
     /**
      * @param args the command line arguments
