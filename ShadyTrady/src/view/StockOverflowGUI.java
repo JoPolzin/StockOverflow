@@ -5,16 +5,20 @@
  */
 package view;
 
+import control.maincontrol;
+
 /**
  *
  * @author hannah.claus
  */
 public class StockOverflowGUI extends javax.swing.JFrame {
-
+    private maincontrol c;
     /**
      * Creates new form NewJFrame
      */
-    public StockOverflowGUI() {
+    public StockOverflowGUI(maincontrol mc) {
+        this.c = mc;
+        
         initComponents();
     }
 
@@ -140,8 +144,18 @@ public class StockOverflowGUI extends javax.swing.JFrame {
 
         DepotAnsehen.setText("Depot");
         DepotAnsehen.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+        DepotAnsehen.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                DepotAnsehenActionPerformed(evt);
+            }
+        });
 
         LogInAnsehen.setText("Log In");
+        LogInAnsehen.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                LogInAnsehenActionPerformed(evt);
+            }
+        });
 
         zurückAktieAnsehen.setText("Zurück");
 
@@ -411,7 +425,7 @@ public class StockOverflowGUI extends javax.swing.JFrame {
                             .addGroup(layout.createSequentialGroup()
                                 .addComponent(jButton15)
                                 .addGap(297, 297, 297)))
-                        .addContainerGap(39, Short.MAX_VALUE))
+                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(jLabel3)
@@ -493,15 +507,23 @@ public class StockOverflowGUI extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
+    private void LogInAnsehenActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_LogInAnsehenActionPerformed
+        this.c.switchTo("AnmeldeFenster");
+    }//GEN-LAST:event_LogInAnsehenActionPerformed
+
+    private void DepotAnsehenActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_DepotAnsehenActionPerformed
+        c.switchTo("EigenesDepot");
+    }//GEN-LAST:event_DepotAnsehenActionPerformed
+
     /**
      * @param args the command line arguments
-     */
+     
     public static void main(String args[]) {
-        /* Set the Nimbus look and feel */
+        /* Set the Nimbus look and feel 
         //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
         /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
          * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
-         */
+         
         try {
             for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
                 if ("Nimbus".equals(info.getName())) {
@@ -535,13 +557,16 @@ public class StockOverflowGUI extends javax.swing.JFrame {
         //</editor-fold>
         //</editor-fold>
 
-        /* Create and display the form */
+        /* Create and display the form 
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
                 new StockOverflowGUI().setVisible(true);
             }
         });
     }
+*/
+    
+    
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton DepotAnsehen;

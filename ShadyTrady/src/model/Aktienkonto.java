@@ -8,14 +8,15 @@ package model;
 import java.util.ArrayList;
 
 /**
- *
+ * ICH HASB KEINE AHNUNG WAS ICH MACHE HILFE!!!!!!!!! 
+ * DANKE JOHANNA
+ * 
+ * Aktienkonto wird bei der erzeugung des Benutzers erzeugt. nach 
  * @author zochrab.blume
  */
 public class Aktienkonto {
 
-    /**
-     * ICH HASB KEINE AHNUNG WAS ICH MACHE HILFE!!!!!!!!! DANKE JOHANNA
-     */
+    
     private Integer id;
     private ArrayList Gekaufte_Aktien;
     private Integer Guthaben;

@@ -194,7 +194,7 @@
                               <EmptySpace min="-2" pref="297" max="-2" attributes="0"/>
                           </Group>
                       </Group>
-                      <EmptySpace pref="39" max="32767" attributes="0"/>
+                      <EmptySpace max="32767" attributes="0"/>
                   </Group>
                   <Group type="102" alignment="1" attributes="0">
                       <Group type="103" groupAlignment="3" attributes="0">
@@ -306,14 +306,20 @@
       <Properties>
         <Property name="text" type="java.lang.String" value="Depot"/>
         <Property name="cursor" type="java.awt.Cursor" editor="org.netbeans.modules.form.editors2.CursorEditor">
-          <Color id="Default Cursor"/>
+          <Color id="Standardcursor"/>
         </Property>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="DepotAnsehenActionPerformed"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JButton" name="LogInAnsehen">
       <Properties>
         <Property name="text" type="java.lang.String" value="Log In"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="LogInAnsehenActionPerformed"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JButton" name="zur&#xfc;ckAktieAnsehen">
       <Properties>

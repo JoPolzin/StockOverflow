@@ -4,13 +4,15 @@
  * and open the template in the editor.
  */
 package view;
+import control.maincontrol;
+
 
 /**
  *
  * @author hannah.claus
  */
 public class AnmeldeFenster extends javax.swing.JFrame {
-
+ private maincontrol c;
     /**
      * Creates new form NewJFrame
      */
@@ -18,6 +20,11 @@ public class AnmeldeFenster extends javax.swing.JFrame {
         initComponents();
     }
 
+       public AnmeldeFenster(maincontrol mc) {
+        this.c = mc;
+        
+        initComponents();
+    }
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always

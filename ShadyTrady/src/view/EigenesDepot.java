@@ -4,17 +4,25 @@
  * and open the template in the editor.
  */
 package view;
+import control.maincontrol;
+
 
 /**
  *
  * @author hannah.claus
  */
 public class EigenesDepot extends javax.swing.JFrame {
-
+ private maincontrol c;
     /**
      * Creates new form NewJFrame
      */
     public EigenesDepot() {
+        initComponents();
+    }
+    
+     public EigenesDepot(maincontrol mc) {
+        this.c = mc;
+        
         initComponents();
     }
 
