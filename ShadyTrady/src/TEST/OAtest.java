@@ -5,7 +5,7 @@
  */
 package TEST;
 
-import model.OA;
+import control.OA;
 import javax.swing.*;
 
 /**
