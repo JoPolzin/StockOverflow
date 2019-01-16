@@ -172,11 +172,17 @@
       <Properties>
         <Property name="text" type="java.lang.String" value="Abbrechen"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="VerkaufenAbbrechenActionPerformed"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JButton" name="VerkaufenVerkaufen">
       <Properties>
         <Property name="text" type="java.lang.String" value="Verkaufen"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="VerkaufenVerkaufenActionPerformed"/>
+      </Events>
     </Component>
   </SubComponents>
 </Form>

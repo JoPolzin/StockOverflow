@@ -28,12 +28,12 @@
                   <Group type="102" alignment="0" attributes="0">
                       <EmptySpace min="-2" pref="39" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" attributes="0">
-                          <Component id="Passwort" alignment="0" min="-2" max="-2" attributes="0"/>
-                          <Component id="Benutzername" min="-2" max="-2" attributes="0"/>
+                          <Component id="AnmeldenPasswort" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="AnmeldenBenutzername" min="-2" max="-2" attributes="0"/>
                           <Component id="StockOverflowAnmeldung" min="-2" max="-2" attributes="0"/>
                           <Group type="103" alignment="0" groupAlignment="1" max="-2" attributes="0">
                               <Component id="PasswortEingeben" alignment="0" max="32767" attributes="0"/>
-                              <Component id="BenutzernameEingeben" alignment="0" pref="117" max="32767" attributes="0"/>
+                              <Component id="AnmeldenBenutzernameEingeben" alignment="0" pref="117" max="32767" attributes="0"/>
                           </Group>
                       </Group>
                   </Group>
@@ -41,7 +41,7 @@
                       <EmptySpace min="-2" pref="121" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" max="-2" attributes="0">
                           <Component id="AnmeldenAbbrechen" max="32767" attributes="0"/>
-                          <Component id="Anmelden" max="32767" attributes="0"/>
+                          <Component id="AnmeldenAnmelden" max="32767" attributes="0"/>
                       </Group>
                   </Group>
               </Group>
@@ -55,15 +55,15 @@
               <EmptySpace max="-2" attributes="0"/>
               <Component id="StockOverflowAnmeldung" min="-2" max="-2" attributes="0"/>
               <EmptySpace min="-2" pref="20" max="-2" attributes="0"/>
-              <Component id="Benutzername" min="-2" max="-2" attributes="0"/>
+              <Component id="AnmeldenBenutzername" min="-2" max="-2" attributes="0"/>
               <EmptySpace max="-2" attributes="0"/>
-              <Component id="BenutzernameEingeben" min="-2" max="-2" attributes="0"/>
+              <Component id="AnmeldenBenutzernameEingeben" min="-2" max="-2" attributes="0"/>
               <EmptySpace min="-2" pref="25" max="-2" attributes="0"/>
-              <Component id="Passwort" min="-2" max="-2" attributes="0"/>
+              <Component id="AnmeldenPasswort" min="-2" max="-2" attributes="0"/>
               <EmptySpace type="unrelated" max="-2" attributes="0"/>
               <Component id="PasswortEingeben" min="-2" max="-2" attributes="0"/>
               <EmptySpace min="-2" pref="48" max="-2" attributes="0"/>
-              <Component id="Anmelden" min="-2" max="-2" attributes="0"/>
+              <Component id="AnmeldenAnmelden" min="-2" max="-2" attributes="0"/>
               <EmptySpace type="unrelated" max="-2" attributes="0"/>
               <Component id="AnmeldenAbbrechen" min="-2" max="-2" attributes="0"/>
               <EmptySpace pref="29" max="32767" attributes="0"/>
@@ -80,7 +80,7 @@
         <Property name="text" type="java.lang.String" value="Stock Overflow"/>
       </Properties>
     </Component>
-    <Container class="javax.swing.JScrollPane" name="BenutzernameEingeben">
+    <Container class="javax.swing.JScrollPane" name="AnmeldenBenutzernameEingeben">
       <AuxValues>
         <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
       </AuxValues>
@@ -96,7 +96,7 @@
         </Component>
       </SubComponents>
     </Container>
-    <Component class="javax.swing.JLabel" name="Benutzername">
+    <Component class="javax.swing.JLabel" name="AnmeldenBenutzername">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Penultimate" size="11" style="0"/>
@@ -104,7 +104,7 @@
         <Property name="text" type="java.lang.String" value="Benutzername"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JLabel" name="Passwort">
+    <Component class="javax.swing.JLabel" name="AnmeldenPasswort">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Penultimate" size="11" style="0"/>
@@ -117,7 +117,7 @@
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="PasswortEingebenActionPerformed"/>
       </Events>
     </Component>
-    <Component class="javax.swing.JButton" name="Anmelden">
+    <Component class="javax.swing.JButton" name="AnmeldenAnmelden">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Penultimate" size="14" style="0"/>
