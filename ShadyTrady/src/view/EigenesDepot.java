@@ -123,36 +123,46 @@ public class EigenesDepot extends javax.swing.JFrame {
         jTextPane42 = new javax.swing.JTextPane();
         DepotVerkaufen1 = new javax.swing.JButton();
         DepotVerkaufen2 = new javax.swing.JButton();
+        DepotVerkaufen3 = new javax.swing.JButton();
+        DepotVerkaufen4 = new javax.swing.JButton();
+        DepotVerkaufen5 = new javax.swing.JButton();
+        DepotVerkaufen6 = new javax.swing.JButton();
+        DepotVerkaufen7 = new javax.swing.JButton();
+        DepotVerkaufen8 = new javax.swing.JButton();
         DepotVerkaufen9 = new javax.swing.JButton();
         DepotVerkaufen10 = new javax.swing.JButton();
         DepotVerkaufen11 = new javax.swing.JButton();
         DepotVerkaufen12 = new javax.swing.JButton();
-        DepotVerkaufen14 = new javax.swing.JButton();
         DepotVerkaufen13 = new javax.swing.JButton();
-        DepotVerkaufen8 = new javax.swing.JButton();
-        DepotVerkaufen7 = new javax.swing.JButton();
-        DepotVerkaufen6 = new javax.swing.JButton();
-        DepotVerkaufen5 = new javax.swing.JButton();
-        DepotVerkaufen4 = new javax.swing.JButton();
-        DepotVerkaufen3 = new javax.swing.JButton();
+        DepotVerkaufen14 = new javax.swing.JButton();
+        DepotVerkaufen15 = new javax.swing.JButton();
+        DepotVerkaufen16 = new javax.swing.JButton();
+        DepotVerkaufen17 = new javax.swing.JButton();
+        DepotVerkaufen18 = new javax.swing.JButton();
+        DepotVerkaufen19 = new javax.swing.JButton();
+        DepotVerkaufen20 = new javax.swing.JButton();
+        DepotVerkaufen21 = new javax.swing.JButton();
+        DepotVerkaufen22 = new javax.swing.JButton();
+        DepotVerkaufen23 = new javax.swing.JButton();
+        DepotVerkaufen24 = new javax.swing.JButton();
+        DepotVerkaufen25 = new javax.swing.JButton();
+        DepotVerkaufen26 = new javax.swing.JButton();
+        DepotVerkaufen27 = new javax.swing.JButton();
+        DepotVerkaufen28 = new javax.swing.JButton();
+        DepotVerkaufen29 = new javax.swing.JButton();
+        DepotVerkaufen30 = new javax.swing.JButton();
         jLabel3 = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
         jLabel5 = new javax.swing.JLabel();
         DepotAnsehen = new javax.swing.JButton();
         LogInAnsehen = new javax.swing.JButton();
-        DepotVerkaufen15 = new javax.swing.JButton();
         zurückAktieAnsehen = new javax.swing.JButton();
         jScrollPane43 = new javax.swing.JScrollPane();
         jTextPane43 = new javax.swing.JTextPane();
         jScrollPane44 = new javax.swing.JScrollPane();
         jTextPane44 = new javax.swing.JTextPane();
-        DepotVerkaufen16 = new javax.swing.JButton();
-        DepotVerkaufen23 = new javax.swing.JButton();
-        DepotVerkaufen24 = new javax.swing.JButton();
         jScrollPane45 = new javax.swing.JScrollPane();
         jTextPane45 = new javax.swing.JTextPane();
-        DepotVerkaufen25 = new javax.swing.JButton();
-        DepotVerkaufen26 = new javax.swing.JButton();
         jScrollPane46 = new javax.swing.JScrollPane();
         jTextPane46 = new javax.swing.JTextPane();
         jScrollPane47 = new javax.swing.JScrollPane();
@@ -209,16 +219,8 @@ public class EigenesDepot extends javax.swing.JFrame {
         jTextPane72 = new javax.swing.JTextPane();
         jScrollPane73 = new javax.swing.JScrollPane();
         jTextPane73 = new javax.swing.JTextPane();
-        DepotVerkaufen28 = new javax.swing.JButton();
         jScrollPane74 = new javax.swing.JScrollPane();
         jTextPane74 = new javax.swing.JTextPane();
-        DepotVerkaufen27 = new javax.swing.JButton();
-        DepotVerkaufen22 = new javax.swing.JButton();
-        DepotVerkaufen21 = new javax.swing.JButton();
-        DepotVerkaufen20 = new javax.swing.JButton();
-        DepotVerkaufen19 = new javax.swing.JButton();
-        DepotVerkaufen18 = new javax.swing.JButton();
-        DepotVerkaufen17 = new javax.swing.JButton();
         jScrollPane75 = new javax.swing.JScrollPane();
         jTextPane75 = new javax.swing.JTextPane();
         jScrollPane76 = new javax.swing.JScrollPane();
@@ -239,8 +241,6 @@ public class EigenesDepot extends javax.swing.JFrame {
         jTextPane83 = new javax.swing.JTextPane();
         jScrollPane84 = new javax.swing.JScrollPane();
         jTextPane84 = new javax.swing.JTextPane();
-        DepotVerkaufen30 = new javax.swing.JButton();
-        DepotVerkaufen29 = new javax.swing.JButton();
         jScrollPane85 = new javax.swing.JScrollPane();
         jTextPane85 = new javax.swing.JTextPane();
         jScrollPane86 = new javax.swing.JScrollPane();
@@ -355,6 +355,18 @@ public class EigenesDepot extends javax.swing.JFrame {
 
         DepotVerkaufen2.setText("Verkaufen");
 
+        DepotVerkaufen3.setText("Verkaufen");
+
+        DepotVerkaufen4.setText("Verkaufen");
+
+        DepotVerkaufen5.setText("Verkaufen");
+
+        DepotVerkaufen6.setText("Verkaufen");
+
+        DepotVerkaufen7.setText("Verkaufen");
+
+        DepotVerkaufen8.setText("Verkaufen");
+
         DepotVerkaufen9.setText("Verkaufen");
 
         DepotVerkaufen10.setText("Verkaufen");
@@ -368,21 +380,46 @@ public class EigenesDepot extends javax.swing.JFrame {
 
         DepotVerkaufen12.setText("Verkaufen");
 
-        DepotVerkaufen14.setText("Verkaufen");
-
         DepotVerkaufen13.setText("Verkaufen");
 
-        DepotVerkaufen8.setText("Verkaufen");
+        DepotVerkaufen14.setText("Verkaufen");
 
-        DepotVerkaufen7.setText("Verkaufen");
+        DepotVerkaufen15.setText("Verkaufen");
 
-        DepotVerkaufen6.setText("Verkaufen");
+        DepotVerkaufen16.setText("Verkaufen");
 
-        DepotVerkaufen5.setText("Verkaufen");
+        DepotVerkaufen17.setText("Verkaufen");
 
-        DepotVerkaufen4.setText("Verkaufen");
+        DepotVerkaufen18.setText("Verkaufen");
 
-        DepotVerkaufen3.setText("Verkaufen");
+        DepotVerkaufen19.setText("Verkaufen");
+
+        DepotVerkaufen20.setText("Verkaufen");
+
+        DepotVerkaufen21.setText("Verkaufen");
+
+        DepotVerkaufen22.setText("Verkaufen");
+
+        DepotVerkaufen23.setText("Verkaufen");
+
+        DepotVerkaufen24.setText("Verkaufen");
+        DepotVerkaufen24.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                DepotVerkaufen24ActionPerformed(evt);
+            }
+        });
+
+        DepotVerkaufen25.setText("Verkaufen");
+
+        DepotVerkaufen26.setText("Verkaufen");
+
+        DepotVerkaufen27.setText("Verkaufen");
+
+        DepotVerkaufen28.setText("Verkaufen");
+
+        DepotVerkaufen29.setText("Verkaufen");
+
+        DepotVerkaufen30.setText("Verkaufen");
 
         jLabel3.setText("Aktie");
 
@@ -395,30 +432,13 @@ public class EigenesDepot extends javax.swing.JFrame {
 
         LogInAnsehen.setText("Log In");
 
-        DepotVerkaufen15.setText("Verkaufen");
-
         zurückAktieAnsehen.setText("Zurück");
 
         jScrollPane43.setViewportView(jTextPane43);
 
         jScrollPane44.setViewportView(jTextPane44);
 
-        DepotVerkaufen16.setText("Verkaufen");
-
-        DepotVerkaufen23.setText("Verkaufen");
-
-        DepotVerkaufen24.setText("Verkaufen");
-        DepotVerkaufen24.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                DepotVerkaufen24ActionPerformed(evt);
-            }
-        });
-
         jScrollPane45.setViewportView(jTextPane45);
-
-        DepotVerkaufen25.setText("Verkaufen");
-
-        DepotVerkaufen26.setText("Verkaufen");
 
         jScrollPane46.setViewportView(jTextPane46);
 
@@ -476,23 +496,7 @@ public class EigenesDepot extends javax.swing.JFrame {
 
         jScrollPane73.setViewportView(jTextPane73);
 
-        DepotVerkaufen28.setText("Verkaufen");
-
         jScrollPane74.setViewportView(jTextPane74);
-
-        DepotVerkaufen27.setText("Verkaufen");
-
-        DepotVerkaufen22.setText("Verkaufen");
-
-        DepotVerkaufen21.setText("Verkaufen");
-
-        DepotVerkaufen20.setText("Verkaufen");
-
-        DepotVerkaufen19.setText("Verkaufen");
-
-        DepotVerkaufen18.setText("Verkaufen");
-
-        DepotVerkaufen17.setText("Verkaufen");
 
         jScrollPane75.setViewportView(jTextPane75);
 
@@ -513,10 +517,6 @@ public class EigenesDepot extends javax.swing.JFrame {
         jScrollPane83.setViewportView(jTextPane83);
 
         jScrollPane84.setViewportView(jTextPane84);
-
-        DepotVerkaufen30.setText("Verkaufen");
-
-        DepotVerkaufen29.setText("Verkaufen");
 
         jScrollPane85.setViewportView(jTextPane85);
 
