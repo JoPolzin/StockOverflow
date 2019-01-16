@@ -47,8 +47,8 @@
                           <Group type="102" alignment="0" attributes="0">
                               <EmptySpace min="-2" pref="351" max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="0" attributes="0">
-                                  <Component id="jButton31" alignment="0" min="-2" max="-2" attributes="0"/>
-                                  <Component id="jButton32" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="DepotVerkaufen30" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="DepotVerkaufen29" alignment="0" min="-2" max="-2" attributes="0"/>
                               </Group>
                           </Group>
                       </Group>
@@ -178,34 +178,34 @@
                                       </Group>
                                       <EmptySpace max="32767" attributes="0"/>
                                       <Group type="103" groupAlignment="0" attributes="0">
-                                          <Component id="jButton3" min="-2" max="-2" attributes="0"/>
-                                          <Component id="jButton4" min="-2" max="-2" attributes="0"/>
-                                          <Component id="jButton9" min="-2" max="-2" attributes="0"/>
-                                          <Component id="jButton10" min="-2" max="-2" attributes="0"/>
-                                          <Component id="jButton8" min="-2" max="-2" attributes="0"/>
-                                          <Component id="jButton7" min="-2" max="-2" attributes="0"/>
-                                          <Component id="jButton6" min="-2" max="-2" attributes="0"/>
-                                          <Component id="jButton5" min="-2" max="-2" attributes="0"/>
-                                          <Component id="jButton11" min="-2" max="-2" attributes="0"/>
-                                          <Component id="jButton12" min="-2" max="-2" attributes="0"/>
-                                          <Component id="jButton13" min="-2" max="-2" attributes="0"/>
-                                          <Component id="jButton14" min="-2" max="-2" attributes="0"/>
-                                          <Component id="jButton15" min="-2" max="-2" attributes="0"/>
-                                          <Component id="jButton16" min="-2" max="-2" attributes="0"/>
-                                          <Component id="jButton17" alignment="0" min="-2" max="-2" attributes="0"/>
-                                          <Component id="jButton18" alignment="0" min="-2" max="-2" attributes="0"/>
-                                          <Component id="jButton23" alignment="0" min="-2" max="-2" attributes="0"/>
-                                          <Component id="jButton24" alignment="0" min="-2" max="-2" attributes="0"/>
-                                          <Component id="jButton22" alignment="0" min="-2" max="-2" attributes="0"/>
-                                          <Component id="jButton21" alignment="0" min="-2" max="-2" attributes="0"/>
-                                          <Component id="jButton20" alignment="0" min="-2" max="-2" attributes="0"/>
-                                          <Component id="jButton19" alignment="0" min="-2" max="-2" attributes="0"/>
-                                          <Component id="jButton25" alignment="0" min="-2" max="-2" attributes="0"/>
-                                          <Component id="jButton26" alignment="0" min="-2" max="-2" attributes="0"/>
-                                          <Component id="jButton27" alignment="0" min="-2" max="-2" attributes="0"/>
-                                          <Component id="jButton28" alignment="0" min="-2" max="-2" attributes="0"/>
-                                          <Component id="jButton29" alignment="0" min="-2" max="-2" attributes="0"/>
-                                          <Component id="jButton30" alignment="0" min="-2" max="-2" attributes="0"/>
+                                          <Component id="DepotVerkaufen1" min="-2" max="-2" attributes="0"/>
+                                          <Component id="DepotVerkaufen2" min="-2" max="-2" attributes="0"/>
+                                          <Component id="DepotVerkaufen14" min="-2" max="-2" attributes="0"/>
+                                          <Component id="DepotVerkaufen13" min="-2" max="-2" attributes="0"/>
+                                          <Component id="DepotVerkaufen12" min="-2" max="-2" attributes="0"/>
+                                          <Component id="DepotVerkaufen11" min="-2" max="-2" attributes="0"/>
+                                          <Component id="DepotVerkaufen10" min="-2" max="-2" attributes="0"/>
+                                          <Component id="DepotVerkaufen9" min="-2" max="-2" attributes="0"/>
+                                          <Component id="DepotVerkaufen8" min="-2" max="-2" attributes="0"/>
+                                          <Component id="DepotVerkaufen7" min="-2" max="-2" attributes="0"/>
+                                          <Component id="DepotVerkaufen6" min="-2" max="-2" attributes="0"/>
+                                          <Component id="DepotVerkaufen5" min="-2" max="-2" attributes="0"/>
+                                          <Component id="DepotVerkaufen4" min="-2" max="-2" attributes="0"/>
+                                          <Component id="DepotVerkaufen3" min="-2" max="-2" attributes="0"/>
+                                          <Component id="DepotVerkaufen15" alignment="0" min="-2" max="-2" attributes="0"/>
+                                          <Component id="DepotVerkaufen16" alignment="0" min="-2" max="-2" attributes="0"/>
+                                          <Component id="DepotVerkaufen28" alignment="0" min="-2" max="-2" attributes="0"/>
+                                          <Component id="DepotVerkaufen27" alignment="0" min="-2" max="-2" attributes="0"/>
+                                          <Component id="DepotVerkaufen26" alignment="0" min="-2" max="-2" attributes="0"/>
+                                          <Component id="DepotVerkaufen25" alignment="0" min="-2" max="-2" attributes="0"/>
+                                          <Component id="DepotVerkaufen24" alignment="0" min="-2" max="-2" attributes="0"/>
+                                          <Component id="DepotVerkaufen23" alignment="0" min="-2" max="-2" attributes="0"/>
+                                          <Component id="DepotVerkaufen22" alignment="0" min="-2" max="-2" attributes="0"/>
+                                          <Component id="DepotVerkaufen21" alignment="0" min="-2" max="-2" attributes="0"/>
+                                          <Component id="DepotVerkaufen20" alignment="0" min="-2" max="-2" attributes="0"/>
+                                          <Component id="DepotVerkaufen19" alignment="0" min="-2" max="-2" attributes="0"/>
+                                          <Component id="DepotVerkaufen18" alignment="0" min="-2" max="-2" attributes="0"/>
+                                          <Component id="DepotVerkaufen17" alignment="0" min="-2" max="-2" attributes="0"/>
                                       </Group>
                                       <EmptySpace min="-2" pref="156" max="-2" attributes="0"/>
                                   </Group>
@@ -268,7 +268,7 @@
                               <EmptySpace max="-2" attributes="0"/>
                               <Component id="zurückAktieAnsehen" min="-2" max="-2" attributes="0"/>
                               <EmptySpace max="32767" attributes="0"/>
-                              <Component id="jButton3" min="-2" max="-2" attributes="0"/>
+                              <Component id="DepotVerkaufen1" min="-2" max="-2" attributes="0"/>
                           </Group>
                       </Group>
                       <EmptySpace min="-2" pref="7" max="-2" attributes="0"/>
@@ -278,7 +278,7 @@
                           <Component id="jScrollPane5" alignment="0" min="-2" max="-2" attributes="0"/>
                       </Group>
                   </Group>
-                  <Component id="jButton4" min="-2" max="-2" attributes="0"/>
+                  <Component id="DepotVerkaufen2" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace max="-2" attributes="0"/>
               <Group type="103" groupAlignment="1" attributes="0">
@@ -287,7 +287,7 @@
                       <Component id="jScrollPane7" alignment="0" min="-2" max="-2" attributes="0"/>
                       <Component id="jScrollPane8" alignment="0" min="-2" max="-2" attributes="0"/>
                   </Group>
-                  <Component id="jButton16" min="-2" max="-2" attributes="0"/>
+                  <Component id="DepotVerkaufen3" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace max="-2" attributes="0"/>
               <Group type="103" groupAlignment="1" attributes="0">
@@ -296,7 +296,7 @@
                       <Component id="jScrollPane10" alignment="0" min="-2" max="-2" attributes="0"/>
                       <Component id="jScrollPane11" alignment="0" min="-2" max="-2" attributes="0"/>
                   </Group>
-                  <Component id="jButton15" min="-2" max="-2" attributes="0"/>
+                  <Component id="DepotVerkaufen4" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace max="-2" attributes="0"/>
               <Group type="103" groupAlignment="1" attributes="0">
@@ -305,7 +305,7 @@
                       <Component id="jScrollPane13" alignment="0" min="-2" max="-2" attributes="0"/>
                       <Component id="jScrollPane14" alignment="0" min="-2" max="-2" attributes="0"/>
                   </Group>
-                  <Component id="jButton14" min="-2" max="-2" attributes="0"/>
+                  <Component id="DepotVerkaufen5" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace max="-2" attributes="0"/>
               <Group type="103" groupAlignment="1" attributes="0">
@@ -314,7 +314,7 @@
                       <Component id="jScrollPane16" alignment="0" min="-2" max="-2" attributes="0"/>
                       <Component id="jScrollPane17" alignment="0" min="-2" max="-2" attributes="0"/>
                   </Group>
-                  <Component id="jButton13" min="-2" max="-2" attributes="0"/>
+                  <Component id="DepotVerkaufen6" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace max="-2" attributes="0"/>
               <Group type="103" groupAlignment="1" attributes="0">
@@ -323,7 +323,7 @@
                       <Component id="jScrollPane19" alignment="0" min="-2" max="-2" attributes="0"/>
                       <Component id="jScrollPane20" alignment="0" min="-2" max="-2" attributes="0"/>
                   </Group>
-                  <Component id="jButton12" min="-2" max="-2" attributes="0"/>
+                  <Component id="DepotVerkaufen7" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace max="-2" attributes="0"/>
               <Group type="103" groupAlignment="1" attributes="0">
@@ -332,7 +332,7 @@
                       <Component id="jScrollPane22" alignment="0" min="-2" max="-2" attributes="0"/>
                       <Component id="jScrollPane23" alignment="0" min="-2" max="-2" attributes="0"/>
                   </Group>
-                  <Component id="jButton11" min="-2" max="-2" attributes="0"/>
+                  <Component id="DepotVerkaufen8" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace max="-2" attributes="0"/>
               <Group type="103" groupAlignment="1" attributes="0">
@@ -341,7 +341,7 @@
                       <Component id="jScrollPane25" alignment="0" min="-2" max="-2" attributes="0"/>
                       <Component id="jScrollPane26" alignment="0" min="-2" max="-2" attributes="0"/>
                   </Group>
-                  <Component id="jButton5" min="-2" max="-2" attributes="0"/>
+                  <Component id="DepotVerkaufen9" min="-2" max="-2" attributes="0"/>
               </Group>
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" attributes="0">
@@ -360,9 +360,9 @@
                   </Group>
                   <Group type="102" attributes="0">
                       <EmptySpace max="32767" attributes="0"/>
-                      <Component id="jButton6" min="-2" max="-2" attributes="0"/>
+                      <Component id="DepotVerkaufen10" min="-2" max="-2" attributes="0"/>
                       <EmptySpace min="-2" pref="4" max="-2" attributes="0"/>
-                      <Component id="jButton7" min="-2" max="-2" attributes="0"/>
+                      <Component id="DepotVerkaufen11" min="-2" max="-2" attributes="0"/>
                   </Group>
               </Group>
               <EmptySpace max="-2" attributes="0"/>
@@ -372,7 +372,7 @@
                       <Component id="jScrollPane34" alignment="0" min="-2" max="-2" attributes="0"/>
                       <Component id="jScrollPane35" alignment="0" min="-2" max="-2" attributes="0"/>
                   </Group>
-                  <Component id="jButton8" min="-2" max="-2" attributes="0"/>
+                  <Component id="DepotVerkaufen12" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace max="-2" attributes="0"/>
               <Group type="103" groupAlignment="1" attributes="0">
@@ -381,7 +381,7 @@
                       <Component id="jScrollPane37" alignment="0" min="-2" max="-2" attributes="0"/>
                       <Component id="jScrollPane38" alignment="0" min="-2" max="-2" attributes="0"/>
                   </Group>
-                  <Component id="jButton10" min="-2" max="-2" attributes="0"/>
+                  <Component id="DepotVerkaufen13" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace max="-2" attributes="0"/>
               <Group type="103" groupAlignment="1" attributes="0">
@@ -390,7 +390,7 @@
                       <Component id="jScrollPane40" alignment="0" min="-2" max="-2" attributes="0"/>
                       <Component id="jScrollPane41" alignment="0" min="-2" max="-2" attributes="0"/>
                   </Group>
-                  <Component id="jButton9" min="-2" max="-2" attributes="0"/>
+                  <Component id="DepotVerkaufen14" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace min="-2" pref="7" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="0" attributes="0">
@@ -482,35 +482,35 @@
                   <Group type="102" attributes="0">
                       <Group type="103" groupAlignment="1" attributes="0">
                           <Group type="102" alignment="1" attributes="0">
-                              <Component id="jButton17" min="-2" max="-2" attributes="0"/>
+                              <Component id="DepotVerkaufen15" min="-2" max="-2" attributes="0"/>
                               <EmptySpace min="29" pref="29" max="-2" attributes="0"/>
                           </Group>
-                          <Component id="jButton18" alignment="1" min="-2" max="-2" attributes="0"/>
+                          <Component id="DepotVerkaufen16" alignment="1" min="-2" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace max="-2" attributes="0"/>
-                      <Component id="jButton30" min="-2" max="-2" attributes="0"/>
+                      <Component id="DepotVerkaufen17" min="-2" max="-2" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
-                      <Component id="jButton29" min="-2" max="-2" attributes="0"/>
+                      <Component id="DepotVerkaufen18" min="-2" max="-2" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
-                      <Component id="jButton28" min="-2" max="-2" attributes="0"/>
+                      <Component id="DepotVerkaufen19" min="-2" max="-2" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
-                      <Component id="jButton27" min="-2" max="-2" attributes="0"/>
+                      <Component id="DepotVerkaufen20" min="-2" max="-2" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
-                      <Component id="jButton26" min="-2" max="-2" attributes="0"/>
+                      <Component id="DepotVerkaufen21" min="-2" max="-2" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
-                      <Component id="jButton25" min="-2" max="-2" attributes="0"/>
+                      <Component id="DepotVerkaufen22" min="-2" max="-2" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
-                      <Component id="jButton19" min="-2" max="-2" attributes="0"/>
+                      <Component id="DepotVerkaufen23" min="-2" max="-2" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
-                      <Component id="jButton20" min="-2" max="-2" attributes="0"/>
+                      <Component id="DepotVerkaufen24" min="-2" max="-2" attributes="0"/>
                       <EmptySpace min="-2" pref="4" max="-2" attributes="0"/>
-                      <Component id="jButton21" min="-2" max="-2" attributes="0"/>
+                      <Component id="DepotVerkaufen25" min="-2" max="-2" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
-                      <Component id="jButton22" min="-2" max="-2" attributes="0"/>
+                      <Component id="DepotVerkaufen26" min="-2" max="-2" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
-                      <Component id="jButton24" min="-2" max="-2" attributes="0"/>
+                      <Component id="DepotVerkaufen27" min="-2" max="-2" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
-                      <Component id="jButton23" min="-2" max="-2" attributes="0"/>
+                      <Component id="DepotVerkaufen28" min="-2" max="-2" attributes="0"/>
                   </Group>
               </Group>
               <EmptySpace max="-2" attributes="0"/>
@@ -529,9 +529,9 @@
                       </Group>
                   </Group>
                   <Group type="102" alignment="0" attributes="0">
-                      <Component id="jButton32" min="-2" max="-2" attributes="0"/>
+                      <Component id="DepotVerkaufen29" min="-2" max="-2" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
-                      <Component id="jButton31" min="-2" max="-2" attributes="0"/>
+                      <Component id="DepotVerkaufen30" min="-2" max="-2" attributes="0"/>
                   </Group>
               </Group>
               <EmptySpace min="-2" pref="28" max="-2" attributes="0"/>
@@ -1018,75 +1018,78 @@
         </Component>
       </SubComponents>
     </Container>
-    <Component class="javax.swing.JButton" name="jButton3">
-      <Properties>
-        <Property name="text" type="java.lang.String" value="Verkaufen"/>
-      </Properties>
-    </Component>
-    <Component class="javax.swing.JButton" name="jButton4">
-      <Properties>
-        <Property name="text" type="java.lang.String" value="Verkaufen"/>
-      </Properties>
-    </Component>
-    <Component class="javax.swing.JButton" name="jButton5">
-      <Properties>
-        <Property name="text" type="java.lang.String" value="Verkaufen"/>
-      </Properties>
-    </Component>
-    <Component class="javax.swing.JButton" name="jButton6">
+    <Component class="javax.swing.JButton" name="DepotVerkaufen1">
       <Properties>
         <Property name="text" type="java.lang.String" value="Verkaufen"/>
       </Properties>
       <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton6ActionPerformed"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="DepotVerkaufen1ActionPerformed"/>
       </Events>
     </Component>
-    <Component class="javax.swing.JButton" name="jButton7">
+    <Component class="javax.swing.JButton" name="DepotVerkaufen2">
       <Properties>
         <Property name="text" type="java.lang.String" value="Verkaufen"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JButton" name="jButton8">
+    <Component class="javax.swing.JButton" name="DepotVerkaufen9">
       <Properties>
         <Property name="text" type="java.lang.String" value="Verkaufen"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JButton" name="jButton9">
+    <Component class="javax.swing.JButton" name="DepotVerkaufen10">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Verkaufen"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="DepotVerkaufen10ActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JButton" name="DepotVerkaufen11">
       <Properties>
         <Property name="text" type="java.lang.String" value="Verkaufen"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JButton" name="jButton10">
+    <Component class="javax.swing.JButton" name="DepotVerkaufen12">
       <Properties>
         <Property name="text" type="java.lang.String" value="Verkaufen"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JButton" name="jButton11">
+    <Component class="javax.swing.JButton" name="DepotVerkaufen14">
       <Properties>
         <Property name="text" type="java.lang.String" value="Verkaufen"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JButton" name="jButton12">
+    <Component class="javax.swing.JButton" name="DepotVerkaufen13">
       <Properties>
         <Property name="text" type="java.lang.String" value="Verkaufen"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JButton" name="jButton13">
+    <Component class="javax.swing.JButton" name="DepotVerkaufen8">
       <Properties>
         <Property name="text" type="java.lang.String" value="Verkaufen"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JButton" name="jButton14">
+    <Component class="javax.swing.JButton" name="DepotVerkaufen7">
       <Properties>
         <Property name="text" type="java.lang.String" value="Verkaufen"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JButton" name="jButton15">
+    <Component class="javax.swing.JButton" name="DepotVerkaufen6">
       <Properties>
         <Property name="text" type="java.lang.String" value="Verkaufen"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JButton" name="jButton16">
+    <Component class="javax.swing.JButton" name="DepotVerkaufen5">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Verkaufen"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JButton" name="DepotVerkaufen4">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Verkaufen"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JButton" name="DepotVerkaufen3">
       <Properties>
         <Property name="text" type="java.lang.String" value="Verkaufen"/>
       </Properties>
@@ -1119,6 +1122,11 @@
         <Property name="text" type="java.lang.String" value="Log In"/>
       </Properties>
     </Component>
+    <Component class="javax.swing.JButton" name="DepotVerkaufen15">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Verkaufen"/>
+      </Properties>
+    </Component>
     <Component class="javax.swing.JButton" name="zur&#xfc;ckAktieAnsehen">
       <Properties>
         <Property name="text" type="java.lang.String" value="Zur&#xfc;ck"/>
@@ -1146,27 +1154,22 @@
         </Component>
       </SubComponents>
     </Container>
-    <Component class="javax.swing.JButton" name="jButton17">
+    <Component class="javax.swing.JButton" name="DepotVerkaufen16">
       <Properties>
         <Property name="text" type="java.lang.String" value="Verkaufen"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JButton" name="jButton18">
+    <Component class="javax.swing.JButton" name="DepotVerkaufen23">
       <Properties>
         <Property name="text" type="java.lang.String" value="Verkaufen"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JButton" name="jButton19">
-      <Properties>
-        <Property name="text" type="java.lang.String" value="Verkaufen"/>
-      </Properties>
-    </Component>
-    <Component class="javax.swing.JButton" name="jButton20">
+    <Component class="javax.swing.JButton" name="DepotVerkaufen24">
       <Properties>
         <Property name="text" type="java.lang.String" value="Verkaufen"/>
       </Properties>
       <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton20ActionPerformed"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="DepotVerkaufen24ActionPerformed"/>
       </Events>
     </Component>
     <Container class="javax.swing.JScrollPane" name="jScrollPane45">
@@ -1180,12 +1183,12 @@
         </Component>
       </SubComponents>
     </Container>
-    <Component class="javax.swing.JButton" name="jButton21">
+    <Component class="javax.swing.JButton" name="DepotVerkaufen25">
       <Properties>
         <Property name="text" type="java.lang.String" value="Verkaufen"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JButton" name="jButton22">
+    <Component class="javax.swing.JButton" name="DepotVerkaufen26">
       <Properties>
         <Property name="text" type="java.lang.String" value="Verkaufen"/>
       </Properties>
@@ -1498,7 +1501,7 @@
         </Component>
       </SubComponents>
     </Container>
-    <Component class="javax.swing.JButton" name="jButton23">
+    <Component class="javax.swing.JButton" name="DepotVerkaufen28">
       <Properties>
         <Property name="text" type="java.lang.String" value="Verkaufen"/>
       </Properties>
@@ -1514,37 +1517,37 @@
         </Component>
       </SubComponents>
     </Container>
-    <Component class="javax.swing.JButton" name="jButton24">
+    <Component class="javax.swing.JButton" name="DepotVerkaufen27">
       <Properties>
         <Property name="text" type="java.lang.String" value="Verkaufen"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JButton" name="jButton25">
+    <Component class="javax.swing.JButton" name="DepotVerkaufen22">
       <Properties>
         <Property name="text" type="java.lang.String" value="Verkaufen"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JButton" name="jButton26">
+    <Component class="javax.swing.JButton" name="DepotVerkaufen21">
       <Properties>
         <Property name="text" type="java.lang.String" value="Verkaufen"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JButton" name="jButton27">
+    <Component class="javax.swing.JButton" name="DepotVerkaufen20">
       <Properties>
         <Property name="text" type="java.lang.String" value="Verkaufen"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JButton" name="jButton28">
+    <Component class="javax.swing.JButton" name="DepotVerkaufen19">
       <Properties>
         <Property name="text" type="java.lang.String" value="Verkaufen"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JButton" name="jButton29">
+    <Component class="javax.swing.JButton" name="DepotVerkaufen18">
       <Properties>
         <Property name="text" type="java.lang.String" value="Verkaufen"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JButton" name="jButton30">
+    <Component class="javax.swing.JButton" name="DepotVerkaufen17">
       <Properties>
         <Property name="text" type="java.lang.String" value="Verkaufen"/>
       </Properties>
@@ -1659,12 +1662,12 @@
         </Component>
       </SubComponents>
     </Container>
-    <Component class="javax.swing.JButton" name="jButton31">
+    <Component class="javax.swing.JButton" name="DepotVerkaufen30">
       <Properties>
         <Property name="text" type="java.lang.String" value="Verkaufen"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JButton" name="jButton32">
+    <Component class="javax.swing.JButton" name="DepotVerkaufen29">
       <Properties>
         <Property name="text" type="java.lang.String" value="Verkaufen"/>
       </Properties>

@@ -121,38 +121,38 @@ public class EigenesDepot extends javax.swing.JFrame {
         jTextPane41 = new javax.swing.JTextPane();
         jScrollPane42 = new javax.swing.JScrollPane();
         jTextPane42 = new javax.swing.JTextPane();
-        jButton3 = new javax.swing.JButton();
-        jButton4 = new javax.swing.JButton();
-        jButton5 = new javax.swing.JButton();
-        jButton6 = new javax.swing.JButton();
-        jButton7 = new javax.swing.JButton();
-        jButton8 = new javax.swing.JButton();
-        jButton9 = new javax.swing.JButton();
-        jButton10 = new javax.swing.JButton();
-        jButton11 = new javax.swing.JButton();
-        jButton12 = new javax.swing.JButton();
-        jButton13 = new javax.swing.JButton();
-        jButton14 = new javax.swing.JButton();
-        jButton15 = new javax.swing.JButton();
-        jButton16 = new javax.swing.JButton();
+        DepotVerkaufen1 = new javax.swing.JButton();
+        DepotVerkaufen2 = new javax.swing.JButton();
+        DepotVerkaufen9 = new javax.swing.JButton();
+        DepotVerkaufen10 = new javax.swing.JButton();
+        DepotVerkaufen11 = new javax.swing.JButton();
+        DepotVerkaufen12 = new javax.swing.JButton();
+        DepotVerkaufen14 = new javax.swing.JButton();
+        DepotVerkaufen13 = new javax.swing.JButton();
+        DepotVerkaufen8 = new javax.swing.JButton();
+        DepotVerkaufen7 = new javax.swing.JButton();
+        DepotVerkaufen6 = new javax.swing.JButton();
+        DepotVerkaufen5 = new javax.swing.JButton();
+        DepotVerkaufen4 = new javax.swing.JButton();
+        DepotVerkaufen3 = new javax.swing.JButton();
         jLabel3 = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
         jLabel5 = new javax.swing.JLabel();
         DepotAnsehen = new javax.swing.JButton();
         LogInAnsehen = new javax.swing.JButton();
+        DepotVerkaufen15 = new javax.swing.JButton();
         zurückAktieAnsehen = new javax.swing.JButton();
         jScrollPane43 = new javax.swing.JScrollPane();
         jTextPane43 = new javax.swing.JTextPane();
         jScrollPane44 = new javax.swing.JScrollPane();
         jTextPane44 = new javax.swing.JTextPane();
-        jButton17 = new javax.swing.JButton();
-        jButton18 = new javax.swing.JButton();
-        jButton19 = new javax.swing.JButton();
-        jButton20 = new javax.swing.JButton();
+        DepotVerkaufen16 = new javax.swing.JButton();
+        DepotVerkaufen23 = new javax.swing.JButton();
+        DepotVerkaufen24 = new javax.swing.JButton();
         jScrollPane45 = new javax.swing.JScrollPane();
         jTextPane45 = new javax.swing.JTextPane();
-        jButton21 = new javax.swing.JButton();
-        jButton22 = new javax.swing.JButton();
+        DepotVerkaufen25 = new javax.swing.JButton();
+        DepotVerkaufen26 = new javax.swing.JButton();
         jScrollPane46 = new javax.swing.JScrollPane();
         jTextPane46 = new javax.swing.JTextPane();
         jScrollPane47 = new javax.swing.JScrollPane();
@@ -209,16 +209,16 @@ public class EigenesDepot extends javax.swing.JFrame {
         jTextPane72 = new javax.swing.JTextPane();
         jScrollPane73 = new javax.swing.JScrollPane();
         jTextPane73 = new javax.swing.JTextPane();
-        jButton23 = new javax.swing.JButton();
+        DepotVerkaufen28 = new javax.swing.JButton();
         jScrollPane74 = new javax.swing.JScrollPane();
         jTextPane74 = new javax.swing.JTextPane();
-        jButton24 = new javax.swing.JButton();
-        jButton25 = new javax.swing.JButton();
-        jButton26 = new javax.swing.JButton();
-        jButton27 = new javax.swing.JButton();
-        jButton28 = new javax.swing.JButton();
-        jButton29 = new javax.swing.JButton();
-        jButton30 = new javax.swing.JButton();
+        DepotVerkaufen27 = new javax.swing.JButton();
+        DepotVerkaufen22 = new javax.swing.JButton();
+        DepotVerkaufen21 = new javax.swing.JButton();
+        DepotVerkaufen20 = new javax.swing.JButton();
+        DepotVerkaufen19 = new javax.swing.JButton();
+        DepotVerkaufen18 = new javax.swing.JButton();
+        DepotVerkaufen17 = new javax.swing.JButton();
         jScrollPane75 = new javax.swing.JScrollPane();
         jTextPane75 = new javax.swing.JTextPane();
         jScrollPane76 = new javax.swing.JScrollPane();
@@ -239,8 +239,8 @@ public class EigenesDepot extends javax.swing.JFrame {
         jTextPane83 = new javax.swing.JTextPane();
         jScrollPane84 = new javax.swing.JScrollPane();
         jTextPane84 = new javax.swing.JTextPane();
-        jButton31 = new javax.swing.JButton();
-        jButton32 = new javax.swing.JButton();
+        DepotVerkaufen30 = new javax.swing.JButton();
+        DepotVerkaufen29 = new javax.swing.JButton();
         jScrollPane85 = new javax.swing.JScrollPane();
         jTextPane85 = new javax.swing.JTextPane();
         jScrollPane86 = new javax.swing.JScrollPane();
@@ -346,38 +346,43 @@ public class EigenesDepot extends javax.swing.JFrame {
 
         jScrollPane42.setViewportView(jTextPane42);
 
-        jButton3.setText("Verkaufen");
-
-        jButton4.setText("Verkaufen");
-
-        jButton5.setText("Verkaufen");
-
-        jButton6.setText("Verkaufen");
-        jButton6.addActionListener(new java.awt.event.ActionListener() {
+        DepotVerkaufen1.setText("Verkaufen");
+        DepotVerkaufen1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton6ActionPerformed(evt);
+                DepotVerkaufen1ActionPerformed(evt);
             }
         });
 
-        jButton7.setText("Verkaufen");
+        DepotVerkaufen2.setText("Verkaufen");
 
-        jButton8.setText("Verkaufen");
+        DepotVerkaufen9.setText("Verkaufen");
 
-        jButton9.setText("Verkaufen");
+        DepotVerkaufen10.setText("Verkaufen");
+        DepotVerkaufen10.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                DepotVerkaufen10ActionPerformed(evt);
+            }
+        });
 
-        jButton10.setText("Verkaufen");
+        DepotVerkaufen11.setText("Verkaufen");
 
-        jButton11.setText("Verkaufen");
+        DepotVerkaufen12.setText("Verkaufen");
 
-        jButton12.setText("Verkaufen");
+        DepotVerkaufen14.setText("Verkaufen");
 
-        jButton13.setText("Verkaufen");
+        DepotVerkaufen13.setText("Verkaufen");
 
-        jButton14.setText("Verkaufen");
+        DepotVerkaufen8.setText("Verkaufen");
 
-        jButton15.setText("Verkaufen");
+        DepotVerkaufen7.setText("Verkaufen");
 
-        jButton16.setText("Verkaufen");
+        DepotVerkaufen6.setText("Verkaufen");
+
+        DepotVerkaufen5.setText("Verkaufen");
+
+        DepotVerkaufen4.setText("Verkaufen");
+
+        DepotVerkaufen3.setText("Verkaufen");
 
         jLabel3.setText("Aktie");
 
@@ -390,30 +395,30 @@ public class EigenesDepot extends javax.swing.JFrame {
 
         LogInAnsehen.setText("Log In");
 
+        DepotVerkaufen15.setText("Verkaufen");
+
         zurückAktieAnsehen.setText("Zurück");
 
         jScrollPane43.setViewportView(jTextPane43);
 
         jScrollPane44.setViewportView(jTextPane44);
 
-        jButton17.setText("Verkaufen");
+        DepotVerkaufen16.setText("Verkaufen");
 
-        jButton18.setText("Verkaufen");
+        DepotVerkaufen23.setText("Verkaufen");
 
-        jButton19.setText("Verkaufen");
-
-        jButton20.setText("Verkaufen");
-        jButton20.addActionListener(new java.awt.event.ActionListener() {
+        DepotVerkaufen24.setText("Verkaufen");
+        DepotVerkaufen24.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton20ActionPerformed(evt);
+                DepotVerkaufen24ActionPerformed(evt);
             }
         });
 
         jScrollPane45.setViewportView(jTextPane45);
 
-        jButton21.setText("Verkaufen");
+        DepotVerkaufen25.setText("Verkaufen");
 
-        jButton22.setText("Verkaufen");
+        DepotVerkaufen26.setText("Verkaufen");
 
         jScrollPane46.setViewportView(jTextPane46);
 
@@ -471,23 +476,23 @@ public class EigenesDepot extends javax.swing.JFrame {
 
         jScrollPane73.setViewportView(jTextPane73);
 
-        jButton23.setText("Verkaufen");
+        DepotVerkaufen28.setText("Verkaufen");
 
         jScrollPane74.setViewportView(jTextPane74);
 
-        jButton24.setText("Verkaufen");
+        DepotVerkaufen27.setText("Verkaufen");
 
-        jButton25.setText("Verkaufen");
+        DepotVerkaufen22.setText("Verkaufen");
 
-        jButton26.setText("Verkaufen");
+        DepotVerkaufen21.setText("Verkaufen");
 
-        jButton27.setText("Verkaufen");
+        DepotVerkaufen20.setText("Verkaufen");
 
-        jButton28.setText("Verkaufen");
+        DepotVerkaufen19.setText("Verkaufen");
 
-        jButton29.setText("Verkaufen");
+        DepotVerkaufen18.setText("Verkaufen");
 
-        jButton30.setText("Verkaufen");
+        DepotVerkaufen17.setText("Verkaufen");
 
         jScrollPane75.setViewportView(jTextPane75);
 
@@ -509,9 +514,9 @@ public class EigenesDepot extends javax.swing.JFrame {
 
         jScrollPane84.setViewportView(jTextPane84);
 
-        jButton31.setText("Verkaufen");
+        DepotVerkaufen30.setText("Verkaufen");
 
-        jButton32.setText("Verkaufen");
+        DepotVerkaufen29.setText("Verkaufen");
 
         jScrollPane85.setViewportView(jTextPane85);
 
@@ -549,8 +554,8 @@ public class EigenesDepot extends javax.swing.JFrame {
                             .addGroup(layout.createSequentialGroup()
                                 .addGap(351, 351, 351)
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(jButton31)
-                                    .addComponent(jButton32))))
+                                    .addComponent(DepotVerkaufen30)
+                                    .addComponent(DepotVerkaufen29))))
                         .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                     .addGroup(layout.createSequentialGroup()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -664,34 +669,34 @@ public class EigenesDepot extends javax.swing.JFrame {
                                             .addComponent(jScrollPane41, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 69, javax.swing.GroupLayout.PREFERRED_SIZE))
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                            .addComponent(jButton3)
-                                            .addComponent(jButton4)
-                                            .addComponent(jButton9)
-                                            .addComponent(jButton10)
-                                            .addComponent(jButton8)
-                                            .addComponent(jButton7)
-                                            .addComponent(jButton6)
-                                            .addComponent(jButton5)
-                                            .addComponent(jButton11)
-                                            .addComponent(jButton12)
-                                            .addComponent(jButton13)
-                                            .addComponent(jButton14)
-                                            .addComponent(jButton15)
-                                            .addComponent(jButton16)
-                                            .addComponent(jButton17)
-                                            .addComponent(jButton18)
-                                            .addComponent(jButton23)
-                                            .addComponent(jButton24)
-                                            .addComponent(jButton22)
-                                            .addComponent(jButton21)
-                                            .addComponent(jButton20)
-                                            .addComponent(jButton19)
-                                            .addComponent(jButton25)
-                                            .addComponent(jButton26)
-                                            .addComponent(jButton27)
-                                            .addComponent(jButton28)
-                                            .addComponent(jButton29)
-                                            .addComponent(jButton30))
+                                            .addComponent(DepotVerkaufen1)
+                                            .addComponent(DepotVerkaufen2)
+                                            .addComponent(DepotVerkaufen14)
+                                            .addComponent(DepotVerkaufen13)
+                                            .addComponent(DepotVerkaufen12)
+                                            .addComponent(DepotVerkaufen11)
+                                            .addComponent(DepotVerkaufen10)
+                                            .addComponent(DepotVerkaufen9)
+                                            .addComponent(DepotVerkaufen8)
+                                            .addComponent(DepotVerkaufen7)
+                                            .addComponent(DepotVerkaufen6)
+                                            .addComponent(DepotVerkaufen5)
+                                            .addComponent(DepotVerkaufen4)
+                                            .addComponent(DepotVerkaufen3)
+                                            .addComponent(DepotVerkaufen15)
+                                            .addComponent(DepotVerkaufen16)
+                                            .addComponent(DepotVerkaufen28)
+                                            .addComponent(DepotVerkaufen27)
+                                            .addComponent(DepotVerkaufen26)
+                                            .addComponent(DepotVerkaufen25)
+                                            .addComponent(DepotVerkaufen24)
+                                            .addComponent(DepotVerkaufen23)
+                                            .addComponent(DepotVerkaufen22)
+                                            .addComponent(DepotVerkaufen21)
+                                            .addComponent(DepotVerkaufen20)
+                                            .addComponent(DepotVerkaufen19)
+                                            .addComponent(DepotVerkaufen18)
+                                            .addComponent(DepotVerkaufen17))
                                         .addGap(156, 156, 156))))
                             .addGroup(layout.createSequentialGroup()
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -736,62 +741,62 @@ public class EigenesDepot extends javax.swing.JFrame {
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(zurückAktieAnsehen)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addComponent(jButton3)))
+                                .addComponent(DepotVerkaufen1)))
                         .addGap(7, 7, 7)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(jScrollPane6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(jScrollPane4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(jScrollPane5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                    .addComponent(jButton4))
+                    .addComponent(DepotVerkaufen2))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                         .addComponent(jScrollPane9, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addComponent(jScrollPane7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addComponent(jScrollPane8, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addComponent(jButton16))
+                    .addComponent(DepotVerkaufen3))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                         .addComponent(jScrollPane12, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addComponent(jScrollPane10, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addComponent(jScrollPane11, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addComponent(jButton15))
+                    .addComponent(DepotVerkaufen4))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                         .addComponent(jScrollPane15, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addComponent(jScrollPane13, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addComponent(jScrollPane14, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addComponent(jButton14))
+                    .addComponent(DepotVerkaufen5))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                         .addComponent(jScrollPane18, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addComponent(jScrollPane16, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addComponent(jScrollPane17, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addComponent(jButton13))
+                    .addComponent(DepotVerkaufen6))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                         .addComponent(jScrollPane21, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addComponent(jScrollPane19, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addComponent(jScrollPane20, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addComponent(jButton12))
+                    .addComponent(DepotVerkaufen7))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                         .addComponent(jScrollPane24, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addComponent(jScrollPane22, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addComponent(jScrollPane23, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addComponent(jButton11))
+                    .addComponent(DepotVerkaufen8))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                         .addComponent(jScrollPane27, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addComponent(jScrollPane25, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addComponent(jScrollPane26, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addComponent(jButton5))
+                    .addComponent(DepotVerkaufen9))
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -806,30 +811,30 @@ public class EigenesDepot extends javax.swing.JFrame {
                             .addComponent(jScrollPane32, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
                     .addGroup(layout.createSequentialGroup()
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(jButton6)
+                        .addComponent(DepotVerkaufen10)
                         .addGap(4, 4, 4)
-                        .addComponent(jButton7)))
+                        .addComponent(DepotVerkaufen11)))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                         .addComponent(jScrollPane36, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addComponent(jScrollPane34, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addComponent(jScrollPane35, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addComponent(jButton8))
+                    .addComponent(DepotVerkaufen12))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                         .addComponent(jScrollPane39, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addComponent(jScrollPane37, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addComponent(jScrollPane38, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addComponent(jButton10))
+                    .addComponent(DepotVerkaufen13))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                         .addComponent(jScrollPane42, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addComponent(jScrollPane40, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addComponent(jScrollPane41, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addComponent(jButton9))
+                    .addComponent(DepotVerkaufen14))
                 .addGap(7, 7, 7)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
@@ -905,33 +910,33 @@ public class EigenesDepot extends javax.swing.JFrame {
                     .addGroup(layout.createSequentialGroup()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                             .addGroup(layout.createSequentialGroup()
-                                .addComponent(jButton17)
+                                .addComponent(DepotVerkaufen15)
                                 .addGap(29, 29, 29))
-                            .addComponent(jButton18))
+                            .addComponent(DepotVerkaufen16))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jButton30)
+                        .addComponent(DepotVerkaufen17)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jButton29)
+                        .addComponent(DepotVerkaufen18)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jButton28)
+                        .addComponent(DepotVerkaufen19)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jButton27)
+                        .addComponent(DepotVerkaufen20)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jButton26)
+                        .addComponent(DepotVerkaufen21)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jButton25)
+                        .addComponent(DepotVerkaufen22)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jButton19)
+                        .addComponent(DepotVerkaufen23)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jButton20)
+                        .addComponent(DepotVerkaufen24)
                         .addGap(4, 4, 4)
-                        .addComponent(jButton21)
+                        .addComponent(DepotVerkaufen25)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jButton22)
+                        .addComponent(DepotVerkaufen26)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jButton24)
+                        .addComponent(DepotVerkaufen27)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jButton23)))
+                        .addComponent(DepotVerkaufen28)))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
@@ -945,22 +950,26 @@ public class EigenesDepot extends javax.swing.JFrame {
                             .addComponent(jScrollPane90, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(jScrollPane85, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
                     .addGroup(layout.createSequentialGroup()
-                        .addComponent(jButton32)
+                        .addComponent(DepotVerkaufen29)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jButton31)))
+                        .addComponent(DepotVerkaufen30)))
                 .addGap(28, 28, 28))
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jButton6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton6ActionPerformed
+    private void DepotVerkaufen10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_DepotVerkaufen10ActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton6ActionPerformed
+    }//GEN-LAST:event_DepotVerkaufen10ActionPerformed
 
-    private void jButton20ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton20ActionPerformed
+    private void DepotVerkaufen24ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_DepotVerkaufen24ActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton20ActionPerformed
+    }//GEN-LAST:event_DepotVerkaufen24ActionPerformed
+
+    private void DepotVerkaufen1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_DepotVerkaufen1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_DepotVerkaufen1ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -1002,37 +1011,37 @@ public class EigenesDepot extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton DepotAnsehen;
+    private javax.swing.JButton DepotVerkaufen1;
+    private javax.swing.JButton DepotVerkaufen10;
+    private javax.swing.JButton DepotVerkaufen11;
+    private javax.swing.JButton DepotVerkaufen12;
+    private javax.swing.JButton DepotVerkaufen13;
+    private javax.swing.JButton DepotVerkaufen14;
+    private javax.swing.JButton DepotVerkaufen15;
+    private javax.swing.JButton DepotVerkaufen16;
+    private javax.swing.JButton DepotVerkaufen17;
+    private javax.swing.JButton DepotVerkaufen18;
+    private javax.swing.JButton DepotVerkaufen19;
+    private javax.swing.JButton DepotVerkaufen2;
+    private javax.swing.JButton DepotVerkaufen20;
+    private javax.swing.JButton DepotVerkaufen21;
+    private javax.swing.JButton DepotVerkaufen22;
+    private javax.swing.JButton DepotVerkaufen23;
+    private javax.swing.JButton DepotVerkaufen24;
+    private javax.swing.JButton DepotVerkaufen25;
+    private javax.swing.JButton DepotVerkaufen26;
+    private javax.swing.JButton DepotVerkaufen27;
+    private javax.swing.JButton DepotVerkaufen28;
+    private javax.swing.JButton DepotVerkaufen29;
+    private javax.swing.JButton DepotVerkaufen3;
+    private javax.swing.JButton DepotVerkaufen30;
+    private javax.swing.JButton DepotVerkaufen4;
+    private javax.swing.JButton DepotVerkaufen5;
+    private javax.swing.JButton DepotVerkaufen6;
+    private javax.swing.JButton DepotVerkaufen7;
+    private javax.swing.JButton DepotVerkaufen8;
+    private javax.swing.JButton DepotVerkaufen9;
     private javax.swing.JButton LogInAnsehen;
-    private javax.swing.JButton jButton10;
-    private javax.swing.JButton jButton11;
-    private javax.swing.JButton jButton12;
-    private javax.swing.JButton jButton13;
-    private javax.swing.JButton jButton14;
-    private javax.swing.JButton jButton15;
-    private javax.swing.JButton jButton16;
-    private javax.swing.JButton jButton17;
-    private javax.swing.JButton jButton18;
-    private javax.swing.JButton jButton19;
-    private javax.swing.JButton jButton20;
-    private javax.swing.JButton jButton21;
-    private javax.swing.JButton jButton22;
-    private javax.swing.JButton jButton23;
-    private javax.swing.JButton jButton24;
-    private javax.swing.JButton jButton25;
-    private javax.swing.JButton jButton26;
-    private javax.swing.JButton jButton27;
-    private javax.swing.JButton jButton28;
-    private javax.swing.JButton jButton29;
-    private javax.swing.JButton jButton3;
-    private javax.swing.JButton jButton30;
-    private javax.swing.JButton jButton31;
-    private javax.swing.JButton jButton32;
-    private javax.swing.JButton jButton4;
-    private javax.swing.JButton jButton5;
-    private javax.swing.JButton jButton6;
-    private javax.swing.JButton jButton7;
-    private javax.swing.JButton jButton8;
-    private javax.swing.JButton jButton9;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
