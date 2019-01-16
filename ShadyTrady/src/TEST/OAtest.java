@@ -15,28 +15,31 @@ import javax.swing.*;
 public class OAtest {
 
     public static void main(String[] args) {
-        OA test = new OA();
-        test.DnsConfig();
-
-        test.prepareDocument("DE000A1EWWW0");
-        System.out.println("Ask:" + test.getAsk());
-        System.out.println("Bid:" + test.getBid());
-        System.out.println("Change:" + test.getChange());
+        
+        OA.DnsConfig();
+        
+        
+        
+        String aktieName = "adidas AG";
+        
+        String isinTest = OA.getDNS().get(aktieName);
+        OA.prepareDocument(isinTest);
+        System.out.println("Ask:" + OA.getAsk());
+        System.out.println("Bid:" + OA.getBid());
+        System.out.println("Change:" + OA.getChange());
         JFrame frame = new JFrame();
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
         JPanel panel = new JPanel();
         frame.setContentPane(panel);
-
+        
         ImageIcon i = null;
-        i = test.getGraph("woche");
-
-        JLabel label = new JLabel(i);
+        i = OA.getGraph("woche");
 
         
+        JLabel label = new JLabel(aktieName, i, JLabel.CENTER);
         panel.add(label);
-
-        frame.setSize(950, 650);
+        frame.setSize(650, 400);
         frame.setVisible(true);
     }
 

@@ -22,13 +22,13 @@ public class OA {
      * Hashtable mit Börsennamen und den dazugrhörigen ISIN's ISIN =
      * Internationale Wertpapierkennnummer
      */
-    private Hashtable<String, String> DNS = new Hashtable();
+    private static Hashtable<String, String> DNS = new Hashtable();
     /**
      * Die aktuell ausgewählte Website.
      *
      *
      */
-    private Document doc;
+    private static Document doc;
 
     public static void main(String[] args) {
         OA t = new OA();
@@ -48,10 +48,10 @@ public class OA {
      * @return
      * @throws IOException
      */
-    public float getAsk() {
+    public static float getAsk() {
         try {
 
-            return Float.parseFloat(this.doc.getElementById("ask").text().replace(',', '.').replaceAll(" ", ""));
+            return Float.parseFloat(doc.getElementById("ask").text().replace(',', '.').replaceAll(" ", ""));
         } catch (Exception e) {
             System.out.println("Fehler in getAsk()");
             return 0f;
@@ -66,10 +66,10 @@ public class OA {
      * @return
      * @throws IOException
      */
-    public float getBid() {
+    public static float getBid() {
         try {
 
-            return Float.parseFloat(this.doc.getElementById("bid").text().replace(',', '.').replaceAll(" ", ""));
+            return Float.parseFloat(doc.getElementById("bid").text().replace(',', '.').replaceAll(" ", ""));
         } catch (Exception e) {
             System.out.println("Fehler in getBid()");
             return 0f;
@@ -84,10 +84,10 @@ public class OA {
      * @return
      * @throws IOException
      */
-    public float getChange() {
+    public static float getChange() {
         try {
 
-            return Float.parseFloat(this.doc.getElementById("delta").text().replace(',', '.').replaceAll(" ", "").replaceAll("%", ""));
+            return Float.parseFloat(doc.getElementById("delta").text().replace(',', '.').replaceAll(" ", "").replaceAll("%", ""));
         } catch (Exception e) {
             System.out.println("Fehler in getChange()");
             return 0f;
@@ -98,14 +98,50 @@ public class OA {
     /**
      * Konfiguriert die DNS-Liste.
      */
-    public void DnsConfig() {
+    public static void DnsConfig() {
         getDNS().put("Siemens", "DE0007236101");
+        getDNS().put("adidas AG" , "DE000A1EWWW0");                
+        getDNS().put("SAP SE", "DE0007164600");
+        getDNS().put("Allianz SE","");
+        getDNS().put("BASF SE","");
+        getDNS().put("Bayer AG","");
+        getDNS().put("Bayerische Motorenwerke AG","");
+        getDNS().put("Beiersdorf AG","");
+        getDNS().put("Continental AG","");
+        getDNS().put("Covestro AG","");
+        getDNS().put("Daimler AG","");
+        getDNS().put("Deutsche Bank AG","");
+        getDNS().put("Deutsche Börse AG","");
+        getDNS().put("Deutsche Lufthansa Ag", "DE0008232125");
+        getDNS().put("Deutsche Post AG","");
+        getDNS().put("Deutsche Telekom AG", "DE0005557508");
+        getDNS().put("E.ON SE","");
+        getDNS().put("Fresenius Medical Care KGaA","");
+        getDNS().put("Fresenius SE & Co. KGaA","");
+        getDNS().put("HeidelbergCement AG","DE0006047004");
+        getDNS().put("Henkel AG & Co. KGaA VZ","DE0006048432");
+        getDNS().put("Infineon Technologies AG","DE0006231004");
+        getDNS().put("Linde PLC","IE00BZ12WP82");
+        getDNS().put("","");
+        getDNS().put("","");
+        getDNS().put("","");
+        getDNS().put("","");
+        getDNS().put("","");
+        
+        
+        
+        
+        
+        
+        
+        
+        
     }
 
     /**
      * @return the DNS
      */
-    public Hashtable<String, String> getDNS() {
+    public static Hashtable<String, String> getDNS() {
         return DNS;
     }
     /**
@@ -114,7 +150,7 @@ public class OA {
      * 
      * @param ISIN 
      */
-    public void  prepareDocument(String ISIN) {
+    public static void  prepareDocument(String ISIN) {
         try {
             doc = Jsoup.connect("https://www.tradegate.de/orderbuch.php?isin=" + ISIN).get();
             
@@ -135,7 +171,7 @@ System.out.println("Fehler in prepareDocument()");
 
 
 
-    public ImageIcon getGraph(String Zeitraum) {
+    public static ImageIcon getGraph(String Zeitraum) {
         try {
             String link = doc.getElementById(Zeitraum).attr("src");
             String completeLink = "https://www.tradegate.de" + link;
