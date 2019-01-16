@@ -35,8 +35,178 @@
                   </Group>
                   <Group type="102" alignment="1" attributes="0">
                       <EmptySpace min="-2" pref="55" max="-2" attributes="0"/>
-                      <Component id="AktienGUI" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="102" alignment="0" attributes="0">
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Component id="GUIAktie28" alignment="0" min="-2" pref="118" max="-2" attributes="0"/>
+                                  <Group type="103" alignment="0" groupAlignment="1" max="-2" attributes="0">
+                                      <Component id="GUIAktie15" alignment="1" max="32767" attributes="0"/>
+                                      <Component id="GUIAktie16" alignment="1" min="-2" pref="118" max="-2" attributes="0"/>
+                                  </Group>
+                                  <Component id="GUIAktie27" alignment="0" min="-2" pref="118" max="-2" attributes="0"/>
+                                  <Component id="GUIAktie26" alignment="0" min="-2" pref="118" max="-2" attributes="0"/>
+                                  <Component id="GUIAktie25" alignment="0" min="-2" pref="118" max="-2" attributes="0"/>
+                                  <Component id="GUIAktie24" alignment="0" min="-2" pref="118" max="-2" attributes="0"/>
+                                  <Component id="GUIAktie23" alignment="0" min="-2" pref="118" max="-2" attributes="0"/>
+                                  <Component id="GUIAktie22" alignment="0" min="-2" pref="118" max="-2" attributes="0"/>
+                                  <Component id="GUIAktie21" alignment="0" min="-2" pref="118" max="-2" attributes="0"/>
+                                  <Component id="GUIAktie20" alignment="0" min="-2" pref="118" max="-2" attributes="0"/>
+                                  <Component id="GUIAktie19" alignment="0" min="-2" pref="118" max="-2" attributes="0"/>
+                                  <Component id="GUIAktie17" alignment="0" min="-2" pref="118" max="-2" attributes="0"/>
+                                  <Component id="GUIAktie18" alignment="0" min="-2" pref="118" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace type="separate" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Component id="GUIPreis24" alignment="0" min="-2" pref="59" max="-2" attributes="0"/>
+                                  <Component id="GUIPreis16" alignment="0" min="-2" pref="59" max="-2" attributes="0"/>
+                                  <Component id="GUIPreis15" alignment="0" min="-2" pref="59" max="-2" attributes="0"/>
+                                  <Component id="GUIPreis28" alignment="0" min="-2" pref="59" max="-2" attributes="0"/>
+                                  <Component id="GUIPreis17" alignment="0" min="-2" pref="59" max="-2" attributes="0"/>
+                                  <Component id="GUIPreis18" alignment="0" min="-2" pref="59" max="-2" attributes="0"/>
+                                  <Component id="GUIPreis19" alignment="0" min="-2" pref="59" max="-2" attributes="0"/>
+                                  <Component id="GUIPreis20" alignment="0" min="-2" pref="59" max="-2" attributes="0"/>
+                                  <Component id="GUIPreis21" alignment="0" min="-2" pref="59" max="-2" attributes="0"/>
+                                  <Component id="GUIPreis22" alignment="0" min="-2" pref="59" max="-2" attributes="0"/>
+                                  <Component id="GUIPreis23" alignment="0" min="-2" pref="59" max="-2" attributes="0"/>
+                                  <Component id="GUIPreis25" alignment="0" min="-2" pref="59" max="-2" attributes="0"/>
+                                  <Component id="GUIPreis26" alignment="0" min="-2" pref="59" max="-2" attributes="0"/>
+                                  <Component id="GUIPreis27" alignment="0" min="-2" pref="59" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace type="separate" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Component id="GUIChange17" alignment="0" min="-2" pref="69" max="-2" attributes="0"/>
+                                  <Component id="GUIChange18" alignment="0" min="-2" pref="69" max="-2" attributes="0"/>
+                                  <Component id="GUIChange19" alignment="0" min="-2" pref="69" max="-2" attributes="0"/>
+                                  <Component id="GUIChange20" alignment="0" min="-2" pref="69" max="-2" attributes="0"/>
+                                  <Component id="GUIChange21" alignment="0" min="-2" pref="69" max="-2" attributes="0"/>
+                                  <Component id="GUIChange22" alignment="0" min="-2" pref="69" max="-2" attributes="0"/>
+                                  <Component id="GUIChange23" alignment="0" min="-2" pref="69" max="-2" attributes="0"/>
+                                  <Component id="GUIChange24" alignment="1" min="-2" pref="69" max="-2" attributes="0"/>
+                                  <Component id="GUIChange25" alignment="0" min="-2" pref="69" max="-2" attributes="0"/>
+                                  <Component id="GUIChange26" alignment="0" min="-2" pref="69" max="-2" attributes="0"/>
+                                  <Component id="GUIChange27" alignment="0" min="-2" pref="69" max="-2" attributes="0"/>
+                                  <Group type="103" alignment="0" groupAlignment="0" max="-2" attributes="0">
+                                      <Component id="GUIChange16" alignment="1" min="-2" pref="69" max="-2" attributes="0"/>
+                                      <Component id="GUIChange15" alignment="1" min="-2" pref="69" max="-2" attributes="0"/>
+                                  </Group>
+                                  <Component id="GUIChange28" alignment="1" min="-2" pref="69" max="-2" attributes="0"/>
+                              </Group>
+                          </Group>
+                          <Group type="102" alignment="0" attributes="0">
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Component id="GUIAktie30" alignment="0" min="-2" pref="118" max="-2" attributes="0"/>
+                                  <Component id="GUIAktie29" alignment="0" min="-2" pref="118" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace type="separate" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Component id="GUIPreis30" alignment="0" min="-2" pref="59" max="-2" attributes="0"/>
+                                  <Component id="GUIPreis29" alignment="0" min="-2" pref="59" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace type="separate" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Component id="GUIChange29" alignment="0" min="-2" pref="69" max="-2" attributes="0"/>
+                                  <Component id="GUIChange30" alignment="1" min="-2" pref="69" max="-2" attributes="0"/>
+                              </Group>
+                          </Group>
+                          <Group type="102" alignment="0" attributes="0">
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Component id="GUIAktie14" alignment="0" min="-2" pref="118" max="-2" attributes="0"/>
+                                  <Group type="103" alignment="0" groupAlignment="1" max="-2" attributes="0">
+                                      <Component id="GUIAktie1" alignment="1" max="32767" attributes="0"/>
+                                      <Component id="GUIAktie2" alignment="1" min="-2" pref="118" max="-2" attributes="0"/>
+                                  </Group>
+                                  <Component id="GUIAktie13" alignment="0" min="-2" pref="118" max="-2" attributes="0"/>
+                                  <Component id="GUIAktie12" alignment="0" min="-2" pref="118" max="-2" attributes="0"/>
+                                  <Component id="GUIAktie11" alignment="0" min="-2" pref="118" max="-2" attributes="0"/>
+                                  <Component id="GUIAktie10" alignment="0" min="-2" pref="118" max="-2" attributes="0"/>
+                                  <Component id="GUIAktie9" alignment="0" min="-2" pref="118" max="-2" attributes="0"/>
+                                  <Component id="GUIAktie8" alignment="0" min="-2" pref="118" max="-2" attributes="0"/>
+                                  <Component id="GUIAktie7" alignment="0" min="-2" pref="118" max="-2" attributes="0"/>
+                                  <Component id="GUIAktie6" alignment="0" min="-2" pref="118" max="-2" attributes="0"/>
+                                  <Component id="GUIAktie5" alignment="0" min="-2" pref="118" max="-2" attributes="0"/>
+                                  <Component id="GUIAktie3" alignment="0" min="-2" pref="118" max="-2" attributes="0"/>
+                                  <Component id="GUIAktie4" alignment="0" min="-2" pref="118" max="-2" attributes="0"/>
+                                  <Component id="GUIAktie" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="AktienGUIÜberschrift" alignment="0" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace type="separate" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Component id="GUIPreis" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="GUIPreis10" alignment="0" min="-2" pref="59" max="-2" attributes="0"/>
+                                  <Component id="GUIPreis2" alignment="0" min="-2" pref="59" max="-2" attributes="0"/>
+                                  <Component id="GUIPreis1" alignment="0" min="-2" pref="59" max="-2" attributes="0"/>
+                                  <Component id="GUIPreis14" alignment="0" min="-2" pref="59" max="-2" attributes="0"/>
+                                  <Component id="GUIPreis3" alignment="0" min="-2" pref="59" max="-2" attributes="0"/>
+                                  <Component id="GUIPreis4" alignment="0" min="-2" pref="59" max="-2" attributes="0"/>
+                                  <Component id="GUIPreis5" alignment="0" min="-2" pref="59" max="-2" attributes="0"/>
+                                  <Component id="GUIPreis6" alignment="0" min="-2" pref="59" max="-2" attributes="0"/>
+                                  <Component id="GUIPreis7" alignment="0" min="-2" pref="59" max="-2" attributes="0"/>
+                                  <Component id="jScrollPane22" alignment="0" min="-2" pref="59" max="-2" attributes="0"/>
+                                  <Component id="GUIPreis9" alignment="0" min="-2" pref="59" max="-2" attributes="0"/>
+                                  <Component id="GUIPreis11" alignment="0" min="-2" pref="59" max="-2" attributes="0"/>
+                                  <Component id="GUIPreis12" alignment="0" min="-2" pref="59" max="-2" attributes="0"/>
+                                  <Component id="GUIPreis13" alignment="0" min="-2" pref="59" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace type="separate" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Component id="GUIChange" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <Group type="103" groupAlignment="0" attributes="0">
+                                          <Component id="GUIChange3" alignment="0" min="-2" pref="69" max="-2" attributes="0"/>
+                                          <Component id="GUIChange4" alignment="0" min="-2" pref="69" max="-2" attributes="0"/>
+                                          <Component id="GUIChange5" alignment="0" min="-2" pref="69" max="-2" attributes="0"/>
+                                          <Component id="GUIChange6" alignment="0" min="-2" pref="69" max="-2" attributes="0"/>
+                                          <Component id="GUIChange7" alignment="0" min="-2" pref="69" max="-2" attributes="0"/>
+                                          <Component id="GUIChange8" alignment="0" min="-2" pref="69" max="-2" attributes="0"/>
+                                          <Component id="GUIChange9" alignment="0" min="-2" pref="69" max="-2" attributes="0"/>
+                                          <Component id="GUIChange10" alignment="1" min="-2" pref="69" max="-2" attributes="0"/>
+                                          <Component id="GUIChange11" alignment="0" min="-2" pref="69" max="-2" attributes="0"/>
+                                          <Component id="GUIChange12" alignment="0" min="-2" pref="69" max="-2" attributes="0"/>
+                                          <Component id="GUIChange13" alignment="0" min="-2" pref="69" max="-2" attributes="0"/>
+                                          <Group type="103" alignment="0" groupAlignment="0" max="-2" attributes="0">
+                                              <Component id="GUIChange2" alignment="1" min="-2" pref="69" max="-2" attributes="0"/>
+                                              <Component id="GUIChange1" alignment="1" min="-2" pref="69" max="-2" attributes="0"/>
+                                          </Group>
+                                          <Component id="GUIChange14" alignment="1" min="-2" pref="69" max="-2" attributes="0"/>
+                                      </Group>
+                                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                                      <Group type="103" groupAlignment="0" attributes="0">
+                                          <Component id="GUIAnsehen1" alignment="0" min="-2" max="-2" attributes="0"/>
+                                          <Component id="GUIAnsehen2" alignment="0" min="-2" max="-2" attributes="0"/>
+                                          <Component id="GUIAnsehen14" alignment="0" min="-2" max="-2" attributes="0"/>
+                                          <Component id="GUIAnsehen13" alignment="0" min="-2" max="-2" attributes="0"/>
+                                          <Component id="GUIAnsehen12" alignment="0" min="-2" max="-2" attributes="0"/>
+                                          <Component id="GUIAnsehen11" alignment="0" min="-2" max="-2" attributes="0"/>
+                                          <Component id="GUIAnsehen10" alignment="0" min="-2" max="-2" attributes="0"/>
+                                          <Component id="GUIAnsehen9" alignment="0" min="-2" max="-2" attributes="0"/>
+                                          <Component id="GUIAnsehen8" alignment="0" min="-2" max="-2" attributes="0"/>
+                                          <Component id="GUIAnsehen7" alignment="0" min="-2" max="-2" attributes="0"/>
+                                          <Component id="GUIAnsehen6" alignment="0" min="-2" max="-2" attributes="0"/>
+                                          <Component id="GUIAnsehen5" alignment="0" min="-2" max="-2" attributes="0"/>
+                                          <Component id="GUIAnsehen4" alignment="0" min="-2" max="-2" attributes="0"/>
+                                          <Component id="GUIAnsehen3" alignment="0" min="-2" max="-2" attributes="0"/>
+                                          <Component id="GUIAnsehen15" alignment="0" min="-2" max="-2" attributes="0"/>
+                                          <Component id="GUIAnsehen16" alignment="0" min="-2" max="-2" attributes="0"/>
+                                          <Component id="GUIAnsehen28" alignment="0" min="-2" max="-2" attributes="0"/>
+                                          <Component id="GUIAnsehen27" alignment="0" min="-2" max="-2" attributes="0"/>
+                                          <Component id="GUIAnsehen26" alignment="0" min="-2" max="-2" attributes="0"/>
+                                          <Component id="GUIAnsehen25" alignment="0" min="-2" max="-2" attributes="0"/>
+                                          <Component id="GUIAnsehen24" alignment="0" min="-2" max="-2" attributes="0"/>
+                                          <Component id="GUIAnsehen23" alignment="0" min="-2" max="-2" attributes="0"/>
+                                          <Component id="GUIAnsehen22" alignment="0" min="-2" max="-2" attributes="0"/>
+                                          <Component id="GUIAnsehen21" alignment="0" min="-2" max="-2" attributes="0"/>
+                                          <Component id="GUIAnsehen20" alignment="0" min="-2" max="-2" attributes="0"/>
+                                          <Component id="GUIAnsehen19" alignment="0" min="-2" max="-2" attributes="0"/>
+                                          <Component id="GUIAnsehen18" alignment="0" min="-2" max="-2" attributes="0"/>
+                                          <Component id="GUIAnsehen17" alignment="0" min="-2" max="-2" attributes="0"/>
+                                          <Component id="GUIAnsehen29" alignment="0" min="-2" max="-2" attributes="0"/>
+                                          <Component id="GUIAnsehen30" alignment="0" min="-2" max="-2" attributes="0"/>
+                                      </Group>
+                                  </Group>
+                              </Group>
+                          </Group>
+                      </Group>
+                      <EmptySpace max="32767" attributes="0"/>
                   </Group>
               </Group>
               <EmptySpace min="-2" pref="16" max="-2" attributes="0"/>
@@ -55,8 +225,268 @@
                   <Component id="ÜberschriftOverflow" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace min="-2" pref="31" max="-2" attributes="0"/>
-              <Component id="AktienGUI" min="-2" max="-2" attributes="0"/>
-              <EmptySpace pref="479" max="32767" attributes="0"/>
+              <Component id="AktienGUIÜberschrift" min="-2" max="-2" attributes="0"/>
+              <EmptySpace type="unrelated" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="GUIAktie" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="GUIPreis" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="GUIChange" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace type="unrelated" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" attributes="0">
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="GUIAktie1" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="GUIPreis1" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="GUIChange1" alignment="0" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace min="-2" pref="7" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="GUIAktie2" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="GUIPreis2" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="GUIChange2" alignment="0" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace min="-2" pref="7" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="GUIAktie3" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="GUIPreis3" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="GUIChange3" alignment="0" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace min="-2" pref="7" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="GUIAktie4" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="GUIPreis4" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="GUIChange4" alignment="0" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace min="-2" pref="7" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="GUIAktie5" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="GUIPreis5" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="GUIChange5" alignment="0" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace min="-2" pref="7" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="GUIAktie6" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="GUIPreis6" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="GUIChange6" alignment="0" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace min="-2" pref="7" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="GUIAktie7" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="GUIPreis7" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="GUIChange7" alignment="0" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace min="-2" pref="7" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="GUIAktie8" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="jScrollPane22" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="GUIChange8" alignment="0" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace min="-2" pref="7" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="GUIAktie9" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="GUIPreis9" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="GUIChange9" alignment="0" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="GUIAktie10" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="GUIPreis10" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="GUIChange10" alignment="0" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="GUIAktie11" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="GUIPreis11" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="GUIChange11" alignment="0" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace max="32767" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="GUIAktie12" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="GUIPreis12" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="GUIChange12" alignment="0" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace min="-2" pref="7" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="GUIAktie13" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="GUIPreis13" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="GUIChange13" alignment="0" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace min="-2" pref="7" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="GUIAktie14" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="GUIPreis14" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="GUIChange14" alignment="0" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace min="-2" pref="7" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="GUIAktie15" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="GUIPreis15" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="GUIChange15" alignment="0" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace min="-2" pref="7" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="GUIAktie16" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="GUIPreis16" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="GUIChange16" alignment="0" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace min="-2" pref="7" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="GUIAktie17" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="GUIPreis17" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="GUIChange17" alignment="0" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace min="-2" pref="7" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="GUIAktie18" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="GUIPreis18" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="GUIChange18" alignment="0" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace min="-2" pref="7" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="GUIAktie19" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="GUIPreis19" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="GUIChange19" alignment="0" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace min="-2" pref="7" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="GUIAktie20" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="GUIPreis20" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="GUIChange20" alignment="0" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace min="-2" pref="7" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="GUIAktie21" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="GUIPreis21" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="GUIChange21" alignment="0" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace min="-2" pref="7" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="GUIAktie22" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="GUIPreis22" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="GUIChange22" alignment="0" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace min="-2" pref="7" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="GUIAktie23" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="GUIPreis23" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="GUIChange23" alignment="0" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="GUIAktie24" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="GUIPreis24" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="GUIChange24" alignment="0" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="GUIAktie25" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="GUIPreis25" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="GUIChange25" alignment="0" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace min="-2" pref="7" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="GUIAktie26" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="GUIPreis26" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="GUIChange26" alignment="0" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace min="-2" pref="7" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="GUIAktie27" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="GUIPreis27" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="GUIChange27" alignment="0" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace min="-2" pref="7" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="GUIAktie28" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="GUIPreis28" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="GUIChange28" alignment="0" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace min="-2" pref="7" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="GUIAktie29" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="GUIPreis29" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="GUIChange29" alignment="0" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace min="-2" pref="7" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="GUIAktie30" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="GUIPreis30" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="GUIChange30" alignment="0" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace min="-2" pref="12" max="-2" attributes="0"/>
+                  </Group>
+                  <Group type="102" attributes="0">
+                      <Group type="103" groupAlignment="1" attributes="0">
+                          <Group type="102" alignment="1" attributes="0">
+                              <Component id="GUIAnsehen1" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace min="29" pref="29" max="-2" attributes="0"/>
+                          </Group>
+                          <Component id="GUIAnsehen2" alignment="1" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="GUIAnsehen3" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="GUIAnsehen4" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="GUIAnsehen5" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="GUIAnsehen6" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="GUIAnsehen7" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="GUIAnsehen8" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="GUIAnsehen9" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace max="32767" attributes="0"/>
+                      <Component id="GUIAnsehen10" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="4" max="-2" attributes="0"/>
+                      <Component id="GUIAnsehen11" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="GUIAnsehen12" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="GUIAnsehen13" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="GUIAnsehen14" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="7" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="1" attributes="0">
+                          <Group type="102" alignment="1" attributes="0">
+                              <Component id="GUIAnsehen15" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace min="29" pref="29" max="-2" attributes="0"/>
+                          </Group>
+                          <Component id="GUIAnsehen16" alignment="1" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="GUIAnsehen17" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="GUIAnsehen18" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="GUIAnsehen19" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="GUIAnsehen20" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="GUIAnsehen21" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="GUIAnsehen22" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="GUIAnsehen23" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="GUIAnsehen24" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="4" max="-2" attributes="0"/>
+                      <Component id="GUIAnsehen25" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="GUIAnsehen26" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="GUIAnsehen27" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="GUIAnsehen28" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="GUIAnsehen29" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="GUIAnsehen30" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                  </Group>
+              </Group>
           </Group>
       </Group>
     </DimensionLayout>
@@ -89,7 +519,7 @@
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="LogInGUIActionPerformed"/>
       </Events>
     </Component>
-    <Component class="javax.swing.JLabel" name="AktienGUI">
+    <Component class="javax.swing.JLabel" name="AktienGUI&#xdc;berschrift">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Penultimate" size="24" style="0"/>
@@ -97,5 +527,1166 @@
         <Property name="text" type="java.lang.String" value="Aktien"/>
       </Properties>
     </Component>
+    <Container class="javax.swing.JScrollPane" name="GUIChange26">
+      <AuxValues>
+        <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
+      </AuxValues>
+
+      <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+      <SubComponents>
+        <Component class="javax.swing.JTextPane" name="jTextPane79">
+        </Component>
+      </SubComponents>
+    </Container>
+    <Container class="javax.swing.JScrollPane" name="GUIAktie12">
+      <AuxValues>
+        <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
+      </AuxValues>
+
+      <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+      <SubComponents>
+        <Component class="javax.swing.JTextPane" name="jTextPane36">
+        </Component>
+      </SubComponents>
+    </Container>
+    <Container class="javax.swing.JScrollPane" name="GUIAktie26">
+      <AuxValues>
+        <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
+      </AuxValues>
+
+      <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+      <SubComponents>
+        <Component class="javax.swing.JTextPane" name="jTextPane80">
+        </Component>
+      </SubComponents>
+    </Container>
+    <Container class="javax.swing.JScrollPane" name="GUIPreis13">
+      <AuxValues>
+        <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
+      </AuxValues>
+
+      <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+      <SubComponents>
+        <Component class="javax.swing.JTextPane" name="jTextPane37">
+        </Component>
+      </SubComponents>
+    </Container>
+    <Container class="javax.swing.JScrollPane" name="GUIPreis27">
+      <AuxValues>
+        <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
+      </AuxValues>
+
+      <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+      <SubComponents>
+        <Component class="javax.swing.JTextPane" name="jTextPane81">
+        </Component>
+      </SubComponents>
+    </Container>
+    <Container class="javax.swing.JScrollPane" name="GUIChange13">
+      <AuxValues>
+        <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
+      </AuxValues>
+
+      <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+      <SubComponents>
+        <Component class="javax.swing.JTextPane" name="jTextPane38">
+        </Component>
+      </SubComponents>
+    </Container>
+    <Container class="javax.swing.JScrollPane" name="GUIChange27">
+      <AuxValues>
+        <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
+      </AuxValues>
+
+      <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+      <SubComponents>
+        <Component class="javax.swing.JTextPane" name="jTextPane82">
+        </Component>
+      </SubComponents>
+    </Container>
+    <Container class="javax.swing.JScrollPane" name="GUIAktie13">
+      <AuxValues>
+        <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
+      </AuxValues>
+
+      <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+      <SubComponents>
+        <Component class="javax.swing.JTextPane" name="jTextPane39">
+        </Component>
+      </SubComponents>
+    </Container>
+    <Container class="javax.swing.JScrollPane" name="GUIAktie27">
+      <AuxValues>
+        <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
+      </AuxValues>
+
+      <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+      <SubComponents>
+        <Component class="javax.swing.JTextPane" name="jTextPane83">
+        </Component>
+      </SubComponents>
+    </Container>
+    <Container class="javax.swing.JScrollPane" name="GUIPreis14">
+      <AuxValues>
+        <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
+      </AuxValues>
+
+      <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+      <SubComponents>
+        <Component class="javax.swing.JTextPane" name="jTextPane40">
+        </Component>
+      </SubComponents>
+    </Container>
+    <Container class="javax.swing.JScrollPane" name="GUIPreis28">
+      <AuxValues>
+        <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
+      </AuxValues>
+
+      <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+      <SubComponents>
+        <Component class="javax.swing.JTextPane" name="jTextPane84">
+        </Component>
+      </SubComponents>
+    </Container>
+    <Container class="javax.swing.JScrollPane" name="GUIChange14">
+      <AuxValues>
+        <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
+      </AuxValues>
+
+      <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+      <SubComponents>
+        <Component class="javax.swing.JTextPane" name="jTextPane41">
+        </Component>
+      </SubComponents>
+    </Container>
+    <Component class="javax.swing.JButton" name="GUIAnsehen30">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Ansehen"/>
+      </Properties>
+    </Component>
+    <Container class="javax.swing.JScrollPane" name="GUIAktie14">
+      <AuxValues>
+        <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
+      </AuxValues>
+
+      <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+      <SubComponents>
+        <Component class="javax.swing.JTextPane" name="jTextPane42">
+        </Component>
+      </SubComponents>
+    </Container>
+    <Component class="javax.swing.JButton" name="GUIAnsehen29">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Ansehen"/>
+      </Properties>
+    </Component>
+    <Container class="javax.swing.JScrollPane" name="GUIChange30">
+      <AuxValues>
+        <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
+      </AuxValues>
+
+      <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+      <SubComponents>
+        <Component class="javax.swing.JTextPane" name="jTextPane85">
+        </Component>
+      </SubComponents>
+    </Container>
+    <Component class="javax.swing.JButton" name="GUIAnsehen1">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Ansehen"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JButton" name="GUIAnsehen2">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Ansehen"/>
+      </Properties>
+    </Component>
+    <Container class="javax.swing.JScrollPane" name="GUIAktie30">
+      <AuxValues>
+        <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
+      </AuxValues>
+
+      <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+      <SubComponents>
+        <Component class="javax.swing.JTextPane" name="jTextPane86">
+        </Component>
+      </SubComponents>
+    </Container>
+    <Component class="javax.swing.JButton" name="GUIAnsehen9">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Ansehen"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JButton" name="GUIAnsehen10">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Ansehen"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="GUIAnsehen10ActionPerformed"/>
+      </Events>
+    </Component>
+    <Container class="javax.swing.JScrollPane" name="GUIPreis16">
+      <AuxValues>
+        <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
+      </AuxValues>
+
+      <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+      <SubComponents>
+        <Component class="javax.swing.JTextPane" name="jTextPane48">
+        </Component>
+      </SubComponents>
+    </Container>
+    <Container class="javax.swing.JScrollPane" name="GUIPreis29">
+      <AuxValues>
+        <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
+      </AuxValues>
+
+      <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+      <SubComponents>
+        <Component class="javax.swing.JTextPane" name="jTextPane87">
+        </Component>
+      </SubComponents>
+    </Container>
+    <Component class="javax.swing.JButton" name="GUIAnsehen11">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Ansehen"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JButton" name="GUIAnsehen12">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Ansehen"/>
+      </Properties>
+    </Component>
+    <Container class="javax.swing.JScrollPane" name="GUIChange16">
+      <AuxValues>
+        <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
+      </AuxValues>
+
+      <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+      <SubComponents>
+        <Component class="javax.swing.JTextPane" name="jTextPane49">
+        </Component>
+      </SubComponents>
+    </Container>
+    <Container class="javax.swing.JScrollPane" name="GUIAktie16">
+      <AuxValues>
+        <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
+      </AuxValues>
+
+      <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+      <SubComponents>
+        <Component class="javax.swing.JTextPane" name="jTextPane50">
+        </Component>
+      </SubComponents>
+    </Container>
+    <Container class="javax.swing.JScrollPane" name="GUIPreis17">
+      <AuxValues>
+        <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
+      </AuxValues>
+
+      <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+      <SubComponents>
+        <Component class="javax.swing.JTextPane" name="jTextPane51">
+        </Component>
+      </SubComponents>
+    </Container>
+    <Container class="javax.swing.JScrollPane" name="GUIChange17">
+      <AuxValues>
+        <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
+      </AuxValues>
+
+      <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+      <SubComponents>
+        <Component class="javax.swing.JTextPane" name="jTextPane52">
+        </Component>
+      </SubComponents>
+    </Container>
+    <Container class="javax.swing.JScrollPane" name="GUIChange29">
+      <AuxValues>
+        <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
+      </AuxValues>
+
+      <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+      <SubComponents>
+        <Component class="javax.swing.JTextPane" name="jTextPane88">
+        </Component>
+      </SubComponents>
+    </Container>
+    <Component class="javax.swing.JButton" name="GUIAnsehen14">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Ansehen"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JButton" name="GUIAnsehen13">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Ansehen"/>
+      </Properties>
+    </Component>
+    <Container class="javax.swing.JScrollPane" name="GUIAktie29">
+      <AuxValues>
+        <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
+      </AuxValues>
+
+      <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+      <SubComponents>
+        <Component class="javax.swing.JTextPane" name="jTextPane89">
+        </Component>
+      </SubComponents>
+    </Container>
+    <Component class="javax.swing.JButton" name="GUIAnsehen8">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Ansehen"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JButton" name="GUIAnsehen7">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Ansehen"/>
+      </Properties>
+    </Component>
+    <Container class="javax.swing.JScrollPane" name="GUIPreis30">
+      <AuxValues>
+        <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
+      </AuxValues>
+
+      <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+      <SubComponents>
+        <Component class="javax.swing.JTextPane" name="jTextPane90">
+        </Component>
+      </SubComponents>
+    </Container>
+    <Component class="javax.swing.JButton" name="GUIAnsehen6">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Ansehen"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JButton" name="GUIAnsehen5">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Ansehen"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JButton" name="GUIAnsehen4">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Ansehen"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JButton" name="GUIAnsehen3">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Ansehen"/>
+      </Properties>
+    </Component>
+    <Container class="javax.swing.JScrollPane" name="GUIAktie17">
+      <AuxValues>
+        <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
+      </AuxValues>
+
+      <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+      <SubComponents>
+        <Component class="javax.swing.JTextPane" name="jTextPane53">
+        </Component>
+      </SubComponents>
+    </Container>
+    <Component class="javax.swing.JLabel" name="GUIAktie">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Aktie"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="GUIPreis">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Preis"/>
+      </Properties>
+    </Component>
+    <Container class="javax.swing.JScrollPane" name="GUIPreis18">
+      <AuxValues>
+        <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
+      </AuxValues>
+
+      <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+      <SubComponents>
+        <Component class="javax.swing.JTextPane" name="jTextPane54">
+        </Component>
+      </SubComponents>
+    </Container>
+    <Container class="javax.swing.JScrollPane" name="GUIChange18">
+      <AuxValues>
+        <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
+      </AuxValues>
+
+      <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+      <SubComponents>
+        <Component class="javax.swing.JTextPane" name="jTextPane55">
+        </Component>
+      </SubComponents>
+    </Container>
+    <Container class="javax.swing.JScrollPane" name="GUIAktie18">
+      <AuxValues>
+        <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
+      </AuxValues>
+
+      <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+      <SubComponents>
+        <Component class="javax.swing.JTextPane" name="jTextPane56">
+        </Component>
+      </SubComponents>
+    </Container>
+    <Container class="javax.swing.JScrollPane" name="GUIPreis19">
+      <AuxValues>
+        <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
+      </AuxValues>
+
+      <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+      <SubComponents>
+        <Component class="javax.swing.JTextPane" name="jTextPane57">
+        </Component>
+      </SubComponents>
+    </Container>
+    <Component class="javax.swing.JLabel" name="GUIChange">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Change"/>
+      </Properties>
+    </Component>
+    <Container class="javax.swing.JScrollPane" name="GUIChange28">
+      <AuxValues>
+        <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
+      </AuxValues>
+
+      <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+      <SubComponents>
+        <Component class="javax.swing.JTextPane" name="jTextPane43">
+        </Component>
+      </SubComponents>
+    </Container>
+    <Container class="javax.swing.JScrollPane" name="GUIAktie28">
+      <AuxValues>
+        <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
+      </AuxValues>
+
+      <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+      <SubComponents>
+        <Component class="javax.swing.JTextPane" name="jTextPane44">
+        </Component>
+      </SubComponents>
+    </Container>
+    <Container class="javax.swing.JScrollPane" name="GUIChange19">
+      <AuxValues>
+        <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
+      </AuxValues>
+
+      <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+      <SubComponents>
+        <Component class="javax.swing.JTextPane" name="jTextPane58">
+        </Component>
+      </SubComponents>
+    </Container>
+    <Container class="javax.swing.JScrollPane" name="GUIChange4">
+      <AuxValues>
+        <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
+      </AuxValues>
+
+      <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+      <SubComponents>
+        <Component class="javax.swing.JTextPane" name="jTextPane11">
+        </Component>
+      </SubComponents>
+    </Container>
+    <Component class="javax.swing.JButton" name="GUIAnsehen15">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Ansehen"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JButton" name="GUIAnsehen16">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Ansehen"/>
+      </Properties>
+    </Component>
+    <Container class="javax.swing.JScrollPane" name="GUIAktie19">
+      <AuxValues>
+        <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
+      </AuxValues>
+
+      <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+      <SubComponents>
+        <Component class="javax.swing.JTextPane" name="jTextPane59">
+        </Component>
+      </SubComponents>
+    </Container>
+    <Container class="javax.swing.JScrollPane" name="GUIAktie4">
+      <AuxValues>
+        <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
+      </AuxValues>
+
+      <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+      <SubComponents>
+        <Component class="javax.swing.JTextPane" name="jTextPane12">
+        </Component>
+      </SubComponents>
+    </Container>
+    <Container class="javax.swing.JScrollPane" name="GUIPreis20">
+      <AuxValues>
+        <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
+      </AuxValues>
+
+      <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+      <SubComponents>
+        <Component class="javax.swing.JTextPane" name="jTextPane60">
+        </Component>
+      </SubComponents>
+    </Container>
+    <Container class="javax.swing.JScrollPane" name="GUIPreis5">
+      <AuxValues>
+        <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
+      </AuxValues>
+
+      <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+      <SubComponents>
+        <Component class="javax.swing.JTextPane" name="jTextPane13">
+        </Component>
+      </SubComponents>
+    </Container>
+    <Container class="javax.swing.JScrollPane" name="GUIChange20">
+      <AuxValues>
+        <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
+      </AuxValues>
+
+      <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+      <SubComponents>
+        <Component class="javax.swing.JTextPane" name="jTextPane61">
+        </Component>
+      </SubComponents>
+    </Container>
+    <Container class="javax.swing.JScrollPane" name="GUIChange5">
+      <AuxValues>
+        <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
+      </AuxValues>
+
+      <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+      <SubComponents>
+        <Component class="javax.swing.JTextPane" name="jTextPane14">
+        </Component>
+      </SubComponents>
+    </Container>
+    <Container class="javax.swing.JScrollPane" name="GUIAktie20">
+      <AuxValues>
+        <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
+      </AuxValues>
+
+      <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+      <SubComponents>
+        <Component class="javax.swing.JTextPane" name="jTextPane62">
+        </Component>
+      </SubComponents>
+    </Container>
+    <Container class="javax.swing.JScrollPane" name="GUIAktie5">
+      <AuxValues>
+        <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
+      </AuxValues>
+
+      <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+      <SubComponents>
+        <Component class="javax.swing.JTextPane" name="jTextPane15">
+        </Component>
+      </SubComponents>
+    </Container>
+    <Component class="javax.swing.JButton" name="GUIAnsehen23">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Ansehen"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JButton" name="GUIAnsehen24">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Ansehen"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="GUIAnsehen24ActionPerformed"/>
+      </Events>
+    </Component>
+    <Container class="javax.swing.JScrollPane" name="GUIPreis15">
+      <AuxValues>
+        <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
+      </AuxValues>
+
+      <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+      <SubComponents>
+        <Component class="javax.swing.JTextPane" name="jTextPane45">
+        </Component>
+      </SubComponents>
+    </Container>
+    <Component class="javax.swing.JButton" name="GUIAnsehen25">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Ansehen"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JButton" name="GUIAnsehen26">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Ansehen"/>
+      </Properties>
+    </Component>
+    <Container class="javax.swing.JScrollPane" name="GUIChange15">
+      <AuxValues>
+        <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
+      </AuxValues>
+
+      <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+      <SubComponents>
+        <Component class="javax.swing.JTextPane" name="jTextPane46">
+        </Component>
+      </SubComponents>
+    </Container>
+    <Container class="javax.swing.JScrollPane" name="GUIPreis21">
+      <AuxValues>
+        <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
+      </AuxValues>
+
+      <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+      <SubComponents>
+        <Component class="javax.swing.JTextPane" name="jTextPane63">
+        </Component>
+      </SubComponents>
+    </Container>
+    <Container class="javax.swing.JScrollPane" name="GUIPreis6">
+      <AuxValues>
+        <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
+      </AuxValues>
+
+      <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+      <SubComponents>
+        <Component class="javax.swing.JTextPane" name="jTextPane16">
+        </Component>
+      </SubComponents>
+    </Container>
+    <Container class="javax.swing.JScrollPane" name="GUIAktie15">
+      <AuxValues>
+        <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
+      </AuxValues>
+
+      <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+      <SubComponents>
+        <Component class="javax.swing.JTextPane" name="jTextPane47">
+        </Component>
+      </SubComponents>
+    </Container>
+    <Container class="javax.swing.JScrollPane" name="GUIChange21">
+      <AuxValues>
+        <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
+      </AuxValues>
+
+      <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+      <SubComponents>
+        <Component class="javax.swing.JTextPane" name="jTextPane64">
+        </Component>
+      </SubComponents>
+    </Container>
+    <Container class="javax.swing.JScrollPane" name="GUIChange6">
+      <AuxValues>
+        <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
+      </AuxValues>
+
+      <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+      <SubComponents>
+        <Component class="javax.swing.JTextPane" name="jTextPane17">
+        </Component>
+      </SubComponents>
+    </Container>
+    <Container class="javax.swing.JScrollPane" name="GUIAktie21">
+      <AuxValues>
+        <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
+      </AuxValues>
+
+      <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+      <SubComponents>
+        <Component class="javax.swing.JTextPane" name="jTextPane65">
+        </Component>
+      </SubComponents>
+    </Container>
+    <Container class="javax.swing.JScrollPane" name="GUIAktie6">
+      <AuxValues>
+        <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
+      </AuxValues>
+
+      <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+      <SubComponents>
+        <Component class="javax.swing.JTextPane" name="jTextPane18">
+        </Component>
+      </SubComponents>
+    </Container>
+    <Container class="javax.swing.JScrollPane" name="GUIPreis22">
+      <AuxValues>
+        <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
+      </AuxValues>
+
+      <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+      <SubComponents>
+        <Component class="javax.swing.JTextPane" name="jTextPane66">
+        </Component>
+      </SubComponents>
+    </Container>
+    <Container class="javax.swing.JScrollPane" name="GUIPreis7">
+      <AuxValues>
+        <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
+      </AuxValues>
+
+      <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+      <SubComponents>
+        <Component class="javax.swing.JTextPane" name="jTextPane19">
+        </Component>
+      </SubComponents>
+    </Container>
+    <Container class="javax.swing.JScrollPane" name="GUIChange22">
+      <AuxValues>
+        <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
+      </AuxValues>
+
+      <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+      <SubComponents>
+        <Component class="javax.swing.JTextPane" name="jTextPane67">
+        </Component>
+      </SubComponents>
+    </Container>
+    <Container class="javax.swing.JScrollPane" name="GUIChange7">
+      <AuxValues>
+        <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
+      </AuxValues>
+
+      <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+      <SubComponents>
+        <Component class="javax.swing.JTextPane" name="jTextPane20">
+        </Component>
+      </SubComponents>
+    </Container>
+    <Container class="javax.swing.JScrollPane" name="GUIPreis1">
+      <AuxValues>
+        <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
+      </AuxValues>
+
+      <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+      <SubComponents>
+        <Component class="javax.swing.JTextPane" name="jTextPane1">
+        </Component>
+      </SubComponents>
+    </Container>
+    <Container class="javax.swing.JScrollPane" name="GUIChange1">
+      <AuxValues>
+        <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
+      </AuxValues>
+
+      <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+      <SubComponents>
+        <Component class="javax.swing.JTextPane" name="jTextPane2">
+        </Component>
+      </SubComponents>
+    </Container>
+    <Container class="javax.swing.JScrollPane" name="GUIAktie1">
+      <AuxValues>
+        <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
+      </AuxValues>
+
+      <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+      <SubComponents>
+        <Component class="javax.swing.JTextPane" name="jTextPane3">
+        </Component>
+      </SubComponents>
+    </Container>
+    <Container class="javax.swing.JScrollPane" name="GUIPreis2">
+      <AuxValues>
+        <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
+      </AuxValues>
+
+      <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+      <SubComponents>
+        <Component class="javax.swing.JTextPane" name="jTextPane4">
+        </Component>
+      </SubComponents>
+    </Container>
+    <Container class="javax.swing.JScrollPane" name="GUIAktie22">
+      <AuxValues>
+        <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
+      </AuxValues>
+
+      <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+      <SubComponents>
+        <Component class="javax.swing.JTextPane" name="jTextPane68">
+        </Component>
+      </SubComponents>
+    </Container>
+    <Container class="javax.swing.JScrollPane" name="GUIAktie7">
+      <AuxValues>
+        <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
+      </AuxValues>
+
+      <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+      <SubComponents>
+        <Component class="javax.swing.JTextPane" name="jTextPane21">
+        </Component>
+      </SubComponents>
+    </Container>
+    <Container class="javax.swing.JScrollPane" name="GUIChange2">
+      <AuxValues>
+        <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
+      </AuxValues>
+
+      <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+      <SubComponents>
+        <Component class="javax.swing.JTextPane" name="jTextPane5">
+        </Component>
+      </SubComponents>
+    </Container>
+    <Container class="javax.swing.JScrollPane" name="GUIPreis23">
+      <AuxValues>
+        <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
+      </AuxValues>
+
+      <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+      <SubComponents>
+        <Component class="javax.swing.JTextPane" name="jTextPane69">
+        </Component>
+      </SubComponents>
+    </Container>
+    <Container class="javax.swing.JScrollPane" name="jScrollPane22">
+      <AuxValues>
+        <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
+      </AuxValues>
+
+      <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+      <SubComponents>
+        <Component class="javax.swing.JTextPane" name="GUIPreis8">
+        </Component>
+      </SubComponents>
+    </Container>
+    <Container class="javax.swing.JScrollPane" name="GUIChange23">
+      <AuxValues>
+        <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
+      </AuxValues>
+
+      <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+      <SubComponents>
+        <Component class="javax.swing.JTextPane" name="jTextPane70">
+        </Component>
+      </SubComponents>
+    </Container>
+    <Container class="javax.swing.JScrollPane" name="GUIChange8">
+      <AuxValues>
+        <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
+      </AuxValues>
+
+      <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+      <SubComponents>
+        <Component class="javax.swing.JTextPane" name="jTextPane23">
+        </Component>
+      </SubComponents>
+    </Container>
+    <Container class="javax.swing.JScrollPane" name="GUIAktie23">
+      <AuxValues>
+        <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
+      </AuxValues>
+
+      <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+      <SubComponents>
+        <Component class="javax.swing.JTextPane" name="jTextPane71">
+        </Component>
+      </SubComponents>
+    </Container>
+    <Container class="javax.swing.JScrollPane" name="GUIAktie8">
+      <AuxValues>
+        <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
+      </AuxValues>
+
+      <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+      <SubComponents>
+        <Component class="javax.swing.JTextPane" name="jTextPane24">
+        </Component>
+      </SubComponents>
+    </Container>
+    <Container class="javax.swing.JScrollPane" name="GUIPreis24">
+      <AuxValues>
+        <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
+      </AuxValues>
+
+      <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+      <SubComponents>
+        <Component class="javax.swing.JTextPane" name="jTextPane72">
+        </Component>
+      </SubComponents>
+    </Container>
+    <Container class="javax.swing.JScrollPane" name="GUIPreis9">
+      <AuxValues>
+        <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
+      </AuxValues>
+
+      <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+      <SubComponents>
+        <Component class="javax.swing.JTextPane" name="jTextPane25">
+        </Component>
+      </SubComponents>
+    </Container>
+    <Container class="javax.swing.JScrollPane" name="GUIAktie2">
+      <AuxValues>
+        <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
+      </AuxValues>
+
+      <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+      <SubComponents>
+        <Component class="javax.swing.JTextPane" name="jTextPane6">
+        </Component>
+      </SubComponents>
+    </Container>
+    <Container class="javax.swing.JScrollPane" name="GUIPreis3">
+      <AuxValues>
+        <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
+      </AuxValues>
+
+      <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+      <SubComponents>
+        <Component class="javax.swing.JTextPane" name="jScrollPane7">
+        </Component>
+      </SubComponents>
+    </Container>
+    <Container class="javax.swing.JScrollPane" name="GUIChange3">
+      <AuxValues>
+        <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
+      </AuxValues>
+
+      <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+      <SubComponents>
+        <Component class="javax.swing.JTextPane" name="jTextPane8">
+        </Component>
+      </SubComponents>
+    </Container>
+    <Container class="javax.swing.JScrollPane" name="GUIAktie3">
+      <AuxValues>
+        <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
+      </AuxValues>
+
+      <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+      <SubComponents>
+        <Component class="javax.swing.JTextPane" name="jTextPane9">
+        </Component>
+      </SubComponents>
+    </Container>
+    <Container class="javax.swing.JScrollPane" name="GUIChange24">
+      <AuxValues>
+        <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
+      </AuxValues>
+
+      <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+      <SubComponents>
+        <Component class="javax.swing.JTextPane" name="jTextPane73">
+        </Component>
+      </SubComponents>
+    </Container>
+    <Container class="javax.swing.JScrollPane" name="GUIChange9">
+      <AuxValues>
+        <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
+      </AuxValues>
+
+      <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+      <SubComponents>
+        <Component class="javax.swing.JTextPane" name="jTextPane26">
+        </Component>
+      </SubComponents>
+    </Container>
+    <Container class="javax.swing.JScrollPane" name="GUIPreis4">
+      <AuxValues>
+        <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
+      </AuxValues>
+
+      <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+      <SubComponents>
+        <Component class="javax.swing.JTextPane" name="jTextPane10">
+        </Component>
+      </SubComponents>
+    </Container>
+    <Component class="javax.swing.JButton" name="GUIAnsehen28">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Ansehen"/>
+      </Properties>
+    </Component>
+    <Container class="javax.swing.JScrollPane" name="GUIAktie9">
+      <AuxValues>
+        <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
+      </AuxValues>
+
+      <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+      <SubComponents>
+        <Component class="javax.swing.JTextPane" name="jTextPane27">
+        </Component>
+      </SubComponents>
+    </Container>
+    <Container class="javax.swing.JScrollPane" name="GUIAktie24">
+      <AuxValues>
+        <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
+      </AuxValues>
+
+      <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+      <SubComponents>
+        <Component class="javax.swing.JTextPane" name="jTextPane74">
+        </Component>
+      </SubComponents>
+    </Container>
+    <Container class="javax.swing.JScrollPane" name="GUIPreis10">
+      <AuxValues>
+        <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
+      </AuxValues>
+
+      <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+      <SubComponents>
+        <Component class="javax.swing.JTextPane" name="jTextPane28">
+        </Component>
+      </SubComponents>
+    </Container>
+    <Component class="javax.swing.JButton" name="GUIAnsehen27">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Ansehen"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JButton" name="GUIAnsehen22">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Ansehen"/>
+      </Properties>
+    </Component>
+    <Container class="javax.swing.JScrollPane" name="GUIChange10">
+      <AuxValues>
+        <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
+      </AuxValues>
+
+      <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+      <SubComponents>
+        <Component class="javax.swing.JTextPane" name="jTextPane29">
+        </Component>
+      </SubComponents>
+    </Container>
+    <Component class="javax.swing.JButton" name="GUIAnsehen21">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Ansehen"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JButton" name="GUIAnsehen20">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Ansehen"/>
+      </Properties>
+    </Component>
+    <Container class="javax.swing.JScrollPane" name="GUIAktie10">
+      <AuxValues>
+        <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
+      </AuxValues>
+
+      <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+      <SubComponents>
+        <Component class="javax.swing.JTextPane" name="jTextPane30">
+        </Component>
+      </SubComponents>
+    </Container>
+    <Component class="javax.swing.JButton" name="GUIAnsehen19">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Ansehen"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JButton" name="GUIAnsehen18">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Ansehen"/>
+      </Properties>
+    </Component>
+    <Container class="javax.swing.JScrollPane" name="GUIPreis11">
+      <AuxValues>
+        <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
+      </AuxValues>
+
+      <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+      <SubComponents>
+        <Component class="javax.swing.JTextPane" name="jTextPane31">
+        </Component>
+      </SubComponents>
+    </Container>
+    <Component class="javax.swing.JButton" name="GUIAnsehen17">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Ansehen"/>
+      </Properties>
+    </Component>
+    <Container class="javax.swing.JScrollPane" name="GUIPreis25">
+      <AuxValues>
+        <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
+      </AuxValues>
+
+      <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+      <SubComponents>
+        <Component class="javax.swing.JTextPane" name="jTextPane75">
+        </Component>
+      </SubComponents>
+    </Container>
+    <Container class="javax.swing.JScrollPane" name="GUIChange11">
+      <AuxValues>
+        <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
+      </AuxValues>
+
+      <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+      <SubComponents>
+        <Component class="javax.swing.JTextPane" name="jTextPane32">
+        </Component>
+      </SubComponents>
+    </Container>
+    <Container class="javax.swing.JScrollPane" name="GUIChange25">
+      <AuxValues>
+        <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
+      </AuxValues>
+
+      <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+      <SubComponents>
+        <Component class="javax.swing.JTextPane" name="jTextPane76">
+        </Component>
+      </SubComponents>
+    </Container>
+    <Container class="javax.swing.JScrollPane" name="GUIAktie11">
+      <AuxValues>
+        <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
+      </AuxValues>
+
+      <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+      <SubComponents>
+        <Component class="javax.swing.JTextPane" name="jTextPane33">
+        </Component>
+      </SubComponents>
+    </Container>
+    <Container class="javax.swing.JScrollPane" name="GUIAktie25">
+      <AuxValues>
+        <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
+      </AuxValues>
+
+      <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+      <SubComponents>
+        <Component class="javax.swing.JTextPane" name="jTextPane77">
+        </Component>
+      </SubComponents>
+    </Container>
+    <Container class="javax.swing.JScrollPane" name="GUIPreis12">
+      <AuxValues>
+        <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
+      </AuxValues>
+
+      <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+      <SubComponents>
+        <Component class="javax.swing.JTextPane" name="jTextPane34">
+        </Component>
+      </SubComponents>
+    </Container>
+    <Container class="javax.swing.JScrollPane" name="GUIPreis26">
+      <AuxValues>
+        <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
+      </AuxValues>
+
+      <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+      <SubComponents>
+        <Component class="javax.swing.JTextPane" name="jTextPane78">
+        </Component>
+      </SubComponents>
+    </Container>
+    <Container class="javax.swing.JScrollPane" name="GUIChange12">
+      <AuxValues>
+        <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
+      </AuxValues>
+
+      <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+      <SubComponents>
+        <Component class="javax.swing.JTextPane" name="jTextPane35">
+        </Component>
+      </SubComponents>
+    </Container>
   </SubComponents>
 </Form>
