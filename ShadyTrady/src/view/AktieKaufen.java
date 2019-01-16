@@ -149,7 +149,7 @@ public class AktieKaufen extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void KaufenKaufenActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_KaufenKaufenActionPerformed
-        this.c.switchTo("AktienKaufen");    }//GEN-LAST:event_KaufenKaufenActionPerformed
+        this.c.switchTo("EigenesDepot");    }//GEN-LAST:event_KaufenKaufenActionPerformed
 
     private void KaufenAbbrechenActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_KaufenAbbrechenActionPerformed
         this.c.switchTo("StockOverflowGUI");    }//GEN-LAST:event_KaufenAbbrechenActionPerformed

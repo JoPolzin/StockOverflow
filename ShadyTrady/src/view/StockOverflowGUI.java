@@ -306,20 +306,45 @@ public class StockOverflowGUI extends javax.swing.JFrame {
         GUIChange14.setViewportView(jTextPane41);
 
         GUIAnsehen30.setText("Ansehen");
+        GUIAnsehen30.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                GUIAnsehen21ActionPerformed(evt);
+            }
+        });
 
         GUIAktie14.setViewportView(jTextPane42);
 
         GUIAnsehen29.setText("Ansehen");
+        GUIAnsehen29.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                GUIAnsehen21ActionPerformed(evt);
+            }
+        });
 
         GUIChange30.setViewportView(jTextPane85);
 
         GUIAnsehen1.setText("Ansehen");
+        GUIAnsehen1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                GUIAnsehen21ActionPerformed(evt);
+            }
+        });
 
         GUIAnsehen2.setText("Ansehen");
+        GUIAnsehen2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                GUIAnsehen21ActionPerformed(evt);
+            }
+        });
 
         GUIAktie30.setViewportView(jTextPane86);
 
         GUIAnsehen9.setText("Ansehen");
+        GUIAnsehen9.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                GUIAnsehen21ActionPerformed(evt);
+            }
+        });
 
         GUIAnsehen10.setText("Ansehen");
         GUIAnsehen10.addActionListener(new java.awt.event.ActionListener() {
@@ -333,8 +358,18 @@ public class StockOverflowGUI extends javax.swing.JFrame {
         GUIPreis29.setViewportView(jTextPane87);
 
         GUIAnsehen11.setText("Ansehen");
+        GUIAnsehen11.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                GUIAnsehen21ActionPerformed(evt);
+            }
+        });
 
         GUIAnsehen12.setText("Ansehen");
+        GUIAnsehen12.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                GUIAnsehen21ActionPerformed(evt);
+            }
+        });
 
         GUIChange16.setViewportView(jTextPane49);
 
@@ -347,24 +382,64 @@ public class StockOverflowGUI extends javax.swing.JFrame {
         GUIChange29.setViewportView(jTextPane88);
 
         GUIAnsehen14.setText("Ansehen");
+        GUIAnsehen14.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                GUIAnsehen21ActionPerformed(evt);
+            }
+        });
 
         GUIAnsehen13.setText("Ansehen");
+        GUIAnsehen13.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                GUIAnsehen21ActionPerformed(evt);
+            }
+        });
 
         GUIAktie29.setViewportView(jTextPane89);
 
         GUIAnsehen8.setText("Ansehen");
+        GUIAnsehen8.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                GUIAnsehen21ActionPerformed(evt);
+            }
+        });
 
         GUIAnsehen7.setText("Ansehen");
+        GUIAnsehen7.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                GUIAnsehen21ActionPerformed(evt);
+            }
+        });
 
         GUIPreis30.setViewportView(jTextPane90);
 
         GUIAnsehen6.setText("Ansehen");
+        GUIAnsehen6.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                GUIAnsehen21ActionPerformed(evt);
+            }
+        });
 
         GUIAnsehen5.setText("Ansehen");
+        GUIAnsehen5.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                GUIAnsehen21ActionPerformed(evt);
+            }
+        });
 
         GUIAnsehen4.setText("Ansehen");
+        GUIAnsehen4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                GUIAnsehen21ActionPerformed(evt);
+            }
+        });
 
         GUIAnsehen3.setText("Ansehen");
+        GUIAnsehen3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                GUIAnsehen21ActionPerformed(evt);
+            }
+        });
 
         GUIAktie17.setViewportView(jTextPane53);
 
@@ -391,8 +466,18 @@ public class StockOverflowGUI extends javax.swing.JFrame {
         GUIChange4.setViewportView(jTextPane11);
 
         GUIAnsehen15.setText("Ansehen");
+        GUIAnsehen15.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                GUIAnsehen21ActionPerformed(evt);
+            }
+        });
 
         GUIAnsehen16.setText("Ansehen");
+        GUIAnsehen16.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                GUIAnsehen21ActionPerformed(evt);
+            }
+        });
 
         GUIAktie19.setViewportView(jTextPane59);
 
@@ -411,6 +496,11 @@ public class StockOverflowGUI extends javax.swing.JFrame {
         GUIAktie5.setViewportView(jTextPane15);
 
         GUIAnsehen23.setText("Ansehen");
+        GUIAnsehen23.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                GUIAnsehen21ActionPerformed(evt);
+            }
+        });
 
         GUIAnsehen24.setText("Ansehen");
         GUIAnsehen24.addActionListener(new java.awt.event.ActionListener() {
@@ -422,8 +512,18 @@ public class StockOverflowGUI extends javax.swing.JFrame {
         GUIPreis15.setViewportView(jTextPane45);
 
         GUIAnsehen25.setText("Ansehen");
+        GUIAnsehen25.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                GUIAnsehen21ActionPerformed(evt);
+            }
+        });
 
         GUIAnsehen26.setText("Ansehen");
+        GUIAnsehen26.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                GUIAnsehen21ActionPerformed(evt);
+            }
+        });
 
         GUIChange15.setViewportView(jTextPane46);
 
@@ -494,6 +594,11 @@ public class StockOverflowGUI extends javax.swing.JFrame {
         GUIPreis4.setViewportView(jTextPane10);
 
         GUIAnsehen28.setText("Ansehen");
+        GUIAnsehen28.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                GUIAnsehen21ActionPerformed(evt);
+            }
+        });
 
         GUIAktie9.setViewportView(jTextPane27);
 
@@ -502,24 +607,59 @@ public class StockOverflowGUI extends javax.swing.JFrame {
         GUIPreis10.setViewportView(jTextPane28);
 
         GUIAnsehen27.setText("Ansehen");
+        GUIAnsehen27.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                GUIAnsehen21ActionPerformed(evt);
+            }
+        });
 
         GUIAnsehen22.setText("Ansehen");
+        GUIAnsehen22.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                GUIAnsehen21ActionPerformed(evt);
+            }
+        });
 
         GUIChange10.setViewportView(jTextPane29);
 
         GUIAnsehen21.setText("Ansehen");
+        GUIAnsehen21.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                GUIAnsehen21ActionPerformed(evt);
+            }
+        });
 
         GUIAnsehen20.setText("Ansehen");
+        GUIAnsehen20.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                GUIAnsehen21ActionPerformed(evt);
+            }
+        });
 
         GUIAktie10.setViewportView(jTextPane30);
 
         GUIAnsehen19.setText("Ansehen");
+        GUIAnsehen19.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                GUIAnsehen21ActionPerformed(evt);
+            }
+        });
 
         GUIAnsehen18.setText("Ansehen");
+        GUIAnsehen18.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                GUIAnsehen21ActionPerformed(evt);
+            }
+        });
 
         GUIPreis11.setViewportView(jTextPane31);
 
         GUIAnsehen17.setText("Ansehen");
+        GUIAnsehen17.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                GUIAnsehen21ActionPerformed(evt);
+            }
+        });
 
         GUIPreis25.setViewportView(jTextPane75);
 
@@ -957,6 +1097,10 @@ public class StockOverflowGUI extends javax.swing.JFrame {
     private void GUIAnsehen24ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_GUIAnsehen24ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_GUIAnsehen24ActionPerformed
+
+    private void GUIAnsehen21ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_GUIAnsehen21ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_GUIAnsehen21ActionPerformed
 
     /**
      * @param args the command line arguments

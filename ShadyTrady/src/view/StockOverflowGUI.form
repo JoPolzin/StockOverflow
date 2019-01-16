@@ -658,6 +658,9 @@
       <Properties>
         <Property name="text" type="java.lang.String" value="Ansehen"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="GUIAnsehen21ActionPerformed"/>
+      </Events>
     </Component>
     <Container class="javax.swing.JScrollPane" name="GUIAktie14">
       <AuxValues>
@@ -674,6 +677,9 @@
       <Properties>
         <Property name="text" type="java.lang.String" value="Ansehen"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="GUIAnsehen21ActionPerformed"/>
+      </Events>
     </Component>
     <Container class="javax.swing.JScrollPane" name="GUIChange30">
       <AuxValues>
@@ -690,11 +696,17 @@
       <Properties>
         <Property name="text" type="java.lang.String" value="Ansehen"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="GUIAnsehen21ActionPerformed"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JButton" name="GUIAnsehen2">
       <Properties>
         <Property name="text" type="java.lang.String" value="Ansehen"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="GUIAnsehen21ActionPerformed"/>
+      </Events>
     </Component>
     <Container class="javax.swing.JScrollPane" name="GUIAktie30">
       <AuxValues>
@@ -711,6 +723,9 @@
       <Properties>
         <Property name="text" type="java.lang.String" value="Ansehen"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="GUIAnsehen21ActionPerformed"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JButton" name="GUIAnsehen10">
       <Properties>
@@ -746,11 +761,17 @@
       <Properties>
         <Property name="text" type="java.lang.String" value="Ansehen"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="GUIAnsehen21ActionPerformed"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JButton" name="GUIAnsehen12">
       <Properties>
         <Property name="text" type="java.lang.String" value="Ansehen"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="GUIAnsehen21ActionPerformed"/>
+      </Events>
     </Component>
     <Container class="javax.swing.JScrollPane" name="GUIChange16">
       <AuxValues>
@@ -811,11 +832,17 @@
       <Properties>
         <Property name="text" type="java.lang.String" value="Ansehen"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="GUIAnsehen21ActionPerformed"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JButton" name="GUIAnsehen13">
       <Properties>
         <Property name="text" type="java.lang.String" value="Ansehen"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="GUIAnsehen21ActionPerformed"/>
+      </Events>
     </Component>
     <Container class="javax.swing.JScrollPane" name="GUIAktie29">
       <AuxValues>
@@ -832,11 +859,17 @@
       <Properties>
         <Property name="text" type="java.lang.String" value="Ansehen"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="GUIAnsehen21ActionPerformed"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JButton" name="GUIAnsehen7">
       <Properties>
         <Property name="text" type="java.lang.String" value="Ansehen"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="GUIAnsehen21ActionPerformed"/>
+      </Events>
     </Component>
     <Container class="javax.swing.JScrollPane" name="GUIPreis30">
       <AuxValues>
@@ -853,21 +886,33 @@
       <Properties>
         <Property name="text" type="java.lang.String" value="Ansehen"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="GUIAnsehen21ActionPerformed"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JButton" name="GUIAnsehen5">
       <Properties>
         <Property name="text" type="java.lang.String" value="Ansehen"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="GUIAnsehen21ActionPerformed"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JButton" name="GUIAnsehen4">
       <Properties>
         <Property name="text" type="java.lang.String" value="Ansehen"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="GUIAnsehen21ActionPerformed"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JButton" name="GUIAnsehen3">
       <Properties>
         <Property name="text" type="java.lang.String" value="Ansehen"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="GUIAnsehen21ActionPerformed"/>
+      </Events>
     </Component>
     <Container class="javax.swing.JScrollPane" name="GUIAktie17">
       <AuxValues>
@@ -987,11 +1032,17 @@
       <Properties>
         <Property name="text" type="java.lang.String" value="Ansehen"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="GUIAnsehen21ActionPerformed"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JButton" name="GUIAnsehen16">
       <Properties>
         <Property name="text" type="java.lang.String" value="Ansehen"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="GUIAnsehen21ActionPerformed"/>
+      </Events>
     </Component>
     <Container class="javax.swing.JScrollPane" name="GUIAktie19">
       <AuxValues>
@@ -1085,6 +1136,9 @@
       <Properties>
         <Property name="text" type="java.lang.String" value="Ansehen"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="GUIAnsehen21ActionPerformed"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JButton" name="GUIAnsehen24">
       <Properties>
@@ -1109,11 +1163,17 @@
       <Properties>
         <Property name="text" type="java.lang.String" value="Ansehen"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="GUIAnsehen21ActionPerformed"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JButton" name="GUIAnsehen26">
       <Properties>
         <Property name="text" type="java.lang.String" value="Ansehen"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="GUIAnsehen21ActionPerformed"/>
+      </Events>
     </Component>
     <Container class="javax.swing.JScrollPane" name="GUIChange15">
       <AuxValues>
@@ -1493,6 +1553,9 @@
       <Properties>
         <Property name="text" type="java.lang.String" value="Ansehen"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="GUIAnsehen21ActionPerformed"/>
+      </Events>
     </Component>
     <Container class="javax.swing.JScrollPane" name="GUIAktie9">
       <AuxValues>
@@ -1531,11 +1594,17 @@
       <Properties>
         <Property name="text" type="java.lang.String" value="Ansehen"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="GUIAnsehen21ActionPerformed"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JButton" name="GUIAnsehen22">
       <Properties>
         <Property name="text" type="java.lang.String" value="Ansehen"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="GUIAnsehen21ActionPerformed"/>
+      </Events>
     </Component>
     <Container class="javax.swing.JScrollPane" name="GUIChange10">
       <AuxValues>
@@ -1552,11 +1621,17 @@
       <Properties>
         <Property name="text" type="java.lang.String" value="Ansehen"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="GUIAnsehen21ActionPerformed"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JButton" name="GUIAnsehen20">
       <Properties>
         <Property name="text" type="java.lang.String" value="Ansehen"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="GUIAnsehen21ActionPerformed"/>
+      </Events>
     </Component>
     <Container class="javax.swing.JScrollPane" name="GUIAktie10">
       <AuxValues>
@@ -1573,11 +1648,17 @@
       <Properties>
         <Property name="text" type="java.lang.String" value="Ansehen"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="GUIAnsehen21ActionPerformed"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JButton" name="GUIAnsehen18">
       <Properties>
         <Property name="text" type="java.lang.String" value="Ansehen"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="GUIAnsehen21ActionPerformed"/>
+      </Events>
     </Component>
     <Container class="javax.swing.JScrollPane" name="GUIPreis11">
       <AuxValues>
@@ -1594,6 +1675,9 @@
       <Properties>
         <Property name="text" type="java.lang.String" value="Ansehen"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="GUIAnsehen21ActionPerformed"/>
+      </Events>
     </Component>
     <Container class="javax.swing.JScrollPane" name="GUIPreis25">
       <AuxValues>
