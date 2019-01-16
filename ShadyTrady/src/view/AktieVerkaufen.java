@@ -34,46 +34,46 @@ public class AktieVerkaufen extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jLabel1 = new javax.swing.JLabel();
-        jScrollPane1 = new javax.swing.JScrollPane();
+        StockOverflowVerkaufen = new javax.swing.JLabel();
+        VerkaufenNameDerAktieEingabe = new javax.swing.JScrollPane();
         jTextPane1 = new javax.swing.JTextPane();
-        jLabel2 = new javax.swing.JLabel();
-        jLabel3 = new javax.swing.JLabel();
-        jScrollPane2 = new javax.swing.JScrollPane();
+        VerkaufenNameDerAktie = new javax.swing.JLabel();
+        VerkaufenStückzahl = new javax.swing.JLabel();
+        VerkaufenStückzahlEingeben = new javax.swing.JScrollPane();
         jTextPane2 = new javax.swing.JTextPane();
-        jLabel4 = new javax.swing.JLabel();
-        jScrollPane3 = new javax.swing.JScrollPane();
+        VerkaufenPreisProStück = new javax.swing.JLabel();
+        VerkaufenPreisProStückEingeben = new javax.swing.JScrollPane();
         jTextPane3 = new javax.swing.JTextPane();
-        jLabel5 = new javax.swing.JLabel();
-        jScrollPane4 = new javax.swing.JScrollPane();
+        VerkaufenGesamtpreis = new javax.swing.JLabel();
+        VerkaufenGesamtpreisEingeben = new javax.swing.JScrollPane();
         jTextPane4 = new javax.swing.JTextPane();
-        jButton2 = new javax.swing.JButton();
-        jButton3 = new javax.swing.JButton();
+        VerkaufenAbbrechen = new javax.swing.JButton();
+        VerkaufenVerkaufen = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        jLabel1.setFont(new java.awt.Font("Penultimate", 1, 36)); // NOI18N
-        jLabel1.setText("Stock Overflow");
+        StockOverflowVerkaufen.setFont(new java.awt.Font("Penultimate", 1, 36)); // NOI18N
+        StockOverflowVerkaufen.setText("Stock Overflow");
 
-        jScrollPane1.setViewportView(jTextPane1);
+        VerkaufenNameDerAktieEingabe.setViewportView(jTextPane1);
 
-        jLabel2.setText("Name der Aktie");
+        VerkaufenNameDerAktie.setText("Name der Aktie");
 
-        jLabel3.setText("Stückzahl");
+        VerkaufenStückzahl.setText("Stückzahl");
 
-        jScrollPane2.setViewportView(jTextPane2);
+        VerkaufenStückzahlEingeben.setViewportView(jTextPane2);
 
-        jLabel4.setText("Preis pro Stück");
+        VerkaufenPreisProStück.setText("Preis pro Stück");
 
-        jScrollPane3.setViewportView(jTextPane3);
+        VerkaufenPreisProStückEingeben.setViewportView(jTextPane3);
 
-        jLabel5.setText("Gesamtpreis");
+        VerkaufenGesamtpreis.setText("Gesamtpreis");
 
-        jScrollPane4.setViewportView(jTextPane4);
+        VerkaufenGesamtpreisEingeben.setViewportView(jTextPane4);
 
-        jButton2.setText("Abbrechen");
+        VerkaufenAbbrechen.setText("Abbrechen");
 
-        jButton3.setText("Verkaufen");
+        VerkaufenVerkaufen.setText("Verkaufen");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -84,54 +84,54 @@ public class AktieVerkaufen extends javax.swing.JFrame {
                     .addGroup(layout.createSequentialGroup()
                         .addGap(67, 67, 67)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel5)
-                            .addComponent(jScrollPane4, javax.swing.GroupLayout.PREFERRED_SIZE, 141, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jLabel2)
-                            .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 141, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(VerkaufenGesamtpreis)
+                            .addComponent(VerkaufenGesamtpreisEingeben, javax.swing.GroupLayout.PREFERRED_SIZE, 141, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(VerkaufenNameDerAktie)
+                            .addComponent(VerkaufenNameDerAktieEingabe, javax.swing.GroupLayout.PREFERRED_SIZE, 141, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                .addComponent(jLabel1)
+                                .addComponent(StockOverflowVerkaufen)
                                 .addGroup(layout.createSequentialGroup()
                                     .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                        .addComponent(jLabel3)
-                                        .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 141, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                        .addComponent(VerkaufenStückzahl)
+                                        .addComponent(VerkaufenStückzahlEingeben, javax.swing.GroupLayout.PREFERRED_SIZE, 141, javax.swing.GroupLayout.PREFERRED_SIZE))
                                     .addGap(42, 42, 42)
                                     .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                        .addComponent(jLabel4)
-                                        .addComponent(jScrollPane3, javax.swing.GroupLayout.PREFERRED_SIZE, 141, javax.swing.GroupLayout.PREFERRED_SIZE))))))
+                                        .addComponent(VerkaufenPreisProStück)
+                                        .addComponent(VerkaufenPreisProStückEingeben, javax.swing.GroupLayout.PREFERRED_SIZE, 141, javax.swing.GroupLayout.PREFERRED_SIZE))))))
                     .addGroup(layout.createSequentialGroup()
                         .addGap(205, 205, 205)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 98, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jButton3, javax.swing.GroupLayout.PREFERRED_SIZE, 98, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                            .addComponent(VerkaufenAbbrechen, javax.swing.GroupLayout.PREFERRED_SIZE, 98, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(VerkaufenVerkaufen, javax.swing.GroupLayout.PREFERRED_SIZE, 98, javax.swing.GroupLayout.PREFERRED_SIZE))))
                 .addContainerGap(109, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addGap(25, 25, 25)
-                .addComponent(jLabel1)
+                .addComponent(StockOverflowVerkaufen)
                 .addGap(35, 35, 35)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addGroup(layout.createSequentialGroup()
-                        .addComponent(jLabel2)
+                        .addComponent(VerkaufenNameDerAktie)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(VerkaufenNameDerAktieEingabe, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(18, 18, 18)
-                        .addComponent(jLabel3)
+                        .addComponent(VerkaufenStückzahl)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addComponent(VerkaufenStückzahlEingeben, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(layout.createSequentialGroup()
-                        .addComponent(jLabel4)
+                        .addComponent(VerkaufenPreisProStück)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(jScrollPane3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addComponent(VerkaufenPreisProStückEingeben, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addGap(28, 28, 28)
-                .addComponent(jLabel5)
+                .addComponent(VerkaufenGesamtpreis)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jScrollPane4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(VerkaufenGesamtpreisEingeben, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(74, 74, 74)
-                .addComponent(jButton3, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(VerkaufenVerkaufen, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(28, 28, 28)
-                .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(VerkaufenAbbrechen, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(64, Short.MAX_VALUE))
         );
 
@@ -181,17 +181,17 @@ public class AktieVerkaufen extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton2;
-    private javax.swing.JButton jButton3;
-    private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel3;
-    private javax.swing.JLabel jLabel4;
-    private javax.swing.JLabel jLabel5;
-    private javax.swing.JScrollPane jScrollPane1;
-    private javax.swing.JScrollPane jScrollPane2;
-    private javax.swing.JScrollPane jScrollPane3;
-    private javax.swing.JScrollPane jScrollPane4;
+    private javax.swing.JLabel StockOverflowVerkaufen;
+    private javax.swing.JButton VerkaufenAbbrechen;
+    private javax.swing.JLabel VerkaufenGesamtpreis;
+    private javax.swing.JScrollPane VerkaufenGesamtpreisEingeben;
+    private javax.swing.JLabel VerkaufenNameDerAktie;
+    private javax.swing.JScrollPane VerkaufenNameDerAktieEingabe;
+    private javax.swing.JLabel VerkaufenPreisProStück;
+    private javax.swing.JScrollPane VerkaufenPreisProStückEingeben;
+    private javax.swing.JLabel VerkaufenStückzahl;
+    private javax.swing.JScrollPane VerkaufenStückzahlEingeben;
+    private javax.swing.JButton VerkaufenVerkaufen;
     private javax.swing.JTextPane jTextPane1;
     private javax.swing.JTextPane jTextPane2;
     private javax.swing.JTextPane jTextPane3;

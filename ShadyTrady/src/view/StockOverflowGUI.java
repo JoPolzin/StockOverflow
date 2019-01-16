@@ -21,6 +21,15 @@ public class StockOverflowGUI extends javax.swing.JFrame {
         
         initComponents();
     }
+    
+     /**
+     * Creates new form NewJFrame
+     */
+    public StockOverflowGUI() {
+       
+        
+        initComponents();
+    }
 
     /**
      * This method is called from within the constructor to initialize the form.
