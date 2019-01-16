@@ -72,8 +72,18 @@ public class AktieVerkaufen extends javax.swing.JFrame {
         VerkaufenGesamtpreisEingeben.setViewportView(jTextPane4);
 
         VerkaufenAbbrechen.setText("Abbrechen");
+        VerkaufenAbbrechen.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                VerkaufenAbbrechenActionPerformed(evt);
+            }
+        });
 
         VerkaufenVerkaufen.setText("Verkaufen");
+        VerkaufenVerkaufen.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                VerkaufenVerkaufenActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -137,6 +147,12 @@ public class AktieVerkaufen extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void VerkaufenVerkaufenActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_VerkaufenVerkaufenActionPerformed
+        this.c.switchTo("AktieVerkaufen");    }//GEN-LAST:event_VerkaufenVerkaufenActionPerformed
+
+    private void VerkaufenAbbrechenActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_VerkaufenAbbrechenActionPerformed
+        this.c.switchTo("StockOverflowGUI");    }//GEN-LAST:event_VerkaufenAbbrechenActionPerformed
 
     /**
      * @param args the command line arguments
