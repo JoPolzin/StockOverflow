@@ -13,6 +13,7 @@ import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
+import control.maincontrol;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
@@ -35,9 +36,22 @@ public class FirebaseSaveObject {
         fso.initFirebase();
         fso.save(item);
         fso.receive();
+        
+        String s = "\"/testnutzer";
+        String t = "dfsdf";
+        fso.Login(s, t);
     }
 
     private FirebaseDatabase firebaseDatabase;
+    private maincontrol c;
+
+    
+    public FirebaseSaveObject() {
+    }
+    
+    public FirebaseSaveObject(maincontrol mc) {
+        this.c = mc;
+    }
 
     /**
      * initialize firebase.
@@ -54,19 +68,20 @@ public class FirebaseSaveObject {
             FirebaseApp.initializeApp(options);
             firebaseDatabase = FirebaseDatabase.getInstance();
             firebaseDatabase.getReference("/").addValueEventListener(
-                    new ValueEventListener() {
-                @Override
-                public void onDataChange(DataSnapshot dataSnapshot) {
-                    // for example: if you're expecting your user's data as an object of the "User" class.
-                    System.out.println(dataSnapshot.getValue());
-                    ;
-                }
-
-                @Override
-                public void onCancelled(DatabaseError databaseError) {
-                    // read query is cancelled.
-                }
-            });
+                new ValueEventListener() {
+                    @Override
+                    public void onDataChange(DataSnapshot dataSnapshot) {
+                        // for example: if you're expecting your user's data as an object of the "User" class.
+                        Item item = dataSnapshot.getValue(Item.class);
+                System.err.println(item.getPrice());
+                        ;
+                    }
+                    
+                    @Override
+                    public void onCancelled(DatabaseError databaseError) {
+                        // read query is cancelled.
+                    }
+                });
         } catch (FileNotFoundException ex) {
             ex.printStackTrace();
         } catch (IOException ex) {
@@ -87,10 +102,13 @@ public class FirebaseSaveObject {
             DatabaseReference databaseReference = firebaseDatabase.getReference("/");
 
             /* Get existing child or will be created new child. */
-            DatabaseReference childReference = databaseReference.child("item2");
+            DatabaseReference childReference = databaseReference.child("Benutzer");
             Map<String, Object> userUpdates = new HashMap<>();
             userUpdates.put("alanisawesome/nickname", "Alan The Machine");
             userUpdates.put("alanisawesome/passwort", "geheim");
+            userUpdates.put("testnutzer/nickname", "test");
+            userUpdates.put("testnutzer/passwort", "geheim");
+            userUpdates.put("testnutzer/vorname", "Test");
             userUpdates.put("gracehop/nickname", "Amazing Grace");
             userUpdates.put("teacher/nickname", "Muster");
 
@@ -124,7 +142,7 @@ public class FirebaseSaveObject {
 
     public void receive() {
         //final FirebaseDatabase database = FirebaseDatabase.getInstance();
-        DatabaseReference ref = firebaseDatabase.getReference("/item2");
+        DatabaseReference ref = firebaseDatabase.getReference("/testnutzer");
 
 // Attach a listener to read the data at our posts reference
         ref.addValueEventListener(new ValueEventListener() {
@@ -132,8 +150,8 @@ public class FirebaseSaveObject {
             public void onDataChange(DataSnapshot dataSnapshot) {
                 //Post post = dataSnapshot.getValue(Post.class);
                 System.out.println(dataSnapshot.getValue());
-                Item it = dataSnapshot.getValue(Item.class);
-                System.out.println(it.getId());
+                //Item it = dataSnapshot.getValue(Item.class);
+                System.out.println(dataSnapshot.getValue());
             }
 
             @Override
@@ -142,4 +160,51 @@ public class FirebaseSaveObject {
             }
         });
     }
+    
+    /**
+     *
+     * @param Benutzername
+     */
+    public void Login(String Benutzername, String Password) {
+        //final FirebaseDatabase database = FirebaseDatabase.getInstance();
+        DatabaseReference ref = firebaseDatabase.getReference("/" + Benutzername );
+
+        
+        
+        
+  
+// Attach a listener to read the data at our posts reference
+        ref.addListenerForSingleValueEvent(new ValueEventListener() {
+
+            @Override
+            public void onDataChange(DataSnapshot dataSnapshot) {
+                //Post post = dataSnapshot.getValue(Post.class);
+               
+                //Item it = dataSnapshot.getValue(Item.class);
+                    
+                 String data = dataSnapshot.getValue().toString();
+                 
+                 String[] datarray;
+                 
+                 datarray = data.split(", ");
+                 datarray = data.split("=");
+                 
+                 
+            
+                
+                
+                
+                
+            }
+
+            @Override
+            public void onCancelled(DatabaseError databaseError) {
+                System.out.println("The read failed: " + databaseError.getCode());
+            }
+        });
+        
+
+    
+    
+}
 }
