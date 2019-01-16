@@ -5,6 +5,7 @@
  */
 package view;
 import control.maincontrol;
+import java.util.Arrays;
 
 
 /**
@@ -57,8 +58,19 @@ public class AnmeldeFenster extends javax.swing.JFrame {
         Passwort.setFont(new java.awt.Font("Penultimate", 0, 11)); // NOI18N
         Passwort.setText("Passwort");
 
+        PasswortEingeben.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                PasswortEingebenActionPerformed(evt);
+            }
+        });
+
         Anmelden.setFont(new java.awt.Font("Penultimate", 0, 14)); // NOI18N
         Anmelden.setText("Anmelden");
+        Anmelden.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                AnmeldenActionPerformed(evt);
+            }
+        });
 
         AnmeldenAbbrechen.setFont(new java.awt.Font("Penultimate", 0, 14)); // NOI18N
         AnmeldenAbbrechen.setText("Abbrechen");
@@ -116,6 +128,16 @@ public class AnmeldeFenster extends javax.swing.JFrame {
     private void AnmeldenAbbrechenActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_AnmeldenAbbrechenActionPerformed
        this.c.switchTo("StockOverflowGUI");
     }//GEN-LAST:event_AnmeldenAbbrechenActionPerformed
+
+    private void AnmeldenActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_AnmeldenActionPerformed
+        this.c.login(this.jTextPane1.getText(), new String(this.PasswortEingeben.getPassword()));
+       
+       
+    }//GEN-LAST:event_AnmeldenActionPerformed
+
+    private void PasswortEingebenActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_PasswortEingebenActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_PasswortEingebenActionPerformed
 
     /**
      * @param args the command line arguments

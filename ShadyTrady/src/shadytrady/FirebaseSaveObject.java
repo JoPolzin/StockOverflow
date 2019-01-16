@@ -25,6 +25,8 @@ import java.util.logging.Logger;
 
 public class FirebaseSaveObject {
 
+    private String password;
+
     public static void main(String[] args) {
         Item item = new Item();
         item.setId(25L);
@@ -36,21 +38,29 @@ public class FirebaseSaveObject {
         fso.initFirebase();
         fso.save(item);
         fso.receive();
-        
-        String s = "\"/testnutzer";
-        String t = "dfsdf";
-        fso.Login(s, t);
+
+        String s = "testnutzer";
+        ;
+        fso.getpassword(s);
     }
 
     private FirebaseDatabase firebaseDatabase;
     private maincontrol c;
 
-    
     public FirebaseSaveObject() {
     }
-    
+
     public FirebaseSaveObject(maincontrol mc) {
         this.c = mc;
+
+        Item item = new Item();
+        item.setId(25L);
+        item.setName("AutoG");
+        item.setPrice(800.00);
+
+        this.initFirebase();
+        this.save(item);
+
     }
 
     /**
@@ -68,20 +78,20 @@ public class FirebaseSaveObject {
             FirebaseApp.initializeApp(options);
             firebaseDatabase = FirebaseDatabase.getInstance();
             firebaseDatabase.getReference("/").addValueEventListener(
-                new ValueEventListener() {
-                    @Override
-                    public void onDataChange(DataSnapshot dataSnapshot) {
-                        // for example: if you're expecting your user's data as an object of the "User" class.
-                        Item item = dataSnapshot.getValue(Item.class);
-                System.err.println(item.getPrice());
-                        ;
-                    }
-                    
-                    @Override
-                    public void onCancelled(DatabaseError databaseError) {
-                        // read query is cancelled.
-                    }
-                });
+                    new ValueEventListener() {
+                @Override
+                public void onDataChange(DataSnapshot dataSnapshot) {
+                    // for example: if you're expecting your user's data as an object of the "User" class.
+                    Item item = dataSnapshot.getValue(Item.class);
+                    System.err.println(item.getPrice());
+                    ;
+                }
+
+                @Override
+                public void onCancelled(DatabaseError databaseError) {
+                    // read query is cancelled.
+                }
+            });
         } catch (FileNotFoundException ex) {
             ex.printStackTrace();
         } catch (IOException ex) {
@@ -160,51 +170,40 @@ public class FirebaseSaveObject {
             }
         });
     }
-    
+
     /**
      *
      * @param Benutzername
+     * @return
      */
-    public void Login(String Benutzername, String Password) {
+    public String getpassword(String Benutzername) {
         //final FirebaseDatabase database = FirebaseDatabase.getInstance();
-        DatabaseReference ref = firebaseDatabase.getReference("/" + Benutzername );
+        DatabaseReference ref = firebaseDatabase.getReference("/" + Benutzername);
 
-        
-        
-        
-  
 // Attach a listener to read the data at our posts reference
         ref.addListenerForSingleValueEvent(new ValueEventListener() {
 
             @Override
             public void onDataChange(DataSnapshot dataSnapshot) {
                 //Post post = dataSnapshot.getValue(Post.class);
-               
+
                 //Item it = dataSnapshot.getValue(Item.class);
-                    
-                 String data = dataSnapshot.getValue().toString();
-                 
-                 String[] datarray;
-                 
-                 datarray = data.split(", ");
-                 datarray = data.split("=");
-                 
-                 
-            
-                
-                
-                
-                
+                String data = dataSnapshot.getValue().toString();
+
+                String[] datarray = data.substring(0, data.length()).split(", ");
+               
+                password = datarray[0].split("=")[1];
+
             }
 
             @Override
             public void onCancelled(DatabaseError databaseError) {
                 System.out.println("The read failed: " + databaseError.getCode());
             }
-        });
-        
 
-    
-    
-}
+        });
+       
+        return password;
+
+    }
 }
