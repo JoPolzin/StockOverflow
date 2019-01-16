@@ -99,9 +99,8 @@ public class OA {
      * Konfiguriert die DNS-Liste.
      */
     public static void DnsConfig() {
-        getDNS().put("Siemens", "DE0007236101");
-        getDNS().put("adidas AG" , "DE000A1EWWW0");                
-        getDNS().put("SAP SE", "DE0007164600");
+        
+        getDNS().put("adidas AG" , "DE000A1EWWW0");                        
         getDNS().put("Allianz SE","");
         getDNS().put("BASF SE","");
         getDNS().put("Bayer AG","");
@@ -122,11 +121,15 @@ public class OA {
         getDNS().put("Henkel AG & Co. KGaA VZ","DE0006048432");
         getDNS().put("Infineon Technologies AG","DE0006231004");
         getDNS().put("Linde PLC","IE00BZ12WP82");
-        getDNS().put("","");
-        getDNS().put("","");
-        getDNS().put("","");
-        getDNS().put("","");
-        getDNS().put("","");
+        getDNS().put("Merck KGaA","DE0006599905");
+        getDNS().put("Münchener Rückvers.-Ges. AG","DE0008430026");
+        getDNS().put("RWE AG","DE0007037129");
+        getDNS().put("SAP SE", "DE0007164600");
+        getDNS().put("Siemens", "DE0007236101");
+        getDNS().put("thyssenkrupp AG","DE0007500001");
+        getDNS().put("Volkswagen AG VZ","DE0007664039");
+        getDNS().put("Vonovia SE","DE000A1ML7J1");
+        getDNS().put("Wirecard AG","DE0007472060");
         
         
         
