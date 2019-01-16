@@ -25,11 +25,7 @@
       <Group type="103" groupAlignment="0" attributes="0">
           <Group type="102" attributes="0">
               <Group type="103" groupAlignment="0" attributes="0">
-                  <Group type="102" alignment="1" attributes="0">
-                      <EmptySpace max="32767" attributes="0"/>
-                      <Component id="zurückAktieAnsehen" min="-2" max="-2" attributes="0"/>
-                  </Group>
-                  <Group type="102" alignment="1" attributes="0">
+                  <Group type="102" attributes="0">
                       <Group type="103" groupAlignment="0" attributes="0">
                           <Group type="102" attributes="0">
                               <EmptySpace pref="231" max="32767" attributes="0"/>
@@ -38,7 +34,21 @@
                           </Group>
                           <Group type="102" alignment="0" attributes="0">
                               <EmptySpace min="-2" pref="44" max="-2" attributes="0"/>
-                              <Component id="namederAktieAnsehen" min="-2" pref="198" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                                  <Component id="namederAktieAnsehen" min="-2" pref="198" max="-2" attributes="0"/>
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <Component id="TagAnsehen" min="-2" pref="73" max="-2" attributes="0"/>
+                                      <EmptySpace max="-2" attributes="0"/>
+                                      <Component id="WocheAnsehen" min="-2" pref="75" max="-2" attributes="0"/>
+                                      <EmptySpace max="-2" attributes="0"/>
+                                      <Component id="MonatAnsehen" min="-2" pref="71" max="-2" attributes="0"/>
+                                      <EmptySpace max="-2" attributes="0"/>
+                                      <Component id="HalbesJahrAnsehen" min="-2" max="-2" attributes="0"/>
+                                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                      <Component id="JahrAnsehen" min="-2" pref="69" max="-2" attributes="0"/>
+                                  </Group>
+                                  <Component id="GrafikAnsehen" alignment="0" max="32767" attributes="0"/>
+                              </Group>
                               <EmptySpace max="32767" attributes="0"/>
                           </Group>
                       </Group>
@@ -55,10 +65,14 @@
                                   <EmptySpace type="separate" max="-2" attributes="0"/>
                                   <Component id="LogInAnsehen" min="-2" pref="75" max="-2" attributes="0"/>
                               </Group>
-                              <Component id="jScrollPane1" alignment="0" min="-2" pref="84" max="-2" attributes="0"/>
+                              <Component id="PreisAngabeAnsehen" alignment="0" min="-2" pref="84" max="-2" attributes="0"/>
                           </Group>
-                          <Component id="jScrollPane2" alignment="0" min="-2" pref="84" max="-2" attributes="0"/>
+                          <Component id="ChangeAngabeAnsehen" alignment="0" min="-2" pref="84" max="-2" attributes="0"/>
                       </Group>
+                  </Group>
+                  <Group type="102" alignment="1" attributes="0">
+                      <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                      <Component id="zurückAktieAnsehen" min="-2" pref="75" max="-2" attributes="0"/>
                   </Group>
               </Group>
               <EmptySpace max="-2" attributes="0"/>
@@ -81,23 +95,39 @@
                       <Component id="ÜberschriftAnsehen" min="-2" max="-2" attributes="0"/>
                   </Group>
               </Group>
-              <EmptySpace max="-2" attributes="0"/>
-              <Component id="zurückAktieAnsehen" min="-2" max="-2" attributes="0"/>
-              <EmptySpace min="-2" pref="21" max="-2" attributes="0"/>
-              <Component id="namederAktieAnsehen" min="-2" pref="29" max="-2" attributes="0"/>
-              <EmptySpace min="-2" pref="58" max="-2" attributes="0"/>
-              <Component id="ChangeAnsehen" min="-2" pref="27" max="-2" attributes="0"/>
-              <EmptySpace max="-2" attributes="0"/>
-              <Component id="jScrollPane2" min="-2" max="-2" attributes="0"/>
-              <EmptySpace min="-2" pref="37" max="-2" attributes="0"/>
-              <Component id="PreisAnsehen" min="-2" pref="26" max="-2" attributes="0"/>
-              <EmptySpace max="-2" attributes="0"/>
-              <Component id="jScrollPane1" min="-2" max="-2" attributes="0"/>
-              <EmptySpace min="-2" pref="28" max="-2" attributes="0"/>
-              <Component id="KaufenAnsehen" min="-2" max="-2" attributes="0"/>
-              <EmptySpace max="-2" attributes="0"/>
-              <Component id="VerkaufenAnsehen" min="-2" max="-2" attributes="0"/>
-              <EmptySpace pref="151" max="32767" attributes="0"/>
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" attributes="0">
+                      <EmptySpace min="-2" pref="50" max="-2" attributes="0"/>
+                      <Component id="namederAktieAnsehen" min="-2" pref="29" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="58" max="-2" attributes="0"/>
+                      <Component id="ChangeAnsehen" min="-2" pref="27" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="ChangeAngabeAnsehen" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="37" max="-2" attributes="0"/>
+                      <Component id="PreisAnsehen" min="-2" pref="26" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="PreisAngabeAnsehen" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="28" max="-2" attributes="0"/>
+                      <Component id="KaufenAnsehen" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="VerkaufenAnsehen" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="zurückAktieAnsehen" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="84" max="-2" attributes="0"/>
+                      <Component id="GrafikAnsehen" min="-2" pref="270" max="-2" attributes="0"/>
+                  </Group>
+              </Group>
+              <EmptySpace type="separate" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="TagAnsehen" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="WocheAnsehen" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="MonatAnsehen" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="HalbesJahrAnsehen" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="JahrAnsehen" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace pref="90" max="32767" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
@@ -152,7 +182,7 @@
     <Component class="javax.swing.JLabel" name="ChangeAnsehen">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-          <Font name="Penultimate" size="14" style="0"/>
+          <Font name="Tahoma" size="14" style="0"/>
         </Property>
         <Property name="text" type="java.lang.String" value="Change"/>
       </Properties>
@@ -160,7 +190,7 @@
     <Component class="javax.swing.JLabel" name="PreisAnsehen">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-          <Font name="Penultimate" size="14" style="0"/>
+          <Font name="Tahoma" size="14" style="0"/>
         </Property>
         <Property name="text" type="java.lang.String" value="Preis"/>
       </Properties>
@@ -175,7 +205,7 @@
         <Property name="text" type="java.lang.String" value="Verkaufen"/>
       </Properties>
     </Component>
-    <Container class="javax.swing.JScrollPane" name="jScrollPane1">
+    <Container class="javax.swing.JScrollPane" name="PreisAngabeAnsehen">
       <AuxValues>
         <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
       </AuxValues>
@@ -186,7 +216,7 @@
         </Component>
       </SubComponents>
     </Container>
-    <Container class="javax.swing.JScrollPane" name="jScrollPane2">
+    <Container class="javax.swing.JScrollPane" name="ChangeAngabeAnsehen">
       <AuxValues>
         <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
       </AuxValues>
@@ -197,5 +227,32 @@
         </Component>
       </SubComponents>
     </Container>
+    <Component class="javax.swing.JLabel" name="GrafikAnsehen">
+    </Component>
+    <Component class="javax.swing.JButton" name="TagAnsehen">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Tag"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JButton" name="WocheAnsehen">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Woche"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JButton" name="MonatAnsehen">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Monat"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JButton" name="HalbesJahrAnsehen">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="6 Monate"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JButton" name="JahrAnsehen">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Jahr"/>
+      </Properties>
+    </Component>
   </SubComponents>
 </Form>

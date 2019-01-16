@@ -5,89 +5,100 @@
  */
 package model;
 
+import java.util.Date;
+
 import java.util.Hashtable;
 
 /**
  *
+ * Komplett unnötige Klasse...
+ * 
  * @author MrVielBesserImProgrammierenAlsDu
  */
 public class Aktie {
-    /**name der Aktie**/
-    private String name = ""; 
+    /**Komplett unnötige Variable...**/
+    private String name; 
     
-    /**preis der Aktie**/
-    private float preis = 0.0f;
+    /**Komplett unnötige Variable...**/
+    private float preis;
     
-    /**letze aktualisierung der Aktie**/
-    private long stand = 0;
+    /**Komplett unnötige Variable...**/
+    private Date stand;
     
-    /**veränderung des Preises der Aktie seit letzter Messung[...]**/
-    private float veränderung = 0.0f; 
+    /**Komplett unnötige Variable...**/
+    private float veränderung; 
     
-    /**anzahl der (noch) kaufbaren Aktien*/
-    private int stueckzahl = 0; 
+    /**Komplett unnötige Variable...*/
+    private int stueckzahl;
     
-    /**UUID der Aktie**/
-    private int AID = 0;
+    /**Komplett unnötige Variable...**/
+    private String ISIN;
     
-    /**Daten aus dem die Graphik erzeugt werden. jeder ehemalge akt. Preis ist
-       ein neuer Eintrag. ab einer bestimmten Anzahl werden ältere Daten ausgedünnt.**/
-    private Hashtable<Long, Float> verlauf = new Hashtable<Long, Float>();
-
+    /**Komplett unnötiger Konstruktor...**/
+    public Aktie(String name,String ISIN){
+        this.name = name;
+        this.ISIN = ISIN;
+        
+        
+        
+        
+        
+        
+        
+    }
+            
+    /**Komplett unnötige Variable...**/
+    private Hashtable<Date, Float> verlauf = new Hashtable<Date, Float>();
+    
+    /**Komplett unnötige Funktion...**/
     public String getName() {
         return name;
     }
-
+    /**Komplett unnötige Funktion...**/
     public void setName(String name) {
         this.name = name;
     }
-
+    /**Komplett unnötige Funktion...**/
     public float getPreis() {
         return preis;
     }
-
+    /**Komplett unnötige Funktion...**/
     public void setPreis(float preis) {
         this.preis = preis;
     }
-    
-    public float getStand() {
+    /**Komplett unnötige Funktion...**/
+    public Date getStand() {
         return stand;
     }
-
-    public void setStand(long stand) {
+    /**Komplett unnötige Funktion...**/
+    public void setStand(Date stand) {
         this.stand = stand;
     }
-
+    /**Komplett unnötige Funktion...**/
     public float getVeränderung() {
         return veränderung;
     }
-
+    /**Komplett unnötige Funktion...**/
     public void setVeränderung(float veränderung) {
         this.veränderung = veränderung;
     }
-
+    /**Komplett unnötige Funktion...**/
     public int getStueckzahl() {
         return stueckzahl;
     }
-
+    /**Komplett unnötige Funktion...**/
     public void setStueckzahl(int stueckzahl) {
         this.stueckzahl = stueckzahl;
     }
-
-    public int getAID() {
-        return AID;
-    }
-
-    public void setAID(int AID) {
-        this.AID = AID;
-    }
     
-    /**to be continued**/
-    public void verlaufAktualisieren(long t, float price) {
+    /**Komplett unnötige Funktion...**/
+    public void aktualisieren(float price) {
         
-        //Hier fehlt noch so einiges...
         setPreis(price);
-        setStand(t);
+        Date date = new Date();
+        setStand(date);
+        
+        verlauf.put(date,price);
     }
     
     
