@@ -24,20 +24,17 @@
     <DimensionLayout dim="0">
       <Group type="103" groupAlignment="0" attributes="0">
           <Group type="102" attributes="0">
-              <EmptySpace pref="153" max="32767" attributes="0"/>
+              <EmptySpace min="-2" pref="115" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="0" attributes="0">
-                  <Group type="102" alignment="0" attributes="0">
-                      <Component id="Punktzahl1" min="-2" pref="292" max="-2" attributes="0"/>
-                      <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
-                  </Group>
+                  <Component id="JLPlatz2" alignment="1" min="-2" max="-2" attributes="0"/>
+                  <Component id="JLPlatz3" alignment="1" min="-2" max="-2" attributes="0"/>
+                  <Component id="JLPlatz4" alignment="1" min="-2" max="-2" attributes="0"/>
+                  <Component id="JLPlatz5" alignment="1" min="-2" pref="32" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" attributes="0">
-                      <Group type="103" groupAlignment="0" attributes="0">
-                          <Component id="jLabel1" min="-2" pref="280" max="-2" attributes="0"/>
-                          <Group type="102" alignment="0" attributes="0">
-                              <EmptySpace min="-2" pref="82" max="-2" attributes="0"/>
-                              <Component id="Platz1" min="-2" pref="96" max="-2" attributes="0"/>
-                          </Group>
-                      </Group>
+                      <Component id="jLabel1" min="-2" pref="280" max="-2" attributes="0"/>
                       <EmptySpace max="32767" attributes="0"/>
                   </Group>
                   <Group type="102" alignment="1" attributes="0">
@@ -52,24 +49,48 @@
                               <Component id="Punktzahl4" max="32767" attributes="0"/>
                           </Group>
                           <Group type="102" alignment="0" attributes="0">
-                              <Component id="Platz3" min="-2" pref="96" max="-2" attributes="0"/>
-                              <EmptySpace min="-2" pref="92" max="-2" attributes="0"/>
-                              <Component id="Punktzahl3" max="32767" attributes="0"/>
-                          </Group>
-                          <Group type="102" alignment="0" attributes="0">
-                              <Component id="Platz2" min="-2" pref="96" max="-2" attributes="0"/>
-                              <EmptySpace min="-2" pref="92" max="-2" attributes="0"/>
-                              <Component id="Punktzahl2" max="32767" attributes="0"/>
-                          </Group>
-                          <Group type="102" alignment="0" attributes="0">
                               <Component id="Platz5" min="-2" pref="96" max="-2" attributes="0"/>
                               <EmptySpace min="-2" pref="92" max="-2" attributes="0"/>
                               <Component id="Punktzahl5" max="32767" attributes="0"/>
+                          </Group>
+                          <Group type="102" alignment="0" attributes="0">
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Component id="Platz3" alignment="0" min="-2" pref="96" max="-2" attributes="0"/>
+                                  <Component id="Platz2" alignment="0" min="-2" pref="96" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace min="-2" pref="92" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Component id="Punktzahl2" max="32767" attributes="0"/>
+                                  <Component id="Punktzahl3" max="32767" attributes="0"/>
+                              </Group>
                           </Group>
                       </Group>
                       <EmptySpace min="-2" pref="139" max="-2" attributes="0"/>
                   </Group>
               </Group>
+          </Group>
+          <Group type="102" alignment="1" attributes="0">
+              <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+              <Component id="Gesamtkapital" min="-2" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="247" max="-2" attributes="0"/>
+          </Group>
+          <Group type="102" alignment="1" attributes="0">
+              <EmptySpace max="32767" attributes="0"/>
+              <Component id="Punktzahl1" min="-2" pref="292" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="151" max="-2" attributes="0"/>
+          </Group>
+          <Group type="102" attributes="0">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" attributes="0">
+                      <EmptySpace min="-2" pref="249" max="-2" attributes="0"/>
+                      <Component id="JLPlatz1" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace min="-2" pref="222" max="-2" attributes="0"/>
+                      <Component id="Platz1" min="-2" pref="115" max="-2" attributes="0"/>
+                  </Group>
+              </Group>
+              <EmptySpace max="32767" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
@@ -78,31 +99,39 @@
           <Group type="102" attributes="0">
               <EmptySpace max="-2" attributes="0"/>
               <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
-              <EmptySpace type="separate" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="10" max="-2" attributes="0"/>
+              <Component id="JLPlatz1" min="-2" max="-2" attributes="0"/>
+              <EmptySpace max="-2" attributes="0"/>
               <Component id="Platz1" min="-2" max="-2" attributes="0"/>
               <EmptySpace max="-2" attributes="0"/>
               <Component id="Punktzahl1" min="-2" max="-2" attributes="0"/>
-              <EmptySpace min="-2" pref="64" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="52" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
                   <Component id="Platz2" alignment="3" min="-2" max="-2" attributes="0"/>
                   <Component id="Punktzahl2" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="JLPlatz2" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
                   <Component id="Platz3" alignment="3" min="-2" max="-2" attributes="0"/>
                   <Component id="Punktzahl3" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="JLPlatz3" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
                   <Component id="Platz4" alignment="3" min="-2" max="-2" attributes="0"/>
                   <Component id="Punktzahl4" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="JLPlatz4" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
                   <Component id="Platz5" alignment="3" min="-2" max="-2" attributes="0"/>
                   <Component id="Punktzahl5" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="JLPlatz5" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
-              <EmptySpace pref="114" max="32767" attributes="0"/>
+              <EmptySpace pref="88" max="32767" attributes="0"/>
+              <Component id="Gesamtkapital" min="-2" max="-2" attributes="0"/>
+              <EmptySpace max="-2" attributes="0"/>
               <Component id="GesamtPunktzahl" min="-2" max="-2" attributes="0"/>
               <EmptySpace min="-2" pref="69" max="-2" attributes="0"/>
           </Group>
@@ -207,6 +236,42 @@
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="GesamtPunktzahlActionPerformed"/>
       </Events>
+    </Component>
+    <Component class="javax.swing.JLabel" name="Gesamtkapital">
+      <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Tahoma" size="14" style="0"/>
+        </Property>
+        <Property name="text" type="java.lang.String" value="Gesamtkapital"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="JLPlatz1">
+      <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Copperplate Gothic Light" size="14" style="1"/>
+        </Property>
+        <Property name="text" type="java.lang.String" value="Platz 1"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="JLPlatz2">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Platz 2"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="JLPlatz3">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Platz 3"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="JLPlatz4">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Platz 4"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="JLPlatz5">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Platz 5"/>
+      </Properties>
     </Component>
   </SubComponents>
 </Form>
