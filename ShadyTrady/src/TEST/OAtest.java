@@ -5,7 +5,7 @@
  */
 package TEST;
 
-import control.OA;
+import model.OA;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import javax.swing.*;
