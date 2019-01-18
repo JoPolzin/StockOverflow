@@ -121,6 +121,11 @@ public class FirebaseSaveObject {
             userUpdates.put("testnutzer/vorname", "Test");
             userUpdates.put("gracehop/nickname", "Amazing Grace");
             userUpdates.put("teacher/nickname", "Muster");
+            userUpdates.put("T-Mon/nickname", "Taimon");
+            userUpdates.put("T-Mon/passwort", "1e3qacdy");
+            userUpdates.put("Simon/nickname", "Saimon");          
+            userUpdates.put("Simon/passwort", "1qayxsw2");
+            
 
             databaseReference.updateChildrenAsync(userUpdates);
             /**
