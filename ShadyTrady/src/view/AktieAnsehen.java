@@ -59,11 +59,21 @@ public class AktieAnsehen extends javax.swing.JFrame {
 
         DepotAnsehen.setText("Depot");
         DepotAnsehen.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+        DepotAnsehen.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                DepotAnsehenActionPerformed(evt);
+            }
+        });
 
         ÜberschriftAnsehen.setFont(new java.awt.Font("Penultimate", 1, 36)); // NOI18N
         ÜberschriftAnsehen.setText("Stock Overflow");
 
         LogInAnsehen.setText("Log In");
+        LogInAnsehen.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                LogInAnsehenActionPerformed(evt);
+            }
+        });
 
         namederAktieAnsehen.setToolTipText("");
 
@@ -72,6 +82,11 @@ public class AktieAnsehen extends javax.swing.JFrame {
         namederAktieAnsehen.setViewportView(jTextPane1);
 
         zurückAktieAnsehen.setText("Zurück");
+        zurückAktieAnsehen.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                zurückAktieAnsehenActionPerformed(evt);
+            }
+        });
 
         ChangeAnsehen.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         ChangeAnsehen.setText("Change");
@@ -80,8 +95,18 @@ public class AktieAnsehen extends javax.swing.JFrame {
         PreisAnsehen.setText("Preis");
 
         KaufenAnsehen.setText("Kaufen");
+        KaufenAnsehen.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                KaufenAnsehenActionPerformed(evt);
+            }
+        });
 
         VerkaufenAnsehen.setText("Verkaufen");
+        VerkaufenAnsehen.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                VerkaufenAnsehenActionPerformed(evt);
+            }
+        });
 
         PreisAngabeAnsehen.setViewportView(jTextPane2);
 
@@ -188,6 +213,21 @@ public class AktieAnsehen extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void DepotAnsehenActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_DepotAnsehenActionPerformed
+        this.c.switchTo("EigenesDepot");    }//GEN-LAST:event_DepotAnsehenActionPerformed
+
+    private void LogInAnsehenActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_LogInAnsehenActionPerformed
+        this.c.switchTo("AnmeldeFenster");    }//GEN-LAST:event_LogInAnsehenActionPerformed
+
+    private void zurückAktieAnsehenActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_zurückAktieAnsehenActionPerformed
+        this.c.switchTo("StockOverflowGUI");    }//GEN-LAST:event_zurückAktieAnsehenActionPerformed
+
+    private void KaufenAnsehenActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_KaufenAnsehenActionPerformed
+        this.c.switchTo("AktieKaufen");    }//GEN-LAST:event_KaufenAnsehenActionPerformed
+
+    private void VerkaufenAnsehenActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_VerkaufenAnsehenActionPerformed
+        this.c.switchTo("AktieVerkaufen");    }//GEN-LAST:event_VerkaufenAnsehenActionPerformed
 
     /**
      * @param args the command line arguments

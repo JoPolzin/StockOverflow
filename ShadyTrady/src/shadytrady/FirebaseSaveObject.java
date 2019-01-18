@@ -13,6 +13,7 @@ import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
+import control.maincontrol;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
@@ -23,6 +24,8 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 
 public class FirebaseSaveObject {
+
+    private String password;
 
     public static void main(String[] args) {
         Item item = new Item();
@@ -35,9 +38,30 @@ public class FirebaseSaveObject {
         fso.initFirebase();
         fso.save(item);
         fso.receive();
+
+        String s = "testnutzer";
+        ;
+        fso.getpassword(s);
     }
 
     private FirebaseDatabase firebaseDatabase;
+    private maincontrol c;
+
+    public FirebaseSaveObject() {
+    }
+
+    public FirebaseSaveObject(maincontrol mc) {
+        this.c = mc;
+
+        Item item = new Item();
+        item.setId(25L);
+        item.setName("AutoG");
+        item.setPrice(800.00);
+
+        this.initFirebase();
+        this.save(item);
+
+    }
 
     /**
      * initialize firebase.
@@ -58,7 +82,8 @@ public class FirebaseSaveObject {
                 @Override
                 public void onDataChange(DataSnapshot dataSnapshot) {
                     // for example: if you're expecting your user's data as an object of the "User" class.
-                    System.out.println(dataSnapshot.getValue());
+                    Item item = dataSnapshot.getValue(Item.class);
+                    System.err.println(item.getPrice());
                     ;
                 }
 
@@ -87,10 +112,13 @@ public class FirebaseSaveObject {
             DatabaseReference databaseReference = firebaseDatabase.getReference("/");
 
             /* Get existing child or will be created new child. */
-            DatabaseReference childReference = databaseReference.child("item2");
+            DatabaseReference childReference = databaseReference.child("Benutzer");
             Map<String, Object> userUpdates = new HashMap<>();
             userUpdates.put("alanisawesome/nickname", "Alan The Machine");
             userUpdates.put("alanisawesome/passwort", "geheim");
+            userUpdates.put("testnutzer/nickname", "test");
+            userUpdates.put("testnutzer/passwort", "geheim");
+            userUpdates.put("testnutzer/vorname", "Test");
             userUpdates.put("gracehop/nickname", "Amazing Grace");
             userUpdates.put("teacher/nickname", "Muster");
 
@@ -124,7 +152,7 @@ public class FirebaseSaveObject {
 
     public void receive() {
         //final FirebaseDatabase database = FirebaseDatabase.getInstance();
-        DatabaseReference ref = firebaseDatabase.getReference("/item2");
+        DatabaseReference ref = firebaseDatabase.getReference("/testnutzer");
 
 // Attach a listener to read the data at our posts reference
         ref.addValueEventListener(new ValueEventListener() {
@@ -132,8 +160,8 @@ public class FirebaseSaveObject {
             public void onDataChange(DataSnapshot dataSnapshot) {
                 //Post post = dataSnapshot.getValue(Post.class);
                 System.out.println(dataSnapshot.getValue());
-                Item it = dataSnapshot.getValue(Item.class);
-                System.out.println(it.getId());
+                //Item it = dataSnapshot.getValue(Item.class);
+                System.out.println(dataSnapshot.getValue());
             }
 
             @Override
@@ -141,5 +169,41 @@ public class FirebaseSaveObject {
                 System.out.println("The read failed: " + databaseError.getCode());
             }
         });
+    }
+
+    /**
+     *
+     * @param Benutzername
+     * @return
+     */
+    public String getpassword(String Benutzername) {
+        //final FirebaseDatabase database = FirebaseDatabase.getInstance();
+        DatabaseReference ref = firebaseDatabase.getReference("/" + Benutzername);
+
+// Attach a listener to read the data at our posts reference
+        ref.addListenerForSingleValueEvent(new ValueEventListener() {
+
+            @Override
+            public void onDataChange(DataSnapshot dataSnapshot) {
+                //Post post = dataSnapshot.getValue(Post.class);
+
+                //Item it = dataSnapshot.getValue(Item.class);
+                String data = dataSnapshot.getValue().toString();
+
+                String[] datarray = data.substring(0, data.length()).split(", ");
+               
+                password = datarray[0].split("=")[1];
+
+            }
+
+            @Override
+            public void onCancelled(DatabaseError databaseError) {
+                System.out.println("The read failed: " + databaseError.getCode());
+            }
+
+        });
+       
+        return password;
+
     }
 }

@@ -27,6 +27,10 @@ public class maincontrol {
     private EigenesDepot eigenesDepot = new EigenesDepot(this);
 
     private StockOverflowGUI stockOverflowGUI = new StockOverflowGUI(this);
+    
+    private FirebaseSaveObject fso = new FirebaseSaveObject(this);
+    
+    private Benutzer b;
 
     public maincontrol() {
 
@@ -42,6 +46,7 @@ public class maincontrol {
         anmeldeFenster.setVisible(false);
         eigenesDepot.setVisible(false);
         stockOverflowGUI.setVisible(false);
+        
 
         switch (Guiname) {
             case "AktieAnsehen":
@@ -67,6 +72,22 @@ public class maincontrol {
                 break;
 
         }
+    
+    
+    }
+    
+    public void login(String benutzername, String password){
+      
+        
+        if (this.fso.getpassword(benutzername).equals(password)){
+        
+        System.out.println("Login erfolgreich");
+        b = new Benutzer(benutzername);
+        this.switchTo("EigenesDepot");
+        }
+    
+    
+    
     
     
     }

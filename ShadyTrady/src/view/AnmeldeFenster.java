@@ -5,6 +5,7 @@
  */
 package view;
 import control.maincontrol;
+import java.util.Arrays;
 
 
 /**
@@ -34,37 +35,48 @@ public class AnmeldeFenster extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jLabel1 = new javax.swing.JLabel();
-        jScrollPane1 = new javax.swing.JScrollPane();
+        StockOverflowAnmeldung = new javax.swing.JLabel();
+        AnmeldenBenutzernameEingeben = new javax.swing.JScrollPane();
         jTextPane1 = new javax.swing.JTextPane();
-        jLabel2 = new javax.swing.JLabel();
-        jLabel3 = new javax.swing.JLabel();
-        jPasswordField1 = new javax.swing.JPasswordField();
-        jButton1 = new javax.swing.JButton();
-        jButton2 = new javax.swing.JButton();
+        AnmeldenBenutzername = new javax.swing.JLabel();
+        AnmeldenPasswort = new javax.swing.JLabel();
+        PasswortEingeben = new javax.swing.JPasswordField();
+        AnmeldenAnmelden = new javax.swing.JButton();
+        AnmeldenAbbrechen = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        jLabel1.setFont(new java.awt.Font("Penultimate", 1, 36)); // NOI18N
-        jLabel1.setText("Stock Overflow");
+        StockOverflowAnmeldung.setFont(new java.awt.Font("Penultimate", 1, 36)); // NOI18N
+        StockOverflowAnmeldung.setText("Stock Overflow");
 
         jTextPane1.setFont(new java.awt.Font("Penultimate", 0, 11)); // NOI18N
-        jScrollPane1.setViewportView(jTextPane1);
+        AnmeldenBenutzernameEingeben.setViewportView(jTextPane1);
 
-        jLabel2.setFont(new java.awt.Font("Penultimate", 0, 11)); // NOI18N
-        jLabel2.setText("Benutzername");
+        AnmeldenBenutzername.setFont(new java.awt.Font("Penultimate", 0, 11)); // NOI18N
+        AnmeldenBenutzername.setText("Benutzername");
 
-        jLabel3.setFont(new java.awt.Font("Penultimate", 0, 11)); // NOI18N
-        jLabel3.setText("Passwort");
+        AnmeldenPasswort.setFont(new java.awt.Font("Penultimate", 0, 11)); // NOI18N
+        AnmeldenPasswort.setText("Passwort");
 
-        jButton1.setFont(new java.awt.Font("Penultimate", 0, 14)); // NOI18N
-        jButton1.setText("Anmelden");
-
-        jButton2.setFont(new java.awt.Font("Penultimate", 0, 14)); // NOI18N
-        jButton2.setText("Abbrechen");
-        jButton2.addActionListener(new java.awt.event.ActionListener() {
+        PasswortEingeben.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton2ActionPerformed(evt);
+                PasswortEingebenActionPerformed(evt);
+            }
+        });
+
+        AnmeldenAnmelden.setFont(new java.awt.Font("Penultimate", 0, 14)); // NOI18N
+        AnmeldenAnmelden.setText("Anmelden");
+        AnmeldenAnmelden.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                AnmeldenActionPerformed(evt);
+            }
+        });
+
+        AnmeldenAbbrechen.setFont(new java.awt.Font("Penultimate", 0, 14)); // NOI18N
+        AnmeldenAbbrechen.setText("Abbrechen");
+        AnmeldenAbbrechen.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                AnmeldenAbbrechenActionPerformed(evt);
             }
         });
 
@@ -77,45 +89,59 @@ public class AnmeldeFenster extends javax.swing.JFrame {
                     .addGroup(layout.createSequentialGroup()
                         .addGap(39, 39, 39)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel3)
-                            .addComponent(jLabel2)
-                            .addComponent(jLabel1)
+                            .addComponent(AnmeldenPasswort)
+                            .addComponent(AnmeldenBenutzername)
+                            .addComponent(StockOverflowAnmeldung)
                             .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                                .addComponent(jPasswordField1, javax.swing.GroupLayout.Alignment.LEADING)
-                                .addComponent(jScrollPane1, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 117, Short.MAX_VALUE))))
+                                .addComponent(PasswortEingeben, javax.swing.GroupLayout.Alignment.LEADING)
+                                .addComponent(AnmeldenBenutzernameEingeben, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 117, Short.MAX_VALUE))))
                     .addGroup(layout.createSequentialGroup()
                         .addGap(121, 121, 121)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(jButton2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(jButton1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
+                            .addComponent(AnmeldenAbbrechen, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(AnmeldenAnmelden, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
                 .addContainerGap(41, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jLabel1)
+                .addComponent(StockOverflowAnmeldung)
                 .addGap(20, 20, 20)
-                .addComponent(jLabel2)
+                .addComponent(AnmeldenBenutzername)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(AnmeldenBenutzernameEingeben, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(25, 25, 25)
-                .addComponent(jLabel3)
+                .addComponent(AnmeldenPasswort)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jPasswordField1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(PasswortEingeben, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(48, 48, 48)
-                .addComponent(jButton1)
+                .addComponent(AnmeldenAnmelden)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jButton2)
+                .addComponent(AnmeldenAbbrechen)
                 .addContainerGap(29, Short.MAX_VALUE))
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+    private void AnmeldenAbbrechenActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_AnmeldenAbbrechenActionPerformed
        this.c.switchTo("StockOverflowGUI");
-    }//GEN-LAST:event_jButton2ActionPerformed
+    }//GEN-LAST:event_AnmeldenAbbrechenActionPerformed
+
+    private void AnmeldenAnmeldenActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_AnmeldenAnmeldenActionPerformed
+        this.c.switchTo("EigenesDepot");
+    }//GEN-LAST:event_AnmeldenAnmeldenActionPerformed
+
+    private void AnmeldenActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_AnmeldenActionPerformed
+        this.c.login(this.jTextPane1.getText(), new String(this.PasswortEingeben.getPassword()));
+       
+       
+    }//GEN-LAST:event_AnmeldenActionPerformed
+
+    private void PasswortEingebenActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_PasswortEingebenActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_PasswortEingebenActionPerformed
 
     /**
      * @param args the command line arguments
@@ -156,13 +182,13 @@ public class AnmeldeFenster extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton2;
-    private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel3;
-    private javax.swing.JPasswordField jPasswordField1;
-    private javax.swing.JScrollPane jScrollPane1;
+    private javax.swing.JButton AnmeldenAbbrechen;
+    private javax.swing.JButton AnmeldenAnmelden;
+    private javax.swing.JLabel AnmeldenBenutzername;
+    private javax.swing.JScrollPane AnmeldenBenutzernameEingeben;
+    private javax.swing.JLabel AnmeldenPasswort;
+    private javax.swing.JPasswordField PasswortEingeben;
+    private javax.swing.JLabel StockOverflowAnmeldung;
     private javax.swing.JTextPane jTextPane1;
     // End of variables declaration//GEN-END:variables
 }

@@ -1,7 +1,7 @@
 /*
  * 
  */
-package control;
+package model;
 
 import java.io.IOException;
 import java.net.URL;
@@ -29,6 +29,8 @@ public class OA {
      *
      */
     private static Document doc;
+    
+    private static String  momentaneISIN; 
 
     public static void main(String[] args) {
         OA t = new OA();
@@ -101,20 +103,20 @@ public class OA {
     public static void DnsConfig() {
         
         getDNS().put("adidas AG" , "DE000A1EWWW0");                        
-        getDNS().put("Allianz SE","");
-        getDNS().put("BASF SE","");
-        getDNS().put("Bayer AG","");
-        getDNS().put("Bayerische Motorenwerke AG","");
-        getDNS().put("Beiersdorf AG","");
-        getDNS().put("Continental AG","");
-        getDNS().put("Covestro AG","");
-        getDNS().put("Daimler AG","");
-        getDNS().put("Deutsche Bank AG","");
-        getDNS().put("Deutsche Börse AG","");
+        getDNS().put("Allianz SE","DE0008404005");
+        getDNS().put("BASF SE","DE000BASF111");
+        getDNS().put("Bayer AG","DE000BAY0017");
+        getDNS().put("Bayerische Motorenwerke AG","DE0005190003");
+        getDNS().put("Beiersdorf AG","DE0005200000");
+        getDNS().put("Continental AG","DE0005439004");
+        getDNS().put("Covestro AG","DE0006062144");
+        getDNS().put("Daimler AG","DE0007100000");
+        getDNS().put("Deutsche Bank AG","DE0005140008");
+        getDNS().put("Deutsche Börse AG","DE0005810055");
         getDNS().put("Deutsche Lufthansa Ag", "DE0008232125");
-        getDNS().put("Deutsche Post AG","");
+        getDNS().put("Deutsche Post AG","DE0005552004");
         getDNS().put("Deutsche Telekom AG", "DE0005557508");
-        getDNS().put("E.ON SE","");
+        getDNS().put("E.ON SE","DE000ENAG999");
         getDNS().put("Fresenius Medical Care KGaA","");
         getDNS().put("Fresenius SE & Co. KGaA","");
         getDNS().put("HeidelbergCement AG","DE0006047004");
@@ -156,7 +158,7 @@ public class OA {
     public static void  prepareDocument(String ISIN) {
         try {
             doc = Jsoup.connect("https://www.tradegate.de/orderbuch.php?isin=" + ISIN).get();
-            
+            momentaneISIN = ISIN;
         } catch (Exception e) {
 System.out.println("Fehler in prepareDocument()");
             
@@ -186,5 +188,25 @@ System.out.println("Fehler in prepareDocument()");
         }
 
     }
+    /**
+     * aktualisiert das Document der momentanen Aktie.
+     * 
+     * 
+     */
+    
+    public static void aktualisieren(){
+        try {
+            doc = Jsoup.connect("https://www.tradegate.de/orderbuch.php?isin=" + momentaneISIN).get();
+            
+        } catch (Exception e) {
+System.out.println("Fehler in prepareDocument()");
+            
+
+        }
+        
+        
+    }
+    
+    
 
 }
