@@ -1104,125 +1104,125 @@ public class EigenesDepot extends javax.swing.JFrame {
         pack();
     }// </editor-fold>                        
 
-    private void DepotVerkaufen10ActionPerformed(java.awt.event.ActionEvent evt) {                                                 
+    private void DepotVerkaufen10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_DepotVerkaufen10ActionPerformed
         this.c.switchTo("AktieVerkaufen");
-    }                                                
+    }//GEN-LAST:event_DepotVerkaufen10ActionPerformed
 
-    private void DepotVerkaufen24ActionPerformed(java.awt.event.ActionEvent evt) {                                                 
+    private void DepotVerkaufen24ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_DepotVerkaufen24ActionPerformed
         this.c.switchTo("AktieVerkaufen");
-    }                                                
+    }//GEN-LAST:event_DepotVerkaufen24ActionPerformed
 
-    private void DepotVerkaufen1ActionPerformed(java.awt.event.ActionEvent evt) {                                                
+    private void DepotVerkaufen1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_DepotVerkaufen1ActionPerformed
         this.c.switchTo("AktieVerkaufen");
-    }                                               
+    }//GEN-LAST:event_DepotVerkaufen1ActionPerformed
 
-    private void DepotVerkaufen2ActionPerformed(java.awt.event.ActionEvent evt) {                                                
+    private void DepotVerkaufen2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_DepotVerkaufen2ActionPerformed
         this.c.switchTo("AktieVerkaufen");
-    }                                               
+    }//GEN-LAST:event_DepotVerkaufen2ActionPerformed
 
-    private void DepotVerkaufen3ActionPerformed(java.awt.event.ActionEvent evt) {                                                
+    private void DepotVerkaufen3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_DepotVerkaufen3ActionPerformed
         this.c.switchTo("AktieVerkaufen");
-    }                                               
+    }//GEN-LAST:event_DepotVerkaufen3ActionPerformed
 
-    private void DepotVerkaufen4ActionPerformed(java.awt.event.ActionEvent evt) {                                                
+    private void DepotVerkaufen4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_DepotVerkaufen4ActionPerformed
         this.c.switchTo("AktieVerkaufen");
-    }                                               
+    }//GEN-LAST:event_DepotVerkaufen4ActionPerformed
 
-    private void DepotVerkaufen5ActionPerformed(java.awt.event.ActionEvent evt) {                                                
+    private void DepotVerkaufen5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_DepotVerkaufen5ActionPerformed
         this.c.switchTo("AktieVerkaufen");
-    }                                               
+    }//GEN-LAST:event_DepotVerkaufen5ActionPerformed
 
-    private void DepotVerkaufen6ActionPerformed(java.awt.event.ActionEvent evt) {                                                
+    private void DepotVerkaufen6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_DepotVerkaufen6ActionPerformed
         this.c.switchTo("AktieVerkaufen");
-    }                                               
+    }//GEN-LAST:event_DepotVerkaufen6ActionPerformed
 
-    private void DepotVerkaufen7ActionPerformed(java.awt.event.ActionEvent evt) {                                                
+    private void DepotVerkaufen7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_DepotVerkaufen7ActionPerformed
         this.c.switchTo("AktieVerkaufen");
-    }                                               
+    }//GEN-LAST:event_DepotVerkaufen7ActionPerformed
 
-    private void DepotVerkaufen8ActionPerformed(java.awt.event.ActionEvent evt) {                                                
+    private void DepotVerkaufen8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_DepotVerkaufen8ActionPerformed
         this.c.switchTo("AktieVerkaufen");
-    }                                               
+    }//GEN-LAST:event_DepotVerkaufen8ActionPerformed
 
-    private void DepotVerkaufen9ActionPerformed(java.awt.event.ActionEvent evt) {                                                
+    private void DepotVerkaufen9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_DepotVerkaufen9ActionPerformed
         this.c.switchTo("AktieVerkaufen");
-    }                                               
+    }//GEN-LAST:event_DepotVerkaufen9ActionPerformed
 
-    private void DepotVerkaufen11ActionPerformed(java.awt.event.ActionEvent evt) {                                                 
+    private void DepotVerkaufen11ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_DepotVerkaufen11ActionPerformed
         this.c.switchTo("AktieVerkaufen");
-    }                                                
+    }//GEN-LAST:event_DepotVerkaufen11ActionPerformed
 
-    private void DepotVerkaufen12ActionPerformed(java.awt.event.ActionEvent evt) {                                                 
+    private void DepotVerkaufen12ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_DepotVerkaufen12ActionPerformed
         this.c.switchTo("AktieVerkaufen");
-    }                                                
+    }//GEN-LAST:event_DepotVerkaufen12ActionPerformed
 
-    private void DepotVerkaufen13ActionPerformed(java.awt.event.ActionEvent evt) {                                                 
+    private void DepotVerkaufen13ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_DepotVerkaufen13ActionPerformed
         this.c.switchTo("AktieVerkaufen");
-    }                                                
+    }//GEN-LAST:event_DepotVerkaufen13ActionPerformed
 
-    private void DepotVerkaufen14ActionPerformed(java.awt.event.ActionEvent evt) {                                                 
+    private void DepotVerkaufen14ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_DepotVerkaufen14ActionPerformed
         this.c.switchTo("AktieVerkaufen");
-    }                                                
+    }//GEN-LAST:event_DepotVerkaufen14ActionPerformed
 
-    private void DepotVerkaufen15ActionPerformed(java.awt.event.ActionEvent evt) {                                                 
+    private void DepotVerkaufen15ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_DepotVerkaufen15ActionPerformed
         this.c.switchTo("AktieVerkaufen");
-    }                                                
+    }//GEN-LAST:event_DepotVerkaufen15ActionPerformed
 
-    private void DepotVerkaufen16ActionPerformed(java.awt.event.ActionEvent evt) {                                                 
+    private void DepotVerkaufen16ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_DepotVerkaufen16ActionPerformed
         this.c.switchTo("AktieVerkaufen");
-    }                                                
+    }//GEN-LAST:event_DepotVerkaufen16ActionPerformed
 
-    private void DepotVerkaufen17ActionPerformed(java.awt.event.ActionEvent evt) {                                                 
+    private void DepotVerkaufen17ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_DepotVerkaufen17ActionPerformed
         this.c.switchTo("AktieVerkaufen");
-    }                                                
+    }//GEN-LAST:event_DepotVerkaufen17ActionPerformed
 
-    private void DepotVerkaufen18ActionPerformed(java.awt.event.ActionEvent evt) {                                                 
+    private void DepotVerkaufen18ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_DepotVerkaufen18ActionPerformed
         this.c.switchTo("AktieVerkaufen");
-    }                                                
+    }//GEN-LAST:event_DepotVerkaufen18ActionPerformed
 
-    private void DepotVerkaufen19ActionPerformed(java.awt.event.ActionEvent evt) {                                                 
+    private void DepotVerkaufen19ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_DepotVerkaufen19ActionPerformed
         this.c.switchTo("AktieVerkaufen");
-    }                                                
+    }//GEN-LAST:event_DepotVerkaufen19ActionPerformed
 
-    private void DepotVerkaufen20ActionPerformed(java.awt.event.ActionEvent evt) {                                                 
+    private void DepotVerkaufen20ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_DepotVerkaufen20ActionPerformed
         this.c.switchTo("AktieVerkaufen");
-    }                                                
+    }//GEN-LAST:event_DepotVerkaufen20ActionPerformed
 
-    private void DepotVerkaufen21ActionPerformed(java.awt.event.ActionEvent evt) {                                                 
+    private void DepotVerkaufen21ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_DepotVerkaufen21ActionPerformed
         this.c.switchTo("AktieVerkaufen");
-    }                                                
+    }//GEN-LAST:event_DepotVerkaufen21ActionPerformed
 
-    private void DepotVerkaufen22ActionPerformed(java.awt.event.ActionEvent evt) {                                                 
+    private void DepotVerkaufen22ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_DepotVerkaufen22ActionPerformed
         this.c.switchTo("AktieVerkaufen");
-    }                                                
+    }//GEN-LAST:event_DepotVerkaufen22ActionPerformed
 
-    private void DepotVerkaufen23ActionPerformed(java.awt.event.ActionEvent evt) {                                                 
+    private void DepotVerkaufen23ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_DepotVerkaufen23ActionPerformed
         this.c.switchTo("AktieVerkaufen");
-    }                                                
+    }//GEN-LAST:event_DepotVerkaufen23ActionPerformed
 
-    private void DepotVerkaufen25ActionPerformed(java.awt.event.ActionEvent evt) {                                                 
+    private void DepotVerkaufen25ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_DepotVerkaufen25ActionPerformed
         this.c.switchTo("AktieVerkaufen");
-    }                                                
+    }//GEN-LAST:event_DepotVerkaufen25ActionPerformed
 
-    private void DepotVerkaufen26ActionPerformed(java.awt.event.ActionEvent evt) {                                                 
+    private void DepotVerkaufen26ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_DepotVerkaufen26ActionPerformed
         this.c.switchTo("AktieVerkaufen");
-    }                                                
+    }//GEN-LAST:event_DepotVerkaufen26ActionPerformed
 
-    private void DepotVerkaufen27ActionPerformed(java.awt.event.ActionEvent evt) {                                                 
+    private void DepotVerkaufen27ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_DepotVerkaufen27ActionPerformed
         this.c.switchTo("AktieVerkaufen");
-    }                                                
+    }//GEN-LAST:event_DepotVerkaufen27ActionPerformed
 
-    private void DepotVerkaufen28ActionPerformed(java.awt.event.ActionEvent evt) {                                                 
+    private void DepotVerkaufen28ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_DepotVerkaufen28ActionPerformed
         this.c.switchTo("AktieVerkaufen");
-    }                                                
+    }//GEN-LAST:event_DepotVerkaufen28ActionPerformed
 
-    private void DepotVerkaufen29ActionPerformed(java.awt.event.ActionEvent evt) {                                                 
+    private void DepotVerkaufen29ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_DepotVerkaufen29ActionPerformed
         this.c.switchTo("AktieVerkaufen");
-    }                                                
+    }//GEN-LAST:event_DepotVerkaufen29ActionPerformed
 
-    private void DepotVerkaufen30ActionPerformed(java.awt.event.ActionEvent evt) {                                                 
+    private void DepotVerkaufen30ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_DepotVerkaufen30ActionPerformed
         this.c.switchTo("AktieVerkaufen");
-    }                                                
+    }//GEN-LAST:event_DepotVerkaufen30ActionPerformed
 
     /**
      * @param args the command line arguments
