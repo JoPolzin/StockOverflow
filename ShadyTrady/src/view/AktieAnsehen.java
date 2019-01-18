@@ -37,8 +37,6 @@ public class AktieAnsehen extends javax.swing.JFrame {
         DepotAnsehen = new javax.swing.JButton();
         ÜberschriftAnsehen = new javax.swing.JLabel();
         LogInAnsehen = new javax.swing.JButton();
-        namederAktieAnsehen = new javax.swing.JScrollPane();
-        jTextPane1 = new javax.swing.JTextPane();
         zurückAktieAnsehen = new javax.swing.JButton();
         ChangeAnsehen = new javax.swing.JLabel();
         PreisAnsehen = new javax.swing.JLabel();
@@ -54,6 +52,10 @@ public class AktieAnsehen extends javax.swing.JFrame {
         MonatAnsehen = new javax.swing.JButton();
         HalbesJahrAnsehen = new javax.swing.JButton();
         JahrAnsehen = new javax.swing.JButton();
+        ISIN = new javax.swing.JTextField();
+        JLISIN = new javax.swing.JLabel();
+        AktienBild = new javax.swing.JLabel();
+        laden = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -74,12 +76,6 @@ public class AktieAnsehen extends javax.swing.JFrame {
                 LogInAnsehenActionPerformed(evt);
             }
         });
-
-        namederAktieAnsehen.setToolTipText("");
-
-        jTextPane1.setFont(new java.awt.Font("Penultimate", 1, 18)); // NOI18N
-        jTextPane1.setText("< Name der Aktie >");
-        namederAktieAnsehen.setViewportView(jTextPane1);
 
         zurückAktieAnsehen.setText("Zurück");
         zurückAktieAnsehen.addActionListener(new java.awt.event.ActionListener() {
@@ -108,8 +104,10 @@ public class AktieAnsehen extends javax.swing.JFrame {
             }
         });
 
+        jTextPane2.setEditable(false);
         PreisAngabeAnsehen.setViewportView(jTextPane2);
 
+        jTextPane3.setEditable(false);
         ChangeAngabeAnsehen.setViewportView(jTextPane3);
 
         TagAnsehen.setText("Tag");
@@ -121,6 +119,21 @@ public class AktieAnsehen extends javax.swing.JFrame {
         HalbesJahrAnsehen.setText("6 Monate");
 
         JahrAnsehen.setText("Jahr");
+
+        ISIN.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                ISINActionPerformed(evt);
+            }
+        });
+
+        JLISIN.setText("ISIN:");
+
+        laden.setText("laden");
+        laden.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                ladenActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -137,7 +150,6 @@ public class AktieAnsehen extends javax.swing.JFrame {
                             .addGroup(layout.createSequentialGroup()
                                 .addGap(44, 44, 44)
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                    .addComponent(namederAktieAnsehen, javax.swing.GroupLayout.PREFERRED_SIZE, 198, javax.swing.GroupLayout.PREFERRED_SIZE)
                                     .addGroup(layout.createSequentialGroup()
                                         .addComponent(TagAnsehen, javax.swing.GroupLayout.PREFERRED_SIZE, 73, javax.swing.GroupLayout.PREFERRED_SIZE)
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -148,7 +160,18 @@ public class AktieAnsehen extends javax.swing.JFrame {
                                         .addComponent(HalbesJahrAnsehen)
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                                         .addComponent(JahrAnsehen, javax.swing.GroupLayout.PREFERRED_SIZE, 69, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                    .addComponent(GrafikAnsehen, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                                    .addGroup(layout.createSequentialGroup()
+                                        .addComponent(GrafikAnsehen, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                        .addComponent(AktienBild)
+                                        .addGap(203, 203, 203))
+                                    .addGroup(layout.createSequentialGroup()
+                                        .addGap(21, 21, 21)
+                                        .addComponent(JLISIN)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                        .addComponent(ISIN, javax.swing.GroupLayout.PREFERRED_SIZE, 142, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                        .addComponent(laden)))
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
@@ -182,9 +205,7 @@ public class AktieAnsehen extends javax.swing.JFrame {
                         .addComponent(ÜberschriftAnsehen)))
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(50, 50, 50)
-                        .addComponent(namederAktieAnsehen, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(58, 58, 58)
+                        .addGap(137, 137, 137)
                         .addComponent(ChangeAnsehen, javax.swing.GroupLayout.PREFERRED_SIZE, 27, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(ChangeAngabeAnsehen, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -199,8 +220,19 @@ public class AktieAnsehen extends javax.swing.JFrame {
                     .addGroup(layout.createSequentialGroup()
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(zurückAktieAnsehen)
-                        .addGap(84, 84, 84)
-                        .addComponent(GrafikAnsehen, javax.swing.GroupLayout.PREFERRED_SIZE, 270, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(layout.createSequentialGroup()
+                                .addGap(44, 44, 44)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                    .addComponent(ISIN, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(JLISIN)
+                                    .addComponent(laden))
+                                .addGap(18, 18, 18)
+                                .addComponent(GrafikAnsehen, javax.swing.GroupLayout.PREFERRED_SIZE, 270, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(AktienBild)
+                                .addGap(149, 149, 149)))))
                 .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(TagAnsehen)
@@ -208,7 +240,7 @@ public class AktieAnsehen extends javax.swing.JFrame {
                     .addComponent(MonatAnsehen)
                     .addComponent(HalbesJahrAnsehen)
                     .addComponent(JahrAnsehen))
-                .addContainerGap(90, Short.MAX_VALUE))
+                .addContainerGap(88, Short.MAX_VALUE))
         );
 
         pack();
@@ -228,6 +260,14 @@ public class AktieAnsehen extends javax.swing.JFrame {
 
     private void VerkaufenAnsehenActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_VerkaufenAnsehenActionPerformed
         this.c.switchTo("AktieVerkaufen");    }//GEN-LAST:event_VerkaufenAnsehenActionPerformed
+
+    private void ISINActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ISINActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_ISINActionPerformed
+
+    private void ladenActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ladenActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_ladenActionPerformed
 
     /**
      * @param args the command line arguments
@@ -268,11 +308,14 @@ public class AktieAnsehen extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JLabel AktienBild;
     private javax.swing.JScrollPane ChangeAngabeAnsehen;
     private javax.swing.JLabel ChangeAnsehen;
     private javax.swing.JButton DepotAnsehen;
     private javax.swing.JLabel GrafikAnsehen;
     private javax.swing.JButton HalbesJahrAnsehen;
+    private javax.swing.JTextField ISIN;
+    private javax.swing.JLabel JLISIN;
     private javax.swing.JButton JahrAnsehen;
     private javax.swing.JButton KaufenAnsehen;
     private javax.swing.JButton LogInAnsehen;
@@ -282,10 +325,9 @@ public class AktieAnsehen extends javax.swing.JFrame {
     private javax.swing.JButton TagAnsehen;
     private javax.swing.JButton VerkaufenAnsehen;
     private javax.swing.JButton WocheAnsehen;
-    private javax.swing.JTextPane jTextPane1;
     private javax.swing.JTextPane jTextPane2;
     private javax.swing.JTextPane jTextPane3;
-    private javax.swing.JScrollPane namederAktieAnsehen;
+    private javax.swing.JButton laden;
     private javax.swing.JButton zurückAktieAnsehen;
     private javax.swing.JLabel ÜberschriftAnsehen;
     // End of variables declaration//GEN-END:variables

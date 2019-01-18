@@ -95,5 +95,23 @@ public class maincontrol {
     public static void main(String[] args) {
         new maincontrol();
     }
+    
+    
+    public static void aktieladen(String ISIN){
+        
+        
+        
+        
+        
+    }
+    
+    public static void aktieZeitraum(String Zeitraum){
+        
+        
+        
+    }
+    
+    
+    
 
 }
