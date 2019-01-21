@@ -115,9 +115,9 @@ public class AnmeldeFenster extends javax.swing.JFrame {
                 .addComponent(AnmeldenPasswort)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(PasswortEingeben, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(48, 48, 48)
+                .addGap(53, 53, 53)
                 .addComponent(AnmeldenAnmelden)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(AnmeldenAbbrechen)
                 .addContainerGap(29, Short.MAX_VALUE))
         );
