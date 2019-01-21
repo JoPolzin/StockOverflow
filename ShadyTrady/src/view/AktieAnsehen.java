@@ -118,12 +118,32 @@ public class AktieAnsehen extends javax.swing.JFrame {
         });
 
         WocheAnsehen.setText("Woche");
+        WocheAnsehen.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                WocheAnsehenActionPerformed(evt);
+            }
+        });
 
         MonatAnsehen.setText("Monat");
+        MonatAnsehen.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                MonatAnsehenActionPerformed(evt);
+            }
+        });
 
         HalbesJahrAnsehen.setText("6 Monate");
+        HalbesJahrAnsehen.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                HalbesJahrAnsehenActionPerformed(evt);
+            }
+        });
 
         JahrAnsehen.setText("Jahr");
+        JahrAnsehen.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                JahrAnsehenActionPerformed(evt);
+            }
+        });
 
         ISIN.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -156,14 +176,15 @@ public class AktieAnsehen extends javax.swing.JFrame {
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addGroup(layout.createSequentialGroup()
                                         .addComponent(TagAnsehen, javax.swing.GroupLayout.PREFERRED_SIZE, 73, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                        .addGap(18, 18, 18)
                                         .addComponent(WocheAnsehen, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE)
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                         .addComponent(MonatAnsehen, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE)
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                         .addComponent(HalbesJahrAnsehen)
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                        .addComponent(JahrAnsehen, javax.swing.GroupLayout.PREFERRED_SIZE, 69, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                        .addComponent(JahrAnsehen, javax.swing.GroupLayout.PREFERRED_SIZE, 69, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addGap(0, 0, Short.MAX_VALUE))
                                     .addGroup(layout.createSequentialGroup()
                                         .addComponent(AktienBild, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                                         .addGap(18, 18, 18)
@@ -257,13 +278,29 @@ public class AktieAnsehen extends javax.swing.JFrame {
     }//GEN-LAST:event_ISINActionPerformed
 
     private void ladenActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ladenActionPerformed
-        c.test();
+    
         c.aktieladen(ISIN.getText());
     }//GEN-LAST:event_ladenActionPerformed
 
     private void TagAnsehenActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_TagAnsehenActionPerformed
        c.aktieZeitraum("intraday");
     }//GEN-LAST:event_TagAnsehenActionPerformed
+
+    private void WocheAnsehenActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_WocheAnsehenActionPerformed
+        c.aktieZeitraum("woche");
+    }//GEN-LAST:event_WocheAnsehenActionPerformed
+
+    private void MonatAnsehenActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_MonatAnsehenActionPerformed
+        c.aktieZeitraum("monat");
+    }//GEN-LAST:event_MonatAnsehenActionPerformed
+
+    private void HalbesJahrAnsehenActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_HalbesJahrAnsehenActionPerformed
+        c.aktieZeitraum("monat6");
+    }//GEN-LAST:event_HalbesJahrAnsehenActionPerformed
+
+    private void JahrAnsehenActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_JahrAnsehenActionPerformed
+        c.aktieZeitraum("jahr");
+    }//GEN-LAST:event_JahrAnsehenActionPerformed
 
     /**
      * @param args the command line arguments
