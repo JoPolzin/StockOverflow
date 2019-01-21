@@ -27,9 +27,9 @@ public class maincontrol {
     private EigenesDepot eigenesDepot = new EigenesDepot(this);
 
     private StockOverflowGUI stockOverflowGUI = new StockOverflowGUI(this);
-    
+
     private FirebaseSaveObject fso = new FirebaseSaveObject(this);
-    
+
     private Benutzer b;
 
     public maincontrol() {
@@ -38,15 +38,13 @@ public class maincontrol {
     }
 
     public void switchTo(String Guiname) {
-        
-        
+
         aktieAnsehen.setVisible(false);
         aktieKaufen.setVisible(false);
         aktieVerkaufen.setVisible(false);
         anmeldeFenster.setVisible(false);
         eigenesDepot.setVisible(false);
         stockOverflowGUI.setVisible(false);
-        
 
         switch (Guiname) {
             case "AktieAnsehen":
@@ -59,7 +57,7 @@ public class maincontrol {
                 aktieVerkaufen.setVisible(true);
                 break;
             case "AnmeldeFenster":
-               anmeldeFenster.setVisible(true);
+                anmeldeFenster.setVisible(true);
                 break;
             case "EigenesDepot":
                 eigenesDepot.setVisible(true);
@@ -67,51 +65,43 @@ public class maincontrol {
             case "StockOverflowGUI":
                 stockOverflowGUI.setVisible(true);
                 break;
-  
+
             default:
                 break;
 
         }
-    
-    
+
     }
-    
-    public void login(String benutzername, String password){
-      
-        
-        if (this.fso.getpassword(benutzername).equals(password)){
-        
-        System.out.println("Login erfolgreich");
-        b = new Benutzer(benutzername);
-        this.switchTo("EigenesDepot");
+
+    public void login(String benutzername, String password) {
+
+        if (this.fso.getpassword(benutzername).equals(password)) {
+
+            System.out.println("Login erfolgreich");
+            b = new Benutzer(benutzername);
+            this.switchTo("EigenesDepot");
         }
-    
-    
-    
-    
-    
+
     }
 
     public static void main(String[] args) {
         new maincontrol();
     }
-    
-    
-    public static void aktieladen(String ISIN){
-        
-        
-        
-        
+
+    public void aktieladen(String ISIN) {
+        OA.prepareDocument(ISIN);
+        aktieAnsehen.Change.setText(Float.toString(OA.getChange()));
+        aktieAnsehen.Preis.setText(Float.toString(OA.getAsk()));
+
+    }
+
+    public void aktieZeitraum(String Zeitraum) {
+        aktieAnsehen.AktienBild.setIcon(OA.getGraph(Zeitraum));
+
+    }
+   
+    public void test(){
         
     }
-    
-    public static void aktieZeitraum(String Zeitraum){
-        
-        
-        
-    }
-    
-    
-    
 
 }
