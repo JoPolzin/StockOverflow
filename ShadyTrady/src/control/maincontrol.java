@@ -7,6 +7,7 @@ package control;
 
 import view.*;
 import model.*;
+import model.OA;
 import TEST.*;
 import shadytrady.*;
 
@@ -88,7 +89,8 @@ public class maincontrol {
         new maincontrol();
     }
 
-    public void aktieladen(String ISIN) {
+    public  void aktieladen(String ISIN) {
+        
         OA.prepareDocument(ISIN);
         aktieAnsehen.Change.setText(Float.toString(OA.getChange()));
         aktieAnsehen.Preis.setText(Float.toString(OA.getAsk()));
