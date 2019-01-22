@@ -89,17 +89,4 @@ public class maincontrol {
         new maincontrol();
     }
 
-    public  void aktieladen(String ISIN) {
-        
-        OA.prepareDocument(ISIN);
-        aktieAnsehen.Change.setText(Float.toString(OA.getChange()));
-        aktieAnsehen.Preis.setText(Float.toString(OA.getAsk()));
-
-    }
-
-    public void aktieZeitraum(String Zeitraum) {
-        aktieAnsehen.AktienBild.setIcon(OA.getGraph(Zeitraum));
-
-    }
-
 }

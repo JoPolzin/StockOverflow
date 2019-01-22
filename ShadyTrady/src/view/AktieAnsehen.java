@@ -5,6 +5,7 @@
  */
 package view;
 import control.maincontrol;
+import model.OA;
 
 
 /**
@@ -172,7 +173,7 @@ public class AktieAnsehen extends javax.swing.JFrame {
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addGroup(layout.createSequentialGroup()
                                         .addComponent(TagAnsehen, javax.swing.GroupLayout.PREFERRED_SIZE, 73, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addGap(18, 18, 18)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                         .addComponent(WocheAnsehen, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE)
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                         .addComponent(MonatAnsehen, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -180,7 +181,7 @@ public class AktieAnsehen extends javax.swing.JFrame {
                                         .addComponent(HalbesJahrAnsehen)
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                                         .addComponent(JahrAnsehen, javax.swing.GroupLayout.PREFERRED_SIZE, 69, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addGap(0, 104, Short.MAX_VALUE))
+                                        .addGap(0, 116, Short.MAX_VALUE))
                                     .addGroup(layout.createSequentialGroup()
                                         .addComponent(AktienBild, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                                         .addGap(18, 18, 18)
@@ -279,27 +280,33 @@ public class AktieAnsehen extends javax.swing.JFrame {
 
     private void ladenActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ladenActionPerformed
     
-        c.aktieladen(ISIN.getText());
+        
+        OA.prepareDocument(ISIN.getText());
+        Change.setText(Float.toString(OA.getChange()));
+        Preis.setText(Float.toString(OA.getAsk()));
+        
+        
     }//GEN-LAST:event_ladenActionPerformed
 
     private void TagAnsehenActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_TagAnsehenActionPerformed
-       c.aktieZeitraum("intraday");
+       
+       AktienBild.setIcon(OA.getGraph("intraday"));
     }//GEN-LAST:event_TagAnsehenActionPerformed
 
     private void WocheAnsehenActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_WocheAnsehenActionPerformed
-        c.aktieZeitraum("woche");
+        AktienBild.setIcon(OA.getGraph("woche"));
     }//GEN-LAST:event_WocheAnsehenActionPerformed
 
     private void MonatAnsehenActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_MonatAnsehenActionPerformed
-        c.aktieZeitraum("monat");
+       AktienBild.setIcon(OA.getGraph("monat"));
     }//GEN-LAST:event_MonatAnsehenActionPerformed
 
     private void HalbesJahrAnsehenActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_HalbesJahrAnsehenActionPerformed
-        c.aktieZeitraum("monat6");
+        AktienBild.setIcon(OA.getGraph("monat6"));
     }//GEN-LAST:event_HalbesJahrAnsehenActionPerformed
 
     private void JahrAnsehenActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_JahrAnsehenActionPerformed
-        c.aktieZeitraum("jahr");
+        AktienBild.setIcon(OA.getGraph("jahr"));
     }//GEN-LAST:event_JahrAnsehenActionPerformed
 
     /**
