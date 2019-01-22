@@ -257,7 +257,7 @@ public class EigenesDepot extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         jLabel1.setFont(new java.awt.Font("Penultimate", 1, 36)); // NOI18N
-        jLabel1.setText("Stock Overflow");
+        jLabel1.setText("ShadyTrady");
 
         jLabel2.setFont(new java.awt.Font("Penultimate", 0, 24)); // NOI18N
         jLabel2.setText("Eigenes Depot");
@@ -735,8 +735,7 @@ public class EigenesDepot extends javax.swing.JFrame {
                                                     .addComponent(DepotVerkaufen6)
                                                     .addComponent(DepotVerkaufen5)
                                                     .addComponent(DepotVerkaufen4)
-                                                    .addComponent(DepotVerkaufen3))
-                                                .addGap(0, 0, 0)))))
+                                                    .addComponent(DepotVerkaufen3))))))
                                 .addGap(9, 9, 9))
                             .addGroup(layout.createSequentialGroup()
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
