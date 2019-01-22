@@ -53,6 +53,7 @@
                                           </Group>
                                           <Component id="PreisAngabeAnsehen" alignment="0" min="-2" pref="84" max="-2" attributes="0"/>
                                           <Component id="ChangeAngabeAnsehen" alignment="0" min="-2" pref="84" max="-2" attributes="0"/>
+                                          <Component id="Aktualisieren" min="-2" max="-2" attributes="0"/>
                                       </Group>
                                   </Group>
                               </Group>
@@ -111,6 +112,8 @@
               <EmptySpace pref="35" max="32767" attributes="0"/>
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" alignment="1" attributes="0">
+                      <Component id="Aktualisieren" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace type="separate" max="-2" attributes="0"/>
                       <Component id="ChangeAnsehen" min="-2" pref="27" max="-2" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
                       <Component id="ChangeAngabeAnsehen" min="-2" max="-2" attributes="0"/>
@@ -285,6 +288,9 @@
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="ISINActionPerformed"/>
       </Events>
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
+      </AuxValues>
     </Component>
     <Component class="javax.swing.JLabel" name="JLISIN">
       <Properties>
@@ -306,6 +312,14 @@
       <AuxValues>
         <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
       </AuxValues>
+    </Component>
+    <Component class="javax.swing.JButton" name="Aktualisieren">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="aktualisieren"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="AktualisierenActionPerformed"/>
+      </Events>
     </Component>
   </SubComponents>
 </Form>

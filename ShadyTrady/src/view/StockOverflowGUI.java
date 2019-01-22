@@ -20,6 +20,13 @@ public class StockOverflowGUI extends javax.swing.JFrame {
     public ArrayList<JTextField> AktienFelder = new ArrayList<>();
     public ArrayList<JTextField> PreisFelder = new ArrayList<>();
     public ArrayList<JTextField> ChangeFelder = new ArrayList<>();
+    /**
+     * StockOverflowGUI Speichert die Werte des Dax um sie dannach mit den neuen
+     * Werten zu vergleichen.
+     *
+     *
+     */
+    public ArrayList<Object> PreisListe;
 
     /**
      * Creates new form NewJFrame
@@ -77,7 +84,7 @@ public class StockOverflowGUI extends javax.swing.JFrame {
         ChangeFelder.add(TFChange14);
         ChangeFelder.add(TFChange15);
         ChangeFelder.add(TFChange16);
-        
+
     }
 
     /**
@@ -886,8 +893,8 @@ public class StockOverflowGUI extends javax.swing.JFrame {
      * //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
      * /* If Nimbus (introduced in Java SE 6) is not available, stay with the
      * default look and feel. For details see
-     * http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html      *
-     * try { for (javax.swing.UIManager.LookAndFeelInfo info :
+     * http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html
+     * * try { for (javax.swing.UIManager.LookAndFeelInfo info :
      * javax.swing.UIManager.getInstalledLookAndFeels()) { if
      * ("Nimbus".equals(info.getName())) {
      * javax.swing.UIManager.setLookAndFeel(info.getClassName()); break; } } }
@@ -916,7 +923,7 @@ public class StockOverflowGUI extends javax.swing.JFrame {
      * //</editor-fold>
      * //</editor-fold>
      *
-        /* Create and display the form java.awt.EventQueue.invokeLater(new
+     * /* Create and display the form java.awt.EventQueue.invokeLater(new
      * Runnable() { public void run() { new StockOverflowGUI().setVisible(true);
      * } }); }
      */
