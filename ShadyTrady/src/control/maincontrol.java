@@ -9,6 +9,8 @@ import view.*;
 import model.*;
 import model.OA;
 import TEST.*;
+import java.awt.Color;
+import java.util.ArrayList;
 import shadytrady.*;
 import view.StockOverflowGUI;
 
@@ -33,6 +35,13 @@ public class maincontrol {
     private FirebaseSaveObject fso;
 
     private Benutzer b;
+    /**
+     * Speichert die Werte des Dax um sie dannach mit den neuen Werten zu 
+     * vergleichen.
+     * 
+     * 
+     */
+    private ArrayList<Object> PreisListe;
 
     public maincontrol() {
         aktieAnsehen = new AktieAnsehen(this);
@@ -98,19 +107,47 @@ public class maincontrol {
     public static void main(String[] args) {
         new maincontrol();
     }
-    //StockOverflow-Klassen
-    
-    
-    
-    
+    //StockOverflowGUI-Funktionen
     public void AktienDatenInitialisieren(){
         OA.DnsConfig();
+        PreisListe = new ArrayList<>();
+        
+        
+        
+        
         for(int i = 0;i<stockOverflowGUI.AktienFelder.size();i++){
-            System.out.println(i);
+            
             OA.prepareDocument(OA.getDNS().get(OA.getDNSString().get(i)));
             stockOverflowGUI.AktienFelder.get(i).setText(OA.getDNSString().get(i));
             stockOverflowGUI.PreisFelder.get(i).setText(Float.toString(OA.getAsk()));
             stockOverflowGUI.ChangeFelder.get(i).setText(Float.toString(OA.getChange()));
+            PreisListe.add(OA.getAsk());
+    }
+    }
+        
+        
+    public void AktienDatenAktualisieren(){
+        for(int i = 0;i<stockOverflowGUI.AktienFelder.size();i++){
+            
+            OA.prepareDocument(OA.getDNS().get(OA.getDNSString().get(i)));
+            stockOverflowGUI.AktienFelder.get(i).setText(OA.getDNSString().get(i));
+            stockOverflowGUI.PreisFelder.get(i).setText(Float.toString(OA.getAsk()));
+            stockOverflowGUI.ChangeFelder.get(i).setText(Float.toString(OA.getChange()));
+            if((float)PreisListe.get(i)>OA.getAsk()){
+            stockOverflowGUI.PreisFelder.get(i).setBackground(Color.red);            
+            }else if((float)PreisListe.get(i)<OA.getAsk()){
+                stockOverflowGUI.PreisFelder.get(i).setBackground(Color.green);
+                
+            
+            
+            
+            
+            
+    }else stockOverflowGUI.PreisFelder.get(i).setBackground(Color.white);  
+        
+        
+        
+        
     }
         
         

@@ -166,6 +166,7 @@ public class StockOverflowGUI extends javax.swing.JFrame {
         TFPreis16 = new javax.swing.JTextField();
         TFChange16 = new javax.swing.JTextField();
         BAnsehen16 = new javax.swing.JButton();
+        Refresh = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -485,6 +486,13 @@ public class StockOverflowGUI extends javax.swing.JFrame {
             }
         });
 
+        Refresh.setText("Refresh");
+        Refresh.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                RefreshActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -503,7 +511,9 @@ public class StockOverflowGUI extends javax.swing.JFrame {
                         .addGap(312, 312, 312)
                         .addComponent(AktienGUIÜberschrift))
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(188, 188, 188)
+                        .addGap(25, 25, 25)
+                        .addComponent(Refresh)
+                        .addGap(18, 18, 18)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(layout.createSequentialGroup()
                                 .addComponent(TFAktie4, javax.swing.GroupLayout.PREFERRED_SIZE, 112, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -657,7 +667,8 @@ public class StockOverflowGUI extends javax.swing.JFrame {
                     .addComponent(TFAktie1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(TFPreis1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(TFChange1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(BAnsehen1))
+                    .addComponent(BAnsehen1)
+                    .addComponent(Refresh))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(TFAktie2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -864,6 +875,10 @@ public class StockOverflowGUI extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_BAnsehen16BAnsehen2ActionPerformed
 
+    private void RefreshActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_RefreshActionPerformed
+        c.AktienDatenAktualisieren();
+    }//GEN-LAST:event_RefreshActionPerformed
+
     /**
      * @param args the command line arguments
      *
@@ -926,6 +941,7 @@ public class StockOverflowGUI extends javax.swing.JFrame {
     private javax.swing.JButton BAnsehen9;
     private javax.swing.JButton DepotGUI;
     private javax.swing.JButton LogInGUI;
+    private javax.swing.JButton Refresh;
     public javax.swing.JTextField TFAktie1;
     public javax.swing.JTextField TFAktie10;
     public javax.swing.JTextField TFAktie11;
