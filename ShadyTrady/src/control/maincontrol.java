@@ -10,6 +10,7 @@ import model.*;
 import model.OA;
 import TEST.*;
 import shadytrady.*;
+import view.StockOverflowGUI;
 
 /**
  *
@@ -17,25 +18,34 @@ import shadytrady.*;
  */
 public class maincontrol {
 
-    private AktieAnsehen aktieAnsehen = new AktieAnsehen(this);
+    private AktieAnsehen aktieAnsehen;
 
-    private AktieKaufen aktieKaufen = new AktieKaufen(this);
+    private AktieKaufen aktieKaufen;
 
-    private AktieVerkaufen aktieVerkaufen = new AktieVerkaufen(this);
+    private AktieVerkaufen aktieVerkaufen;
 
-    private AnmeldeFenster anmeldeFenster = new AnmeldeFenster(this);
+    private AnmeldeFenster anmeldeFenster;
 
-    private EigenesDepot eigenesDepot = new EigenesDepot(this);
+    private EigenesDepot eigenesDepot;
 
-    private StockOverflowGUI stockOverflowGUI = new StockOverflowGUI(this);
+    private StockOverflowGUI stockOverflowGUI ;
 
-    private FirebaseSaveObject fso = new FirebaseSaveObject(this);
+    private FirebaseSaveObject fso;
 
     private Benutzer b;
 
     public maincontrol() {
-
+        aktieAnsehen = new AktieAnsehen(this);
+        aktieKaufen = new AktieKaufen(this);
+        aktieVerkaufen = new AktieVerkaufen(this);
+        anmeldeFenster = new AnmeldeFenster(this);
+        eigenesDepot = new EigenesDepot(this);
+        stockOverflowGUI = new StockOverflowGUI(this);
+        fso = new FirebaseSaveObject(this);
+        
+        
         stockOverflowGUI.setVisible(true);
+        AktienDatenInitialisieren();
     }
 
     public void switchTo(String Guiname) {
@@ -88,5 +98,33 @@ public class maincontrol {
     public static void main(String[] args) {
         new maincontrol();
     }
+    //StockOverflow-Klassen
+    
+    
+    
+    
+    public void AktienDatenInitialisieren(){
+        OA.DnsConfig();
+        for(int i = 0;i<stockOverflowGUI.AktienFelder.size();i++){
+            System.out.println(i);
+            OA.prepareDocument(OA.getDNS().get(OA.getDNSString().get(i)));
+            stockOverflowGUI.AktienFelder.get(i).setText(OA.getDNSString().get(i));
+            stockOverflowGUI.PreisFelder.get(i).setText(Float.toString(OA.getAsk()));
+            stockOverflowGUI.ChangeFelder.get(i).setText(Float.toString(OA.getChange()));
+    }
+        
+        
+        
+        
+        
+        
+        
+        
+    }
+    
+    
+    
+    
+    
 
 }
