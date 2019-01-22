@@ -101,9 +101,5 @@ public class maincontrol {
         aktieAnsehen.AktienBild.setIcon(OA.getGraph(Zeitraum));
 
     }
-   
-    public void test(){
-        
-    }
 
 }
