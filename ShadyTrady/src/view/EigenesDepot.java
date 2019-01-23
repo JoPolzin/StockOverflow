@@ -481,7 +481,12 @@ public class EigenesDepot extends javax.swing.JFrame {
         DepotAnsehen.setText("Depot");
         DepotAnsehen.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
 
-        LogInAnsehen.setText("Log In");
+        LogInAnsehen.setText("Log Out");
+        LogInAnsehen.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                LogInAnsehenActionPerformed(evt);
+            }
+        });
 
         zurückAktieAnsehen.setText("Zurück");
 
@@ -1143,6 +1148,10 @@ public class EigenesDepot extends javax.swing.JFrame {
     private void DepotVerkaufen9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_DepotVerkaufen9ActionPerformed
         this.c.switchTo("AktieVerkaufen");
     }//GEN-LAST:event_DepotVerkaufen9ActionPerformed
+
+    private void LogInAnsehenActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_LogInAnsehenActionPerformed
+        this.c.switchTo("StockOverflowGUI");
+    }//GEN-LAST:event_LogInAnsehenActionPerformed
 
 
     /**

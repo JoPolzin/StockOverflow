@@ -1235,8 +1235,11 @@
     </Component>
     <Component class="javax.swing.JButton" name="LogInAnsehen">
       <Properties>
-        <Property name="text" type="java.lang.String" value="Log In"/>
+        <Property name="text" type="java.lang.String" value="Log Out"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="LogInAnsehenActionPerformed"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JButton" name="zur&#xfc;ckAktieAnsehen">
       <Properties>
