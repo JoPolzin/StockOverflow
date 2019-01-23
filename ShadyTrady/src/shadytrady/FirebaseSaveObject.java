@@ -11,6 +11,7 @@ import com.google.firebase.FirebaseOptions;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.DatabaseReference.CompletionListener;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 import control.maincontrol;
@@ -41,9 +42,12 @@ public class FirebaseSaveObject {
         fso.save(item);
         fso.receive();
 
-        String s = "testnutzer";
-        ;
-        fso.getpassword(s);
+        
+
+        String s = "Simon";
+        
+        fso.remove(s);
+      
     }
 
     private FirebaseDatabase firebaseDatabase;
@@ -212,4 +216,42 @@ public class FirebaseSaveObject {
         return password;
 
     }
+    
+    
+      public void remove(String Benutzername) {
+        //final FirebaseDatabase database = FirebaseDatabase.getInstance();
+        DatabaseReference ref = firebaseDatabase.getReference("/" + Benutzername);
+        
+        ref.removeValue(new CompletionListener() {
+            @Override
+            public void onComplete(DatabaseError de, DatabaseReference dr) {
+                throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+            }
+        });
+       
+      }
+       public void remove(DatabaseReference ref) {
+        //final FirebaseDatabase database = FirebaseDatabase.getInstance();
+    
+        
+        ref.removeValue(new CompletionListener() {
+            @Override
+            public void onComplete(DatabaseError de, DatabaseReference dr) {
+                throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+            }
+        });
+       
+      }
+       
+        public  refnickname(String Benutzername) {
+        //final FirebaseDatabase database = FirebaseDatabase.getInstance();
+    
+        
+       
+       DatabaseReference ref = firebaseDatabase.getReference("/" + Benutzername + "/" + "nickname" );
+       return ref;
+        
+        }
+
+    
 }
