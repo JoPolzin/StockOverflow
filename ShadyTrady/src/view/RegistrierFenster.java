@@ -68,7 +68,7 @@ public class RegistrierFenster extends javax.swing.JFrame {
         RegistrierenRegistrieren.setText("Registrieren");
         RegistrierenRegistrieren.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                AnmeldenActionPerformed(evt);
+                RegistrierenRegistrierenActionPerformed(evt);
             }
         });
 
@@ -129,15 +129,15 @@ public class RegistrierFenster extends javax.swing.JFrame {
        this.c.switchTo("StockOverflowGUI");
     }//GEN-LAST:event_RegistrierenAbbrechenActionPerformed
 
-    private void AnmeldenAnmeldenActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_AnmeldenAnmeldenActionPerformed
-        this.c.switchTo("EigenesDepot");
-    }//GEN-LAST:event_AnmeldenAnmeldenActionPerformed
+    private void RegistrierenRegistrierenActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_RegistrierenRegistrierenActionPerformed
+        this.c.switchTo("StockOverflowGUI");
+    }//GEN-LAST:event_RegistrierenRegistrierenActionPerformed
 
-    private void AnmeldenActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_AnmeldenActionPerformed
-        this.c.login(this.jTextPane1.getText(), new String(this.PasswortEingeben.getPassword()));
+    // private void RegistrierActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_AnmeldenActionPerformed
+    //    this.c.login(this.jTextPane1.getText(), new String(this.PasswortEingeben.getPassword()));
        
        
-    }//GEN-LAST:event_AnmeldenActionPerformed
+    //} GEN-LAST:event_AnmeldenActionPerformed 
 
     private void PasswortEingebenActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_PasswortEingebenActionPerformed
         // TODO add your handling code here:

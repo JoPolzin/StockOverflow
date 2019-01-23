@@ -220,9 +220,9 @@
                               <EmptySpace min="-2" pref="18" max="-2" attributes="0"/>
                           </Group>
                       </Group>
-                      <Group type="103" groupAlignment="0" attributes="0">
-                          <Component id="LogInAnsehen" min="-2" pref="75" max="-2" attributes="0"/>
-                          <Component id="zurückAktieAnsehen" alignment="1" min="-2" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                          <Component id="LogInAnsehen" pref="75" max="32767" attributes="0"/>
+                          <Component id="zurückAktieAnsehen" max="32767" attributes="0"/>
                       </Group>
                   </Group>
               </Group>
@@ -1232,16 +1232,25 @@
           <Color id="Standardcursor"/>
         </Property>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="DepotAnsehenActionPerformed"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JButton" name="LogInAnsehen">
       <Properties>
         <Property name="text" type="java.lang.String" value="Log In"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="LogInAnsehenActionPerformed"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JButton" name="zur&#xfc;ckAktieAnsehen">
       <Properties>
         <Property name="text" type="java.lang.String" value="Zur&#xfc;ck"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="zur&#xfc;ckAktieAnsehenActionPerformed"/>
+      </Events>
     </Component>
     <Container class="javax.swing.JScrollPane" name="jScrollPane43">
       <AuxValues>

@@ -480,10 +480,25 @@ public class EigenesDepot extends javax.swing.JFrame {
 
         DepotAnsehen.setText("Depot");
         DepotAnsehen.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+        DepotAnsehen.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                DepotAnsehenActionPerformed(evt);
+            }
+        });
 
         LogInAnsehen.setText("Log In");
+        LogInAnsehen.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                LogInAnsehenActionPerformed(evt);
+            }
+        });
 
         zurückAktieAnsehen.setText("Zurück");
+        zurückAktieAnsehen.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                zurückAktieAnsehenActionPerformed(evt);
+            }
+        });
 
         jTextPane43.setEditable(false);
         jScrollPane43.setViewportView(jTextPane43);
@@ -895,9 +910,9 @@ public class EigenesDepot extends javax.swing.JFrame {
                                         .addComponent(DepotAnsehen, javax.swing.GroupLayout.PREFERRED_SIZE, 88, javax.swing.GroupLayout.PREFERRED_SIZE))
                                     .addComponent(jLabel2))
                                 .addGap(18, 18, 18)))
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(LogInAnsehen, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(zurückAktieAnsehen, javax.swing.GroupLayout.Alignment.TRAILING))))
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addComponent(LogInAnsehen, javax.swing.GroupLayout.DEFAULT_SIZE, 75, Short.MAX_VALUE)
+                            .addComponent(zurückAktieAnsehen, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
                 .addContainerGap())
         );
         layout.setVerticalGroup(
@@ -1143,6 +1158,18 @@ public class EigenesDepot extends javax.swing.JFrame {
     private void DepotVerkaufen9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_DepotVerkaufen9ActionPerformed
         this.c.switchTo("AktieVerkaufen");
     }//GEN-LAST:event_DepotVerkaufen9ActionPerformed
+
+    private void DepotAnsehenActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_DepotAnsehenActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_DepotAnsehenActionPerformed
+
+    private void LogInAnsehenActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_LogInAnsehenActionPerformed
+        this.c.switchTo("AnmeldeFenster");
+    }//GEN-LAST:event_LogInAnsehenActionPerformed
+
+    private void zurückAktieAnsehenActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_zurückAktieAnsehenActionPerformed
+        this.c.switchTo("StockOverflowGUI");
+    }//GEN-LAST:event_zurückAktieAnsehenActionPerformed
 
 
     /**
