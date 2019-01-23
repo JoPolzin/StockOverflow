@@ -12,16 +12,16 @@ import java.util.Arrays;
  *
  * @author hannah.claus
  */
-public class AnmeldeFenster extends javax.swing.JFrame {
+public class RegistrierFenster extends javax.swing.JFrame {
  private maincontrol c;
     /**
      * Creates new form NewJFrame
      */
-    public AnmeldeFenster() {
+    public RegistrierFenster() {
         initComponents();
     }
 
-       public AnmeldeFenster(maincontrol mc) {
+       public RegistrierFenster(maincontrol mc) {
         this.c = mc;
         
         initComponents();
@@ -35,29 +35,28 @@ public class AnmeldeFenster extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        StockOverflowAnmeldung = new javax.swing.JLabel();
-        AnmeldenBenutzernameEingeben = new javax.swing.JScrollPane();
+        StockOverflowRegistrierung = new javax.swing.JLabel();
+        RegistrierenBenutzernameEingeben = new javax.swing.JScrollPane();
         jTextPane1 = new javax.swing.JTextPane();
-        AnmeldenBenutzername = new javax.swing.JLabel();
-        AnmeldenPasswort = new javax.swing.JLabel();
+        RegistrierenBenutzername = new javax.swing.JLabel();
+        RegistrierenPasswort = new javax.swing.JLabel();
         PasswortEingeben = new javax.swing.JPasswordField();
-        AnmeldenAnmelden = new javax.swing.JButton();
-        AnmeldenAbbrechen = new javax.swing.JButton();
-        AnmeldenRegistrieren = new javax.swing.JButton();
+        RegistrierenRegistrieren = new javax.swing.JButton();
+        RegistrierenAbbrechen = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        StockOverflowAnmeldung.setFont(new java.awt.Font("Penultimate", 1, 36)); // NOI18N
-        StockOverflowAnmeldung.setText("ShadyTrady");
+        StockOverflowRegistrierung.setFont(new java.awt.Font("Penultimate", 1, 36)); // NOI18N
+        StockOverflowRegistrierung.setText("ShadyTrady");
 
         jTextPane1.setFont(new java.awt.Font("Penultimate", 0, 11)); // NOI18N
-        AnmeldenBenutzernameEingeben.setViewportView(jTextPane1);
+        RegistrierenBenutzernameEingeben.setViewportView(jTextPane1);
 
-        AnmeldenBenutzername.setFont(new java.awt.Font("Penultimate", 0, 11)); // NOI18N
-        AnmeldenBenutzername.setText("Benutzername");
+        RegistrierenBenutzername.setFont(new java.awt.Font("Penultimate", 0, 11)); // NOI18N
+        RegistrierenBenutzername.setText("Benutzername");
 
-        AnmeldenPasswort.setFont(new java.awt.Font("Penultimate", 0, 11)); // NOI18N
-        AnmeldenPasswort.setText("Passwort");
+        RegistrierenPasswort.setFont(new java.awt.Font("Penultimate", 0, 11)); // NOI18N
+        RegistrierenPasswort.setText("Passwort");
 
         PasswortEingeben.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -65,27 +64,19 @@ public class AnmeldeFenster extends javax.swing.JFrame {
             }
         });
 
-        AnmeldenAnmelden.setFont(new java.awt.Font("Penultimate", 0, 14)); // NOI18N
-        AnmeldenAnmelden.setText("Anmelden");
-        AnmeldenAnmelden.addActionListener(new java.awt.event.ActionListener() {
+        RegistrierenRegistrieren.setFont(new java.awt.Font("Penultimate", 0, 14)); // NOI18N
+        RegistrierenRegistrieren.setText("Registrieren");
+        RegistrierenRegistrieren.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 AnmeldenActionPerformed(evt);
             }
         });
 
-        AnmeldenAbbrechen.setFont(new java.awt.Font("Penultimate", 0, 14)); // NOI18N
-        AnmeldenAbbrechen.setText("Abbrechen");
-        AnmeldenAbbrechen.addActionListener(new java.awt.event.ActionListener() {
+        RegistrierenAbbrechen.setFont(new java.awt.Font("Penultimate", 0, 14)); // NOI18N
+        RegistrierenAbbrechen.setText("Abbrechen");
+        RegistrierenAbbrechen.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                AnmeldenAbbrechenActionPerformed(evt);
-            }
-        });
-
-        AnmeldenRegistrieren.setFont(new java.awt.Font("Penultimate", 0, 14)); // NOI18N
-        AnmeldenRegistrieren.setText("Registrieren");
-        AnmeldenRegistrieren.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                AnmeldenRegistrierenActionPerformed(evt);
+                RegistrierenAbbrechenActionPerformed(evt);
             }
         });
 
@@ -98,48 +89,45 @@ public class AnmeldeFenster extends javax.swing.JFrame {
                     .addGroup(layout.createSequentialGroup()
                         .addGap(39, 39, 39)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(AnmeldenPasswort)
-                            .addComponent(AnmeldenBenutzername)
-                            .addComponent(StockOverflowAnmeldung)
+                            .addComponent(RegistrierenPasswort)
+                            .addComponent(RegistrierenBenutzername)
+                            .addComponent(StockOverflowRegistrierung)
                             .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
                                 .addComponent(PasswortEingeben, javax.swing.GroupLayout.Alignment.LEADING)
-                                .addComponent(AnmeldenBenutzernameEingeben, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 117, Short.MAX_VALUE))))
+                                .addComponent(RegistrierenBenutzernameEingeben, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 117, Short.MAX_VALUE))))
                     .addGroup(layout.createSequentialGroup()
                         .addGap(121, 121, 121)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(AnmeldenAbbrechen, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(AnmeldenAnmelden, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(AnmeldenRegistrieren, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
+                            .addComponent(RegistrierenAbbrechen, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(RegistrierenRegistrieren, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
                 .addContainerGap(95, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(StockOverflowAnmeldung)
+                .addComponent(StockOverflowRegistrierung)
                 .addGap(20, 20, 20)
-                .addComponent(AnmeldenBenutzername)
+                .addComponent(RegistrierenBenutzername)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(AnmeldenBenutzernameEingeben, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(RegistrierenBenutzernameEingeben, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(25, 25, 25)
-                .addComponent(AnmeldenPasswort)
+                .addComponent(RegistrierenPasswort)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(PasswortEingeben, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(32, 32, 32)
-                .addComponent(AnmeldenAnmelden)
+                .addGap(53, 53, 53)
+                .addComponent(RegistrierenRegistrieren)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(AnmeldenRegistrieren, javax.swing.GroupLayout.PREFERRED_SIZE, 23, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(AnmeldenAbbrechen)
-                .addContainerGap(21, Short.MAX_VALUE))
+                .addComponent(RegistrierenAbbrechen)
+                .addContainerGap(29, Short.MAX_VALUE))
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void AnmeldenAbbrechenActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_AnmeldenAbbrechenActionPerformed
+    private void RegistrierenAbbrechenActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_RegistrierenAbbrechenActionPerformed
        this.c.switchTo("StockOverflowGUI");
-    }//GEN-LAST:event_AnmeldenAbbrechenActionPerformed
+    }//GEN-LAST:event_RegistrierenAbbrechenActionPerformed
 
     private void AnmeldenAnmeldenActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_AnmeldenAnmeldenActionPerformed
         this.c.switchTo("EigenesDepot");
@@ -154,10 +142,6 @@ public class AnmeldeFenster extends javax.swing.JFrame {
     private void PasswortEingebenActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_PasswortEingebenActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_PasswortEingebenActionPerformed
-
-    private void AnmeldenRegistrierenActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_AnmeldenRegistrierenActionPerformed
-        this.c.switchTo("RegistrierFenster");
-    }//GEN-LAST:event_AnmeldenRegistrierenActionPerformed
 
     /**
      * @param args the command line arguments
@@ -176,14 +160,18 @@ public class AnmeldeFenster extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(AnmeldeFenster.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(RegistrierFenster.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(AnmeldeFenster.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(RegistrierFenster.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(AnmeldeFenster.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(RegistrierFenster.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(AnmeldeFenster.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(RegistrierFenster.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
         //</editor-fold>
         //</editor-fold>
         //</editor-fold>
@@ -192,20 +180,19 @@ public class AnmeldeFenster extends javax.swing.JFrame {
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new AnmeldeFenster().setVisible(true);
+                new RegistrierFenster().setVisible(true);
             }
         });
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton AnmeldenAbbrechen;
-    private javax.swing.JButton AnmeldenAnmelden;
-    private javax.swing.JLabel AnmeldenBenutzername;
-    private javax.swing.JScrollPane AnmeldenBenutzernameEingeben;
-    private javax.swing.JLabel AnmeldenPasswort;
-    private javax.swing.JButton AnmeldenRegistrieren;
     private javax.swing.JPasswordField PasswortEingeben;
-    private javax.swing.JLabel StockOverflowAnmeldung;
+    private javax.swing.JButton RegistrierenAbbrechen;
+    private javax.swing.JLabel RegistrierenBenutzername;
+    private javax.swing.JScrollPane RegistrierenBenutzernameEingeben;
+    private javax.swing.JLabel RegistrierenPasswort;
+    private javax.swing.JButton RegistrierenRegistrieren;
+    private javax.swing.JLabel StockOverflowRegistrierung;
     private javax.swing.JTextPane jTextPane1;
     // End of variables declaration//GEN-END:variables
 }
