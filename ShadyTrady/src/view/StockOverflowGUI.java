@@ -6,28 +6,92 @@
 package view;
 
 import control.maincontrol;
+import java.util.ArrayList;
+import javax.swing.JTextField;
 
 /**
  *
  * @author hannah.claus
  */
 public class StockOverflowGUI extends javax.swing.JFrame {
+
     private maincontrol c;
+
+    public ArrayList<JTextField> AktienFelder = new ArrayList<>();
+    public ArrayList<JTextField> PreisFelder = new ArrayList<>();
+    public ArrayList<JTextField> ChangeFelder = new ArrayList<>();
+    /**
+     * StockOverflowGUI Speichert die Werte des Dax um sie dannach mit den neuen
+     * Werten zu vergleichen.
+     *
+     *
+     */
+    public ArrayList<Object> PreisListe;
+
     /**
      * Creates new form NewJFrame
      */
     public StockOverflowGUI(maincontrol mc) {
         this.c = mc;
-        
         initComponents();
+        AktienFelder.add(TFAktie1);
+        AktienFelder.add(TFAktie2);
+        AktienFelder.add(TFAktie3);
+        AktienFelder.add(TFAktie4);
+        AktienFelder.add(TFAktie5);
+        AktienFelder.add(TFAktie6);
+        AktienFelder.add(TFAktie7);
+        AktienFelder.add(TFAktie8);
+        AktienFelder.add(TFAktie9);
+        AktienFelder.add(TFAktie10);
+        AktienFelder.add(TFAktie11);
+        AktienFelder.add(TFAktie12);
+        AktienFelder.add(TFAktie13);
+        AktienFelder.add(TFAktie14);
+        AktienFelder.add(TFAktie15);
+        AktienFelder.add(TFAktie16);
+
+        PreisFelder.add(TFPreis1);
+        PreisFelder.add(TFPreis2);
+        PreisFelder.add(TFPreis3);
+        PreisFelder.add(TFPreis4);
+        PreisFelder.add(TFPreis5);
+        PreisFelder.add(TFPreis6);
+        PreisFelder.add(TFPreis7);
+        PreisFelder.add(TFPreis8);
+        PreisFelder.add(TFPreis9);
+        PreisFelder.add(TFPreis10);
+        PreisFelder.add(TFPreis11);
+        PreisFelder.add(TFPreis12);
+        PreisFelder.add(TFPreis13);
+        PreisFelder.add(TFPreis14);
+        PreisFelder.add(TFPreis15);
+        PreisFelder.add(TFPreis16);
+
+        ChangeFelder.add(TFChange1);
+        ChangeFelder.add(TFChange2);
+        ChangeFelder.add(TFChange3);
+        ChangeFelder.add(TFChange4);
+        ChangeFelder.add(TFChange5);
+        ChangeFelder.add(TFChange6);
+        ChangeFelder.add(TFChange7);
+        ChangeFelder.add(TFChange8);
+        ChangeFelder.add(TFChange9);
+        ChangeFelder.add(TFChange10);
+        ChangeFelder.add(TFChange11);
+        ChangeFelder.add(TFChange12);
+        ChangeFelder.add(TFChange13);
+        ChangeFelder.add(TFChange14);
+        ChangeFelder.add(TFChange15);
+        ChangeFelder.add(TFChange16);
+
     }
-    
-     /**
+
+    /**
      * Creates new form NewJFrame
      */
     public StockOverflowGUI() {
-       
-        
+
         initComponents();
     }
 
@@ -44,224 +108,77 @@ public class StockOverflowGUI extends javax.swing.JFrame {
         DepotGUI = new javax.swing.JButton();
         LogInGUI = new javax.swing.JButton();
         AktienGUIÜberschrift = new javax.swing.JLabel();
-        GUIChange26 = new javax.swing.JScrollPane();
-        jTextPane79 = new javax.swing.JTextPane();
-        GUIAktie12 = new javax.swing.JScrollPane();
-        jTextPane36 = new javax.swing.JTextPane();
-        GUIAktie26 = new javax.swing.JScrollPane();
-        jTextPane80 = new javax.swing.JTextPane();
-        GUIPreis13 = new javax.swing.JScrollPane();
-        jTextPane37 = new javax.swing.JTextPane();
-        GUIPreis27 = new javax.swing.JScrollPane();
-        jTextPane81 = new javax.swing.JTextPane();
-        GUIChange13 = new javax.swing.JScrollPane();
-        jTextPane38 = new javax.swing.JTextPane();
-        GUIChange27 = new javax.swing.JScrollPane();
-        jTextPane82 = new javax.swing.JTextPane();
-        GUIAktie13 = new javax.swing.JScrollPane();
-        jTextPane39 = new javax.swing.JTextPane();
-        GUIAktie27 = new javax.swing.JScrollPane();
-        jTextPane83 = new javax.swing.JTextPane();
-        GUIPreis14 = new javax.swing.JScrollPane();
-        jTextPane40 = new javax.swing.JTextPane();
-        GUIPreis28 = new javax.swing.JScrollPane();
-        jTextPane84 = new javax.swing.JTextPane();
-        GUIChange14 = new javax.swing.JScrollPane();
-        jTextPane41 = new javax.swing.JTextPane();
-        GUIAnsehen30 = new javax.swing.JButton();
-        GUIAktie14 = new javax.swing.JScrollPane();
-        jTextPane42 = new javax.swing.JTextPane();
-        GUIAnsehen29 = new javax.swing.JButton();
-        GUIChange30 = new javax.swing.JScrollPane();
-        jTextPane85 = new javax.swing.JTextPane();
-        GUIAnsehen1 = new javax.swing.JButton();
-        GUIAnsehen2 = new javax.swing.JButton();
-        GUIAktie30 = new javax.swing.JScrollPane();
-        jTextPane86 = new javax.swing.JTextPane();
-        GUIAnsehen9 = new javax.swing.JButton();
-        GUIAnsehen10 = new javax.swing.JButton();
-        GUIPreis16 = new javax.swing.JScrollPane();
-        jTextPane48 = new javax.swing.JTextPane();
-        GUIPreis29 = new javax.swing.JScrollPane();
-        jTextPane87 = new javax.swing.JTextPane();
-        GUIAnsehen11 = new javax.swing.JButton();
-        GUIAnsehen12 = new javax.swing.JButton();
-        GUIChange16 = new javax.swing.JScrollPane();
-        jTextPane49 = new javax.swing.JTextPane();
-        GUIAktie16 = new javax.swing.JScrollPane();
-        jTextPane50 = new javax.swing.JTextPane();
-        GUIPreis17 = new javax.swing.JScrollPane();
-        jTextPane51 = new javax.swing.JTextPane();
-        GUIChange17 = new javax.swing.JScrollPane();
-        jTextPane52 = new javax.swing.JTextPane();
-        GUIChange29 = new javax.swing.JScrollPane();
-        jTextPane88 = new javax.swing.JTextPane();
-        GUIAnsehen14 = new javax.swing.JButton();
-        GUIAnsehen13 = new javax.swing.JButton();
-        GUIAktie29 = new javax.swing.JScrollPane();
-        jTextPane89 = new javax.swing.JTextPane();
-        GUIAnsehen8 = new javax.swing.JButton();
-        GUIAnsehen7 = new javax.swing.JButton();
-        GUIPreis30 = new javax.swing.JScrollPane();
-        jTextPane90 = new javax.swing.JTextPane();
-        GUIAnsehen6 = new javax.swing.JButton();
-        GUIAnsehen5 = new javax.swing.JButton();
-        GUIAnsehen4 = new javax.swing.JButton();
-        GUIAnsehen3 = new javax.swing.JButton();
-        GUIAktie17 = new javax.swing.JScrollPane();
-        jTextPane53 = new javax.swing.JTextPane();
-        GUIAktie = new javax.swing.JLabel();
-        GUIPreis = new javax.swing.JLabel();
-        GUIPreis18 = new javax.swing.JScrollPane();
-        jTextPane54 = new javax.swing.JTextPane();
-        GUIChange18 = new javax.swing.JScrollPane();
-        jTextPane55 = new javax.swing.JTextPane();
-        GUIAktie18 = new javax.swing.JScrollPane();
-        jTextPane56 = new javax.swing.JTextPane();
-        GUIPreis19 = new javax.swing.JScrollPane();
-        jTextPane57 = new javax.swing.JTextPane();
-        GUIChange = new javax.swing.JLabel();
-        GUIChange28 = new javax.swing.JScrollPane();
-        jTextPane43 = new javax.swing.JTextPane();
-        GUIAktie28 = new javax.swing.JScrollPane();
-        jTextPane44 = new javax.swing.JTextPane();
-        GUIChange19 = new javax.swing.JScrollPane();
-        jTextPane58 = new javax.swing.JTextPane();
-        GUIChange4 = new javax.swing.JScrollPane();
-        jTextPane11 = new javax.swing.JTextPane();
-        GUIAnsehen15 = new javax.swing.JButton();
-        GUIAnsehen16 = new javax.swing.JButton();
-        GUIAktie19 = new javax.swing.JScrollPane();
-        jTextPane59 = new javax.swing.JTextPane();
-        GUIAktie4 = new javax.swing.JScrollPane();
-        jTextPane12 = new javax.swing.JTextPane();
-        GUIPreis20 = new javax.swing.JScrollPane();
-        jTextPane60 = new javax.swing.JTextPane();
-        GUIPreis5 = new javax.swing.JScrollPane();
-        jTextPane13 = new javax.swing.JTextPane();
-        GUIChange20 = new javax.swing.JScrollPane();
-        jTextPane61 = new javax.swing.JTextPane();
-        GUIChange5 = new javax.swing.JScrollPane();
-        jTextPane14 = new javax.swing.JTextPane();
-        GUIAktie20 = new javax.swing.JScrollPane();
-        jTextPane62 = new javax.swing.JTextPane();
-        GUIAktie5 = new javax.swing.JScrollPane();
-        jTextPane15 = new javax.swing.JTextPane();
-        GUIAnsehen23 = new javax.swing.JButton();
-        GUIAnsehen24 = new javax.swing.JButton();
-        GUIPreis15 = new javax.swing.JScrollPane();
-        jTextPane45 = new javax.swing.JTextPane();
-        GUIAnsehen25 = new javax.swing.JButton();
-        GUIAnsehen26 = new javax.swing.JButton();
-        GUIChange15 = new javax.swing.JScrollPane();
-        jTextPane46 = new javax.swing.JTextPane();
-        GUIPreis21 = new javax.swing.JScrollPane();
-        jTextPane63 = new javax.swing.JTextPane();
-        GUIPreis6 = new javax.swing.JScrollPane();
-        jTextPane16 = new javax.swing.JTextPane();
-        GUIAktie15 = new javax.swing.JScrollPane();
-        jTextPane47 = new javax.swing.JTextPane();
-        GUIChange21 = new javax.swing.JScrollPane();
-        jTextPane64 = new javax.swing.JTextPane();
-        GUIChange6 = new javax.swing.JScrollPane();
-        jTextPane17 = new javax.swing.JTextPane();
-        GUIAktie21 = new javax.swing.JScrollPane();
-        jTextPane65 = new javax.swing.JTextPane();
-        GUIAktie6 = new javax.swing.JScrollPane();
-        jTextPane18 = new javax.swing.JTextPane();
-        GUIPreis22 = new javax.swing.JScrollPane();
-        jTextPane66 = new javax.swing.JTextPane();
-        GUIPreis7 = new javax.swing.JScrollPane();
-        jTextPane19 = new javax.swing.JTextPane();
-        GUIChange22 = new javax.swing.JScrollPane();
-        jTextPane67 = new javax.swing.JTextPane();
-        GUIChange7 = new javax.swing.JScrollPane();
-        jTextPane20 = new javax.swing.JTextPane();
-        GUIPreis1 = new javax.swing.JScrollPane();
-        jTextPane1 = new javax.swing.JTextPane();
-        GUIChange1 = new javax.swing.JScrollPane();
-        jTextPane2 = new javax.swing.JTextPane();
-        GUIAktie1 = new javax.swing.JScrollPane();
-        jTextPane3 = new javax.swing.JTextPane();
-        GUIPreis2 = new javax.swing.JScrollPane();
-        jTextPane4 = new javax.swing.JTextPane();
-        GUIAktie22 = new javax.swing.JScrollPane();
-        jTextPane68 = new javax.swing.JTextPane();
-        GUIAktie7 = new javax.swing.JScrollPane();
-        jTextPane21 = new javax.swing.JTextPane();
-        GUIChange2 = new javax.swing.JScrollPane();
-        jTextPane5 = new javax.swing.JTextPane();
-        GUIPreis23 = new javax.swing.JScrollPane();
-        jTextPane69 = new javax.swing.JTextPane();
-        jScrollPane22 = new javax.swing.JScrollPane();
-        GUIPreis8 = new javax.swing.JTextPane();
-        GUIChange23 = new javax.swing.JScrollPane();
-        jTextPane70 = new javax.swing.JTextPane();
-        GUIChange8 = new javax.swing.JScrollPane();
-        jTextPane23 = new javax.swing.JTextPane();
-        GUIAktie23 = new javax.swing.JScrollPane();
-        jTextPane71 = new javax.swing.JTextPane();
-        GUIAktie8 = new javax.swing.JScrollPane();
-        jTextPane24 = new javax.swing.JTextPane();
-        GUIPreis24 = new javax.swing.JScrollPane();
-        jTextPane72 = new javax.swing.JTextPane();
-        GUIPreis9 = new javax.swing.JScrollPane();
-        jTextPane25 = new javax.swing.JTextPane();
-        GUIAktie2 = new javax.swing.JScrollPane();
-        jTextPane6 = new javax.swing.JTextPane();
-        GUIPreis3 = new javax.swing.JScrollPane();
-        jScrollPane7 = new javax.swing.JTextPane();
-        GUIChange3 = new javax.swing.JScrollPane();
-        jTextPane8 = new javax.swing.JTextPane();
-        GUIAktie3 = new javax.swing.JScrollPane();
-        jTextPane9 = new javax.swing.JTextPane();
-        GUIChange24 = new javax.swing.JScrollPane();
-        jTextPane73 = new javax.swing.JTextPane();
-        GUIChange9 = new javax.swing.JScrollPane();
-        jTextPane26 = new javax.swing.JTextPane();
-        GUIPreis4 = new javax.swing.JScrollPane();
-        jTextPane10 = new javax.swing.JTextPane();
-        GUIAnsehen28 = new javax.swing.JButton();
-        GUIAktie9 = new javax.swing.JScrollPane();
-        jTextPane27 = new javax.swing.JTextPane();
-        GUIAktie24 = new javax.swing.JScrollPane();
-        jTextPane74 = new javax.swing.JTextPane();
-        GUIPreis10 = new javax.swing.JScrollPane();
-        jTextPane28 = new javax.swing.JTextPane();
-        GUIAnsehen27 = new javax.swing.JButton();
-        GUIAnsehen22 = new javax.swing.JButton();
-        GUIChange10 = new javax.swing.JScrollPane();
-        jTextPane29 = new javax.swing.JTextPane();
-        GUIAnsehen21 = new javax.swing.JButton();
-        GUIAnsehen20 = new javax.swing.JButton();
-        GUIAktie10 = new javax.swing.JScrollPane();
-        jTextPane30 = new javax.swing.JTextPane();
-        GUIAnsehen19 = new javax.swing.JButton();
-        GUIAnsehen18 = new javax.swing.JButton();
-        GUIPreis11 = new javax.swing.JScrollPane();
-        jTextPane31 = new javax.swing.JTextPane();
-        GUIAnsehen17 = new javax.swing.JButton();
-        GUIPreis25 = new javax.swing.JScrollPane();
-        jTextPane75 = new javax.swing.JTextPane();
-        GUIChange11 = new javax.swing.JScrollPane();
-        jTextPane32 = new javax.swing.JTextPane();
-        GUIChange25 = new javax.swing.JScrollPane();
-        jTextPane76 = new javax.swing.JTextPane();
-        GUIAktie11 = new javax.swing.JScrollPane();
-        jTextPane33 = new javax.swing.JTextPane();
-        GUIAktie25 = new javax.swing.JScrollPane();
-        jTextPane77 = new javax.swing.JTextPane();
-        GUIPreis12 = new javax.swing.JScrollPane();
-        jTextPane34 = new javax.swing.JTextPane();
-        GUIPreis26 = new javax.swing.JScrollPane();
-        jTextPane78 = new javax.swing.JTextPane();
-        GUIChange12 = new javax.swing.JScrollPane();
-        jTextPane35 = new javax.swing.JTextPane();
+        jButton1 = new javax.swing.JButton();
+        TFAktie1 = new javax.swing.JTextField();
+        TFPreis1 = new javax.swing.JTextField();
+        TFChange1 = new javax.swing.JTextField();
+        BAnsehen1 = new javax.swing.JButton();
+        TFAktie2 = new javax.swing.JTextField();
+        TFPreis2 = new javax.swing.JTextField();
+        TFChange2 = new javax.swing.JTextField();
+        BAnsehen2 = new javax.swing.JButton();
+        TFAktie3 = new javax.swing.JTextField();
+        TFPreis3 = new javax.swing.JTextField();
+        TFChange3 = new javax.swing.JTextField();
+        BAnsehen3 = new javax.swing.JButton();
+        TFAktie4 = new javax.swing.JTextField();
+        TFPreis4 = new javax.swing.JTextField();
+        TFChange4 = new javax.swing.JTextField();
+        BAnsehen4 = new javax.swing.JButton();
+        TFAktie5 = new javax.swing.JTextField();
+        TFPreis5 = new javax.swing.JTextField();
+        TFChange5 = new javax.swing.JTextField();
+        BAnsehen5 = new javax.swing.JButton();
+        TFAktie6 = new javax.swing.JTextField();
+        TFPreis6 = new javax.swing.JTextField();
+        TFChange6 = new javax.swing.JTextField();
+        BAnsehen6 = new javax.swing.JButton();
+        TFAktie7 = new javax.swing.JTextField();
+        TFPreis7 = new javax.swing.JTextField();
+        TFChange7 = new javax.swing.JTextField();
+        BAnsehen7 = new javax.swing.JButton();
+        TFAktie8 = new javax.swing.JTextField();
+        TFPreis8 = new javax.swing.JTextField();
+        TFChange8 = new javax.swing.JTextField();
+        BAnsehen8 = new javax.swing.JButton();
+        TFAktie9 = new javax.swing.JTextField();
+        TFPreis9 = new javax.swing.JTextField();
+        TFChange9 = new javax.swing.JTextField();
+        BAnsehen9 = new javax.swing.JButton();
+        TFAktie10 = new javax.swing.JTextField();
+        TFPreis10 = new javax.swing.JTextField();
+        TFChange10 = new javax.swing.JTextField();
+        BAnsehen10 = new javax.swing.JButton();
+        TFAktie11 = new javax.swing.JTextField();
+        TFPreis11 = new javax.swing.JTextField();
+        TFChange11 = new javax.swing.JTextField();
+        BAnsehen11 = new javax.swing.JButton();
+        TFAktie12 = new javax.swing.JTextField();
+        TFPreis12 = new javax.swing.JTextField();
+        TFChange12 = new javax.swing.JTextField();
+        BAnsehen12 = new javax.swing.JButton();
+        TFAktie13 = new javax.swing.JTextField();
+        TFPreis13 = new javax.swing.JTextField();
+        TFChange13 = new javax.swing.JTextField();
+        BAnsehen13 = new javax.swing.JButton();
+        TFAktie14 = new javax.swing.JTextField();
+        TFPreis14 = new javax.swing.JTextField();
+        TFChange14 = new javax.swing.JTextField();
+        BAnsehen14 = new javax.swing.JButton();
+        TFAktie15 = new javax.swing.JTextField();
+        TFPreis15 = new javax.swing.JTextField();
+        TFChange15 = new javax.swing.JTextField();
+        BAnsehen15 = new javax.swing.JButton();
+        TFAktie16 = new javax.swing.JTextField();
+        TFPreis16 = new javax.swing.JTextField();
+        TFChange16 = new javax.swing.JTextField();
+        BAnsehen16 = new javax.swing.JButton();
+        Refresh = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         ÜberschriftOverflow.setFont(new java.awt.Font("Penultimate", 1, 36)); // NOI18N
-        ÜberschriftOverflow.setText("Stock im Arsch");
+        ÜberschriftOverflow.setText("ShadyTrady");
 
         DepotGUI.setText("Depot");
         DepotGUI.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
@@ -281,802 +198,577 @@ public class StockOverflowGUI extends javax.swing.JFrame {
         AktienGUIÜberschrift.setFont(new java.awt.Font("Penultimate", 0, 24)); // NOI18N
         AktienGUIÜberschrift.setText("Aktien");
 
-        GUIChange26.setViewportView(jTextPane79);
-
-        GUIAktie12.setViewportView(jTextPane36);
-
-        GUIAktie26.setViewportView(jTextPane80);
-
-        GUIPreis13.setViewportView(jTextPane37);
-
-        GUIPreis27.setViewportView(jTextPane81);
-
-        GUIChange13.setViewportView(jTextPane38);
-
-        GUIChange27.setViewportView(jTextPane82);
-
-        GUIAktie13.setViewportView(jTextPane39);
-
-        GUIAktie27.setViewportView(jTextPane83);
-
-        GUIPreis14.setViewportView(jTextPane40);
-
-        GUIPreis28.setViewportView(jTextPane84);
-
-        GUIChange14.setViewportView(jTextPane41);
-
-        GUIAnsehen30.setText("Ansehen");
-        GUIAnsehen30.addActionListener(new java.awt.event.ActionListener() {
+        jButton1.setText("WeiterAktien");
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                GUIAnsehen21ActionPerformed(evt);
+                jButton1ActionPerformed(evt);
             }
         });
 
-        GUIAktie14.setViewportView(jTextPane42);
-
-        GUIAnsehen29.setText("Ansehen");
-        GUIAnsehen29.addActionListener(new java.awt.event.ActionListener() {
+        TFAktie1.setEditable(false);
+        TFAktie1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                GUIAnsehen21ActionPerformed(evt);
+                TFAktie1ActionPerformed(evt);
             }
         });
 
-        GUIChange30.setViewportView(jTextPane85);
+        TFPreis1.setEditable(false);
 
-        GUIAnsehen1.setText("Ansehen");
-        GUIAnsehen1.addActionListener(new java.awt.event.ActionListener() {
+        TFChange1.setEditable(false);
+
+        BAnsehen1.setText("Ansehen");
+        BAnsehen1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                GUIAnsehen21ActionPerformed(evt);
+                BAnsehen2ActionPerformed(evt);
             }
         });
 
-        GUIAnsehen2.setText("Ansehen");
-        GUIAnsehen2.addActionListener(new java.awt.event.ActionListener() {
+        TFAktie2.setEditable(false);
+        TFAktie2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                GUIAnsehen21ActionPerformed(evt);
+                TFAktie2ActionPerformed(evt);
             }
         });
 
-        GUIAktie30.setViewportView(jTextPane86);
+        TFPreis2.setEditable(false);
 
-        GUIAnsehen9.setText("Ansehen");
-        GUIAnsehen9.addActionListener(new java.awt.event.ActionListener() {
+        TFChange2.setEditable(false);
+
+        BAnsehen2.setText("Ansehen");
+        BAnsehen2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                GUIAnsehen21ActionPerformed(evt);
+                BAnsehen2ActionPerformed(evt);
             }
         });
 
-        GUIAnsehen10.setText("Ansehen");
-        GUIAnsehen10.addActionListener(new java.awt.event.ActionListener() {
+        TFAktie3.setEditable(false);
+        TFAktie3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                GUIAnsehen10ActionPerformed(evt);
+                TFAktie3ActionPerformed(evt);
             }
         });
 
-        GUIPreis16.setViewportView(jTextPane48);
+        TFPreis3.setEditable(false);
 
-        GUIPreis29.setViewportView(jTextPane87);
+        TFChange3.setEditable(false);
 
-        GUIAnsehen11.setText("Ansehen");
-        GUIAnsehen11.addActionListener(new java.awt.event.ActionListener() {
+        BAnsehen3.setText("Ansehen");
+        BAnsehen3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                GUIAnsehen21ActionPerformed(evt);
+                BAnsehen2ActionPerformed(evt);
             }
         });
 
-        GUIAnsehen12.setText("Ansehen");
-        GUIAnsehen12.addActionListener(new java.awt.event.ActionListener() {
+        TFAktie4.setEditable(false);
+        TFAktie4.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                GUIAnsehen21ActionPerformed(evt);
+                TFAktie4ActionPerformed(evt);
             }
         });
 
-        GUIChange16.setViewportView(jTextPane49);
+        TFPreis4.setEditable(false);
 
-        GUIAktie16.setViewportView(jTextPane50);
+        TFChange4.setEditable(false);
 
-        GUIPreis17.setViewportView(jTextPane51);
-
-        GUIChange17.setViewportView(jTextPane52);
-
-        GUIChange29.setViewportView(jTextPane88);
-
-        GUIAnsehen14.setText("Ansehen");
-        GUIAnsehen14.addActionListener(new java.awt.event.ActionListener() {
+        BAnsehen4.setText("Ansehen");
+        BAnsehen4.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                GUIAnsehen21ActionPerformed(evt);
+                BAnsehen2ActionPerformed(evt);
             }
         });
 
-        GUIAnsehen13.setText("Ansehen");
-        GUIAnsehen13.addActionListener(new java.awt.event.ActionListener() {
+        TFAktie5.setEditable(false);
+        TFAktie5.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                GUIAnsehen21ActionPerformed(evt);
+                TFAktie5ActionPerformed(evt);
             }
         });
 
-        GUIAktie29.setViewportView(jTextPane89);
+        TFPreis5.setEditable(false);
 
-        GUIAnsehen8.setText("Ansehen");
-        GUIAnsehen8.addActionListener(new java.awt.event.ActionListener() {
+        TFChange5.setEditable(false);
+
+        BAnsehen5.setText("Ansehen");
+        BAnsehen5.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                GUIAnsehen21ActionPerformed(evt);
+                BAnsehen2ActionPerformed(evt);
             }
         });
 
-        GUIAnsehen7.setText("Ansehen");
-        GUIAnsehen7.addActionListener(new java.awt.event.ActionListener() {
+        TFAktie6.setEditable(false);
+        TFAktie6.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                GUIAnsehen21ActionPerformed(evt);
+                TFAktie6ActionPerformed(evt);
             }
         });
 
-        GUIPreis30.setViewportView(jTextPane90);
+        TFPreis6.setEditable(false);
 
-        GUIAnsehen6.setText("Ansehen");
-        GUIAnsehen6.addActionListener(new java.awt.event.ActionListener() {
+        TFChange6.setEditable(false);
+
+        BAnsehen6.setText("Ansehen");
+        BAnsehen6.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                GUIAnsehen21ActionPerformed(evt);
+                BAnsehen2ActionPerformed(evt);
             }
         });
 
-        GUIAnsehen5.setText("Ansehen");
-        GUIAnsehen5.addActionListener(new java.awt.event.ActionListener() {
+        TFAktie7.setEditable(false);
+        TFAktie7.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                GUIAnsehen21ActionPerformed(evt);
+                TFAktie7ActionPerformed(evt);
             }
         });
 
-        GUIAnsehen4.setText("Ansehen");
-        GUIAnsehen4.addActionListener(new java.awt.event.ActionListener() {
+        TFPreis7.setEditable(false);
+
+        TFChange7.setEditable(false);
+
+        BAnsehen7.setText("Ansehen");
+        BAnsehen7.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                GUIAnsehen21ActionPerformed(evt);
+                BAnsehen2ActionPerformed(evt);
             }
         });
 
-        GUIAnsehen3.setText("Ansehen");
-        GUIAnsehen3.addActionListener(new java.awt.event.ActionListener() {
+        TFAktie8.setEditable(false);
+        TFAktie8.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                GUIAnsehen21ActionPerformed(evt);
+                TFAktie8ActionPerformed(evt);
             }
         });
 
-        GUIAktie17.setViewportView(jTextPane53);
+        TFPreis8.setEditable(false);
 
-        GUIAktie.setText("Aktie");
+        TFChange8.setEditable(false);
 
-        GUIPreis.setText("Preis");
-
-        GUIPreis18.setViewportView(jTextPane54);
-
-        GUIChange18.setViewportView(jTextPane55);
-
-        GUIAktie18.setViewportView(jTextPane56);
-
-        GUIPreis19.setViewportView(jTextPane57);
-
-        GUIChange.setText("Change");
-
-        GUIChange28.setViewportView(jTextPane43);
-
-        GUIAktie28.setViewportView(jTextPane44);
-
-        GUIChange19.setViewportView(jTextPane58);
-
-        GUIChange4.setViewportView(jTextPane11);
-
-        GUIAnsehen15.setText("Ansehen");
-        GUIAnsehen15.addActionListener(new java.awt.event.ActionListener() {
+        BAnsehen8.setText("Ansehen");
+        BAnsehen8.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                GUIAnsehen21ActionPerformed(evt);
+                BAnsehen2ActionPerformed(evt);
             }
         });
 
-        GUIAnsehen16.setText("Ansehen");
-        GUIAnsehen16.addActionListener(new java.awt.event.ActionListener() {
+        TFAktie9.setEditable(false);
+        TFAktie9.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                GUIAnsehen21ActionPerformed(evt);
+                TFAktie9ActionPerformed(evt);
             }
         });
 
-        GUIAktie19.setViewportView(jTextPane59);
+        TFPreis9.setEditable(false);
 
-        GUIAktie4.setViewportView(jTextPane12);
+        TFChange9.setEditable(false);
 
-        GUIPreis20.setViewportView(jTextPane60);
-
-        GUIPreis5.setViewportView(jTextPane13);
-
-        GUIChange20.setViewportView(jTextPane61);
-
-        GUIChange5.setViewportView(jTextPane14);
-
-        GUIAktie20.setViewportView(jTextPane62);
-
-        GUIAktie5.setViewportView(jTextPane15);
-
-        GUIAnsehen23.setText("Ansehen");
-        GUIAnsehen23.addActionListener(new java.awt.event.ActionListener() {
+        BAnsehen9.setText("Ansehen");
+        BAnsehen9.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                GUIAnsehen21ActionPerformed(evt);
+                BAnsehen2ActionPerformed(evt);
             }
         });
 
-        GUIAnsehen24.setText("Ansehen");
-        GUIAnsehen24.addActionListener(new java.awt.event.ActionListener() {
+        TFAktie10.setEditable(false);
+        TFAktie10.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                GUIAnsehen24ActionPerformed(evt);
+                TFAktie10ActionPerformed(evt);
             }
         });
 
-        GUIPreis15.setViewportView(jTextPane45);
+        TFPreis10.setEditable(false);
 
-        GUIAnsehen25.setText("Ansehen");
-        GUIAnsehen25.addActionListener(new java.awt.event.ActionListener() {
+        TFChange10.setEditable(false);
+
+        BAnsehen10.setText("Ansehen");
+        BAnsehen10.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                GUIAnsehen21ActionPerformed(evt);
+                BAnsehen10BAnsehen2ActionPerformed(evt);
             }
         });
 
-        GUIAnsehen26.setText("Ansehen");
-        GUIAnsehen26.addActionListener(new java.awt.event.ActionListener() {
+        TFAktie11.setEditable(false);
+        TFAktie11.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                GUIAnsehen21ActionPerformed(evt);
+                TFAktie11ActionPerformed(evt);
             }
         });
 
-        GUIChange15.setViewportView(jTextPane46);
+        TFPreis11.setEditable(false);
 
-        GUIPreis21.setViewportView(jTextPane63);
+        TFChange11.setEditable(false);
 
-        GUIPreis6.setViewportView(jTextPane16);
-
-        GUIAktie15.setViewportView(jTextPane47);
-
-        GUIChange21.setViewportView(jTextPane64);
-
-        GUIChange6.setViewportView(jTextPane17);
-
-        GUIAktie21.setViewportView(jTextPane65);
-
-        GUIAktie6.setViewportView(jTextPane18);
-
-        GUIPreis22.setViewportView(jTextPane66);
-
-        GUIPreis7.setViewportView(jTextPane19);
-
-        GUIChange22.setViewportView(jTextPane67);
-
-        GUIChange7.setViewportView(jTextPane20);
-
-        GUIPreis1.setViewportView(jTextPane1);
-
-        GUIChange1.setViewportView(jTextPane2);
-
-        GUIAktie1.setViewportView(jTextPane3);
-
-        GUIPreis2.setViewportView(jTextPane4);
-
-        GUIAktie22.setViewportView(jTextPane68);
-
-        GUIAktie7.setViewportView(jTextPane21);
-
-        GUIChange2.setViewportView(jTextPane5);
-
-        GUIPreis23.setViewportView(jTextPane69);
-
-        jScrollPane22.setViewportView(GUIPreis8);
-
-        GUIChange23.setViewportView(jTextPane70);
-
-        GUIChange8.setViewportView(jTextPane23);
-
-        GUIAktie23.setViewportView(jTextPane71);
-
-        GUIAktie8.setViewportView(jTextPane24);
-
-        GUIPreis24.setViewportView(jTextPane72);
-
-        GUIPreis9.setViewportView(jTextPane25);
-
-        GUIAktie2.setViewportView(jTextPane6);
-
-        GUIPreis3.setViewportView(jScrollPane7);
-
-        GUIChange3.setViewportView(jTextPane8);
-
-        GUIAktie3.setViewportView(jTextPane9);
-
-        GUIChange24.setViewportView(jTextPane73);
-
-        GUIChange9.setViewportView(jTextPane26);
-
-        GUIPreis4.setViewportView(jTextPane10);
-
-        GUIAnsehen28.setText("Ansehen");
-        GUIAnsehen28.addActionListener(new java.awt.event.ActionListener() {
+        BAnsehen11.setText("Ansehen");
+        BAnsehen11.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                GUIAnsehen21ActionPerformed(evt);
+                BAnsehen11BAnsehen2ActionPerformed(evt);
             }
         });
 
-        GUIAktie9.setViewportView(jTextPane27);
-
-        GUIAktie24.setViewportView(jTextPane74);
-
-        GUIPreis10.setViewportView(jTextPane28);
-
-        GUIAnsehen27.setText("Ansehen");
-        GUIAnsehen27.addActionListener(new java.awt.event.ActionListener() {
+        TFAktie12.setEditable(false);
+        TFAktie12.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                GUIAnsehen21ActionPerformed(evt);
+                TFAktie12ActionPerformed(evt);
             }
         });
 
-        GUIAnsehen22.setText("Ansehen");
-        GUIAnsehen22.addActionListener(new java.awt.event.ActionListener() {
+        TFPreis12.setEditable(false);
+
+        TFChange12.setEditable(false);
+
+        BAnsehen12.setText("Ansehen");
+        BAnsehen12.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                GUIAnsehen21ActionPerformed(evt);
+                BAnsehen12BAnsehen2ActionPerformed(evt);
             }
         });
 
-        GUIChange10.setViewportView(jTextPane29);
-
-        GUIAnsehen21.setText("Ansehen");
-        GUIAnsehen21.addActionListener(new java.awt.event.ActionListener() {
+        TFAktie13.setEditable(false);
+        TFAktie13.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                GUIAnsehen21ActionPerformed(evt);
+                TFAktie13ActionPerformed(evt);
             }
         });
 
-        GUIAnsehen20.setText("Ansehen");
-        GUIAnsehen20.addActionListener(new java.awt.event.ActionListener() {
+        TFPreis13.setEditable(false);
+
+        TFChange13.setEditable(false);
+
+        BAnsehen13.setText("Ansehen");
+        BAnsehen13.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                GUIAnsehen21ActionPerformed(evt);
+                BAnsehen13BAnsehen2ActionPerformed(evt);
             }
         });
 
-        GUIAktie10.setViewportView(jTextPane30);
-
-        GUIAnsehen19.setText("Ansehen");
-        GUIAnsehen19.addActionListener(new java.awt.event.ActionListener() {
+        TFAktie14.setEditable(false);
+        TFAktie14.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                GUIAnsehen21ActionPerformed(evt);
+                TFAktie14ActionPerformed(evt);
             }
         });
 
-        GUIAnsehen18.setText("Ansehen");
-        GUIAnsehen18.addActionListener(new java.awt.event.ActionListener() {
+        TFPreis14.setEditable(false);
+
+        TFChange14.setEditable(false);
+
+        BAnsehen14.setText("Ansehen");
+        BAnsehen14.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                GUIAnsehen21ActionPerformed(evt);
+                BAnsehen14BAnsehen2ActionPerformed(evt);
             }
         });
 
-        GUIPreis11.setViewportView(jTextPane31);
-
-        GUIAnsehen17.setText("Ansehen");
-        GUIAnsehen17.addActionListener(new java.awt.event.ActionListener() {
+        TFAktie15.setEditable(false);
+        TFAktie15.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                GUIAnsehen21ActionPerformed(evt);
+                TFAktie15ActionPerformed(evt);
             }
         });
 
-        GUIPreis25.setViewportView(jTextPane75);
+        TFPreis15.setEditable(false);
 
-        GUIChange11.setViewportView(jTextPane32);
+        TFChange15.setEditable(false);
 
-        GUIChange25.setViewportView(jTextPane76);
+        BAnsehen15.setText("Ansehen");
+        BAnsehen15.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                BAnsehen15BAnsehen2ActionPerformed(evt);
+            }
+        });
 
-        GUIAktie11.setViewportView(jTextPane33);
+        TFAktie16.setEditable(false);
+        TFAktie16.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                TFAktie16ActionPerformed(evt);
+            }
+        });
 
-        GUIAktie25.setViewportView(jTextPane77);
+        TFPreis16.setEditable(false);
 
-        GUIPreis12.setViewportView(jTextPane34);
+        TFChange16.setEditable(false);
 
-        GUIPreis26.setViewportView(jTextPane78);
+        BAnsehen16.setText("Ansehen");
+        BAnsehen16.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                BAnsehen16BAnsehen2ActionPerformed(evt);
+            }
+        });
 
-        GUIChange12.setViewportView(jTextPane35);
+        Refresh.setText("Refresh");
+        Refresh.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                RefreshActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                .addContainerGap(246, Short.MAX_VALUE)
+                .addComponent(ÜberschriftOverflow)
+                .addGap(58, 58, 58)
+                .addComponent(DepotGUI, javax.swing.GroupLayout.PREFERRED_SIZE, 88, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addComponent(LogInGUI, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(16, 16, 16))
+            .addGroup(layout.createSequentialGroup()
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
-                        .addContainerGap(209, Short.MAX_VALUE)
-                        .addComponent(ÜberschriftOverflow)
-                        .addGap(41, 41, 41)
-                        .addComponent(DepotGUI, javax.swing.GroupLayout.PREFERRED_SIZE, 88, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(312, 312, 312)
+                        .addComponent(AktienGUIÜberschrift))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(25, 25, 25)
+                        .addComponent(Refresh)
                         .addGap(18, 18, 18)
-                        .addComponent(LogInGUI, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(55, 55, 55)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(layout.createSequentialGroup()
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(GUIAktie28, javax.swing.GroupLayout.PREFERRED_SIZE, 118, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                                        .addComponent(GUIAktie15)
-                                        .addComponent(GUIAktie16, javax.swing.GroupLayout.PREFERRED_SIZE, 118, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                    .addComponent(GUIAktie27, javax.swing.GroupLayout.PREFERRED_SIZE, 118, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(GUIAktie26, javax.swing.GroupLayout.PREFERRED_SIZE, 118, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(GUIAktie25, javax.swing.GroupLayout.PREFERRED_SIZE, 118, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(GUIAktie24, javax.swing.GroupLayout.PREFERRED_SIZE, 118, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(GUIAktie23, javax.swing.GroupLayout.PREFERRED_SIZE, 118, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(GUIAktie22, javax.swing.GroupLayout.PREFERRED_SIZE, 118, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(GUIAktie21, javax.swing.GroupLayout.PREFERRED_SIZE, 118, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(GUIAktie20, javax.swing.GroupLayout.PREFERRED_SIZE, 118, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(GUIAktie19, javax.swing.GroupLayout.PREFERRED_SIZE, 118, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(GUIAktie17, javax.swing.GroupLayout.PREFERRED_SIZE, 118, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(GUIAktie18, javax.swing.GroupLayout.PREFERRED_SIZE, 118, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                .addGap(18, 18, 18)
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(GUIPreis24, javax.swing.GroupLayout.PREFERRED_SIZE, 59, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(GUIPreis16, javax.swing.GroupLayout.PREFERRED_SIZE, 59, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(GUIPreis15, javax.swing.GroupLayout.PREFERRED_SIZE, 59, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(GUIPreis28, javax.swing.GroupLayout.PREFERRED_SIZE, 59, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(GUIPreis17, javax.swing.GroupLayout.PREFERRED_SIZE, 59, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(GUIPreis18, javax.swing.GroupLayout.PREFERRED_SIZE, 59, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(GUIPreis19, javax.swing.GroupLayout.PREFERRED_SIZE, 59, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(GUIPreis20, javax.swing.GroupLayout.PREFERRED_SIZE, 59, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(GUIPreis21, javax.swing.GroupLayout.PREFERRED_SIZE, 59, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(GUIPreis22, javax.swing.GroupLayout.PREFERRED_SIZE, 59, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(GUIPreis23, javax.swing.GroupLayout.PREFERRED_SIZE, 59, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(GUIPreis25, javax.swing.GroupLayout.PREFERRED_SIZE, 59, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(GUIPreis26, javax.swing.GroupLayout.PREFERRED_SIZE, 59, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(GUIPreis27, javax.swing.GroupLayout.PREFERRED_SIZE, 59, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                .addGap(18, 18, 18)
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(GUIChange17, javax.swing.GroupLayout.PREFERRED_SIZE, 69, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(GUIChange18, javax.swing.GroupLayout.PREFERRED_SIZE, 69, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(GUIChange19, javax.swing.GroupLayout.PREFERRED_SIZE, 69, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(GUIChange20, javax.swing.GroupLayout.PREFERRED_SIZE, 69, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(GUIChange21, javax.swing.GroupLayout.PREFERRED_SIZE, 69, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(GUIChange22, javax.swing.GroupLayout.PREFERRED_SIZE, 69, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(GUIChange23, javax.swing.GroupLayout.PREFERRED_SIZE, 69, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(GUIChange24, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 69, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(GUIChange25, javax.swing.GroupLayout.PREFERRED_SIZE, 69, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(GUIChange26, javax.swing.GroupLayout.PREFERRED_SIZE, 69, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(GUIChange27, javax.swing.GroupLayout.PREFERRED_SIZE, 69, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                        .addComponent(GUIChange16, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 69, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addComponent(GUIChange15, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 69, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                    .addComponent(GUIChange28, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 69, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                .addComponent(TFAktie4, javax.swing.GroupLayout.PREFERRED_SIZE, 112, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(TFPreis4, javax.swing.GroupLayout.PREFERRED_SIZE, 82, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(TFChange4, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(BAnsehen4))
                             .addGroup(layout.createSequentialGroup()
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(GUIAktie30, javax.swing.GroupLayout.PREFERRED_SIZE, 118, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(GUIAktie29, javax.swing.GroupLayout.PREFERRED_SIZE, 118, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                .addGap(18, 18, 18)
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(GUIPreis30, javax.swing.GroupLayout.PREFERRED_SIZE, 59, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(GUIPreis29, javax.swing.GroupLayout.PREFERRED_SIZE, 59, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                .addGap(18, 18, 18)
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(GUIChange29, javax.swing.GroupLayout.PREFERRED_SIZE, 69, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(GUIChange30, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 69, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                .addComponent(TFAktie5, javax.swing.GroupLayout.PREFERRED_SIZE, 112, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(TFPreis5, javax.swing.GroupLayout.PREFERRED_SIZE, 82, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(TFChange5, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(BAnsehen5))
                             .addGroup(layout.createSequentialGroup()
+                                .addComponent(TFAktie6, javax.swing.GroupLayout.PREFERRED_SIZE, 112, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(TFPreis6, javax.swing.GroupLayout.PREFERRED_SIZE, 82, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(TFChange6, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(BAnsehen6))
+                            .addGroup(layout.createSequentialGroup()
+                                .addComponent(TFAktie7, javax.swing.GroupLayout.PREFERRED_SIZE, 112, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(TFPreis7, javax.swing.GroupLayout.PREFERRED_SIZE, 82, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(TFChange7, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(BAnsehen7))
+                            .addGroup(layout.createSequentialGroup()
+                                .addComponent(TFAktie8, javax.swing.GroupLayout.PREFERRED_SIZE, 112, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(TFPreis8, javax.swing.GroupLayout.PREFERRED_SIZE, 82, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(TFChange8, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(BAnsehen8))
+                            .addGroup(layout.createSequentialGroup()
+                                .addComponent(TFAktie9, javax.swing.GroupLayout.PREFERRED_SIZE, 112, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(TFPreis9, javax.swing.GroupLayout.PREFERRED_SIZE, 82, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(TFChange9, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(BAnsehen9))
+                            .addGroup(layout.createSequentialGroup()
+                                .addComponent(TFAktie10, javax.swing.GroupLayout.PREFERRED_SIZE, 112, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(TFPreis10, javax.swing.GroupLayout.PREFERRED_SIZE, 82, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(TFChange10, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(BAnsehen10))
+                            .addGroup(layout.createSequentialGroup()
+                                .addComponent(TFAktie11, javax.swing.GroupLayout.PREFERRED_SIZE, 112, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(TFPreis11, javax.swing.GroupLayout.PREFERRED_SIZE, 82, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(TFChange11, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(BAnsehen11))
+                            .addGroup(layout.createSequentialGroup()
+                                .addComponent(TFAktie12, javax.swing.GroupLayout.PREFERRED_SIZE, 112, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(TFPreis12, javax.swing.GroupLayout.PREFERRED_SIZE, 82, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(TFChange12, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(BAnsehen12))
+                            .addGroup(layout.createSequentialGroup()
+                                .addComponent(TFAktie13, javax.swing.GroupLayout.PREFERRED_SIZE, 112, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(TFPreis13, javax.swing.GroupLayout.PREFERRED_SIZE, 82, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(TFChange13, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(BAnsehen13))
+                            .addGroup(layout.createSequentialGroup()
+                                .addComponent(TFAktie14, javax.swing.GroupLayout.PREFERRED_SIZE, 112, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(TFPreis14, javax.swing.GroupLayout.PREFERRED_SIZE, 82, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(TFChange14, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(BAnsehen14))
+                            .addGroup(layout.createSequentialGroup()
+                                .addComponent(TFAktie15, javax.swing.GroupLayout.PREFERRED_SIZE, 112, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(TFPreis15, javax.swing.GroupLayout.PREFERRED_SIZE, 82, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(TFChange15, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(BAnsehen15))
+                            .addGroup(layout.createSequentialGroup()
+                                .addComponent(TFAktie1, javax.swing.GroupLayout.PREFERRED_SIZE, 112, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(TFPreis1, javax.swing.GroupLayout.PREFERRED_SIZE, 82, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(TFChange1, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(BAnsehen1))
+                            .addGroup(layout.createSequentialGroup()
+                                .addComponent(TFAktie2, javax.swing.GroupLayout.PREFERRED_SIZE, 112, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(TFPreis2, javax.swing.GroupLayout.PREFERRED_SIZE, 82, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(TFChange2, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(BAnsehen2))
+                            .addGroup(layout.createSequentialGroup()
+                                .addComponent(TFAktie3, javax.swing.GroupLayout.PREFERRED_SIZE, 112, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(TFPreis3, javax.swing.GroupLayout.PREFERRED_SIZE, 82, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(TFChange3, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(BAnsehen3))
+                            .addGroup(layout.createSequentialGroup()
+                                .addComponent(TFAktie16, javax.swing.GroupLayout.PREFERRED_SIZE, 112, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(GUIAktie14, javax.swing.GroupLayout.PREFERRED_SIZE, 118, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                                        .addComponent(GUIAktie1)
-                                        .addComponent(GUIAktie2, javax.swing.GroupLayout.PREFERRED_SIZE, 118, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                    .addComponent(GUIAktie13, javax.swing.GroupLayout.PREFERRED_SIZE, 118, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(GUIAktie12, javax.swing.GroupLayout.PREFERRED_SIZE, 118, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(GUIAktie11, javax.swing.GroupLayout.PREFERRED_SIZE, 118, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(GUIAktie10, javax.swing.GroupLayout.PREFERRED_SIZE, 118, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(GUIAktie9, javax.swing.GroupLayout.PREFERRED_SIZE, 118, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(GUIAktie8, javax.swing.GroupLayout.PREFERRED_SIZE, 118, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(GUIAktie7, javax.swing.GroupLayout.PREFERRED_SIZE, 118, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(GUIAktie6, javax.swing.GroupLayout.PREFERRED_SIZE, 118, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(GUIAktie5, javax.swing.GroupLayout.PREFERRED_SIZE, 118, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(GUIAktie3, javax.swing.GroupLayout.PREFERRED_SIZE, 118, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(GUIAktie4, javax.swing.GroupLayout.PREFERRED_SIZE, 118, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(GUIAktie)
-                                    .addComponent(AktienGUIÜberschrift))
-                                .addGap(18, 18, 18)
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(GUIPreis)
-                                    .addComponent(GUIPreis10, javax.swing.GroupLayout.PREFERRED_SIZE, 59, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(GUIPreis2, javax.swing.GroupLayout.PREFERRED_SIZE, 59, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(GUIPreis1, javax.swing.GroupLayout.PREFERRED_SIZE, 59, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(GUIPreis14, javax.swing.GroupLayout.PREFERRED_SIZE, 59, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(GUIPreis3, javax.swing.GroupLayout.PREFERRED_SIZE, 59, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(GUIPreis4, javax.swing.GroupLayout.PREFERRED_SIZE, 59, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(GUIPreis5, javax.swing.GroupLayout.PREFERRED_SIZE, 59, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(GUIPreis6, javax.swing.GroupLayout.PREFERRED_SIZE, 59, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(GUIPreis7, javax.swing.GroupLayout.PREFERRED_SIZE, 59, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(jScrollPane22, javax.swing.GroupLayout.PREFERRED_SIZE, 59, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(GUIPreis9, javax.swing.GroupLayout.PREFERRED_SIZE, 59, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(GUIPreis11, javax.swing.GroupLayout.PREFERRED_SIZE, 59, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(GUIPreis12, javax.swing.GroupLayout.PREFERRED_SIZE, 59, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(GUIPreis13, javax.swing.GroupLayout.PREFERRED_SIZE, 59, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                .addGap(18, 18, 18)
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(GUIChange)
+                                    .addComponent(jButton1)
                                     .addGroup(layout.createSequentialGroup()
-                                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                            .addComponent(GUIChange3, javax.swing.GroupLayout.PREFERRED_SIZE, 69, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                            .addComponent(GUIChange4, javax.swing.GroupLayout.PREFERRED_SIZE, 69, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                            .addComponent(GUIChange5, javax.swing.GroupLayout.PREFERRED_SIZE, 69, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                            .addComponent(GUIChange6, javax.swing.GroupLayout.PREFERRED_SIZE, 69, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                            .addComponent(GUIChange7, javax.swing.GroupLayout.PREFERRED_SIZE, 69, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                            .addComponent(GUIChange8, javax.swing.GroupLayout.PREFERRED_SIZE, 69, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                            .addComponent(GUIChange9, javax.swing.GroupLayout.PREFERRED_SIZE, 69, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                            .addComponent(GUIChange10, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 69, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                            .addComponent(GUIChange11, javax.swing.GroupLayout.PREFERRED_SIZE, 69, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                            .addComponent(GUIChange12, javax.swing.GroupLayout.PREFERRED_SIZE, 69, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                            .addComponent(GUIChange13, javax.swing.GroupLayout.PREFERRED_SIZE, 69, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                                .addComponent(GUIChange2, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 69, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                                .addComponent(GUIChange1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 69, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                            .addComponent(GUIChange14, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 69, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                        .addGap(18, 18, 18)
-                                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                            .addComponent(GUIAnsehen1)
-                                            .addComponent(GUIAnsehen2)
-                                            .addComponent(GUIAnsehen14)
-                                            .addComponent(GUIAnsehen13)
-                                            .addComponent(GUIAnsehen12)
-                                            .addComponent(GUIAnsehen11)
-                                            .addComponent(GUIAnsehen10)
-                                            .addComponent(GUIAnsehen9)
-                                            .addComponent(GUIAnsehen8)
-                                            .addComponent(GUIAnsehen7)
-                                            .addComponent(GUIAnsehen6)
-                                            .addComponent(GUIAnsehen5)
-                                            .addComponent(GUIAnsehen4)
-                                            .addComponent(GUIAnsehen3)
-                                            .addComponent(GUIAnsehen15)
-                                            .addComponent(GUIAnsehen16)
-                                            .addComponent(GUIAnsehen28)
-                                            .addComponent(GUIAnsehen27)
-                                            .addComponent(GUIAnsehen26)
-                                            .addComponent(GUIAnsehen25)
-                                            .addComponent(GUIAnsehen24)
-                                            .addComponent(GUIAnsehen23)
-                                            .addComponent(GUIAnsehen22)
-                                            .addComponent(GUIAnsehen21)
-                                            .addComponent(GUIAnsehen20)
-                                            .addComponent(GUIAnsehen19)
-                                            .addComponent(GUIAnsehen18)
-                                            .addComponent(GUIAnsehen17)
-                                            .addComponent(GUIAnsehen29)
-                                            .addComponent(GUIAnsehen30))))))))
-                .addGap(16, 16, 16))
+                                        .addComponent(TFPreis16, javax.swing.GroupLayout.PREFERRED_SIZE, 82, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                        .addComponent(TFChange16, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                        .addComponent(BAnsehen16)))))))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addGap(21, 21, 21)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                        .addComponent(LogInGUI, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(DepotGUI, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addComponent(ÜberschriftOverflow))
-                .addGap(31, 31, 31)
-                .addComponent(AktienGUIÜberschrift)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(21, 21, 21)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(LogInGUI, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(DepotGUI, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                    .addGroup(layout.createSequentialGroup()
+                        .addContainerGap()
+                        .addComponent(ÜberschriftOverflow)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(AktienGUIÜberschrift)))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(GUIAktie)
-                    .addComponent(GUIPreis)
-                    .addComponent(GUIChange))
+                    .addComponent(TFAktie1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(TFPreis1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(TFChange1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(BAnsehen1)
+                    .addComponent(Refresh))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(TFAktie2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(TFPreis2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(TFChange2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(BAnsehen2))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(TFAktie3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(TFPreis3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(TFChange3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(BAnsehen3))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(TFAktie4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(TFPreis4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(TFChange4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(BAnsehen4))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(TFAktie5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(TFPreis5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(TFChange5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(BAnsehen5))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(TFAktie6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(TFPreis6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(TFChange6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(BAnsehen6))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(TFAktie7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(TFPreis7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(TFChange7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(BAnsehen7))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(TFAktie8, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(TFPreis8, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(TFChange8, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(BAnsehen8))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(TFAktie9, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(TFPreis9, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(TFChange9, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(BAnsehen9))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(TFAktie10, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(TFPreis10, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(TFChange10, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(BAnsehen10))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(TFAktie11, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(TFPreis11, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(TFChange11, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(BAnsehen11))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(TFAktie12, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(TFPreis12, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(TFChange12, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(BAnsehen12))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(TFAktie13, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(TFPreis13, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(TFChange13, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(BAnsehen13))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(TFAktie14, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(TFPreis14, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(TFChange14, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(BAnsehen14))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(TFAktie15, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(TFPreis15, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(TFChange15, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(BAnsehen15))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(TFAktie16, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(TFPreis16, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(TFChange16, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(BAnsehen16))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(GUIAktie1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(GUIPreis1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(GUIChange1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(7, 7, 7)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(GUIAktie2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(GUIPreis2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(GUIChange2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(7, 7, 7)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(GUIAktie3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(GUIPreis3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(GUIChange3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(7, 7, 7)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(GUIAktie4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(GUIPreis4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(GUIChange4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(7, 7, 7)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(GUIAktie5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(GUIPreis5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(GUIChange5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(7, 7, 7)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(GUIAktie6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(GUIPreis6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(GUIChange6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(7, 7, 7)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(GUIAktie7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(GUIPreis7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(GUIChange7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(7, 7, 7)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(GUIAktie8, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jScrollPane22, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(GUIChange8, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(7, 7, 7)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(GUIAktie9, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(GUIPreis9, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(GUIChange9, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(GUIAktie10, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(GUIPreis10, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(GUIChange10, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(GUIAktie11, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(GUIPreis11, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(GUIChange11, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(GUIAktie12, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(GUIPreis12, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(GUIChange12, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(7, 7, 7)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(GUIAktie13, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(GUIPreis13, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(GUIChange13, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(7, 7, 7)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(GUIAktie14, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(GUIPreis14, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(GUIChange14, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(7, 7, 7)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(GUIAktie15, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(GUIPreis15, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(GUIChange15, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(7, 7, 7)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(GUIAktie16, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(GUIPreis16, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(GUIChange16, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(7, 7, 7)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(GUIAktie17, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(GUIPreis17, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(GUIChange17, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(7, 7, 7)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(GUIAktie18, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(GUIPreis18, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(GUIChange18, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(7, 7, 7)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(GUIAktie19, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(GUIPreis19, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(GUIChange19, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(7, 7, 7)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(GUIAktie20, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(GUIPreis20, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(GUIChange20, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(7, 7, 7)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(GUIAktie21, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(GUIPreis21, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(GUIChange21, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(7, 7, 7)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(GUIAktie22, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(GUIPreis22, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(GUIChange22, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(7, 7, 7)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(GUIAktie23, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(GUIPreis23, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(GUIChange23, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(GUIAktie24, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(GUIPreis24, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(GUIChange24, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(GUIAktie25, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(GUIPreis25, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(GUIChange25, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(7, 7, 7)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(GUIAktie26, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(GUIPreis26, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(GUIChange26, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(7, 7, 7)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(GUIAktie27, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(GUIPreis27, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(GUIChange27, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(7, 7, 7)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(GUIAktie28, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(GUIPreis28, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(GUIChange28, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(7, 7, 7)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(GUIAktie29, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(GUIPreis29, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(GUIChange29, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(7, 7, 7)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(GUIAktie30, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(GUIPreis30, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(GUIChange30, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(12, 12, 12))
-                    .addGroup(layout.createSequentialGroup()
-                        .addComponent(GUIAnsehen1)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(GUIAnsehen2)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(GUIAnsehen3)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(GUIAnsehen4)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(GUIAnsehen5)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(GUIAnsehen6)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(GUIAnsehen7)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(GUIAnsehen8)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(GUIAnsehen9)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(GUIAnsehen10)
-                        .addGap(4, 4, 4)
-                        .addComponent(GUIAnsehen11)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(GUIAnsehen12)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(GUIAnsehen13)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(GUIAnsehen14)
-                        .addGap(7, 7, 7)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addGroup(layout.createSequentialGroup()
-                                .addComponent(GUIAnsehen15)
-                                .addGap(29, 29, 29))
-                            .addComponent(GUIAnsehen16))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(GUIAnsehen17)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(GUIAnsehen18)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(GUIAnsehen19)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(GUIAnsehen20)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(GUIAnsehen21)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(GUIAnsehen22)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(GUIAnsehen23)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(GUIAnsehen24)
-                        .addGap(4, 4, 4)
-                        .addComponent(GUIAnsehen25)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(GUIAnsehen26)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(GUIAnsehen27)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(GUIAnsehen28)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(GUIAnsehen29)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(GUIAnsehen30)
-                        .addContainerGap())))
+                .addComponent(jButton1)
+                .addContainerGap(69, Short.MAX_VALUE))
         );
 
         pack();
@@ -1090,288 +782,229 @@ public class StockOverflowGUI extends javax.swing.JFrame {
         c.switchTo("EigenesDepot");
     }//GEN-LAST:event_DepotGUIActionPerformed
 
-    private void GUIAnsehen10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_GUIAnsehen10ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_GUIAnsehen10ActionPerformed
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        c.switchTo("AktieAnsehen");
+    }//GEN-LAST:event_jButton1ActionPerformed
 
-    private void GUIAnsehen24ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_GUIAnsehen24ActionPerformed
+    private void TFAktie1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_TFAktie1ActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_GUIAnsehen24ActionPerformed
+    }//GEN-LAST:event_TFAktie1ActionPerformed
 
-    private void GUIAnsehen21ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_GUIAnsehen21ActionPerformed
+    private void TFAktie2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_TFAktie2ActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_GUIAnsehen21ActionPerformed
+    }//GEN-LAST:event_TFAktie2ActionPerformed
+
+    private void TFAktie3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_TFAktie3ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_TFAktie3ActionPerformed
+
+    private void TFAktie4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_TFAktie4ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_TFAktie4ActionPerformed
+
+    private void TFAktie5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_TFAktie5ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_TFAktie5ActionPerformed
+
+    private void TFAktie6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_TFAktie6ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_TFAktie6ActionPerformed
+
+    private void TFAktie7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_TFAktie7ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_TFAktie7ActionPerformed
+
+    private void TFAktie8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_TFAktie8ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_TFAktie8ActionPerformed
+
+    private void TFAktie9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_TFAktie9ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_TFAktie9ActionPerformed
+
+    private void BAnsehen2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BAnsehen2ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_BAnsehen2ActionPerformed
+
+    private void TFAktie10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_TFAktie10ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_TFAktie10ActionPerformed
+
+    private void BAnsehen10BAnsehen2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BAnsehen10BAnsehen2ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_BAnsehen10BAnsehen2ActionPerformed
+
+    private void TFAktie11ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_TFAktie11ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_TFAktie11ActionPerformed
+
+    private void BAnsehen11BAnsehen2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BAnsehen11BAnsehen2ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_BAnsehen11BAnsehen2ActionPerformed
+
+    private void TFAktie12ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_TFAktie12ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_TFAktie12ActionPerformed
+
+    private void BAnsehen12BAnsehen2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BAnsehen12BAnsehen2ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_BAnsehen12BAnsehen2ActionPerformed
+
+    private void TFAktie13ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_TFAktie13ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_TFAktie13ActionPerformed
+
+    private void BAnsehen13BAnsehen2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BAnsehen13BAnsehen2ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_BAnsehen13BAnsehen2ActionPerformed
+
+    private void TFAktie14ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_TFAktie14ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_TFAktie14ActionPerformed
+
+    private void BAnsehen14BAnsehen2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BAnsehen14BAnsehen2ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_BAnsehen14BAnsehen2ActionPerformed
+
+    private void TFAktie15ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_TFAktie15ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_TFAktie15ActionPerformed
+
+    private void BAnsehen15BAnsehen2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BAnsehen15BAnsehen2ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_BAnsehen15BAnsehen2ActionPerformed
+
+    private void TFAktie16ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_TFAktie16ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_TFAktie16ActionPerformed
+
+    private void BAnsehen16BAnsehen2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BAnsehen16BAnsehen2ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_BAnsehen16BAnsehen2ActionPerformed
+
+    private void RefreshActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_RefreshActionPerformed
+        c.AktienDatenAktualisieren();
+    }//GEN-LAST:event_RefreshActionPerformed
 
     /**
      * @param args the command line arguments
-     
-    public static void main(String args[]) {
-        /* Set the Nimbus look and feel 
-        //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
-        /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
-         * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
-         
-        try {
-            for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
-                if ("Nimbus".equals(info.getName())) {
-                    javax.swing.UIManager.setLookAndFeel(info.getClassName());
-                    break;
-                }
-            }
-        } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(StockOverflowGUI.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(StockOverflowGUI.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(StockOverflowGUI.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(StockOverflowGUI.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        }
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-
-        /* Create and display the form 
-        java.awt.EventQueue.invokeLater(new Runnable() {
-            public void run() {
-                new StockOverflowGUI().setVisible(true);
-            }
-        });
-    }
-*/
-    
-    
+     *
+     * public static void main(String args[]) { /* Set the Nimbus look and feel
+     * //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
+     * /* If Nimbus (introduced in Java SE 6) is not available, stay with the
+     * default look and feel. For details see
+     * http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html
+     * * try { for (javax.swing.UIManager.LookAndFeelInfo info :
+     * javax.swing.UIManager.getInstalledLookAndFeels()) { if
+     * ("Nimbus".equals(info.getName())) {
+     * javax.swing.UIManager.setLookAndFeel(info.getClassName()); break; } } }
+     * catch (ClassNotFoundException ex) {
+     * java.util.logging.Logger.getLogger(StockOverflowGUI.class.getName()).log(java.util.logging.Level.SEVERE,
+     * null, ex); } catch (InstantiationException ex) {
+     * java.util.logging.Logger.getLogger(StockOverflowGUI.class.getName()).log(java.util.logging.Level.SEVERE,
+     * null, ex); } catch (IllegalAccessException ex) {
+     * java.util.logging.Logger.getLogger(StockOverflowGUI.class.getName()).log(java.util.logging.Level.SEVERE,
+     * null, ex); } catch (javax.swing.UnsupportedLookAndFeelException ex) {
+     * java.util.logging.Logger.getLogger(StockOverflowGUI.class.getName()).log(java.util.logging.Level.SEVERE,
+     * null, ex); } //</editor-fold>
+     * //</editor-fold>
+     * //</editor-fold>
+     * //</editor-fold>
+     * //</editor-fold>
+     * //</editor-fold>
+     * //</editor-fold>
+     * //</editor-fold>
+     * //</editor-fold>
+     * //</editor-fold>
+     * //</editor-fold>
+     * //</editor-fold>
+     * //</editor-fold>
+     * //</editor-fold>
+     * //</editor-fold>
+     * //</editor-fold>
+     *
+     * /* Create and display the form java.awt.EventQueue.invokeLater(new
+     * Runnable() { public void run() { new StockOverflowGUI().setVisible(true);
+     * } }); }
+     */
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel AktienGUIÜberschrift;
+    private javax.swing.JButton BAnsehen1;
+    private javax.swing.JButton BAnsehen10;
+    private javax.swing.JButton BAnsehen11;
+    private javax.swing.JButton BAnsehen12;
+    private javax.swing.JButton BAnsehen13;
+    private javax.swing.JButton BAnsehen14;
+    private javax.swing.JButton BAnsehen15;
+    private javax.swing.JButton BAnsehen16;
+    private javax.swing.JButton BAnsehen2;
+    private javax.swing.JButton BAnsehen3;
+    private javax.swing.JButton BAnsehen4;
+    private javax.swing.JButton BAnsehen5;
+    private javax.swing.JButton BAnsehen6;
+    private javax.swing.JButton BAnsehen7;
+    private javax.swing.JButton BAnsehen8;
+    private javax.swing.JButton BAnsehen9;
     private javax.swing.JButton DepotGUI;
-    private javax.swing.JLabel GUIAktie;
-    private javax.swing.JScrollPane GUIAktie1;
-    private javax.swing.JScrollPane GUIAktie10;
-    private javax.swing.JScrollPane GUIAktie11;
-    private javax.swing.JScrollPane GUIAktie12;
-    private javax.swing.JScrollPane GUIAktie13;
-    private javax.swing.JScrollPane GUIAktie14;
-    private javax.swing.JScrollPane GUIAktie15;
-    private javax.swing.JScrollPane GUIAktie16;
-    private javax.swing.JScrollPane GUIAktie17;
-    private javax.swing.JScrollPane GUIAktie18;
-    private javax.swing.JScrollPane GUIAktie19;
-    private javax.swing.JScrollPane GUIAktie2;
-    private javax.swing.JScrollPane GUIAktie20;
-    private javax.swing.JScrollPane GUIAktie21;
-    private javax.swing.JScrollPane GUIAktie22;
-    private javax.swing.JScrollPane GUIAktie23;
-    private javax.swing.JScrollPane GUIAktie24;
-    private javax.swing.JScrollPane GUIAktie25;
-    private javax.swing.JScrollPane GUIAktie26;
-    private javax.swing.JScrollPane GUIAktie27;
-    private javax.swing.JScrollPane GUIAktie28;
-    private javax.swing.JScrollPane GUIAktie29;
-    private javax.swing.JScrollPane GUIAktie3;
-    private javax.swing.JScrollPane GUIAktie30;
-    private javax.swing.JScrollPane GUIAktie4;
-    private javax.swing.JScrollPane GUIAktie5;
-    private javax.swing.JScrollPane GUIAktie6;
-    private javax.swing.JScrollPane GUIAktie7;
-    private javax.swing.JScrollPane GUIAktie8;
-    private javax.swing.JScrollPane GUIAktie9;
-    private javax.swing.JButton GUIAnsehen1;
-    private javax.swing.JButton GUIAnsehen10;
-    private javax.swing.JButton GUIAnsehen11;
-    private javax.swing.JButton GUIAnsehen12;
-    private javax.swing.JButton GUIAnsehen13;
-    private javax.swing.JButton GUIAnsehen14;
-    private javax.swing.JButton GUIAnsehen15;
-    private javax.swing.JButton GUIAnsehen16;
-    private javax.swing.JButton GUIAnsehen17;
-    private javax.swing.JButton GUIAnsehen18;
-    private javax.swing.JButton GUIAnsehen19;
-    private javax.swing.JButton GUIAnsehen2;
-    private javax.swing.JButton GUIAnsehen20;
-    private javax.swing.JButton GUIAnsehen21;
-    private javax.swing.JButton GUIAnsehen22;
-    private javax.swing.JButton GUIAnsehen23;
-    private javax.swing.JButton GUIAnsehen24;
-    private javax.swing.JButton GUIAnsehen25;
-    private javax.swing.JButton GUIAnsehen26;
-    private javax.swing.JButton GUIAnsehen27;
-    private javax.swing.JButton GUIAnsehen28;
-    private javax.swing.JButton GUIAnsehen29;
-    private javax.swing.JButton GUIAnsehen3;
-    private javax.swing.JButton GUIAnsehen30;
-    private javax.swing.JButton GUIAnsehen4;
-    private javax.swing.JButton GUIAnsehen5;
-    private javax.swing.JButton GUIAnsehen6;
-    private javax.swing.JButton GUIAnsehen7;
-    private javax.swing.JButton GUIAnsehen8;
-    private javax.swing.JButton GUIAnsehen9;
-    private javax.swing.JLabel GUIChange;
-    private javax.swing.JScrollPane GUIChange1;
-    private javax.swing.JScrollPane GUIChange10;
-    private javax.swing.JScrollPane GUIChange11;
-    private javax.swing.JScrollPane GUIChange12;
-    private javax.swing.JScrollPane GUIChange13;
-    private javax.swing.JScrollPane GUIChange14;
-    private javax.swing.JScrollPane GUIChange15;
-    private javax.swing.JScrollPane GUIChange16;
-    private javax.swing.JScrollPane GUIChange17;
-    private javax.swing.JScrollPane GUIChange18;
-    private javax.swing.JScrollPane GUIChange19;
-    private javax.swing.JScrollPane GUIChange2;
-    private javax.swing.JScrollPane GUIChange20;
-    private javax.swing.JScrollPane GUIChange21;
-    private javax.swing.JScrollPane GUIChange22;
-    private javax.swing.JScrollPane GUIChange23;
-    private javax.swing.JScrollPane GUIChange24;
-    private javax.swing.JScrollPane GUIChange25;
-    private javax.swing.JScrollPane GUIChange26;
-    private javax.swing.JScrollPane GUIChange27;
-    private javax.swing.JScrollPane GUIChange28;
-    private javax.swing.JScrollPane GUIChange29;
-    private javax.swing.JScrollPane GUIChange3;
-    private javax.swing.JScrollPane GUIChange30;
-    private javax.swing.JScrollPane GUIChange4;
-    private javax.swing.JScrollPane GUIChange5;
-    private javax.swing.JScrollPane GUIChange6;
-    private javax.swing.JScrollPane GUIChange7;
-    private javax.swing.JScrollPane GUIChange8;
-    private javax.swing.JScrollPane GUIChange9;
-    private javax.swing.JLabel GUIPreis;
-    private javax.swing.JScrollPane GUIPreis1;
-    private javax.swing.JScrollPane GUIPreis10;
-    private javax.swing.JScrollPane GUIPreis11;
-    private javax.swing.JScrollPane GUIPreis12;
-    private javax.swing.JScrollPane GUIPreis13;
-    private javax.swing.JScrollPane GUIPreis14;
-    private javax.swing.JScrollPane GUIPreis15;
-    private javax.swing.JScrollPane GUIPreis16;
-    private javax.swing.JScrollPane GUIPreis17;
-    private javax.swing.JScrollPane GUIPreis18;
-    private javax.swing.JScrollPane GUIPreis19;
-    private javax.swing.JScrollPane GUIPreis2;
-    private javax.swing.JScrollPane GUIPreis20;
-    private javax.swing.JScrollPane GUIPreis21;
-    private javax.swing.JScrollPane GUIPreis22;
-    private javax.swing.JScrollPane GUIPreis23;
-    private javax.swing.JScrollPane GUIPreis24;
-    private javax.swing.JScrollPane GUIPreis25;
-    private javax.swing.JScrollPane GUIPreis26;
-    private javax.swing.JScrollPane GUIPreis27;
-    private javax.swing.JScrollPane GUIPreis28;
-    private javax.swing.JScrollPane GUIPreis29;
-    private javax.swing.JScrollPane GUIPreis3;
-    private javax.swing.JScrollPane GUIPreis30;
-    private javax.swing.JScrollPane GUIPreis4;
-    private javax.swing.JScrollPane GUIPreis5;
-    private javax.swing.JScrollPane GUIPreis6;
-    private javax.swing.JScrollPane GUIPreis7;
-    private javax.swing.JTextPane GUIPreis8;
-    private javax.swing.JScrollPane GUIPreis9;
     private javax.swing.JButton LogInGUI;
-    private javax.swing.JScrollPane jScrollPane22;
-    private javax.swing.JTextPane jScrollPane7;
-    private javax.swing.JTextPane jTextPane1;
-    private javax.swing.JTextPane jTextPane10;
-    private javax.swing.JTextPane jTextPane11;
-    private javax.swing.JTextPane jTextPane12;
-    private javax.swing.JTextPane jTextPane13;
-    private javax.swing.JTextPane jTextPane14;
-    private javax.swing.JTextPane jTextPane15;
-    private javax.swing.JTextPane jTextPane16;
-    private javax.swing.JTextPane jTextPane17;
-    private javax.swing.JTextPane jTextPane18;
-    private javax.swing.JTextPane jTextPane19;
-    private javax.swing.JTextPane jTextPane2;
-    private javax.swing.JTextPane jTextPane20;
-    private javax.swing.JTextPane jTextPane21;
-    private javax.swing.JTextPane jTextPane23;
-    private javax.swing.JTextPane jTextPane24;
-    private javax.swing.JTextPane jTextPane25;
-    private javax.swing.JTextPane jTextPane26;
-    private javax.swing.JTextPane jTextPane27;
-    private javax.swing.JTextPane jTextPane28;
-    private javax.swing.JTextPane jTextPane29;
-    private javax.swing.JTextPane jTextPane3;
-    private javax.swing.JTextPane jTextPane30;
-    private javax.swing.JTextPane jTextPane31;
-    private javax.swing.JTextPane jTextPane32;
-    private javax.swing.JTextPane jTextPane33;
-    private javax.swing.JTextPane jTextPane34;
-    private javax.swing.JTextPane jTextPane35;
-    private javax.swing.JTextPane jTextPane36;
-    private javax.swing.JTextPane jTextPane37;
-    private javax.swing.JTextPane jTextPane38;
-    private javax.swing.JTextPane jTextPane39;
-    private javax.swing.JTextPane jTextPane4;
-    private javax.swing.JTextPane jTextPane40;
-    private javax.swing.JTextPane jTextPane41;
-    private javax.swing.JTextPane jTextPane42;
-    private javax.swing.JTextPane jTextPane43;
-    private javax.swing.JTextPane jTextPane44;
-    private javax.swing.JTextPane jTextPane45;
-    private javax.swing.JTextPane jTextPane46;
-    private javax.swing.JTextPane jTextPane47;
-    private javax.swing.JTextPane jTextPane48;
-    private javax.swing.JTextPane jTextPane49;
-    private javax.swing.JTextPane jTextPane5;
-    private javax.swing.JTextPane jTextPane50;
-    private javax.swing.JTextPane jTextPane51;
-    private javax.swing.JTextPane jTextPane52;
-    private javax.swing.JTextPane jTextPane53;
-    private javax.swing.JTextPane jTextPane54;
-    private javax.swing.JTextPane jTextPane55;
-    private javax.swing.JTextPane jTextPane56;
-    private javax.swing.JTextPane jTextPane57;
-    private javax.swing.JTextPane jTextPane58;
-    private javax.swing.JTextPane jTextPane59;
-    private javax.swing.JTextPane jTextPane6;
-    private javax.swing.JTextPane jTextPane60;
-    private javax.swing.JTextPane jTextPane61;
-    private javax.swing.JTextPane jTextPane62;
-    private javax.swing.JTextPane jTextPane63;
-    private javax.swing.JTextPane jTextPane64;
-    private javax.swing.JTextPane jTextPane65;
-    private javax.swing.JTextPane jTextPane66;
-    private javax.swing.JTextPane jTextPane67;
-    private javax.swing.JTextPane jTextPane68;
-    private javax.swing.JTextPane jTextPane69;
-    private javax.swing.JTextPane jTextPane70;
-    private javax.swing.JTextPane jTextPane71;
-    private javax.swing.JTextPane jTextPane72;
-    private javax.swing.JTextPane jTextPane73;
-    private javax.swing.JTextPane jTextPane74;
-    private javax.swing.JTextPane jTextPane75;
-    private javax.swing.JTextPane jTextPane76;
-    private javax.swing.JTextPane jTextPane77;
-    private javax.swing.JTextPane jTextPane78;
-    private javax.swing.JTextPane jTextPane79;
-    private javax.swing.JTextPane jTextPane8;
-    private javax.swing.JTextPane jTextPane80;
-    private javax.swing.JTextPane jTextPane81;
-    private javax.swing.JTextPane jTextPane82;
-    private javax.swing.JTextPane jTextPane83;
-    private javax.swing.JTextPane jTextPane84;
-    private javax.swing.JTextPane jTextPane85;
-    private javax.swing.JTextPane jTextPane86;
-    private javax.swing.JTextPane jTextPane87;
-    private javax.swing.JTextPane jTextPane88;
-    private javax.swing.JTextPane jTextPane89;
-    private javax.swing.JTextPane jTextPane9;
-    private javax.swing.JTextPane jTextPane90;
+    private javax.swing.JButton Refresh;
+    public javax.swing.JTextField TFAktie1;
+    public javax.swing.JTextField TFAktie10;
+    public javax.swing.JTextField TFAktie11;
+    public javax.swing.JTextField TFAktie12;
+    public javax.swing.JTextField TFAktie13;
+    public javax.swing.JTextField TFAktie14;
+    public javax.swing.JTextField TFAktie15;
+    public javax.swing.JTextField TFAktie16;
+    public javax.swing.JTextField TFAktie2;
+    public javax.swing.JTextField TFAktie3;
+    public javax.swing.JTextField TFAktie4;
+    public javax.swing.JTextField TFAktie5;
+    public javax.swing.JTextField TFAktie6;
+    public javax.swing.JTextField TFAktie7;
+    public javax.swing.JTextField TFAktie8;
+    public javax.swing.JTextField TFAktie9;
+    public javax.swing.JTextField TFChange1;
+    public javax.swing.JTextField TFChange10;
+    public javax.swing.JTextField TFChange11;
+    public javax.swing.JTextField TFChange12;
+    public javax.swing.JTextField TFChange13;
+    public javax.swing.JTextField TFChange14;
+    public javax.swing.JTextField TFChange15;
+    public javax.swing.JTextField TFChange16;
+    public javax.swing.JTextField TFChange2;
+    public javax.swing.JTextField TFChange3;
+    public javax.swing.JTextField TFChange4;
+    public javax.swing.JTextField TFChange5;
+    public javax.swing.JTextField TFChange6;
+    public javax.swing.JTextField TFChange7;
+    public javax.swing.JTextField TFChange8;
+    public javax.swing.JTextField TFChange9;
+    public javax.swing.JTextField TFPreis1;
+    public javax.swing.JTextField TFPreis10;
+    public javax.swing.JTextField TFPreis11;
+    public javax.swing.JTextField TFPreis12;
+    public javax.swing.JTextField TFPreis13;
+    public javax.swing.JTextField TFPreis14;
+    public javax.swing.JTextField TFPreis15;
+    public javax.swing.JTextField TFPreis16;
+    public javax.swing.JTextField TFPreis2;
+    public javax.swing.JTextField TFPreis3;
+    public javax.swing.JTextField TFPreis4;
+    public javax.swing.JTextField TFPreis5;
+    public javax.swing.JTextField TFPreis6;
+    public javax.swing.JTextField TFPreis7;
+    public javax.swing.JTextField TFPreis8;
+    public javax.swing.JTextField TFPreis9;
+    private javax.swing.JButton jButton1;
     private javax.swing.JLabel ÜberschriftOverflow;
     // End of variables declaration//GEN-END:variables
+/**
+     *
+     */
+    public void WerteUpdate() {
+
+    }
+
 }

@@ -9,26 +9,39 @@ import java.util.Date;
 
 import java.util.Hashtable;
 
+
+
 /**
  *
  * Komplett unnötige Klasse...
  * 
  * @author MrVielBesserImProgrammierenAlsDu
+ * JavaD0cs by: Schantallê und Zyrúp
  */
 public class Aktie {
-    /**Komplett unnötige Variable...**/
+    /**
+     * Name der Aktie
+     */
     private String name; 
     
-    /**Komplett unnötige Variable...**/
+    /**
+     * Preis der Aktie
+     */
     private float preis;
     
-    /**Komplett unnötige Variable...**/
+    /**
+     * letzter Aktualisierungszeitpunkt der Aktie
+     */
     private Date stand;
     
-    /**Komplett unnötige Variable...**/
+    /**
+     * 
+     */
     private float veränderung; 
     
-    /**Komplett unnötige Variable...*/
+    /**
+     * Anzahl der Anteile
+     */
     private int stueckzahl;
     
     /**Komplett unnötige Variable...**/
@@ -103,3 +116,4 @@ public class Aktie {
     
     
 }
+

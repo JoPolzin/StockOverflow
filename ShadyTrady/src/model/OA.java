@@ -5,6 +5,7 @@ package model;
 
 import java.io.IOException;
 import java.net.URL;
+import java.util.ArrayList;
 import java.util.Hashtable;
 import javax.swing.ImageIcon;
 import org.jsoup.Jsoup;
@@ -23,6 +24,10 @@ public class OA {
      * Internationale Wertpapierkennnummer
      */
     private static Hashtable<String, String> DNS = new Hashtable();
+    
+    private static ArrayList<String> DNSString = new ArrayList<>();
+    
+    
     /**
      * Die aktuell ausgewählte Website.
      *
@@ -39,6 +44,7 @@ public class OA {
         System.out.println(t.getAsk());
         System.out.println(t.getBid());
         System.out.println(t.getChange());
+        
 
         //System.out.println(t.getAsk(t.getDNS().get("Siemens")));
     }
@@ -133,6 +139,37 @@ public class OA {
         getDNS().put("Vonovia SE","DE000A1ML7J1");
         getDNS().put("Wirecard AG","DE0007472060");
         
+        getDNSString().add("adidas AG");                        
+        getDNSString().add("Allianz SE");
+        getDNSString().add("BASF SE");
+        getDNSString().add("Bayer AG");
+        getDNSString().add("Bayerische Motorenwerke AG");
+        getDNSString().add("Beiersdorf AG");
+        getDNSString().add("Continental AG");
+        getDNSString().add("Covestro AG");
+        getDNSString().add("Daimler AG");
+        getDNSString().add("Deutsche Bank AG");
+        getDNSString().add("Deutsche Börse AG");
+        getDNSString().add("Deutsche Lufthansa Ag");
+        getDNSString().add("Deutsche Post AG");
+        getDNSString().add("Deutsche Telekom AG");
+        getDNSString().add("E.ON SE");
+        getDNSString().add("Fresenius Medical Care KGaA");
+        getDNSString().add("Fresenius SE & Co. KGaA");
+        getDNSString().add("HeidelbergCement AG");
+        getDNSString().add("Henkel AG & Co. KGaA VZ");
+        getDNSString().add("Infineon Technologies AG");
+        getDNSString().add("Linde PLC");
+        getDNSString().add("Merck KGaA");
+        getDNSString().add("Münchener Rückvers.-Ges. AG");
+        getDNSString().add("RWE AG");
+        getDNSString().add("SAP SE");
+        getDNSString().add("Siemens");
+        getDNSString().add("thyssenkrupp AG");
+        getDNSString().add("Volkswagen AG VZ");
+        getDNSString().add("Vonovia SE");
+        getDNSString().add("Wirecard AG");
+        
         
         
         
@@ -205,6 +242,12 @@ System.out.println("Fehler in prepareDocument()");
         }
         
         
+    }
+    		    /**
+     * @return the DNSSTring
+     */
+    public static ArrayList<String> getDNSString() {
+        return DNSString;
     }
     
     
