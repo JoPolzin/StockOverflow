@@ -26,6 +26,8 @@ import java.util.logging.Logger;
 public class FirebaseSaveObject {
 
     private String password;
+   public Map<String, Object> userUpdates = new HashMap<>();
+
 
     public static void main(String[] args) {
         Item item = new Item();
@@ -104,7 +106,7 @@ public class FirebaseSaveObject {
      *
      * @param item
      */
-    private void save(Item item) {
+    public void save(Item item) {
         if (item != null) {
             //initFirebase();
 
@@ -113,7 +115,6 @@ public class FirebaseSaveObject {
 
             /* Get existing child or will be created new child. */
             DatabaseReference childReference = databaseReference.child("Benutzer");
-            Map<String, Object> userUpdates = new HashMap<>();
             userUpdates.put("alanisawesome/nickname", "Alan The Machine");
             userUpdates.put("alanisawesome/passwort", "geheim");
             userUpdates.put("testnutzer/nickname", "test");
@@ -121,7 +122,7 @@ public class FirebaseSaveObject {
             userUpdates.put("testnutzer/vorname", "Test");
             userUpdates.put("gracehop/nickname", "Amazing Grace");
             userUpdates.put("teacher/nickname", "Muster");
-            userUpdates.put("T-Mon/nickname", "Taimon");
+            userUpdates.put("T-Mon/nickname", "Tehmon");
             userUpdates.put("T-Mon/passwort", "1e3qacdy");
             userUpdates.put("Simon/nickname", "Saimon");          
             userUpdates.put("Simon/passwort", "1qayxsw2");
