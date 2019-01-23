@@ -152,9 +152,11 @@ public class maincontrol {
      */
 
     public void AktieDatenInitialisieren(String ISIN) {
-        OA.prepareDocument(aktieAnsehen.ISIN.getText());
+        OA.prepareDocument(ISIN);
         aktieAnsehen.Change.setText(Float.toString(OA.getChange()));
         aktieAnsehen.Preis.setText(Float.toString(OA.getAsk()));
+        aktieAnsehen.ISIN.setText(ISIN);
+        aktieAnsehen.AktienBild.setIcon(OA.getGraph("intraday"));
         aktieAnsehen.momentanerPreis = OA.getAsk();
         aktieAnsehen.ausgewählteISIN = ISIN;
     }
