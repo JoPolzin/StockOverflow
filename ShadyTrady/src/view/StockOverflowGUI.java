@@ -6,7 +6,6 @@
 package view;
 
 import control.maincontrol;
-import model.OA;
 import java.util.ArrayList;
 import javax.swing.JTextField;
 
@@ -113,73 +112,73 @@ public class StockOverflowGUI extends javax.swing.JFrame {
         TFAktie1 = new javax.swing.JTextField();
         TFPreis1 = new javax.swing.JTextField();
         TFChange1 = new javax.swing.JTextField();
+        BAnsehen1 = new javax.swing.JButton();
         TFAktie2 = new javax.swing.JTextField();
         TFPreis2 = new javax.swing.JTextField();
         TFChange2 = new javax.swing.JTextField();
+        BAnsehen2 = new javax.swing.JButton();
         TFAktie3 = new javax.swing.JTextField();
         TFPreis3 = new javax.swing.JTextField();
         TFChange3 = new javax.swing.JTextField();
+        BAnsehen3 = new javax.swing.JButton();
         TFAktie4 = new javax.swing.JTextField();
         TFPreis4 = new javax.swing.JTextField();
         TFChange4 = new javax.swing.JTextField();
+        BAnsehen4 = new javax.swing.JButton();
         TFAktie5 = new javax.swing.JTextField();
         TFPreis5 = new javax.swing.JTextField();
         TFChange5 = new javax.swing.JTextField();
+        BAnsehen5 = new javax.swing.JButton();
         TFAktie6 = new javax.swing.JTextField();
         TFPreis6 = new javax.swing.JTextField();
         TFChange6 = new javax.swing.JTextField();
+        BAnsehen6 = new javax.swing.JButton();
         TFAktie7 = new javax.swing.JTextField();
         TFPreis7 = new javax.swing.JTextField();
         TFChange7 = new javax.swing.JTextField();
+        BAnsehen7 = new javax.swing.JButton();
         TFAktie8 = new javax.swing.JTextField();
         TFPreis8 = new javax.swing.JTextField();
         TFChange8 = new javax.swing.JTextField();
+        BAnsehen8 = new javax.swing.JButton();
         TFAktie9 = new javax.swing.JTextField();
         TFPreis9 = new javax.swing.JTextField();
         TFChange9 = new javax.swing.JTextField();
+        BAnsehen9 = new javax.swing.JButton();
         TFAktie10 = new javax.swing.JTextField();
         TFPreis10 = new javax.swing.JTextField();
         TFChange10 = new javax.swing.JTextField();
+        BAnsehen10 = new javax.swing.JButton();
         TFAktie11 = new javax.swing.JTextField();
         TFPreis11 = new javax.swing.JTextField();
         TFChange11 = new javax.swing.JTextField();
+        BAnsehen11 = new javax.swing.JButton();
         TFAktie12 = new javax.swing.JTextField();
         TFPreis12 = new javax.swing.JTextField();
         TFChange12 = new javax.swing.JTextField();
+        BAnsehen12 = new javax.swing.JButton();
         TFAktie13 = new javax.swing.JTextField();
         TFPreis13 = new javax.swing.JTextField();
         TFChange13 = new javax.swing.JTextField();
+        BAnsehen13 = new javax.swing.JButton();
         TFAktie14 = new javax.swing.JTextField();
         TFPreis14 = new javax.swing.JTextField();
         TFChange14 = new javax.swing.JTextField();
+        BAnsehen14 = new javax.swing.JButton();
         TFAktie15 = new javax.swing.JTextField();
         TFPreis15 = new javax.swing.JTextField();
         TFChange15 = new javax.swing.JTextField();
+        BAnsehen15 = new javax.swing.JButton();
         TFAktie16 = new javax.swing.JTextField();
         TFPreis16 = new javax.swing.JTextField();
         TFChange16 = new javax.swing.JTextField();
+        BAnsehen16 = new javax.swing.JButton();
         Refresh = new javax.swing.JButton();
-        jButton2 = new javax.swing.JButton();
-        jButton3 = new javax.swing.JButton();
-        jButton4 = new javax.swing.JButton();
-        jButton5 = new javax.swing.JButton();
-        jButton6 = new javax.swing.JButton();
-        jButton7 = new javax.swing.JButton();
-        jButton8 = new javax.swing.JButton();
-        jButton9 = new javax.swing.JButton();
-        jButton10 = new javax.swing.JButton();
-        jButton11 = new javax.swing.JButton();
-        jButton12 = new javax.swing.JButton();
-        jButton13 = new javax.swing.JButton();
-        jButton14 = new javax.swing.JButton();
-        jButton15 = new javax.swing.JButton();
-        jButton16 = new javax.swing.JButton();
-        jButton17 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         ÜberschriftOverflow.setFont(new java.awt.Font("Penultimate", 1, 36)); // NOI18N
-        ÜberschriftOverflow.setText("StockOverflow");
+        ÜberschriftOverflow.setText("ShadyTrady");
 
         DepotGUI.setText("Depot");
         DepotGUI.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
@@ -199,7 +198,7 @@ public class StockOverflowGUI extends javax.swing.JFrame {
         AktienGUIÜberschrift.setFont(new java.awt.Font("Penultimate", 0, 24)); // NOI18N
         AktienGUIÜberschrift.setText("Aktien");
 
-        jButton1.setText("Weitere Aktien");
+        jButton1.setText("WeiterAktien");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton1ActionPerformed(evt);
@@ -217,6 +216,13 @@ public class StockOverflowGUI extends javax.swing.JFrame {
 
         TFChange1.setEditable(false);
 
+        BAnsehen1.setText("Ansehen");
+        BAnsehen1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                BAnsehen2ActionPerformed(evt);
+            }
+        });
+
         TFAktie2.setEditable(false);
         TFAktie2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -227,6 +233,13 @@ public class StockOverflowGUI extends javax.swing.JFrame {
         TFPreis2.setEditable(false);
 
         TFChange2.setEditable(false);
+
+        BAnsehen2.setText("Ansehen");
+        BAnsehen2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                BAnsehen2ActionPerformed(evt);
+            }
+        });
 
         TFAktie3.setEditable(false);
         TFAktie3.addActionListener(new java.awt.event.ActionListener() {
@@ -239,6 +252,13 @@ public class StockOverflowGUI extends javax.swing.JFrame {
 
         TFChange3.setEditable(false);
 
+        BAnsehen3.setText("Ansehen");
+        BAnsehen3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                BAnsehen2ActionPerformed(evt);
+            }
+        });
+
         TFAktie4.setEditable(false);
         TFAktie4.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -249,6 +269,13 @@ public class StockOverflowGUI extends javax.swing.JFrame {
         TFPreis4.setEditable(false);
 
         TFChange4.setEditable(false);
+
+        BAnsehen4.setText("Ansehen");
+        BAnsehen4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                BAnsehen2ActionPerformed(evt);
+            }
+        });
 
         TFAktie5.setEditable(false);
         TFAktie5.addActionListener(new java.awt.event.ActionListener() {
@@ -261,6 +288,13 @@ public class StockOverflowGUI extends javax.swing.JFrame {
 
         TFChange5.setEditable(false);
 
+        BAnsehen5.setText("Ansehen");
+        BAnsehen5.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                BAnsehen2ActionPerformed(evt);
+            }
+        });
+
         TFAktie6.setEditable(false);
         TFAktie6.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -271,6 +305,13 @@ public class StockOverflowGUI extends javax.swing.JFrame {
         TFPreis6.setEditable(false);
 
         TFChange6.setEditable(false);
+
+        BAnsehen6.setText("Ansehen");
+        BAnsehen6.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                BAnsehen2ActionPerformed(evt);
+            }
+        });
 
         TFAktie7.setEditable(false);
         TFAktie7.addActionListener(new java.awt.event.ActionListener() {
@@ -283,6 +324,13 @@ public class StockOverflowGUI extends javax.swing.JFrame {
 
         TFChange7.setEditable(false);
 
+        BAnsehen7.setText("Ansehen");
+        BAnsehen7.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                BAnsehen2ActionPerformed(evt);
+            }
+        });
+
         TFAktie8.setEditable(false);
         TFAktie8.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -293,6 +341,13 @@ public class StockOverflowGUI extends javax.swing.JFrame {
         TFPreis8.setEditable(false);
 
         TFChange8.setEditable(false);
+
+        BAnsehen8.setText("Ansehen");
+        BAnsehen8.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                BAnsehen2ActionPerformed(evt);
+            }
+        });
 
         TFAktie9.setEditable(false);
         TFAktie9.addActionListener(new java.awt.event.ActionListener() {
@@ -305,6 +360,13 @@ public class StockOverflowGUI extends javax.swing.JFrame {
 
         TFChange9.setEditable(false);
 
+        BAnsehen9.setText("Ansehen");
+        BAnsehen9.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                BAnsehen2ActionPerformed(evt);
+            }
+        });
+
         TFAktie10.setEditable(false);
         TFAktie10.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -315,6 +377,13 @@ public class StockOverflowGUI extends javax.swing.JFrame {
         TFPreis10.setEditable(false);
 
         TFChange10.setEditable(false);
+
+        BAnsehen10.setText("Ansehen");
+        BAnsehen10.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                BAnsehen10BAnsehen2ActionPerformed(evt);
+            }
+        });
 
         TFAktie11.setEditable(false);
         TFAktie11.addActionListener(new java.awt.event.ActionListener() {
@@ -327,6 +396,13 @@ public class StockOverflowGUI extends javax.swing.JFrame {
 
         TFChange11.setEditable(false);
 
+        BAnsehen11.setText("Ansehen");
+        BAnsehen11.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                BAnsehen11BAnsehen2ActionPerformed(evt);
+            }
+        });
+
         TFAktie12.setEditable(false);
         TFAktie12.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -337,6 +413,13 @@ public class StockOverflowGUI extends javax.swing.JFrame {
         TFPreis12.setEditable(false);
 
         TFChange12.setEditable(false);
+
+        BAnsehen12.setText("Ansehen");
+        BAnsehen12.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                BAnsehen12BAnsehen2ActionPerformed(evt);
+            }
+        });
 
         TFAktie13.setEditable(false);
         TFAktie13.addActionListener(new java.awt.event.ActionListener() {
@@ -349,6 +432,13 @@ public class StockOverflowGUI extends javax.swing.JFrame {
 
         TFChange13.setEditable(false);
 
+        BAnsehen13.setText("Ansehen");
+        BAnsehen13.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                BAnsehen13BAnsehen2ActionPerformed(evt);
+            }
+        });
+
         TFAktie14.setEditable(false);
         TFAktie14.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -359,6 +449,13 @@ public class StockOverflowGUI extends javax.swing.JFrame {
         TFPreis14.setEditable(false);
 
         TFChange14.setEditable(false);
+
+        BAnsehen14.setText("Ansehen");
+        BAnsehen14.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                BAnsehen14BAnsehen2ActionPerformed(evt);
+            }
+        });
 
         TFAktie15.setEditable(false);
         TFAktie15.addActionListener(new java.awt.event.ActionListener() {
@@ -371,6 +468,13 @@ public class StockOverflowGUI extends javax.swing.JFrame {
 
         TFChange15.setEditable(false);
 
+        BAnsehen15.setText("Ansehen");
+        BAnsehen15.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                BAnsehen15BAnsehen2ActionPerformed(evt);
+            }
+        });
+
         TFAktie16.setEditable(false);
         TFAktie16.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -382,6 +486,13 @@ public class StockOverflowGUI extends javax.swing.JFrame {
 
         TFChange16.setEditable(false);
 
+        BAnsehen16.setText("Ansehen");
+        BAnsehen16.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                BAnsehen16BAnsehen2ActionPerformed(evt);
+            }
+        });
+
         Refresh.setText("Refresh");
         Refresh.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -389,130 +500,12 @@ public class StockOverflowGUI extends javax.swing.JFrame {
             }
         });
 
-        jButton2.setText("Ansehen");
-        jButton2.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton2ActionPerformed(evt);
-            }
-        });
-
-        jButton3.setText("Ansehen");
-        jButton3.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton3ActionPerformed(evt);
-            }
-        });
-
-        jButton4.setText("Ansehen");
-        jButton4.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton4ActionPerformed(evt);
-            }
-        });
-
-        jButton5.setText("Ansehen");
-        jButton5.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton5ActionPerformed(evt);
-            }
-        });
-
-        jButton6.setText("Ansehen");
-        jButton6.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton6ActionPerformed(evt);
-            }
-        });
-
-        jButton7.setText("Ansehen");
-        jButton7.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton7ActionPerformed(evt);
-            }
-        });
-
-        jButton8.setText("Ansehen");
-        jButton8.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton8ActionPerformed(evt);
-            }
-        });
-
-        jButton9.setText("Ansehen");
-        jButton9.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton9ActionPerformed(evt);
-            }
-        });
-
-        jButton10.setText("Ansehen");
-        jButton10.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton10ActionPerformed(evt);
-            }
-        });
-
-        jButton11.setText("Ansehen");
-        jButton11.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton11ActionPerformed(evt);
-            }
-        });
-
-        jButton12.setText("Ansehen");
-        jButton12.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton12ActionPerformed(evt);
-            }
-        });
-
-        jButton13.setText("Ansehen");
-        jButton13.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton13ActionPerformed(evt);
-            }
-        });
-
-        jButton14.setText("Ansehen");
-        jButton14.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton14ActionPerformed(evt);
-            }
-        });
-
-        jButton15.setText("Ansehen");
-        jButton15.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton15ActionPerformed(evt);
-            }
-        });
-
-        jButton16.setText("Ansehen");
-        jButton16.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton16ActionPerformed(evt);
-            }
-        });
-
-        jButton17.setText("Ansehen");
-        jButton17.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton17ActionPerformed(evt);
-            }
-        });
-
-        jLabel1.setText("Name");
-
-        jLabel2.setText("Preis");
-
-        jLabel3.setText("Change");
-
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addContainerGap(246, Short.MAX_VALUE)
                 .addComponent(ÜberschriftOverflow)
                 .addGap(58, 58, 58)
                 .addComponent(DepotGUI, javax.swing.GroupLayout.PREFERRED_SIZE, 88, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -525,7 +518,7 @@ public class StockOverflowGUI extends javax.swing.JFrame {
                         .addGap(312, 312, 312)
                         .addComponent(AktienGUIÜberschrift))
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(61, 61, 61)
+                        .addGap(25, 25, 25)
                         .addComponent(Refresh)
                         .addGap(18, 18, 18)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -536,7 +529,7 @@ public class StockOverflowGUI extends javax.swing.JFrame {
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(TFChange4, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jButton5))
+                                .addComponent(BAnsehen4))
                             .addGroup(layout.createSequentialGroup()
                                 .addComponent(TFAktie5, javax.swing.GroupLayout.PREFERRED_SIZE, 112, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -544,7 +537,7 @@ public class StockOverflowGUI extends javax.swing.JFrame {
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(TFChange5, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jButton6))
+                                .addComponent(BAnsehen5))
                             .addGroup(layout.createSequentialGroup()
                                 .addComponent(TFAktie6, javax.swing.GroupLayout.PREFERRED_SIZE, 112, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -552,7 +545,7 @@ public class StockOverflowGUI extends javax.swing.JFrame {
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(TFChange6, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jButton7))
+                                .addComponent(BAnsehen6))
                             .addGroup(layout.createSequentialGroup()
                                 .addComponent(TFAktie7, javax.swing.GroupLayout.PREFERRED_SIZE, 112, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -560,7 +553,7 @@ public class StockOverflowGUI extends javax.swing.JFrame {
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(TFChange7, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jButton8))
+                                .addComponent(BAnsehen7))
                             .addGroup(layout.createSequentialGroup()
                                 .addComponent(TFAktie8, javax.swing.GroupLayout.PREFERRED_SIZE, 112, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -568,7 +561,7 @@ public class StockOverflowGUI extends javax.swing.JFrame {
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(TFChange8, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jButton9))
+                                .addComponent(BAnsehen8))
                             .addGroup(layout.createSequentialGroup()
                                 .addComponent(TFAktie9, javax.swing.GroupLayout.PREFERRED_SIZE, 112, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -576,7 +569,7 @@ public class StockOverflowGUI extends javax.swing.JFrame {
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(TFChange9, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jButton10))
+                                .addComponent(BAnsehen9))
                             .addGroup(layout.createSequentialGroup()
                                 .addComponent(TFAktie10, javax.swing.GroupLayout.PREFERRED_SIZE, 112, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -584,7 +577,7 @@ public class StockOverflowGUI extends javax.swing.JFrame {
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(TFChange10, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jButton11))
+                                .addComponent(BAnsehen10))
                             .addGroup(layout.createSequentialGroup()
                                 .addComponent(TFAktie11, javax.swing.GroupLayout.PREFERRED_SIZE, 112, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -592,7 +585,7 @@ public class StockOverflowGUI extends javax.swing.JFrame {
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(TFChange11, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jButton12))
+                                .addComponent(BAnsehen11))
                             .addGroup(layout.createSequentialGroup()
                                 .addComponent(TFAktie12, javax.swing.GroupLayout.PREFERRED_SIZE, 112, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -600,7 +593,7 @@ public class StockOverflowGUI extends javax.swing.JFrame {
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(TFChange12, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jButton13))
+                                .addComponent(BAnsehen12))
                             .addGroup(layout.createSequentialGroup()
                                 .addComponent(TFAktie13, javax.swing.GroupLayout.PREFERRED_SIZE, 112, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -608,7 +601,7 @@ public class StockOverflowGUI extends javax.swing.JFrame {
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(TFChange13, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jButton14))
+                                .addComponent(BAnsehen13))
                             .addGroup(layout.createSequentialGroup()
                                 .addComponent(TFAktie14, javax.swing.GroupLayout.PREFERRED_SIZE, 112, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -616,7 +609,7 @@ public class StockOverflowGUI extends javax.swing.JFrame {
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(TFChange14, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jButton15))
+                                .addComponent(BAnsehen14))
                             .addGroup(layout.createSequentialGroup()
                                 .addComponent(TFAktie15, javax.swing.GroupLayout.PREFERRED_SIZE, 112, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -624,7 +617,7 @@ public class StockOverflowGUI extends javax.swing.JFrame {
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(TFChange15, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jButton16))
+                                .addComponent(BAnsehen15))
                             .addGroup(layout.createSequentialGroup()
                                 .addComponent(TFAktie1, javax.swing.GroupLayout.PREFERRED_SIZE, 112, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -632,7 +625,7 @@ public class StockOverflowGUI extends javax.swing.JFrame {
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(TFChange1, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jButton2))
+                                .addComponent(BAnsehen1))
                             .addGroup(layout.createSequentialGroup()
                                 .addComponent(TFAktie2, javax.swing.GroupLayout.PREFERRED_SIZE, 112, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -640,7 +633,7 @@ public class StockOverflowGUI extends javax.swing.JFrame {
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(TFChange2, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jButton3))
+                                .addComponent(BAnsehen2))
                             .addGroup(layout.createSequentialGroup()
                                 .addComponent(TFAktie3, javax.swing.GroupLayout.PREFERRED_SIZE, 112, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -648,7 +641,7 @@ public class StockOverflowGUI extends javax.swing.JFrame {
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(TFChange3, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jButton4))
+                                .addComponent(BAnsehen3))
                             .addGroup(layout.createSequentialGroup()
                                 .addComponent(TFAktie16, javax.swing.GroupLayout.PREFERRED_SIZE, 112, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -659,147 +652,123 @@ public class StockOverflowGUI extends javax.swing.JFrame {
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                         .addComponent(TFChange16, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE)
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(BAnsehen16))))
-                            .addComponent(ÜberschriftOverflow)
-                            .addGroup(layout.createSequentialGroup()
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(TFAktie1, javax.swing.GroupLayout.PREFERRED_SIZE, 112, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(jLabel1))
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(TFPreis1, javax.swing.GroupLayout.PREFERRED_SIZE, 82, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(jLabel2))
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addGroup(layout.createSequentialGroup()
-                                        .addComponent(TFChange1, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(BAnsehen1))
-                                    .addComponent(jLabel3))))))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(DepotGUI, javax.swing.GroupLayout.PREFERRED_SIZE, 88, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(LogInGUI, javax.swing.GroupLayout.PREFERRED_SIZE, 91, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(19, 19, 19))
+                                        .addComponent(BAnsehen16)))))))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(15, 15, 15)
+                        .addGap(21, 21, 21)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(LogInGUI, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(DepotGUI, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(ÜberschriftOverflow)))
+                            .addComponent(DepotGUI, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE)))
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(58, 58, 58)
+                        .addContainerGap()
+                        .addComponent(ÜberschriftOverflow)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(AktienGUIÜberschrift)))
-                .addGap(8, 8, 8)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel1)
-                    .addComponent(jLabel2)
-                    .addComponent(jLabel3))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(TFAktie1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(TFPreis1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(TFChange1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(Refresh)
-                    .addComponent(jButton2))
+                    .addComponent(BAnsehen1)
+                    .addComponent(Refresh))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(TFAktie2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(TFPreis2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(TFChange2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButton3))
+                    .addComponent(BAnsehen2))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(TFAktie3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(TFPreis3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(TFChange3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButton4))
+                    .addComponent(BAnsehen3))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(TFAktie4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(TFPreis4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(TFChange4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButton5))
+                    .addComponent(BAnsehen4))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(TFAktie5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(TFPreis5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(TFChange5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButton6))
+                    .addComponent(BAnsehen5))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(TFAktie6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(TFPreis6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(TFChange6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButton7))
+                    .addComponent(BAnsehen6))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(TFAktie7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(TFPreis7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(TFChange7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButton8))
+                    .addComponent(BAnsehen7))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(TFAktie8, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(TFPreis8, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(TFChange8, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButton9))
+                    .addComponent(BAnsehen8))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(TFAktie9, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(TFPreis9, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(TFChange9, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButton10))
+                    .addComponent(BAnsehen9))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(TFAktie10, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(TFPreis10, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(TFChange10, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButton11))
+                    .addComponent(BAnsehen10))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(TFAktie11, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(TFPreis11, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(TFChange11, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButton12))
+                    .addComponent(BAnsehen11))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(TFAktie12, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(TFPreis12, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(TFChange12, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButton13))
+                    .addComponent(BAnsehen12))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(TFAktie13, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(TFPreis13, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(TFChange13, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButton14))
+                    .addComponent(BAnsehen13))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(TFAktie14, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(TFPreis14, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(TFChange14, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButton15))
+                    .addComponent(BAnsehen14))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(TFAktie15, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(TFPreis15, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(TFChange15, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButton16))
+                    .addComponent(BAnsehen15))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(TFAktie16, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(TFPreis16, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(TFChange16, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButton17))
+                    .addComponent(BAnsehen16))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(jButton1)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap(69, Short.MAX_VALUE))
         );
 
         pack();
@@ -807,13 +776,6 @@ public class StockOverflowGUI extends javax.swing.JFrame {
 
     private void LogInGUIActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_LogInGUIActionPerformed
         this.c.switchTo("AnmeldeFenster");
-        if (LogInGUI.getText().equals("Log In")){  
-   LogInGUI.setText("Log Out");
-}
-
-else if (LogInGUI.getText().equals("Log Out")){
-   LogInGUI.setText("Log In");
-}
     }//GEN-LAST:event_LogInGUIActionPerformed
 
     private void DepotGUIActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_DepotGUIActionPerformed
@@ -860,117 +822,69 @@ else if (LogInGUI.getText().equals("Log Out")){
         // TODO add your handling code here:
     }//GEN-LAST:event_TFAktie9ActionPerformed
 
+    private void BAnsehen2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BAnsehen2ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_BAnsehen2ActionPerformed
+
     private void TFAktie10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_TFAktie10ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_TFAktie10ActionPerformed
+
+    private void BAnsehen10BAnsehen2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BAnsehen10BAnsehen2ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_BAnsehen10BAnsehen2ActionPerformed
 
     private void TFAktie11ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_TFAktie11ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_TFAktie11ActionPerformed
 
+    private void BAnsehen11BAnsehen2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BAnsehen11BAnsehen2ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_BAnsehen11BAnsehen2ActionPerformed
+
     private void TFAktie12ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_TFAktie12ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_TFAktie12ActionPerformed
+
+    private void BAnsehen12BAnsehen2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BAnsehen12BAnsehen2ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_BAnsehen12BAnsehen2ActionPerformed
 
     private void TFAktie13ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_TFAktie13ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_TFAktie13ActionPerformed
 
+    private void BAnsehen13BAnsehen2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BAnsehen13BAnsehen2ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_BAnsehen13BAnsehen2ActionPerformed
+
     private void TFAktie14ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_TFAktie14ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_TFAktie14ActionPerformed
+
+    private void BAnsehen14BAnsehen2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BAnsehen14BAnsehen2ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_BAnsehen14BAnsehen2ActionPerformed
 
     private void TFAktie15ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_TFAktie15ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_TFAktie15ActionPerformed
 
+    private void BAnsehen15BAnsehen2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BAnsehen15BAnsehen2ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_BAnsehen15BAnsehen2ActionPerformed
+
     private void TFAktie16ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_TFAktie16ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_TFAktie16ActionPerformed
 
+    private void BAnsehen16BAnsehen2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BAnsehen16BAnsehen2ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_BAnsehen16BAnsehen2ActionPerformed
+
     private void RefreshActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_RefreshActionPerformed
         c.AktienDatenAktualisieren();
     }//GEN-LAST:event_RefreshActionPerformed
-
-    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
-        c.switchTo("AktieAnsehen");
-        c.AktieDatenInitialisieren(OA.getDNS().get(OA.getDNSString().get(0)));
-    }//GEN-LAST:event_jButton2ActionPerformed
-
-    private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
-        c.switchTo("AktieAnsehen");
-        c.AktieDatenInitialisieren(OA.getDNS().get(OA.getDNSString().get(1)));
-    }//GEN-LAST:event_jButton3ActionPerformed
-
-    private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
-        c.switchTo("AktieAnsehen");
-        c.AktieDatenInitialisieren(OA.getDNS().get(OA.getDNSString().get(2)));
-    }//GEN-LAST:event_jButton4ActionPerformed
-
-    private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
-        c.switchTo("AktieAnsehen");
-        c.AktieDatenInitialisieren(OA.getDNS().get(OA.getDNSString().get(3)));
-    }//GEN-LAST:event_jButton5ActionPerformed
-
-    private void jButton6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton6ActionPerformed
-        c.switchTo("AktieAnsehen");
-        c.AktieDatenInitialisieren(OA.getDNS().get(OA.getDNSString().get(4)));
-    }//GEN-LAST:event_jButton6ActionPerformed
-
-    private void jButton7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton7ActionPerformed
-        c.switchTo("AktieAnsehen");
-        c.AktieDatenInitialisieren(OA.getDNS().get(OA.getDNSString().get(5)));
-    }//GEN-LAST:event_jButton7ActionPerformed
-
-    private void jButton8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton8ActionPerformed
-        c.switchTo("AktieAnsehen");
-        c.AktieDatenInitialisieren(OA.getDNS().get(OA.getDNSString().get(6)));
-    }//GEN-LAST:event_jButton8ActionPerformed
-
-    private void jButton9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton9ActionPerformed
-        c.switchTo("AktieAnsehen");
-        c.AktieDatenInitialisieren(OA.getDNS().get(OA.getDNSString().get(7)));
-    }//GEN-LAST:event_jButton9ActionPerformed
-
-    private void jButton10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton10ActionPerformed
-        c.switchTo("AktieAnsehen");
-        c.AktieDatenInitialisieren(OA.getDNS().get(OA.getDNSString().get(8)));
-    }//GEN-LAST:event_jButton10ActionPerformed
-
-    private void jButton11ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton11ActionPerformed
-        c.switchTo("AktieAnsehen");
-        c.AktieDatenInitialisieren(OA.getDNS().get(OA.getDNSString().get(9)));
-    }//GEN-LAST:event_jButton11ActionPerformed
-
-    private void jButton12ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton12ActionPerformed
-        c.switchTo("AktieAnsehen");
-        c.AktieDatenInitialisieren(OA.getDNS().get(OA.getDNSString().get(10)));
-    }//GEN-LAST:event_jButton12ActionPerformed
-
-    private void jButton13ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton13ActionPerformed
-        c.switchTo("AktieAnsehen");
-        c.AktieDatenInitialisieren(OA.getDNS().get(OA.getDNSString().get(11)));
-    }//GEN-LAST:event_jButton13ActionPerformed
-
-    private void jButton14ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton14ActionPerformed
-        c.switchTo("AktieAnsehen");
-        c.AktieDatenInitialisieren(OA.getDNS().get(OA.getDNSString().get(12)));
-    }//GEN-LAST:event_jButton14ActionPerformed
-
-    private void jButton15ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton15ActionPerformed
-        c.switchTo("AktieAnsehen");
-        c.AktieDatenInitialisieren(OA.getDNS().get(OA.getDNSString().get(13)));
-    }//GEN-LAST:event_jButton15ActionPerformed
-
-    private void jButton16ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton16ActionPerformed
-        c.switchTo("AktieAnsehen");
-        c.AktieDatenInitialisieren(OA.getDNS().get(OA.getDNSString().get(14)));
-    }//GEN-LAST:event_jButton16ActionPerformed
-
-    private void jButton17ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton17ActionPerformed
-        c.switchTo("AktieAnsehen");
-        c.AktieDatenInitialisieren(OA.getDNS().get(OA.getDNSString().get(15)));
-    }//GEN-LAST:event_jButton17ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -1016,6 +930,22 @@ else if (LogInGUI.getText().equals("Log Out")){
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel AktienGUIÜberschrift;
+    private javax.swing.JButton BAnsehen1;
+    private javax.swing.JButton BAnsehen10;
+    private javax.swing.JButton BAnsehen11;
+    private javax.swing.JButton BAnsehen12;
+    private javax.swing.JButton BAnsehen13;
+    private javax.swing.JButton BAnsehen14;
+    private javax.swing.JButton BAnsehen15;
+    private javax.swing.JButton BAnsehen16;
+    private javax.swing.JButton BAnsehen2;
+    private javax.swing.JButton BAnsehen3;
+    private javax.swing.JButton BAnsehen4;
+    private javax.swing.JButton BAnsehen5;
+    private javax.swing.JButton BAnsehen6;
+    private javax.swing.JButton BAnsehen7;
+    private javax.swing.JButton BAnsehen8;
+    private javax.swing.JButton BAnsehen9;
     private javax.swing.JButton DepotGUI;
     private javax.swing.JButton LogInGUI;
     private javax.swing.JButton Refresh;
@@ -1068,22 +998,6 @@ else if (LogInGUI.getText().equals("Log Out")){
     public javax.swing.JTextField TFPreis8;
     public javax.swing.JTextField TFPreis9;
     private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton10;
-    private javax.swing.JButton jButton11;
-    private javax.swing.JButton jButton12;
-    private javax.swing.JButton jButton13;
-    private javax.swing.JButton jButton14;
-    private javax.swing.JButton jButton15;
-    private javax.swing.JButton jButton16;
-    private javax.swing.JButton jButton17;
-    private javax.swing.JButton jButton2;
-    private javax.swing.JButton jButton3;
-    private javax.swing.JButton jButton4;
-    private javax.swing.JButton jButton5;
-    private javax.swing.JButton jButton6;
-    private javax.swing.JButton jButton7;
-    private javax.swing.JButton jButton8;
-    private javax.swing.JButton jButton9;
     private javax.swing.JLabel ÜberschriftOverflow;
     // End of variables declaration//GEN-END:variables
 /**
