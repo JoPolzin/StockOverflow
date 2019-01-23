@@ -13,7 +13,7 @@ import java.util.Hashtable;
 
 /**
  *
- * Komplett unnötige Klasse...
+ * Aktie (Duh)
  * 
  * @author MrVielBesserImProgrammierenAlsDu
  * JavaD0cs by: Schantallê und Zyrúp
@@ -35,7 +35,7 @@ public class Aktie {
     private Date stand;
     
     /**
-     * 
+     * Preisänderung der Aktie
      */
     private float veränderung; 
     
@@ -44,10 +44,15 @@ public class Aktie {
      */
     private int stueckzahl;
     
-    /**Komplett unnötige Variable...**/
-    private String ISIN;
+    /**
+     * The International Securities Identification Number (ISIN) is a code 
+     * that uniquely identifies a specific securities issue.
+     */
+    private final String ISIN;
     
-    /**Komplett unnötiger Konstruktor...**/
+    /**Kreiert Objekt der Klasse Aktie
+     * @param name.*
+     * @param ISIN*/
     public Aktie(String name,String ISIN){
         this.name = name;
         this.ISIN = ISIN;
@@ -60,51 +65,65 @@ public class Aktie {
         
     }
             
-    /**Komplett unnötige Variable...**/
+    /**
+     * Verlauf der Aktie
+     */
     private Hashtable<Date, Float> verlauf = new Hashtable<Date, Float>();
     
-    /**Komplett unnötige Funktion...**/
+    /**get-Methode für den Namen
+     * @return .**/
     public String getName() {
         return name;
     }
-    /**Komplett unnötige Funktion...**/
+    /**set-Methode für den Namen
+     * @param name.**/
     public void setName(String name) {
         this.name = name;
     }
-    /**Komplett unnötige Funktion...**/
+    /**get-Methode für den Preis
+     * @return .**/
     public float getPreis() {
         return preis;
     }
-    /**Komplett unnötige Funktion...**/
+    /**set-Methode für den Preis
+     * @param preis.**/
     public void setPreis(float preis) {
         this.preis = preis;
     }
-    /**Komplett unnötige Funktion...**/
+    /**get-Methode für den Stand der Aktie
+     * @return .**/
+
     public Date getStand() {
         return stand;
     }
-    /**Komplett unnötige Funktion...**/
+    /**set-Methode für den Stand
+     * @param stand.**/
     public void setStand(Date stand) {
         this.stand = stand;
     }
-    /**Komplett unnötige Funktion...**/
+    /**get-Methode für die Preisveränderung
+     * @return .**/
     public float getVeränderung() {
         return veränderung;
     }
-    /**Komplett unnötige Funktion...**/
+    /**set-Methode für die Preisänderung
+     * @param veränderung.**/
     public void setVeränderung(float veränderung) {
         this.veränderung = veränderung;
     }
-    /**Komplett unnötige Funktion...**/
+    /**get-Methode für die Stückzahl 
+     * @return .**/
     public int getStueckzahl() {
         return stueckzahl;
     }
-    /**Komplett unnötige Funktion...**/
+    /**set-Methode für die Stückzahl
+     * @param stueckzahl.**/
     public void setStueckzahl(int stueckzahl) {
         this.stueckzahl = stueckzahl;
     }
     
-    /**Komplett unnötige Funktion...**/
+    /**Aktualisierung des Preises
+     * @param price.**/
     public void aktualisieren(float price) {
         
         setPreis(price);
