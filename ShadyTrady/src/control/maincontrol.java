@@ -85,12 +85,22 @@ public class maincontrol {
         b = new Benutzer(benutzername);
         this.switchTo("EigenesDepot");
         }
-    
-    
-    
-    
-    
     }
+    public void register(String benutzername, String password,String confPassword){
+        FirebaseSaveObject fso = new FirebaseSaveObject();
+       if( fso.userUpdates.containsKey(benutzername)){
+           System.out.print("oh well");
+       }
+       if(password==confPassword){
+           
+            fso.userUpdates.put(benutzername, password);
+       }
+            
+     }
+    
+    
+    
+    
 
     public static void main(String[] args) {
         new maincontrol();
