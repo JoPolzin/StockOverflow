@@ -24,7 +24,7 @@
     <DimensionLayout dim="0">
       <Group type="103" groupAlignment="0" attributes="0">
           <Group type="102" alignment="0" attributes="0">
-              <EmptySpace min="-2" pref="50" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="56" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" attributes="0">
                       <Group type="103" groupAlignment="0" attributes="0">
@@ -102,7 +102,7 @@
                                           </Group>
                                           <Component id="jScrollPane61" alignment="1" min="-2" pref="69" max="-2" attributes="0"/>
                                       </Group>
-                                      <EmptySpace pref="104" max="32767" attributes="0"/>
+                                      <EmptySpace max="32767" attributes="0"/>
                                       <Group type="103" groupAlignment="0" attributes="0">
                                           <Component id="DepotVerkaufen15" alignment="0" min="-2" max="-2" attributes="0"/>
                                           <Component id="DepotVerkaufen16" alignment="0" min="-2" max="-2" attributes="0"/>
@@ -185,7 +185,7 @@
                                                   </Group>
                                                   <Component id="jScrollPane41" alignment="1" min="-2" pref="69" max="-2" attributes="0"/>
                                               </Group>
-                                              <EmptySpace max="32767" attributes="0"/>
+                                              <EmptySpace pref="106" max="32767" attributes="0"/>
                                               <Group type="103" groupAlignment="0" attributes="0">
                                                   <Component id="DepotVerkaufen1" min="-2" max="-2" attributes="0"/>
                                                   <Component id="DepotVerkaufen2" min="-2" max="-2" attributes="0"/>
@@ -206,7 +206,7 @@
                                       </Group>
                                   </Group>
                               </Group>
-                              <EmptySpace min="-2" pref="9" max="-2" attributes="0"/>
+                              <EmptySpace type="unrelated" min="-2" max="-2" attributes="0"/>
                           </Group>
                           <Group type="102" alignment="0" attributes="0">
                               <Group type="103" groupAlignment="0" attributes="0">
@@ -1238,7 +1238,7 @@
     </Component>
     <Component class="javax.swing.JButton" name="LogInAnsehen">
       <Properties>
-        <Property name="text" type="java.lang.String" value="Log In"/>
+        <Property name="text" type="java.lang.String" value="Log Out"/>
       </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="LogInAnsehenActionPerformed"/>

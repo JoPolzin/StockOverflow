@@ -93,15 +93,32 @@ public class maincontrol {
     }
 
     public void login(String benutzername, String password) {
+        boolean erfolgreich = false;
 
         if (this.fso.getpassword(benutzername).equals(password)) {
 
             System.out.println("Login erfolgreich");
             b = new Benutzer(benutzername);
             this.switchTo("EigenesDepot");
+            erfolgreich = true;
         }
 
     }
+    public void register(String benutzername, String password,String confPassword){
+        FirebaseSaveObject fso = new FirebaseSaveObject();
+       if( fso.userUpdates.containsKey(benutzername)){
+           System.out.print("oh well");
+       }
+       if(password==confPassword){
+           
+            fso.userUpdates.put(benutzername, password);
+       }
+            
+     }
+    
+    
+    
+    
 
     public static void main(String[] args) {
         new maincontrol();

@@ -29,23 +29,29 @@
                       <EmptySpace min="-2" pref="67" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" attributes="0">
                           <Component id="VerkaufenGesamtpreis" alignment="0" min="-2" max="-2" attributes="0"/>
-                          <Component id="VerkaufenGesamtpreisEingeben" alignment="0" min="-2" pref="141" max="-2" attributes="0"/>
                           <Component id="VerkaufenNameDerAktie" min="-2" max="-2" attributes="0"/>
-                          <Component id="VerkaufenNameDerAktieEingabe" min="-2" pref="141" max="-2" attributes="0"/>
                           <Group type="103" alignment="0" groupAlignment="1" attributes="0">
                               <Component id="StockOverflowVerkaufen" min="-2" max="-2" attributes="0"/>
-                              <Group type="102" attributes="0">
+                              <Group type="102" alignment="1" attributes="0">
                                   <Group type="103" groupAlignment="0" attributes="0">
-                                      <Component id="VerkaufenStückzahl" alignment="0" min="-2" max="-2" attributes="0"/>
-                                      <Component id="VerkaufenStückzahlEingeben" alignment="0" min="-2" pref="141" max="-2" attributes="0"/>
+                                      <Group type="102" alignment="1" attributes="0">
+                                          <Component id="VerkaufenStückzahl" min="-2" max="-2" attributes="0"/>
+                                          <EmptySpace min="-2" pref="138" max="-2" attributes="0"/>
+                                      </Group>
+                                      <Group type="102" alignment="0" attributes="0">
+                                          <Component id="VerkaufenGesamtpreisEingeben" min="-2" pref="139" max="-2" attributes="0"/>
+                                          <EmptySpace min="-2" pref="44" max="-2" attributes="0"/>
+                                      </Group>
                                   </Group>
-                                  <EmptySpace min="-2" pref="42" max="-2" attributes="0"/>
                                   <Group type="103" groupAlignment="0" attributes="0">
-                                      <Component id="VerkaufenPreisProStück" alignment="0" min="-2" max="-2" attributes="0"/>
-                                      <Component id="VerkaufenPreisProStückEingeben" alignment="0" min="-2" pref="141" max="-2" attributes="0"/>
+                                      <Component id="VerkaufenNameDerAktieEingabe" min="-2" pref="139" max="-2" attributes="0"/>
+                                      <Component id="VerkaufenPreisProStück" min="-2" max="-2" attributes="0"/>
                                   </Group>
+                                  <EmptySpace min="-2" pref="2" max="-2" attributes="0"/>
                               </Group>
                           </Group>
+                          <Component id="VerkaufenPreisProStückEingeben" alignment="0" min="-2" pref="139" max="-2" attributes="0"/>
+                          <Component id="VerkaufenStückzahlEingeben" alignment="0" min="-2" pref="139" max="-2" attributes="0"/>
                       </Group>
                   </Group>
                   <Group type="102" alignment="0" attributes="0">
@@ -69,28 +75,27 @@
               <Group type="103" groupAlignment="1" attributes="0">
                   <Group type="102" attributes="0">
                       <Component id="VerkaufenNameDerAktie" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                      <Component id="VerkaufenNameDerAktieEingabe" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace type="separate" max="-2" attributes="0"/>
-                      <Component id="VerkaufenStückzahl" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                      <Component id="VerkaufenStückzahlEingeben" min="-2" max="-2" attributes="0"/>
-                  </Group>
-                  <Group type="102" attributes="0">
-                      <Component id="VerkaufenPreisProStück" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="5" max="-2" attributes="0"/>
                       <Component id="VerkaufenPreisProStückEingeben" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="VerkaufenStückzahl" min="-2" max="-2" attributes="0"/>
                   </Group>
+                  <Component id="VerkaufenPreisProStück" min="-2" max="-2" attributes="0"/>
               </Group>
-              <EmptySpace min="-2" pref="28" max="-2" attributes="0"/>
+              <EmptySpace max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Component id="VerkaufenGesamtpreisEingeben" min="-2" max="-2" attributes="0"/>
+                  <Component id="VerkaufenNameDerAktieEingabe" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace min="-2" pref="15" max="-2" attributes="0"/>
               <Component id="VerkaufenGesamtpreis" min="-2" max="-2" attributes="0"/>
               <EmptySpace type="unrelated" max="-2" attributes="0"/>
-              <Component id="VerkaufenGesamtpreisEingeben" min="-2" max="-2" attributes="0"/>
-              <EmptySpace min="-2" pref="74" max="-2" attributes="0"/>
+              <Component id="VerkaufenStückzahlEingeben" min="-2" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="56" max="-2" attributes="0"/>
               <Component id="VerkaufenVerkaufen" min="-2" pref="40" max="-2" attributes="0"/>
               <EmptySpace min="-2" pref="28" max="-2" attributes="0"/>
               <Component id="VerkaufenAbbrechen" min="-2" pref="40" max="-2" attributes="0"/>
-              <EmptySpace pref="64" max="32767" attributes="0"/>
+              <EmptySpace pref="124" max="32767" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
@@ -104,17 +109,8 @@
         <Property name="text" type="java.lang.String" value="StockOverflow"/>
       </Properties>
     </Component>
-    <Container class="javax.swing.JScrollPane" name="VerkaufenNameDerAktieEingabe">
-      <AuxValues>
-        <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
-      </AuxValues>
-
-      <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
-      <SubComponents>
-        <Component class="javax.swing.JTextPane" name="jTextPane1">
-        </Component>
-      </SubComponents>
-    </Container>
+    <Component class="javax.swing.JTextPane" name="VerkaufenNameDerAktieEingabe">
+    </Component>
     <Component class="javax.swing.JLabel" name="VerkaufenNameDerAktie">
       <Properties>
         <Property name="text" type="java.lang.String" value="Name der Aktie"/>
@@ -125,49 +121,22 @@
         <Property name="text" type="java.lang.String" value="St&#xfc;ckzahl"/>
       </Properties>
     </Component>
-    <Container class="javax.swing.JScrollPane" name="VerkaufenSt&#xfc;ckzahlEingeben">
-      <AuxValues>
-        <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
-      </AuxValues>
-
-      <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
-      <SubComponents>
-        <Component class="javax.swing.JTextPane" name="jTextPane2">
-        </Component>
-      </SubComponents>
-    </Container>
+    <Component class="javax.swing.JTextPane" name="VerkaufenSt&#xfc;ckzahlEingeben">
+    </Component>
     <Component class="javax.swing.JLabel" name="VerkaufenPreisProSt&#xfc;ck">
       <Properties>
         <Property name="text" type="java.lang.String" value="Preis pro St&#xfc;ck"/>
       </Properties>
     </Component>
-    <Container class="javax.swing.JScrollPane" name="VerkaufenPreisProSt&#xfc;ckEingeben">
-      <AuxValues>
-        <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
-      </AuxValues>
-
-      <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
-      <SubComponents>
-        <Component class="javax.swing.JTextPane" name="jTextPane3">
-        </Component>
-      </SubComponents>
-    </Container>
+    <Component class="javax.swing.JTextPane" name="VerkaufenPreisProSt&#xfc;ckEingeben">
+    </Component>
     <Component class="javax.swing.JLabel" name="VerkaufenGesamtpreis">
       <Properties>
         <Property name="text" type="java.lang.String" value="Gesamtpreis"/>
       </Properties>
     </Component>
-    <Container class="javax.swing.JScrollPane" name="VerkaufenGesamtpreisEingeben">
-      <AuxValues>
-        <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
-      </AuxValues>
-
-      <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
-      <SubComponents>
-        <Component class="javax.swing.JTextPane" name="jTextPane4">
-        </Component>
-      </SubComponents>
-    </Container>
+    <Component class="javax.swing.JTextPane" name="VerkaufenGesamtpreisEingeben">
+    </Component>
     <Component class="javax.swing.JButton" name="VerkaufenAbbrechen">
       <Properties>
         <Property name="text" type="java.lang.String" value="Abbrechen"/>
