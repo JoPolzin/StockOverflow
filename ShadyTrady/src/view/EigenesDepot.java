@@ -257,7 +257,7 @@ public class EigenesDepot extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         jLabel1.setFont(new java.awt.Font("Penultimate", 1, 36)); // NOI18N
-        jLabel1.setText("ShadyTrady");
+        jLabel1.setText("StockOverflow");
 
         jLabel2.setFont(new java.awt.Font("Penultimate", 0, 24)); // NOI18N
         jLabel2.setText("Eigenes Depot");

@@ -160,7 +160,7 @@
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Penultimate" size="36" style="1"/>
         </Property>
-        <Property name="text" type="java.lang.String" value="ShadyTrady"/>
+        <Property name="text" type="java.lang.String" value="StockOverflow"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JButton" name="LogInAnsehen">

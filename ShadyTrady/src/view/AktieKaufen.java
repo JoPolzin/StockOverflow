@@ -53,7 +53,7 @@ public class AktieKaufen extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         StockOverflowKaufen.setFont(new java.awt.Font("Penultimate", 1, 36)); // NOI18N
-        StockOverflowKaufen.setText("ShadyTrady");
+        StockOverflowKaufen.setText("StockOverflow");
 
         KaufenNameDerAktieEingabe.setViewportView(jTextPane1);
 
