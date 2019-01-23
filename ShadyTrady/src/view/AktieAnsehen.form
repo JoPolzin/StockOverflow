@@ -24,7 +24,7 @@
     <DimensionLayout dim="0">
       <Group type="103" groupAlignment="0" attributes="0">
           <Group type="102" attributes="0">
-              <Group type="103" groupAlignment="1" attributes="0">
+              <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" attributes="0">
                       <Group type="103" groupAlignment="0" attributes="0">
                           <Group type="102" attributes="0">
@@ -39,7 +39,7 @@
                                       <Component id="HalbesJahrAnsehen" min="-2" max="-2" attributes="0"/>
                                       <EmptySpace type="unrelated" max="-2" attributes="0"/>
                                       <Component id="JahrAnsehen" min="-2" pref="69" max="-2" attributes="0"/>
-                                      <EmptySpace min="0" pref="116" max="32767" attributes="0"/>
+                                      <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
                                   </Group>
                                   <Group type="102" attributes="0">
                                       <Component id="AktienBild" max="32767" attributes="0"/>
@@ -67,18 +67,20 @@
                       </Group>
                       <Component id="DepotAnsehen" min="-2" pref="88" max="-2" attributes="0"/>
                       <EmptySpace type="separate" max="-2" attributes="0"/>
-                      <Component id="LogInAnsehen" min="-2" pref="75" max="-2" attributes="0"/>
                   </Group>
-                  <Group type="102" alignment="1" attributes="0">
+                  <Group type="102" alignment="0" attributes="0">
                       <EmptySpace min="-2" pref="61" max="-2" attributes="0"/>
                       <Component id="JLISIN" min="-2" max="-2" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
                       <Component id="ISIN" min="-2" pref="142" max="-2" attributes="0"/>
                       <EmptySpace type="separate" max="-2" attributes="0"/>
                       <Component id="laden" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace max="32767" attributes="0"/>
-                      <Component id="zurückAktieAnsehen" min="-2" pref="75" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="310" max="-2" attributes="0"/>
                   </Group>
+              </Group>
+              <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                  <Component id="LogInAnsehen" pref="75" max="32767" attributes="0"/>
+                  <Component id="zurückAktieAnsehen" max="32767" attributes="0"/>
               </Group>
               <EmptySpace max="-2" attributes="0"/>
           </Group>
@@ -304,7 +306,7 @@
     </Component>
     <Component class="javax.swing.JButton" name="laden">
       <Properties>
-        <Property name="text" type="java.lang.String" value="laden"/>
+        <Property name="text" type="java.lang.String" value="Laden"/>
       </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="ladenActionPerformed"/>
@@ -315,7 +317,7 @@
     </Component>
     <Component class="javax.swing.JButton" name="Aktualisieren">
       <Properties>
-        <Property name="text" type="java.lang.String" value="aktualisieren"/>
+        <Property name="text" type="java.lang.String" value="Aktualisieren"/>
       </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="AktualisierenActionPerformed"/>

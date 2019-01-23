@@ -27,6 +27,8 @@ public class maincontrol {
     private AktieVerkaufen aktieVerkaufen;
 
     private AnmeldeFenster anmeldeFenster;
+    
+    private RegistrierFenster registrierFenster;
 
     private EigenesDepot eigenesDepot;
 
@@ -41,6 +43,7 @@ public class maincontrol {
         aktieKaufen = new AktieKaufen(this);
         aktieVerkaufen = new AktieVerkaufen(this);
         anmeldeFenster = new AnmeldeFenster(this);
+        registrierFenster = new RegistrierFenster(this);
         eigenesDepot = new EigenesDepot(this);
         stockOverflowGUI = new StockOverflowGUI(this);
         fso = new FirebaseSaveObject(this);
@@ -55,6 +58,7 @@ public class maincontrol {
         aktieKaufen.setVisible(false);
         aktieVerkaufen.setVisible(false);
         anmeldeFenster.setVisible(false);
+        registrierFenster.setVisible(false);
         eigenesDepot.setVisible(false);
         stockOverflowGUI.setVisible(false);
 
@@ -71,6 +75,9 @@ public class maincontrol {
             case "AnmeldeFenster":
                 anmeldeFenster.setVisible(true);
                 break;
+            case "RegistrierFenster":
+                registrierFenster.setVisible(true);
+                break;    
             case "EigenesDepot":
                 eigenesDepot.setVisible(true);
                 break;
