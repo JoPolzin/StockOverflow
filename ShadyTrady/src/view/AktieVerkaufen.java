@@ -53,7 +53,7 @@ public class AktieVerkaufen extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         StockOverflowVerkaufen.setFont(new java.awt.Font("Penultimate", 1, 36)); // NOI18N
-        StockOverflowVerkaufen.setText("Stock Overflow");
+        StockOverflowVerkaufen.setText("ShadyTrady");
 
         VerkaufenNameDerAktieEingabe.setViewportView(jTextPane1);
 

@@ -28,15 +28,10 @@
                   <Group type="102" attributes="0">
                       <Group type="103" groupAlignment="0" attributes="0">
                           <Group type="102" attributes="0">
-                              <EmptySpace pref="231" max="32767" attributes="0"/>
-                              <Component id="ÜberschriftAnsehen" min="-2" max="-2" attributes="0"/>
-                              <EmptySpace min="-2" pref="22" max="-2" attributes="0"/>
-                          </Group>
-                          <Group type="102" alignment="0" attributes="0">
                               <Group type="103" groupAlignment="0" attributes="0">
                                   <Group type="102" attributes="0">
                                       <Component id="TagAnsehen" min="-2" pref="73" max="-2" attributes="0"/>
-                                      <EmptySpace max="32767" attributes="0"/>
+                                      <EmptySpace max="-2" attributes="0"/>
                                       <Component id="WocheAnsehen" min="-2" pref="75" max="-2" attributes="0"/>
                                       <EmptySpace max="-2" attributes="0"/>
                                       <Component id="MonatAnsehen" min="-2" pref="71" max="-2" attributes="0"/>
@@ -44,6 +39,7 @@
                                       <Component id="HalbesJahrAnsehen" min="-2" max="-2" attributes="0"/>
                                       <EmptySpace type="unrelated" max="-2" attributes="0"/>
                                       <Component id="JahrAnsehen" min="-2" pref="69" max="-2" attributes="0"/>
+                                      <EmptySpace min="0" pref="116" max="32767" attributes="0"/>
                                   </Group>
                                   <Group type="102" attributes="0">
                                       <Component id="AktienBild" max="32767" attributes="0"/>
@@ -57,10 +53,16 @@
                                           </Group>
                                           <Component id="PreisAngabeAnsehen" alignment="0" min="-2" pref="84" max="-2" attributes="0"/>
                                           <Component id="ChangeAngabeAnsehen" alignment="0" min="-2" pref="84" max="-2" attributes="0"/>
+                                          <Component id="Aktualisieren" min="-2" max="-2" attributes="0"/>
                                       </Group>
                                   </Group>
                               </Group>
                               <EmptySpace max="-2" attributes="0"/>
+                          </Group>
+                          <Group type="102" alignment="1" attributes="0">
+                              <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                              <Component id="ÜberschriftAnsehen" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace min="-2" pref="47" max="-2" attributes="0"/>
                           </Group>
                       </Group>
                       <Component id="DepotAnsehen" min="-2" pref="88" max="-2" attributes="0"/>
@@ -110,6 +112,8 @@
               <EmptySpace pref="35" max="32767" attributes="0"/>
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" alignment="1" attributes="0">
+                      <Component id="Aktualisieren" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace type="separate" max="-2" attributes="0"/>
                       <Component id="ChangeAnsehen" min="-2" pref="27" max="-2" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
                       <Component id="ChangeAngabeAnsehen" min="-2" max="-2" attributes="0"/>
@@ -154,7 +158,7 @@
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Penultimate" size="36" style="1"/>
         </Property>
-        <Property name="text" type="java.lang.String" value="Stock Overflow"/>
+        <Property name="text" type="java.lang.String" value="ShadyTrady"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JButton" name="LogInAnsehen">
@@ -252,26 +256,41 @@
       <Properties>
         <Property name="text" type="java.lang.String" value="Woche"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="WocheAnsehenActionPerformed"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JButton" name="MonatAnsehen">
       <Properties>
         <Property name="text" type="java.lang.String" value="Monat"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="MonatAnsehenActionPerformed"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JButton" name="HalbesJahrAnsehen">
       <Properties>
         <Property name="text" type="java.lang.String" value="6 Monate"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="HalbesJahrAnsehenActionPerformed"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JButton" name="JahrAnsehen">
       <Properties>
         <Property name="text" type="java.lang.String" value="Jahr"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="JahrAnsehenActionPerformed"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JTextField" name="ISIN">
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="ISINActionPerformed"/>
       </Events>
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
+      </AuxValues>
     </Component>
     <Component class="javax.swing.JLabel" name="JLISIN">
       <Properties>
@@ -293,6 +312,14 @@
       <AuxValues>
         <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
       </AuxValues>
+    </Component>
+    <Component class="javax.swing.JButton" name="Aktualisieren">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="aktualisieren"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="AktualisierenActionPerformed"/>
+      </Events>
     </Component>
   </SubComponents>
 </Form>

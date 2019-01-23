@@ -7,8 +7,12 @@ package control;
 
 import view.*;
 import model.*;
+import model.OA;
 import TEST.*;
+import java.awt.Color;
+import java.util.ArrayList;
 import shadytrady.*;
+import view.StockOverflowGUI;
 
 /**
  *
@@ -16,25 +20,33 @@ import shadytrady.*;
  */
 public class maincontrol {
 
-    private AktieAnsehen aktieAnsehen = new AktieAnsehen(this);
+    private AktieAnsehen aktieAnsehen;
 
-    private AktieKaufen aktieKaufen = new AktieKaufen(this);
+    private AktieKaufen aktieKaufen;
 
-    private AktieVerkaufen aktieVerkaufen = new AktieVerkaufen(this);
+    private AktieVerkaufen aktieVerkaufen;
 
-    private AnmeldeFenster anmeldeFenster = new AnmeldeFenster(this);
+    private AnmeldeFenster anmeldeFenster;
 
-    private EigenesDepot eigenesDepot = new EigenesDepot(this);
+    private EigenesDepot eigenesDepot;
 
-    private StockOverflowGUI stockOverflowGUI = new StockOverflowGUI(this);
+    private StockOverflowGUI stockOverflowGUI;
 
-    private FirebaseSaveObject fso = new FirebaseSaveObject(this);
+    private FirebaseSaveObject fso;
 
     private Benutzer b;
 
     public maincontrol() {
+        aktieAnsehen = new AktieAnsehen(this);
+        aktieKaufen = new AktieKaufen(this);
+        aktieVerkaufen = new AktieVerkaufen(this);
+        anmeldeFenster = new AnmeldeFenster(this);
+        eigenesDepot = new EigenesDepot(this);
+        stockOverflowGUI = new StockOverflowGUI(this);
+        fso = new FirebaseSaveObject(this);
 
         stockOverflowGUI.setVisible(true);
+        AktienDatenInitialisieren();
     }
 
     public void switchTo(String Guiname) {
@@ -88,20 +100,87 @@ public class maincontrol {
         new maincontrol();
     }
 
-    public void aktieladen(String ISIN) {
-        OA.prepareDocument(ISIN);
+    //StockOverflowGUI-Funktionen
+    /**
+     * StockOverflowGUI Initialisiert Aktien des Daxes.
+     */
+    public void AktienDatenInitialisieren() {
+        OA.DnsConfig();
+        stockOverflowGUI.PreisListe = new ArrayList<>();
+
+        for (int i = 0; i < stockOverflowGUI.AktienFelder.size(); i++) {
+
+            OA.prepareDocument(OA.getDNS().get(OA.getDNSString().get(i)));
+            stockOverflowGUI.AktienFelder.get(i).setText(OA.getDNSString().get(i));
+            stockOverflowGUI.PreisFelder.get(i).setText(Float.toString(OA.getAsk()));
+            stockOverflowGUI.ChangeFelder.get(i).setText(Float.toString(OA.getChange()));
+            stockOverflowGUI.PreisListe.add(OA.getAsk());
+        }
+    }
+
+    /**
+     * StockOverflowGUI Aktualisiert Aktien des Daxes und färbt diese.
+     */
+
+    public void AktienDatenAktualisieren() {
+        for (int i = 0; i < stockOverflowGUI.AktienFelder.size(); i++) {
+
+            OA.prepareDocument(OA.getDNS().get(OA.getDNSString().get(i)));
+            stockOverflowGUI.AktienFelder.get(i).setText(OA.getDNSString().get(i));
+            stockOverflowGUI.PreisFelder.get(i).setText(Float.toString(OA.getAsk()));
+            stockOverflowGUI.ChangeFelder.get(i).setText(Float.toString(OA.getChange()));
+            if ((float) stockOverflowGUI.PreisListe.get(i) > OA.getAsk()) {
+                stockOverflowGUI.PreisFelder.get(i).setBackground(Color.red);
+            } else if ((float) stockOverflowGUI.PreisListe.get(i) < OA.getAsk()) {
+                stockOverflowGUI.PreisFelder.get(i).setBackground(Color.green);
+
+            } else {
+                stockOverflowGUI.PreisFelder.get(i).setBackground(Color.white);
+            }
+            stockOverflowGUI.PreisListe.set(i, OA.getAsk());
+
+        }
+
+    }
+
+    //AktieAnsehen:
+    /**
+     * AktieAnsehen-Funktion Aktualisiert eine Aktie.
+     *
+     *
+     * @param ISIN
+     */
+
+    public void AktieDatenInitialisieren(String ISIN) {
+        OA.prepareDocument(aktieAnsehen.ISIN.getText());
         aktieAnsehen.Change.setText(Float.toString(OA.getChange()));
         aktieAnsehen.Preis.setText(Float.toString(OA.getAsk()));
-
+        aktieAnsehen.momentanerPreis = OA.getAsk();
+        aktieAnsehen.ausgewählteISIN = ISIN;
     }
 
-    public void aktieZeitraum(String Zeitraum) {
-        aktieAnsehen.AktienBild.setIcon(OA.getGraph(Zeitraum));
+    /**
+     * AktieAnsehen-Funktion Aktualisiert eine Aktie und färbt diese.
+     *
+     *
+     *
+     *
+     */
 
-    }
-   
-    public void test(){
-        
+    public void AktieDatenAktualisieren() {
+        OA.prepareDocument(aktieAnsehen.ausgewählteISIN);
+        aktieAnsehen.Change.setText(Float.toString(OA.getChange()));
+        aktieAnsehen.Preis.setText(Float.toString(OA.getAsk()));
+        if (aktieAnsehen.momentanerPreis > OA.getAsk()) {
+            aktieAnsehen.Preis.setBackground(Color.red);
+
+        } else if (aktieAnsehen.momentanerPreis < OA.getAsk()) {
+            aktieAnsehen.Preis.setBackground(Color.green);
+
+        } else {
+            aktieAnsehen.Preis.setBackground(Color.white);
+        }
+
     }
 
 }

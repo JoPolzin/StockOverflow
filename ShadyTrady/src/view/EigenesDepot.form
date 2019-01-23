@@ -541,7 +541,7 @@
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Penultimate" size="36" style="1"/>
         </Property>
-        <Property name="text" type="java.lang.String" value="Stock Overflow"/>
+        <Property name="text" type="java.lang.String" value="ShadyTrady"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel2">
