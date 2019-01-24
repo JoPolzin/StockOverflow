@@ -22,13 +22,14 @@ import java.util.Map;
 import java.util.concurrent.CountDownLatch;
 import java.util.logging.Level;
 import java.util.logging.Logger;
+import model.Aktienkonto;
+import model.Benutzer;
 
 public class FirebaseSaveObject {
-
+    
     private String password;
-   public Map<String, Object> userUpdates = new HashMap<>();
-
-
+    public Map<String, Object> userUpdates = new HashMap<>();
+    
     public static void main(String[] args) {
         Item item = new Item();
         item.setId(25L);
@@ -37,46 +38,54 @@ public class FirebaseSaveObject {
 
         // save item objec to firebase.
         FirebaseSaveObject fso = new FirebaseSaveObject();
+        //fso.initFirebase();
+        //fso.save(item);
+        //fso.receive();
+        TestBenutzer b = new TestBenutzer("Klaus", "Mensch", 300);
+        TestBenutzer b2 = new TestBenutzer("Peter", "Taube", 500);
+        Benutzer g = new Benutzer("Klaus");
+        Aktienkonto  a = new Aktienkonto();
+        g.setDepot(a);
+        g.getDepot().setGuthaben(500);
+        g.setEmail("Watweisicke@nana.com");
+        
         fso.initFirebase();
-        fso.save(item);
-        fso.receive();
-
-        String s = "testnutzer";
-        ;
-        fso.getpassword(s);
+        fso.BenutzerSpeichern("007", g);
+        
     }
-
+    
     private FirebaseDatabase firebaseDatabase;
     private maincontrol c;
-
+    
     public FirebaseSaveObject() {
     }
-
+    
     public FirebaseSaveObject(maincontrol mc) {
         this.c = mc;
-
+        
         Item item = new Item();
         item.setId(25L);
         item.setName("AutoG");
         item.setPrice(800.00);
-
+        
         this.initFirebase();
+        
         this.save(item);
-
+        
     }
 
     /**
      * initialize firebase.
      */
-    private void initFirebase() {
+    public void initFirebase() {
         try {
             FileInputStream serviceAccount = new FileInputStream("aktienspiel-97ea0-c6776b4f804e.json");
-
+            
             FirebaseOptions options = new FirebaseOptions.Builder()
                     .setCredentials(GoogleCredentials.fromStream(serviceAccount))
                     .setDatabaseUrl("https://aktienspiel-97ea0.firebaseio.com/")
                     .build();
-
+            
             FirebaseApp.initializeApp(options);
             firebaseDatabase = FirebaseDatabase.getInstance();
             firebaseDatabase.getReference("/").addValueEventListener(
@@ -88,7 +97,7 @@ public class FirebaseSaveObject {
                     System.err.println(item.getPrice());
                     ;
                 }
-
+                
                 @Override
                 public void onCancelled(DatabaseError databaseError) {
                     // read query is cancelled.
@@ -115,7 +124,7 @@ public class FirebaseSaveObject {
 
             /* Get existing child or will be created new child. */
             DatabaseReference childReference = databaseReference.child("Benutzer");
-            userUpdates.put("alanisawesome/nickname", "Alan The Machine");
+            userUpdates.put("alanisawesome/nickname", "The Machine");
             userUpdates.put("alanisawesome/passwort", "geheim");
             userUpdates.put("testnutzer/nickname", "test");
             userUpdates.put("testnutzer/passwort", "geheim");
@@ -124,10 +133,9 @@ public class FirebaseSaveObject {
             userUpdates.put("teacher/nickname", "Muster");
             userUpdates.put("T-Mon/nickname", "Tehmon");
             userUpdates.put("T-Mon/passwort", "1e3qacdy");
-            userUpdates.put("Simon/nickname", "Saimon");          
+            userUpdates.put("Simon/nickname", "Saimon");
             userUpdates.put("Simon/passwort", "1qayxsw2");
             
-
             databaseReference.updateChildrenAsync(userUpdates);
             /**
              * The Firebase Java client uses daemon threads, meaning it will not
@@ -139,7 +147,7 @@ public class FirebaseSaveObject {
              */
             CountDownLatch countDownLatch = new CountDownLatch(1);
             childReference.setValue(item, new DatabaseReference.CompletionListener() {
-
+                
                 @Override
                 public void onComplete(DatabaseError de, DatabaseReference dr) {
                     System.out.println("Record saved!");
@@ -155,7 +163,7 @@ public class FirebaseSaveObject {
             }
         }
     }
-
+    
     public void receive() {
         //final FirebaseDatabase database = FirebaseDatabase.getInstance();
         DatabaseReference ref = firebaseDatabase.getReference("/testnutzer");
@@ -169,7 +177,7 @@ public class FirebaseSaveObject {
                 //Item it = dataSnapshot.getValue(Item.class);
                 System.out.println(dataSnapshot.getValue());
             }
-
+            
             @Override
             public void onCancelled(DatabaseError databaseError) {
                 System.out.println("The read failed: " + databaseError.getCode());
@@ -188,28 +196,46 @@ public class FirebaseSaveObject {
 
 // Attach a listener to read the data at our posts reference
         ref.addListenerForSingleValueEvent(new ValueEventListener() {
-
+            
             @Override
             public void onDataChange(DataSnapshot dataSnapshot) {
                 //Post post = dataSnapshot.getValue(Post.class);
 
                 //Item it = dataSnapshot.getValue(Item.class);
                 String data = dataSnapshot.getValue().toString();
-
+                
                 String[] datarray = data.substring(0, data.length()).split(", ");
-               
+                
                 password = datarray[0].split("=")[1];
-
+                
             }
-
+            
             @Override
             public void onCancelled(DatabaseError databaseError) {
                 System.out.println("The read failed: " + databaseError.getCode());
             }
-
+            
         });
-       
+        
         return password;
-
+        
     }
+    /**
+     * Speichert einen Benutzer in der Firebase
+     * 
+     * @param ID
+     * @param object 
+     */
+    public void BenutzerSpeichern(String ID, Object object) {
+        this.firebaseDatabase.getReference().child("Benutzer").child(ID).setValueAsync(object);
+        CountDownLatch countDownLatch = new CountDownLatch(1);
+        try {
+            //wait for firebase to saves record.
+            countDownLatch.await();
+        } catch (InterruptedException ex) {
+            ex.printStackTrace();
+        }
+        
+    }
+    
 }
