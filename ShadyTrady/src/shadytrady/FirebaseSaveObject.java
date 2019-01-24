@@ -50,7 +50,8 @@ public class FirebaseSaveObject {
         g.setEmail("Watweisicke@nana.com");
         
         fso.initFirebase();
-        fso.BenutzerSpeichern("007", g);
+        fso.ObjectSpeichern("/Haustiere","007", g);
+        System.out.println(fso.getpassword("alanisawesome"));
         
     }
     
@@ -221,13 +222,13 @@ public class FirebaseSaveObject {
         
     }
     /**
-     * Speichert einen Benutzer in der Firebase
+     * Speichert ein Object an der Reference mit einem Namen.
      * 
      * @param ID
      * @param object 
      */
-    public void BenutzerSpeichern(String ID, Object object) {
-        this.firebaseDatabase.getReference().child("Benutzer").child(ID).setValueAsync(object);
+    public void ObjectSpeichern(String Reference,String ID, Object object) {
+        this.firebaseDatabase.getReference(Reference).child(ID).setValueAsync(object);
         CountDownLatch countDownLatch = new CountDownLatch(1);
         try {
             //wait for firebase to saves record.
