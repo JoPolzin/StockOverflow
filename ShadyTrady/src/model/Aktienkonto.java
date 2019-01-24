@@ -5,6 +5,7 @@
  */
 package model;
 
+import control.maincontrol;
 import java.util.ArrayList;
 
 /**
@@ -18,16 +19,46 @@ public class Aktienkonto {
 
     
     private Integer id;
-    private ArrayList Gekaufte_Aktien;
+    private ArrayList<Aktie> Gekaufte_Aktien;
     private Integer Guthaben;
     private Aktie gekaufteAktie;
-
+    private maincontrol c;
+    
+    
+    public Aktienkonto() {
+       
+        
+    }
+  public Aktienkonto(maincontrol mc) {
+        this.c = mc;
+        
+    }
     /**
      * Aktien kaufen
      *
      * @param aid
+     * @param Stueckzahl
+     * @param Preis
      */
-    public void aktie_kaufen(int aid) {
+     public void aktie_kaufen(String aid, int Stueckzahl, Float Preis) {
+       boolean bereitsgekauft = false;
+        
+       if (!Gekaufte_Aktien.isEmpty()){
+       
+       for (Aktie a : Gekaufte_Aktien){
+       if(a.getISIN().equals(aid)){
+       bereitsgekauft = true;
+       
+       }
+       }
+       }
+       
+       if (!bereitsgekauft){
+       Gekaufte_Aktien.add(new Aktie( aid , Preis, Stueckzahl));
+       
+       
+       }
+        
 
     }
 

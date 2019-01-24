@@ -64,11 +64,44 @@ public class Aktie {
         
         
     }
+    
+    /**
+     *
+     * @param iSIN
+     * @param Preis
+     * @param stueck
+     */
+    public Aktie(String iSIN, Float Preis, int stueck){
+        this.ISIN = iSIN;
+        this.preis = Preis;
+        this.stueckzahl = stueck;
+        
+        
+        
+        
+        
+        
+        
+    }
+
+    public Hashtable<Date, Float> getVerlauf() {
+        return verlauf;
+    }
+
+    public void setVerlauf(Hashtable<Date, Float> verlauf) {
+        this.verlauf = verlauf;
+    }
             
     /**
      * Verlauf der Aktie
      */
     private Hashtable<Date, Float> verlauf = new Hashtable<Date, Float>();
+    
+    /**get-Methode für den Namen
+     * @return .**/
+    public String getISIN() {
+        return ISIN;
+    }
     
     /**get-Methode für den Namen
      * @return .**/
