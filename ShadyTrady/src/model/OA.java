@@ -123,8 +123,8 @@ public class OA {
         getDNS().put("Deutsche Post AG","DE0005552004");
         getDNS().put("Deutsche Telekom AG", "DE0005557508");
         getDNS().put("E.ON SE","DE000ENAG999");
-        getDNS().put("Fresenius Medical Care KGaA","");
-        getDNS().put("Fresenius SE & Co. KGaA","");
+        getDNS().put("Fresenius Medical Care KGaA","DE0005785802");
+        getDNS().put("Fresenius SE & Co. KGaA","DE0005785604");
         getDNS().put("HeidelbergCement AG","DE0006047004");
         getDNS().put("Henkel AG & Co. KGaA VZ","DE0006048432");
         getDNS().put("Infineon Technologies AG","DE0006231004");
