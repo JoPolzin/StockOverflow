@@ -100,8 +100,8 @@ public class Benutzer {
         return Benutzername;
     }
      /**
-     * load-Methode des Benutzers
-     * @return 
+     * load-Methode des Benutzers 
+     * @param Benutzername
      */ 
     public void loadBenutzername(String Benutzername) {
         this.Benutzername = Benutzername;
@@ -119,7 +119,7 @@ public class Benutzer {
       public void save(){}
       /**
      * setter-Methode des Benutzers
-     * @return 
+     * @param Benutzername     
      */ 
     public void setBenutzername(String Benutzername) {
         this.Benutzername = Benutzername;
@@ -170,15 +170,15 @@ public class Benutzer {
     }
     * */
      /**
-     * setter-Methode der Email
-     * @return 
+     * setter-Methode der Email 
+     * @param Email
      */ 
     public void setEmail(String Email) {
         this.Email = Email;
     }
      /**
-     * setter-Methode des Kontostandes
-     * @return 
+     * setter-Methode des Kontostandes 
+     * @param Kontostand
      */ 
     public void setKontostand(Float Kontostand) {
         this.Kontostand = Kontostand;

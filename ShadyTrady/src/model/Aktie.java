@@ -71,10 +71,10 @@ public class Aktie {
      * @param Preis
      * @param stueck
      */
-    public Aktie(String iSIN, Float Preis, int stueck){
+    public Aktie(String iSIN, Float Preis){
         this.ISIN = iSIN;
         this.preis = Preis;
-        this.stueckzahl = stueck;
+       
         
         
         

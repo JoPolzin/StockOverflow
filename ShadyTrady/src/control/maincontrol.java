@@ -103,6 +103,7 @@ public class maincontrol {
             b = new Benutzer(benutzername);
             this.switchTo("EigenesDepot");
             erfolgreich = true;
+            this.eingeloggt = true;
         }
 
     }
