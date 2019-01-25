@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<Form version="1.5" maxVersion="1.9" type="org.netbeans.modules.form.forminfo.JFrameFormInfo">
+  <Properties>
+    <Property name="defaultCloseOperation" type="int" value="3"/>
+  </Properties>
+  <SyntheticProperties>
+    <SyntheticProperty name="formSizePolicy" type="int" value="1"/>
+    <SyntheticProperty name="generateCenter" type="boolean" value="false"/>
+  </SyntheticProperties>
+  <AuxValues>
+    <AuxValue name="FormSettings_autoResourcing" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_autoSetComponentName" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_generateFQN" type="java.lang.Boolean" value="true"/>
+    <AuxValue name="FormSettings_generateMnemonicsCode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_i18nAutoMode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_layoutCodeTarget" type="java.lang.Integer" value="1"/>
+    <AuxValue name="FormSettings_listenerGenerationStyle" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_variablesLocal" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_variablesModifier" type="java.lang.Integer" value="2"/>
+  </AuxValues>
+
+  <Layout>
+    <DimensionLayout dim="0">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Group type="102" attributes="0">
+              <EmptySpace min="-2" pref="39" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Component id="ProfilPasswort" alignment="0" min="-2" max="-2" attributes="0"/>
+                  <Component id="ProfilBenutzernameAnzeigen" min="-2" max="-2" attributes="0"/>
+                  <Component id="StockOverflowProfil" min="-2" max="-2" attributes="0"/>
+                  <Component id="ProfilBenutzername" alignment="0" min="-2" pref="115" max="-2" attributes="0"/>
+                  <Component id="ProfilGuthaben" alignment="0" min="-2" max="-2" attributes="0"/>
+                  <Component id="ProfilGuthabneAnzeigen" alignment="0" min="-2" pref="115" max="-2" attributes="0"/>
+                  <Group type="102" alignment="0" attributes="0">
+                      <Component id="ProfilPasswortAnzeigen" min="-2" pref="117" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="ProfilPasswortÄndern" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace min="-2" pref="76" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                          <Component id="ProfilAbbrechen" max="32767" attributes="0"/>
+                          <Component id="ProfilLogOut" max="32767" attributes="0"/>
+                          <Component id="ProfilLöschen" alignment="0" max="32767" attributes="0"/>
+                      </Group>
+                  </Group>
+              </Group>
+              <EmptySpace pref="36" max="32767" attributes="0"/>
+          </Group>
+      </Group>
+    </DimensionLayout>
+    <DimensionLayout dim="1">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Group type="102" alignment="0" attributes="0">
+              <EmptySpace max="-2" attributes="0"/>
+              <Component id="StockOverflowProfil" min="-2" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="20" max="-2" attributes="0"/>
+              <Component id="ProfilBenutzernameAnzeigen" min="-2" max="-2" attributes="0"/>
+              <EmptySpace max="-2" attributes="0"/>
+              <Component id="ProfilBenutzername" min="-2" max="-2" attributes="0"/>
+              <EmptySpace type="unrelated" max="-2" attributes="0"/>
+              <Component id="ProfilGuthaben" min="-2" max="-2" attributes="0"/>
+              <EmptySpace max="-2" attributes="0"/>
+              <Component id="ProfilGuthabneAnzeigen" min="-2" max="-2" attributes="0"/>
+              <EmptySpace type="separate" max="-2" attributes="0"/>
+              <Component id="ProfilPasswort" min="-2" max="-2" attributes="0"/>
+              <EmptySpace type="unrelated" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                  <Component id="ProfilPasswortÄndern" pref="0" max="32767" attributes="0"/>
+                  <Component id="ProfilPasswortAnzeigen" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace type="separate" max="-2" attributes="0"/>
+              <Component id="ProfilAbbrechen" min="-2" max="-2" attributes="0"/>
+              <EmptySpace max="-2" attributes="0"/>
+              <Component id="ProfilLogOut" min="-2" max="-2" attributes="0"/>
+              <EmptySpace max="-2" attributes="0"/>
+              <Component id="ProfilLöschen" min="-2" max="-2" attributes="0"/>
+              <EmptySpace pref="15" max="32767" attributes="0"/>
+          </Group>
+      </Group>
+    </DimensionLayout>
+  </Layout>
+  <SubComponents>
+    <Component class="javax.swing.JLabel" name="StockOverflowProfil">
+      <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Penultimate" size="36" style="1"/>
+        </Property>
+        <Property name="text" type="java.lang.String" value="StockOverflow"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JTextPane" name="ProfilBenutzername">
+      <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Penultimate" size="11" style="0"/>
+        </Property>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="ProfilBenutzernameAnzeigen">
+      <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Penultimate" size="11" style="0"/>
+        </Property>
+        <Property name="text" type="java.lang.String" value="Benutzername"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="ProfilPasswort">
+      <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Penultimate" size="11" style="0"/>
+        </Property>
+        <Property name="text" type="java.lang.String" value="Passwort"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JPasswordField" name="ProfilPasswortAnzeigen">
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="ProfilPasswortAnzeigenActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JButton" name="ProfilAbbrechen">
+      <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Penultimate" size="14" style="0"/>
+        </Property>
+        <Property name="text" type="java.lang.String" value="Abbrechen"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="ProfilAbbrechenActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JButton" name="ProfilPasswort&#xc4;ndern">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="&#xc4;ndern"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="ProfilPasswort&#xc4;ndernActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JTextPane" name="ProfilGuthabneAnzeigen">
+      <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Penultimate" size="11" style="0"/>
+        </Property>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="ProfilGuthaben">
+      <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Penultimate" size="11" style="0"/>
+        </Property>
+        <Property name="text" type="java.lang.String" value="Guthaben"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JButton" name="ProfilLogOut">
+      <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Penultimate" size="14" style="0"/>
+        </Property>
+        <Property name="text" type="java.lang.String" value="Log Out"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JButton" name="ProfilL&#xf6;schen">
+      <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Penultimate" size="14" style="0"/>
+        </Property>
+        <Property name="text" type="java.lang.String" value="Profil L&#xf6;schen"/>
+      </Properties>
+    </Component>
+  </SubComponents>
+</Form>
