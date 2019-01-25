@@ -23,29 +23,27 @@
   <Layout>
     <DimensionLayout dim="0">
       <Group type="103" groupAlignment="0" attributes="0">
-          <Group type="102" attributes="0">
+          <Group type="102" alignment="0" attributes="0">
+              <EmptySpace min="-2" pref="39" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="0" attributes="0">
-                  <Group type="102" alignment="0" attributes="0">
-                      <EmptySpace min="-2" pref="39" max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="0" attributes="0">
-                          <Component id="RegistrierenPasswort" alignment="0" min="-2" max="-2" attributes="0"/>
-                          <Component id="RegistrierenBenutzername" min="-2" max="-2" attributes="0"/>
-                          <Component id="StockOverflowRegistrierung" min="-2" max="-2" attributes="0"/>
-                          <Group type="103" alignment="0" groupAlignment="1" max="-2" attributes="0">
-                              <Component id="PasswortEingeben" alignment="0" max="32767" attributes="0"/>
-                              <Component id="RegistrierenBenutzernameEingeben" alignment="0" pref="117" max="32767" attributes="0"/>
-                          </Group>
-                      </Group>
+                  <Group type="103" alignment="0" groupAlignment="1" max="-2" attributes="0">
+                      <Component id="PasswortEingeben" alignment="0" max="32767" attributes="0"/>
+                      <Component id="PasswortBestätigenEingeben" alignment="0" min="-2" pref="117" max="-2" attributes="0"/>
+                      <Component id="RegistrierenPasswortBestätigen" alignment="0" min="-2" max="-2" attributes="0"/>
                   </Group>
+                  <Component id="RegistrierenPasswort" alignment="0" min="-2" max="-2" attributes="0"/>
                   <Group type="102" alignment="0" attributes="0">
-                      <EmptySpace min="-2" pref="121" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="82" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" max="-2" attributes="0">
                           <Component id="RegistrierenAbbrechen" max="32767" attributes="0"/>
-                          <Component id="RegistrierenRegistrieren" max="32767" attributes="0"/>
+                          <Component id="RegistrierenRegistrieren" min="-2" max="-2" attributes="0"/>
                       </Group>
                   </Group>
+                  <Component id="RegistrierenBenutzername" min="-2" max="-2" attributes="0"/>
+                  <Component id="StockOverflowRegistrierung" alignment="0" min="-2" max="-2" attributes="0"/>
+                  <Component id="RegistrierenBenutzernameEingeben1" alignment="0" min="-2" pref="115" max="-2" attributes="0"/>
               </Group>
-              <EmptySpace pref="95" max="32767" attributes="0"/>
+              <EmptySpace pref="36" max="32767" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
@@ -56,13 +54,17 @@
               <Component id="StockOverflowRegistrierung" min="-2" max="-2" attributes="0"/>
               <EmptySpace min="-2" pref="20" max="-2" attributes="0"/>
               <Component id="RegistrierenBenutzername" min="-2" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="13" max="-2" attributes="0"/>
+              <Component id="RegistrierenBenutzernameEingeben1" min="-2" max="-2" attributes="0"/>
               <EmptySpace max="-2" attributes="0"/>
-              <Component id="RegistrierenBenutzernameEingeben" min="-2" max="-2" attributes="0"/>
-              <EmptySpace min="-2" pref="25" max="-2" attributes="0"/>
               <Component id="RegistrierenPasswort" min="-2" max="-2" attributes="0"/>
-              <EmptySpace type="unrelated" max="-2" attributes="0"/>
+              <EmptySpace max="-2" attributes="0"/>
               <Component id="PasswortEingeben" min="-2" max="-2" attributes="0"/>
-              <EmptySpace min="-2" pref="53" max="-2" attributes="0"/>
+              <EmptySpace type="unrelated" max="-2" attributes="0"/>
+              <Component id="RegistrierenPasswortBestätigen" min="-2" max="-2" attributes="0"/>
+              <EmptySpace max="-2" attributes="0"/>
+              <Component id="PasswortBestätigenEingeben" min="-2" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="21" max="-2" attributes="0"/>
               <Component id="RegistrierenRegistrieren" min="-2" max="-2" attributes="0"/>
               <EmptySpace max="-2" attributes="0"/>
               <Component id="RegistrierenAbbrechen" min="-2" max="-2" attributes="0"/>
@@ -77,25 +79,16 @@
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Penultimate" size="36" style="1"/>
         </Property>
-        <Property name="text" type="java.lang.String" value="ShadyTrady"/>
+        <Property name="text" type="java.lang.String" value="StockOverflow"/>
       </Properties>
     </Component>
-    <Container class="javax.swing.JScrollPane" name="RegistrierenBenutzernameEingeben">
-      <AuxValues>
-        <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
-      </AuxValues>
-
-      <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
-      <SubComponents>
-        <Component class="javax.swing.JTextPane" name="jTextPane1">
-          <Properties>
-            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-              <Font name="Penultimate" size="11" style="0"/>
-            </Property>
-          </Properties>
-        </Component>
-      </SubComponents>
-    </Container>
+    <Component class="javax.swing.JTextPane" name="RegistrierenBenutzernameEingeben1">
+      <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Penultimate" size="11" style="0"/>
+        </Property>
+      </Properties>
+    </Component>
     <Component class="javax.swing.JLabel" name="RegistrierenBenutzername">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
@@ -137,6 +130,19 @@
       </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="RegistrierenAbbrechenActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JLabel" name="RegistrierenPasswortBest&#xe4;tigen">
+      <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Penultimate" size="11" style="0"/>
+        </Property>
+        <Property name="text" type="java.lang.String" value="Passwort best&#xe4;tigen"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JPasswordField" name="PasswortBest&#xe4;tigenEingeben">
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="PasswortBest&#xe4;tigenEingebenActionPerformed"/>
       </Events>
     </Component>
   </SubComponents>

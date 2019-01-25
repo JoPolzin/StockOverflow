@@ -29,6 +29,8 @@ public class maincontrol {
     private AnmeldeFenster anmeldeFenster;
     
     private RegistrierFenster registrierFenster;
+    
+    private ProfilFenster profilFenster;
 
     private EigenesDepot eigenesDepot;
 
@@ -36,6 +38,8 @@ public class maincontrol {
 
     private FirebaseSaveObject fso;
 
+    private boolean eingeloggt;
+    
     private Benutzer b;
 
     public maincontrol() {
@@ -44,6 +48,7 @@ public class maincontrol {
         aktieVerkaufen = new AktieVerkaufen(this);
         anmeldeFenster = new AnmeldeFenster(this);
         registrierFenster = new RegistrierFenster(this);
+        profilFenster = new ProfilFenster(this);
         eigenesDepot = new EigenesDepot(this);
         stockOverflowGUI = new StockOverflowGUI(this);
         fso = new FirebaseSaveObject(this);
@@ -59,6 +64,7 @@ public class maincontrol {
         aktieVerkaufen.setVisible(false);
         anmeldeFenster.setVisible(false);
         registrierFenster.setVisible(false);
+        profilFenster.setVisible(false);
         eigenesDepot.setVisible(false);
         stockOverflowGUI.setVisible(false);
 
@@ -78,6 +84,9 @@ public class maincontrol {
             case "RegistrierFenster":
                 registrierFenster.setVisible(true);
                 break;    
+            case "ProfilFenster":
+                profilFenster.setVisible(true);
+                break; 
             case "EigenesDepot":
                 eigenesDepot.setVisible(true);
                 break;
@@ -101,6 +110,7 @@ public class maincontrol {
             b = new Benutzer(benutzername);
             this.switchTo("EigenesDepot");
             erfolgreich = true;
+            this.eingeloggt = true;
         }
 
     }
@@ -176,12 +186,26 @@ public class maincontrol {
      */
 
     public void AktieDatenInitialisieren(String ISIN) {
-        OA.prepareDocument(aktieAnsehen.ISIN.getText());
+        OA.prepareDocument(ISIN);
         aktieAnsehen.Change.setText(Float.toString(OA.getChange()));
         aktieAnsehen.Preis.setText(Float.toString(OA.getAsk()));
+        aktieAnsehen.ISIN.setText(ISIN);
+        aktieAnsehen.AktienBild.setIcon(OA.getGraph("intraday"));
         aktieAnsehen.momentanerPreis = OA.getAsk();
         aktieAnsehen.ausgewählteISIN = ISIN;
     }
+    
+     public void aktiekaufen(String isin, String Stückzahl, String Preis){
+    if (this.eingeloggt) {
+        b.setKontostand(b.getKontostand() - Float.parseFloat(Preis));
+        b.getDepot().aktie_kaufen(isin, Integer.parseInt(Stückzahl), Float.parseFloat(Preis));
+    
+    
+    
+    
+    }
+    }
+
 
     /**
      * AktieAnsehen-Funktion Aktualisiert eine Aktie und färbt diese.
