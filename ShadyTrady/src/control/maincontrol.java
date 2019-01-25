@@ -113,6 +113,7 @@ ArrayList<Benutzer> al;
         }
         if(b == null){
             System.out.println("Falscher Benutzer");
+            return;
         }
         if (b.getPasswort().equals(password)) {
 
