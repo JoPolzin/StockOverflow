@@ -108,7 +108,7 @@ public class OA {
      */
     public static void DnsConfig() {
         
-        getDNS().put("adidas AG" , "DE000A1EWWW0");                        
+        getDNS().put("adidas AG" ,"DE000A1EWWW0");                        
         getDNS().put("Allianz SE","DE0008404005");
         getDNS().put("BASF SE","DE000BASF111");
         getDNS().put("Bayer AG","DE000BAY0017");
