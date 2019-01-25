@@ -36,8 +36,7 @@ public class RegistrierFenster extends javax.swing.JFrame {
     private void initComponents() {
 
         StockOverflowRegistrierung = new javax.swing.JLabel();
-        RegistrierenBenutzernameEingeben = new javax.swing.JScrollPane();
-        jTextPane1 = new javax.swing.JTextPane();
+        RegistrierenBenutzernameEingeben1 = new javax.swing.JTextPane();
         RegistrierenBenutzername = new javax.swing.JLabel();
         RegistrierenPasswort = new javax.swing.JLabel();
         PasswortEingeben = new javax.swing.JPasswordField();
@@ -51,8 +50,7 @@ public class RegistrierFenster extends javax.swing.JFrame {
         StockOverflowRegistrierung.setFont(new java.awt.Font("Penultimate", 1, 36)); // NOI18N
         StockOverflowRegistrierung.setText("StockOverflow");
 
-        jTextPane1.setFont(new java.awt.Font("Penultimate", 0, 11)); // NOI18N
-        RegistrierenBenutzernameEingeben.setViewportView(jTextPane1);
+        RegistrierenBenutzernameEingeben1.setFont(new java.awt.Font("Penultimate", 0, 11)); // NOI18N
 
         RegistrierenBenutzername.setFont(new java.awt.Font("Penultimate", 0, 11)); // NOI18N
         RegistrierenBenutzername.setText("Benutzername");
@@ -96,23 +94,21 @@ public class RegistrierFenster extends javax.swing.JFrame {
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
+                .addGap(39, 39, 39)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                        .addComponent(PasswortEingeben, javax.swing.GroupLayout.Alignment.LEADING)
+                        .addComponent(PasswortBestätigenEingeben, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, 117, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(RegistrierenPasswortBestätigen, javax.swing.GroupLayout.Alignment.LEADING))
+                    .addComponent(RegistrierenPasswort)
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(39, 39, 39)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(RegistrierenBenutzername)
-                            .addComponent(StockOverflowRegistrierung)
-                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                                .addComponent(PasswortEingeben, javax.swing.GroupLayout.Alignment.LEADING)
-                                .addComponent(RegistrierenBenutzernameEingeben, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 117, Short.MAX_VALUE)
-                                .addComponent(PasswortBestätigenEingeben, javax.swing.GroupLayout.Alignment.LEADING)
-                                .addComponent(RegistrierenPasswortBestätigen, javax.swing.GroupLayout.Alignment.LEADING))
-                            .addComponent(RegistrierenPasswort)))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(121, 121, 121)
+                        .addGap(82, 82, 82)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                             .addComponent(RegistrierenAbbrechen, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(RegistrierenRegistrieren, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
+                            .addComponent(RegistrierenRegistrieren)))
+                    .addComponent(RegistrierenBenutzername)
+                    .addComponent(StockOverflowRegistrierung)
+                    .addComponent(RegistrierenBenutzernameEingeben1, javax.swing.GroupLayout.PREFERRED_SIZE, 115, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap(36, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
@@ -122,9 +118,9 @@ public class RegistrierFenster extends javax.swing.JFrame {
                 .addComponent(StockOverflowRegistrierung)
                 .addGap(20, 20, 20)
                 .addComponent(RegistrierenBenutzername)
+                .addGap(13, 13, 13)
+                .addComponent(RegistrierenBenutzernameEingeben1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(RegistrierenBenutzernameEingeben, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(11, 11, 11)
                 .addComponent(RegistrierenPasswort)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(PasswortEingeben, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -211,11 +207,10 @@ public class RegistrierFenster extends javax.swing.JFrame {
     private javax.swing.JPasswordField PasswortEingeben;
     private javax.swing.JButton RegistrierenAbbrechen;
     private javax.swing.JLabel RegistrierenBenutzername;
-    private javax.swing.JScrollPane RegistrierenBenutzernameEingeben;
+    private javax.swing.JTextPane RegistrierenBenutzernameEingeben1;
     private javax.swing.JLabel RegistrierenPasswort;
     private javax.swing.JLabel RegistrierenPasswortBestätigen;
     private javax.swing.JButton RegistrierenRegistrieren;
     private javax.swing.JLabel StockOverflowRegistrierung;
-    private javax.swing.JTextPane jTextPane1;
     // End of variables declaration//GEN-END:variables
 }
