@@ -5,10 +5,10 @@
  */
 package control;
 
+import Firebasezugriff.FirebaseZugriff;
 import view.*;
 import model.*;
 import model.OA;
-import TEST.*;
 import java.awt.Color;
 import java.util.ArrayList;
 import shadytrady.*;
@@ -36,8 +36,8 @@ public class maincontrol {
 
     private StockOverflowGUI stockOverflowGUI;
 
-    private FirebaseSaveObject fso;
-
+private FirebaseZugriff fz;
+ArrayList<Benutzer> al;
     private boolean eingeloggt;
     
     private Benutzer b;
@@ -51,7 +51,8 @@ public class maincontrol {
         profilFenster = new ProfilFenster(this);
         eigenesDepot = new EigenesDepot(this);
         stockOverflowGUI = new StockOverflowGUI(this);
-        fso = new FirebaseSaveObject(this);
+        fz = new FirebaseZugriff();
+        al = fz.benutzerAuslesen();
 
         stockOverflowGUI.setVisible(true);
         AktienDatenInitialisieren();
@@ -102,9 +103,18 @@ public class maincontrol {
     }
 
     public void login(String benutzername, String password) {
-        boolean erfolgreich = false;
-
-        if (this.fso.getpassword(benutzername).equals(password)) {
+        boolean erfolgreich;
+        Benutzer b=null;
+        for (Benutzer tmp:al){
+            if (tmp.getBenutzername().equals(benutzername)){
+                b = tmp;
+                break;
+            }
+        }
+        if(b == null){
+            System.out.println("Falscher Benutzer");
+        }
+        if (b.getPasswort().equals(password)) {
 
             System.out.println("Login erfolgreich");
             b = new Benutzer(benutzername);

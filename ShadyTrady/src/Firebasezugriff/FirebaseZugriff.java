@@ -31,6 +31,7 @@ public class FirebaseZugriff {
     public FirebaseZugriff() {
         try {
             firebase = new Firebase(firebase_baseUrl);
+
         } catch (FirebaseException ex) {
             Logger.getLogger(FirebaseZugriff.class.getName()).log(Level.SEVERE, null, ex);
         }
@@ -62,6 +63,7 @@ public class FirebaseZugriff {
                 tmp.setBenutzername((String) lhm.get("benutzername"));
                 tmp.setEmail((String) lhm.get("email"));
                 tmp.setKontostand((Double) lhm.get("kontostand"));
+                tmp.setPasswort((String) lhm.get("passwort"));
                 al.add(tmp);
             }
         } catch (FirebaseException ex) {
@@ -92,11 +94,7 @@ public class FirebaseZugriff {
         dataMap.put(b.getBenutzername(), b);
         try {
             FirebaseResponse response = firebase.patch(dataMap);
-        } catch (FirebaseException ex) {
-            Logger.getLogger(FirebaseZugriff.class.getName()).log(Level.SEVERE, null, ex);
-        } catch (JacksonUtilityException ex) {
-            Logger.getLogger(FirebaseZugriff.class.getName()).log(Level.SEVERE, null, ex);
-        } catch (UnsupportedEncodingException ex) {
+        } catch (FirebaseException | JacksonUtilityException | UnsupportedEncodingException ex) {
             Logger.getLogger(FirebaseZugriff.class.getName()).log(Level.SEVERE, null, ex);
         }
     }
