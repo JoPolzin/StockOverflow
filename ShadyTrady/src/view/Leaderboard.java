@@ -5,16 +5,24 @@
  */
 package view;
 
+import control.maincontrol;
+
 /**
  *
  * @author yannis.hofmann
  */
 public class Leaderboard extends javax.swing.JFrame {
-
+    private maincontrol c;
     /**
      * Creates new form Leaderboard
      */
     public Leaderboard() {
+        initComponents();
+    }
+
+       public Leaderboard(maincontrol mc) {
+        this.c = mc;
+        
         initComponents();
     }
 
@@ -146,6 +154,11 @@ public class Leaderboard extends javax.swing.JFrame {
         JLPlatz5.setText("Platz 5");
 
         jButton1.setText("Zurück");
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -291,6 +304,11 @@ public class Leaderboard extends javax.swing.JFrame {
     private void GesamtPunktzahlActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_GesamtPunktzahlActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_GesamtPunktzahlActionPerformed
+
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        this.c.switchTo("StockOverflowGUI");
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton1ActionPerformed
 
     /**
      * @param args the command line arguments
