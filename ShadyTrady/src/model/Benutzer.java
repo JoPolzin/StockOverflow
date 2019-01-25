@@ -80,7 +80,7 @@ public class Benutzer {
     /**
      *  Hoehe des Kontostandes
      */    
-    private Float Kontostand; 
+    private double Kontostand; 
     /**
      * Aktienkonto des Benutzers
      */
@@ -88,6 +88,10 @@ public class Benutzer {
 
     public Benutzer(String Benutzername) {
         this.Benutzername = Benutzername;
+    }
+
+    public Benutzer() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
     
     
@@ -158,7 +162,7 @@ public class Benutzer {
      * getter-Methode des Kontostandes
      * @return 
      */ 
-    public Float getKontostand() {
+    public double getKontostand() {
         return Kontostand;
     }
      /**
@@ -180,7 +184,7 @@ public class Benutzer {
      * setter-Methode des Kontostandes
      * @return 
      */ 
-    public void setKontostand(Float Kontostand) {
+    public void setKontostand(double Kontostand) {
         this.Kontostand = Kontostand;
     }
     

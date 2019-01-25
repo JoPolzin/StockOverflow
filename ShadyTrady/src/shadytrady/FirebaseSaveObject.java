@@ -1,8 +1,8 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
+/**
+ * ACHTUNG: Nicht mehr benutzen!
+ * Stattdessen die FirebaseZugriffs-Klasse im package Firebase benutzen!
  */
+
 package shadytrady;
 
 import com.google.auth.oauth2.GoogleCredentials;
@@ -26,23 +26,18 @@ import java.util.logging.Logger;
 public class FirebaseSaveObject {
 
     private String password;
-   public Map<String, Object> userUpdates = new HashMap<>();
-
+    public Map<String, Object> userUpdates = new HashMap<>();
 
     public static void main(String[] args) {
-        Item item = new Item();
-        item.setId(25L);
-        item.setName("AutoG");
-        item.setPrice(800.00);
-
         // save item objec to firebase.
         FirebaseSaveObject fso = new FirebaseSaveObject();
         fso.initFirebase();
-        fso.save(item);
+        //fso.save2();
+        fso.save3("TestID","name","wert");
         fso.receive();
 
         String s = "testnutzer";
-        ;
+
         fso.getpassword(s);
     }
 
@@ -54,14 +49,8 @@ public class FirebaseSaveObject {
 
     public FirebaseSaveObject(maincontrol mc) {
         this.c = mc;
-
-        Item item = new Item();
-        item.setId(25L);
-        item.setName("AutoG");
-        item.setPrice(800.00);
-
         this.initFirebase();
-        this.save(item);
+        //this.save2();
 
     }
 
@@ -106,6 +95,41 @@ public class FirebaseSaveObject {
      *
      * @param item
      */
+    public void save3(String id, String key, String value){
+        System.out.println("Eintritt Methode save3");
+        final FirebaseDatabase database = FirebaseDatabase.getInstance();
+        //DatabaseReference ref = database.getReference("server/saving-data/fireblog");
+        DatabaseReference databaseReference = database.getReference("/");
+        DatabaseReference childReference = databaseReference.child(id);
+
+        HashMap<String,Object> hm = new HashMap<>();
+        hm.put(key,value);
+        childReference.setValueAsync(hm);
+        System.out.println("Fertig Methode save3");
+
+    }
+    
+    public void save2() {
+        DatabaseReference databaseReference = firebaseDatabase.getReference("/");
+
+        /* Get existing child or will be created new child. */
+        DatabaseReference childReference = databaseReference.child("Benutzer");
+        userUpdates.put("alanisawesome/nickname", "Alan The Machine");
+        userUpdates.put("alanisawesome/passwort", "geheim");
+        userUpdates.put("testnutzer/nickname", "test");
+        userUpdates.put("testnutzer/passwort", "geheim");
+        userUpdates.put("testnutzer/vorname", "Test");
+        userUpdates.put("gracehop/nickname", "Amazing Grace");
+        userUpdates.put("teacher/nickname", "Muster");
+        userUpdates.put("T-Mon/nickname", "Tehmon");
+        userUpdates.put("T-Mon/passwort", "1e3qacdy");
+        userUpdates.put("Simon/nickname", "Saimon");
+        userUpdates.put("Simon/passwort", "1qayxsw2");
+
+        databaseReference.updateChildrenAsync(userUpdates);
+
+    }
+
     public void save(Item item) {
         if (item != null) {
             //initFirebase();
@@ -124,9 +148,8 @@ public class FirebaseSaveObject {
             userUpdates.put("teacher/nickname", "Muster");
             userUpdates.put("T-Mon/nickname", "Tehmon");
             userUpdates.put("T-Mon/passwort", "1e3qacdy");
-            userUpdates.put("Simon/nickname", "Saimon");          
+            userUpdates.put("Simon/nickname", "Saimon");
             userUpdates.put("Simon/passwort", "1qayxsw2");
-            
 
             databaseReference.updateChildrenAsync(userUpdates);
             /**
@@ -197,7 +220,7 @@ public class FirebaseSaveObject {
                 String data = dataSnapshot.getValue().toString();
 
                 String[] datarray = data.substring(0, data.length()).split(", ");
-               
+
                 password = datarray[0].split("=")[1];
 
             }
@@ -208,7 +231,7 @@ public class FirebaseSaveObject {
             }
 
         });
-       
+
         return password;
 
     }
