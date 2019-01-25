@@ -28,20 +28,20 @@
                   <Group type="102" alignment="0" attributes="0">
                       <EmptySpace min="-2" pref="67" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                          <Component id="KaufenGesamtpreis" alignment="0" min="-2" max="-2" attributes="0"/>
-                          <Component id="KaufenNameDerAktie" min="-2" max="-2" attributes="0"/>
                           <Group type="102" alignment="0" attributes="0">
                               <EmptySpace min="-2" pref="131" max="-2" attributes="0"/>
                               <Component id="StockOverflowKaufen" min="-2" max="-2" attributes="0"/>
                           </Group>
                           <Group type="102" alignment="1" attributes="0">
                               <Group type="103" groupAlignment="0" attributes="0">
-                                  <Component id="KaufenStückzahl" min="-2" max="-2" attributes="0"/>
+                                  <Component id="KaufenNameDerAaktie" min="-2" max="-2" attributes="0"/>
                                   <Component id="KaufenStückzahlEingabe" min="-2" pref="139" max="-2" attributes="0"/>
                                   <Component id="KaufenGesamtpreisEingabe" alignment="0" min="-2" pref="139" max="-2" attributes="0"/>
+                                  <Component id="KaufenStückzaahl" alignment="0" min="-2" max="-2" attributes="0"/>
                               </Group>
                               <EmptySpace max="32767" attributes="0"/>
                               <Group type="103" groupAlignment="0" attributes="0">
+                                  <Component id="KaufenGesamtpreis" min="-2" max="-2" attributes="0"/>
                                   <Component id="KaufenPreisProStück" alignment="0" min="-2" max="-2" attributes="0"/>
                                   <Component id="KaufenNameDerAktieEingabe" alignment="0" min="-2" pref="139" max="-2" attributes="0"/>
                                   <Component id="KaufenPreisProStückEingabe" min="-2" pref="139" max="-2" attributes="0"/>
@@ -67,26 +67,21 @@
           <Group type="102" alignment="0" attributes="0">
               <EmptySpace min="-2" pref="25" max="-2" attributes="0"/>
               <Component id="StockOverflowKaufen" min="-2" max="-2" attributes="0"/>
-              <EmptySpace min="-2" pref="35" max="-2" attributes="0"/>
-              <Group type="103" groupAlignment="0" attributes="0">
-                  <Group type="102" alignment="1" attributes="0">
-                      <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="KaufenPreisProStück" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="KaufenStückzahl" alignment="3" min="-2" max="-2" attributes="0"/>
-                      </Group>
-                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                  </Group>
-                  <Group type="102" alignment="1" attributes="0">
-                      <Component id="KaufenNameDerAktie" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace min="-2" pref="36" max="-2" attributes="0"/>
-                  </Group>
+              <EmptySpace min="-2" pref="60" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="KaufenPreisProStück" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="KaufenNameDerAaktie" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
+              <EmptySpace type="unrelated" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="0" attributes="0">
                   <Component id="KaufenStückzahlEingabe" min="-2" max="-2" attributes="0"/>
                   <Component id="KaufenPreisProStückEingabe" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace min="-2" pref="28" max="-2" attributes="0"/>
-              <Component id="KaufenGesamtpreis" min="-2" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="KaufenStückzaahl" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="KaufenGesamtpreis" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
               <EmptySpace type="unrelated" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="0" attributes="0">
                   <Component id="KaufenNameDerAktieEingabe" min="-2" max="-2" attributes="0"/>
@@ -112,14 +107,14 @@
     </Component>
     <Component class="javax.swing.JTextPane" name="KaufenNameDerAktieEingabe">
     </Component>
-    <Component class="javax.swing.JLabel" name="KaufenNameDerAktie">
+    <Component class="javax.swing.JLabel" name="KaufenGesamtpreis">
       <Properties>
-        <Property name="text" type="java.lang.String" value="Name der Aktie"/>
+        <Property name="text" type="java.lang.String" value="Gesamtpreis"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JLabel" name="KaufenSt&#xfc;ckzahl">
+    <Component class="javax.swing.JLabel" name="KaufenNameDerAaktie">
       <Properties>
-        <Property name="text" type="java.lang.String" value="St&#xfc;ckzahl"/>
+        <Property name="text" type="java.lang.String" value="Name der Aktie"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JTextPane" name="KaufenSt&#xfc;ckzahlEingabe">
@@ -131,9 +126,9 @@
     </Component>
     <Component class="javax.swing.JTextPane" name="KaufenPreisProSt&#xfc;ckEingabe">
     </Component>
-    <Component class="javax.swing.JLabel" name="KaufenGesamtpreis">
+    <Component class="javax.swing.JLabel" name="KaufenSt&#xfc;ckzaahl">
       <Properties>
-        <Property name="text" type="java.lang.String" value="Gesamtpreis"/>
+        <Property name="text" type="java.lang.String" value="St&#xfc;ckzahl"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JTextPane" name="KaufenGesamtpreisEingabe">
