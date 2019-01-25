@@ -306,7 +306,16 @@ public class AktieAnsehen extends javax.swing.JFrame {
         this.c.switchTo("EigenesDepot");    }//GEN-LAST:event_DepotAnsehenActionPerformed
 
     private void LogInAnsehenActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_LogInAnsehenActionPerformed
-        this.c.switchTo("AnmeldeFenster");    }//GEN-LAST:event_LogInAnsehenActionPerformed
+        this.c.switchTo("AnmeldeFenster");    
+        if (LogInAnsehen.getText().equals("Log In")){  
+            LogInAnsehen.setText("Log Out");
+        }
+
+        else if (LogInAnsehen.getText().equals("Log Out")){
+            LogInAnsehen.setText("Log In");
+        }        
+		
+		}//GEN-LAST:event_LogInAnsehenActionPerformed
 
     private void zurückAktieAnsehenActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_zurückAktieAnsehenActionPerformed
         this.c.switchTo("StockOverflowGUI");    }//GEN-LAST:event_zurückAktieAnsehenActionPerformed
