@@ -198,7 +198,7 @@ public class StockOverflowGUI extends javax.swing.JFrame {
         AktienGUIÜberschrift.setFont(new java.awt.Font("Penultimate", 0, 24)); // NOI18N
         AktienGUIÜberschrift.setText("Aktien");
 
-        jButton1.setText("Weitere Aktien");
+        jButton1.setText("WeiterAktien");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton1ActionPerformed(evt);
@@ -823,7 +823,7 @@ public class StockOverflowGUI extends javax.swing.JFrame {
     }//GEN-LAST:event_TFAktie9ActionPerformed
 
     private void BAnsehen2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BAnsehen2ActionPerformed
-        
+        // TODO add your handling code here:
     }//GEN-LAST:event_BAnsehen2ActionPerformed
 
     private void TFAktie10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_TFAktie10ActionPerformed
@@ -831,7 +831,7 @@ public class StockOverflowGUI extends javax.swing.JFrame {
     }//GEN-LAST:event_TFAktie10ActionPerformed
 
     private void BAnsehen10BAnsehen2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BAnsehen10BAnsehen2ActionPerformed
-        ;
+        // TODO add your handling code here:
     }//GEN-LAST:event_BAnsehen10BAnsehen2ActionPerformed
 
     private void TFAktie11ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_TFAktie11ActionPerformed
@@ -839,7 +839,7 @@ public class StockOverflowGUI extends javax.swing.JFrame {
     }//GEN-LAST:event_TFAktie11ActionPerformed
 
     private void BAnsehen11BAnsehen2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BAnsehen11BAnsehen2ActionPerformed
-        ;
+        // TODO add your handling code here:
     }//GEN-LAST:event_BAnsehen11BAnsehen2ActionPerformed
 
     private void TFAktie12ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_TFAktie12ActionPerformed
@@ -847,7 +847,7 @@ public class StockOverflowGUI extends javax.swing.JFrame {
     }//GEN-LAST:event_TFAktie12ActionPerformed
 
     private void BAnsehen12BAnsehen2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BAnsehen12BAnsehen2ActionPerformed
-        ;
+        // TODO add your handling code here:
     }//GEN-LAST:event_BAnsehen12BAnsehen2ActionPerformed
 
     private void TFAktie13ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_TFAktie13ActionPerformed
@@ -855,7 +855,7 @@ public class StockOverflowGUI extends javax.swing.JFrame {
     }//GEN-LAST:event_TFAktie13ActionPerformed
 
     private void BAnsehen13BAnsehen2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BAnsehen13BAnsehen2ActionPerformed
-        ;
+        // TODO add your handling code here:
     }//GEN-LAST:event_BAnsehen13BAnsehen2ActionPerformed
 
     private void TFAktie14ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_TFAktie14ActionPerformed
@@ -863,7 +863,7 @@ public class StockOverflowGUI extends javax.swing.JFrame {
     }//GEN-LAST:event_TFAktie14ActionPerformed
 
     private void BAnsehen14BAnsehen2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BAnsehen14BAnsehen2ActionPerformed
-        ;
+        // TODO add your handling code here:
     }//GEN-LAST:event_BAnsehen14BAnsehen2ActionPerformed
 
     private void TFAktie15ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_TFAktie15ActionPerformed
@@ -871,7 +871,7 @@ public class StockOverflowGUI extends javax.swing.JFrame {
     }//GEN-LAST:event_TFAktie15ActionPerformed
 
     private void BAnsehen15BAnsehen2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BAnsehen15BAnsehen2ActionPerformed
-        ;
+        // TODO add your handling code here:
     }//GEN-LAST:event_BAnsehen15BAnsehen2ActionPerformed
 
     private void TFAktie16ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_TFAktie16ActionPerformed
@@ -879,7 +879,7 @@ public class StockOverflowGUI extends javax.swing.JFrame {
     }//GEN-LAST:event_TFAktie16ActionPerformed
 
     private void BAnsehen16BAnsehen2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BAnsehen16BAnsehen2ActionPerformed
-        ;
+        // TODO add your handling code here:
     }//GEN-LAST:event_BAnsehen16BAnsehen2ActionPerformed
 
     private void RefreshActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_RefreshActionPerformed

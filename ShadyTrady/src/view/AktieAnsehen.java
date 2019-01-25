@@ -85,7 +85,7 @@ public class AktieAnsehen extends javax.swing.JFrame {
         });
 
         ÜberschriftAnsehen.setFont(new java.awt.Font("Penultimate", 1, 36)); // NOI18N
-        ÜberschriftAnsehen.setText("ShadyTrady");
+        ÜberschriftAnsehen.setText("StockOverflow");
 
         LogInAnsehen.setText("Log In");
         LogInAnsehen.addActionListener(new java.awt.event.ActionListener() {

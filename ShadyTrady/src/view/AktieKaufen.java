@@ -35,41 +35,29 @@ public class AktieKaufen extends javax.swing.JFrame {
     private void initComponents() {
 
         StockOverflowKaufen = new javax.swing.JLabel();
-        KaufenNameDerAktieEingabe = new javax.swing.JScrollPane();
-        jTextPane1 = new javax.swing.JTextPane();
+        KaufenNameDerAktieEingabe = new javax.swing.JTextPane();
         KaufenNameDerAktie = new javax.swing.JLabel();
         KaufenStückzahl = new javax.swing.JLabel();
-        KaufenStückzahlEingabe = new javax.swing.JScrollPane();
-        jTextPane2 = new javax.swing.JTextPane();
+        KaufenStückzahlEingabe = new javax.swing.JTextPane();
         KaufenPreisProStück = new javax.swing.JLabel();
-        KaufenPreisProStückEingabe = new javax.swing.JScrollPane();
-        jTextPane3 = new javax.swing.JTextPane();
+        KaufenPreisProStückEingabe = new javax.swing.JTextPane();
         KaufenGesamtpreis = new javax.swing.JLabel();
-        KaufenGesamtpreisEingabe = new javax.swing.JScrollPane();
-        jTextPane4 = new javax.swing.JTextPane();
+        KaufenGesamtpreisEingabe = new javax.swing.JTextPane();
         KaufenAbbrechen = new javax.swing.JButton();
         KaufenKaufen = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         StockOverflowKaufen.setFont(new java.awt.Font("Penultimate", 1, 36)); // NOI18N
-        StockOverflowKaufen.setText("ShadyTrady");
-
-        KaufenNameDerAktieEingabe.setViewportView(jTextPane1);
+        StockOverflowKaufen.setText("StockOverflow");
 
         KaufenNameDerAktie.setText("Name der Aktie");
 
         KaufenStückzahl.setText("Stückzahl");
 
-        KaufenStückzahlEingabe.setViewportView(jTextPane2);
-
         KaufenPreisProStück.setText("Preis pro Stück");
 
-        KaufenPreisProStückEingabe.setViewportView(jTextPane3);
-
         KaufenGesamtpreis.setText("Gesamtpreis");
-
-        KaufenGesamtpreisEingabe.setViewportView(jTextPane4);
 
         KaufenAbbrechen.setText("Abbrechen");
         KaufenAbbrechen.addActionListener(new java.awt.event.ActionListener() {
@@ -93,21 +81,23 @@ public class AktieKaufen extends javax.swing.JFrame {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
                         .addGap(67, 67, 67)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                             .addComponent(KaufenGesamtpreis)
-                            .addComponent(KaufenGesamtpreisEingabe, javax.swing.GroupLayout.PREFERRED_SIZE, 141, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(KaufenNameDerAktie)
-                            .addComponent(KaufenNameDerAktieEingabe, javax.swing.GroupLayout.PREFERRED_SIZE, 141, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                .addComponent(StockOverflowKaufen)
-                                .addGroup(layout.createSequentialGroup()
-                                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                        .addComponent(KaufenStückzahl)
-                                        .addComponent(KaufenStückzahlEingabe, javax.swing.GroupLayout.PREFERRED_SIZE, 141, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                    .addGap(42, 42, 42)
-                                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                        .addComponent(KaufenPreisProStück)
-                                        .addComponent(KaufenPreisProStückEingabe, javax.swing.GroupLayout.PREFERRED_SIZE, 141, javax.swing.GroupLayout.PREFERRED_SIZE))))))
+                            .addGroup(layout.createSequentialGroup()
+                                .addGap(131, 131, 131)
+                                .addComponent(StockOverflowKaufen))
+                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(KaufenStückzahl)
+                                    .addComponent(KaufenStückzahlEingabe, javax.swing.GroupLayout.PREFERRED_SIZE, 139, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(KaufenGesamtpreisEingabe, javax.swing.GroupLayout.PREFERRED_SIZE, 139, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(KaufenPreisProStück)
+                                    .addComponent(KaufenNameDerAktieEingabe, javax.swing.GroupLayout.PREFERRED_SIZE, 139, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(KaufenPreisProStückEingabe, javax.swing.GroupLayout.PREFERRED_SIZE, 139, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addGap(2, 2, 2))))
                     .addGroup(layout.createSequentialGroup()
                         .addGap(205, 205, 205)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
@@ -121,34 +111,36 @@ public class AktieKaufen extends javax.swing.JFrame {
                 .addGap(25, 25, 25)
                 .addComponent(StockOverflowKaufen)
                 .addGap(35, 35, 35)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addGroup(layout.createSequentialGroup()
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(KaufenPreisProStück)
+                            .addComponent(KaufenStückzahl))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                         .addComponent(KaufenNameDerAktie)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(KaufenNameDerAktieEingabe, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(18, 18, 18)
-                        .addComponent(KaufenStückzahl)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(KaufenStückzahlEingabe, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(layout.createSequentialGroup()
-                        .addComponent(KaufenPreisProStück)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(KaufenPreisProStückEingabe, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addGap(36, 36, 36)))
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(KaufenStückzahlEingabe, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(KaufenPreisProStückEingabe, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(28, 28, 28)
                 .addComponent(KaufenGesamtpreis)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(KaufenGesamtpreisEingabe, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(KaufenNameDerAktieEingabe, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(KaufenGesamtpreisEingabe, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(74, 74, 74)
                 .addComponent(KaufenKaufen, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(28, 28, 28)
                 .addComponent(KaufenAbbrechen, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(64, Short.MAX_VALUE))
+                .addContainerGap(108, Short.MAX_VALUE))
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
     private void KaufenKaufenActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_KaufenKaufenActionPerformed
+  c.aktiekaufen(this.KaufenNameDerAktie.getText(), this.KaufenStückzahl.getText(), this.KaufenGesamtpreis.getText());
         this.c.switchTo("EigenesDepot");    }//GEN-LAST:event_KaufenKaufenActionPerformed
 
     private void KaufenAbbrechenActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_KaufenAbbrechenActionPerformed
@@ -195,18 +187,14 @@ public class AktieKaufen extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton KaufenAbbrechen;
     private javax.swing.JLabel KaufenGesamtpreis;
-    private javax.swing.JScrollPane KaufenGesamtpreisEingabe;
+    private javax.swing.JTextPane KaufenGesamtpreisEingabe;
     private javax.swing.JButton KaufenKaufen;
     private javax.swing.JLabel KaufenNameDerAktie;
-    private javax.swing.JScrollPane KaufenNameDerAktieEingabe;
+    private javax.swing.JTextPane KaufenNameDerAktieEingabe;
     private javax.swing.JLabel KaufenPreisProStück;
-    private javax.swing.JScrollPane KaufenPreisProStückEingabe;
+    private javax.swing.JTextPane KaufenPreisProStückEingabe;
     private javax.swing.JLabel KaufenStückzahl;
-    private javax.swing.JScrollPane KaufenStückzahlEingabe;
+    private javax.swing.JTextPane KaufenStückzahlEingabe;
     private javax.swing.JLabel StockOverflowKaufen;
-    private javax.swing.JTextPane jTextPane1;
-    private javax.swing.JTextPane jTextPane2;
-    private javax.swing.JTextPane jTextPane3;
-    private javax.swing.JTextPane jTextPane4;
     // End of variables declaration//GEN-END:variables
 }

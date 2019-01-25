@@ -36,6 +36,8 @@ public class maincontrol {
 
     private FirebaseSaveObject fso;
 
+    private boolean eingeloggt;
+    
     private Benutzer b;
 
     public maincontrol() {
@@ -176,12 +178,26 @@ public class maincontrol {
      */
 
     public void AktieDatenInitialisieren(String ISIN) {
-        OA.prepareDocument(aktieAnsehen.ISIN.getText());
+        OA.prepareDocument(ISIN);
         aktieAnsehen.Change.setText(Float.toString(OA.getChange()));
         aktieAnsehen.Preis.setText(Float.toString(OA.getAsk()));
+        aktieAnsehen.ISIN.setText(ISIN);
+        aktieAnsehen.AktienBild.setIcon(OA.getGraph("intraday"));
         aktieAnsehen.momentanerPreis = OA.getAsk();
         aktieAnsehen.ausgewählteISIN = ISIN;
     }
+    
+     public void aktiekaufen(String isin, String Stückzahl, String Preis){
+    if (this.eingeloggt) {
+        b.setKontostand(b.getKontostand() - Float.parseFloat(Preis));
+        b.getDepot().aktie_kaufen(isin, Integer.parseInt(Stückzahl), Float.parseFloat(Preis));
+    
+    
+    
+    
+    }
+    }
+
 
     /**
      * AktieAnsehen-Funktion Aktualisiert eine Aktie und färbt diese.
