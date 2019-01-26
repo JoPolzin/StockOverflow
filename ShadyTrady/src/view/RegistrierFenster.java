@@ -5,7 +5,7 @@
  */
 package view;
 import control.maincontrol;
-import java.util.Arrays;
+import javax.swing.JOptionPane;
 
 
 /**
@@ -44,6 +44,8 @@ public class RegistrierFenster extends javax.swing.JFrame {
         RegistrierenAbbrechen = new javax.swing.JButton();
         RegistrierenPasswortBestätigen = new javax.swing.JLabel();
         PasswortBestätigenEingeben = new javax.swing.JPasswordField();
+        RegistrierenEmail = new javax.swing.JLabel();
+        RegistrierenEmailEingeben = new javax.swing.JTextPane();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -89,6 +91,11 @@ public class RegistrierFenster extends javax.swing.JFrame {
             }
         });
 
+        RegistrierenEmail.setFont(new java.awt.Font("Penultimate", 0, 11)); // NOI18N
+        RegistrierenEmail.setText("Email");
+
+        RegistrierenEmailEingeben.setFont(new java.awt.Font("Penultimate", 0, 11)); // NOI18N
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -106,10 +113,17 @@ public class RegistrierFenster extends javax.swing.JFrame {
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                             .addComponent(RegistrierenAbbrechen, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                             .addComponent(RegistrierenRegistrieren)))
-                    .addComponent(RegistrierenBenutzername)
+                    .addGroup(layout.createSequentialGroup()
+                        .addComponent(RegistrierenBenutzernameEingeben1, javax.swing.GroupLayout.PREFERRED_SIZE, 115, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 48, Short.MAX_VALUE)
+                        .addComponent(RegistrierenEmailEingeben, javax.swing.GroupLayout.PREFERRED_SIZE, 115, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addComponent(StockOverflowRegistrierung)
-                    .addComponent(RegistrierenBenutzernameEingeben1, javax.swing.GroupLayout.PREFERRED_SIZE, 115, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(36, Short.MAX_VALUE))
+                    .addGroup(layout.createSequentialGroup()
+                        .addComponent(RegistrierenBenutzername)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(RegistrierenEmail)
+                        .addGap(0, 0, Short.MAX_VALUE)))
+                .addContainerGap())
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -117,9 +131,13 @@ public class RegistrierFenster extends javax.swing.JFrame {
                 .addContainerGap()
                 .addComponent(StockOverflowRegistrierung)
                 .addGap(20, 20, 20)
-                .addComponent(RegistrierenBenutzername)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(RegistrierenBenutzername)
+                    .addComponent(RegistrierenEmail))
                 .addGap(13, 13, 13)
-                .addComponent(RegistrierenBenutzernameEingeben1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(RegistrierenBenutzernameEingeben1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(RegistrierenEmailEingeben, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(RegistrierenPasswort)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -143,6 +161,23 @@ public class RegistrierFenster extends javax.swing.JFrame {
     }//GEN-LAST:event_RegistrierenAbbrechenActionPerformed
 
     private void RegistrierenRegistrierenActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_RegistrierenRegistrierenActionPerformed
+        if(RegistrierenBenutzernameEingeben1.getText().equals("")){
+            JOptionPane.showMessageDialog(null,"Benutzername ist leer");
+            return;
+        }
+        if(PasswortEingeben.getPassword().length==0){
+            JOptionPane.showMessageDialog(null,"Passwortfeld ist leer");
+            return;
+        }
+        if(PasswortBestätigenEingeben.getPassword().length==0){
+            JOptionPane.showMessageDialog(null,"Passwortbestätigungsfeld ist leer");
+            return;
+        }
+        if(RegistrierenEmailEingeben.getText().equals("")){
+            JOptionPane.showMessageDialog(null,"Email ist leer");
+            return;
+        }
+        c.register(RegistrierenBenutzernameEingeben1.getText(), String.valueOf(PasswortEingeben.getPassword()), String.valueOf(PasswortBestätigenEingeben.getPassword()), RegistrierenEmailEingeben.getText());
         this.c.switchTo("StockOverflowGUI");
     }//GEN-LAST:event_RegistrierenRegistrierenActionPerformed
 
@@ -208,6 +243,8 @@ public class RegistrierFenster extends javax.swing.JFrame {
     private javax.swing.JButton RegistrierenAbbrechen;
     private javax.swing.JLabel RegistrierenBenutzername;
     private javax.swing.JTextPane RegistrierenBenutzernameEingeben1;
+    private javax.swing.JLabel RegistrierenEmail;
+    private javax.swing.JTextPane RegistrierenEmailEingeben;
     private javax.swing.JLabel RegistrierenPasswort;
     private javax.swing.JLabel RegistrierenPasswortBestätigen;
     private javax.swing.JButton RegistrierenRegistrieren;

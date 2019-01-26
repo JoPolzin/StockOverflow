@@ -11,7 +11,7 @@ import model.*;
 import model.OA;
 import java.awt.Color;
 import java.util.ArrayList;
-import shadytrady.*;
+import javax.swing.JOptionPane;
 import view.StockOverflowGUI;
 
 /**
@@ -27,19 +27,19 @@ public class maincontrol {
     private AktieVerkaufen aktieVerkaufen;
 
     private AnmeldeFenster anmeldeFenster;
-    
+
     private RegistrierFenster registrierFenster;
-    
+
     private ProfilFenster profilFenster;
 
     private EigenesDepot eigenesDepot;
 
     private StockOverflowGUI stockOverflowGUI;
 
-private FirebaseZugriff fz;
-ArrayList<Benutzer> al;
+    private FirebaseZugriff fz;
+    private ArrayList<Benutzer> al;
     private boolean eingeloggt;
-    
+
     private Benutzer b;
 
     public maincontrol() {
@@ -53,9 +53,16 @@ ArrayList<Benutzer> al;
         stockOverflowGUI = new StockOverflowGUI(this);
         fz = new FirebaseZugriff();
         al = fz.benutzerAuslesen();
+        
+        if(al==null){
+            JOptionPane.showMessageDialog(null, "Keine Benutzer geladen oder Firebase ungültig.");
+        }
 
         stockOverflowGUI.setVisible(true);
         AktienDatenInitialisieren();
+    }
+    public boolean getEingeloggt(){
+        return eingeloggt;
     }
 
     public void switchTo(String Guiname) {
@@ -84,10 +91,10 @@ ArrayList<Benutzer> al;
                 break;
             case "RegistrierFenster":
                 registrierFenster.setVisible(true);
-                break;    
+                break;
             case "ProfilFenster":
                 profilFenster.setVisible(true);
-                break; 
+                break;
             case "EigenesDepot":
                 eigenesDepot.setVisible(true);
                 break;
@@ -104,20 +111,26 @@ ArrayList<Benutzer> al;
 
     public void login(String benutzername, String password) {
         boolean erfolgreich;
-        Benutzer b=null;
-        for (Benutzer tmp:al){
-            if (tmp.getBenutzername().equals(benutzername)){
+        Benutzer b = null;
+        if (al==null){
+            JOptionPane.showMessageDialog(null, "Anmeldung nicht möglich. Es sind keine Benutzer bekannt.");
+
+        }
+        for (Benutzer tmp : al) {
+            if (tmp.getBenutzername().equals(benutzername)) {
                 b = tmp;
                 break;
             }
         }
-        if(b == null){
+        if (b == null) {
             System.out.println("Falscher Benutzer");
+            JOptionPane.showMessageDialog(null, "Der Benutzer existiert nicht.");
             return;
         }
         if (b.getPasswort().equals(password)) {
 
             System.out.println("Login erfolgreich");
+            JOptionPane.showMessageDialog(null, "Login erfolgreich.\n Angemeldeter Benutezr:\n" + b.toString());
             b = new Benutzer(benutzername);
             this.switchTo("EigenesDepot");
             erfolgreich = true;
@@ -125,21 +138,42 @@ ArrayList<Benutzer> al;
         }
 
     }
-    public void register(String benutzername, String password,String confPassword){
-        FirebaseSaveObject fso = new FirebaseSaveObject();
-       if( fso.userUpdates.containsKey(benutzername)){
-           System.out.print("oh well");
-       }
-       if(password==confPassword){
-           
+
+    public boolean register(String benutzername, String password, String confPassword, String email) {
+        /*FirebaseSaveObject fso = new FirebaseSaveObject();
+        if (fso.userUpdates.containsKey(benutzername)) {
+            System.out.print("oh well");
+        }
+        if (password == confPassword) {
+
             fso.userUpdates.put(benutzername, password);
-       }
-            
-     }
-    
-    
-    
-    
+        }*/
+        for (Benutzer b : al) {
+            if (b.getBenutzername().equalsIgnoreCase(benutzername)) {
+                JOptionPane.showMessageDialog(null, "Benutzername schon vergeben");
+                return false;
+            }
+            if (b.getEmail().equalsIgnoreCase(benutzername)) {
+                JOptionPane.showMessageDialog(null, "Benutzername schon vergeben");
+                return false;
+            }
+        }
+        if (password.equals(confPassword)) {
+            Benutzer tmp = new Benutzer();
+            tmp.setBenutzername(benutzername);
+            tmp.setPasswort(password);
+            tmp.setEmail(email);
+            tmp.setKontostand(1000);
+            fz.ergaenzeBenutzer(tmp);
+            JOptionPane.showMessageDialog(null, "Benutzername eingetragen: " + tmp.toString());
+            return true;
+        } else {
+            JOptionPane.showMessageDialog(null, "Passwortfelder nicht gleich");
+
+            return false;
+        }
+
+    }
 
     public static void main(String[] args) {
         new maincontrol();
@@ -166,7 +200,6 @@ ArrayList<Benutzer> al;
     /**
      * StockOverflowGUI Aktualisiert Aktien des Daxes und färbt diese.
      */
-
     public void AktienDatenAktualisieren() {
         for (int i = 0; i < stockOverflowGUI.AktienFelder.size(); i++) {
 
@@ -195,7 +228,6 @@ ArrayList<Benutzer> al;
      *
      * @param ISIN
      */
-
     public void AktieDatenInitialisieren(String ISIN) {
         OA.prepareDocument(ISIN);
         aktieAnsehen.Change.setText(Float.toString(OA.getChange()));
@@ -205,18 +237,14 @@ ArrayList<Benutzer> al;
         aktieAnsehen.momentanerPreis = OA.getAsk();
         aktieAnsehen.ausgewählteISIN = ISIN;
     }
-    
-     public void aktiekaufen(String isin, String Stückzahl, String Preis){
-    if (this.eingeloggt) {
-        b.setKontostand(b.getKontostand() - Float.parseFloat(Preis));
-        b.getDepot().aktie_kaufen(isin, Integer.parseInt(Stückzahl), Float.parseFloat(Preis));
-    
-    
-    
-    
-    }
-    }
 
+    public void aktiekaufen(String isin, String Stückzahl, String Preis) {
+        if (this.eingeloggt) {
+            b.setKontostand(b.getKontostand() - Float.parseFloat(Preis));
+            b.getDepot().aktie_kaufen(isin, Integer.parseInt(Stückzahl), Float.parseFloat(Preis));
+
+        }
+    }
 
     /**
      * AktieAnsehen-Funktion Aktualisiert eine Aktie und färbt diese.
@@ -225,7 +253,6 @@ ArrayList<Benutzer> al;
      *
      *
      */
-
     public void AktieDatenAktualisieren() {
         OA.prepareDocument(aktieAnsehen.ausgewählteISIN);
         aktieAnsehen.Change.setText(Float.toString(OA.getChange()));

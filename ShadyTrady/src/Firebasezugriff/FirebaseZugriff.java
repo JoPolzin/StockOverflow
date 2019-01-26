@@ -45,6 +45,8 @@ public class FirebaseZugriff {
      * ACHTUNG: Bislang hat der Benutzer die Attribute "benutzername", "email"
      * und "kontostand". Wenn sich das �ndert, dann mus diese Methode angepasst
      * werden!!!
+     * 
+     * Alle Benutzer in der Firebase müssen die echte Struktur des Benutzer-Objekts haben!
      *
      * @return alle Benutzer in einer ArrayList
      */
@@ -60,6 +62,9 @@ public class FirebaseZugriff {
                 LinkedHashMap lhm = (LinkedHashMap) pairs.getValue();
                 Benutzer tmp = new Benutzer();
                 //Hier Ergänzen, wenn der Benutzer weitere Attribute bekommt!
+                if(!lhm.containsKey("benutzername")||!lhm.containsKey("email")||!lhm.containsKey("kontostand")||!lhm.containsKey("passwort")){
+                return null;    
+                }
                 tmp.setBenutzername((String) lhm.get("benutzername"));
                 tmp.setEmail((String) lhm.get("email"));
                 tmp.setKontostand((Double) lhm.get("kontostand"));

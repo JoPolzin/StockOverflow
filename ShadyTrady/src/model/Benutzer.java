@@ -202,5 +202,15 @@ public class Benutzer {
     public void setKontostand(double Kontostand) {
         this.Kontostand = Kontostand;
     }
+    
+    @Override
+    public String toString(){
+        String ausgabe="";
+        ausgabe+="Benutzername: "+Benutzername+"\n";
+        ausgabe+="Passwort: "+Passwort+"\n";
+        ausgabe+="Kontostand: "+Kontostand+"\n";
+        ausgabe+="Email: "+Email+"\n";
+        return ausgabe;
+    }
 
 }

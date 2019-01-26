@@ -51,6 +51,7 @@ public class AktieAnsehen extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        jCheckBoxMenuItem1 = new javax.swing.JCheckBoxMenuItem();
         DepotAnsehen = new javax.swing.JButton();
         ÜberschriftAnsehen = new javax.swing.JLabel();
         LogInAnsehen = new javax.swing.JButton();
@@ -76,7 +77,15 @@ public class AktieAnsehen extends javax.swing.JFrame {
         jTextPane1 = new javax.swing.JTextPane();
         jLabel1 = new javax.swing.JLabel();
 
+        jCheckBoxMenuItem1.setSelected(true);
+        jCheckBoxMenuItem1.setText("jCheckBoxMenuItem1");
+
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        addComponentListener(new java.awt.event.ComponentAdapter() {
+            public void componentShown(java.awt.event.ComponentEvent evt) {
+                formComponentShown(evt);
+            }
+        });
 
         DepotAnsehen.setText("Depot");
         DepotAnsehen.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
@@ -359,6 +368,15 @@ public class AktieAnsehen extends javax.swing.JFrame {
         c.AktieDatenAktualisieren();
     }//GEN-LAST:event_AktualisierenActionPerformed
 
+    private void formComponentShown(java.awt.event.ComponentEvent evt) {//GEN-FIRST:event_formComponentShown
+        if(c.getEingeloggt()){
+            LogInAnsehen.setText("Abmelden");
+        }
+        else{
+            LogInAnsehen.setText("Log In");
+        }
+    }//GEN-LAST:event_formComponentShown
+
     /**
      * @param args the command line arguments
      */
@@ -417,6 +435,7 @@ public class AktieAnsehen extends javax.swing.JFrame {
     private javax.swing.JButton TagAnsehen;
     private javax.swing.JButton VerkaufenAnsehen;
     private javax.swing.JButton WocheAnsehen;
+    private javax.swing.JCheckBoxMenuItem jCheckBoxMenuItem1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JTextPane jTextPane1;
     public javax.swing.JButton laden;
