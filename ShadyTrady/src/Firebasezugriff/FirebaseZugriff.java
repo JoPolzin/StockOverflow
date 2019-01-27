@@ -59,7 +59,7 @@ public class FirebaseZugriff {
         ArrayList<Benutzer> al = new ArrayList();
 
         try {
-            response = firebase.get();
+            response = firebase.get("users");
             Iterator it = response.getBody().entrySet().iterator();
             while (it.hasNext()) {
                 Map.Entry pairs = (Map.Entry) it.next();
