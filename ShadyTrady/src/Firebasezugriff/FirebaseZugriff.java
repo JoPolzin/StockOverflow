@@ -7,12 +7,15 @@ package Firebasezugriff;
 
 import java.io.UnsupportedEncodingException;
 import java.util.ArrayList;
+import java.util.Enumeration;
 import java.util.Iterator;
 import java.util.LinkedHashMap;
 import java.util.Map;
-import java.util.Set;
 import java.util.logging.Level;
 import java.util.logging.Logger;
+import model.Aktie;
+import model.Aktienkauf;
+import model.Aktienkonto;
 import model.Benutzer;
 import net.thegreshams.firebase4j.error.FirebaseException;
 import net.thegreshams.firebase4j.error.JacksonUtilityException;
@@ -45,8 +48,9 @@ public class FirebaseZugriff {
      * ACHTUNG: Bislang hat der Benutzer die Attribute "benutzername", "email"
      * und "kontostand". Wenn sich das �ndert, dann mus diese Methode angepasst
      * werden!!!
-     * 
-     * Alle Benutzer in der Firebase müssen die echte Struktur des Benutzer-Objekts haben!
+     *
+     * Alle Benutzer in der Firebase müssen die echte Struktur des
+     * Benutzer-Objekts haben!
      *
      * @return alle Benutzer in einer ArrayList
      */
@@ -62,8 +66,8 @@ public class FirebaseZugriff {
                 LinkedHashMap lhm = (LinkedHashMap) pairs.getValue();
                 Benutzer tmp = new Benutzer();
                 //Hier Ergänzen, wenn der Benutzer weitere Attribute bekommt!
-                if(!lhm.containsKey("benutzername")||!lhm.containsKey("email")||!lhm.containsKey("kontostand")||!lhm.containsKey("passwort")){
-                return null;    
+                if (!lhm.containsKey("benutzername") || !lhm.containsKey("email") || !lhm.containsKey("kontostand") || !lhm.containsKey("passwort")) {
+                    return null;
                 }
                 tmp.setBenutzername((String) lhm.get("benutzername"));
                 tmp.setEmail((String) lhm.get("email"));
@@ -91,17 +95,42 @@ public class FirebaseZugriff {
 
     /**
      * ergaenzt einen neuen Benutzer ohne die bestehenden zu ver�ndern.
+     * Der Benutzer kommt in das Child "users". Das Aktienkonto kommt in das child "depots"
      *
      * @param b der neue Benutzer
      */
     public void ergaenzeBenutzer(Benutzer b) {
         Map<String, Object> dataMap = new LinkedHashMap<String, Object>();
+        Aktienkonto ak = b.getDepot();
+        b.setDepot(null);//vorsichtiges Löschen, damit in der Firebase kein geschachteltes Objekt entsteht.
         dataMap.put(b.getBenutzername(), b);
+
+        //dataMap.put(b.getBenutzername(), b.getDepot());
         try {
-            FirebaseResponse response = firebase.patch(dataMap);
+            FirebaseResponse response = firebase.patch("users", dataMap);
         } catch (FirebaseException | JacksonUtilityException | UnsupportedEncodingException ex) {
             Logger.getLogger(FirebaseZugriff.class.getName()).log(Level.SEVERE, null, ex);
         }
+        b.setDepot(ak); //Rücksetzen um b nicht zu verändern...
+        dataMap.clear();
+        int zaehler=0;
+        Enumeration<Aktie> e = ak.getGekaufte_Aktien().keys();
+        while (e.hasMoreElements()) {
+            Aktie a = e.nextElement();
+            int kaufzahl = ak.getGekaufte_Aktien().get(a);
+            Aktienkauf akt = new Aktienkauf(b.getBenutzername(), a.getISIN(), kaufzahl);
+            System.out.println(akt.toString());
+            dataMap.put(String.valueOf(zaehler),akt);
+            zaehler++;
+        }
+        
+        try {
+            FirebaseResponse response = firebase.patch("depots", dataMap);
+            dataMap.clear();
+        } catch (FirebaseException | JacksonUtilityException | UnsupportedEncodingException ex) {
+            Logger.getLogger(FirebaseZugriff.class.getName()).log(Level.SEVERE, null, ex);
+        }
+        
     }
 
     /**
@@ -118,11 +147,14 @@ public class FirebaseZugriff {
         try {
             FirebaseResponse response = firebase.patch(dataMap);
         } catch (FirebaseException ex) {
-            Logger.getLogger(FirebaseZugriff.class.getName()).log(Level.SEVERE, null, ex);
+            Logger.getLogger(FirebaseZugriff.class
+                    .getName()).log(Level.SEVERE, null, ex);
         } catch (JacksonUtilityException ex) {
-            Logger.getLogger(FirebaseZugriff.class.getName()).log(Level.SEVERE, null, ex);
+            Logger.getLogger(FirebaseZugriff.class
+                    .getName()).log(Level.SEVERE, null, ex);
         } catch (UnsupportedEncodingException ex) {
-            Logger.getLogger(FirebaseZugriff.class.getName()).log(Level.SEVERE, null, ex);
+            Logger.getLogger(FirebaseZugriff.class
+                    .getName()).log(Level.SEVERE, null, ex);
         }
     }
 
@@ -144,10 +176,35 @@ public class FirebaseZugriff {
         try {
             FirebaseResponse response = firebase.delete();
         } catch (FirebaseException ex) {
-            Logger.getLogger(FirebaseZugriff.class.getName()).log(Level.SEVERE, null, ex);
+            Logger.getLogger(FirebaseZugriff.class
+                    .getName()).log(Level.SEVERE, null, ex);
         } catch (UnsupportedEncodingException ex) {
-            Logger.getLogger(FirebaseZugriff.class.getName()).log(Level.SEVERE, null, ex);
+            Logger.getLogger(FirebaseZugriff.class
+                    .getName()).log(Level.SEVERE, null, ex);
         }
+
+    }
+
+    public static void main(String[] args) {
+        Benutzer b = new Benutzer();
+        b.setBenutzername("TestNutzer");
+        b.setEmail("j@kl.mn");
+        b.setPasswort("informatik");
+        b.setKontostand(1000);
+        Aktie a1 = new Aktie("SAP", "DE0007164600");
+        a1.setStueckzahl(4);
+        Aktie a2 = new Aktie("Alphabet", "US02079K3059");
+        a2.setStueckzahl(2);
+        Aktie a3 = new Aktie("Microsoft", "US5949181045");
+        a3.setStueckzahl(1);
+        Aktienkonto ak = new Aktienkonto();
+        ak.aktie_kaufen("DE0007164600", 4, 92.66);
+        ak.aktie_kaufen("US02079K3059", 2, 963.90);
+        ak.aktie_kaufen("US5949181045", 1, 94.11);
+        System.out.println(ak.toString());
+        b.setDepot(ak);
+        FirebaseZugriff fz = new FirebaseZugriff();
+        fz.ergaenzeBenutzer(b);
 
     }
 

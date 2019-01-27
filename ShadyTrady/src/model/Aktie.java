@@ -27,7 +27,7 @@ public class Aktie {
     /**
      * Preis der Aktie
      */
-    private float preis;
+    private double preis;
     
     /**
      * letzter Aktualisierungszeitpunkt der Aktie
@@ -37,7 +37,7 @@ public class Aktie {
     /**
      * Preisänderung der Aktie
      */
-    private float veränderung; 
+    private double veränderung; 
     
     /**
      * Anzahl der Anteile
@@ -71,7 +71,7 @@ public class Aktie {
      * @param Preis
      * @param stueck
      */
-    public Aktie(String iSIN, Float Preis){
+    public Aktie(String iSIN, double Preis){
         this.ISIN = iSIN;
         this.preis = Preis;
        
@@ -84,18 +84,18 @@ public class Aktie {
         
     }
 
-    public Hashtable<Date, Float> getVerlauf() {
+    public Hashtable<Date, Double> getVerlauf() {
         return verlauf;
     }
 
-    public void setVerlauf(Hashtable<Date, Float> verlauf) {
+    public void setVerlauf(Hashtable<Date, Double> verlauf) {
         this.verlauf = verlauf;
     }
             
     /**
      * Verlauf der Aktie
      */
-    private Hashtable<Date, Float> verlauf = new Hashtable<Date, Float>();
+    private Hashtable<Date, Double> verlauf = new Hashtable<Date, Double>();
     
     /**get-Methode für den Namen
      * @return .**/
@@ -115,12 +115,12 @@ public class Aktie {
     }
     /**get-Methode für den Preis
      * @return .**/
-    public float getPreis() {
+    public double getPreis() {
         return preis;
     }
     /**set-Methode für den Preis
      * @param preis.**/
-    public void setPreis(float preis) {
+    public void setPreis(double preis) {
         this.preis = preis;
     }
     /**get-Methode für den Stand der Aktie
@@ -136,7 +136,7 @@ public class Aktie {
     }
     /**get-Methode für die Preisveränderung
      * @return .**/
-    public float getVeränderung() {
+    public double getVeränderung() {
         return veränderung;
     }
     /**set-Methode für die Preisänderung
@@ -157,13 +157,19 @@ public class Aktie {
     
     /**Aktualisierung des Preises
      * @param price.**/
-    public void aktualisieren(float price) {
+    public void aktualisieren(double price) {
         
         setPreis(price);
         Date date = new Date();
         setStand(date);
         
         verlauf.put(date,price);
+    }
+    @Override
+    public String toString(){
+        String ausgabe="";
+        ausgabe+=ISIN+" "+name+"\n";
+        return ausgabe;
     }
     
     

@@ -9,6 +9,9 @@ import control.maincontrol;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.Hashtable;
+import java.util.Iterator;
+import java.util.LinkedHashMap;
+import java.util.Map;
 import java.util.Map.Entry;
 
 /**
@@ -21,17 +24,18 @@ import java.util.Map.Entry;
 public class Aktienkonto {
 
     private Integer id;
-
     private Hashtable<Aktie, Integer> Gekaufte_Aktien;
-    private Integer Guthaben;
+    private int Guthaben;
     private Aktie gekaufteAktie;
     private maincontrol c;
 
     public Aktienkonto() {
-
+        Gekaufte_Aktien = new Hashtable<>();
     }
 
     public Aktienkonto(maincontrol mc) {
+        Gekaufte_Aktien = new Hashtable<>();
+
         this.c = mc;
 
     }
@@ -43,14 +47,15 @@ public class Aktienkonto {
      * @param Stueckzahl
      * @param Preis
      */
-    public void aktie_kaufen(String aid, int Stueckzahl, Float Preis) {
+    public void aktie_kaufen(String aid, int Stueckzahl, double Preis) {
+        /*
         boolean bereitsgekauft = false;
 
         if (!Gekaufte_Aktien.isEmpty()) {
 
             this.Gekaufte_Aktien.forEach((Aktie akt, Integer b) -> {
                 if (akt.getISIN().equals(aid)) {
-                    
+
                 }
             });
 
@@ -60,12 +65,16 @@ public class Aktienkonto {
             }
 
         }
-    }
-        /**
-         * Aktien verkaufen
-         *
-         * @param aid
          */
+        Gekaufte_Aktien.put(new Aktie(aid, Preis), Stueckzahl);
+
+    }
+
+    /**
+     * Aktien verkaufen
+     *
+     * @param aid
+     */
     public void aktie_verkaufen(int aid) {
 
     }
@@ -151,5 +160,18 @@ public class Aktienkonto {
      */
     public void setGekaufteAktie(Aktie gekaufteAktie) {
         this.gekaufteAktie = gekaufteAktie;
+    }
+    
+    @Override
+    public String toString(){
+        String ausgabe = "";
+        ausgabe+="ID: "+id+"\n";
+        ausgabe+="Guthaben: "+Guthaben+"\n";
+        ausgabe+="gekaufte Aktien, Anzahl: "+Gekaufte_Aktien.size()+"\n";
+        Iterator it = Gekaufte_Aktien.entrySet().iterator();
+            while (it.hasNext()) {
+                ausgabe+= it.next().toString()+"\n";
+            }
+        return ausgabe;
     }
 }
