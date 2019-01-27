@@ -238,10 +238,10 @@ public class maincontrol {
         aktieAnsehen.ausgewählteISIN = ISIN;
     }
 
-    public void aktiekaufen(String isin, String Stückzahl, String Preis) {
+    public void aktiekaufen(String isin, Integer Stückzahl, Float Preis) {
         if (this.eingeloggt) {
-            b.setKontostand(b.getKontostand() - Float.parseFloat(Preis));
-            b.getDepot().aktie_kaufen(isin, Integer.parseInt(Stückzahl), Float.parseFloat(Preis));
+            b.setKontostand(b.getKontostand() - Preis);
+            b.getDepot().aktie_kaufen(isin, Stückzahl, Preis);
 
         }
     }

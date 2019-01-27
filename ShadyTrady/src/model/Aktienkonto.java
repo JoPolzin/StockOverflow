@@ -7,9 +7,7 @@ package model;
 
 import control.maincontrol;
 import java.util.ArrayList;
-import java.util.Date;
 import java.util.Hashtable;
-import java.util.Map.Entry;
 
 /**
  * ICH HASB KEINE AHNUNG WAS ICH MACHE HILFE!!!!!!!!! DANKE JOHANNA
@@ -22,11 +20,12 @@ public class Aktienkonto {
 
     private Integer id;
 
-    private Hashtable<Aktie, Integer> Gekaufte_Aktien;
+    private Hashtable<String, Integer> Gekaufte_Aktien;
+    private ArrayList<Aktie> Aktien;
     private Integer Guthaben;
     private Aktie gekaufteAktie;
     private maincontrol c;
-
+   
     public Aktienkonto() {
 
     }
@@ -44,20 +43,18 @@ public class Aktienkonto {
      * @param Preis
      */
     public void aktie_kaufen(String aid, int Stueckzahl, Float Preis) {
-        boolean bereitsgekauft = false;
+      
 
         if (!Gekaufte_Aktien.isEmpty()) {
 
-            this.Gekaufte_Aktien.forEach((Aktie akt, Integer b) -> {
-                if (akt.getISIN().equals(aid)) {
-                    
-                }
-            });
-
-            if (!bereitsgekauft) {
-                Gekaufte_Aktien.put(new Aktie(aid, Preis), Stueckzahl);
-
-            }
+            if (this.Gekaufte_Aktien.containsKey(aid)) {
+                Gekaufte_Aktien.put(aid, Stueckzahl);
+                Aktien.add(new Aktie(aid, Preis));
+            } else {
+           
+                this.Gekaufte_Aktien.replace(aid, this.Gekaufte_Aktien.get(aid) + Stueckzahl);
+            
+            } 
 
         }
     }
@@ -104,7 +101,7 @@ public class Aktienkonto {
      *
      * @return
      */
-    public Hashtable<Aktie, Integer> getGekaufte_Aktien() {
+    public Hashtable<String, Integer> getGekaufte_Aktien() {
         return Gekaufte_Aktien;
     }
 
@@ -113,7 +110,7 @@ public class Aktienkonto {
      *
      * @param Gekaufte_Aktien
      */
-    public void setGekaufte_Aktien(Hashtable<Aktie, Integer> Gekaufte_Aktien) {
+    public void setGekaufte_Aktien(Hashtable<String, Integer> Gekaufte_Aktien) {
         this.Gekaufte_Aktien = Gekaufte_Aktien;
     }
 
