@@ -6,32 +6,20 @@
 package model;
 
 /**
- *  Sammelklasse zur Ablage aller Aktienkäufe in der Firebase
+ * Sammelklasse zur Ablage aller Aktienkäufe in der Firebase
+ *
  * @author K
  */
 public class Aktienkauf {
-    private String kaeufername;
+
     private String isin;
     private int anzahl;
     private double preis;
-    public Aktienkauf(String derKaeufer, String dieISIN, int dieAnzahl){
-        kaeufername = derKaeufer;
+
+    public Aktienkauf(String dieISIN, int dieAnzahl) {
+
         isin = dieISIN;
         anzahl = dieAnzahl;
-    }
-
-    /**
-     * @return the kaeufername
-     */
-    public String getKaeufername() {
-        return kaeufername;
-    }
-
-    /**
-     * @param kaeufername the kaeufername to set
-     */
-    public void setKaeufername(String kaeufername) {
-        this.kaeufername = kaeufername;
     }
 
     /**
@@ -61,13 +49,12 @@ public class Aktienkauf {
     public void setAnzahl(int anzahl) {
         this.anzahl = anzahl;
     }
-    
+
     @Override
-    public String toString(){
+    public String toString() {
         String ausgabe = "";
-        ausgabe+="Kaeufer: "+kaeufername+"\n";
-        ausgabe+="IISN: "+isin+"\n";
-        ausgabe+="Anzahl: "+anzahl+"\n";
+        ausgabe += "IISN: " + isin + "\n";
+        ausgabe += "Anzahl: " + anzahl + "\n";
         return ausgabe;
     }
 

@@ -87,7 +87,7 @@ public class FirebaseZugriff {
                     LinkedHashMap lhm2 = (LinkedHashMap) pairs2.getValue();
                     System.out.println(lhm2.toString());
                     //Hier Ergänzen, wenn der Benutzer weitere Attribute bekommt!
-                    if (!lhm2.containsKey("kaeufername") || !lhm2.containsKey("anzahl") || !lhm2.containsKey("isin")|| !lhm2.containsKey("preis")) {
+                    if (!lhm2.containsKey("anzahl") || !lhm2.containsKey("isin")|| !lhm2.containsKey("preis")) {
                         return null;
                     }
                     int anzahl = (int) lhm2.get("anzahl");
@@ -146,7 +146,7 @@ public class FirebaseZugriff {
         for (Aktie a : ak.getAktien()) {
 
             int kaufzahl = st.get(a.getISIN());
-            Aktienkauf akt = new Aktienkauf(b.getBenutzername(), a.getISIN(), kaufzahl);
+            Aktienkauf akt = new Aktienkauf(a.getISIN(), kaufzahl);
             akt.setPreis(a.getPreis());
             System.out.println(akt.toString());
             dataMap.put("a" + zaehler, akt);
