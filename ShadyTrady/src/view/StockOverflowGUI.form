@@ -35,7 +35,7 @@
                       <EmptySpace max="-2" attributes="0"/>
                       <Component id="TFChange4" min="-2" pref="43" max="-2" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
-                      <Component id="BAnsehen4" min="-2" max="-2" attributes="0"/>
+                      <Component id="jButton5" min="-2" max="-2" attributes="0"/>
                   </Group>
                   <Group type="102" alignment="0" attributes="0">
                       <Component id="TFAktie5" min="-2" pref="112" max="-2" attributes="0"/>
@@ -44,7 +44,7 @@
                       <EmptySpace max="-2" attributes="0"/>
                       <Component id="TFChange5" min="-2" pref="43" max="-2" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
-                      <Component id="BAnsehen5" min="-2" max="-2" attributes="0"/>
+                      <Component id="jButton6" min="-2" max="-2" attributes="0"/>
                   </Group>
                   <Group type="102" alignment="0" attributes="0">
                       <Component id="TFAktie6" min="-2" pref="112" max="-2" attributes="0"/>
@@ -53,7 +53,7 @@
                       <EmptySpace max="-2" attributes="0"/>
                       <Component id="TFChange6" min="-2" pref="43" max="-2" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
-                      <Component id="BAnsehen6" min="-2" max="-2" attributes="0"/>
+                      <Component id="jButton7" min="-2" max="-2" attributes="0"/>
                   </Group>
                   <Group type="102" alignment="0" attributes="0">
                       <Component id="TFAktie7" min="-2" pref="112" max="-2" attributes="0"/>
@@ -62,7 +62,7 @@
                       <EmptySpace max="-2" attributes="0"/>
                       <Component id="TFChange7" min="-2" pref="43" max="-2" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
-                      <Component id="BAnsehen7" min="-2" max="-2" attributes="0"/>
+                      <Component id="jButton8" min="-2" max="-2" attributes="0"/>
                   </Group>
                   <Group type="102" alignment="0" attributes="0">
                       <Component id="TFAktie8" min="-2" pref="112" max="-2" attributes="0"/>
@@ -71,7 +71,7 @@
                       <EmptySpace max="-2" attributes="0"/>
                       <Component id="TFChange8" min="-2" pref="43" max="-2" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
-                      <Component id="BAnsehen8" min="-2" max="-2" attributes="0"/>
+                      <Component id="jButton9" min="-2" max="-2" attributes="0"/>
                   </Group>
                   <Group type="102" alignment="0" attributes="0">
                       <Component id="TFAktie9" min="-2" pref="112" max="-2" attributes="0"/>
@@ -80,7 +80,7 @@
                       <EmptySpace max="-2" attributes="0"/>
                       <Component id="TFChange9" min="-2" pref="43" max="-2" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
-                      <Component id="BAnsehen9" min="-2" max="-2" attributes="0"/>
+                      <Component id="jButton10" min="-2" max="-2" attributes="0"/>
                   </Group>
                   <Group type="102" alignment="0" attributes="0">
                       <Component id="TFAktie10" min="-2" pref="112" max="-2" attributes="0"/>
@@ -89,7 +89,7 @@
                       <EmptySpace max="-2" attributes="0"/>
                       <Component id="TFChange10" min="-2" pref="43" max="-2" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
-                      <Component id="BAnsehen10" min="-2" max="-2" attributes="0"/>
+                      <Component id="jButton11" min="-2" max="-2" attributes="0"/>
                   </Group>
                   <Group type="102" alignment="0" attributes="0">
                       <Component id="TFAktie11" min="-2" pref="112" max="-2" attributes="0"/>
@@ -98,7 +98,7 @@
                       <EmptySpace max="-2" attributes="0"/>
                       <Component id="TFChange11" min="-2" pref="43" max="-2" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
-                      <Component id="BAnsehen11" min="-2" max="-2" attributes="0"/>
+                      <Component id="jButton20" min="-2" max="-2" attributes="0"/>
                   </Group>
                   <Group type="102" alignment="0" attributes="0">
                       <Component id="TFAktie12" min="-2" pref="112" max="-2" attributes="0"/>
@@ -107,7 +107,7 @@
                       <EmptySpace max="-2" attributes="0"/>
                       <Component id="TFChange12" min="-2" pref="43" max="-2" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
-                      <Component id="BAnsehen12" min="-2" max="-2" attributes="0"/>
+                      <Component id="jButton21" min="-2" max="-2" attributes="0"/>
                   </Group>
                   <Group type="102" alignment="0" attributes="0">
                       <Component id="TFAktie13" min="-2" pref="112" max="-2" attributes="0"/>
@@ -116,7 +116,7 @@
                       <EmptySpace max="-2" attributes="0"/>
                       <Component id="TFChange13" min="-2" pref="43" max="-2" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
-                      <Component id="BAnsehen13" min="-2" max="-2" attributes="0"/>
+                      <Component id="jButton22" min="-2" max="-2" attributes="0"/>
                   </Group>
                   <Group type="102" alignment="0" attributes="0">
                       <Component id="TFAktie14" min="-2" pref="112" max="-2" attributes="0"/>
@@ -125,7 +125,7 @@
                       <EmptySpace max="-2" attributes="0"/>
                       <Component id="TFChange14" min="-2" pref="43" max="-2" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
-                      <Component id="BAnsehen14" min="-2" max="-2" attributes="0"/>
+                      <Component id="jButton23" min="-2" max="-2" attributes="0"/>
                   </Group>
                   <Group type="102" alignment="0" attributes="0">
                       <Component id="TFAktie15" min="-2" pref="112" max="-2" attributes="0"/>
@@ -134,7 +134,7 @@
                       <EmptySpace max="-2" attributes="0"/>
                       <Component id="TFChange15" min="-2" pref="43" max="-2" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
-                      <Component id="BAnsehen15" min="-2" max="-2" attributes="0"/>
+                      <Component id="jButton24" min="-2" max="-2" attributes="0"/>
                   </Group>
                   <Group type="102" alignment="0" attributes="0">
                       <Component id="TFAktie2" min="-2" pref="112" max="-2" attributes="0"/>
@@ -143,7 +143,7 @@
                       <EmptySpace max="-2" attributes="0"/>
                       <Component id="TFChange2" min="-2" pref="43" max="-2" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
-                      <Component id="BAnsehen2" min="-2" max="-2" attributes="0"/>
+                      <Component id="jButton3" min="-2" max="-2" attributes="0"/>
                   </Group>
                   <Group type="102" alignment="0" attributes="0">
                       <Component id="TFAktie3" min="-2" pref="112" max="-2" attributes="0"/>
@@ -152,7 +152,7 @@
                       <EmptySpace max="-2" attributes="0"/>
                       <Component id="TFChange3" min="-2" pref="43" max="-2" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
-                      <Component id="BAnsehen3" min="-2" max="-2" attributes="0"/>
+                      <Component id="jButton4" min="-2" max="-2" attributes="0"/>
                   </Group>
                   <Group type="102" alignment="0" attributes="0">
                       <Component id="TFAktie16" min="-2" pref="112" max="-2" attributes="0"/>
@@ -164,7 +164,7 @@
                               <EmptySpace max="-2" attributes="0"/>
                               <Component id="TFChange16" min="-2" pref="43" max="-2" attributes="0"/>
                               <EmptySpace max="-2" attributes="0"/>
-                              <Component id="BAnsehen16" min="-2" max="-2" attributes="0"/>
+                              <Component id="jButton25" min="-2" max="-2" attributes="0"/>
                           </Group>
                       </Group>
                   </Group>
@@ -194,10 +194,10 @@
                           </Group>
                       </Group>
                       <EmptySpace max="-2" attributes="0"/>
-                      <Component id="BAnsehen1" min="-2" max="-2" attributes="0"/>
+                      <Component id="jButton2" min="-2" max="-2" attributes="0"/>
                   </Group>
               </Group>
-              <EmptySpace max="32767" attributes="0"/>
+              <EmptySpace pref="228" max="32767" attributes="0"/>
           </Group>
           <Group type="102" alignment="1" attributes="0">
               <EmptySpace pref="172" max="32767" attributes="0"/>
@@ -252,113 +252,113 @@
                   <Component id="TFAktie1" alignment="3" min="-2" max="-2" attributes="0"/>
                   <Component id="TFPreis1" alignment="3" min="-2" max="-2" attributes="0"/>
                   <Component id="TFChange1" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="BAnsehen1" alignment="3" min="-2" max="-2" attributes="0"/>
                   <Component id="Refresh" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="jButton2" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
                   <Component id="TFAktie2" alignment="3" min="-2" max="-2" attributes="0"/>
                   <Component id="TFPreis2" alignment="3" min="-2" max="-2" attributes="0"/>
                   <Component id="TFChange2" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="BAnsehen2" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="jButton3" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
                   <Component id="TFAktie3" alignment="3" min="-2" max="-2" attributes="0"/>
                   <Component id="TFPreis3" alignment="3" min="-2" max="-2" attributes="0"/>
                   <Component id="TFChange3" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="BAnsehen3" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="jButton4" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
                   <Component id="TFAktie4" alignment="3" min="-2" max="-2" attributes="0"/>
                   <Component id="TFPreis4" alignment="3" min="-2" max="-2" attributes="0"/>
                   <Component id="TFChange4" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="BAnsehen4" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="jButton5" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
                   <Component id="TFAktie5" alignment="3" min="-2" max="-2" attributes="0"/>
                   <Component id="TFPreis5" alignment="3" min="-2" max="-2" attributes="0"/>
                   <Component id="TFChange5" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="BAnsehen5" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="jButton6" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
                   <Component id="TFAktie6" alignment="3" min="-2" max="-2" attributes="0"/>
                   <Component id="TFPreis6" alignment="3" min="-2" max="-2" attributes="0"/>
                   <Component id="TFChange6" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="BAnsehen6" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="jButton7" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
                   <Component id="TFAktie7" alignment="3" min="-2" max="-2" attributes="0"/>
                   <Component id="TFPreis7" alignment="3" min="-2" max="-2" attributes="0"/>
                   <Component id="TFChange7" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="BAnsehen7" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="jButton8" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
                   <Component id="TFAktie8" alignment="3" min="-2" max="-2" attributes="0"/>
                   <Component id="TFPreis8" alignment="3" min="-2" max="-2" attributes="0"/>
                   <Component id="TFChange8" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="BAnsehen8" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="jButton9" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
                   <Component id="TFAktie9" alignment="3" min="-2" max="-2" attributes="0"/>
                   <Component id="TFPreis9" alignment="3" min="-2" max="-2" attributes="0"/>
                   <Component id="TFChange9" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="BAnsehen9" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="jButton10" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
                   <Component id="TFAktie10" alignment="3" min="-2" max="-2" attributes="0"/>
                   <Component id="TFPreis10" alignment="3" min="-2" max="-2" attributes="0"/>
                   <Component id="TFChange10" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="BAnsehen10" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="jButton11" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
                   <Component id="TFAktie11" alignment="3" min="-2" max="-2" attributes="0"/>
                   <Component id="TFPreis11" alignment="3" min="-2" max="-2" attributes="0"/>
                   <Component id="TFChange11" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="BAnsehen11" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="jButton20" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
                   <Component id="TFAktie12" alignment="3" min="-2" max="-2" attributes="0"/>
                   <Component id="TFPreis12" alignment="3" min="-2" max="-2" attributes="0"/>
                   <Component id="TFChange12" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="BAnsehen12" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="jButton21" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
                   <Component id="TFAktie13" alignment="3" min="-2" max="-2" attributes="0"/>
                   <Component id="TFPreis13" alignment="3" min="-2" max="-2" attributes="0"/>
                   <Component id="TFChange13" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="BAnsehen13" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="jButton22" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
                   <Component id="TFAktie14" alignment="3" min="-2" max="-2" attributes="0"/>
                   <Component id="TFPreis14" alignment="3" min="-2" max="-2" attributes="0"/>
                   <Component id="TFChange14" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="BAnsehen14" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="jButton23" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
                   <Component id="TFAktie15" alignment="3" min="-2" max="-2" attributes="0"/>
                   <Component id="TFPreis15" alignment="3" min="-2" max="-2" attributes="0"/>
                   <Component id="TFChange15" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="BAnsehen15" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="jButton24" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
                   <Component id="TFAktie16" alignment="3" min="-2" max="-2" attributes="0"/>
                   <Component id="TFPreis16" alignment="3" min="-2" max="-2" attributes="0"/>
                   <Component id="TFChange16" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="BAnsehen16" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="jButton25" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace type="unrelated" max="-2" attributes="0"/>
               <Component id="jButton1" min="-2" max="-2" attributes="0"/>
@@ -438,14 +438,6 @@
         <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
       </AuxValues>
     </Component>
-    <Component class="javax.swing.JButton" name="BAnsehen1">
-      <Properties>
-        <Property name="text" type="java.lang.String" value="Ansehen"/>
-      </Properties>
-      <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="BAnsehen2ActionPerformed"/>
-      </Events>
-    </Component>
     <Component class="javax.swing.JTextField" name="TFAktie2">
       <Properties>
         <Property name="editable" type="boolean" value="false"/>
@@ -472,14 +464,6 @@
       <AuxValues>
         <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
       </AuxValues>
-    </Component>
-    <Component class="javax.swing.JButton" name="BAnsehen2">
-      <Properties>
-        <Property name="text" type="java.lang.String" value="Ansehen"/>
-      </Properties>
-      <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="BAnsehen2ActionPerformed"/>
-      </Events>
     </Component>
     <Component class="javax.swing.JTextField" name="TFAktie3">
       <Properties>
@@ -508,14 +492,6 @@
         <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
       </AuxValues>
     </Component>
-    <Component class="javax.swing.JButton" name="BAnsehen3">
-      <Properties>
-        <Property name="text" type="java.lang.String" value="Ansehen"/>
-      </Properties>
-      <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="BAnsehen2ActionPerformed"/>
-      </Events>
-    </Component>
     <Component class="javax.swing.JTextField" name="TFAktie4">
       <Properties>
         <Property name="editable" type="boolean" value="false"/>
@@ -542,14 +518,6 @@
       <AuxValues>
         <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
       </AuxValues>
-    </Component>
-    <Component class="javax.swing.JButton" name="BAnsehen4">
-      <Properties>
-        <Property name="text" type="java.lang.String" value="Ansehen"/>
-      </Properties>
-      <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="BAnsehen2ActionPerformed"/>
-      </Events>
     </Component>
     <Component class="javax.swing.JTextField" name="TFAktie5">
       <Properties>
@@ -578,14 +546,6 @@
         <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
       </AuxValues>
     </Component>
-    <Component class="javax.swing.JButton" name="BAnsehen5">
-      <Properties>
-        <Property name="text" type="java.lang.String" value="Ansehen"/>
-      </Properties>
-      <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="BAnsehen2ActionPerformed"/>
-      </Events>
-    </Component>
     <Component class="javax.swing.JTextField" name="TFAktie6">
       <Properties>
         <Property name="editable" type="boolean" value="false"/>
@@ -612,14 +572,6 @@
       <AuxValues>
         <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
       </AuxValues>
-    </Component>
-    <Component class="javax.swing.JButton" name="BAnsehen6">
-      <Properties>
-        <Property name="text" type="java.lang.String" value="Ansehen"/>
-      </Properties>
-      <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="BAnsehen2ActionPerformed"/>
-      </Events>
     </Component>
     <Component class="javax.swing.JTextField" name="TFAktie7">
       <Properties>
@@ -648,14 +600,6 @@
         <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
       </AuxValues>
     </Component>
-    <Component class="javax.swing.JButton" name="BAnsehen7">
-      <Properties>
-        <Property name="text" type="java.lang.String" value="Ansehen"/>
-      </Properties>
-      <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="BAnsehen2ActionPerformed"/>
-      </Events>
-    </Component>
     <Component class="javax.swing.JTextField" name="TFAktie8">
       <Properties>
         <Property name="editable" type="boolean" value="false"/>
@@ -682,14 +626,6 @@
       <AuxValues>
         <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
       </AuxValues>
-    </Component>
-    <Component class="javax.swing.JButton" name="BAnsehen8">
-      <Properties>
-        <Property name="text" type="java.lang.String" value="Ansehen"/>
-      </Properties>
-      <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="BAnsehen2ActionPerformed"/>
-      </Events>
     </Component>
     <Component class="javax.swing.JTextField" name="TFAktie9">
       <Properties>
@@ -718,14 +654,6 @@
         <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
       </AuxValues>
     </Component>
-    <Component class="javax.swing.JButton" name="BAnsehen9">
-      <Properties>
-        <Property name="text" type="java.lang.String" value="Ansehen"/>
-      </Properties>
-      <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="BAnsehen2ActionPerformed"/>
-      </Events>
-    </Component>
     <Component class="javax.swing.JTextField" name="TFAktie10">
       <Properties>
         <Property name="editable" type="boolean" value="false"/>
@@ -752,14 +680,6 @@
       <AuxValues>
         <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
       </AuxValues>
-    </Component>
-    <Component class="javax.swing.JButton" name="BAnsehen10">
-      <Properties>
-        <Property name="text" type="java.lang.String" value="Ansehen"/>
-      </Properties>
-      <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="BAnsehen10BAnsehen2ActionPerformed"/>
-      </Events>
     </Component>
     <Component class="javax.swing.JTextField" name="TFAktie11">
       <Properties>
@@ -788,14 +708,6 @@
         <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
       </AuxValues>
     </Component>
-    <Component class="javax.swing.JButton" name="BAnsehen11">
-      <Properties>
-        <Property name="text" type="java.lang.String" value="Ansehen"/>
-      </Properties>
-      <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="BAnsehen11BAnsehen2ActionPerformed"/>
-      </Events>
-    </Component>
     <Component class="javax.swing.JTextField" name="TFAktie12">
       <Properties>
         <Property name="editable" type="boolean" value="false"/>
@@ -822,14 +734,6 @@
       <AuxValues>
         <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
       </AuxValues>
-    </Component>
-    <Component class="javax.swing.JButton" name="BAnsehen12">
-      <Properties>
-        <Property name="text" type="java.lang.String" value="Ansehen"/>
-      </Properties>
-      <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="BAnsehen12BAnsehen2ActionPerformed"/>
-      </Events>
     </Component>
     <Component class="javax.swing.JTextField" name="TFAktie13">
       <Properties>
@@ -858,14 +762,6 @@
         <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
       </AuxValues>
     </Component>
-    <Component class="javax.swing.JButton" name="BAnsehen13">
-      <Properties>
-        <Property name="text" type="java.lang.String" value="Ansehen"/>
-      </Properties>
-      <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="BAnsehen13BAnsehen2ActionPerformed"/>
-      </Events>
-    </Component>
     <Component class="javax.swing.JTextField" name="TFAktie14">
       <Properties>
         <Property name="editable" type="boolean" value="false"/>
@@ -892,14 +788,6 @@
       <AuxValues>
         <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
       </AuxValues>
-    </Component>
-    <Component class="javax.swing.JButton" name="BAnsehen14">
-      <Properties>
-        <Property name="text" type="java.lang.String" value="Ansehen"/>
-      </Properties>
-      <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="BAnsehen14BAnsehen2ActionPerformed"/>
-      </Events>
     </Component>
     <Component class="javax.swing.JTextField" name="TFAktie15">
       <Properties>
@@ -928,14 +816,6 @@
         <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
       </AuxValues>
     </Component>
-    <Component class="javax.swing.JButton" name="BAnsehen15">
-      <Properties>
-        <Property name="text" type="java.lang.String" value="Ansehen"/>
-      </Properties>
-      <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="BAnsehen15BAnsehen2ActionPerformed"/>
-      </Events>
-    </Component>
     <Component class="javax.swing.JTextField" name="TFAktie16">
       <Properties>
         <Property name="editable" type="boolean" value="false"/>
@@ -963,14 +843,6 @@
         <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
       </AuxValues>
     </Component>
-    <Component class="javax.swing.JButton" name="BAnsehen16">
-      <Properties>
-        <Property name="text" type="java.lang.String" value="Ansehen"/>
-      </Properties>
-      <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="BAnsehen16BAnsehen2ActionPerformed"/>
-      </Events>
-    </Component>
     <Component class="javax.swing.JButton" name="Refresh">
       <Properties>
         <Property name="text" type="java.lang.String" value="Refresh"/>
@@ -993,6 +865,134 @@
       <Properties>
         <Property name="text" type="java.lang.String" value="Change"/>
       </Properties>
+    </Component>
+    <Component class="javax.swing.JButton" name="jButton2">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Ansehen"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton2ActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JButton" name="jButton3">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Ansehen"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton3ActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JButton" name="jButton4">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Ansehen"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton4ActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JButton" name="jButton5">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Ansehen"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton5ActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JButton" name="jButton6">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Ansehen"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton6ActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JButton" name="jButton7">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Ansehen"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton7ActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JButton" name="jButton8">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Ansehen"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton8ActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JButton" name="jButton9">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Ansehen"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton9ActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JButton" name="jButton10">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Ansehen"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton10ActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JButton" name="jButton11">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Ansehen"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton11ActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JButton" name="jButton20">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Ansehen"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton20ActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JButton" name="jButton21">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Ansehen"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton21ActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JButton" name="jButton22">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Ansehen"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton22ActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JButton" name="jButton23">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Ansehen"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton23ActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JButton" name="jButton24">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Ansehen"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton24ActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JButton" name="jButton25">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Ansehen"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton25ActionPerformed"/>
+      </Events>
     </Component>
   </SubComponents>
 </Form>
