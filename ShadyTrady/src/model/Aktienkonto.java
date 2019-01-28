@@ -26,13 +26,15 @@ public class Aktienkonto {
     private Integer Guthaben;
     private Aktie gekaufteAktie;
     private maincontrol c;
-   
+
     public Aktienkonto() {
         Gekaufte_Aktien = new Hashtable<>();
+        Aktien = new ArrayList();
     }
 
     public Aktienkonto(maincontrol mc) {
         Gekaufte_Aktien = new Hashtable<>();
+        Aktien = new ArrayList();
 
         this.c = mc;
 
@@ -46,26 +48,23 @@ public class Aktienkonto {
      * @param Preis
      */
     public void aktie_kaufen(String aid, int Stueckzahl, Float Preis) {
-      
 
         if (!Gekaufte_Aktien.isEmpty()) {
 
-            if (this.Gekaufte_Aktien.containsKey(aid)) {
+            if (!this.Gekaufte_Aktien.containsKey(aid)) {
                 Gekaufte_Aktien.put(aid, Stueckzahl);
                 Aktien.add(new Aktie(aid, Preis));
             } else {
-           
-                this.Gekaufte_Aktien.replace(aid, this.Gekaufte_Aktien.get(aid) + Stueckzahl);
-            
-            } 
 
+                this.Gekaufte_Aktien.replace(aid, this.Gekaufte_Aktien.get(aid) + Stueckzahl);
+
+            }
+
+        } else {
+
+            Gekaufte_Aktien.put(aid, Stueckzahl);
+            Aktien.add(new Aktie(aid, Preis));
         }
-        else {
-          
-        Gekaufte_Aktien.put(aid, Stueckzahl);
-                Aktien.add(new Aktie(aid, Preis));
-        }
-    
 
     }
 
@@ -176,17 +175,17 @@ public class Aktienkonto {
     public void setGekaufteAktie(Aktie gekaufteAktie) {
         this.gekaufteAktie = gekaufteAktie;
     }
-    
+
     @Override
-    public String toString(){
+    public String toString() {
         String ausgabe = "";
-        ausgabe+="ID: "+id+"\n";
-        ausgabe+="Guthaben: "+Guthaben+"\n";
-        ausgabe+="gekaufte Aktien, Anzahl: "+Gekaufte_Aktien.size()+"\n";
+        ausgabe += "ID: " + id + "\n";
+        ausgabe += "Guthaben: " + Guthaben + "\n";
+        ausgabe += "gekaufte Aktien, Anzahl: " + Gekaufte_Aktien.size() + "\n";
         Iterator it = Gekaufte_Aktien.entrySet().iterator();
-            while (it.hasNext()) {
-                ausgabe+= it.next().toString()+"\n";
-            }
+        while (it.hasNext()) {
+            ausgabe += it.next().toString() + "\n";
+        }
         return ausgabe;
     }
 }

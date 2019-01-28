@@ -11,11 +11,11 @@ package model;
  */
 public class Aktienkauf {
     private String kaeufername;
-    private String iisn;
+    private String isin;
     private int anzahl;
     public Aktienkauf(String derKaeufer, String dieIISN, int dieAnzahl){
         kaeufername = derKaeufer;
-        iisn = dieIISN;
+        isin = dieIISN;
         anzahl = dieAnzahl;
     }
 
@@ -36,15 +36,15 @@ public class Aktienkauf {
     /**
      * @return the iisn
      */
-    public String getIisn() {
-        return iisn;
+    public String getIsin() {
+        return isin;
     }
 
     /**
      * @param iisn the iisn to set
      */
-    public void setIisn(String iisn) {
-        this.iisn = iisn;
+    public void setIisn(String isin) {
+        this.isin = isin;
     }
 
     /**
@@ -65,7 +65,7 @@ public class Aktienkauf {
     public String toString(){
         String ausgabe = "";
         ausgabe+="Kaeufer: "+kaeufername+"\n";
-        ausgabe+="IISN: "+iisn+"\n";
+        ausgabe+="IISN: "+isin+"\n";
         ausgabe+="Anzahl: "+anzahl+"\n";
         return ausgabe;
     }
