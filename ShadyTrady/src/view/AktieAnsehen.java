@@ -340,7 +340,7 @@ public class AktieAnsehen extends javax.swing.JFrame {
     }//GEN-LAST:event_ISINActionPerformed
 
     private void ladenActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ladenActionPerformed
-        c.AktieDatenInitialisieren(ISIN.getText());
+        c.AktieDatenInitialisieren(ISIN.getText(),Name.getText());
     }//GEN-LAST:event_ladenActionPerformed
 
     private void TagAnsehenActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_TagAnsehenActionPerformed
@@ -429,7 +429,7 @@ public class AktieAnsehen extends javax.swing.JFrame {
     private javax.swing.JButton KaufenAnsehen;
     private javax.swing.JButton LogInAnsehen;
     private javax.swing.JButton MonatAnsehen;
-    private javax.swing.JTextPane Name;
+    public javax.swing.JTextPane Name;
     public javax.swing.JTextPane Preis;
     private javax.swing.JScrollPane PreisAngabeAnsehen;
     private javax.swing.JLabel PreisAnsehen;

@@ -351,6 +351,9 @@
       </Events>
     </Component>
     <Component class="javax.swing.JTextPane" name="Name">
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
+      </AuxValues>
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel1">
       <Properties>
