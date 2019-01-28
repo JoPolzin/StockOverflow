@@ -28,10 +28,6 @@ public class Aktie {
      * Preis der Aktie
      */
     private double preis;
-    
-    
-    
-    
     /**
      * Anzahl der Anteile
      */

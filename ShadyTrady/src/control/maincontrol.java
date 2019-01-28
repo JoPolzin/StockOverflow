@@ -40,6 +40,8 @@ public class maincontrol {
 
     private StockOverflowGUI stockOverflowGUI;
     
+    private Leaderboard leaderboard;
+    
     private String aktIsin; 
 
     private FirebaseZugriff fz;
@@ -59,9 +61,9 @@ public class maincontrol {
         profilFenster = new ProfilFenster(this);
         eigenesDepot = new EigenesDepot(this);
         stockOverflowGUI = new StockOverflowGUI(this);
+        leaderboard = new Leaderboard(this);
         fz = new FirebaseZugriff();
         al = fz.benutzerAuslesen();
-
         if (al == null) {
             JOptionPane.showMessageDialog(null, "Keine Benutzer geladen oder Firebase ungültig.");
         }
@@ -86,6 +88,7 @@ public class maincontrol {
         profilFenster.setVisible(false);
         eigenesDepot.setVisible(false);
         stockOverflowGUI.setVisible(false);
+        leaderboard.setVisible(false);
 
         switch (Guiname) {
             case "AktieAnsehen":
@@ -135,6 +138,9 @@ public class maincontrol {
                 break;
             case "StockOverflowGUI":
                 stockOverflowGUI.setVisible(true);
+                break;
+            case "Leaderboard":
+                leaderboard.setVisible(true);
                 break;
 
             default:

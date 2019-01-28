@@ -94,6 +94,7 @@ public class FirebaseZugriff {
                     for (int i = 1; i <= anzahl; i = i + 1) {
                         Aktie akt = new Aktie("", (String) lhm2.get("isin"));
                         akt.setPreis((double) lhm2.get("preis"));
+                        akt.setStueckzahl((int)lhm2.get("anzahl"));
                         tmp.getDepot().getAktien().add(akt);
                         System.out.println("Aktie ergaenzt...");
                     }

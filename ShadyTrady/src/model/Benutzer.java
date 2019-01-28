@@ -206,16 +206,34 @@ public class Benutzer {
     public void setKontostand(double Kontostand) {
         this.Kontostand = Kontostand;
     }
-    
+
     @Override
-    public String toString(){
-        String ausgabe="";
-        ausgabe+="Benutzername: "+Benutzername+"\n";
-        ausgabe+="Passwort: "+Passwort+"\n";
-        ausgabe+="Kontostand: "+Kontostand+"\n";
-        ausgabe+="Email: "+Email+"\n";
-        ausgabe+="Depot: "+Arrays.toString(depot.getAktien().toArray())+"\n";
+    public String toString() {
+        String ausgabe = "";
+        ausgabe += "Benutzername: " + Benutzername + "\n";
+        ausgabe += "Passwort: " + Passwort + "\n";
+        ausgabe += "Kontostand: " + Kontostand + "\n";
+        ausgabe += "Email: " + Email + "\n";
+        ausgabe += "Depot: " + Arrays.toString(depot.getAktien().toArray()) + "\n";
         return ausgabe;
+    }
+    /**
+     * Berechnet das gesamte Kapital mit den aktuellen Werten der Aktien.
+     * 
+     * 
+     * @return 
+     */
+
+    public double GesamtKapital() {
+        double Kapital = this.getKontostand();
+        for (Aktie e : this.depot.getAktien()) {
+
+            OA.prepareDocument(e.getISIN());
+
+            Kapital = Kapital + OA.getAsk() * e.getStueckzahl();
+        }
+        return Kapital;
+
     }
 
 }
