@@ -140,7 +140,7 @@ public class AktieVerkaufen extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void VerkaufenVerkaufenActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_VerkaufenVerkaufenActionPerformed
-        this.c.switchTo("EigenesDepot");    }//GEN-LAST:event_VerkaufenVerkaufenActionPerformed
+        this.c.switchTo("VerkaufBestätigung");    }//GEN-LAST:event_VerkaufenVerkaufenActionPerformed
 
     private void VerkaufenAbbrechenActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_VerkaufenAbbrechenActionPerformed
         this.c.switchTo("StockOverflowGUI");    }//GEN-LAST:event_VerkaufenAbbrechenActionPerformed
