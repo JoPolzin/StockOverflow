@@ -54,7 +54,7 @@ public class Aktienkonto {
 
         if (!Gekaufte_Aktien.isEmpty()) {
 
-            if (this.Gekaufte_Aktien.containsKey(aid)) {
+            if (!this.Gekaufte_Aktien.containsKey(aid)) {
                 Gekaufte_Aktien.put(aid, Stueckzahl);
                 Aktien.add(new Aktie(aid, Preis));
             } else {
@@ -69,10 +69,30 @@ public class Aktienkonto {
         Gekaufte_Aktien.put(aid, Stueckzahl);
                 Aktien.add(new Aktie(aid, Preis));
         }
-    
-
     }
+        public boolean aktieverkaufen(String aid, Integer Stueckzahl, Float Preis) {
+        
+         if (Gekaufte_Aktien.isEmpty() || this.Aktien.isEmpty()) {
+             return false;
+         }
+        else {
+             
+            if (this.Gekaufte_Aktien.containsKey(aid)) {
+            if  (this.Gekaufte_Aktien.get(aid) >= Stueckzahl){
+                 this.Gekaufte_Aktien.replace(aid, this.Gekaufte_Aktien.get(aid) - Stueckzahl);
+                 return true;
+            }
+            
+                
+              
+            
+            } 
 
+        }
+        return false;
+         
+        }
+      
     public ArrayList<Aktie> getAktien() {
         return Aktien;
     }
