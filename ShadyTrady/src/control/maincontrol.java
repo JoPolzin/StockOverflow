@@ -196,7 +196,7 @@ public class maincontrol {
             stockOverflowGUI.PreisListe.add(OA.getAsk());
         }
     }
-
+    
     /**
      * StockOverflowGUI Aktualisiert Aktien des Daxes und färbt diese.
      */
