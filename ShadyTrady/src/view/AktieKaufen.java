@@ -51,11 +51,17 @@ public class AktieKaufen extends javax.swing.JFrame {
         StockOverflowKaufen.setFont(new java.awt.Font("Penultimate", 1, 36)); // NOI18N
         StockOverflowKaufen.setText("StockOverflow");
 
+        KaufenNameDerAktieEingabe.setEditable(false);
+
         KaufenGesamtpreis.setText("Gesamtpreis");
 
         KaufenNameDerAaktie.setText("Name der Aktie");
 
+        KaufenStückzahlEingabe.setEditable(false);
+
         KaufenPreisProStück.setText("Preis pro Stück");
+
+        KaufenPreisProStückEingabe.setEditable(false);
 
         KaufenStückzaahl.setText("Stückzahl");
 

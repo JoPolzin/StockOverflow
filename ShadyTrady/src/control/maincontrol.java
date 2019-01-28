@@ -35,6 +35,8 @@ public class maincontrol {
     private EigenesDepot eigenesDepot;
 
     private StockOverflowGUI stockOverflowGUI;
+    
+    private String aktIsin; 
 
     private FirebaseZugriff fz;
     private ArrayList<Benutzer> al;
@@ -194,6 +196,14 @@ public class maincontrol {
             return false;
         }
 
+    }
+
+    public String getAktIsin() {
+        return aktIsin;
+    }
+
+    public void setAktIsin(String aktIsin) {
+        this.aktIsin = aktIsin;
     }
 
     public static void main(String[] args) {

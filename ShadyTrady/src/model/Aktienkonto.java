@@ -92,7 +92,7 @@ public class Aktienkonto {
         return false;
          
         }
-      
+       
     public ArrayList<Aktie> getAktien() {
         return Aktien;
     }
