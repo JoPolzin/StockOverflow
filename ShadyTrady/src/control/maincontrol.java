@@ -42,6 +42,8 @@ public class maincontrol {
     
     private Leaderboard leaderboard;
     
+    private Loading loading;
+    
     private String aktIsin; 
 
     private FirebaseZugriff fz;
@@ -51,23 +53,38 @@ public class maincontrol {
     private Benutzer b;
 
     public maincontrol() {
+        loading = new Loading();
+        loading.setVisible(true);
+        loading.jProgressBar1.setValue(3);
         aktieAnsehen = new AktieAnsehen(this);
+        loading.jProgressBar1.setValue(6);
         aktieKaufen = new AktieKaufen(this);
+        loading.jProgressBar1.setValue(9);
         kaufBestätigung = new KaufBestätigung(this);
+        loading.jProgressBar1.setValue(12);
         aktieVerkaufen = new AktieVerkaufen(this);
+        loading.jProgressBar1.setValue(15);
         verkaufBestätigung = new VerkaufBestätigung(this);
+        loading.jProgressBar1.setValue(18);
         anmeldeFenster = new AnmeldeFenster(this);
+        loading.jProgressBar1.setValue(21);
         registrierFenster = new RegistrierFenster(this);
+        loading.jProgressBar1.setValue(24);
         profilFenster = new ProfilFenster(this);
+        loading.jProgressBar1.setValue(27);
         eigenesDepot = new EigenesDepot(this);
+        loading.jProgressBar1.setValue(30);
         stockOverflowGUI = new StockOverflowGUI(this);
+        loading.jProgressBar1.setValue(33);
         leaderboard = new Leaderboard(this);
         fz = new FirebaseZugriff();
         al = fz.benutzerAuslesen();
+        loading.jProgressBar1.setValue(80);
         if (al == null) {
             JOptionPane.showMessageDialog(null, "Keine Benutzer geladen oder Firebase ungültig.");
         }
-
+        loading.jProgressBar1.setValue(100);
+        loading.setVisible(false);
         stockOverflowGUI.setVisible(true);
         AktienDatenInitialisieren();
     }
