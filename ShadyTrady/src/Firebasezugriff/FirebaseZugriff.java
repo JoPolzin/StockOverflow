@@ -82,7 +82,7 @@ public class FirebaseZugriff {
                 Iterator it2 = response2.getBody().entrySet().iterator();
 
                 while (it2.hasNext()) {
-                    System.out.println("Iterator ausgelöst...");
+                    
                     Map.Entry pairs2 = (Map.Entry) it2.next();
                     LinkedHashMap lhm2 = (LinkedHashMap) pairs2.getValue();
                     System.out.println(lhm2.toString());
@@ -96,7 +96,7 @@ public class FirebaseZugriff {
                         akt.setPreis((double) lhm2.get("preis"));
                         akt.setStueckzahl((int)lhm2.get("anzahl"));
                         tmp.getDepot().getAktien().add(akt);
-                        System.out.println("Aktie ergaenzt...");
+                       
                     }
 
                 }
