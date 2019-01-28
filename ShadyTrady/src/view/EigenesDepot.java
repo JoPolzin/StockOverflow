@@ -852,6 +852,7 @@ public class EigenesDepot extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void DepotVerkaufen9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_DepotVerkaufen9ActionPerformed
+       this.c.setAktIsin(this.DepotVerkaufen9.getText());
         this.c.switchTo("AktieVerkaufen");
     }//GEN-LAST:event_DepotVerkaufen9ActionPerformed
 

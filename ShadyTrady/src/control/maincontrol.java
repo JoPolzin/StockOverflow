@@ -23,8 +23,12 @@ public class maincontrol {
     private AktieAnsehen aktieAnsehen;
 
     private AktieKaufen aktieKaufen;
+    
+    private KaufBestätigung kaufBestätigung;
 
     private AktieVerkaufen aktieVerkaufen;
+    
+    private VerkaufBestätigung verkaufBestätigung;
 
     private AnmeldeFenster anmeldeFenster;
 
@@ -35,6 +39,8 @@ public class maincontrol {
     private EigenesDepot eigenesDepot;
 
     private StockOverflowGUI stockOverflowGUI;
+    
+    private String aktIsin; 
 
     private FirebaseZugriff fz;
     private ArrayList<Benutzer> al;
@@ -45,7 +51,9 @@ public class maincontrol {
     public maincontrol() {
         aktieAnsehen = new AktieAnsehen(this);
         aktieKaufen = new AktieKaufen(this);
+        kaufBestätigung = new KaufBestätigung(this);
         aktieVerkaufen = new AktieVerkaufen(this);
+        verkaufBestätigung = new VerkaufBestätigung(this);
         anmeldeFenster = new AnmeldeFenster(this);
         registrierFenster = new RegistrierFenster(this);
         profilFenster = new ProfilFenster(this);
@@ -70,7 +78,9 @@ public class maincontrol {
 
         aktieAnsehen.setVisible(false);
         aktieKaufen.setVisible(false);
+        kaufBestätigung.setVisible(false);
         aktieVerkaufen.setVisible(false);
+        verkaufBestätigung.setVisible(false);
         anmeldeFenster.setVisible(false);
         registrierFenster.setVisible(false);
         profilFenster.setVisible(false);
@@ -90,12 +100,18 @@ public class maincontrol {
                     anmeldeFenster.setVisible(true);
                 }
                 break;
+            case "KaufBestätigung":
+                kaufBestätigung.setVisible(true);
+                break;
             case "AktieVerkaufen":
                 if (this.eingeloggt) {
                     aktieVerkaufen.setVisible(true);
                 } else {
                     anmeldeFenster.setVisible(true);
                 }
+                break;
+            case "VerkaufBestätigung":
+                verkaufBestätigung.setVisible(true);
                 break;
             case "AnmeldeFenster":
                 anmeldeFenster.setVisible(true);
@@ -194,6 +210,14 @@ public class maincontrol {
             return false;
         }
 
+    }
+
+    public String getAktIsin() {
+        return aktIsin;
+    }
+
+    public void setAktIsin(String aktIsin) {
+        this.aktIsin = aktIsin;
     }
 
     public static void main(String[] args) {

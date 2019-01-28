@@ -106,6 +106,9 @@
       </Properties>
     </Component>
     <Component class="javax.swing.JTextPane" name="KaufenNameDerAktieEingabe">
+      <Properties>
+        <Property name="editable" type="boolean" value="false"/>
+      </Properties>
     </Component>
     <Component class="javax.swing.JLabel" name="KaufenGesamtpreis">
       <Properties>
@@ -118,6 +121,9 @@
       </Properties>
     </Component>
     <Component class="javax.swing.JTextPane" name="KaufenSt&#xfc;ckzahlEingabe">
+      <Properties>
+        <Property name="editable" type="boolean" value="false"/>
+      </Properties>
     </Component>
     <Component class="javax.swing.JLabel" name="KaufenPreisProSt&#xfc;ck">
       <Properties>
@@ -125,6 +131,9 @@
       </Properties>
     </Component>
     <Component class="javax.swing.JTextPane" name="KaufenPreisProSt&#xfc;ckEingabe">
+      <Properties>
+        <Property name="editable" type="boolean" value="false"/>
+      </Properties>
     </Component>
     <Component class="javax.swing.JLabel" name="KaufenSt&#xfc;ckzaahl">
       <Properties>
