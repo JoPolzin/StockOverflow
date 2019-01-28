@@ -59,15 +59,16 @@ public class maincontrol {
         stockOverflowGUI = new StockOverflowGUI(this);
         fz = new FirebaseZugriff();
         al = fz.benutzerAuslesen();
-        
-        if(al==null){
+
+        if (al == null) {
             JOptionPane.showMessageDialog(null, "Keine Benutzer geladen oder Firebase ungültig.");
         }
 
         stockOverflowGUI.setVisible(true);
         AktienDatenInitialisieren();
     }
-    public boolean getEingeloggt(){
+
+    public boolean getEingeloggt() {
         return eingeloggt;
     }
 
@@ -86,16 +87,26 @@ public class maincontrol {
 
         switch (Guiname) {
             case "AktieAnsehen":
+
                 aktieAnsehen.setVisible(true);
+
                 break;
             case "AktieKaufen":
-                aktieKaufen.setVisible(true);
+                if (this.eingeloggt) {
+                    aktieKaufen.setVisible(true);
+                } else {
+                    anmeldeFenster.setVisible(true);
+                }
                 break;
             case "KaufBestätigung":
                 kaufBestätigung.setVisible(true);
                 break;
             case "AktieVerkaufen":
-                aktieVerkaufen.setVisible(true);
+                if (this.eingeloggt) {
+                    aktieVerkaufen.setVisible(true);
+                } else {
+                    anmeldeFenster.setVisible(true);
+                }
                 break;
             case "VerkaufBestätigung":
                 verkaufBestätigung.setVisible(true);
@@ -107,10 +118,18 @@ public class maincontrol {
                 registrierFenster.setVisible(true);
                 break;
             case "ProfilFenster":
-                profilFenster.setVisible(true);
+                if (eingeloggt) {
+                    profilFenster.setVisible(true);
+                } else {
+                    anmeldeFenster.setVisible(true);
+                }
                 break;
             case "EigenesDepot":
+                if (eingeloggt) {
                 eigenesDepot.setVisible(true);
+                } else {
+                anmeldeFenster.setVisible(true);
+                }
                 break;
             case "StockOverflowGUI":
                 stockOverflowGUI.setVisible(true);
@@ -126,7 +145,7 @@ public class maincontrol {
     public void login(String benutzername, String password) {
         boolean erfolgreich;
         Benutzer b = null;
-        if (al==null){
+        if (al == null) {
             JOptionPane.showMessageDialog(null, "Anmeldung nicht möglich. Es sind keine Benutzer bekannt.");
 
         }
@@ -146,9 +165,11 @@ public class maincontrol {
             System.out.println("Login erfolgreich");
             JOptionPane.showMessageDialog(null, "Login erfolgreich.\n Angemeldeter Benutezr:\n" + b.toString());
             b = new Benutzer(benutzername);
-            this.switchTo("EigenesDepot");
+           
             erfolgreich = true;
             this.eingeloggt = true;
+             this.switchTo("EigenesDepot");
+            
         }
 
     }
@@ -242,11 +263,12 @@ public class maincontrol {
      *
      * @param ISIN
      */
-    public void AktieDatenInitialisieren(String ISIN) {
+    public void AktieDatenInitialisieren(String ISIN, String name) {
         OA.prepareDocument(ISIN);
         aktieAnsehen.Change.setText(Float.toString(OA.getChange()));
         aktieAnsehen.Preis.setText(Float.toString(OA.getAsk()));
         aktieAnsehen.ISIN.setText(ISIN);
+        aktieAnsehen.Name.setText(name);
         aktieAnsehen.AktienBild.setIcon(OA.getGraph("intraday"));
         aktieAnsehen.momentanerPreis = OA.getAsk();
         aktieAnsehen.ausgewählteISIN = ISIN;
@@ -257,7 +279,11 @@ public class maincontrol {
             b.setKontostand(b.getKontostand() - Preis);
             b.getDepot().aktie_kaufen(isin, Stückzahl, Preis);
 
+        } else {
+            this.switchTo("AnmeldeFenster");
+
         }
+
     }
 
     /**
@@ -279,6 +305,17 @@ public class maincontrol {
 
         } else {
             aktieAnsehen.Preis.setBackground(Color.white);
+        }
+
+    }
+    public void aktieverkaufen(String isin, Integer Stückzahl, Float Preis) {
+        if (this.eingeloggt) {
+            b.setKontostand(b.getKontostand() + Preis);
+            b.getDepot().aktie_kaufen(isin, Stückzahl, Preis);
+
+        } else {
+            this.switchTo("AnmeldeFenster");
+
         }
 
     }
