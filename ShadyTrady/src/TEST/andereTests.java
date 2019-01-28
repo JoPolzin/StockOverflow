@@ -7,6 +7,7 @@ package TEST;
 
 import control.maincontrol;
 import java.util.ArrayList;
+import model.Aktie;
 import model.Benutzer;
 
 /**
@@ -30,13 +31,18 @@ public class andereTests {
         Benutzer b3 = new Benutzer();
         b3.setBenutzername("b3");
         b3.setKontostand(700);
+        Aktie e = new Aktie("","DE0007164600");
+        e.setStueckzahl(3);
+        b3.getDepot().getAktien().add(e);
         benutzer.add(b);
         benutzer.add(b1);
         benutzer.add(b2);
         benutzer.add(b3);
+        
         System.out.println("unsort:"+benutzer.toString());
         //benutzer = maincontrol.SortBenutzer(benutzer);
         System.out.println("sort:"+ benutzer.toString());
+        System.out.println(b3.GesamtKapital());
         
         
         

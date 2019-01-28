@@ -229,7 +229,7 @@ public class Benutzer {
         for (Aktie e : this.depot.getAktien()) {
 
             OA.prepareDocument(e.getISIN());
-
+            
             Kapital = Kapital + OA.getAsk() * e.getStueckzahl();
         }
         return Kapital;
