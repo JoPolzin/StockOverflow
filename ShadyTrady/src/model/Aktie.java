@@ -29,15 +29,8 @@ public class Aktie {
      */
     private double preis;
     
-    /**
-     * letzter Aktualisierungszeitpunkt der Aktie
-     */
-    private Date stand;
     
-    /**
-     * Preisänderung der Aktie
-     */
-    private double veränderung; 
+    
     
     /**
      * Anzahl der Anteile
@@ -86,20 +79,8 @@ public class Aktie {
     
     
     
-    
-
-    public Hashtable<Date, Double> getVerlauf() {
-        return verlauf;
-    }
-
-    public void setVerlauf(Hashtable<Date, Double> verlauf) {
-        this.verlauf = verlauf;
-    }
             
-    /**
-     * Verlauf der Aktie
-     */
-    private Hashtable<Date, Double> verlauf = new Hashtable<Date, Double>();
+   
     
     /**get-Methode für den Namen
      * @return .**/
@@ -127,27 +108,9 @@ public class Aktie {
     public void setPreis(double preis) {
         this.preis = preis;
     }
-    /**get-Methode für den Stand der Aktie
-     * @return .**/
-
-    public Date getStand() {
-        return stand;
-    }
-    /**set-Methode für den Stand
-     * @param stand.**/
-    public void setStand(Date stand) {
-        this.stand = stand;
-    }
-    /**get-Methode für die Preisveränderung
-     * @return .**/
-    public double getVeränderung() {
-        return veränderung;
-    }
-    /**set-Methode für die Preisänderung
-     * @param veränderung.**/
-    public void setVeränderung(float veränderung) {
-        this.veränderung = veränderung;
-    }
+   
+   
+    
     /**get-Methode für die Stückzahl 
      * @return .**/
     public int getStueckzahl() {
@@ -158,17 +121,7 @@ public class Aktie {
     public void setStueckzahl(int stueckzahl) {
         this.stueckzahl = stueckzahl;
     }
-    
-    /**Aktualisierung des Preises
-     * @param price.**/
-    public void aktualisieren(double price) {
-        
-        setPreis(price);
-        Date date = new Date();
-        setStand(date);
-        
-        verlauf.put(date,price);
-    }
+   
     @Override
     public String toString(){
         String ausgabe="";

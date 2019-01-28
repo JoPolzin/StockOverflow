@@ -11,20 +11,22 @@ import java.util.Hashtable;
 import java.util.Iterator;
 
 /**
- * ICH HASB KEINE AHNUNG WAS ICH MACHE HILFE!!!!!!!!! DANKE JOHANNA
- *
+ * 
  * Aktienkonto wird bei der erzeugung des Benutzers erzeugt. nach
  *
  * @author zochrab.blume
  */
 public class Aktienkonto {
 
-    private Integer id;
-
-    private Hashtable<String, Integer> Gekaufte_Aktien;
-    private ArrayList<Aktie> Aktien;
-    private Integer Guthaben;
-    private Aktie gekaufteAktie;
+    private Integer id = -1;
+/**
+ * 
+ * Key ist isin 
+ * value ist stueckzahl
+ */
+    private Hashtable<String, Integer> Gekaufte_Aktien = new Hashtable();
+    private ArrayList<Aktie> Aktien = new ArrayList();
+ 
     private maincontrol c;
    
     public Aktienkonto() {
@@ -37,6 +39,8 @@ public class Aktienkonto {
         this.c = mc;
 
     }
+    
+    private double Guthaben;
 
     /**
      * Aktien kaufen
@@ -104,6 +108,14 @@ public class Aktienkonto {
         return 0;
     }
 
+    public double getGuthaben() {
+        return Guthaben;
+    }
+
+    public void setGuthaben(double Guthaben) {
+        this.Guthaben = Guthaben;
+    }
+
     /**
      * Erstellt einzigartige ID zur Unterscheidung von Aktien mit gleichen Namen
      *
@@ -141,52 +153,19 @@ public class Aktienkonto {
         this.Gekaufte_Aktien = Gekaufte_Aktien;
     }
 
-    /**
-     * get-Methode für das Guthaben
-     *
-     * @return
-     */
-    public Integer getGuthaben() {
-        return Guthaben;
-    }
-
-    /**
-     * set-Methode für das Guthaben
-     *
-     * @param Guthaben
-     */
-    public void setGuthaben(Integer Guthaben) {
-        this.Guthaben = Guthaben;
-    }
-
-    /**
-     * get-Methode für die gekaufte Aktie
-     *
-     * @return
-     */
-    public Aktie getGekaufteAktie() {
-        return gekaufteAktie;
-    }
-
-    /**
-     * set-Methode für die gekaufte Aktie
-     *
-     * @param gekaufteAktie
-     */
-    public void setGekaufteAktie(Aktie gekaufteAktie) {
-        this.gekaufteAktie = gekaufteAktie;
-    }
+   
     
     @Override
     public String toString(){
         String ausgabe = "";
         ausgabe+="ID: "+id+"\n";
-        ausgabe+="Guthaben: "+Guthaben+"\n";
+      
         ausgabe+="gekaufte Aktien, Anzahl: "+Gekaufte_Aktien.size()+"\n";
-        Iterator it = Gekaufte_Aktien.entrySet().iterator();
-            while (it.hasNext()) {
-                ausgabe+= it.next().toString()+"\n";
-            }
+ 
+        for (Aktie a : this.Aktien){
+          ausgabe+= a.toString() + "\n" 
+                  +  " Stueckzahl: " + this.Gekaufte_Aktien.get(a.getISIN()) + "\n";
+        }     
         return ausgabe;
     }
 }
