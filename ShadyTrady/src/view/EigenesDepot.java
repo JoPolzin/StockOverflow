@@ -405,10 +405,10 @@ public class EigenesDepot extends javax.swing.JFrame {
             }
         });
 
-        jTextField1.setEditable(false);
-        jTextField1.setText("jTextField1");
+       // jTextField1.setEditable(false);
+        //jTextField1.setText("jTextField1");
 
-        jLabel6.setText("Guthaben:");
+        //jLabel6.setText("Guthaben:");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
