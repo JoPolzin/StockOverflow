@@ -405,121 +405,10 @@ public class EigenesDepot extends javax.swing.JFrame {
             }
         });
 
-        jTextPane92.setEditable(false);
+        jTextField1.setEditable(false);
+        jTextField1.setText("jTextField1");
 
-        jTextPane93.setEditable(false);
-
-        jTextPane95.setEditable(false);
-
-        jTextPane96.setEditable(false);
-
-        jTextPane98.setEditable(false);
-
-        jTextPane99.setEditable(false);
-
-        jTextPane101.setEditable(false);
-
-        jTextPane102.setEditable(false);
-
-        jTextPane104.setEditable(false);
-
-        jTextPane105.setEditable(false);
-
-        jTextPane107.setEditable(false);
-
-        jTextPane108.setEditable(false);
-
-        jTextPane110.setEditable(false);
-
-        jTextPane111.setEditable(false);
-
-        jTextPane113.setEditable(false);
-
-        jTextPane114.setEditable(false);
-
-        jTextPane116.setEditable(false);
-
-        jTextPane117.setEditable(false);
-
-        jTextPane119.setEditable(false);
-
-        jTextPane120.setEditable(false);
-
-        jTextPane122.setEditable(false);
-
-        jTextPane123.setEditable(false);
-
-        jTextPane125.setEditable(false);
-
-        jTextPane126.setEditable(false);
-
-        jTextPane128.setEditable(false);
-
-        jTextPane129.setEditable(false);
-
-        jTextPane131.setEditable(false);
-
-        jTextPane132.setEditable(false);
-
-        jTextPane134.setEditable(false);
-
-        jTextPane135.setEditable(false);
-
-        jTextPane137.setEditable(false);
-
-        jTextPane138.setEditable(false);
-
-        jTextPane140.setEditable(false);
-
-        jTextPane141.setEditable(false);
-
-        jTextPane143.setEditable(false);
-
-        jTextPane144.setEditable(false);
-
-        jTextPane146.setEditable(false);
-
-        jTextPane147.setEditable(false);
-
-        jTextPane149.setEditable(false);
-
-        jTextPane150.setEditable(false);
-
-        jTextPane152.setEditable(false);
-
-        jTextPane153.setEditable(false);
-
-        jTextPane155.setEditable(false);
-
-        jTextPane156.setEditable(false);
-
-        jTextPane158.setEditable(false);
-
-        jTextPane159.setEditable(false);
-
-        jTextPane161.setEditable(false);
-
-        jTextPane162.setEditable(false);
-
-        jTextPane164.setEditable(false);
-
-        jTextPane165.setEditable(false);
-
-        jTextPane167.setEditable(false);
-
-        jTextPane168.setEditable(false);
-
-        jTextPane170.setEditable(false);
-
-        jTextPane171.setEditable(false);
-
-        jTextPane173.setEditable(false);
-
-        jTextPane174.setEditable(false);
-
-        jTextPane176.setEditable(false);
-
-        jTextPane177.setEditable(false);
+        jLabel6.setText("Guthaben:");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -763,7 +652,7 @@ public class EigenesDepot extends javax.swing.JFrame {
             .addGroup(layout.createSequentialGroup()
                 .addGap(21, 21, 21)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                    .addGroup(layout.createSequentialGroup()
                         .addComponent(jLabel1)
                         .addGap(21, 21, 21)
                         .addComponent(jLabel2)
@@ -771,8 +660,7 @@ public class EigenesDepot extends javax.swing.JFrame {
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(jLabel3)
                             .addComponent(jLabel4)
-                            .addComponent(jLabel5))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED))
+                            .addComponent(jLabel5)))
                     .addGroup(layout.createSequentialGroup()
                         .addComponent(LogInAnsehen, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)

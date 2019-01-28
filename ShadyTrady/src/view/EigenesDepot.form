@@ -239,6 +239,175 @@
                       <Group type="103" groupAlignment="0" attributes="0">
                           <Component id="jLabel3" min="-2" max="-2" attributes="0"/>
                           <Component id="jTextPane3" min="-2" pref="116" max="-2" attributes="0"/>
+                          <Group type="102" attributes="0">
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Component id="jScrollPane62" alignment="0" min="-2" pref="118" max="-2" attributes="0"/>
+                                  <Group type="103" alignment="0" groupAlignment="1" max="-2" attributes="0">
+                                      <Component id="jScrollPane65" alignment="1" max="32767" attributes="0"/>
+                                      <Component id="jScrollPane68" alignment="1" min="-2" pref="118" max="-2" attributes="0"/>
+                                  </Group>
+                                  <Component id="jScrollPane59" alignment="0" min="-2" pref="118" max="-2" attributes="0"/>
+                                  <Component id="jScrollPane56" alignment="0" min="-2" pref="118" max="-2" attributes="0"/>
+                                  <Component id="jScrollPane53" alignment="0" min="-2" pref="118" max="-2" attributes="0"/>
+                                  <Component id="jScrollPane50" alignment="0" min="-2" pref="118" max="-2" attributes="0"/>
+                                  <Component id="jScrollPane47" alignment="0" min="-2" pref="118" max="-2" attributes="0"/>
+                                  <Component id="jScrollPane44" alignment="0" min="-2" pref="118" max="-2" attributes="0"/>
+                                  <Component id="jScrollPane83" alignment="0" min="-2" pref="118" max="-2" attributes="0"/>
+                                  <Component id="jScrollPane80" alignment="0" min="-2" pref="118" max="-2" attributes="0"/>
+                                  <Component id="jScrollPane77" alignment="0" min="-2" pref="118" max="-2" attributes="0"/>
+                                  <Component id="jScrollPane71" alignment="0" min="-2" pref="118" max="-2" attributes="0"/>
+                                  <Component id="jScrollPane74" alignment="0" min="-2" pref="118" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace type="separate" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Component id="jScrollPane48" alignment="0" min="-2" pref="59" max="-2" attributes="0"/>
+                                  <Component id="jScrollPane66" alignment="0" min="-2" pref="59" max="-2" attributes="0"/>
+                                  <Component id="jScrollPane63" alignment="0" min="-2" pref="59" max="-2" attributes="0"/>
+                                  <Component id="jScrollPane60" alignment="0" min="-2" pref="59" max="-2" attributes="0"/>
+                                  <Component id="jScrollPane69" alignment="0" min="-2" pref="59" max="-2" attributes="0"/>
+                                  <Component id="jScrollPane72" alignment="0" min="-2" pref="59" max="-2" attributes="0"/>
+                                  <Component id="jScrollPane75" alignment="0" min="-2" pref="59" max="-2" attributes="0"/>
+                                  <Component id="jScrollPane78" alignment="0" min="-2" pref="59" max="-2" attributes="0"/>
+                                  <Component id="jScrollPane81" alignment="0" min="-2" pref="59" max="-2" attributes="0"/>
+                                  <Component id="jScrollPane84" alignment="0" min="-2" pref="59" max="-2" attributes="0"/>
+                                  <Component id="jScrollPane45" alignment="0" min="-2" pref="59" max="-2" attributes="0"/>
+                                  <Component id="jScrollPane51" alignment="0" min="-2" pref="59" max="-2" attributes="0"/>
+                                  <Component id="jScrollPane54" alignment="0" min="-2" pref="59" max="-2" attributes="0"/>
+                                  <Component id="jScrollPane57" alignment="0" min="-2" pref="59" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace type="separate" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Component id="jScrollPane70" alignment="0" min="-2" pref="69" max="-2" attributes="0"/>
+                                  <Component id="jScrollPane73" alignment="0" min="-2" pref="69" max="-2" attributes="0"/>
+                                  <Component id="jScrollPane76" alignment="0" min="-2" pref="69" max="-2" attributes="0"/>
+                                  <Component id="jScrollPane79" alignment="0" min="-2" pref="69" max="-2" attributes="0"/>
+                                  <Component id="jScrollPane82" alignment="0" min="-2" pref="69" max="-2" attributes="0"/>
+                                  <Component id="jScrollPane43" alignment="0" min="-2" pref="69" max="-2" attributes="0"/>
+                                  <Component id="jScrollPane46" alignment="0" min="-2" pref="69" max="-2" attributes="0"/>
+                                  <Component id="jScrollPane49" alignment="1" min="-2" pref="69" max="-2" attributes="0"/>
+                                  <Component id="jScrollPane52" alignment="0" min="-2" pref="69" max="-2" attributes="0"/>
+                                  <Component id="jScrollPane55" alignment="0" min="-2" pref="69" max="-2" attributes="0"/>
+                                  <Component id="jScrollPane58" alignment="0" min="-2" pref="69" max="-2" attributes="0"/>
+                                  <Group type="103" alignment="0" groupAlignment="0" max="-2" attributes="0">
+                                      <Component id="jScrollPane67" alignment="1" min="-2" pref="69" max="-2" attributes="0"/>
+                                      <Component id="jScrollPane64" alignment="1" min="-2" pref="69" max="-2" attributes="0"/>
+                                  </Group>
+                                  <Component id="jScrollPane61" alignment="1" min="-2" pref="69" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace max="32767" attributes="0"/>
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Component id="DepotVerkaufen15" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="DepotVerkaufen16" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="DepotVerkaufen28" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="DepotVerkaufen27" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="DepotVerkaufen26" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="DepotVerkaufen25" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="DepotVerkaufen24" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="DepotVerkaufen23" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="DepotVerkaufen22" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="DepotVerkaufen21" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="DepotVerkaufen20" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="DepotVerkaufen19" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="DepotVerkaufen18" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="DepotVerkaufen17" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="DepotVerkaufen29" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="DepotVerkaufen30" alignment="0" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                          </Group>
+                          <Group type="102" alignment="0" attributes="0">
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Component id="jScrollPane42" alignment="0" min="-2" pref="118" max="-2" attributes="0"/>
+                                  <Group type="103" alignment="0" groupAlignment="1" max="-2" attributes="0">
+                                      <Component id="jScrollPane3" max="32767" attributes="0"/>
+                                      <Component id="jScrollPane6" min="-2" pref="118" max="-2" attributes="0"/>
+                                  </Group>
+                                  <Component id="jScrollPane39" alignment="0" min="-2" pref="118" max="-2" attributes="0"/>
+                                  <Component id="jScrollPane36" alignment="0" min="-2" pref="118" max="-2" attributes="0"/>
+                                  <Component id="jScrollPane33" alignment="0" min="-2" pref="118" max="-2" attributes="0"/>
+                                  <Component id="jScrollPane30" alignment="0" min="-2" pref="118" max="-2" attributes="0"/>
+                                  <Component id="jScrollPane27" alignment="0" min="-2" pref="118" max="-2" attributes="0"/>
+                                  <Component id="jScrollPane24" alignment="0" min="-2" pref="118" max="-2" attributes="0"/>
+                                  <Component id="jScrollPane21" alignment="0" min="-2" pref="118" max="-2" attributes="0"/>
+                                  <Component id="jScrollPane18" alignment="0" min="-2" pref="118" max="-2" attributes="0"/>
+                                  <Component id="jScrollPane15" alignment="0" min="-2" pref="118" max="-2" attributes="0"/>
+                                  <Component id="jScrollPane9" alignment="0" min="-2" pref="118" max="-2" attributes="0"/>
+                                  <Component id="jScrollPane12" alignment="0" min="-2" pref="118" max="-2" attributes="0"/>
+                                  <Component id="jLabel3" alignment="0" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace type="separate" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Component id="jLabel4" min="-2" max="-2" attributes="0"/>
+                                  <Component id="jScrollPane28" alignment="0" min="-2" pref="59" max="-2" attributes="0"/>
+                                  <Component id="jScrollPane4" alignment="0" min="-2" pref="59" max="-2" attributes="0"/>
+                                  <Component id="jScrollPane1" alignment="0" min="-2" pref="59" max="-2" attributes="0"/>
+                                  <Component id="jScrollPane40" alignment="0" min="-2" pref="59" max="-2" attributes="0"/>
+                                  <Component id="jScrollPane7" alignment="0" min="-2" pref="59" max="-2" attributes="0"/>
+                                  <Component id="jScrollPane10" alignment="0" min="-2" pref="59" max="-2" attributes="0"/>
+                                  <Component id="jScrollPane13" alignment="0" min="-2" pref="59" max="-2" attributes="0"/>
+                                  <Component id="jScrollPane16" alignment="0" min="-2" pref="59" max="-2" attributes="0"/>
+                                  <Component id="jScrollPane19" alignment="0" min="-2" pref="59" max="-2" attributes="0"/>
+                                  <Component id="jScrollPane22" alignment="0" min="-2" pref="59" max="-2" attributes="0"/>
+                                  <Component id="jScrollPane25" alignment="0" min="-2" pref="59" max="-2" attributes="0"/>
+                                  <Component id="jScrollPane31" alignment="0" min="-2" pref="59" max="-2" attributes="0"/>
+                                  <Component id="jScrollPane34" alignment="0" min="-2" pref="59" max="-2" attributes="0"/>
+                                  <Component id="jScrollPane37" alignment="0" min="-2" pref="59" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace type="separate" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Group type="102" attributes="0">
+                                      <Component id="jLabel5" min="-2" max="-2" attributes="0"/>
+                                      <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                                  </Group>
+                                  <Group type="102" attributes="0">
+                                      <Group type="103" groupAlignment="0" attributes="0">
+                                          <Component id="jScrollPane8" alignment="0" min="-2" pref="69" max="-2" attributes="0"/>
+                                          <Component id="jScrollPane11" alignment="0" min="-2" pref="69" max="-2" attributes="0"/>
+                                          <Component id="jScrollPane14" alignment="0" min="-2" pref="69" max="-2" attributes="0"/>
+                                          <Component id="jScrollPane17" alignment="0" min="-2" pref="69" max="-2" attributes="0"/>
+                                          <Component id="jScrollPane20" alignment="0" min="-2" pref="69" max="-2" attributes="0"/>
+                                          <Component id="jScrollPane23" alignment="0" min="-2" pref="69" max="-2" attributes="0"/>
+                                          <Component id="jScrollPane26" alignment="0" min="-2" pref="69" max="-2" attributes="0"/>
+                                          <Component id="jScrollPane29" alignment="1" min="-2" pref="69" max="-2" attributes="0"/>
+                                          <Component id="jScrollPane32" alignment="0" min="-2" pref="69" max="-2" attributes="0"/>
+                                          <Component id="jScrollPane35" alignment="0" min="-2" pref="69" max="-2" attributes="0"/>
+                                          <Component id="jScrollPane38" alignment="0" min="-2" pref="69" max="-2" attributes="0"/>
+                                          <Group type="103" alignment="0" groupAlignment="0" max="-2" attributes="0">
+                                              <Component id="jScrollPane5" alignment="1" min="-2" pref="69" max="-2" attributes="0"/>
+                                              <Component id="jScrollPane2" alignment="1" min="-2" pref="69" max="-2" attributes="0"/>
+                                          </Group>
+                                          <Component id="jScrollPane41" alignment="1" min="-2" pref="69" max="-2" attributes="0"/>
+                                      </Group>
+                                      <EmptySpace pref="106" max="32767" attributes="0"/>
+                                      <Group type="103" groupAlignment="0" attributes="0">
+                                          <Component id="DepotVerkaufen1" min="-2" max="-2" attributes="0"/>
+                                          <Component id="DepotVerkaufen2" min="-2" max="-2" attributes="0"/>
+                                          <Component id="DepotVerkaufen14" min="-2" max="-2" attributes="0"/>
+                                          <Component id="DepotVerkaufen13" min="-2" max="-2" attributes="0"/>
+                                          <Component id="DepotVerkaufen12" min="-2" max="-2" attributes="0"/>
+                                          <Component id="DepotVerkaufen11" min="-2" max="-2" attributes="0"/>
+                                          <Component id="DepotVerkaufen10" min="-2" max="-2" attributes="0"/>
+                                          <Component id="DepotVerkaufen9" min="-2" max="-2" attributes="0"/>
+                                          <Component id="DepotVerkaufen8" min="-2" max="-2" attributes="0"/>
+                                          <Component id="DepotVerkaufen7" min="-2" max="-2" attributes="0"/>
+                                          <Component id="DepotVerkaufen6" min="-2" max="-2" attributes="0"/>
+                                          <Component id="DepotVerkaufen5" min="-2" max="-2" attributes="0"/>
+                                          <Component id="DepotVerkaufen4" min="-2" max="-2" attributes="0"/>
+                                          <Component id="DepotVerkaufen3" min="-2" max="-2" attributes="0"/>
+                                      </Group>
+                                  </Group>
+                              </Group>
+                          </Group>
+                          <Group type="102" alignment="0" attributes="0">
+                              <Component id="jLabel2" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace min="0" pref="327" max="32767" attributes="0"/>
+                          </Group>
+                          <Group type="102" attributes="0">
+                              <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace max="32767" attributes="0"/>
+                              <Component id="jLabel6" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Component id="jTextField1" min="-2" max="-2" attributes="0"/>
+                          </Group>
                       </Group>
                       <EmptySpace min="-2" pref="20" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" attributes="0">
@@ -302,7 +471,7 @@
           <Group type="102" alignment="0" attributes="0">
               <EmptySpace min="-2" pref="21" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="0" attributes="0">
-                  <Group type="102" alignment="1" attributes="0">
+                  <Group type="102" attributes="0">
                       <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
                       <EmptySpace min="-2" pref="21" max="-2" attributes="0"/>
                       <Component id="jLabel2" min="-2" max="-2" attributes="0"/>
@@ -312,20 +481,17 @@
                           <Component id="jLabel4" alignment="3" min="-2" max="-2" attributes="0"/>
                           <Component id="jLabel5" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
-                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
                   </Group>
-                  <Group type="102" alignment="0" attributes="0">
+                  <Group type="102" attributes="0">
                       <Component id="LogInAnsehen" min="-2" pref="41" max="-2" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
                       <Component id="zurückAktieAnsehen" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace min="-2" pref="55" max="-2" attributes="0"/>
+                  </Group>
+                  <Group type="103" alignment="0" groupAlignment="1" max="-2" attributes="0">
+                      <Component id="jLabel6" max="32767" attributes="0"/>
+                      <Component id="jTextField1" max="32767" attributes="0"/>
                   </Group>
               </Group>
-              <Group type="103" groupAlignment="0" attributes="0">
-                  <Component id="DepotVerkaufen1" min="-2" max="-2" attributes="0"/>
-                  <Component id="jTextPane1" min="-2" max="-2" attributes="0"/>
-                  <Component id="jTextPane2" min="-2" max="-2" attributes="0"/>
-                  <Component id="jTextPane3" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace max="-2" attributes="0"/>
               <Group type="103" groupAlignment="0" attributes="0">
@@ -835,352 +1001,11 @@
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="DepotVerkaufen9ActionPerformed"/>
       </Events>
     </Component>
-    <Component class="javax.swing.JTextPane" name="jTextPane91">
-    </Component>
-    <Component class="javax.swing.JTextPane" name="jTextPane92">
-      <Properties>
-        <Property name="editable" type="boolean" value="false"/>
-      </Properties>
-    </Component>
-    <Component class="javax.swing.JTextPane" name="jTextPane93">
-      <Properties>
-        <Property name="editable" type="boolean" value="false"/>
-      </Properties>
-    </Component>
-    <Component class="javax.swing.JTextPane" name="jTextPane94">
-    </Component>
-    <Component class="javax.swing.JTextPane" name="jTextPane95">
-      <Properties>
-        <Property name="editable" type="boolean" value="false"/>
-      </Properties>
-    </Component>
-    <Component class="javax.swing.JTextPane" name="jTextPane96">
-      <Properties>
-        <Property name="editable" type="boolean" value="false"/>
-      </Properties>
-    </Component>
-    <Component class="javax.swing.JTextPane" name="jTextPane97">
-    </Component>
-    <Component class="javax.swing.JTextPane" name="jTextPane98">
-      <Properties>
-        <Property name="editable" type="boolean" value="false"/>
-      </Properties>
-    </Component>
-    <Component class="javax.swing.JTextPane" name="jTextPane99">
-      <Properties>
-        <Property name="editable" type="boolean" value="false"/>
-      </Properties>
-    </Component>
-    <Component class="javax.swing.JTextPane" name="jTextPane100">
-    </Component>
-    <Component class="javax.swing.JTextPane" name="jTextPane101">
-      <Properties>
-        <Property name="editable" type="boolean" value="false"/>
-      </Properties>
-    </Component>
-    <Component class="javax.swing.JTextPane" name="jTextPane102">
-      <Properties>
-        <Property name="editable" type="boolean" value="false"/>
-      </Properties>
-    </Component>
-    <Component class="javax.swing.JTextPane" name="jTextPane103">
-    </Component>
-    <Component class="javax.swing.JTextPane" name="jTextPane104">
-      <Properties>
-        <Property name="editable" type="boolean" value="false"/>
-      </Properties>
-    </Component>
-    <Component class="javax.swing.JTextPane" name="jTextPane105">
-      <Properties>
-        <Property name="editable" type="boolean" value="false"/>
-      </Properties>
-    </Component>
-    <Component class="javax.swing.JTextPane" name="jTextPane106">
-    </Component>
-    <Component class="javax.swing.JTextPane" name="jTextPane107">
-      <Properties>
-        <Property name="editable" type="boolean" value="false"/>
-      </Properties>
-    </Component>
-    <Component class="javax.swing.JTextPane" name="jTextPane108">
-      <Properties>
-        <Property name="editable" type="boolean" value="false"/>
-      </Properties>
-    </Component>
-    <Component class="javax.swing.JTextPane" name="jTextPane109">
-    </Component>
-    <Component class="javax.swing.JTextPane" name="jTextPane110">
-      <Properties>
-        <Property name="editable" type="boolean" value="false"/>
-      </Properties>
-    </Component>
-    <Component class="javax.swing.JTextPane" name="jTextPane111">
-      <Properties>
-        <Property name="editable" type="boolean" value="false"/>
-      </Properties>
-    </Component>
-    <Component class="javax.swing.JTextPane" name="jTextPane112">
-    </Component>
-    <Component class="javax.swing.JTextPane" name="jTextPane113">
-      <Properties>
-        <Property name="editable" type="boolean" value="false"/>
-      </Properties>
-    </Component>
-    <Component class="javax.swing.JTextPane" name="jTextPane114">
-      <Properties>
-        <Property name="editable" type="boolean" value="false"/>
-      </Properties>
-    </Component>
-    <Component class="javax.swing.JTextPane" name="jTextPane115">
-    </Component>
-    <Component class="javax.swing.JTextPane" name="jTextPane116">
-      <Properties>
-        <Property name="editable" type="boolean" value="false"/>
-      </Properties>
-    </Component>
-    <Component class="javax.swing.JTextPane" name="jTextPane117">
-      <Properties>
-        <Property name="editable" type="boolean" value="false"/>
-      </Properties>
-    </Component>
-    <Component class="javax.swing.JTextPane" name="jTextPane118">
-    </Component>
-    <Component class="javax.swing.JTextPane" name="jTextPane119">
-      <Properties>
-        <Property name="editable" type="boolean" value="false"/>
-      </Properties>
-    </Component>
-    <Component class="javax.swing.JTextPane" name="jTextPane120">
-      <Properties>
-        <Property name="editable" type="boolean" value="false"/>
-      </Properties>
-    </Component>
-    <Component class="javax.swing.JTextPane" name="jTextPane121">
-    </Component>
-    <Component class="javax.swing.JTextPane" name="jTextPane122">
-      <Properties>
-        <Property name="editable" type="boolean" value="false"/>
-      </Properties>
-    </Component>
-    <Component class="javax.swing.JTextPane" name="jTextPane123">
-      <Properties>
-        <Property name="editable" type="boolean" value="false"/>
-      </Properties>
-    </Component>
-    <Component class="javax.swing.JTextPane" name="jTextPane124">
-    </Component>
-    <Component class="javax.swing.JTextPane" name="jTextPane125">
-      <Properties>
-        <Property name="editable" type="boolean" value="false"/>
-      </Properties>
-    </Component>
-    <Component class="javax.swing.JTextPane" name="jTextPane126">
-      <Properties>
-        <Property name="editable" type="boolean" value="false"/>
-      </Properties>
-    </Component>
-    <Component class="javax.swing.JTextPane" name="jTextPane127">
-    </Component>
-    <Component class="javax.swing.JTextPane" name="jTextPane128">
-      <Properties>
-        <Property name="editable" type="boolean" value="false"/>
-      </Properties>
-    </Component>
-    <Component class="javax.swing.JTextPane" name="jTextPane129">
-      <Properties>
-        <Property name="editable" type="boolean" value="false"/>
-      </Properties>
-    </Component>
-    <Component class="javax.swing.JTextPane" name="jTextPane130">
-    </Component>
-    <Component class="javax.swing.JTextPane" name="jTextPane131">
-      <Properties>
-        <Property name="editable" type="boolean" value="false"/>
-      </Properties>
-    </Component>
-    <Component class="javax.swing.JTextPane" name="jTextPane132">
-      <Properties>
-        <Property name="editable" type="boolean" value="false"/>
-      </Properties>
-    </Component>
-    <Component class="javax.swing.JTextPane" name="jTextPane133">
-    </Component>
-    <Component class="javax.swing.JTextPane" name="jTextPane134">
-      <Properties>
-        <Property name="editable" type="boolean" value="false"/>
-      </Properties>
-    </Component>
-    <Component class="javax.swing.JTextPane" name="jTextPane135">
-      <Properties>
-        <Property name="editable" type="boolean" value="false"/>
-      </Properties>
-    </Component>
-    <Component class="javax.swing.JTextPane" name="jTextPane136">
-    </Component>
-    <Component class="javax.swing.JTextPane" name="jTextPane137">
-      <Properties>
-        <Property name="editable" type="boolean" value="false"/>
-      </Properties>
-    </Component>
-    <Component class="javax.swing.JTextPane" name="jTextPane138">
-      <Properties>
-        <Property name="editable" type="boolean" value="false"/>
-      </Properties>
-    </Component>
-    <Component class="javax.swing.JTextPane" name="jTextPane139">
-    </Component>
-    <Component class="javax.swing.JTextPane" name="jTextPane140">
-      <Properties>
-        <Property name="editable" type="boolean" value="false"/>
-      </Properties>
-    </Component>
-    <Component class="javax.swing.JTextPane" name="jTextPane141">
-      <Properties>
-        <Property name="editable" type="boolean" value="false"/>
-      </Properties>
-    </Component>
-    <Component class="javax.swing.JTextPane" name="jTextPane142">
-    </Component>
-    <Component class="javax.swing.JTextPane" name="jTextPane143">
-      <Properties>
-        <Property name="editable" type="boolean" value="false"/>
-      </Properties>
-    </Component>
-    <Component class="javax.swing.JTextPane" name="jTextPane144">
-      <Properties>
-        <Property name="editable" type="boolean" value="false"/>
-      </Properties>
-    </Component>
-    <Component class="javax.swing.JTextPane" name="jTextPane145">
-    </Component>
-    <Component class="javax.swing.JTextPane" name="jTextPane146">
-      <Properties>
-        <Property name="editable" type="boolean" value="false"/>
-      </Properties>
-    </Component>
-    <Component class="javax.swing.JTextPane" name="jTextPane147">
-      <Properties>
-        <Property name="editable" type="boolean" value="false"/>
-      </Properties>
-    </Component>
-    <Component class="javax.swing.JTextPane" name="jTextPane148">
-    </Component>
-    <Component class="javax.swing.JTextPane" name="jTextPane149">
-      <Properties>
-        <Property name="editable" type="boolean" value="false"/>
-      </Properties>
-    </Component>
-    <Component class="javax.swing.JTextPane" name="jTextPane150">
-      <Properties>
-        <Property name="editable" type="boolean" value="false"/>
-      </Properties>
-    </Component>
-    <Component class="javax.swing.JTextPane" name="jTextPane151">
-    </Component>
-    <Component class="javax.swing.JTextPane" name="jTextPane152">
-      <Properties>
-        <Property name="editable" type="boolean" value="false"/>
-      </Properties>
-    </Component>
-    <Component class="javax.swing.JTextPane" name="jTextPane153">
-      <Properties>
-        <Property name="editable" type="boolean" value="false"/>
-      </Properties>
-    </Component>
-    <Component class="javax.swing.JTextPane" name="jTextPane154">
-    </Component>
-    <Component class="javax.swing.JTextPane" name="jTextPane155">
-      <Properties>
-        <Property name="editable" type="boolean" value="false"/>
-      </Properties>
-    </Component>
-    <Component class="javax.swing.JTextPane" name="jTextPane156">
-      <Properties>
-        <Property name="editable" type="boolean" value="false"/>
-      </Properties>
-    </Component>
-    <Component class="javax.swing.JTextPane" name="jTextPane157">
-    </Component>
-    <Component class="javax.swing.JTextPane" name="jTextPane158">
-      <Properties>
-        <Property name="editable" type="boolean" value="false"/>
-      </Properties>
-    </Component>
-    <Component class="javax.swing.JTextPane" name="jTextPane159">
-      <Properties>
-        <Property name="editable" type="boolean" value="false"/>
-      </Properties>
-    </Component>
-    <Component class="javax.swing.JTextPane" name="jTextPane160">
-    </Component>
-    <Component class="javax.swing.JTextPane" name="jTextPane161">
-      <Properties>
-        <Property name="editable" type="boolean" value="false"/>
-      </Properties>
-    </Component>
-    <Component class="javax.swing.JTextPane" name="jTextPane162">
-      <Properties>
-        <Property name="editable" type="boolean" value="false"/>
-      </Properties>
-    </Component>
-    <Component class="javax.swing.JTextPane" name="jTextPane163">
-    </Component>
-    <Component class="javax.swing.JTextPane" name="jTextPane164">
-      <Properties>
-        <Property name="editable" type="boolean" value="false"/>
-      </Properties>
-    </Component>
-    <Component class="javax.swing.JTextPane" name="jTextPane165">
-      <Properties>
-        <Property name="editable" type="boolean" value="false"/>
-      </Properties>
-    </Component>
-    <Component class="javax.swing.JTextPane" name="jTextPane166">
-    </Component>
-    <Component class="javax.swing.JTextPane" name="jTextPane167">
-      <Properties>
-        <Property name="editable" type="boolean" value="false"/>
-      </Properties>
-    </Component>
-    <Component class="javax.swing.JTextPane" name="jTextPane168">
-      <Properties>
-        <Property name="editable" type="boolean" value="false"/>
-      </Properties>
-    </Component>
-    <Component class="javax.swing.JTextPane" name="jTextPane169">
-    </Component>
-    <Component class="javax.swing.JTextPane" name="jTextPane170">
-      <Properties>
-        <Property name="editable" type="boolean" value="false"/>
-      </Properties>
-    </Component>
-    <Component class="javax.swing.JTextPane" name="jTextPane171">
-      <Properties>
-        <Property name="editable" type="boolean" value="false"/>
-      </Properties>
-    </Component>
-    <Component class="javax.swing.JTextPane" name="jTextPane172">
-    </Component>
-    <Component class="javax.swing.JTextPane" name="jTextPane173">
-      <Properties>
-        <Property name="editable" type="boolean" value="false"/>
-      </Properties>
-    </Component>
-    <Component class="javax.swing.JTextPane" name="jTextPane174">
-      <Properties>
-        <Property name="editable" type="boolean" value="false"/>
-      </Properties>
-    </Component>
-    <Component class="javax.swing.JTextPane" name="jTextPane175">
-    </Component>
-    <Component class="javax.swing.JTextPane" name="jTextPane176">
-      <Properties>
-        <Property name="editable" type="boolean" value="false"/>
-      </Properties>
-    </Component>
-    <Component class="javax.swing.JTextPane" name="jTextPane177">
-      <Properties>
-        <Property name="editable" type="boolean" value="false"/>
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Component id="DepotVerkaufen1" min="-2" max="-2" attributes="0"/>
+                  <Component id="jTextPane1" min="-2" max="-2" attributes="0"/>
+                  <Component id="jTextPane2" min="-2" max="-2" attributes="0"/>
+                  <Component id="jTextPane3" min="-2" max="-2" attributes="0"/>
       </Properties>
     </Component>
   </SubComponents>

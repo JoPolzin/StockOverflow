@@ -5,6 +5,8 @@
  */
 package model;
 
+import java.util.Arrays;
+
 /**
  *
  * Request#2: Konstuktor ausarbeiten
@@ -83,9 +85,11 @@ public class Benutzer {
 
     public Benutzer(String Benutzername) {
         this.Benutzername = Benutzername;
+        depot = new Aktienkonto();
     }
 
     public Benutzer() {
+        depot = new Aktienkonto();
     }
 
     /**
@@ -210,6 +214,7 @@ public class Benutzer {
         ausgabe+="Passwort: "+Passwort+"\n";
         ausgabe+="Kontostand: "+Kontostand+"\n";
         ausgabe+="Email: "+Email+"\n";
+        ausgabe+="Depot: "+Arrays.toString(depot.getAktien().toArray())+"\n";
         return ausgabe;
     }
 

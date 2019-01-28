@@ -57,12 +57,14 @@ public class FirebaseZugriff {
      * @return alle Benutzer in einer ArrayList
      */
     public ArrayList<Benutzer> benutzerAuslesen() {
-        FirebaseResponse response;
+        FirebaseResponse response, response2;
         ArrayList<Benutzer> al = new ArrayList();
 
         try {
             response = firebase.get("users");
+            
             Iterator it = response.getBody().entrySet().iterator();
+
             while (it.hasNext()) {
                 Map.Entry pairs = (Map.Entry) it.next();
                 LinkedHashMap lhm = (LinkedHashMap) pairs.getValue();
@@ -75,6 +77,28 @@ public class FirebaseZugriff {
                 tmp.setEmail((String) lhm.get("email"));
                 tmp.setKontostand((Double) lhm.get("kontostand"));
                 tmp.setPasswort((String) lhm.get("passwort"));
+                response2 = firebase.get("depots/" + tmp.getBenutzername());
+
+                Iterator it2 = response2.getBody().entrySet().iterator();
+
+                while (it2.hasNext()) {
+                    System.out.println("Iterator ausgelöst...");
+                    Map.Entry pairs2 = (Map.Entry) it2.next();
+                    LinkedHashMap lhm2 = (LinkedHashMap) pairs2.getValue();
+                    System.out.println(lhm2.toString());
+                    //Hier Ergänzen, wenn der Benutzer weitere Attribute bekommt!
+                    if (!lhm2.containsKey("kaeufername") || !lhm2.containsKey("anzahl") || !lhm2.containsKey("isin")|| !lhm2.containsKey("preis")) {
+                        return null;
+                    }
+                    int anzahl = (int) lhm2.get("anzahl");
+                    for (int i = 1; i <= anzahl; i = i + 1) {
+                        Aktie akt = new Aktie("", (String) lhm2.get("isin"));
+                        akt.setPreis((double) lhm2.get("preis"));
+                        tmp.getDepot().getAktien().add(akt);
+                        System.out.println("Aktie ergaenzt...");
+                    }
+
+                }
                 al.add(tmp);
             }
         } catch (FirebaseException ex) {
@@ -96,8 +120,9 @@ public class FirebaseZugriff {
     }
 
     /**
-     * ergaenzt einen neuen Benutzer ohne die bestehenden zu ver�ndern.
-     * Der Benutzer kommt in das Child "users". Das Aktienkonto kommt in das child "depots"
+     * ergaenzt einen neuen Benutzer ohne die bestehenden zu ver�ndern. Der
+     * Benutzer kommt in das Child "users". Das Aktienkonto kommt in das child
+     * "depots"
      *
      * @param b der neue Benutzer
      */
@@ -113,26 +138,28 @@ public class FirebaseZugriff {
         } catch (FirebaseException | JacksonUtilityException | UnsupportedEncodingException ex) {
             Logger.getLogger(FirebaseZugriff.class.getName()).log(Level.SEVERE, null, ex);
         }
+
         b.setDepot(ak); //Rücksetzen um b nicht zu verändern...
         dataMap.clear();
-        int zaehler=0;
-        Hashtable<String,Integer> st = ak.getGekaufte_Aktien();
+        int zaehler = 0;
+        Hashtable<String, Integer> st = ak.getGekaufte_Aktien();
         for (Aktie a : ak.getAktien()) {
-          
+
             int kaufzahl = st.get(a.getISIN());
             Aktienkauf akt = new Aktienkauf(b.getBenutzername(), a.getISIN(), kaufzahl);
+            akt.setPreis(a.getPreis());
             System.out.println(akt.toString());
-            dataMap.put(String.valueOf(zaehler),akt);
+            dataMap.put("a" + zaehler, akt);
             zaehler++;
         }
-        
+
         try {
-            FirebaseResponse response = firebase.patch("depots", dataMap);
+            FirebaseResponse response = firebase.patch("depots/" + b.getBenutzername(), dataMap);
             dataMap.clear();
         } catch (FirebaseException | JacksonUtilityException | UnsupportedEncodingException ex) {
             Logger.getLogger(FirebaseZugriff.class.getName()).log(Level.SEVERE, null, ex);
         }
-        
+
     }
 
     /**
@@ -201,7 +228,8 @@ public class FirebaseZugriff {
         a3.setStueckzahl(1);
         Aktienkonto ak = new Aktienkonto();
         ak.aktie_kaufen("DE0007164600", 4, Float.parseFloat("92.66"));
-        
+        ak.aktie_kaufen("DE000A1EWWW0", 1, Float.parseFloat("204.20"));
+
         System.out.println(ak.toString());
         b.setDepot(ak);
         FirebaseZugriff fz = new FirebaseZugriff();

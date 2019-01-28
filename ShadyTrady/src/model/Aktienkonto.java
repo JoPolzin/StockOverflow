@@ -11,7 +11,7 @@ import java.util.Hashtable;
 import java.util.Iterator;
 
 /**
- * 
+ *
  * Aktienkonto wird bei der erzeugung des Benutzers erzeugt. nach
  *
  * @author zochrab.blume
@@ -19,27 +19,28 @@ import java.util.Iterator;
 public class Aktienkonto {
 
     private Integer id = -1;
-/**
- * 
- * Key ist isin 
- * value ist stueckzahl
- */
+    /**
+     *
+     * Key ist isin value ist stueckzahl
+     */
     private Hashtable<String, Integer> Gekaufte_Aktien = new Hashtable();
     private ArrayList<Aktie> Aktien = new ArrayList();
- 
+
     private maincontrol c;
-   
+
     public Aktienkonto() {
         Gekaufte_Aktien = new Hashtable<>();
+        Aktien = new ArrayList();
     }
 
     public Aktienkonto(maincontrol mc) {
         Gekaufte_Aktien = new Hashtable<>();
+        Aktien = new ArrayList();
 
         this.c = mc;
 
     }
-    
+
     private double Guthaben;
 
     /**
@@ -50,26 +51,42 @@ public class Aktienkonto {
      * @param Preis
      */
     public void aktie_kaufen(String aid, int Stueckzahl, Float Preis) {
-      
 
         if (!Gekaufte_Aktien.isEmpty()) {
 
-            if (this.Gekaufte_Aktien.containsKey(aid)) {
+            if (!this.Gekaufte_Aktien.containsKey(aid)) {
                 Gekaufte_Aktien.put(aid, Stueckzahl);
                 Aktien.add(new Aktie(aid, Preis));
             } else {
-           
+
                 this.Gekaufte_Aktien.replace(aid, this.Gekaufte_Aktien.get(aid) + Stueckzahl);
-            
-            } 
+
+            }
+
+        } else {
+
+            Gekaufte_Aktien.put(aid, Stueckzahl);
+            Aktien.add(new Aktie(aid, Preis));
+        }
+
+    }
+
+    public boolean aktieverkaufen(String aid, Integer Stueckzahl, Float Preis) {
+
+        if (Gekaufte_Aktien.isEmpty() || this.Aktien.isEmpty()) {
+            return false;
+        } else {
+
+            if (this.Gekaufte_Aktien.containsKey(aid)) {
+                if (this.Gekaufte_Aktien.get(aid) >= Stueckzahl) {
+                    this.Gekaufte_Aktien.replace(aid, this.Gekaufte_Aktien.get(aid) - Stueckzahl);
+                    return true;
+                }
+
+            }
 
         }
-        else {
-          
-        Gekaufte_Aktien.put(aid, Stueckzahl);
-                Aktien.add(new Aktie(aid, Preis));
-        }
-    
+        return false;
 
     }
 
@@ -153,19 +170,17 @@ public class Aktienkonto {
         this.Gekaufte_Aktien = Gekaufte_Aktien;
     }
 
-   
-    
     @Override
-    public String toString(){
+    public String toString() {
         String ausgabe = "";
-        ausgabe+="ID: "+id+"\n";
-      
-        ausgabe+="gekaufte Aktien, Anzahl: "+Gekaufte_Aktien.size()+"\n";
- 
-        for (Aktie a : this.Aktien){
-          ausgabe+= a.toString() + "\n" 
-                  +  " Stueckzahl: " + this.Gekaufte_Aktien.get(a.getISIN()) + "\n";
-        }     
+        ausgabe += "ID: " + id + "\n";
+
+        ausgabe += "gekaufte Aktien, Anzahl: " + Gekaufte_Aktien.size() + "\n";
+
+        for (Aktie a : this.Aktien) {
+            ausgabe += a.toString() + "\n"
+                    + " Stueckzahl: " + this.Gekaufte_Aktien.get(a.getISIN()) + "\n";
+        }
         return ausgabe;
     }
 }
