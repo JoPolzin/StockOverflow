@@ -389,6 +389,11 @@ public class maincontrol {
         return sort;
         
     }
+    /**
+     * 
+     * 
+     * Initialisiert das Leaderboard.
+     */
     
     public void LeaderboardInit() {
         double GesamtKapital = 0;
@@ -413,5 +418,18 @@ public class maincontrol {
         }
         
     }
+    
+    public void aktualisiereLeaderboard(){
+        this.al = this.fz.benutzerAuslesen();
+        this.LeaderboardInit();
+        
+        
+        
+        
+        
+    }
+    
+    
+    
     
 }

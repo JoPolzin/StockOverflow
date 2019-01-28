@@ -13,6 +13,9 @@ import control.maincontrol;
  */
 public class Leaderboard extends javax.swing.JFrame {
     private maincontrol c;
+    
+    
+    
     /**
      * Creates new form Leaderboard
      */
@@ -56,6 +59,7 @@ public class Leaderboard extends javax.swing.JFrame {
         JLPlatz4 = new javax.swing.JLabel();
         JLPlatz5 = new javax.swing.JLabel();
         jButton1 = new javax.swing.JButton();
+        aktualisieren = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -162,6 +166,13 @@ public class Leaderboard extends javax.swing.JFrame {
             }
         });
 
+        aktualisieren.setText("aktualisieren");
+        aktualisieren.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                aktualisierenActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -202,7 +213,9 @@ public class Leaderboard extends javax.swing.JFrame {
             .addGroup(layout.createSequentialGroup()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(249, 249, 249)
+                        .addGap(21, 21, 21)
+                        .addComponent(aktualisieren)
+                        .addGap(155, 155, 155)
                         .addComponent(JLPlatz1))
                     .addGroup(layout.createSequentialGroup()
                         .addGap(222, 222, 222)
@@ -227,8 +240,10 @@ public class Leaderboard extends javax.swing.JFrame {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jLabel1)
                     .addComponent(jButton1))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(JLPlatz1)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(JLPlatz1)
+                    .addComponent(aktualisieren))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(Platz1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -253,7 +268,7 @@ public class Leaderboard extends javax.swing.JFrame {
                     .addComponent(Platz5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(Punktzahl5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(JLPlatz5))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 88, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 87, Short.MAX_VALUE)
                 .addComponent(Gesamtkapital)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(GesamtPunktzahl, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -312,6 +327,10 @@ public class Leaderboard extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_jButton1ActionPerformed
 
+    private void aktualisierenActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_aktualisierenActionPerformed
+     c.aktualisiereLeaderboard();
+    }//GEN-LAST:event_aktualisierenActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -365,6 +384,7 @@ public class Leaderboard extends javax.swing.JFrame {
     public javax.swing.JTextField Punktzahl3;
     public javax.swing.JTextField Punktzahl4;
     public javax.swing.JTextField Punktzahl5;
+    private javax.swing.JButton aktualisieren;
     private javax.swing.JButton jButton1;
     private javax.swing.JLabel jLabel1;
     // End of variables declaration//GEN-END:variables
