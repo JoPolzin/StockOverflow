@@ -13,9 +13,10 @@ public class Aktienkauf {
     private String kaeufername;
     private String isin;
     private int anzahl;
-    public Aktienkauf(String derKaeufer, String dieIISN, int dieAnzahl){
+    private double preis;
+    public Aktienkauf(String derKaeufer, String dieISIN, int dieAnzahl){
         kaeufername = derKaeufer;
-        isin = dieIISN;
+        isin = dieISIN;
         anzahl = dieAnzahl;
     }
 
@@ -41,7 +42,7 @@ public class Aktienkauf {
     }
 
     /**
-     * @param iisn the iisn to set
+     * @param isin the iisn to set
      */
     public void setIisn(String isin) {
         this.isin = isin;
@@ -68,5 +69,19 @@ public class Aktienkauf {
         ausgabe+="IISN: "+isin+"\n";
         ausgabe+="Anzahl: "+anzahl+"\n";
         return ausgabe;
+    }
+
+    /**
+     * @return the preis
+     */
+    public double getPreis() {
+        return preis;
+    }
+
+    /**
+     * @param preis the preis to set
+     */
+    public void setPreis(double preis) {
+        this.preis = preis;
     }
 }
