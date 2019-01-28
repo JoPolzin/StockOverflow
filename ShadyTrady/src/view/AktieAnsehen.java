@@ -174,6 +174,7 @@ public class AktieAnsehen extends javax.swing.JFrame {
             }
         });
 
+        ISIN.setEditable(false);
         ISIN.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 ISINActionPerformed(evt);
@@ -195,6 +196,8 @@ public class AktieAnsehen extends javax.swing.JFrame {
                 AktualisierenActionPerformed(evt);
             }
         });
+
+        Name.setEditable(false);
 
         jLabel1.setText("Name:");
 
@@ -327,12 +330,15 @@ public class AktieAnsehen extends javax.swing.JFrame {
 		}//GEN-LAST:event_LogInAnsehenActionPerformed
 
     private void zurückAktieAnsehenActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_zurückAktieAnsehenActionPerformed
+        this.c.setAktIsin(this.ISIN.getText());
         this.c.switchTo("StockOverflowGUI");    }//GEN-LAST:event_zurückAktieAnsehenActionPerformed
 
     private void KaufenAnsehenActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_KaufenAnsehenActionPerformed
+        this.c.setAktIsin(this.ISIN.getText());
         this.c.switchTo("AktieKaufen");    }//GEN-LAST:event_KaufenAnsehenActionPerformed
-
+        
     private void VerkaufenAnsehenActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_VerkaufenAnsehenActionPerformed
+        this.c.setAktIsin(this.ISIN.getText());
         this.c.switchTo("AktieVerkaufen");    }//GEN-LAST:event_VerkaufenAnsehenActionPerformed
 
     private void ISINActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ISINActionPerformed

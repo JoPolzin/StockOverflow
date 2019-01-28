@@ -815,7 +815,7 @@ public class StockOverflowGUI extends javax.swing.JFrame {
     }//GEN-LAST:event_LogInGUIActionPerformed
 
     private void DepotGUIActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_DepotGUIActionPerformed
-        c.switchTo("EigenesDepot");
+        c.switchTo("AnmeldeFenster");
     }//GEN-LAST:event_DepotGUIActionPerformed
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed

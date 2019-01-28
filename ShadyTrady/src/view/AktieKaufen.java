@@ -51,11 +51,17 @@ public class AktieKaufen extends javax.swing.JFrame {
         StockOverflowKaufen.setFont(new java.awt.Font("Penultimate", 1, 36)); // NOI18N
         StockOverflowKaufen.setText("StockOverflow");
 
+        KaufenNameDerAktieEingabe.setEditable(false);
+
         KaufenGesamtpreis.setText("Gesamtpreis");
 
         KaufenNameDerAaktie.setText("Name der Aktie");
 
+        KaufenStückzahlEingabe.setEditable(false);
+
         KaufenPreisProStück.setText("Preis pro Stück");
+
+        KaufenPreisProStückEingabe.setEditable(false);
 
         KaufenStückzaahl.setText("Stückzahl");
 
@@ -138,7 +144,7 @@ public class AktieKaufen extends javax.swing.JFrame {
 
     private void KaufenKaufenActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_KaufenKaufenActionPerformed
   c.aktiekaufen(this.KaufenNameDerAaktie.getText(), Integer.parseInt(this.KaufenStückzaahl.getText()), Float.parseFloat(this.KaufenGesamtpreis.getText()));
-        this.c.switchTo("EigenesDepot");    }//GEN-LAST:event_KaufenKaufenActionPerformed
+        this.c.switchTo("KaufBestätigung");    }//GEN-LAST:event_KaufenKaufenActionPerformed
 
     private void KaufenAbbrechenActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_KaufenAbbrechenActionPerformed
         this.c.switchTo("StockOverflowGUI");    }//GEN-LAST:event_KaufenAbbrechenActionPerformed
