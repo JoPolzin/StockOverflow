@@ -23,7 +23,9 @@ public class Leaderboard extends javax.swing.JFrame {
        public Leaderboard(maincontrol mc) {
         this.c = mc;
         
+        
         initComponents();
+        
     }
 
     /**
@@ -346,23 +348,23 @@ public class Leaderboard extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JTextField GesamtPunktzahl;
+    public javax.swing.JTextField GesamtPunktzahl;
     private javax.swing.JLabel Gesamtkapital;
     private javax.swing.JLabel JLPlatz1;
     private javax.swing.JLabel JLPlatz2;
     private javax.swing.JLabel JLPlatz3;
     private javax.swing.JLabel JLPlatz4;
     private javax.swing.JLabel JLPlatz5;
-    private javax.swing.JTextField Platz1;
-    private javax.swing.JTextField Platz2;
-    private javax.swing.JTextField Platz3;
-    private javax.swing.JTextField Platz4;
-    private javax.swing.JTextField Platz5;
-    private javax.swing.JTextField Punktzahl1;
-    private javax.swing.JTextField Punktzahl2;
-    private javax.swing.JTextField Punktzahl3;
-    private javax.swing.JTextField Punktzahl4;
-    private javax.swing.JTextField Punktzahl5;
+    public javax.swing.JTextField Platz1;
+    public javax.swing.JTextField Platz2;
+    public javax.swing.JTextField Platz3;
+    public javax.swing.JTextField Platz4;
+    public javax.swing.JTextField Platz5;
+    public javax.swing.JTextField Punktzahl1;
+    public javax.swing.JTextField Punktzahl2;
+    public javax.swing.JTextField Punktzahl3;
+    public javax.swing.JTextField Punktzahl4;
+    public javax.swing.JTextField Punktzahl5;
     private javax.swing.JButton jButton1;
     private javax.swing.JLabel jLabel1;
     // End of variables declaration//GEN-END:variables

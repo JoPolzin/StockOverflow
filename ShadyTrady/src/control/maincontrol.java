@@ -6,6 +6,7 @@
 package control;
 
 import Firebasezugriff.FirebaseZugriff;
+import edu.emory.mathcs.backport.java.util.Collections;
 import view.*;
 import model.*;
 import model.OA;
@@ -23,11 +24,11 @@ public class maincontrol {
     private AktieAnsehen aktieAnsehen;
 
     private AktieKaufen aktieKaufen;
-    
+
     private KaufBestätigung kaufBestätigung;
 
     private AktieVerkaufen aktieVerkaufen;
-    
+
     private VerkaufBestätigung verkaufBestätigung;
 
     private AnmeldeFenster anmeldeFenster;
@@ -39,12 +40,12 @@ public class maincontrol {
     private EigenesDepot eigenesDepot;
 
     private StockOverflowGUI stockOverflowGUI;
-    
+
     private Leaderboard leaderboard;
-    
+
     private Loading loading;
-    
-    private String aktIsin; 
+
+    private String aktIsin;
 
     private FirebaseZugriff fz;
     private ArrayList<Benutzer> al;
@@ -76,17 +77,21 @@ public class maincontrol {
         loading.jProgressBar1.setValue(30);
         stockOverflowGUI = new StockOverflowGUI(this);
         loading.jProgressBar1.setValue(33);
-        leaderboard = new Leaderboard(this);
+        
         fz = new FirebaseZugriff();
         al = fz.benutzerAuslesen();
         loading.jProgressBar1.setValue(80);
         if (al == null) {
             JOptionPane.showMessageDialog(null, "Keine Benutzer geladen oder Firebase ungültig.");
         }
+        leaderboard = new Leaderboard(this);
+        LeaderboardInit();
+        AktienDatenInitialisieren();
         loading.jProgressBar1.setValue(100);
         loading.setVisible(false);
         stockOverflowGUI.setVisible(true);
-        AktienDatenInitialisieren();
+        
+        
     }
 
     public boolean getEingeloggt() {
@@ -148,9 +153,9 @@ public class maincontrol {
                 break;
             case "EigenesDepot":
                 if (eingeloggt) {
-                eigenesDepot.setVisible(true);
+                    eigenesDepot.setVisible(true);
                 } else {
-                anmeldeFenster.setVisible(true);
+                    anmeldeFenster.setVisible(true);
                 }
                 break;
             case "StockOverflowGUI":
@@ -190,11 +195,11 @@ public class maincontrol {
             System.out.println("Login erfolgreich");
             JOptionPane.showMessageDialog(null, "Login erfolgreich.\n Angemeldeter Benutezr:\n" + b.toString());
             b = new Benutzer(benutzername);
-           
+
             erfolgreich = true;
             this.eingeloggt = true;
-             this.switchTo("EigenesDepot");
-            
+            this.switchTo("EigenesDepot");
+
         }
 
     }
@@ -341,6 +346,7 @@ public class maincontrol {
         }
 
     }
+
     public void aktieverkaufen(String isin, Integer Stückzahl, Float Preis) {
         if (this.eingeloggt) {
             b.setKontostand(b.getKontostand() + Preis);
@@ -352,5 +358,59 @@ public class maincontrol {
         }
 
     }
+    /**
+     * Gibt eine aufwärts sortierte Liste zurück.
+     * 
+     * 
+     * 
+     * @param Benutzer
+     * @return 
+     */
+
+    public ArrayList<Benutzer> SortBenutzer(ArrayList<Benutzer> Benutzer) {
+        ArrayList<Benutzer> sort = Benutzer;
+        boolean done = false;
+
+        while (!done) {
+            done = true;
+            for (int i = 0; i < sort.size(); i++) {
+                if (i != sort.size()-1) {
+                    if (sort.get(i).GesamtKapital() > sort.get(i + 1).GesamtKapital()) {
+                        Benutzer m = sort.get(i + 1);
+                        sort.set(i + 1, sort.get(i));
+                        sort.set(i, m);
+                        done = false;
+                    }
+                }
+
+            }
+
+        }
+        return sort;
+
+    }
+    
+    public void LeaderboardInit(){
+        ArrayList<Benutzer> sortList= this.SortBenutzer(al);
+        System.out.println(sortList.toString());
+        System.out.println(sortList.get(0).getBenutzername());
+        if(sortList.size()>=5){
+        leaderboard.Platz1.setText(sortList.get(0).getBenutzername());
+        leaderboard.Platz2.setText(sortList.get(1).getBenutzername());
+        leaderboard.Platz3.setText(sortList.get(2).getBenutzername());
+        leaderboard.Platz4.setText(sortList.get(3).getBenutzername());
+        leaderboard.Platz5.setText(sortList.get(4).getBenutzername());
+        leaderboard.Punktzahl1.setText(""+sortList.get(0).GesamtKapital());
+        leaderboard.Punktzahl2.setText(""+sortList.get(1).GesamtKapital());
+        leaderboard.Punktzahl3.setText(""+sortList.get(2).GesamtKapital());
+        leaderboard.Punktzahl4.setText(""+sortList.get(3).GesamtKapital());
+        leaderboard.Punktzahl5.setText(""+sortList.get(4).GesamtKapital());
+        }
+        
+        
+    }
+    
+    
+    
 
 }
