@@ -62,7 +62,7 @@ public class FirebaseZugriff {
 
         try {
             response = firebase.get("users");
-            
+
             Iterator it = response.getBody().entrySet().iterator();
 
             while (it.hasNext()) {
@@ -82,21 +82,21 @@ public class FirebaseZugriff {
                 Iterator it2 = response2.getBody().entrySet().iterator();
 
                 while (it2.hasNext()) {
-                    
+
                     Map.Entry pairs2 = (Map.Entry) it2.next();
                     LinkedHashMap lhm2 = (LinkedHashMap) pairs2.getValue();
                     System.out.println(lhm2.toString());
                     //Hier Ergänzen, wenn der Benutzer weitere Attribute bekommt!
-                    if (!lhm2.containsKey("anzahl") || !lhm2.containsKey("isin")|| !lhm2.containsKey("preis")) {
+                    if (!lhm2.containsKey("anzahl") || !lhm2.containsKey("isin") || !lhm2.containsKey("preis")) {
                         return null;
                     }
                     int anzahl = (int) lhm2.get("anzahl");
                     for (int i = 1; i <= anzahl; i = i + 1) {
-                        Aktie akt = new Aktie("", (String) lhm2.get("isin"));
+                        Aktie akt = new Aktie((String) lhm2.get("isin"),(double)lhm2.get("preis"));
                         akt.setPreis((double) lhm2.get("preis"));
-                        akt.setStueckzahl((int)lhm2.get("anzahl"));
+                        akt.setStueckzahl((int) lhm2.get("anzahl"));
                         tmp.getDepot().getAktien().add(akt);
-                       
+
                     }
 
                 }
@@ -109,7 +109,38 @@ public class FirebaseZugriff {
         }
         return al;
     }
+    /**
+     * Gibt die Anzahl der childs an dieser Position wieder.
+     * @param Reference 
+     */
 
+    public void childCount(String Reference) {
+        FirebaseResponse response;
+        try {
+            response = firebase.get(Reference);
+            Iterator it = response.getBody().entrySet().iterator();
+            int Zähler = 0;
+            while (it.hasNext()) {
+                it.next();
+                Zähler++;
+            }
+            System.out.println(Zähler);
+
+        } catch (FirebaseException ex) {
+            System.out.println("Fehler");
+        } catch (UnsupportedEncodingException ex) {
+            System.out.println("Fehler");
+        }
+
+    }
+
+   
+    
+    
+    
+    
+    
+    
     /**
      * Ver�ndert den Firebaseeintrag eines Benutzers. Alle anderen bleiben
      * bestehen.
@@ -221,12 +252,10 @@ public class FirebaseZugriff {
         b.setEmail("j@kl.mn");
         b.setPasswort("informatik");
         b.setKontostand(1000);
-        Aktie a1 = new Aktie("SAP", "DE0007164600");
+        Aktie a1 = new Aktie("DE0007164600", 45.78);
         a1.setStueckzahl(4);
-        Aktie a2 = new Aktie("Alphabet", "US02079K3059");
+        Aktie a2 = new Aktie("US02079K3059", 55);
         a2.setStueckzahl(2);
-        Aktie a3 = new Aktie("Microsoft", "US5949181045");
-        a3.setStueckzahl(1);
         Aktienkonto ak = new Aktienkonto();
         ak.aktie_kaufen("DE0007164600", 4, Float.parseFloat("92.66"));
         ak.aktie_kaufen("DE000A1EWWW0", 1, Float.parseFloat("204.20"));

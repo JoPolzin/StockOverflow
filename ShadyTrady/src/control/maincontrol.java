@@ -348,8 +348,14 @@ public class maincontrol {
 
     public void aktieverkaufen(String isin, Integer Stückzahl, Float Preis) {
         if (this.eingeloggt) {
-            b.setKontostand(b.getKontostand() + Preis);
-            b.getDepot().aktie_kaufen(isin, Stückzahl, Preis);
+            
+            
+            
+            
+            
+            
+            
+            
 
         } else {
             this.switchTo("AnmeldeFenster");

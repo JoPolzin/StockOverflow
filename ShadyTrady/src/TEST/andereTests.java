@@ -5,6 +5,7 @@
  */
 package TEST;
 
+import Firebasezugriff.FirebaseZugriff;
 import control.maincontrol;
 import java.util.ArrayList;
 import model.Aktie;
@@ -17,7 +18,7 @@ import model.Benutzer;
 public class andereTests {
 
     public static void main(String[] args) {
-        ArrayList<Benutzer> benutzer = new ArrayList<>();
+        /*ArrayList<Benutzer> benutzer = new ArrayList<>();
         Benutzer b = new Benutzer();
         b.setBenutzername("b");
         b.setKontostand(550);
@@ -42,7 +43,13 @@ public class andereTests {
         System.out.println("unsort:"+benutzer.toString());
         //benutzer = maincontrol.SortBenutzer(benutzer);
         System.out.println("sort:"+ benutzer.toString());
-        System.out.println(b3.GesamtKapital());
+        System.out.println(b3.GesamtKapital());*/
+        
+        FirebaseZugriff fb = new FirebaseZugriff();
+        
+        
+        
+        
         
         
         

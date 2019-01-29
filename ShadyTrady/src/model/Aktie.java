@@ -42,8 +42,8 @@ public class Aktie {
     /**Kreiert Objekt der Klasse Aktie
      * @param name.*
      * @param ISIN*/
-    public Aktie(String name,String ISIN){
-        this.name = name;
+    public Aktie(String ISIN,double Preis){
+        this.preis = Preis;
         this.ISIN = ISIN;
         
         
@@ -53,25 +53,7 @@ public class Aktie {
         
         
     }
-    
-    /**
-     *
-     * @param iSIN
-     * @param Preis
-     * @param stueck
-     */
-    public Aktie(String iSIN, double Preis){
-        this.ISIN = iSIN;
-        this.preis = Preis;
-       
-        
-        
-        
-        
-        
-        
-        
-    }
+
     
     
     
