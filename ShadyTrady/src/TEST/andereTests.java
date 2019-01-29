@@ -44,8 +44,9 @@ public class andereTests {
         //benutzer = maincontrol.SortBenutzer(benutzer);
         System.out.println("sort:"+ benutzer.toString());
         System.out.println(b3.GesamtKapital());*/
-        
-        FirebaseZugriff fb = new FirebaseZugriff();
+        maincontrol c = new maincontrol();
+       
+        FirebaseZugriff fb = new FirebaseZugriff(c);
         
         
         

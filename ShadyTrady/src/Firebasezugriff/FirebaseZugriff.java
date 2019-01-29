@@ -5,6 +5,7 @@
  */
 package Firebasezugriff;
 
+import control.maincontrol;
 import java.io.UnsupportedEncodingException;
 import java.util.ArrayList;
 import java.util.Enumeration;
@@ -32,8 +33,10 @@ public class FirebaseZugriff {
 
     final String firebase_baseUrl = "https://aktienspiel-97ea0.firebaseio.com/";
     Firebase firebase;
+    maincontrol c;
 
-    public FirebaseZugriff() {
+    public FirebaseZugriff(maincontrol c) {
+        this.c = c;
         try {
             firebase = new Firebase(firebase_baseUrl);
 
@@ -114,7 +117,7 @@ public class FirebaseZugriff {
      * @param Reference 
      */
 
-    public void childCount(String Reference) {
+    public int childCount(String Reference) {
         FirebaseResponse response;
         try {
             response = firebase.get(Reference);
@@ -123,14 +126,16 @@ public class FirebaseZugriff {
             while (it.hasNext()) {
                 it.next();
                 Zähler++;
+                
             }
-            System.out.println(Zähler);
+            return Zähler;
 
         } catch (FirebaseException ex) {
             System.out.println("Fehler");
         } catch (UnsupportedEncodingException ex) {
             System.out.println("Fehler");
         }
+        return 0;
 
     }
 
@@ -262,9 +267,38 @@ public class FirebaseZugriff {
 
         System.out.println(ak.toString());
         b.setDepot(ak);
-        FirebaseZugriff fz = new FirebaseZugriff();
-        fz.ergaenzeBenutzer(b);
+   
 
+    }
+    /**
+     * 
+     * 
+     * Ergänz eine Aktie zudem grade angemeldeten Benutzer.
+     * @param ak 
+     */
+    
+    
+    
+    public void aktieErgänzen(Aktienkauf ak){
+        Map<String, Object> dataMap = new LinkedHashMap<String, Object>();
+        int Stelle = this.childCount("depots/"+c.getB().getBenutzername())+1;
+        dataMap.put("a"+Stelle, ak);
+        try {
+            FirebaseResponse response = firebase.patch("depots/" + c.getB().getBenutzername(), dataMap);
+            dataMap.clear();
+        } catch (FirebaseException | JacksonUtilityException | UnsupportedEncodingException ex) {
+            Logger.getLogger(FirebaseZugriff.class.getName()).log(Level.SEVERE, null, ex);
+        }
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
     }
 
 }

@@ -78,7 +78,7 @@ public class maincontrol {
         stockOverflowGUI = new StockOverflowGUI(this);
         loading.jProgressBar1.setValue(33);
 
-        fz = new FirebaseZugriff();
+        fz = new FirebaseZugriff(this);
         al = fz.benutzerAuslesen();
         loading.jProgressBar1.setValue(80);
         if (al == null) {
@@ -194,7 +194,7 @@ public class maincontrol {
             System.out.println("Login erfolgreich");
             JOptionPane.showMessageDialog(null, "Login erfolgreich.\n Angemeldeter Benutezr:\n" + b.toString());
             b = new Benutzer(benutzername);
-
+            this.b = b;
             erfolgreich = true;
             this.eingeloggt = true;
             this.switchTo("EigenesDepot");
@@ -311,10 +311,15 @@ public class maincontrol {
         aktieAnsehen.ausgewählteISIN = ISIN;
     }
 
-    public void aktiekaufen(String isin, Integer Stückzahl, Float Preis) {
+    public void aktiekaufen(String isin, Integer Stückzahl, Double Preis) {
         if (this.eingeloggt) {
-            b.setKontostand(b.getKontostand() - Preis);
-            b.getDepot().aktie_kaufen(isin, Stückzahl, Preis);
+            //getB().setKontostand(getB().getKontostand() - Preis);
+            //getB().getDepot().aktie_kaufen(isin, Stückzahl, Preis);
+            OA.prepareDocument(isin);
+
+            Aktienkauf ak = new Aktienkauf(isin, Stückzahl);
+            ak.setPreis(Preis);
+            fz.aktieErgänzen(ak);
 
         } else {
             this.switchTo("AnmeldeFenster");
@@ -348,15 +353,6 @@ public class maincontrol {
 
     public void aktieverkaufen(String isin, Integer Stückzahl, Float Preis) {
         if (this.eingeloggt) {
-            
-            
-            
-            
-            
-            
-            
-            
-
         } else {
             this.switchTo("AnmeldeFenster");
 
@@ -400,7 +396,6 @@ public class maincontrol {
      *
      * Initialisiert das Leaderboard.
      */
-
     public void LeaderboardInit() {
         double GesamtKapital = 0;
         ArrayList<Benutzer> sortList = this.SortBenutzer(al);
@@ -418,9 +413,9 @@ public class maincontrol {
             leaderboard.Punktzahl5.setText("" + RundenKommastellen(sortList.get(4).GesamtKapital()));
             for (Benutzer b : sortList) {
                 GesamtKapital = GesamtKapital + b.GesamtKapital();
-                
+
             }
-            
+
             leaderboard.GesamtPunktzahl.setText("" + RundenKommastellen(GesamtKapital));
 
         }
@@ -438,6 +433,20 @@ public class maincontrol {
         this.al = this.fz.benutzerAuslesen();
         this.LeaderboardInit();
 
+    }
+
+    /**
+     * @return the b
+     */
+    public Benutzer getB() {
+        return b;
+    }
+
+    /**
+     * @param b the b to set
+     */
+    public void setB(Benutzer b) {
+        this.b = b;
     }
 
 }
