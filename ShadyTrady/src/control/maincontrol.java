@@ -367,7 +367,8 @@ public class maincontrol {
     }
 
     /**
-     * Gibt eine aufwärts sortierte Liste zurück.
+     * Gibt eine aufwärts sortierte Liste der Bnutzer zurück sortiert nach dem
+     * GesamtKapital.
      *
      *
      *

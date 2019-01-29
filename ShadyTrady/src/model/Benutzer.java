@@ -227,10 +227,13 @@ public class Benutzer {
     public double GesamtKapital() {
         double Kapital = this.getKontostand();
         for (Aktie e : this.depot.getAktien()) {
-
-            OA.prepareDocument(e.getISIN());
             
-            Kapital = Kapital + OA.getAsk() * e.getStueckzahl();
+            OA.prepareDocument(e.getISIN());
+            System.out.println(e.getISIN());
+            System.out.println(e.getStueckzahl());
+            System.out.println(OA.getAsk());
+            double Aktienwert  = (int) Math.round(OA.getAsk()) * e.getStueckzahl();
+            Kapital = Kapital + Aktienwert;
         }
         return Kapital;
 

@@ -93,14 +93,14 @@ public class FirebaseZugriff {
                     if (!lhm2.containsKey("anzahl") || !lhm2.containsKey("isin") || !lhm2.containsKey("preis")) {
                         return null;
                     }
-                    int anzahl = (int) lhm2.get("anzahl");
-                    for (int i = 1; i <= anzahl; i = i + 1) {
+                    //int anzahl = (int) lhm2.get("anzahl");
+                    //for (int i = 1; i <= anzahl; i = i + 1) {
                         Aktie akt = new Aktie((String) lhm2.get("isin"), (double) lhm2.get("preis"));
                         akt.setPreis((double) lhm2.get("preis"));
-                        akt.setStueckzahl((int) lhm2.get("anzahl"));
+                        akt.setStueckzahl((int)lhm2.get("anzahl"));
                         tmp.getDepot().getAktien().add(akt);
 
-                    }
+                    //}
 
                 }
                 al.add(tmp);

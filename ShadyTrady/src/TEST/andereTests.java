@@ -48,7 +48,6 @@ public class andereTests {
         c.setB(b);
         FirebaseZugriff fb = new FirebaseZugriff(c);
         
-        System.out.println(fb.WertEinerReferenz("users/TestNutzer", "passwort"));
         
         
         
