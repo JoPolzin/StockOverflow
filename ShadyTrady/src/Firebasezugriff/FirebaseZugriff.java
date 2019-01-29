@@ -95,7 +95,7 @@ public class FirebaseZugriff {
                     }
                     int anzahl = (int) lhm2.get("anzahl");
                     for (int i = 1; i <= anzahl; i = i + 1) {
-                        Aktie akt = new Aktie((String) lhm2.get("isin"),(double)lhm2.get("preis"));
+                        Aktie akt = new Aktie((String) lhm2.get("isin"), (double) lhm2.get("preis"));
                         akt.setPreis((double) lhm2.get("preis"));
                         akt.setStueckzahl((int) lhm2.get("anzahl"));
                         tmp.getDepot().getAktien().add(akt);
@@ -112,11 +112,12 @@ public class FirebaseZugriff {
         }
         return al;
     }
+
     /**
      * Gibt die Anzahl der childs an dieser Position wieder.
-     * @param Reference 
+     *
+     * @param Reference
      */
-
     public int childCount(String Reference) {
         FirebaseResponse response;
         try {
@@ -126,7 +127,7 @@ public class FirebaseZugriff {
             while (it.hasNext()) {
                 it.next();
                 Zähler++;
-                
+
             }
             return Zähler;
 
@@ -139,13 +140,6 @@ public class FirebaseZugriff {
 
     }
 
-   
-    
-    
-    
-    
-    
-    
     /**
      * Ver�ndert den Firebaseeintrag eines Benutzers. Alle anderen bleiben
      * bestehen.
@@ -267,38 +261,50 @@ public class FirebaseZugriff {
 
         System.out.println(ak.toString());
         b.setDepot(ak);
-   
 
     }
+
     /**
-     * 
-     * 
-     * Ergänz eine Aktie zudem grade angemeldeten Benutzer.
-     * @param ak 
+     *
+     *
+     * Ergänzt eine Aktie zu dem grade angemeldeten Benutzer in der Firebase.
+     *
+     * @param ak
      */
-    
-    
-    
-    public void aktieErgänzen(Aktienkauf ak){
+    public void aktieErgänzen(Aktienkauf ak) {
         Map<String, Object> dataMap = new LinkedHashMap<String, Object>();
-        int Stelle = this.childCount("depots/"+c.getB().getBenutzername())+1;
-        dataMap.put("a"+Stelle, ak);
+        int Stelle = this.childCount("depots/" + c.getB().getBenutzername()) + 1;
+        dataMap.put("a" + Stelle, ak);
         try {
             FirebaseResponse response = firebase.patch("depots/" + c.getB().getBenutzername(), dataMap);
             dataMap.clear();
         } catch (FirebaseException | JacksonUtilityException | UnsupportedEncodingException ex) {
             Logger.getLogger(FirebaseZugriff.class.getName()).log(Level.SEVERE, null, ex);
         }
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
+
+    }
+    /**
+     * Gibt ein Objekt an einer spezifischen Referenz mit einem spezifischen
+     * key wieder
+     * @param Referenz
+     * @param key
+     * @return 
+     */
+
+    public Object WertEinerReferenz(String Referenz, String key) {
+        try {
+            FirebaseResponse response = firebase.get(Referenz);
+            
+            
+            return response.getBody().get(key);
+
+        } catch (FirebaseException ex) {
+            Logger.getLogger(FirebaseZugriff.class.getName()).log(Level.SEVERE, null, ex);
+        } catch (UnsupportedEncodingException ex) {
+            Logger.getLogger(FirebaseZugriff.class.getName()).log(Level.SEVERE, null, ex);
+        }
+        return null;
+
     }
 
 }
