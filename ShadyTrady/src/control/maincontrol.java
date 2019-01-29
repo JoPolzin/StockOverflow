@@ -320,7 +320,13 @@ public class maincontrol {
             Aktienkauf ak = new Aktienkauf(isin, Stückzahl);
             ak.setPreis(Preis);
             fz.aktieErgänzen(ak);
-
+            int neuer_preis = (int) Math.round(Preis);
+            int Wert = (int) Math.round((double)fz.WertEinerReferenz("users/"+b.getBenutzername(),"kontostand"));
+            int neuer_Kontostand = Wert - neuer_preis;
+            b.setKontostand(neuer_Kontostand);
+            fz.aendereBenutzer(b);
+            
+            
         } else {
             this.switchTo("AnmeldeFenster");
 
