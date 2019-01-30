@@ -237,6 +237,7 @@ public class maincontrol {
             tmp.setKontostand(1000);
             fz.ergaenzeBenutzer(tmp);
             JOptionPane.showMessageDialog(null, "Benutzername eingetragen: " + tmp.toString());
+            this.al = this.fz.benutzerAuslesen();
             return true;
         } else {
             JOptionPane.showMessageDialog(null, "Passwortfelder nicht gleich");
