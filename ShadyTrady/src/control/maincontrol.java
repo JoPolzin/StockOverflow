@@ -193,7 +193,7 @@ public class maincontrol {
 
             System.out.println("Login erfolgreich");
             JOptionPane.showMessageDialog(null, "Login erfolgreich.\n Angemeldeter Benutezr:\n" + b.toString());
-            b = new Benutzer(benutzername);
+            
             this.b = b;
             erfolgreich = true;
             this.eingeloggt = true;
@@ -324,6 +324,8 @@ public class maincontrol {
             int Wert = (int) Math.round((double)fz.WertEinerReferenz("users/"+b.getBenutzername(),"kontostand"));
             int neuer_Kontostand = Wert - neuer_preis;
             b.setKontostand(neuer_Kontostand);
+            System.out.println(b.getEmail());
+            System.out.println(b.getPasswort());
             fz.aendereBenutzer(b);
             
             
