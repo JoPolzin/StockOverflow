@@ -21,6 +21,13 @@ import view.StockOverflowGUI;
  */
 public class maincontrol {
 
+    /**
+     * @return the aktieAnsehen
+     */
+    public AktieAnsehen getAktieAnsehen() {
+        return aktieAnsehen;
+    }
+
     private AktieAnsehen aktieAnsehen;
 
     private AktieKaufen aktieKaufen;
@@ -99,7 +106,7 @@ public class maincontrol {
 
     public void switchTo(String Guiname) {
 
-        aktieAnsehen.setVisible(false);
+        getAktieAnsehen().setVisible(false);
         aktieKaufen.setVisible(false);
         kaufBestätigung.setVisible(false);
         aktieVerkaufen.setVisible(false);
@@ -114,7 +121,7 @@ public class maincontrol {
         switch (Guiname) {
             case "AktieAnsehen":
 
-                aktieAnsehen.setVisible(true);
+                getAktieAnsehen().setVisible(true);
 
                 break;
             case "AktieKaufen":
@@ -302,11 +309,11 @@ public class maincontrol {
      */
     public void AktieDatenInitialisieren(String ISIN, String name) {
         OA.prepareDocument(ISIN);
-        aktieAnsehen.Change.setText(Float.toString(OA.getChange()));
-        aktieAnsehen.Preis.setText(Float.toString(OA.getAsk()));
-        aktieAnsehen.ISIN.setText(ISIN);
-        aktieAnsehen.Name.setText(name);
-        aktieAnsehen.AktienBild.setIcon(OA.getGraph("intraday"));
+        getAktieAnsehen().Change.setText(Float.toString(OA.getChange()));
+        getAktieAnsehen().Preis.setText(Float.toString(OA.getAsk()));
+        getAktieAnsehen().ISIN.setText(ISIN);
+        getAktieAnsehen().Name.setText(name);
+        getAktieAnsehen().AktienBild.setIcon(OA.getGraph("intraday"));
         aktieAnsehen.momentanerPreis = OA.getAsk();
         aktieAnsehen.ausgewählteISIN = ISIN;
     }
@@ -344,17 +351,17 @@ public class maincontrol {
      *
      */
     public void AktieDatenAktualisieren() {
-        OA.prepareDocument(aktieAnsehen.ausgewählteISIN);
-        aktieAnsehen.Change.setText(Float.toString(OA.getChange()));
-        aktieAnsehen.Preis.setText(Float.toString(OA.getAsk()));
-        if (aktieAnsehen.momentanerPreis > OA.getAsk()) {
-            aktieAnsehen.Preis.setBackground(Color.red);
+        OA.prepareDocument(getAktieAnsehen().ausgewählteISIN);
+        getAktieAnsehen().Change.setText(Float.toString(OA.getChange()));
+        getAktieAnsehen().Preis.setText(Float.toString(OA.getAsk()));
+        if (getAktieAnsehen().momentanerPreis > OA.getAsk()) {
+            getAktieAnsehen().Preis.setBackground(Color.red);
 
-        } else if (aktieAnsehen.momentanerPreis < OA.getAsk()) {
-            aktieAnsehen.Preis.setBackground(Color.green);
+        } else if (getAktieAnsehen().momentanerPreis < OA.getAsk()) {
+            getAktieAnsehen().Preis.setBackground(Color.green);
 
         } else {
-            aktieAnsehen.Preis.setBackground(Color.white);
+            getAktieAnsehen().Preis.setBackground(Color.white);
         }
 
     }

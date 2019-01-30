@@ -95,13 +95,12 @@ public class FirebaseZugriff {
                     }
                     //int anzahl = (int) lhm2.get("anzahl");
                     //for (int i = 1; i <= anzahl; i = i + 1) {
-                        Aktie akt = new Aktie((String) lhm2.get("isin"), (double) lhm2.get("preis"));
-                        akt.setPreis((double) lhm2.get("preis"));
-                        akt.setStueckzahl((int)lhm2.get("anzahl"));
-                        tmp.getDepot().getAktien().add(akt);
+                    Aktie akt = new Aktie((String) lhm2.get("isin"), (double) lhm2.get("preis"));
+                    akt.setPreis((double) lhm2.get("preis"));
+                    akt.setStueckzahl((int) lhm2.get("anzahl"));
+                    tmp.getDepot().getAktien().add(akt);
 
                     //}
-
                 }
                 al.add(tmp);
             }
@@ -146,8 +145,18 @@ public class FirebaseZugriff {
      *
      * @param geaenderterBenutzer der ge�nderte Benutzer
      */
-    public void aendereBenutzer(Benutzer geaenderterBenutzer) {
-        ergaenzeBenutzer(geaenderterBenutzer);
+    public void aendereBenutzer(Benutzer b) {
+        Map<String, Object> dataMap = new LinkedHashMap<String, Object>();
+        Aktienkonto ak = b.getDepot();
+        b.setDepot(null);//vorsichtiges Löschen, damit in der Firebase kein geschachteltes Objekt entsteht.
+        dataMap.put(b.getBenutzername(), b);
+
+        //dataMap.put(b.getBenutzername(), b.getDepot());
+        try {
+            FirebaseResponse response = firebase.patch("users", dataMap);
+        } catch (FirebaseException | JacksonUtilityException | UnsupportedEncodingException ex) {
+            Logger.getLogger(FirebaseZugriff.class.getName()).log(Level.SEVERE, null, ex);
+        }
     }
 
     /**
@@ -283,19 +292,20 @@ public class FirebaseZugriff {
         }
 
     }
+
     /**
-     * Gibt ein Objekt an einer spezifischen Referenz mit einem spezifischen
-     * key wieder
+     * Gibt ein Objekt an einer spezifischen Referenz mit einem spezifischen key
+     * wieder
+     *
      * @param Referenz
      * @param key
-     * @return 
+     * @return
      */
 
     public Object WertEinerReferenz(String Referenz, String key) {
         try {
             FirebaseResponse response = firebase.get(Referenz);
-            
-            
+
             return response.getBody().get(key);
 
         } catch (FirebaseException ex) {
