@@ -181,11 +181,11 @@ public class maincontrol {
     public void login(String benutzername, String password) {
         boolean erfolgreich;
         Benutzer b = null;
-        if (al == null) {
+        if (getAl() == null) {
             JOptionPane.showMessageDialog(null, "Anmeldung nicht möglich. Es sind keine Benutzer bekannt.");
 
         }
-        for (Benutzer tmp : al) {
+        for (Benutzer tmp : getAl()) {
             if (tmp.getBenutzername().equals(benutzername)) {
                 b = tmp;
                 break;
@@ -219,7 +219,7 @@ public class maincontrol {
 
             fso.userUpdates.put(benutzername, password);
         }*/
-        for (Benutzer b : al) {
+        for (Benutzer b : getAl()) {
             if (b.getBenutzername().equalsIgnoreCase(benutzername)) {
                 JOptionPane.showMessageDialog(null, "Benutzername schon vergeben");
                 return false;
@@ -235,9 +235,9 @@ public class maincontrol {
             tmp.setPasswort(password);
             tmp.setEmail(email);
             tmp.setKontostand(1000);
-            fz.ergaenzeBenutzer(tmp);
+            getFz().ergaenzeBenutzer(tmp);
             JOptionPane.showMessageDialog(null, "Benutzername eingetragen: " + tmp.toString());
-            this.al = this.fz.benutzerAuslesen();
+            this.setAl(this.getFz().benutzerAuslesen());
             return true;
         } else {
             JOptionPane.showMessageDialog(null, "Passwortfelder nicht gleich");
@@ -327,14 +327,19 @@ public class maincontrol {
 
             Aktienkauf ak = new Aktienkauf(isin, Stückzahl);
             ak.setPreis(Preis);
-            fz.aktieErgänzen(ak);
+            getFz().aktieErgänzen(ak);
             int neuer_preis = (int) Math.round(Preis) * Stückzahl;
-            int Wert = (int) Math.round((double)fz.WertEinerReferenz("users/"+b.getBenutzername(),"kontostand"));
-            int neuer_Kontostand = Wert - neuer_preis;
+            int Konto_Wert = (int) Math.round((double)getFz().WertEinerReferenz("users/"+b.getBenutzername(),"kontostand"));
+            
+            
+            
+            int neuer_Kontostand = Konto_Wert - neuer_preis;
+            if(neuer_Kontostand<=0){
+                return;
+            }
             b.setKontostand(neuer_Kontostand);
-            System.out.println(b.getEmail());
-            System.out.println(b.getPasswort());
-            fz.aendereBenutzer(b);
+           
+            getFz().aendereBenutzer(b);
             
             
         } else {
@@ -415,7 +420,7 @@ public class maincontrol {
      */
     public void LeaderboardInit() {
         double GesamtKapital = 0;
-        ArrayList<Benutzer> sortList = this.SortBenutzer(al);
+        ArrayList<Benutzer> sortList = this.SortBenutzer(getAl());
         Collections.reverse(sortList);
         if (sortList.size() >= 5) {
             leaderboard.Platz1.setText(sortList.get(0).getBenutzername());
@@ -447,7 +452,7 @@ public class maincontrol {
     }
 
     public void aktualisiereLeaderboard() {
-        this.al = this.fz.benutzerAuslesen();
+        this.setAl(this.getFz().benutzerAuslesen());
         this.LeaderboardInit();
 
     }
@@ -464,6 +469,27 @@ public class maincontrol {
      */
     public void setB(Benutzer b) {
         this.b = b;
+    }
+
+    /**
+     * @return the al
+     */
+    public ArrayList<Benutzer> getAl() {
+        return al;
+    }
+
+    /**
+     * @param al the al to set
+     */
+    public void setAl(ArrayList<Benutzer> al) {
+        this.al = al;
+    }
+
+    /**
+     * @return the fz
+     */
+    public FirebaseZugriff getFz() {
+        return fz;
     }
 
 }

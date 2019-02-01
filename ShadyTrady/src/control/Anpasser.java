@@ -17,11 +17,22 @@ package control;
  * @author K
  */
 class Anpasser extends Thread {
+    maincontrol c;
+    public Anpasser(maincontrol c){
+        this.c = c;
+        
+    }
+    
+    
+    
 
     public void run() {
         while(true) {
             try {
-                sleep(300000); //Auslösung alle 5 Minuten
+                sleep(300000);//Auslösung alle 5 Minuten
+                c.setAl(c.getFz().benutzerAuslesen());
+                
+                
             } catch (InterruptedException e) {
             }
             System.out.println("Demo-Thread");
