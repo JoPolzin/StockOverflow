@@ -199,7 +199,7 @@ public class maincontrol {
         if (b.getPasswort().equals(password)) {
 
             System.out.println("Login erfolgreich");
-            JOptionPane.showMessageDialog(null, "Login erfolgreich.\n Angemeldeter Benutezr:\n" + b.toString());
+            JOptionPane.showMessageDialog(null, "Login erfolgreich.\n Angemeldeter Benutzer:\n" + b.toString());
             
             this.b = b;
             erfolgreich = true;
