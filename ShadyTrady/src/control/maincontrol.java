@@ -39,6 +39,8 @@ public class maincontrol {
     private VerkaufBestätigung verkaufBestätigung;
 
     private AnmeldeFenster anmeldeFenster;
+    
+    private AbmeldeBestätigung abmeldeBestätigung;
 
     private RegistrierFenster registrierFenster;
 
@@ -70,6 +72,8 @@ public class maincontrol {
         loading.jProgressBar1.setValue(9);
         kaufBestätigung = new KaufBestätigung(this);
         loading.jProgressBar1.setValue(12);
+        abmeldeBestätigung = new AbmeldeBestätigung(this);
+        loading.jProgressBar1.setValue(14);
         aktieVerkaufen = new AktieVerkaufen(this);
         loading.jProgressBar1.setValue(15);
         verkaufBestätigung = new VerkaufBestätigung(this);
@@ -111,6 +115,7 @@ public class maincontrol {
         kaufBestätigung.setVisible(false);
         aktieVerkaufen.setVisible(false);
         verkaufBestätigung.setVisible(false);
+        abmeldeBestätigung.setVisible(false);
         anmeldeFenster.setVisible(false);
         registrierFenster.setVisible(false);
         profilFenster.setVisible(false);
@@ -143,6 +148,9 @@ public class maincontrol {
                 break;
             case "VerkaufBestätigung":
                 verkaufBestätigung.setVisible(true);
+                break;
+            case "AbmeldeBestätigung":
+                abmeldeBestätigung.setVisible(true);
                 break;
             case "AnmeldeFenster":
                 anmeldeFenster.setVisible(true);
