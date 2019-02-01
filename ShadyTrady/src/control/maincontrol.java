@@ -92,11 +92,11 @@ public class maincontrol {
         loading.jProgressBar1.setValue(33);
 
         fz = new FirebaseZugriff(this);
-        al = fz.benutzerAuslesen();
+        //al = fz.benutzerAuslesen();
         loading.jProgressBar1.setValue(80);
-        if (al == null) {
+        /*if (al == null) {
             JOptionPane.showMessageDialog(null, "Keine Benutzer geladen oder Firebase ungültig.");
-        }
+        }*/
         leaderboard = new Leaderboard(this);
         //LeaderboardInit();
         AktienDatenInitialisieren();
@@ -190,18 +190,9 @@ public class maincontrol {
     }
 
     public void login(String benutzername, String password) {
-        boolean erfolgreich;
+        
         Benutzer b = null;
-        if (getAl() == null) {
-            JOptionPane.showMessageDialog(null, "Anmeldung nicht möglich. Es sind keine Benutzer bekannt.");
-
-        }
-        for (Benutzer tmp : getAl()) {
-            if (tmp.getBenutzername().equals(benutzername)) {
-                b = tmp;
-                break;
-            }
-        }
+        b = fz.EinenBenutzerAuslesen(benutzername);
         if (b == null) {
             System.out.println("Falscher Benutzer");
             JOptionPane.showMessageDialog(null, "Der Benutzer existiert nicht.");
@@ -213,7 +204,6 @@ public class maincontrol {
             JOptionPane.showMessageDialog(null, "Login erfolgreich.\n Angemeldeter Benutzer:\n" + b.toString());
             
             this.b = b;
-            erfolgreich = true;
             this.eingeloggt = true;
             this.switchTo("EigenesDepot");
 
@@ -230,6 +220,7 @@ public class maincontrol {
 
             fso.userUpdates.put(benutzername, password);
         }*/
+        this.al = fz.benutzerAuslesen();
         for (Benutzer b : getAl()) {
             if (b.getBenutzername().equalsIgnoreCase(benutzername)) {
                 JOptionPane.showMessageDialog(null, "Benutzername schon vergeben");
@@ -248,7 +239,7 @@ public class maincontrol {
             tmp.setKontostand(1000);
             getFz().ergaenzeBenutzer(tmp);
             JOptionPane.showMessageDialog(null, "Benutzername eingetragen: " + tmp.toString());
-            this.setAl(this.getFz().benutzerAuslesen());
+           
             return true;
         } else {
             JOptionPane.showMessageDialog(null, "Passwortfelder nicht gleich");
