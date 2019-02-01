@@ -88,7 +88,7 @@ public class FirebaseZugriff {
 
                     Map.Entry pairs2 = (Map.Entry) it2.next();
                     LinkedHashMap lhm2 = (LinkedHashMap) pairs2.getValue();
-                    System.out.println(lhm2.toString());
+                    
                     //Hier Ergänzen, wenn der Benutzer weitere Attribute bekommt!
                     if (!lhm2.containsKey("anzahl") || !lhm2.containsKey("isin") || !lhm2.containsKey("preis")) {
                         return null;

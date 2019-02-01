@@ -219,7 +219,7 @@ public class Benutzer {
     }
     /**
      * Berechnet das gesamte Kapital mit den aktuellen Werten der Aktien.
-     * 
+     * Achtung diese Klasse verbrauchht sehr sehr viel Rechenleistung.
      * 
      * @return 
      */
@@ -229,9 +229,6 @@ public class Benutzer {
         for (Aktie e : this.depot.getAktien()) {
             
             OA.prepareDocument(e.getISIN());
-            System.out.println(e.getISIN());
-            System.out.println(e.getStueckzahl());
-            System.out.println(OA.getAsk());
             double Aktienwert  = (int) Math.round(OA.getAsk()) * e.getStueckzahl();
             Kapital = Kapital + Aktienwert;
         }

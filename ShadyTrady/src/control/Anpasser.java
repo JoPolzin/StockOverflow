@@ -29,7 +29,7 @@ class Anpasser extends Thread {
     public void run() {
         while(true) {
             try {
-                sleep(300000);//Auslösung alle 5 Minuten
+                sleep(20000);//Auslösung alle 5 Minuten
                 c.setAl(c.getFz().benutzerAuslesen());
                 
                 

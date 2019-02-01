@@ -6,14 +6,18 @@
 
 package view;
 
+import control.maincontrol;
+import model.OA;
+
 /**
  *
  * @author lukas.leja
  */
 public class EigenesDepot1 extends javax.swing.JPanel {
-
+    maincontrol c;
     /** Creates new form EigenesDepot1 */
-    public EigenesDepot1() {
+    public EigenesDepot1(maincontrol c) {
+        this.c = c;
         initComponents();
     }
 

@@ -61,6 +61,8 @@ public class maincontrol {
     private boolean eingeloggt;
 
     private Benutzer b;
+    
+    private Anpasser anpasser;
 
     public maincontrol() {
         loading = new Loading();
@@ -96,11 +98,12 @@ public class maincontrol {
             JOptionPane.showMessageDialog(null, "Keine Benutzer geladen oder Firebase ungültig.");
         }
         leaderboard = new Leaderboard(this);
-        LeaderboardInit();
+        //LeaderboardInit();
         AktienDatenInitialisieren();
         loading.jProgressBar1.setValue(100);
         loading.setVisible(false);
         stockOverflowGUI.setVisible(true);
+        //this.anpasser = new Anpasser(this);
 
     }
 
