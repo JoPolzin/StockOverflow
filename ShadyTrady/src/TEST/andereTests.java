@@ -18,10 +18,10 @@ import model.Benutzer;
 public class andereTests {
 
     public static void main(String[] args) {
-        ArrayList<Benutzer> benutzer = new ArrayList<>();
-        Benutzer b = new Benutzer();
-        b.setBenutzername("bana");
-        b.setKontostand(550);
+        //ArrayList<Benutzer> benutzer = new ArrayList<>();
+       // Benutzer b = new Benutzer();
+        //b.setBenutzername("bana");
+        //b.setKontostand(550);
         /*
         Benutzer b1 = new Benutzer();
         b1.setBenutzername("b1");
@@ -45,8 +45,10 @@ public class andereTests {
         System.out.println("sort:"+ benutzer.toString());
         System.out.println(b3.GesamtKapital());*/
         maincontrol c = new maincontrol();
-        c.setB(b);
+       // c.setB(b);
         FirebaseZugriff fb = new FirebaseZugriff(c);
+        Benutzer test = fb.EinenBenutzerAuslesen("Lion");
+        System.out.println(test.getBenutzername());
         
         
         

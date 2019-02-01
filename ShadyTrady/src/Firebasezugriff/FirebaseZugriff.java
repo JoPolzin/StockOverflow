@@ -88,7 +88,7 @@ public class FirebaseZugriff {
 
                     Map.Entry pairs2 = (Map.Entry) it2.next();
                     LinkedHashMap lhm2 = (LinkedHashMap) pairs2.getValue();
-                    
+
                     //Hier Ergänzen, wenn der Benutzer weitere Attribute bekommt!
                     if (!lhm2.containsKey("anzahl") || !lhm2.containsKey("isin") || !lhm2.containsKey("preis")) {
                         return null;
@@ -301,7 +301,6 @@ public class FirebaseZugriff {
      * @param key
      * @return
      */
-
     public Object WertEinerReferenz(String Referenz, String key) {
         try {
             FirebaseResponse response = firebase.get(Referenz);
@@ -315,6 +314,44 @@ public class FirebaseZugriff {
         }
         return null;
 
+    }
+
+    public Benutzer EinenBenutzerAuslesen(String benutzername) {
+        Benutzer b = new Benutzer();
+        FirebaseResponse response, response2;
+        Iterator it;
+        try {
+            response = firebase.get("users/" + benutzername);
+            b.setBenutzername((String) response.getBody().get("benutzername"));
+            b.setEmail((String) response.getBody().get("email"));
+            b.setKontostand((double) response.getBody().get("kontostand"));
+            b.setPasswort((String) response.getBody().get("passwort"));
+            response2 = firebase.get("depots" + benutzername);
+            it = response2.getBody().entrySet().iterator();
+            while (it.hasNext()) {
+                Map.Entry pairs2 = (Map.Entry) it.next();
+                LinkedHashMap lhm2 = (LinkedHashMap) pairs2.getValue();
+
+                //Hier Ergänzen, wenn der Benutzer weitere Attribute bekommt!
+                if (!lhm2.containsKey("anzahl") || !lhm2.containsKey("isin") || !lhm2.containsKey("preis")) {
+                    return null;
+                }
+                //int anzahl = (int) lhm2.get("anzahl");
+                //for (int i = 1; i <= anzahl; i = i + 1) {
+                Aktie akt = new Aktie((String) lhm2.get("isin"), (double) lhm2.get("preis"));
+                akt.setPreis((double) lhm2.get("preis"));
+                akt.setStueckzahl((int) lhm2.get("anzahl"));
+                b.getDepot().getAktien().add(akt);
+
+            }
+
+        } catch (FirebaseException ex) {
+            Logger.getLogger(FirebaseZugriff.class.getName()).log(Level.SEVERE, null, ex);
+        } catch (UnsupportedEncodingException ex) {
+            Logger.getLogger(FirebaseZugriff.class.getName()).log(Level.SEVERE, null, ex);
+        }
+
+        return b;
     }
 
 }
