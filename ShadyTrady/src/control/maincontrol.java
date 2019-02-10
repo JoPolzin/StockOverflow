@@ -39,7 +39,7 @@ public class maincontrol {
     private VerkaufBestätigung verkaufBestätigung;
 
     private AnmeldeFenster anmeldeFenster;
-    
+
     private AbmeldeBestätigung abmeldeBestätigung;
 
     private RegistrierFenster registrierFenster;
@@ -61,7 +61,7 @@ public class maincontrol {
     private boolean eingeloggt;
 
     private Benutzer b;
-    
+
     private Anpasser anpasser;
 
     public maincontrol() {
@@ -103,7 +103,7 @@ public class maincontrol {
         loading.jProgressBar1.setValue(100);
         loading.setVisible(false);
         stockOverflowGUI.setVisible(true);
-        //this.anpasser = new Anpasser(this);
+        this.anpasser = new Anpasser(this);
 
     }
 
@@ -124,7 +124,7 @@ public class maincontrol {
         profilFenster.setVisible(false);
         eigenesDepot.setVisible(false);
         stockOverflowGUI.setVisible(false);
-        leaderboard.setVisible(false);
+        getLeaderboard().setVisible(false);
 
         switch (Guiname) {
             case "AktieAnsehen":
@@ -179,7 +179,7 @@ public class maincontrol {
                 stockOverflowGUI.setVisible(true);
                 break;
             case "Leaderboard":
-                leaderboard.setVisible(true);
+                getLeaderboard().setVisible(true);
                 break;
 
             default:
@@ -190,7 +190,7 @@ public class maincontrol {
     }
 
     public void login(String benutzername, String password) {
-        
+
         Benutzer b = null;
         b = fz.EinenBenutzerAuslesen(benutzername);
         if (b == null) {
@@ -202,7 +202,7 @@ public class maincontrol {
 
             System.out.println("Login erfolgreich");
             JOptionPane.showMessageDialog(null, "Login erfolgreich.\n Angemeldeter Benutzer:\n" + b.toString());
-            
+
             this.b = b;
             this.eingeloggt = true;
             this.switchTo("EigenesDepot");
@@ -239,7 +239,7 @@ public class maincontrol {
             tmp.setKontostand(1000);
             getFz().ergaenzeBenutzer(tmp);
             JOptionPane.showMessageDialog(null, "Benutzername eingetragen: " + tmp.toString());
-           
+
             return true;
         } else {
             JOptionPane.showMessageDialog(null, "Passwortfelder nicht gleich");
@@ -327,23 +327,19 @@ public class maincontrol {
             //getB().getDepot().aktie_kaufen(isin, Stückzahl, Preis);
             OA.prepareDocument(isin);
 
-            Aktienkauf ak = new Aktienkauf(isin, Stückzahl);
-            ak.setPreis(Preis);
-            getFz().aktieErgänzen(ak);
             int neuer_preis = (int) Math.round(Preis) * Stückzahl;
-            int Konto_Wert = (int) Math.round((double)getFz().WertEinerReferenz("users/"+b.getBenutzername(),"kontostand"));
-            
-            
-            
+            int Konto_Wert = (int) Math.round((double) getFz().WertEinerReferenz("users/" + b.getBenutzername(), "kontostand"));
+
             int neuer_Kontostand = Konto_Wert - neuer_preis;
-            if(neuer_Kontostand<=0){
+            if (neuer_Kontostand <= 0) {
                 return;
             }
             b.setKontostand(neuer_Kontostand);
-           
+            Aktienkauf ak = new Aktienkauf(isin, Stückzahl);
+            ak.setPreis(Preis);
+            getFz().aktieErgänzen(ak);
             getFz().aendereBenutzer(b);
-            
-            
+
         } else {
             this.switchTo("AnmeldeFenster");
 
@@ -376,6 +372,11 @@ public class maincontrol {
 
     public void aktieverkaufen(String isin, Integer Stückzahl, Float Preis) {
         if (this.eingeloggt) {
+            
+            
+            
+            
+            
         } else {
             this.switchTo("AnmeldeFenster");
 
@@ -425,22 +426,22 @@ public class maincontrol {
         ArrayList<Benutzer> sortList = this.SortBenutzer(getAl());
         Collections.reverse(sortList);
         if (sortList.size() >= 5) {
-            leaderboard.Platz1.setText(sortList.get(0).getBenutzername());
-            leaderboard.Platz2.setText(sortList.get(1).getBenutzername());
-            leaderboard.Platz3.setText(sortList.get(2).getBenutzername());
-            leaderboard.Platz4.setText(sortList.get(3).getBenutzername());
-            leaderboard.Platz5.setText(sortList.get(4).getBenutzername());
-            leaderboard.Punktzahl1.setText("" + RundenKommastellen(sortList.get(0).GesamtKapital()));
-            leaderboard.Punktzahl2.setText("" + RundenKommastellen(sortList.get(1).GesamtKapital()));
-            leaderboard.Punktzahl3.setText("" + RundenKommastellen(sortList.get(2).GesamtKapital()));
-            leaderboard.Punktzahl4.setText("" + RundenKommastellen(sortList.get(3).GesamtKapital()));
-            leaderboard.Punktzahl5.setText("" + RundenKommastellen(sortList.get(4).GesamtKapital()));
+            getLeaderboard().Platz1.setText(sortList.get(0).getBenutzername());
+            getLeaderboard().Platz2.setText(sortList.get(1).getBenutzername());
+            getLeaderboard().Platz3.setText(sortList.get(2).getBenutzername());
+            getLeaderboard().Platz4.setText(sortList.get(3).getBenutzername());
+            getLeaderboard().Platz5.setText(sortList.get(4).getBenutzername());
+            getLeaderboard().Punktzahl1.setText("" + RundenKommastellen(sortList.get(0).GesamtKapital()));
+            getLeaderboard().Punktzahl2.setText("" + RundenKommastellen(sortList.get(1).GesamtKapital()));
+            getLeaderboard().Punktzahl3.setText("" + RundenKommastellen(sortList.get(2).GesamtKapital()));
+            getLeaderboard().Punktzahl4.setText("" + RundenKommastellen(sortList.get(3).GesamtKapital()));
+            getLeaderboard().Punktzahl5.setText("" + RundenKommastellen(sortList.get(4).GesamtKapital()));
             for (Benutzer b : sortList) {
                 GesamtKapital = GesamtKapital + b.GesamtKapital();
 
             }
 
-            leaderboard.GesamtPunktzahl.setText("" + RundenKommastellen(GesamtKapital));
+            getLeaderboard().GesamtPunktzahl.setText("" + RundenKommastellen(GesamtKapital));
 
         }
 
@@ -492,6 +493,25 @@ public class maincontrol {
      */
     public FirebaseZugriff getFz() {
         return fz;
+    }
+
+    /**
+     * @return the anpasser
+     */
+    public Anpasser getAnpasser() {
+        return anpasser;
+    }
+
+    public void LeaderboardAktu() {
+        this.anpasser.run();
+
+    }
+
+    /**
+     * @return the leaderboard
+     */
+    public Leaderboard getLeaderboard() {
+        return leaderboard;
     }
 
 }

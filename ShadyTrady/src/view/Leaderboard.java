@@ -328,7 +328,8 @@ public class Leaderboard extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void aktualisierenActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_aktualisierenActionPerformed
-     c.aktualisiereLeaderboard();
+     c.LeaderboardAktu();
+     
     }//GEN-LAST:event_aktualisierenActionPerformed
 
     /**

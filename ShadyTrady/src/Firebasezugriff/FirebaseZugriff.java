@@ -70,6 +70,7 @@ public class FirebaseZugriff {
 
             while (it.hasNext()) {
                 Map.Entry pairs = (Map.Entry) it.next();
+                
                 LinkedHashMap lhm = (LinkedHashMap) pairs.getValue();
                 Benutzer tmp = new Benutzer();
                 //Hier Ergänzen, wenn der Benutzer weitere Attribute bekommt!
@@ -353,5 +354,27 @@ public class FirebaseZugriff {
 
         return b;
     }
+    
+    public void  ObjektLöschen(String Path, String Objekt){
+        try{
+       
+       Map<String, Object> dataMap = new LinkedHashMap<String, Object>();
+       dataMap.put(Objekt, null);
+       firebase.patch(Path,dataMap);
+       
+        }catch(FirebaseException e){
+            
+        } catch (UnsupportedEncodingException ex) {
+            Logger.getLogger(FirebaseZugriff.class.getName()).log(Level.SEVERE, null, ex);
+        } catch (JacksonUtilityException ex) {
+            Logger.getLogger(FirebaseZugriff.class.getName()).log(Level.SEVERE, null, ex);
+        }
+        
+        
+        
+    }
+    
+    
+    
 
 }

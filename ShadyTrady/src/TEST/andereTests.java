@@ -47,8 +47,7 @@ public class andereTests {
         maincontrol c = new maincontrol();
        // c.setB(b);
         FirebaseZugriff fb = new FirebaseZugriff(c);
-        Benutzer test = fb.EinenBenutzerAuslesen("Lion");
-        System.out.println(test.getBenutzername());
+        fb.ObjektLöschen("depots/lol","a1");
         
         
         
