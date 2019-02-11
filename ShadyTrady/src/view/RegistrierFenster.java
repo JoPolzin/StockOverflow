@@ -36,7 +36,6 @@ public class RegistrierFenster extends javax.swing.JFrame {
     private void initComponents() {
 
         StockOverflowRegistrierung = new javax.swing.JLabel();
-        RegistrierenBenutzernameEingeben1 = new javax.swing.JTextPane();
         RegistrierenBenutzername = new javax.swing.JLabel();
         RegistrierenPasswort = new javax.swing.JLabel();
         PasswortEingeben = new javax.swing.JPasswordField();
@@ -45,14 +44,13 @@ public class RegistrierFenster extends javax.swing.JFrame {
         RegistrierenPasswortBestätigen = new javax.swing.JLabel();
         PasswortBestätigenEingeben = new javax.swing.JPasswordField();
         RegistrierenEmail = new javax.swing.JLabel();
-        RegistrierenEmailEingeben = new javax.swing.JTextPane();
+        RegistrierenBenutzernameEingeben1 = new javax.swing.JTextField();
+        RegistrierenEmailEingeben = new javax.swing.JTextField();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         StockOverflowRegistrierung.setFont(new java.awt.Font("Penultimate", 1, 36)); // NOI18N
         StockOverflowRegistrierung.setText("StockOverflow");
-
-        RegistrierenBenutzernameEingeben1.setFont(new java.awt.Font("Penultimate", 0, 11)); // NOI18N
 
         RegistrierenBenutzername.setFont(new java.awt.Font("Penultimate", 0, 11)); // NOI18N
         RegistrierenBenutzername.setText("Benutzername");
@@ -94,8 +92,6 @@ public class RegistrierFenster extends javax.swing.JFrame {
         RegistrierenEmail.setFont(new java.awt.Font("Penultimate", 0, 11)); // NOI18N
         RegistrierenEmail.setText("Email");
 
-        RegistrierenEmailEingeben.setFont(new java.awt.Font("Penultimate", 0, 11)); // NOI18N
-
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -103,27 +99,30 @@ public class RegistrierFenster extends javax.swing.JFrame {
             .addGroup(layout.createSequentialGroup()
                 .addGap(39, 39, 39)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                        .addComponent(PasswortEingeben, javax.swing.GroupLayout.Alignment.LEADING)
-                        .addComponent(PasswortBestätigenEingeben, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, 117, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(RegistrierenPasswortBestätigen, javax.swing.GroupLayout.Alignment.LEADING))
-                    .addComponent(RegistrierenPasswort)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(82, 82, 82)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(RegistrierenAbbrechen, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(RegistrierenRegistrieren)))
-                    .addGroup(layout.createSequentialGroup()
-                        .addComponent(RegistrierenBenutzernameEingeben1, javax.swing.GroupLayout.PREFERRED_SIZE, 115, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 48, Short.MAX_VALUE)
-                        .addComponent(RegistrierenEmailEingeben, javax.swing.GroupLayout.PREFERRED_SIZE, 115, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addComponent(StockOverflowRegistrierung)
                     .addGroup(layout.createSequentialGroup()
                         .addComponent(RegistrierenBenutzername)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addComponent(RegistrierenEmail)
-                        .addGap(0, 0, Short.MAX_VALUE)))
-                .addContainerGap())
+                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addGroup(layout.createSequentialGroup()
+                        .addComponent(RegistrierenBenutzernameEingeben1, javax.swing.GroupLayout.PREFERRED_SIZE, 117, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(RegistrierenEmailEingeben, javax.swing.GroupLayout.PREFERRED_SIZE, 117, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(19, 19, 19))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(RegistrierenPasswort)
+                            .addGroup(layout.createSequentialGroup()
+                                .addGap(82, 82, 82)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                    .addComponent(RegistrierenAbbrechen, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                    .addComponent(RegistrierenRegistrieren)))
+                            .addComponent(StockOverflowRegistrierung)
+                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                                .addComponent(PasswortEingeben, javax.swing.GroupLayout.Alignment.LEADING)
+                                .addComponent(PasswortBestätigenEingeben, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, 117, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(RegistrierenPasswortBestätigen, javax.swing.GroupLayout.Alignment.LEADING)))
+                        .addContainerGap(36, Short.MAX_VALUE))))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -134,11 +133,11 @@ public class RegistrierFenster extends javax.swing.JFrame {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(RegistrierenBenutzername)
                     .addComponent(RegistrierenEmail))
-                .addGap(13, 13, 13)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(RegistrierenBenutzernameEingeben1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(RegistrierenEmailEingeben, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGap(8, 8, 8)
                 .addComponent(RegistrierenPasswort)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(PasswortEingeben, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -242,9 +241,9 @@ public class RegistrierFenster extends javax.swing.JFrame {
     private javax.swing.JPasswordField PasswortEingeben;
     private javax.swing.JButton RegistrierenAbbrechen;
     private javax.swing.JLabel RegistrierenBenutzername;
-    private javax.swing.JTextPane RegistrierenBenutzernameEingeben1;
+    private javax.swing.JTextField RegistrierenBenutzernameEingeben1;
     private javax.swing.JLabel RegistrierenEmail;
-    private javax.swing.JTextPane RegistrierenEmailEingeben;
+    private javax.swing.JTextField RegistrierenEmailEingeben;
     private javax.swing.JLabel RegistrierenPasswort;
     private javax.swing.JLabel RegistrierenPasswortBestätigen;
     private javax.swing.JButton RegistrierenRegistrieren;

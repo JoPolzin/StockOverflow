@@ -65,6 +65,7 @@ public class maincontrol {
     private Benutzer b;
 
     private Anpasser anpasser;
+    private int x;
 
     public maincontrol() {
         loading = new Loading();
@@ -92,6 +93,7 @@ public class maincontrol {
         loading.jProgressBar1.setValue(30);
         stockOverflowGUI = new StockOverflowGUI(this);
         loading.jProgressBar1.setValue(33);
+        x = 0;
 
         fz = new FirebaseZugriff(this);
         //al = fz.benutzerAuslesen();
@@ -100,24 +102,30 @@ public class maincontrol {
             JOptionPane.showMessageDialog(null, "Keine Benutzer geladen oder Firebase ungültig.");
         }*/
         leaderboard = new Leaderboard(this);
-       
-        
+
         //LeaderboardInit();
-        AktienDatenInitialisieren();
-          Timer timer = new Timer();
+        AktienDatenInitialisieren(0);
+        Timer timer = new Timer();
         timer.scheduleAtFixedRate(new TimerTask() {
             @Override
             public void run() {
                 System.out.println("hallo");
-        AktienDatenAktualisieren();            }
-        }, 5000,5000);
-        
+                AktienDatenAktualisieren(x);
+            }
+        }, 5000, 5000);
+
         loading.jProgressBar1.setValue(100);
         loading.setVisible(false);
         stockOverflowGUI.setVisible(true);
         this.anpasser = new Anpasser(this);
         anpasser.start();
 
+    }
+    public int getX(){
+        return x;
+    }
+    public void setX(int newX){
+        x = newX;
     }
 
     public boolean getEingeloggt() {
@@ -278,40 +286,53 @@ public class maincontrol {
     /**
      * StockOverflowGUI Initialisiert Aktien des Daxes.
      */
-    public void AktienDatenInitialisieren() {
+    public void AktienDatenInitialisieren(int x) {
         OA.DnsConfig();
         stockOverflowGUI.PreisListe = new ArrayList<>();
 
-        for (int i = 0; i < stockOverflowGUI.AktienFelder.size(); i++) {
+        for (int i = 0; i < 15; i++) {
 
-            OA.prepareDocument(OA.getDNS().get(OA.getDNSString().get(i)));
-            stockOverflowGUI.AktienFelder.get(i).setText(OA.getDNSString().get(i));
-            stockOverflowGUI.PreisFelder.get(i).setText(Float.toString(OA.getAsk()));
-            stockOverflowGUI.ChangeFelder.get(i).setText(Float.toString(OA.getChange()));
-            stockOverflowGUI.PreisListe.add(OA.getAsk());
+            if (i + x >= 0) {
+                OA.prepareDocument(OA.getDNS().get(OA.getDNSString().get(i + x)));
+                stockOverflowGUI.AktienFelder.get(i).setText(OA.getDNSString().get(i + x));
+                stockOverflowGUI.PreisFelder.get(i).setText(Float.toString(OA.getAsk()));
+                stockOverflowGUI.ChangeFelder.get(i).setText(Float.toString(OA.getChange()));
+                stockOverflowGUI.PreisListe.add(OA.getAsk());
+
+                stockOverflowGUI.PreisFelder.get(i).setBackground(Color.white);
+            } else {
+                stockOverflowGUI.AktienFelder.get(i).setText("");
+                stockOverflowGUI.PreisFelder.get(i).setText("");
+                stockOverflowGUI.ChangeFelder.get(i).setText("");
+                stockOverflowGUI.PreisListe.add(OA.getAsk());
+            }
         }
     }
 
     /**
      * StockOverflowGUI Aktualisiert Aktien des Daxes und färbt diese.
      */
-    public void AktienDatenAktualisieren() {
-        for (int i = 0; i < stockOverflowGUI.AktienFelder.size(); i++) {
+    public void AktienDatenAktualisieren(int x) {
 
-            OA.prepareDocument(OA.getDNS().get(OA.getDNSString().get(i)));
-            stockOverflowGUI.AktienFelder.get(i).setText(OA.getDNSString().get(i));
-            stockOverflowGUI.PreisFelder.get(i).setText(Float.toString(OA.getAsk()));
-            stockOverflowGUI.ChangeFelder.get(i).setText(Float.toString(OA.getChange()));
-            if ((float) stockOverflowGUI.PreisListe.get(i) > OA.getAsk()) {
-                stockOverflowGUI.PreisFelder.get(i).setBackground(Color.red);
-            } else if ((float) stockOverflowGUI.PreisListe.get(i) < OA.getAsk()) {
-                stockOverflowGUI.PreisFelder.get(i).setBackground(Color.green);
+        for (int i = 0; i < 15; i++) {
 
+            if (i + x >= 0) {
+                OA.prepareDocument(OA.getDNS().get(OA.getDNSString().get(i + x)));
+                stockOverflowGUI.AktienFelder.get(i).setText(OA.getDNSString().get(i + x));
+                stockOverflowGUI.PreisFelder.get(i).setText(Float.toString(OA.getAsk()));
+                stockOverflowGUI.ChangeFelder.get(i).setText(Float.toString(OA.getChange()));
+                if ((float) stockOverflowGUI.PreisListe.get(i) > OA.getAsk()) {
+                    stockOverflowGUI.PreisFelder.get(i).setBackground(Color.red);
+                } else if ((float) stockOverflowGUI.PreisListe.get(i) < OA.getAsk()) {
+                    stockOverflowGUI.PreisFelder.get(i).setBackground(Color.green);
+
+                } else {
+                    stockOverflowGUI.PreisFelder.get(i).setBackground(Color.white);
+                }
+                stockOverflowGUI.PreisListe.set(i, OA.getAsk());
             } else {
-                stockOverflowGUI.PreisFelder.get(i).setBackground(Color.white);
+                //dont do anything...
             }
-            stockOverflowGUI.PreisListe.set(i, OA.getAsk());
-
         }
 
     }
@@ -375,7 +396,7 @@ public class maincontrol {
                 System.out.println("hallo");
                 // Your database code here
             }
-        }, 2000,2000);
+        }, 2000, 2000);
 
         OA.prepareDocument(getAktieAnsehen().ausgewählteISIN);
         getAktieAnsehen().Change.setText(Float.toString(OA.getChange()));
@@ -523,6 +544,10 @@ public class maincontrol {
     public void LeaderboardAktu() {
         this.anpasser.start();
 
+    }
+
+    public boolean isEingeloggt() {
+        return eingeloggt;
     }
 
     /**

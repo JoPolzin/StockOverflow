@@ -17,6 +17,7 @@ import model.OA;
 public class StockOverflowGUI extends javax.swing.JFrame {
 
     private maincontrol c;
+    private int x;
 
     public ArrayList<JTextField> AktienFelder = new ArrayList<>();
     public ArrayList<JTextField> PreisFelder = new ArrayList<>();
@@ -34,6 +35,7 @@ public class StockOverflowGUI extends javax.swing.JFrame {
      */
     public StockOverflowGUI(maincontrol mc) {
         this.c = mc;
+        c.setX(0);
         initComponents();
         AktienFelder.add(TFAktie1);
         AktienFelder.add(TFAktie2);
@@ -50,7 +52,6 @@ public class StockOverflowGUI extends javax.swing.JFrame {
         AktienFelder.add(TFAktie13);
         AktienFelder.add(TFAktie14);
         AktienFelder.add(TFAktie15);
-        AktienFelder.add(TFAktie16);
 
         PreisFelder.add(TFPreis1);
         PreisFelder.add(TFPreis2);
@@ -67,7 +68,6 @@ public class StockOverflowGUI extends javax.swing.JFrame {
         PreisFelder.add(TFPreis13);
         PreisFelder.add(TFPreis14);
         PreisFelder.add(TFPreis15);
-        PreisFelder.add(TFPreis16);
 
         ChangeFelder.add(TFChange1);
         ChangeFelder.add(TFChange2);
@@ -84,7 +84,6 @@ public class StockOverflowGUI extends javax.swing.JFrame {
         ChangeFelder.add(TFChange13);
         ChangeFelder.add(TFChange14);
         ChangeFelder.add(TFChange15);
-        ChangeFelder.add(TFChange16);
 
     }
 
@@ -155,9 +154,6 @@ public class StockOverflowGUI extends javax.swing.JFrame {
         TFAktie15 = new javax.swing.JTextField();
         TFPreis15 = new javax.swing.JTextField();
         TFChange15 = new javax.swing.JTextField();
-        TFAktie16 = new javax.swing.JTextField();
-        TFPreis16 = new javax.swing.JTextField();
-        TFChange16 = new javax.swing.JTextField();
         Refresh = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
@@ -177,12 +173,15 @@ public class StockOverflowGUI extends javax.swing.JFrame {
         jButton22 = new javax.swing.JButton();
         jButton23 = new javax.swing.JButton();
         jButton24 = new javax.swing.JButton();
-        jButton25 = new javax.swing.JButton();
         Leaderboard = new javax.swing.JButton();
+        NaechsteSeite = new javax.swing.JButton();
+        VorherigeSeite = new javax.swing.JButton();
+        jLabel4 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         ÜberschriftOverflow.setFont(new java.awt.Font("Penultimate", 1, 36)); // NOI18N
+        ÜberschriftOverflow.setForeground(new java.awt.Color(50, 200, 100));
         ÜberschriftOverflow.setText("Stock Overflow");
 
         DepotGUI.setText("Depot");
@@ -201,9 +200,11 @@ public class StockOverflowGUI extends javax.swing.JFrame {
         });
 
         AktienGUIÜberschrift.setFont(new java.awt.Font("Penultimate", 0, 24)); // NOI18N
+        AktienGUIÜberschrift.setForeground(new java.awt.Color(200, 50, 100));
         AktienGUIÜberschrift.setText("Aktien");
 
-        jButton1.setText("WeiterAktien");
+        jButton1.setForeground(new java.awt.Color(200, 50, 50));
+        jButton1.setText("Weitere Aktien");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton1ActionPerformed(evt);
@@ -375,17 +376,7 @@ public class StockOverflowGUI extends javax.swing.JFrame {
 
         TFChange15.setEditable(false);
 
-        TFAktie16.setEditable(false);
-        TFAktie16.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                TFAktie16ActionPerformed(evt);
-            }
-        });
-
-        TFPreis16.setEditable(false);
-
-        TFChange16.setEditable(false);
-
+        Refresh.setForeground(new java.awt.Color(100, 200, 50));
         Refresh.setText("Refresh");
         Refresh.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -504,19 +495,31 @@ public class StockOverflowGUI extends javax.swing.JFrame {
             }
         });
 
-        jButton25.setText("Ansehen");
-        jButton25.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton25ActionPerformed(evt);
-            }
-        });
-
         Leaderboard.setText("Leaderboard");
         Leaderboard.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 LeaderboardActionPerformed(evt);
             }
         });
+
+        NaechsteSeite.setForeground(new java.awt.Color(200, 200, 50));
+        NaechsteSeite.setText("Nächste Seite");
+        NaechsteSeite.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                NaechsteSeiteActionPerformed(evt);
+            }
+        });
+
+        VorherigeSeite.setForeground(new java.awt.Color(50, 50, 200));
+        VorherigeSeite.setText("Vorherige Seite");
+        VorherigeSeite.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                VorherigeSeiteActionPerformed(evt);
+            }
+        });
+
+        jLabel4.setForeground(new java.awt.Color(0, 0, 255));
+        jLabel4.setText("brought to you by not Johanna");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -642,16 +645,11 @@ public class StockOverflowGUI extends javax.swing.JFrame {
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                                 .addComponent(jButton4))
                             .addGroup(layout.createSequentialGroup()
-                                .addComponent(TFAktie16, javax.swing.GroupLayout.PREFERRED_SIZE, 112, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(jButton1)
-                                    .addGroup(layout.createSequentialGroup()
-                                        .addComponent(TFPreis16, javax.swing.GroupLayout.PREFERRED_SIZE, 82, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                        .addComponent(TFChange16, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                        .addComponent(jButton25)))))
+                                .addComponent(VorherigeSeite)
+                                .addGap(17, 17, 17)
+                                .addComponent(jButton1)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(NaechsteSeite)))
                         .addContainerGap())
                     .addGroup(layout.createSequentialGroup()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
@@ -676,11 +674,11 @@ public class StockOverflowGUI extends javax.swing.JFrame {
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(jButton2))
                             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 132, Short.MAX_VALUE)
                                 .addComponent(Leaderboard)
                                 .addGap(54, 54, 54))))))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addContainerGap(144, Short.MAX_VALUE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                         .addComponent(ÜberschriftOverflow)
@@ -689,7 +687,8 @@ public class StockOverflowGUI extends javax.swing.JFrame {
                         .addGap(109, 109, 109))
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                         .addComponent(LogInGUI, javax.swing.GroupLayout.PREFERRED_SIZE, 83, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(16, 16, 16))))
+                        .addGap(16, 16, 16))
+                    .addComponent(jLabel4, javax.swing.GroupLayout.Alignment.TRAILING)))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -807,15 +806,13 @@ public class StockOverflowGUI extends javax.swing.JFrame {
                     .addComponent(TFPreis15, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(TFChange15, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jButton24))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(TFAktie16, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(TFPreis16, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(TFChange16, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButton25))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jButton1)
-                .addContainerGap(47, Short.MAX_VALUE))
+                    .addComponent(jButton1)
+                    .addComponent(NaechsteSeite)
+                    .addComponent(VorherigeSeite))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 55, Short.MAX_VALUE)
+                .addComponent(jLabel4))
         );
 
         pack();
@@ -823,11 +820,9 @@ public class StockOverflowGUI extends javax.swing.JFrame {
 
     private void LogInGUIActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_LogInGUIActionPerformed
         this.c.switchTo("AnmeldeFenster");
-        if (LogInGUI.getText().equals("Log In")){  
+        if (this.c.getEingeloggt()) {
             LogInGUI.setText("Log Out");
-        }
-
-        else if (LogInGUI.getText().equals("Log Out")){
+        } else {
             LogInGUI.setText("Log In");
         }
     }//GEN-LAST:event_LogInGUIActionPerformed
@@ -900,97 +895,102 @@ public class StockOverflowGUI extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_TFAktie15ActionPerformed
 
-    private void TFAktie16ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_TFAktie16ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_TFAktie16ActionPerformed
-
     private void RefreshActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_RefreshActionPerformed
-        c.AktienDatenAktualisieren();
+        c.AktienDatenAktualisieren(x);
     }//GEN-LAST:event_RefreshActionPerformed
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
         c.switchTo("AktieAnsehen");
-        c.AktieDatenInitialisieren(OA.getDNS().get(OA.getDNSString().get(0)),OA.getDNSString().get(0));
+        c.AktieDatenInitialisieren(OA.getDNS().get(OA.getDNSString().get(x)), OA.getDNSString().get(x));
     }//GEN-LAST:event_jButton2ActionPerformed
 
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
         c.switchTo("AktieAnsehen");
-        c.AktieDatenInitialisieren(OA.getDNS().get(OA.getDNSString().get(1)),OA.getDNSString().get(1));
+        c.AktieDatenInitialisieren(OA.getDNS().get(OA.getDNSString().get(x + 1)), OA.getDNSString().get(x + 1));
     }//GEN-LAST:event_jButton3ActionPerformed
 
     private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
         c.switchTo("AktieAnsehen");
-        c.AktieDatenInitialisieren(OA.getDNS().get(OA.getDNSString().get(2)),OA.getDNSString().get(2));
+        c.AktieDatenInitialisieren(OA.getDNS().get(OA.getDNSString().get(x + 2)), OA.getDNSString().get(x + 2));
     }//GEN-LAST:event_jButton4ActionPerformed
 
     private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
         c.switchTo("AktieAnsehen");
-        c.AktieDatenInitialisieren(OA.getDNS().get(OA.getDNSString().get(3)),OA.getDNSString().get(3));
+        c.AktieDatenInitialisieren(OA.getDNS().get(OA.getDNSString().get(x + 3)), OA.getDNSString().get(x + 3));
     }//GEN-LAST:event_jButton5ActionPerformed
 
     private void jButton6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton6ActionPerformed
         c.switchTo("AktieAnsehen");
-        c.AktieDatenInitialisieren(OA.getDNS().get(OA.getDNSString().get(4)),OA.getDNSString().get(4));
+        c.AktieDatenInitialisieren(OA.getDNS().get(OA.getDNSString().get(x + 4)), OA.getDNSString().get(x + 4));
     }//GEN-LAST:event_jButton6ActionPerformed
 
     private void jButton7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton7ActionPerformed
         c.switchTo("AktieAnsehen");
-        c.AktieDatenInitialisieren(OA.getDNS().get(OA.getDNSString().get(5)),OA.getDNSString().get(5));
+        c.AktieDatenInitialisieren(OA.getDNS().get(OA.getDNSString().get(x + 5)), OA.getDNSString().get(x + 5));
     }//GEN-LAST:event_jButton7ActionPerformed
 
     private void jButton8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton8ActionPerformed
         c.switchTo("AktieAnsehen");
-        c.AktieDatenInitialisieren(OA.getDNS().get(OA.getDNSString().get(6)),OA.getDNSString().get(6));
+        c.AktieDatenInitialisieren(OA.getDNS().get(OA.getDNSString().get(x + 6)), OA.getDNSString().get(x + 6));
     }//GEN-LAST:event_jButton8ActionPerformed
 
     private void jButton9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton9ActionPerformed
         c.switchTo("AktieAnsehen");
-        c.AktieDatenInitialisieren(OA.getDNS().get(OA.getDNSString().get(7)),OA.getDNSString().get(7));
+        c.AktieDatenInitialisieren(OA.getDNS().get(OA.getDNSString().get(x + 7)), OA.getDNSString().get(x + 7));
     }//GEN-LAST:event_jButton9ActionPerformed
 
     private void jButton10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton10ActionPerformed
         c.switchTo("AktieAnsehen");
-        c.AktieDatenInitialisieren(OA.getDNS().get(OA.getDNSString().get(8)),OA.getDNSString().get(8));
+        c.AktieDatenInitialisieren(OA.getDNS().get(OA.getDNSString().get(x + 8)), OA.getDNSString().get(x + 8));
     }//GEN-LAST:event_jButton10ActionPerformed
 
     private void jButton11ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton11ActionPerformed
         c.switchTo("AktieAnsehen");
-        c.AktieDatenInitialisieren(OA.getDNS().get(OA.getDNSString().get(9)),OA.getDNSString().get(9));
+        c.AktieDatenInitialisieren(OA.getDNS().get(OA.getDNSString().get(x + 9)), OA.getDNSString().get(x + 9));
     }//GEN-LAST:event_jButton11ActionPerformed
 
     private void jButton20ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton20ActionPerformed
         c.switchTo("AktieAnsehen");
-        c.AktieDatenInitialisieren(OA.getDNS().get(OA.getDNSString().get(10)),OA.getDNSString().get(10));
+        c.AktieDatenInitialisieren(OA.getDNS().get(OA.getDNSString().get(x + 10)), OA.getDNSString().get(x + 10));
     }//GEN-LAST:event_jButton20ActionPerformed
 
     private void jButton21ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton21ActionPerformed
         c.switchTo("AktieAnsehen");
-        c.AktieDatenInitialisieren(OA.getDNS().get(OA.getDNSString().get(11)),OA.getDNSString().get(11));
+        c.AktieDatenInitialisieren(OA.getDNS().get(OA.getDNSString().get(x + 11)), OA.getDNSString().get(x + 11));
     }//GEN-LAST:event_jButton21ActionPerformed
 
     private void jButton22ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton22ActionPerformed
         c.switchTo("AktieAnsehen");
-        c.AktieDatenInitialisieren(OA.getDNS().get(OA.getDNSString().get(12)),OA.getDNSString().get(12));
+        c.AktieDatenInitialisieren(OA.getDNS().get(OA.getDNSString().get(x + 12)), OA.getDNSString().get(x + 12));
     }//GEN-LAST:event_jButton22ActionPerformed
 
     private void jButton23ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton23ActionPerformed
         c.switchTo("AktieAnsehen");
-        c.AktieDatenInitialisieren(OA.getDNS().get(OA.getDNSString().get(13)),OA.getDNSString().get(13));
+        c.AktieDatenInitialisieren(OA.getDNS().get(OA.getDNSString().get(x + 13)), OA.getDNSString().get(x + 13));
     }//GEN-LAST:event_jButton23ActionPerformed
 
     private void jButton24ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton24ActionPerformed
         c.switchTo("AktieAnsehen");
-        c.AktieDatenInitialisieren(OA.getDNS().get(OA.getDNSString().get(14)),OA.getDNSString().get(14));
+        c.AktieDatenInitialisieren(OA.getDNS().get(OA.getDNSString().get(x + 14)), OA.getDNSString().get(x + 14));
     }//GEN-LAST:event_jButton24ActionPerformed
-
-    private void jButton25ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton25ActionPerformed
-        c.switchTo("AktieAnsehen");
-        c.AktieDatenInitialisieren(OA.getDNS().get(OA.getDNSString().get(15)),OA.getDNSString().get(15));
-    }//GEN-LAST:event_jButton25ActionPerformed
 
     private void LeaderboardActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_LeaderboardActionPerformed
         c.switchTo("Leaderboard");
     }//GEN-LAST:event_LeaderboardActionPerformed
+
+    private void VorherigeSeiteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_VorherigeSeiteActionPerformed
+        c.setX(c.getX() - 15);
+        //x -= 15;
+        if (c.getX() < 0) {
+            c.setX(c.getX() + 15);
+        }
+        c.AktienDatenInitialisieren(x);
+    }//GEN-LAST:event_VorherigeSeiteActionPerformed
+
+    private void NaechsteSeiteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_NaechsteSeiteActionPerformed
+        c.setX(c.getX() + 15);
+        c.AktienDatenInitialisieren(x);
+    }//GEN-LAST:event_NaechsteSeiteActionPerformed
 
     /**
      * @param args the command line arguments
@@ -1039,6 +1039,7 @@ public class StockOverflowGUI extends javax.swing.JFrame {
     private javax.swing.JButton DepotGUI;
     private javax.swing.JButton Leaderboard;
     private javax.swing.JButton LogInGUI;
+    private javax.swing.JButton NaechsteSeite;
     private javax.swing.JButton Refresh;
     public javax.swing.JTextField TFAktie1;
     public javax.swing.JTextField TFAktie10;
@@ -1047,7 +1048,6 @@ public class StockOverflowGUI extends javax.swing.JFrame {
     public javax.swing.JTextField TFAktie13;
     public javax.swing.JTextField TFAktie14;
     public javax.swing.JTextField TFAktie15;
-    public javax.swing.JTextField TFAktie16;
     public javax.swing.JTextField TFAktie2;
     public javax.swing.JTextField TFAktie3;
     public javax.swing.JTextField TFAktie4;
@@ -1063,7 +1063,6 @@ public class StockOverflowGUI extends javax.swing.JFrame {
     public javax.swing.JTextField TFChange13;
     public javax.swing.JTextField TFChange14;
     public javax.swing.JTextField TFChange15;
-    public javax.swing.JTextField TFChange16;
     public javax.swing.JTextField TFChange2;
     public javax.swing.JTextField TFChange3;
     public javax.swing.JTextField TFChange4;
@@ -1079,7 +1078,6 @@ public class StockOverflowGUI extends javax.swing.JFrame {
     public javax.swing.JTextField TFPreis13;
     public javax.swing.JTextField TFPreis14;
     public javax.swing.JTextField TFPreis15;
-    public javax.swing.JTextField TFPreis16;
     public javax.swing.JTextField TFPreis2;
     public javax.swing.JTextField TFPreis3;
     public javax.swing.JTextField TFPreis4;
@@ -1088,6 +1086,7 @@ public class StockOverflowGUI extends javax.swing.JFrame {
     public javax.swing.JTextField TFPreis7;
     public javax.swing.JTextField TFPreis8;
     public javax.swing.JTextField TFPreis9;
+    private javax.swing.JButton VorherigeSeite;
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton10;
     private javax.swing.JButton jButton11;
@@ -1097,7 +1096,6 @@ public class StockOverflowGUI extends javax.swing.JFrame {
     private javax.swing.JButton jButton22;
     private javax.swing.JButton jButton23;
     private javax.swing.JButton jButton24;
-    private javax.swing.JButton jButton25;
     private javax.swing.JButton jButton3;
     private javax.swing.JButton jButton4;
     private javax.swing.JButton jButton5;
@@ -1108,6 +1106,7 @@ public class StockOverflowGUI extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel ÜberschriftOverflow;
     // End of variables declaration//GEN-END:variables
 /**

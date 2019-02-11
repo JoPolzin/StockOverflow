@@ -157,18 +157,11 @@
                               <Component id="jButton4" min="-2" max="-2" attributes="0"/>
                           </Group>
                           <Group type="102" alignment="0" attributes="0">
-                              <Component id="TFAktie16" min="-2" pref="112" max="-2" attributes="0"/>
-                              <EmptySpace type="unrelated" min="-2" max="-2" attributes="0"/>
-                              <Group type="103" groupAlignment="0" attributes="0">
-                                  <Component id="jButton1" min="-2" max="-2" attributes="0"/>
-                                  <Group type="102" alignment="0" attributes="0">
-                                      <Component id="TFPreis16" min="-2" pref="82" max="-2" attributes="0"/>
-                                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                                      <Component id="TFChange16" min="-2" pref="43" max="-2" attributes="0"/>
-                                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                                      <Component id="jButton25" min="-2" max="-2" attributes="0"/>
-                                  </Group>
-                              </Group>
+                              <Component id="VorherigeSeite" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace min="-2" pref="17" max="-2" attributes="0"/>
+                              <Component id="jButton1" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Component id="NaechsteSeite" min="-2" max="-2" attributes="0"/>
                           </Group>
                       </Group>
                       <EmptySpace max="32767" attributes="0"/>
@@ -204,7 +197,7 @@
                               <Component id="jButton2" min="-2" max="-2" attributes="0"/>
                           </Group>
                           <Group type="102" alignment="1" attributes="0">
-                              <EmptySpace max="32767" attributes="0"/>
+                              <EmptySpace pref="132" max="32767" attributes="0"/>
                               <Component id="Leaderboard" min="-2" max="-2" attributes="0"/>
                               <EmptySpace min="-2" pref="54" max="-2" attributes="0"/>
                           </Group>
@@ -213,7 +206,7 @@
               </Group>
           </Group>
           <Group type="102" alignment="1" attributes="0">
-              <EmptySpace pref="144" max="32767" attributes="0"/>
+              <EmptySpace max="32767" attributes="0"/>
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" alignment="1" attributes="0">
                       <Component id="ÜberschriftOverflow" min="-2" max="-2" attributes="0"/>
@@ -225,6 +218,7 @@
                       <Component id="LogInGUI" min="-2" pref="83" max="-2" attributes="0"/>
                       <EmptySpace min="-2" pref="16" max="-2" attributes="0"/>
                   </Group>
+                  <Component id="jLabel4" alignment="1" min="-2" max="-2" attributes="0"/>
               </Group>
           </Group>
       </Group>
@@ -368,16 +362,14 @@
                   <Component id="TFChange15" alignment="3" min="-2" max="-2" attributes="0"/>
                   <Component id="jButton24" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
-              <EmptySpace max="-2" attributes="0"/>
+              <EmptySpace type="separate" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="TFAktie16" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="TFPreis16" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="TFChange16" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="jButton25" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="jButton1" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="NaechsteSeite" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="VorherigeSeite" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
-              <EmptySpace type="unrelated" max="-2" attributes="0"/>
-              <Component id="jButton1" min="-2" max="-2" attributes="0"/>
-              <EmptySpace pref="47" max="32767" attributes="0"/>
+              <EmptySpace pref="55" max="32767" attributes="0"/>
+              <Component id="jLabel4" min="-2" max="-2" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
@@ -387,6 +379,9 @@
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Penultimate" size="36" style="1"/>
+        </Property>
+        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="64" green="c8" red="32" type="rgb"/>
         </Property>
         <Property name="text" type="java.lang.String" value="Stock Overflow"/>
       </Properties>
@@ -415,12 +410,18 @@
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Penultimate" size="24" style="0"/>
         </Property>
+        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="64" green="32" red="c8" type="rgb"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="Aktien"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JButton" name="jButton1">
       <Properties>
-        <Property name="text" type="java.lang.String" value="WeiterAktien"/>
+        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="32" green="32" red="c8" type="rgb"/>
+        </Property>
+        <Property name="text" type="java.lang.String" value="Weitere Aktien"/>
       </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton1ActionPerformed"/>
@@ -831,35 +832,11 @@
         <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
       </AuxValues>
     </Component>
-    <Component class="javax.swing.JTextField" name="TFAktie16">
-      <Properties>
-        <Property name="editable" type="boolean" value="false"/>
-      </Properties>
-      <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="TFAktie16ActionPerformed"/>
-      </Events>
-      <AuxValues>
-        <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
-      </AuxValues>
-    </Component>
-    <Component class="javax.swing.JTextField" name="TFPreis16">
-      <Properties>
-        <Property name="editable" type="boolean" value="false"/>
-      </Properties>
-      <AuxValues>
-        <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
-      </AuxValues>
-    </Component>
-    <Component class="javax.swing.JTextField" name="TFChange16">
-      <Properties>
-        <Property name="editable" type="boolean" value="false"/>
-      </Properties>
-      <AuxValues>
-        <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
-      </AuxValues>
-    </Component>
     <Component class="javax.swing.JButton" name="Refresh">
       <Properties>
+        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="32" green="c8" red="64" type="rgb"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="Refresh"/>
       </Properties>
       <Events>
@@ -1001,14 +978,6 @@
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton24ActionPerformed"/>
       </Events>
     </Component>
-    <Component class="javax.swing.JButton" name="jButton25">
-      <Properties>
-        <Property name="text" type="java.lang.String" value="Ansehen"/>
-      </Properties>
-      <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton25ActionPerformed"/>
-      </Events>
-    </Component>
     <Component class="javax.swing.JButton" name="Leaderboard">
       <Properties>
         <Property name="text" type="java.lang.String" value="Leaderboard"/>
@@ -1016,6 +985,36 @@
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="LeaderboardActionPerformed"/>
       </Events>
+    </Component>
+    <Component class="javax.swing.JButton" name="NaechsteSeite">
+      <Properties>
+        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="32" green="c8" red="c8" type="rgb"/>
+        </Property>
+        <Property name="text" type="java.lang.String" value="N&#xe4;chste Seite"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="NaechsteSeiteActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JButton" name="VorherigeSeite">
+      <Properties>
+        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="c8" green="32" red="32" type="rgb"/>
+        </Property>
+        <Property name="text" type="java.lang.String" value="Vorherige Seite"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="VorherigeSeiteActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JLabel" name="jLabel4">
+      <Properties>
+        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="ff" green="0" red="0" type="rgb"/>
+        </Property>
+        <Property name="text" type="java.lang.String" value="brought to you by not Johanna"/>
+      </Properties>
     </Component>
   </SubComponents>
 </Form>
