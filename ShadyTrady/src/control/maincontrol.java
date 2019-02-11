@@ -14,6 +14,8 @@ import java.awt.Color;
 import java.util.ArrayList;
 import javax.swing.JOptionPane;
 import view.StockOverflowGUI;
+import java.util.Timer;
+import java.util.TimerTask;
 
 /**
  *
@@ -98,12 +100,23 @@ public class maincontrol {
             JOptionPane.showMessageDialog(null, "Keine Benutzer geladen oder Firebase ungültig.");
         }*/
         leaderboard = new Leaderboard(this);
+       
+        
         //LeaderboardInit();
         AktienDatenInitialisieren();
+          Timer timer = new Timer();
+        timer.scheduleAtFixedRate(new TimerTask() {
+            @Override
+            public void run() {
+                System.out.println("hallo");
+        AktienDatenAktualisieren();            }
+        }, 5000,5000);
+        
         loading.jProgressBar1.setValue(100);
         loading.setVisible(false);
         stockOverflowGUI.setVisible(true);
         this.anpasser = new Anpasser(this);
+        anpasser.start();
 
     }
 
@@ -355,6 +368,15 @@ public class maincontrol {
      *
      */
     public void AktieDatenAktualisieren() {
+        Timer timer = new Timer();
+        timer.scheduleAtFixedRate(new TimerTask() {
+            @Override
+            public void run() {
+                System.out.println("hallo");
+                // Your database code here
+            }
+        }, 2000,2000);
+
         OA.prepareDocument(getAktieAnsehen().ausgewählteISIN);
         getAktieAnsehen().Change.setText(Float.toString(OA.getChange()));
         getAktieAnsehen().Preis.setText(Float.toString(OA.getAsk()));
@@ -372,11 +394,7 @@ public class maincontrol {
 
     public void aktieverkaufen(String isin, Integer Stückzahl, Float Preis) {
         if (this.eingeloggt) {
-            
-            
-            
-            
-            
+
         } else {
             this.switchTo("AnmeldeFenster");
 
@@ -503,7 +521,7 @@ public class maincontrol {
     }
 
     public void LeaderboardAktu() {
-        this.anpasser.run();
+        this.anpasser.start();
 
     }
 
