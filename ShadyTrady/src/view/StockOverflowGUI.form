@@ -197,7 +197,7 @@
                               <Component id="jButton2" min="-2" max="-2" attributes="0"/>
                           </Group>
                           <Group type="102" alignment="1" attributes="0">
-                              <EmptySpace max="32767" attributes="0"/>
+                              <EmptySpace pref="132" max="32767" attributes="0"/>
                               <Component id="Leaderboard" min="-2" max="-2" attributes="0"/>
                               <EmptySpace min="-2" pref="54" max="-2" attributes="0"/>
                           </Group>
@@ -206,7 +206,7 @@
               </Group>
           </Group>
           <Group type="102" alignment="1" attributes="0">
-              <EmptySpace pref="144" max="32767" attributes="0"/>
+              <EmptySpace max="32767" attributes="0"/>
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" alignment="1" attributes="0">
                       <Component id="ÜberschriftOverflow" min="-2" max="-2" attributes="0"/>
@@ -218,6 +218,7 @@
                       <Component id="LogInGUI" min="-2" pref="83" max="-2" attributes="0"/>
                       <EmptySpace min="-2" pref="16" max="-2" attributes="0"/>
                   </Group>
+                  <Component id="jLabel4" alignment="1" min="-2" max="-2" attributes="0"/>
               </Group>
           </Group>
       </Group>
@@ -367,7 +368,8 @@
                   <Component id="NaechsteSeite" alignment="3" min="-2" max="-2" attributes="0"/>
                   <Component id="VorherigeSeite" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
-              <EmptySpace pref="69" max="32767" attributes="0"/>
+              <EmptySpace pref="55" max="32767" attributes="0"/>
+              <Component id="jLabel4" min="-2" max="-2" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
@@ -377,6 +379,9 @@
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Penultimate" size="36" style="1"/>
+        </Property>
+        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="64" green="c8" red="32" type="rgb"/>
         </Property>
         <Property name="text" type="java.lang.String" value="Stock Overflow"/>
       </Properties>
@@ -405,11 +410,17 @@
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Penultimate" size="24" style="0"/>
         </Property>
+        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="64" green="32" red="c8" type="rgb"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="Aktien"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JButton" name="jButton1">
       <Properties>
+        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="32" green="32" red="c8" type="rgb"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="Weitere Aktien"/>
       </Properties>
       <Events>
@@ -823,6 +834,9 @@
     </Component>
     <Component class="javax.swing.JButton" name="Refresh">
       <Properties>
+        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="32" green="c8" red="64" type="rgb"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="Refresh"/>
       </Properties>
       <Events>
@@ -974,6 +988,9 @@
     </Component>
     <Component class="javax.swing.JButton" name="NaechsteSeite">
       <Properties>
+        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="32" green="c8" red="c8" type="rgb"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="N&#xe4;chste Seite"/>
       </Properties>
       <Events>
@@ -982,11 +999,22 @@
     </Component>
     <Component class="javax.swing.JButton" name="VorherigeSeite">
       <Properties>
+        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="c8" green="32" red="32" type="rgb"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="Vorherige Seite"/>
       </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="VorherigeSeiteActionPerformed"/>
       </Events>
+    </Component>
+    <Component class="javax.swing.JLabel" name="jLabel4">
+      <Properties>
+        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="ff" green="0" red="0" type="rgb"/>
+        </Property>
+        <Property name="text" type="java.lang.String" value="brought to you by not Johanna"/>
+      </Properties>
     </Component>
   </SubComponents>
 </Form>

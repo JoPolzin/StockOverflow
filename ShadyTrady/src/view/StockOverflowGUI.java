@@ -175,10 +175,12 @@ public class StockOverflowGUI extends javax.swing.JFrame {
         Leaderboard = new javax.swing.JButton();
         NaechsteSeite = new javax.swing.JButton();
         VorherigeSeite = new javax.swing.JButton();
+        jLabel4 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         ÜberschriftOverflow.setFont(new java.awt.Font("Penultimate", 1, 36)); // NOI18N
+        ÜberschriftOverflow.setForeground(new java.awt.Color(50, 200, 100));
         ÜberschriftOverflow.setText("Stock Overflow");
 
         DepotGUI.setText("Depot");
@@ -197,8 +199,10 @@ public class StockOverflowGUI extends javax.swing.JFrame {
         });
 
         AktienGUIÜberschrift.setFont(new java.awt.Font("Penultimate", 0, 24)); // NOI18N
+        AktienGUIÜberschrift.setForeground(new java.awt.Color(200, 50, 100));
         AktienGUIÜberschrift.setText("Aktien");
 
+        jButton1.setForeground(new java.awt.Color(200, 50, 50));
         jButton1.setText("Weitere Aktien");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -371,6 +375,7 @@ public class StockOverflowGUI extends javax.swing.JFrame {
 
         TFChange15.setEditable(false);
 
+        Refresh.setForeground(new java.awt.Color(100, 200, 50));
         Refresh.setText("Refresh");
         Refresh.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -496,6 +501,7 @@ public class StockOverflowGUI extends javax.swing.JFrame {
             }
         });
 
+        NaechsteSeite.setForeground(new java.awt.Color(200, 200, 50));
         NaechsteSeite.setText("Nächste Seite");
         NaechsteSeite.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -503,12 +509,16 @@ public class StockOverflowGUI extends javax.swing.JFrame {
             }
         });
 
+        VorherigeSeite.setForeground(new java.awt.Color(50, 50, 200));
         VorherigeSeite.setText("Vorherige Seite");
         VorherigeSeite.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 VorherigeSeiteActionPerformed(evt);
             }
         });
+
+        jLabel4.setForeground(new java.awt.Color(0, 0, 255));
+        jLabel4.setText("brought to you by not Johanna");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -663,11 +673,11 @@ public class StockOverflowGUI extends javax.swing.JFrame {
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(jButton2))
                             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 132, Short.MAX_VALUE)
                                 .addComponent(Leaderboard)
                                 .addGap(54, 54, 54))))))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addContainerGap(144, Short.MAX_VALUE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                         .addComponent(ÜberschriftOverflow)
@@ -676,7 +686,8 @@ public class StockOverflowGUI extends javax.swing.JFrame {
                         .addGap(109, 109, 109))
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                         .addComponent(LogInGUI, javax.swing.GroupLayout.PREFERRED_SIZE, 83, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(16, 16, 16))))
+                        .addGap(16, 16, 16))
+                    .addComponent(jLabel4, javax.swing.GroupLayout.Alignment.TRAILING)))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -799,7 +810,8 @@ public class StockOverflowGUI extends javax.swing.JFrame {
                     .addComponent(jButton1)
                     .addComponent(NaechsteSeite)
                     .addComponent(VorherigeSeite))
-                .addContainerGap(69, Short.MAX_VALUE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 55, Short.MAX_VALUE)
+                .addComponent(jLabel4))
         );
 
         pack();
@@ -1092,6 +1104,7 @@ public class StockOverflowGUI extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel ÜberschriftOverflow;
     // End of variables declaration//GEN-END:variables
 /**
