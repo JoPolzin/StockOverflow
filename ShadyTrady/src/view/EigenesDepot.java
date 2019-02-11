@@ -772,15 +772,9 @@ public class EigenesDepot extends javax.swing.JPanel {
     }//GEN-LAST:event_TFAktie13ActionPerformed
 
     private void LogInGUIActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_LogInGUIActionPerformed
+        this.c.logout();
         this.c.switchTo("AnmeldeFenster");
-        if (LogInGUI.getText().equals("Log In")){
-            LogInGUI.setText("Log Out");
-        }
-
-        else if (LogInGUI.getText().equals("Log Out")){
-            LogInGUI.setText("Log In");
-            this.c.switchTo("StockOverflowGUI");
-        }
+       
     }//GEN-LAST:event_LogInGUIActionPerformed
 
     private void TFAktie14ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_TFAktie14ActionPerformed

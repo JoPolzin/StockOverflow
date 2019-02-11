@@ -6,7 +6,9 @@
 package view;
 
 import control.maincontrol;
+import java.awt.Color;
 import java.util.ArrayList;
+import javax.swing.JButton;
 import javax.swing.JTextField;
 import model.OA;
 
@@ -29,10 +31,16 @@ public class StockOverflowGUI extends javax.swing.JFrame {
      */
     public ArrayList<Object> PreisListe;
 
+    public JButton getLogInGUI() {
+        return LogInGUI;
+    }
+
     /**
      * Creates new form NewJFrame
      */
     public StockOverflowGUI(maincontrol mc) {
+        
+        
         this.c = mc;
         initComponents();
         AktienFelder.add(TFAktie1);
@@ -85,6 +93,8 @@ public class StockOverflowGUI extends javax.swing.JFrame {
         ChangeFelder.add(TFChange14);
         ChangeFelder.add(TFChange15);
         ChangeFelder.add(TFChange16);
+        
+        
 
     }
 
