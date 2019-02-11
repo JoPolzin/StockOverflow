@@ -178,6 +178,7 @@ public class StockOverflowGUI extends javax.swing.JFrame {
         jLabel4 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setCursor(new java.awt.Cursor(java.awt.Cursor.WAIT_CURSOR));
 
         ÜberschriftOverflow.setFont(new java.awt.Font("Penultimate", 1, 36)); // NOI18N
         ÜberschriftOverflow.setForeground(new java.awt.Color(50, 200, 100));
