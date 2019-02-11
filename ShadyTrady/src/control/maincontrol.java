@@ -507,6 +507,10 @@ public class maincontrol {
 
     }
 
+    public boolean isEingeloggt() {
+        return eingeloggt;
+    }
+
     /**
      * @return the leaderboard
      */
