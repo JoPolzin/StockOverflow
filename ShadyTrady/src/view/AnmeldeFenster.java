@@ -36,20 +36,18 @@ public class AnmeldeFenster extends javax.swing.JFrame {
     private void initComponents() {
 
         StockOverflowAnmeldung = new javax.swing.JLabel();
-        AnmeldenBenutzernameEingeben = new javax.swing.JTextPane();
         AnmeldenBenutzername = new javax.swing.JLabel();
         AnmeldenPasswort = new javax.swing.JLabel();
         PasswortEingeben = new javax.swing.JPasswordField();
         AnmeldenAnmelden = new javax.swing.JButton();
         AnmeldenAbbrechen = new javax.swing.JButton();
         AnmeldenRegistrieren = new javax.swing.JButton();
+        AnmeldenBenutzernameEingeben = new javax.swing.JTextField();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         StockOverflowAnmeldung.setFont(new java.awt.Font("Penultimate", 1, 36)); // NOI18N
         StockOverflowAnmeldung.setText("StockOverflow");
-
-        AnmeldenBenutzernameEingeben.setFont(new java.awt.Font("Penultimate", 0, 11)); // NOI18N
 
         AnmeldenBenutzername.setFont(new java.awt.Font("Penultimate", 0, 11)); // NOI18N
         AnmeldenBenutzername.setText("Benutzername");
@@ -87,6 +85,12 @@ public class AnmeldeFenster extends javax.swing.JFrame {
             }
         });
 
+        AnmeldenBenutzernameEingeben.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                AnmeldenBenutzernameEingebenActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -99,8 +103,9 @@ public class AnmeldeFenster extends javax.swing.JFrame {
                             .addComponent(AnmeldenPasswort)
                             .addComponent(AnmeldenBenutzername)
                             .addComponent(StockOverflowAnmeldung)
-                            .addComponent(PasswortEingeben, javax.swing.GroupLayout.PREFERRED_SIZE, 117, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(AnmeldenBenutzernameEingeben, javax.swing.GroupLayout.PREFERRED_SIZE, 115, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                                .addComponent(AnmeldenBenutzernameEingeben, javax.swing.GroupLayout.Alignment.LEADING)
+                                .addComponent(PasswortEingeben, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 117, Short.MAX_VALUE))))
                     .addGroup(layout.createSequentialGroup()
                         .addGap(121, 121, 121)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
@@ -122,13 +127,13 @@ public class AnmeldeFenster extends javax.swing.JFrame {
                 .addComponent(AnmeldenPasswort)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(PasswortEingeben, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(32, 32, 32)
+                .addGap(53, 53, 53)
                 .addComponent(AnmeldenAnmelden)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(AnmeldenRegistrieren, javax.swing.GroupLayout.PREFERRED_SIZE, 23, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(AnmeldenAbbrechen)
-                .addContainerGap(41, Short.MAX_VALUE))
+                .addContainerGap(20, Short.MAX_VALUE))
         );
 
         pack();
@@ -155,6 +160,10 @@ public class AnmeldeFenster extends javax.swing.JFrame {
     private void AnmeldenRegistrierenActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_AnmeldenRegistrierenActionPerformed
         this.c.switchTo("RegistrierFenster");
     }//GEN-LAST:event_AnmeldenRegistrierenActionPerformed
+
+    private void AnmeldenBenutzernameEingebenActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_AnmeldenBenutzernameEingebenActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_AnmeldenBenutzernameEingebenActionPerformed
 
     /**
      * @param args the command line arguments
@@ -198,7 +207,7 @@ public class AnmeldeFenster extends javax.swing.JFrame {
     private javax.swing.JButton AnmeldenAbbrechen;
     private javax.swing.JButton AnmeldenAnmelden;
     private javax.swing.JLabel AnmeldenBenutzername;
-    private javax.swing.JTextPane AnmeldenBenutzernameEingeben;
+    private javax.swing.JTextField AnmeldenBenutzernameEingeben;
     private javax.swing.JLabel AnmeldenPasswort;
     private javax.swing.JButton AnmeldenRegistrieren;
     private javax.swing.JPasswordField PasswortEingeben;
