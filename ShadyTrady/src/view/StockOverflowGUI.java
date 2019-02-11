@@ -823,11 +823,11 @@ public class StockOverflowGUI extends javax.swing.JFrame {
 
     private void LogInGUIActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_LogInGUIActionPerformed
         this.c.switchTo("AnmeldeFenster");
-        if (LogInGUI.getText().equals("Log In")){  
+        if (this.c.getEingeloggt()){  
             LogInGUI.setText("Log Out");
         }
 
-        else if (LogInGUI.getText().equals("Log Out")){
+        else {
             LogInGUI.setText("Log In");
         }
     }//GEN-LAST:event_LogInGUIActionPerformed
