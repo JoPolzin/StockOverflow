@@ -171,7 +171,6 @@ public class maincontrol {
                 }
                 break;
             case "EigenesDepot":
-                 System.out.println(eingeloggt);
                 if (eingeloggt) {
                     eigenesDepot.setVisible(true);
                 } else {
