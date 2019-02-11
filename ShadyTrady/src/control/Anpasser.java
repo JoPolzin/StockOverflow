@@ -42,7 +42,8 @@ class Anpasser extends Thread {
             LeaderboardInit();
             sleep(1000*60);
 
-        } catch (Exception e) {
+
+        } catch (InterruptedException e) {
         }
         System.out.println("Demo-Thread");
 

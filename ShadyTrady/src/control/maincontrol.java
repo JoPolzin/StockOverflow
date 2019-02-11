@@ -210,8 +210,12 @@ public class maincontrol {
 
     }
 
+   
     public void login(String benutzername, String password) {
-
+        if (eingeloggt){
+        this.logout();
+        return;
+        }
         Benutzer b = null;
         b = fz.EinenBenutzerAuslesen(benutzername);
         if (b == null) {
@@ -221,16 +225,41 @@ public class maincontrol {
         }
         if (b.getPasswort().equals(password)) {
 
-            System.out.println("Login erfolgreich");
-            JOptionPane.showMessageDialog(null, "Login erfolgreich.\n Angemeldeter Benutzer:\n" + b.toString());
-
+            this.stockOverflowGUI.getLogInGUI().setText("Logout");
             this.b = b;
             this.eingeloggt = true;
-            this.switchTo("EigenesDepot");
+            this.switchTo("StockOverflowGUI");
+            System.out.println("Login erfolgreich");
+            JOptionPane.showMessageDialog(null, "Login erfolgreich.\n Angemeldeter Benutzer:\n" + b.toString());
+return;
+            
+            
 
+        }
+        else {
+            System.out.println("falsches Passwort");
+            JOptionPane.showMessageDialog(null, "falsches Passwort");
+            this.eingeloggt = false;
+            return;
+
+        
+        
+        
         }
 
     }
+    
+    public void logout() {
+        this.eingeloggt = false;
+         System.out.println("Logout erfolgreich");
+         JOptionPane.showMessageDialog(null, "Logout erfolgreich");
+         
+         this.stockOverflowGUI.getLogInGUI().setText("Login");
+        this.switchTo("StockOverflowGUI");
+            
+    
+    }
+
 
     public boolean register(String benutzername, String password, String confPassword, String email) {
         /*FirebaseSaveObject fso = new FirebaseSaveObject();
@@ -238,7 +267,6 @@ public class maincontrol {
             System.out.print("oh well");
         }
         if (password == confPassword) {
-
             fso.userUpdates.put(benutzername, password);
         }*/
         this.al = fz.benutzerAuslesen();

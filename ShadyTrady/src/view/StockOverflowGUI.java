@@ -6,7 +6,9 @@
 package view;
 
 import control.maincontrol;
+import java.awt.Color;
 import java.util.ArrayList;
+import javax.swing.JButton;
 import javax.swing.JTextField;
 import model.OA;
 
@@ -30,10 +32,16 @@ public class StockOverflowGUI extends javax.swing.JFrame {
      */
     public ArrayList<Object> PreisListe;
 
+    public JButton getLogInGUI() {
+        return LogInGUI;
+    }
+
     /**
      * Creates new form NewJFrame
      */
     public StockOverflowGUI(maincontrol mc) {
+        
+        
         this.c = mc;
         c.setX(0);
         initComponents();
@@ -179,6 +187,7 @@ public class StockOverflowGUI extends javax.swing.JFrame {
         jLabel4 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setCursor(new java.awt.Cursor(java.awt.Cursor.WAIT_CURSOR));
 
         ÜberschriftOverflow.setFont(new java.awt.Font("Penultimate", 1, 36)); // NOI18N
         ÜberschriftOverflow.setForeground(new java.awt.Color(50, 200, 100));
@@ -820,15 +829,11 @@ public class StockOverflowGUI extends javax.swing.JFrame {
 
     private void LogInGUIActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_LogInGUIActionPerformed
         this.c.switchTo("AnmeldeFenster");
-        if (this.c.getEingeloggt()) {
-            LogInGUI.setText("Log Out");
-        } else {
-            LogInGUI.setText("Log In");
-        }
+        
     }//GEN-LAST:event_LogInGUIActionPerformed
 
     private void DepotGUIActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_DepotGUIActionPerformed
-        c.switchTo("AnmeldeFenster");
+        c.switchTo("EigenesDepot");
     }//GEN-LAST:event_DepotGUIActionPerformed
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
