@@ -10,6 +10,7 @@ import control.maincontrol;
 import java.util.ArrayList;
 import model.Aktie;
 import model.Benutzer;
+import view.EigenesDepot;
 
 /**
  *
@@ -46,9 +47,9 @@ public class andereTests {
         System.out.println(b3.GesamtKapital());*/
         maincontrol c = new maincontrol();
        // c.setB(b);
-        FirebaseZugriff fb = new FirebaseZugriff(c);
+        //FirebaseZugriff fb = new FirebaseZugriff(c);
         //fb.ObjektLöschen("depots/Louie","a1");
-        
+        EigenesDepot d = new EigenesDepot(c);
         //System.out.println(fb.WertEinerReferenz("depots/er/DE000A1EWWW0", "anzahl"));
         
         

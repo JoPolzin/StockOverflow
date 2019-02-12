@@ -7,17 +7,20 @@
 package view;
 
 import control.maincontrol;
-import model.OA;
 
 /**
  *
- * @author lukas.leja
+ * @author walle
  */
-public class EigenesDepot extends javax.swing.JPanel {
-    maincontrol c;
-    /** Creates new form EigenesDepot1 */
+public class EigenesDepot extends javax.swing.JFrame {
+maincontrol c;
+    /** Creates new form EigensDepot2 */
     public EigenesDepot(maincontrol c) {
         this.c = c;
+        initComponents();
+    }
+    
+    public EigenesDepot(){
         initComponents();
     }
 
@@ -30,872 +33,592 @@ public class EigenesDepot extends javax.swing.JPanel {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        TFAktie5 = new javax.swing.JTextField();
-        jButton6 = new javax.swing.JButton();
-        TFPreis5 = new javax.swing.JTextField();
-        jButton7 = new javax.swing.JButton();
-        TFChange5 = new javax.swing.JTextField();
-        TFAktie6 = new javax.swing.JTextField();
-        TFPreis6 = new javax.swing.JTextField();
-        TFChange6 = new javax.swing.JTextField();
-        jButton8 = new javax.swing.JButton();
-        jButton9 = new javax.swing.JButton();
-        jButton10 = new javax.swing.JButton();
-        jButton11 = new javax.swing.JButton();
-        TFAktie7 = new javax.swing.JTextField();
-        jButton20 = new javax.swing.JButton();
-        TFPreis7 = new javax.swing.JTextField();
-        jButton21 = new javax.swing.JButton();
-        TFChange7 = new javax.swing.JTextField();
-        jButton22 = new javax.swing.JButton();
-        TFAktie8 = new javax.swing.JTextField();
-        jButton23 = new javax.swing.JButton();
-        TFPreis8 = new javax.swing.JTextField();
-        jButton24 = new javax.swing.JButton();
-        TFChange8 = new javax.swing.JTextField();
-        jButton25 = new javax.swing.JButton();
-        TFAktie9 = new javax.swing.JTextField();
-        TFPreis9 = new javax.swing.JTextField();
-        TFChange9 = new javax.swing.JTextField();
-        TFAktie10 = new javax.swing.JTextField();
-        TFPreis10 = new javax.swing.JTextField();
-        TFChange10 = new javax.swing.JTextField();
-        TFAktie11 = new javax.swing.JTextField();
-        TFPreis11 = new javax.swing.JTextField();
-        TFChange11 = new javax.swing.JTextField();
-        TFAktie12 = new javax.swing.JTextField();
-        TFPreis12 = new javax.swing.JTextField();
-        TFChange12 = new javax.swing.JTextField();
-        TFAktie13 = new javax.swing.JTextField();
-        TFPreis13 = new javax.swing.JTextField();
-        ÜberschriftOverflow = new javax.swing.JLabel();
-        LogInGUI = new javax.swing.JButton();
-        TFChange13 = new javax.swing.JTextField();
-        TFAktie14 = new javax.swing.JTextField();
-        TFPreis14 = new javax.swing.JTextField();
-        TFChange14 = new javax.swing.JTextField();
-        AktienGUIÜberschrift = new javax.swing.JLabel();
-        TFAktie15 = new javax.swing.JTextField();
-        TFPreis15 = new javax.swing.JTextField();
+        TFAktie = new javax.swing.JTextField();
+        TFPreis = new javax.swing.JTextField();
+        TFAnzahl = new javax.swing.JTextField();
+        Verkaufen = new javax.swing.JButton();
+        StockOverflow = new javax.swing.JLabel();
+        EigenesDepot = new javax.swing.JLabel();
         TFAktie1 = new javax.swing.JTextField();
-        TFChange15 = new javax.swing.JTextField();
         TFPreis1 = new javax.swing.JTextField();
-        TFAktie16 = new javax.swing.JTextField();
-        TFChange1 = new javax.swing.JTextField();
-        TFPreis16 = new javax.swing.JTextField();
+        TFAnzahl1 = new javax.swing.JTextField();
+        Verkaufen1 = new javax.swing.JButton();
         TFAktie2 = new javax.swing.JTextField();
-        TFChange16 = new javax.swing.JTextField();
         TFPreis2 = new javax.swing.JTextField();
-        TFChange2 = new javax.swing.JTextField();
+        TFAnzahl2 = new javax.swing.JTextField();
+        Verkaufen2 = new javax.swing.JButton();
         TFAktie3 = new javax.swing.JTextField();
         TFPreis3 = new javax.swing.JTextField();
+        TFAnzahl3 = new javax.swing.JTextField();
+        Verkaufen3 = new javax.swing.JButton();
+        TFAktie4 = new javax.swing.JTextField();
+        TFPreis4 = new javax.swing.JTextField();
+        TFAnzahl4 = new javax.swing.JTextField();
+        Verkaufen4 = new javax.swing.JButton();
+        TFAktie5 = new javax.swing.JTextField();
+        TFPreis5 = new javax.swing.JTextField();
+        TFAnzahl5 = new javax.swing.JTextField();
+        Verkaufen5 = new javax.swing.JButton();
+        TFAktie6 = new javax.swing.JTextField();
+        TFPreis6 = new javax.swing.JTextField();
+        TFAnzahl6 = new javax.swing.JTextField();
+        Verkaufen6 = new javax.swing.JButton();
+        TFAktie7 = new javax.swing.JTextField();
+        TFPreis7 = new javax.swing.JTextField();
+        TFAnzahl7 = new javax.swing.JTextField();
+        Verkaufen7 = new javax.swing.JButton();
+        TFAktie8 = new javax.swing.JTextField();
+        TFPreis8 = new javax.swing.JTextField();
+        TFAnzahl8 = new javax.swing.JTextField();
+        Verkaufen8 = new javax.swing.JButton();
+        TFAktie9 = new javax.swing.JTextField();
+        TFPreis9 = new javax.swing.JTextField();
+        TFAnzahl9 = new javax.swing.JTextField();
+        Verkaufen9 = new javax.swing.JButton();
+        TFAktie10 = new javax.swing.JTextField();
+        TFPreis10 = new javax.swing.JTextField();
+        TFAnzahl10 = new javax.swing.JTextField();
+        Verkaufen10 = new javax.swing.JButton();
+        TFAktie11 = new javax.swing.JTextField();
+        TFPreis11 = new javax.swing.JTextField();
+        TFAnzahl11 = new javax.swing.JTextField();
+        Verkaufen11 = new javax.swing.JButton();
+        TFAktie12 = new javax.swing.JTextField();
+        TFPreis12 = new javax.swing.JTextField();
+        TFAnzahl12 = new javax.swing.JTextField();
+        Verkaufen12 = new javax.swing.JButton();
+        TFAktie13 = new javax.swing.JTextField();
+        TFPreis13 = new javax.swing.JTextField();
+        TFAnzahl13 = new javax.swing.JTextField();
+        Verkaufen13 = new javax.swing.JButton();
+        TFAktie14 = new javax.swing.JTextField();
+        TFPreis14 = new javax.swing.JTextField();
+        TFAnzahl14 = new javax.swing.JTextField();
+        Verkaufen14 = new javax.swing.JButton();
+        TFAktie15 = new javax.swing.JTextField();
+        TFPreis15 = new javax.swing.JTextField();
+        TFAnzahl15 = new javax.swing.JTextField();
+        Verkaufen15 = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
-        TFChange3 = new javax.swing.JTextField();
-        jButton2 = new javax.swing.JButton();
-        TFAktie4 = new javax.swing.JTextField();
-        jButton3 = new javax.swing.JButton();
-        TFPreis4 = new javax.swing.JTextField();
-        jButton4 = new javax.swing.JButton();
-        TFChange4 = new javax.swing.JTextField();
-        jButton5 = new javax.swing.JButton();
 
-        TFAktie5.setEditable(false);
-        TFAktie5.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                TFAktie5ActionPerformed(evt);
-            }
-        });
+        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        jButton6.setText("Verkaufen");
-        jButton6.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton6ActionPerformed(evt);
-            }
-        });
+        TFAktie.setEditable(false);
 
-        TFPreis5.setEditable(false);
+        TFPreis.setEditable(false);
 
-        jButton7.setText("Verkaufen");
-        jButton7.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton7ActionPerformed(evt);
-            }
-        });
+        TFAnzahl.setEditable(false);
 
-        TFChange5.setEditable(false);
+        Verkaufen.setText("Verkaufen");
 
-        TFAktie6.setEditable(false);
-        TFAktie6.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                TFAktie6ActionPerformed(evt);
-            }
-        });
+        StockOverflow.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
+        StockOverflow.setText("StockOverflow");
 
-        TFPreis6.setEditable(false);
-
-        TFChange6.setEditable(false);
-
-        jButton8.setText("Verkaufen");
-        jButton8.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton8ActionPerformed(evt);
-            }
-        });
-
-        jButton9.setText("Verkaufen");
-        jButton9.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton9ActionPerformed(evt);
-            }
-        });
-
-        jButton10.setText("Verkaufen");
-        jButton10.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton10ActionPerformed(evt);
-            }
-        });
-
-        jButton11.setText("Verkaufen");
-        jButton11.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton11ActionPerformed(evt);
-            }
-        });
-
-        TFAktie7.setEditable(false);
-        TFAktie7.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                TFAktie7ActionPerformed(evt);
-            }
-        });
-
-        jButton20.setText("Verkaufen");
-        jButton20.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton20ActionPerformed(evt);
-            }
-        });
-
-        TFPreis7.setEditable(false);
-
-        jButton21.setText("Verkaufen");
-        jButton21.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton21ActionPerformed(evt);
-            }
-        });
-
-        TFChange7.setEditable(false);
-
-        jButton22.setText("Verkaufen");
-        jButton22.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton22ActionPerformed(evt);
-            }
-        });
-
-        TFAktie8.setEditable(false);
-        TFAktie8.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                TFAktie8ActionPerformed(evt);
-            }
-        });
-
-        jButton23.setText("Verkaufen");
-        jButton23.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton23ActionPerformed(evt);
-            }
-        });
-
-        TFPreis8.setEditable(false);
-
-        jButton24.setText("Verkaufen");
-        jButton24.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton24ActionPerformed(evt);
-            }
-        });
-
-        TFChange8.setEditable(false);
-
-        jButton25.setText("Verkaufen");
-        jButton25.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton25ActionPerformed(evt);
-            }
-        });
-
-        TFAktie9.setEditable(false);
-        TFAktie9.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                TFAktie9ActionPerformed(evt);
-            }
-        });
-
-        TFPreis9.setEditable(false);
-
-        TFChange9.setEditable(false);
-
-        TFAktie10.setEditable(false);
-        TFAktie10.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                TFAktie10ActionPerformed(evt);
-            }
-        });
-
-        TFPreis10.setEditable(false);
-
-        TFChange10.setEditable(false);
-
-        TFAktie11.setEditable(false);
-        TFAktie11.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                TFAktie11ActionPerformed(evt);
-            }
-        });
-
-        TFPreis11.setEditable(false);
-
-        TFChange11.setEditable(false);
-
-        TFAktie12.setEditable(false);
-        TFAktie12.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                TFAktie12ActionPerformed(evt);
-            }
-        });
-
-        TFPreis12.setEditable(false);
-
-        TFChange12.setEditable(false);
-
-        TFAktie13.setEditable(false);
-        TFAktie13.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                TFAktie13ActionPerformed(evt);
-            }
-        });
-
-        TFPreis13.setEditable(false);
-
-        ÜberschriftOverflow.setFont(new java.awt.Font("Penultimate", 1, 36)); // NOI18N
-        ÜberschriftOverflow.setText("Stock Overflow");
-
-        LogInGUI.setText("Log Out");
-        LogInGUI.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                LogInGUIActionPerformed(evt);
-            }
-        });
-
-        TFChange13.setEditable(false);
-
-        TFAktie14.setEditable(false);
-        TFAktie14.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                TFAktie14ActionPerformed(evt);
-            }
-        });
-
-        TFPreis14.setEditable(false);
-
-        TFChange14.setEditable(false);
-
-        AktienGUIÜberschrift.setFont(new java.awt.Font("Penultimate", 0, 24)); // NOI18N
-        AktienGUIÜberschrift.setText("Eigenes Depot");
-
-        TFAktie15.setEditable(false);
-        TFAktie15.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                TFAktie15ActionPerformed(evt);
-            }
-        });
-
-        TFPreis15.setEditable(false);
+        EigenesDepot.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        EigenesDepot.setText("Eigens Depot");
 
         TFAktie1.setEditable(false);
-        TFAktie1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                TFAktie1ActionPerformed(evt);
-            }
-        });
-
-        TFChange15.setEditable(false);
 
         TFPreis1.setEditable(false);
 
-        TFAktie16.setEditable(false);
-        TFAktie16.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                TFAktie16ActionPerformed(evt);
-            }
-        });
+        TFAnzahl1.setEditable(false);
 
-        TFChange1.setEditable(false);
-
-        TFPreis16.setEditable(false);
+        Verkaufen1.setText("Verkaufen");
 
         TFAktie2.setEditable(false);
-        TFAktie2.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                TFAktie2ActionPerformed(evt);
-            }
-        });
-
-        TFChange16.setEditable(false);
 
         TFPreis2.setEditable(false);
 
-        TFChange2.setEditable(false);
+        TFAnzahl2.setEditable(false);
+
+        Verkaufen2.setText("Verkaufen");
 
         TFAktie3.setEditable(false);
-        TFAktie3.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                TFAktie3ActionPerformed(evt);
-            }
-        });
 
         TFPreis3.setEditable(false);
 
-        jLabel1.setText("Name");
+        TFAnzahl3.setEditable(false);
 
-        jLabel2.setText("Preis");
-
-        jLabel3.setText("Change");
-
-        TFChange3.setEditable(false);
-
-        jButton2.setText("Verkaufen");
-        jButton2.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton2ActionPerformed(evt);
-            }
-        });
+        Verkaufen3.setText("Verkaufen");
 
         TFAktie4.setEditable(false);
-        TFAktie4.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                TFAktie4ActionPerformed(evt);
-            }
-        });
-
-        jButton3.setText("Verkaufen");
-        jButton3.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton3ActionPerformed(evt);
-            }
-        });
 
         TFPreis4.setEditable(false);
 
-        jButton4.setText("Verkaufen");
-        jButton4.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton4ActionPerformed(evt);
-            }
-        });
+        TFAnzahl4.setEditable(false);
 
-        TFChange4.setEditable(false);
+        Verkaufen4.setText("Verkaufen");
 
-        jButton5.setText("Verkaufen");
-        jButton5.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton5ActionPerformed(evt);
-            }
-        });
+        TFAktie5.setEditable(false);
 
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
-        this.setLayout(layout);
+        TFPreis5.setEditable(false);
+
+        TFAnzahl5.setEditable(false);
+
+        Verkaufen5.setText("Verkaufen");
+
+        TFAktie6.setEditable(false);
+
+        TFPreis6.setEditable(false);
+
+        TFAnzahl6.setEditable(false);
+
+        Verkaufen6.setText("Verkaufen");
+
+        TFAktie7.setEditable(false);
+
+        TFPreis7.setEditable(false);
+
+        TFAnzahl7.setEditable(false);
+
+        Verkaufen7.setText("Verkaufen");
+
+        TFAktie8.setEditable(false);
+
+        TFPreis8.setEditable(false);
+
+        TFAnzahl8.setEditable(false);
+
+        Verkaufen8.setText("Verkaufen");
+
+        TFAktie9.setEditable(false);
+
+        TFPreis9.setEditable(false);
+
+        TFAnzahl9.setEditable(false);
+
+        Verkaufen9.setText("Verkaufen");
+
+        TFAktie10.setEditable(false);
+
+        TFPreis10.setEditable(false);
+
+        TFAnzahl10.setEditable(false);
+
+        Verkaufen10.setText("Verkaufen");
+
+        TFAktie11.setEditable(false);
+
+        TFPreis11.setEditable(false);
+
+        TFAnzahl11.setEditable(false);
+
+        Verkaufen11.setText("Verkaufen");
+
+        TFAktie12.setEditable(false);
+
+        TFPreis12.setEditable(false);
+
+        TFAnzahl12.setEditable(false);
+
+        Verkaufen12.setText("Verkaufen");
+
+        TFAktie13.setEditable(false);
+
+        TFPreis13.setEditable(false);
+
+        TFAnzahl13.setEditable(false);
+
+        Verkaufen13.setText("Verkaufen");
+
+        TFAktie14.setEditable(false);
+
+        TFPreis14.setEditable(false);
+
+        TFAnzahl14.setEditable(false);
+
+        Verkaufen14.setText("Verkaufen");
+
+        TFAktie15.setEditable(false);
+
+        TFPreis15.setEditable(false);
+
+        TFAnzahl15.setEditable(false);
+
+        Verkaufen15.setText("Verkaufen");
+
+        jLabel1.setText("ISIN");
+
+        jLabel2.setText("Stückzahl");
+
+        jLabel3.setText("Preis");
+
+        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
+        getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(138, 138, 138)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(AktienGUIÜberschrift)
                     .addGroup(layout.createSequentialGroup()
-                        .addComponent(TFAktie4, javax.swing.GroupLayout.PREFERRED_SIZE, 112, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(TFPreis4, javax.swing.GroupLayout.PREFERRED_SIZE, 82, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(TFChange4, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(jButton5))
+                        .addGap(234, 234, 234)
+                        .addComponent(EigenesDepot))
                     .addGroup(layout.createSequentialGroup()
-                        .addComponent(TFAktie5, javax.swing.GroupLayout.PREFERRED_SIZE, 112, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(TFPreis5, javax.swing.GroupLayout.PREFERRED_SIZE, 82, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(TFChange5, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(jButton6))
-                    .addGroup(layout.createSequentialGroup()
-                        .addComponent(TFAktie6, javax.swing.GroupLayout.PREFERRED_SIZE, 112, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(TFPreis6, javax.swing.GroupLayout.PREFERRED_SIZE, 82, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(TFChange6, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(jButton7))
-                    .addGroup(layout.createSequentialGroup()
-                        .addComponent(TFAktie7, javax.swing.GroupLayout.PREFERRED_SIZE, 112, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(TFPreis7, javax.swing.GroupLayout.PREFERRED_SIZE, 82, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(TFChange7, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(jButton8))
-                    .addGroup(layout.createSequentialGroup()
-                        .addComponent(TFAktie8, javax.swing.GroupLayout.PREFERRED_SIZE, 112, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(TFPreis8, javax.swing.GroupLayout.PREFERRED_SIZE, 82, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(TFChange8, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(jButton9))
-                    .addGroup(layout.createSequentialGroup()
-                        .addComponent(TFAktie9, javax.swing.GroupLayout.PREFERRED_SIZE, 112, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(TFPreis9, javax.swing.GroupLayout.PREFERRED_SIZE, 82, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(TFChange9, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(jButton10))
-                    .addGroup(layout.createSequentialGroup()
-                        .addComponent(TFAktie10, javax.swing.GroupLayout.PREFERRED_SIZE, 112, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(TFPreis10, javax.swing.GroupLayout.PREFERRED_SIZE, 82, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(TFChange10, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(jButton11))
-                    .addGroup(layout.createSequentialGroup()
-                        .addComponent(TFAktie11, javax.swing.GroupLayout.PREFERRED_SIZE, 112, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(TFPreis11, javax.swing.GroupLayout.PREFERRED_SIZE, 82, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(TFChange11, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(jButton20))
-                    .addGroup(layout.createSequentialGroup()
-                        .addComponent(TFAktie12, javax.swing.GroupLayout.PREFERRED_SIZE, 112, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(TFPreis12, javax.swing.GroupLayout.PREFERRED_SIZE, 82, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(TFChange12, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(jButton21))
-                    .addGroup(layout.createSequentialGroup()
-                        .addComponent(TFAktie13, javax.swing.GroupLayout.PREFERRED_SIZE, 112, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(TFPreis13, javax.swing.GroupLayout.PREFERRED_SIZE, 82, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(TFChange13, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(jButton22))
-                    .addGroup(layout.createSequentialGroup()
-                        .addComponent(TFAktie14, javax.swing.GroupLayout.PREFERRED_SIZE, 112, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(TFPreis14, javax.swing.GroupLayout.PREFERRED_SIZE, 82, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(TFChange14, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(jButton23))
-                    .addGroup(layout.createSequentialGroup()
-                        .addComponent(TFAktie15, javax.swing.GroupLayout.PREFERRED_SIZE, 112, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(TFPreis15, javax.swing.GroupLayout.PREFERRED_SIZE, 82, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(TFChange15, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(jButton24))
-                    .addGroup(layout.createSequentialGroup()
-                        .addComponent(TFAktie2, javax.swing.GroupLayout.PREFERRED_SIZE, 112, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(TFPreis2, javax.swing.GroupLayout.PREFERRED_SIZE, 82, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(TFChange2, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(jButton3))
-                    .addGroup(layout.createSequentialGroup()
-                        .addComponent(TFAktie3, javax.swing.GroupLayout.PREFERRED_SIZE, 112, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(TFPreis3, javax.swing.GroupLayout.PREFERRED_SIZE, 82, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(TFChange3, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(jButton4))
-                    .addGroup(layout.createSequentialGroup()
-                        .addComponent(TFAktie16, javax.swing.GroupLayout.PREFERRED_SIZE, 112, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(TFPreis16, javax.swing.GroupLayout.PREFERRED_SIZE, 82, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(TFChange16, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(jButton25))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addGroup(layout.createSequentialGroup()
-                                .addComponent(jLabel1)
-                                .addGap(91, 91, 91))
-                            .addGroup(layout.createSequentialGroup()
-                                .addComponent(TFAktie1)
-                                .addGap(6, 6, 6)))
-                        .addGap(4, 4, 4)
+                        .addGap(49, 49, 49)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(TFPreis1, javax.swing.GroupLayout.PREFERRED_SIZE, 82, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jLabel2))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(layout.createSequentialGroup()
-                                .addComponent(TFChange1, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(jButton2))
-                            .addComponent(jLabel3))))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addContainerGap(59, Short.MAX_VALUE)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                        .addComponent(ÜberschriftOverflow)
-                        .addGap(255, 255, 255))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                        .addComponent(LogInGUI, javax.swing.GroupLayout.PREFERRED_SIZE, 83, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(16, 16, 16))))
+                            .addComponent(jLabel1)
+                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                .addGroup(layout.createSequentialGroup()
+                                    .addComponent(TFAktie1, javax.swing.GroupLayout.PREFERRED_SIZE, 132, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addGap(18, 18, 18)
+                                    .addComponent(TFPreis1, javax.swing.GroupLayout.PREFERRED_SIZE, 83, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                    .addComponent(TFAnzahl1, javax.swing.GroupLayout.PREFERRED_SIZE, 78, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                    .addComponent(Verkaufen1))
+                                .addGroup(layout.createSequentialGroup()
+                                    .addComponent(TFAktie, javax.swing.GroupLayout.PREFERRED_SIZE, 132, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addGap(18, 18, 18)
+                                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                        .addComponent(StockOverflow)
+                                        .addGroup(layout.createSequentialGroup()
+                                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                                .addComponent(TFPreis, javax.swing.GroupLayout.PREFERRED_SIZE, 83, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                .addComponent(jLabel2))
+                                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                                .addComponent(jLabel3)
+                                                .addGroup(layout.createSequentialGroup()
+                                                    .addComponent(TFAnzahl, javax.swing.GroupLayout.PREFERRED_SIZE, 78, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                                    .addComponent(Verkaufen))))))
+                                .addGroup(layout.createSequentialGroup()
+                                    .addComponent(TFAktie3, javax.swing.GroupLayout.PREFERRED_SIZE, 132, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addGap(18, 18, 18)
+                                    .addComponent(TFPreis3, javax.swing.GroupLayout.PREFERRED_SIZE, 83, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                    .addComponent(TFAnzahl3, javax.swing.GroupLayout.PREFERRED_SIZE, 78, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                    .addComponent(Verkaufen3))
+                                .addGroup(layout.createSequentialGroup()
+                                    .addComponent(TFAktie2, javax.swing.GroupLayout.PREFERRED_SIZE, 132, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addGap(18, 18, 18)
+                                    .addComponent(TFPreis2, javax.swing.GroupLayout.PREFERRED_SIZE, 83, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                    .addComponent(TFAnzahl2, javax.swing.GroupLayout.PREFERRED_SIZE, 78, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                    .addComponent(Verkaufen2))
+                                .addGroup(layout.createSequentialGroup()
+                                    .addComponent(TFAktie4, javax.swing.GroupLayout.PREFERRED_SIZE, 132, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addGap(18, 18, 18)
+                                    .addComponent(TFPreis4, javax.swing.GroupLayout.PREFERRED_SIZE, 83, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                    .addComponent(TFAnzahl4, javax.swing.GroupLayout.PREFERRED_SIZE, 78, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                    .addComponent(Verkaufen4))
+                                .addGroup(layout.createSequentialGroup()
+                                    .addComponent(TFAktie5, javax.swing.GroupLayout.PREFERRED_SIZE, 132, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addGap(18, 18, 18)
+                                    .addComponent(TFPreis5, javax.swing.GroupLayout.PREFERRED_SIZE, 83, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                    .addComponent(TFAnzahl5, javax.swing.GroupLayout.PREFERRED_SIZE, 78, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                    .addComponent(Verkaufen5))
+                                .addGroup(layout.createSequentialGroup()
+                                    .addComponent(TFAktie6, javax.swing.GroupLayout.PREFERRED_SIZE, 132, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addGap(18, 18, 18)
+                                    .addComponent(TFPreis6, javax.swing.GroupLayout.PREFERRED_SIZE, 83, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                    .addComponent(TFAnzahl6, javax.swing.GroupLayout.PREFERRED_SIZE, 78, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                    .addComponent(Verkaufen6))
+                                .addGroup(layout.createSequentialGroup()
+                                    .addComponent(TFAktie7, javax.swing.GroupLayout.PREFERRED_SIZE, 132, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addGap(18, 18, 18)
+                                    .addComponent(TFPreis7, javax.swing.GroupLayout.PREFERRED_SIZE, 83, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                    .addComponent(TFAnzahl7, javax.swing.GroupLayout.PREFERRED_SIZE, 78, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                    .addComponent(Verkaufen7))
+                                .addGroup(layout.createSequentialGroup()
+                                    .addComponent(TFAktie8, javax.swing.GroupLayout.PREFERRED_SIZE, 132, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addGap(18, 18, 18)
+                                    .addComponent(TFPreis8, javax.swing.GroupLayout.PREFERRED_SIZE, 83, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                    .addComponent(TFAnzahl8, javax.swing.GroupLayout.PREFERRED_SIZE, 78, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                    .addComponent(Verkaufen8))
+                                .addGroup(layout.createSequentialGroup()
+                                    .addComponent(TFAktie9, javax.swing.GroupLayout.PREFERRED_SIZE, 132, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addGap(18, 18, 18)
+                                    .addComponent(TFPreis9, javax.swing.GroupLayout.PREFERRED_SIZE, 83, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                    .addComponent(TFAnzahl9, javax.swing.GroupLayout.PREFERRED_SIZE, 78, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                    .addComponent(Verkaufen9))
+                                .addGroup(layout.createSequentialGroup()
+                                    .addComponent(TFAktie10, javax.swing.GroupLayout.PREFERRED_SIZE, 132, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addGap(18, 18, 18)
+                                    .addComponent(TFPreis10, javax.swing.GroupLayout.PREFERRED_SIZE, 83, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                    .addComponent(TFAnzahl10, javax.swing.GroupLayout.PREFERRED_SIZE, 78, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                    .addComponent(Verkaufen10))
+                                .addGroup(layout.createSequentialGroup()
+                                    .addComponent(TFAktie11, javax.swing.GroupLayout.PREFERRED_SIZE, 132, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addGap(18, 18, 18)
+                                    .addComponent(TFPreis11, javax.swing.GroupLayout.PREFERRED_SIZE, 83, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                    .addComponent(TFAnzahl11, javax.swing.GroupLayout.PREFERRED_SIZE, 78, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                    .addComponent(Verkaufen11))
+                                .addGroup(layout.createSequentialGroup()
+                                    .addComponent(TFAktie13, javax.swing.GroupLayout.PREFERRED_SIZE, 132, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addGap(18, 18, 18)
+                                    .addComponent(TFPreis13, javax.swing.GroupLayout.PREFERRED_SIZE, 83, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                    .addComponent(TFAnzahl13, javax.swing.GroupLayout.PREFERRED_SIZE, 78, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                    .addComponent(Verkaufen13))
+                                .addGroup(layout.createSequentialGroup()
+                                    .addComponent(TFAktie12, javax.swing.GroupLayout.PREFERRED_SIZE, 132, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addGap(18, 18, 18)
+                                    .addComponent(TFPreis12, javax.swing.GroupLayout.PREFERRED_SIZE, 83, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                    .addComponent(TFAnzahl12, javax.swing.GroupLayout.PREFERRED_SIZE, 78, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                    .addComponent(Verkaufen12))
+                                .addGroup(layout.createSequentialGroup()
+                                    .addComponent(TFAktie15, javax.swing.GroupLayout.PREFERRED_SIZE, 132, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addGap(18, 18, 18)
+                                    .addComponent(TFPreis15, javax.swing.GroupLayout.PREFERRED_SIZE, 83, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                    .addComponent(TFAnzahl15, javax.swing.GroupLayout.PREFERRED_SIZE, 78, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                    .addComponent(Verkaufen15))
+                                .addGroup(layout.createSequentialGroup()
+                                    .addComponent(TFAktie14, javax.swing.GroupLayout.PREFERRED_SIZE, 132, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addGap(18, 18, 18)
+                                    .addComponent(TFPreis14, javax.swing.GroupLayout.PREFERRED_SIZE, 83, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                    .addComponent(TFAnzahl14, javax.swing.GroupLayout.PREFERRED_SIZE, 78, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                    .addComponent(Verkaufen14))))))
+                .addContainerGap(101, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(21, 21, 21)
-                        .addComponent(LogInGUI, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(layout.createSequentialGroup()
-                        .addContainerGap()
-                        .addComponent(ÜberschriftOverflow)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(AktienGUIÜberschrift)))
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(10, 10, 10)
-                        .addComponent(jLabel1))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jLabel2)
-                            .addComponent(jLabel3))))
+            .addGroup(layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(StockOverflow)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(EigenesDepot)
+                .addGap(44, 44, 44)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel1)
+                    .addComponent(jLabel2)
+                    .addComponent(jLabel3))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(TFAktie, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(TFPreis, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(TFAnzahl, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(Verkaufen))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(TFAktie1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(TFPreis1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(TFChange1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButton2))
+                    .addComponent(TFAnzahl1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(Verkaufen1))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(TFAktie2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(TFPreis2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(TFChange2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButton3))
+                    .addComponent(TFAnzahl2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(Verkaufen2))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(TFAktie3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(TFPreis3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(TFChange3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButton4))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(TFAktie4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(TFPreis4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(TFChange4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButton5))
+                    .addComponent(TFAnzahl3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(Verkaufen3))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(TFAktie5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(TFPreis5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(TFChange5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButton6))
+                    .addComponent(TFAnzahl5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(Verkaufen5))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(TFAktie6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(TFPreis6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(TFChange6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButton7))
+                    .addComponent(TFAktie4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(TFPreis4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(TFAnzahl4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(Verkaufen4))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(TFAktie7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(TFPreis7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(TFChange7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButton8))
+                    .addComponent(TFAnzahl7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(Verkaufen7))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(TFAktie8, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(TFPreis8, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(TFChange8, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButton9))
+                    .addComponent(TFAktie6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(TFPreis6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(TFAnzahl6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(Verkaufen6))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(TFAktie9, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(TFPreis9, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(TFChange9, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButton10))
+                    .addComponent(TFAnzahl9, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(Verkaufen9))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(TFAktie10, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(TFPreis10, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(TFChange10, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButton11))
+                    .addComponent(TFAktie8, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(TFPreis8, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(TFAnzahl8, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(Verkaufen8))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(TFAktie11, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(TFPreis11, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(TFChange11, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButton20))
+                    .addComponent(TFAnzahl11, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(Verkaufen11))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(TFAktie10, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(TFPreis10, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(TFAnzahl10, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(Verkaufen10))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(TFAktie12, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(TFPreis12, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(TFChange12, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButton21))
+                    .addComponent(TFAnzahl12, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(Verkaufen12))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(TFAktie13, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(TFPreis13, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(TFChange13, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButton22))
+                    .addComponent(TFAnzahl13, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(Verkaufen13))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(TFAktie14, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(TFPreis14, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(TFChange14, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButton23))
+                    .addComponent(TFAnzahl14, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(Verkaufen14))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(TFAktie15, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(TFPreis15, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(TFChange15, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButton24))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(TFAktie16, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(TFPreis16, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(TFChange16, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButton25))
-                .addContainerGap(47, Short.MAX_VALUE))
+                    .addComponent(TFAnzahl15, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(Verkaufen15))
+                .addContainerGap(98, Short.MAX_VALUE))
         );
+
+        pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void TFAktie5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_TFAktie5ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_TFAktie5ActionPerformed
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String args[]) {
+        /* Set the Nimbus look and feel */
+        //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
+        /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
+         * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
+         */
+        try {
+            for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
+                if ("Nimbus".equals(info.getName())) {
+                    javax.swing.UIManager.setLookAndFeel(info.getClassName());
+                    break;
+                }
+            }
+        } catch (ClassNotFoundException ex) {
+            java.util.logging.Logger.getLogger(EigenesDepot.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+        } catch (InstantiationException ex) {
+            java.util.logging.Logger.getLogger(EigenesDepot.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+        } catch (IllegalAccessException ex) {
+            java.util.logging.Logger.getLogger(EigenesDepot.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+        } catch (javax.swing.UnsupportedLookAndFeelException ex) {
+            java.util.logging.Logger.getLogger(EigenesDepot.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+        }
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
 
-    private void jButton6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton6ActionPerformed
-        c.switchTo("AktieVerkaufen");
-    }//GEN-LAST:event_jButton6ActionPerformed
-
-    private void jButton7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton7ActionPerformed
-        c.switchTo("AktieVerkaufen");
-    }//GEN-LAST:event_jButton7ActionPerformed
-
-    private void TFAktie6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_TFAktie6ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_TFAktie6ActionPerformed
-
-    private void jButton8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton8ActionPerformed
-        c.switchTo("AktieVerkaufen");
-    }//GEN-LAST:event_jButton8ActionPerformed
-
-    private void jButton9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton9ActionPerformed
-        c.switchTo("AktieVerkaufen");
-    }//GEN-LAST:event_jButton9ActionPerformed
-
-    private void jButton10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton10ActionPerformed
-        c.switchTo("AktieVerkaufen");
-    }//GEN-LAST:event_jButton10ActionPerformed
-
-    private void jButton11ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton11ActionPerformed
-        c.switchTo("AktieVerkaufen");
-    }//GEN-LAST:event_jButton11ActionPerformed
-
-    private void TFAktie7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_TFAktie7ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_TFAktie7ActionPerformed
-
-    private void jButton20ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton20ActionPerformed
-        c.switchTo("AktieVerkaufen");
-    }//GEN-LAST:event_jButton20ActionPerformed
-
-    private void jButton21ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton21ActionPerformed
-        c.switchTo("AktieVerkaufen");
-    }//GEN-LAST:event_jButton21ActionPerformed
-
-    private void jButton22ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton22ActionPerformed
-        c.switchTo("AktieVerkaufen");
-    }//GEN-LAST:event_jButton22ActionPerformed
-
-    private void TFAktie8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_TFAktie8ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_TFAktie8ActionPerformed
-
-    private void jButton23ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton23ActionPerformed
-        c.switchTo("AktieVerkaufen");
-    }//GEN-LAST:event_jButton23ActionPerformed
-
-    private void jButton24ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton24ActionPerformed
-        c.switchTo("AktieVerkaufen");
-    }//GEN-LAST:event_jButton24ActionPerformed
-
-    private void jButton25ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton25ActionPerformed
-        c.switchTo("AktieVErkaufen");
-    }//GEN-LAST:event_jButton25ActionPerformed
-
-    private void TFAktie9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_TFAktie9ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_TFAktie9ActionPerformed
-
-    private void TFAktie10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_TFAktie10ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_TFAktie10ActionPerformed
-
-    private void TFAktie11ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_TFAktie11ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_TFAktie11ActionPerformed
-
-    private void TFAktie12ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_TFAktie12ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_TFAktie12ActionPerformed
-
-    private void TFAktie13ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_TFAktie13ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_TFAktie13ActionPerformed
-
-    private void LogInGUIActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_LogInGUIActionPerformed
-        this.c.logout();
-        this.c.switchTo("AnmeldeFenster");
-       
-    }//GEN-LAST:event_LogInGUIActionPerformed
-
-    private void TFAktie14ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_TFAktie14ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_TFAktie14ActionPerformed
-
-    private void TFAktie15ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_TFAktie15ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_TFAktie15ActionPerformed
-
-    private void TFAktie1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_TFAktie1ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_TFAktie1ActionPerformed
-
-    private void TFAktie16ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_TFAktie16ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_TFAktie16ActionPerformed
-
-    private void TFAktie2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_TFAktie2ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_TFAktie2ActionPerformed
-
-    private void TFAktie3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_TFAktie3ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_TFAktie3ActionPerformed
-
-    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
-        c.switchTo("AktieVerkaufen");
-    }//GEN-LAST:event_jButton2ActionPerformed
-
-    private void TFAktie4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_TFAktie4ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_TFAktie4ActionPerformed
-
-    private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
-        c.switchTo("AktieVerkaufen");
-    }//GEN-LAST:event_jButton3ActionPerformed
-
-    private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
-        c.switchTo("AktieVerkaufen");
-    }//GEN-LAST:event_jButton4ActionPerformed
-
-    private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
-        c.switchTo("AktieVerkaufen");
-    }//GEN-LAST:event_jButton5ActionPerformed
-
+        /* Create and display the form */
+        java.awt.EventQueue.invokeLater(new Runnable() {
+            public void run() {
+                new EigenesDepot().setVisible(true);
+            }
+        });
+    }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JLabel AktienGUIÜberschrift;
-    private javax.swing.JButton LogInGUI;
-    public javax.swing.JTextField TFAktie1;
-    public javax.swing.JTextField TFAktie10;
-    public javax.swing.JTextField TFAktie11;
-    public javax.swing.JTextField TFAktie12;
-    public javax.swing.JTextField TFAktie13;
-    public javax.swing.JTextField TFAktie14;
-    public javax.swing.JTextField TFAktie15;
-    public javax.swing.JTextField TFAktie16;
-    public javax.swing.JTextField TFAktie2;
-    public javax.swing.JTextField TFAktie3;
-    public javax.swing.JTextField TFAktie4;
-    public javax.swing.JTextField TFAktie5;
-    public javax.swing.JTextField TFAktie6;
-    public javax.swing.JTextField TFAktie7;
-    public javax.swing.JTextField TFAktie8;
-    public javax.swing.JTextField TFAktie9;
-    public javax.swing.JTextField TFChange1;
-    public javax.swing.JTextField TFChange10;
-    public javax.swing.JTextField TFChange11;
-    public javax.swing.JTextField TFChange12;
-    public javax.swing.JTextField TFChange13;
-    public javax.swing.JTextField TFChange14;
-    public javax.swing.JTextField TFChange15;
-    public javax.swing.JTextField TFChange16;
-    public javax.swing.JTextField TFChange2;
-    public javax.swing.JTextField TFChange3;
-    public javax.swing.JTextField TFChange4;
-    public javax.swing.JTextField TFChange5;
-    public javax.swing.JTextField TFChange6;
-    public javax.swing.JTextField TFChange7;
-    public javax.swing.JTextField TFChange8;
-    public javax.swing.JTextField TFChange9;
-    public javax.swing.JTextField TFPreis1;
-    public javax.swing.JTextField TFPreis10;
-    public javax.swing.JTextField TFPreis11;
-    public javax.swing.JTextField TFPreis12;
-    public javax.swing.JTextField TFPreis13;
-    public javax.swing.JTextField TFPreis14;
-    public javax.swing.JTextField TFPreis15;
-    public javax.swing.JTextField TFPreis16;
-    public javax.swing.JTextField TFPreis2;
-    public javax.swing.JTextField TFPreis3;
-    public javax.swing.JTextField TFPreis4;
-    public javax.swing.JTextField TFPreis5;
-    public javax.swing.JTextField TFPreis6;
-    public javax.swing.JTextField TFPreis7;
-    public javax.swing.JTextField TFPreis8;
-    public javax.swing.JTextField TFPreis9;
-    private javax.swing.JButton jButton10;
-    private javax.swing.JButton jButton11;
-    private javax.swing.JButton jButton2;
-    private javax.swing.JButton jButton20;
-    private javax.swing.JButton jButton21;
-    private javax.swing.JButton jButton22;
-    private javax.swing.JButton jButton23;
-    private javax.swing.JButton jButton24;
-    private javax.swing.JButton jButton25;
-    private javax.swing.JButton jButton3;
-    private javax.swing.JButton jButton4;
-    private javax.swing.JButton jButton5;
-    private javax.swing.JButton jButton6;
-    private javax.swing.JButton jButton7;
-    private javax.swing.JButton jButton8;
-    private javax.swing.JButton jButton9;
+    private javax.swing.JLabel EigenesDepot;
+    private javax.swing.JLabel StockOverflow;
+    private javax.swing.JTextField TFAktie;
+    private javax.swing.JTextField TFAktie1;
+    private javax.swing.JTextField TFAktie10;
+    private javax.swing.JTextField TFAktie11;
+    private javax.swing.JTextField TFAktie12;
+    private javax.swing.JTextField TFAktie13;
+    private javax.swing.JTextField TFAktie14;
+    private javax.swing.JTextField TFAktie15;
+    private javax.swing.JTextField TFAktie2;
+    private javax.swing.JTextField TFAktie3;
+    private javax.swing.JTextField TFAktie4;
+    private javax.swing.JTextField TFAktie5;
+    private javax.swing.JTextField TFAktie6;
+    private javax.swing.JTextField TFAktie7;
+    private javax.swing.JTextField TFAktie8;
+    private javax.swing.JTextField TFAktie9;
+    private javax.swing.JTextField TFAnzahl;
+    private javax.swing.JTextField TFAnzahl1;
+    private javax.swing.JTextField TFAnzahl10;
+    private javax.swing.JTextField TFAnzahl11;
+    private javax.swing.JTextField TFAnzahl12;
+    private javax.swing.JTextField TFAnzahl13;
+    private javax.swing.JTextField TFAnzahl14;
+    private javax.swing.JTextField TFAnzahl15;
+    private javax.swing.JTextField TFAnzahl2;
+    private javax.swing.JTextField TFAnzahl3;
+    private javax.swing.JTextField TFAnzahl4;
+    private javax.swing.JTextField TFAnzahl5;
+    private javax.swing.JTextField TFAnzahl6;
+    private javax.swing.JTextField TFAnzahl7;
+    private javax.swing.JTextField TFAnzahl8;
+    private javax.swing.JTextField TFAnzahl9;
+    private javax.swing.JTextField TFPreis;
+    private javax.swing.JTextField TFPreis1;
+    private javax.swing.JTextField TFPreis10;
+    private javax.swing.JTextField TFPreis11;
+    private javax.swing.JTextField TFPreis12;
+    private javax.swing.JTextField TFPreis13;
+    private javax.swing.JTextField TFPreis14;
+    private javax.swing.JTextField TFPreis15;
+    private javax.swing.JTextField TFPreis2;
+    private javax.swing.JTextField TFPreis3;
+    private javax.swing.JTextField TFPreis4;
+    private javax.swing.JTextField TFPreis5;
+    private javax.swing.JTextField TFPreis6;
+    private javax.swing.JTextField TFPreis7;
+    private javax.swing.JTextField TFPreis8;
+    private javax.swing.JTextField TFPreis9;
+    private javax.swing.JButton Verkaufen;
+    private javax.swing.JButton Verkaufen1;
+    private javax.swing.JButton Verkaufen10;
+    private javax.swing.JButton Verkaufen11;
+    private javax.swing.JButton Verkaufen12;
+    private javax.swing.JButton Verkaufen13;
+    private javax.swing.JButton Verkaufen14;
+    private javax.swing.JButton Verkaufen15;
+    private javax.swing.JButton Verkaufen2;
+    private javax.swing.JButton Verkaufen3;
+    private javax.swing.JButton Verkaufen4;
+    private javax.swing.JButton Verkaufen5;
+    private javax.swing.JButton Verkaufen6;
+    private javax.swing.JButton Verkaufen7;
+    private javax.swing.JButton Verkaufen8;
+    private javax.swing.JButton Verkaufen9;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
-    private javax.swing.JLabel ÜberschriftOverflow;
     // End of variables declaration//GEN-END:variables
-
-    
-    
 
 }
