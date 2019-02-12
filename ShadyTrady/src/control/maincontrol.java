@@ -441,8 +441,16 @@ return;
 
     }
 
-    public void aktieverkaufen(String isin, Integer Stückzahl, Float Preis) {
+    public void aktieverkaufen(String isin, Integer Stückzahl) {
         if (this.eingeloggt) {
+            
+            
+            
+            
+            
+            
+            
+            
 
         } else {
             this.switchTo("AnmeldeFenster");

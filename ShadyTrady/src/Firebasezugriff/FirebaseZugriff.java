@@ -20,6 +20,7 @@ import model.Aktie;
 import model.Aktienkauf;
 import model.Aktienkonto;
 import model.Benutzer;
+import model.OA;
 import net.thegreshams.firebase4j.error.FirebaseException;
 import net.thegreshams.firebase4j.error.JacksonUtilityException;
 import net.thegreshams.firebase4j.model.FirebaseResponse;
@@ -283,8 +284,7 @@ public class FirebaseZugriff {
      */
     public void aktieErgänzen(Aktienkauf ak) {
         Map<String, Object> dataMap = new LinkedHashMap<String, Object>();
-        int Stelle = this.childCount("depots/" + c.getB().getBenutzername()) + 1;
-        dataMap.put("a" + Stelle, ak);
+        dataMap.put(ak.getIsin(), ak);
         try {
             FirebaseResponse response = firebase.patch("depots/" + c.getB().getBenutzername(), dataMap);
             dataMap.clear();
@@ -369,6 +369,28 @@ public class FirebaseZugriff {
         } catch (JacksonUtilityException ex) {
             Logger.getLogger(FirebaseZugriff.class.getName()).log(Level.SEVERE, null, ex);
         }
+        
+        
+        
+    }
+    /**
+     * Methode aktualisiert die Stückzahl einer Aktie oder löscht den Eintrag falls die Stückzahl 0 sein sollte.
+     * 
+     * 
+     */
+    public void AktieStückzahlAktualisieren(String isin,int Stückzahl){
+        int i = (int)this.WertEinerReferenz("depots/"+c.getB().getBenutzername()+"/"+isin, "anzahl");
+        if(i - Stückzahl>0){
+           Aktienkauf ak = new Aktienkauf(isin, i- Stückzahl);
+            OA.prepareDocument(isin);
+            ak.setPreis(OA.getAsk());
+            this.aktieErgänzen(ak);
+        }else{
+            
+            this.ObjektLöschen("depots/"+c.getB().getBenutzername(), isin);
+        }
+       
+        
         
         
         

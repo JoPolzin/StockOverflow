@@ -47,8 +47,9 @@ public class andereTests {
         maincontrol c = new maincontrol();
        // c.setB(b);
         FirebaseZugriff fb = new FirebaseZugriff(c);
-        fb.ObjektLöschen("depots/lol","a1");
+        //fb.ObjektLöschen("depots/Louie","a1");
         
+        //System.out.println(fb.WertEinerReferenz("depots/er/DE000A1EWWW0", "anzahl"));
         
         
         

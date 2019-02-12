@@ -895,4 +895,7 @@ public class EigenesDepot extends javax.swing.JPanel {
     private javax.swing.JLabel ÜberschriftOverflow;
     // End of variables declaration//GEN-END:variables
 
+    
+    
+
 }

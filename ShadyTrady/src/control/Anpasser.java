@@ -38,8 +38,8 @@ class Anpasser extends Thread {
         try {
             System.out.println("Demo-Thread");
             fz = new FirebaseZugriff(c);
-             al = fz.benutzerAuslesen();
-            LeaderboardInit();
+            //al = fz.benutzerAuslesen();
+            //LeaderboardInit();
             sleep(1000*60);
 
 
