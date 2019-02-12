@@ -907,77 +907,77 @@ public class StockOverflowGUI extends javax.swing.JFrame {
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
         c.switchTo("AktieAnsehen");
-        c.AktieDatenInitialisieren(OA.getDNS().get(OA.getDNSString().get(x)), OA.getDNSString().get(x));
+        c.AktieDatenInitialisieren(OA.getDNS().get(OA.getDNSString().get(this.c.getX())), OA.getDNSString().get(this.c.getX()));
     }//GEN-LAST:event_jButton2ActionPerformed
 
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
         c.switchTo("AktieAnsehen");
-        c.AktieDatenInitialisieren(OA.getDNS().get(OA.getDNSString().get(x + 1)), OA.getDNSString().get(x + 1));
+        c.AktieDatenInitialisieren(OA.getDNS().get(OA.getDNSString().get(this.c.getX() + 1)), OA.getDNSString().get(this.c.getX() + 1));
     }//GEN-LAST:event_jButton3ActionPerformed
 
     private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
         c.switchTo("AktieAnsehen");
-        c.AktieDatenInitialisieren(OA.getDNS().get(OA.getDNSString().get(x + 2)), OA.getDNSString().get(x + 2));
+        c.AktieDatenInitialisieren(OA.getDNS().get(OA.getDNSString().get(this.c.getX() + 2)), OA.getDNSString().get(this.c.getX() + 2));
     }//GEN-LAST:event_jButton4ActionPerformed
 
     private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
         c.switchTo("AktieAnsehen");
-        c.AktieDatenInitialisieren(OA.getDNS().get(OA.getDNSString().get(x + 3)), OA.getDNSString().get(x + 3));
+        c.AktieDatenInitialisieren(OA.getDNS().get(OA.getDNSString().get(this.c.getX() + 3)), OA.getDNSString().get(this.c.getX() + 3));
     }//GEN-LAST:event_jButton5ActionPerformed
 
     private void jButton6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton6ActionPerformed
         c.switchTo("AktieAnsehen");
-        c.AktieDatenInitialisieren(OA.getDNS().get(OA.getDNSString().get(x + 4)), OA.getDNSString().get(x + 4));
+        c.AktieDatenInitialisieren(OA.getDNS().get(OA.getDNSString().get(this.c.getX() + 4)), OA.getDNSString().get(this.c.getX() + 4));
     }//GEN-LAST:event_jButton6ActionPerformed
 
     private void jButton7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton7ActionPerformed
         c.switchTo("AktieAnsehen");
-        c.AktieDatenInitialisieren(OA.getDNS().get(OA.getDNSString().get(x + 5)), OA.getDNSString().get(x + 5));
+        c.AktieDatenInitialisieren(OA.getDNS().get(OA.getDNSString().get(this.c.getX() + 5)), OA.getDNSString().get(this.c.getX() + 5));
     }//GEN-LAST:event_jButton7ActionPerformed
 
     private void jButton8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton8ActionPerformed
         c.switchTo("AktieAnsehen");
-        c.AktieDatenInitialisieren(OA.getDNS().get(OA.getDNSString().get(x + 6)), OA.getDNSString().get(x + 6));
+        c.AktieDatenInitialisieren(OA.getDNS().get(OA.getDNSString().get(this.c.getX() + 6)), OA.getDNSString().get(this.c.getX() + 6));
     }//GEN-LAST:event_jButton8ActionPerformed
 
     private void jButton9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton9ActionPerformed
         c.switchTo("AktieAnsehen");
-        c.AktieDatenInitialisieren(OA.getDNS().get(OA.getDNSString().get(x + 7)), OA.getDNSString().get(x + 7));
+        c.AktieDatenInitialisieren(OA.getDNS().get(OA.getDNSString().get(this.c.getX() + 7)), OA.getDNSString().get(this.c.getX() + 7));
     }//GEN-LAST:event_jButton9ActionPerformed
 
     private void jButton10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton10ActionPerformed
         c.switchTo("AktieAnsehen");
-        c.AktieDatenInitialisieren(OA.getDNS().get(OA.getDNSString().get(x + 8)), OA.getDNSString().get(x + 8));
+        c.AktieDatenInitialisieren(OA.getDNS().get(OA.getDNSString().get(this.c.getX() + 8)), OA.getDNSString().get(this.c.getX() + 8));
     }//GEN-LAST:event_jButton10ActionPerformed
 
     private void jButton11ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton11ActionPerformed
         c.switchTo("AktieAnsehen");
-        c.AktieDatenInitialisieren(OA.getDNS().get(OA.getDNSString().get(x + 9)), OA.getDNSString().get(x + 9));
+        c.AktieDatenInitialisieren(OA.getDNS().get(OA.getDNSString().get(this.c.getX() + 9)), OA.getDNSString().get(this.c.getX() + 9));
     }//GEN-LAST:event_jButton11ActionPerformed
 
     private void jButton20ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton20ActionPerformed
         c.switchTo("AktieAnsehen");
-        c.AktieDatenInitialisieren(OA.getDNS().get(OA.getDNSString().get(x + 10)), OA.getDNSString().get(x + 10));
+        c.AktieDatenInitialisieren(OA.getDNS().get(OA.getDNSString().get(this.c.getX() + 10)), OA.getDNSString().get(this.c.getX() + 10));
     }//GEN-LAST:event_jButton20ActionPerformed
 
     private void jButton21ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton21ActionPerformed
         c.switchTo("AktieAnsehen");
-        c.AktieDatenInitialisieren(OA.getDNS().get(OA.getDNSString().get(x + 11)), OA.getDNSString().get(x + 11));
+        c.AktieDatenInitialisieren(OA.getDNS().get(OA.getDNSString().get(this.c.getX() + 11)), OA.getDNSString().get(this.c.getX() + 11));
     }//GEN-LAST:event_jButton21ActionPerformed
 
     private void jButton22ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton22ActionPerformed
         c.switchTo("AktieAnsehen");
-        c.AktieDatenInitialisieren(OA.getDNS().get(OA.getDNSString().get(x + 12)), OA.getDNSString().get(x + 12));
+        c.AktieDatenInitialisieren(OA.getDNS().get(OA.getDNSString().get(this.c.getX() + 12)), OA.getDNSString().get(this.c.getX() + 12));
     }//GEN-LAST:event_jButton22ActionPerformed
 
     private void jButton23ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton23ActionPerformed
         c.switchTo("AktieAnsehen");
-        c.AktieDatenInitialisieren(OA.getDNS().get(OA.getDNSString().get(x + 13)), OA.getDNSString().get(x + 13));
+        c.AktieDatenInitialisieren(OA.getDNS().get(OA.getDNSString().get(this.c.getX() + 13)), OA.getDNSString().get(this.c.getX() + 13));
     }//GEN-LAST:event_jButton23ActionPerformed
 
     private void jButton24ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton24ActionPerformed
         c.switchTo("AktieAnsehen");
-        c.AktieDatenInitialisieren(OA.getDNS().get(OA.getDNSString().get(x + 14)), OA.getDNSString().get(x + 14));
+        c.AktieDatenInitialisieren(OA.getDNS().get(OA.getDNSString().get(this.c.getX() + 14)), OA.getDNSString().get(this.c.getX() + 14));
     }//GEN-LAST:event_jButton24ActionPerformed
 
     private void LeaderboardActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_LeaderboardActionPerformed

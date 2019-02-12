@@ -110,7 +110,7 @@ public class maincontrol {
             @Override
             public void run() {
                 System.out.println("hallo");
-                AktienDatenAktualisieren(x);
+                AktienDatenAktualisieren(getX());
             }
         }, 5000, 5000);
 
