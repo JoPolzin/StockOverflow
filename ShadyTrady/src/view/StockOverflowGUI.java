@@ -990,11 +990,13 @@ public class StockOverflowGUI extends javax.swing.JFrame {
         if (c.getX() < 0) {
             c.setX(c.getX() + 15);
         }
+        c.timerReset();
         c.AktienDatenInitialisieren(x);
     }//GEN-LAST:event_VorherigeSeiteActionPerformed
 
     private void NaechsteSeiteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_NaechsteSeiteActionPerformed
         c.setX(c.getX() + 15);
+        c.timerReset();
         c.AktienDatenInitialisieren(x);
     }//GEN-LAST:event_NaechsteSeiteActionPerformed
 
