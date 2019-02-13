@@ -41,9 +41,10 @@ public class VerkaufBestätigung extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        StockOverflowAnmeldung.setFont(new java.awt.Font("Penultimate", 1, 36)); // NOI18N
+        StockOverflowAnmeldung.setFont(new java.awt.Font("Noto Serif", 1, 36)); // NOI18N
         StockOverflowAnmeldung.setText("StockOverflow");
 
+        OKVerkaufBestätigung.setFont(new java.awt.Font("Noto Serif", 0, 18)); // NOI18N
         OKVerkaufBestätigung.setText("OK");
         OKVerkaufBestätigung.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -51,25 +52,26 @@ public class VerkaufBestätigung extends javax.swing.JFrame {
             }
         });
 
-        NachrichtVerkaufBestätigung.setFont(new java.awt.Font("Penultimate", 0, 18)); // NOI18N
+        NachrichtVerkaufBestätigung.setFont(new java.awt.Font("Noto Serif", 0, 14)); // NOI18N
         NachrichtVerkaufBestätigung.setText("Die Aktie wurde erfolgreich verkauft!");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                .addGap(0, 0, Short.MAX_VALUE)
+                .addComponent(NachrichtVerkaufBestätigung)
+                .addGap(36, 36, 36))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                .addContainerGap(46, Short.MAX_VALUE)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(126, 126, 126)
-                        .addComponent(OKVerkaufBestätigung, javax.swing.GroupLayout.PREFERRED_SIZE, 67, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(39, 39, 39)
-                        .addComponent(StockOverflowAnmeldung))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(25, 25, 25)
-                        .addComponent(NachrichtVerkaufBestätigung)))
-                .addContainerGap(14, Short.MAX_VALUE))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                        .addComponent(StockOverflowAnmeldung)
+                        .addGap(23, 23, 23))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                        .addComponent(OKVerkaufBestätigung, javax.swing.GroupLayout.PREFERRED_SIZE, 67, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(131, 131, 131))))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
