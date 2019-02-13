@@ -187,13 +187,12 @@ public class StockOverflowGUI extends javax.swing.JFrame {
         jLabel4 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-		//halt stop der Cursor bleibt genau so wie er ist.
-        setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+        setCursor(new java.awt.Cursor(java.awt.Cursor.WAIT_CURSOR));
 
-        ÜberschriftOverflow.setFont(new java.awt.Font("Penultimate", 1, 36)); // NOI18N
-        ÜberschriftOverflow.setForeground(new java.awt.Color(50, 200, 100));
+        ÜberschriftOverflow.setFont(new java.awt.Font("Noto Serif", 1, 36)); // NOI18N
         ÜberschriftOverflow.setText("Stock Overflow");
 
+        DepotGUI.setFont(new java.awt.Font("Noto Serif", 0, 11)); // NOI18N
         DepotGUI.setText("Depot");
         DepotGUI.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         DepotGUI.addActionListener(new java.awt.event.ActionListener() {
@@ -202,6 +201,7 @@ public class StockOverflowGUI extends javax.swing.JFrame {
             }
         });
 
+        LogInGUI.setFont(new java.awt.Font("Noto Serif", 0, 11)); // NOI18N
         LogInGUI.setText("Log In");
         LogInGUI.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -209,11 +209,10 @@ public class StockOverflowGUI extends javax.swing.JFrame {
             }
         });
 
-        AktienGUIÜberschrift.setFont(new java.awt.Font("Penultimate", 0, 24)); // NOI18N
-        AktienGUIÜberschrift.setForeground(new java.awt.Color(200, 50, 100));
+        AktienGUIÜberschrift.setFont(new java.awt.Font("Noto Serif", 0, 24)); // NOI18N
         AktienGUIÜberschrift.setText("Aktien");
 
-        jButton1.setForeground(new java.awt.Color(200, 50, 50));
+        jButton1.setFont(new java.awt.Font("Noto Serif", 0, 11)); // NOI18N
         jButton1.setText("Weitere Aktien");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -386,7 +385,7 @@ public class StockOverflowGUI extends javax.swing.JFrame {
 
         TFChange15.setEditable(false);
 
-        Refresh.setForeground(new java.awt.Color(100, 200, 50));
+        Refresh.setFont(new java.awt.Font("Noto Serif", 0, 11)); // NOI18N
         Refresh.setText("Refresh");
         Refresh.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -394,12 +393,16 @@ public class StockOverflowGUI extends javax.swing.JFrame {
             }
         });
 
+        jLabel1.setFont(new java.awt.Font("Noto Serif", 0, 11)); // NOI18N
         jLabel1.setText("Name");
 
+        jLabel2.setFont(new java.awt.Font("Noto Serif", 0, 11)); // NOI18N
         jLabel2.setText("Preis");
 
+        jLabel3.setFont(new java.awt.Font("Noto Serif", 0, 11)); // NOI18N
         jLabel3.setText("Change");
 
+        jButton2.setFont(new java.awt.Font("Noto Serif", 0, 11)); // NOI18N
         jButton2.setText("Ansehen");
         jButton2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -407,6 +410,7 @@ public class StockOverflowGUI extends javax.swing.JFrame {
             }
         });
 
+        jButton3.setFont(new java.awt.Font("Noto Serif", 0, 11)); // NOI18N
         jButton3.setText("Ansehen");
         jButton3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -414,6 +418,7 @@ public class StockOverflowGUI extends javax.swing.JFrame {
             }
         });
 
+        jButton4.setFont(new java.awt.Font("Noto Serif", 0, 11)); // NOI18N
         jButton4.setText("Ansehen");
         jButton4.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -421,6 +426,7 @@ public class StockOverflowGUI extends javax.swing.JFrame {
             }
         });
 
+        jButton5.setFont(new java.awt.Font("Noto Serif", 0, 11)); // NOI18N
         jButton5.setText("Ansehen");
         jButton5.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -428,6 +434,7 @@ public class StockOverflowGUI extends javax.swing.JFrame {
             }
         });
 
+        jButton6.setFont(new java.awt.Font("Noto Serif", 0, 11)); // NOI18N
         jButton6.setText("Ansehen");
         jButton6.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -435,6 +442,7 @@ public class StockOverflowGUI extends javax.swing.JFrame {
             }
         });
 
+        jButton7.setFont(new java.awt.Font("Noto Serif", 0, 11)); // NOI18N
         jButton7.setText("Ansehen");
         jButton7.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -442,6 +450,7 @@ public class StockOverflowGUI extends javax.swing.JFrame {
             }
         });
 
+        jButton8.setFont(new java.awt.Font("Noto Serif", 0, 11)); // NOI18N
         jButton8.setText("Ansehen");
         jButton8.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -449,6 +458,7 @@ public class StockOverflowGUI extends javax.swing.JFrame {
             }
         });
 
+        jButton9.setFont(new java.awt.Font("Noto Serif", 0, 11)); // NOI18N
         jButton9.setText("Ansehen");
         jButton9.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -456,6 +466,7 @@ public class StockOverflowGUI extends javax.swing.JFrame {
             }
         });
 
+        jButton10.setFont(new java.awt.Font("Noto Serif", 0, 11)); // NOI18N
         jButton10.setText("Ansehen");
         jButton10.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -463,6 +474,7 @@ public class StockOverflowGUI extends javax.swing.JFrame {
             }
         });
 
+        jButton11.setFont(new java.awt.Font("Noto Serif", 0, 11)); // NOI18N
         jButton11.setText("Ansehen");
         jButton11.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -470,6 +482,7 @@ public class StockOverflowGUI extends javax.swing.JFrame {
             }
         });
 
+        jButton20.setFont(new java.awt.Font("Noto Serif", 0, 11)); // NOI18N
         jButton20.setText("Ansehen");
         jButton20.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -477,6 +490,7 @@ public class StockOverflowGUI extends javax.swing.JFrame {
             }
         });
 
+        jButton21.setFont(new java.awt.Font("Noto Serif", 0, 11)); // NOI18N
         jButton21.setText("Ansehen");
         jButton21.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -484,6 +498,7 @@ public class StockOverflowGUI extends javax.swing.JFrame {
             }
         });
 
+        jButton22.setFont(new java.awt.Font("Noto Serif", 0, 11)); // NOI18N
         jButton22.setText("Ansehen");
         jButton22.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -491,6 +506,7 @@ public class StockOverflowGUI extends javax.swing.JFrame {
             }
         });
 
+        jButton23.setFont(new java.awt.Font("Noto Serif", 0, 11)); // NOI18N
         jButton23.setText("Ansehen");
         jButton23.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -498,6 +514,7 @@ public class StockOverflowGUI extends javax.swing.JFrame {
             }
         });
 
+        jButton24.setFont(new java.awt.Font("Noto Serif", 0, 11)); // NOI18N
         jButton24.setText("Ansehen");
         jButton24.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -505,6 +522,7 @@ public class StockOverflowGUI extends javax.swing.JFrame {
             }
         });
 
+        Leaderboard.setFont(new java.awt.Font("Noto Serif", 0, 11)); // NOI18N
         Leaderboard.setText("Leaderboard");
         Leaderboard.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -512,7 +530,7 @@ public class StockOverflowGUI extends javax.swing.JFrame {
             }
         });
 
-        NaechsteSeite.setForeground(new java.awt.Color(200, 200, 50));
+        NaechsteSeite.setFont(new java.awt.Font("Noto Serif", 0, 11)); // NOI18N
         NaechsteSeite.setText("Nächste Seite");
         NaechsteSeite.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -520,7 +538,7 @@ public class StockOverflowGUI extends javax.swing.JFrame {
             }
         });
 
-        VorherigeSeite.setForeground(new java.awt.Color(50, 50, 200));
+        VorherigeSeite.setFont(new java.awt.Font("Noto Serif", 0, 11)); // NOI18N
         VorherigeSeite.setText("Vorherige Seite");
         VorherigeSeite.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -536,7 +554,7 @@ public class StockOverflowGUI extends javax.swing.JFrame {
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(61, 61, 61)
+                .addGap(40, 40, 40)
                 .addComponent(Refresh)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -656,49 +674,48 @@ public class StockOverflowGUI extends javax.swing.JFrame {
                                 .addComponent(jButton4))
                             .addGroup(layout.createSequentialGroup()
                                 .addComponent(VorherigeSeite)
-                                .addGap(17, 17, 17)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                                 .addComponent(jButton1)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addGap(13, 13, 13)
                                 .addComponent(NaechsteSeite)))
                         .addContainerGap())
                     .addGroup(layout.createSequentialGroup()
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(AktienGUIÜberschrift)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(layout.createSequentialGroup()
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                                    .addGroup(layout.createSequentialGroup()
-                                        .addComponent(jLabel1)
-                                        .addGap(91, 91, 91))
-                                    .addGroup(layout.createSequentialGroup()
-                                        .addComponent(TFAktie1)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)))
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(jLabel1)
+                                    .addComponent(TFAktie1, javax.swing.GroupLayout.PREFERRED_SIZE, 112, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addGap(9, 9, 9)
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addComponent(TFPreis1, javax.swing.GroupLayout.PREFERRED_SIZE, 82, javax.swing.GroupLayout.PREFERRED_SIZE)
                                     .addComponent(jLabel2))
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addComponent(jLabel3)
-                                    .addComponent(TFChange1, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                                    .addComponent(TFChange1, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                            .addComponent(AktienGUIÜberschrift))
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(layout.createSequentialGroup()
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                                 .addComponent(jButton2))
                             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 132, Short.MAX_VALUE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                                 .addComponent(Leaderboard)
                                 .addGap(54, 54, 54))))))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jLabel4))
+            .addGroup(layout.createSequentialGroup()
+                .addGap(119, 119, 119)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                         .addComponent(ÜberschriftOverflow)
-                        .addGap(58, 58, 58)
+                        .addGap(28, 28, 28)
                         .addComponent(DepotGUI, javax.swing.GroupLayout.PREFERRED_SIZE, 88, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(109, 109, 109))
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                         .addComponent(LogInGUI, javax.swing.GroupLayout.PREFERRED_SIZE, 83, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(16, 16, 16))
-                    .addComponent(jLabel4, javax.swing.GroupLayout.Alignment.TRAILING)))
+                        .addGap(16, 16, 16))))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -821,7 +838,7 @@ public class StockOverflowGUI extends javax.swing.JFrame {
                     .addComponent(jButton1)
                     .addComponent(NaechsteSeite)
                     .addComponent(VorherigeSeite))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 55, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 12, Short.MAX_VALUE)
                 .addComponent(jLabel4))
         );
 

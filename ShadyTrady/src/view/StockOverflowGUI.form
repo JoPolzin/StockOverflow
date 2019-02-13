@@ -27,7 +27,7 @@
     <DimensionLayout dim="0">
       <Group type="103" groupAlignment="0" attributes="0">
           <Group type="102" alignment="0" attributes="0">
-              <EmptySpace min="-2" pref="61" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="40" max="-2" attributes="0"/>
               <Component id="Refresh" min="-2" max="-2" attributes="0"/>
               <EmptySpace max="-2" attributes="0"/>
               <Group type="103" groupAlignment="0" attributes="0">
@@ -161,28 +161,22 @@
                           </Group>
                           <Group type="102" alignment="0" attributes="0">
                               <Component id="VorherigeSeite" min="-2" max="-2" attributes="0"/>
-                              <EmptySpace min="-2" pref="17" max="-2" attributes="0"/>
+                              <EmptySpace type="unrelated" max="-2" attributes="0"/>
                               <Component id="jButton1" min="-2" max="-2" attributes="0"/>
-                              <EmptySpace max="-2" attributes="0"/>
+                              <EmptySpace min="-2" pref="13" max="-2" attributes="0"/>
                               <Component id="NaechsteSeite" min="-2" max="-2" attributes="0"/>
                           </Group>
                       </Group>
                       <EmptySpace max="32767" attributes="0"/>
                   </Group>
                   <Group type="102" alignment="0" attributes="0">
-                      <Group type="103" groupAlignment="1" attributes="0">
-                          <Component id="AktienGUIÜberschrift" min="-2" max="-2" attributes="0"/>
-                          <Group type="102" alignment="1" attributes="0">
-                              <Group type="103" groupAlignment="1" max="-2" attributes="0">
-                                  <Group type="102" attributes="0">
-                                      <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
-                                      <EmptySpace min="-2" pref="91" max="-2" attributes="0"/>
-                                  </Group>
-                                  <Group type="102" attributes="0">
-                                      <Component id="TFAktie1" max="32767" attributes="0"/>
-                                      <EmptySpace min="-2" max="-2" attributes="0"/>
-                                  </Group>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="102" attributes="0">
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
+                                  <Component id="TFAktie1" min="-2" pref="112" max="-2" attributes="0"/>
                               </Group>
+                              <EmptySpace min="-2" pref="9" max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="0" attributes="0">
                                   <Component id="TFPreis1" alignment="0" min="-2" pref="82" max="-2" attributes="0"/>
                                   <Component id="jLabel2" alignment="0" min="-2" max="-2" attributes="0"/>
@@ -193,10 +187,11 @@
                                   <Component id="TFChange1" min="-2" pref="43" max="-2" attributes="0"/>
                               </Group>
                           </Group>
+                          <Component id="AktienGUIÜberschrift" min="-2" max="-2" attributes="0"/>
                       </Group>
                       <Group type="103" groupAlignment="0" attributes="0">
                           <Group type="102" attributes="0">
-                              <EmptySpace max="-2" attributes="0"/>
+                              <EmptySpace type="unrelated" max="-2" attributes="0"/>
                               <Component id="jButton2" min="-2" max="-2" attributes="0"/>
                           </Group>
                           <Group type="102" alignment="1" attributes="0">
@@ -213,11 +208,11 @@
               <Component id="jLabel4" min="-2" max="-2" attributes="0"/>
           </Group>
           <Group type="102" alignment="0" attributes="0">
-              <EmptySpace min="-2" pref="149" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="119" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" alignment="1" attributes="0">
                       <Component id="ÜberschriftOverflow" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace min="-2" pref="58" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="28" max="-2" attributes="0"/>
                       <Component id="DepotGUI" min="-2" pref="88" max="-2" attributes="0"/>
                       <EmptySpace min="-2" pref="109" max="-2" attributes="0"/>
                   </Group>
@@ -374,7 +369,7 @@
                   <Component id="NaechsteSeite" alignment="3" min="-2" max="-2" attributes="0"/>
                   <Component id="VorherigeSeite" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
-              <EmptySpace pref="55" max="32767" attributes="0"/>
+              <EmptySpace pref="12" max="32767" attributes="0"/>
               <Component id="jLabel4" min="-2" max="-2" attributes="0"/>
           </Group>
       </Group>
@@ -384,16 +379,16 @@
     <Component class="javax.swing.JLabel" name="&#xdc;berschriftOverflow">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-          <Font name="Penultimate" size="36" style="1"/>
-        </Property>
-        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-          <Color blue="64" green="c8" red="32" type="rgb"/>
+          <Font name="Noto Serif" size="36" style="1"/>
         </Property>
         <Property name="text" type="java.lang.String" value="Stock Overflow"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JButton" name="DepotGUI">
       <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Noto Serif" size="11" style="0"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="Depot"/>
         <Property name="cursor" type="java.awt.Cursor" editor="org.netbeans.modules.form.editors2.CursorEditor">
           <Color id="Standardcursor"/>
@@ -405,6 +400,9 @@
     </Component>
     <Component class="javax.swing.JButton" name="LogInGUI">
       <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Noto Serif" size="11" style="0"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="Log In"/>
       </Properties>
       <Events>
@@ -414,18 +412,15 @@
     <Component class="javax.swing.JLabel" name="AktienGUI&#xdc;berschrift">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-          <Font name="Penultimate" size="24" style="0"/>
-        </Property>
-        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-          <Color blue="64" green="32" red="c8" type="rgb"/>
+          <Font name="Noto Serif" size="24" style="0"/>
         </Property>
         <Property name="text" type="java.lang.String" value="Aktien"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JButton" name="jButton1">
       <Properties>
-        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-          <Color blue="32" green="32" red="c8" type="rgb"/>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Noto Serif" size="11" style="0"/>
         </Property>
         <Property name="text" type="java.lang.String" value="Weitere Aktien"/>
       </Properties>
@@ -840,8 +835,8 @@
     </Component>
     <Component class="javax.swing.JButton" name="Refresh">
       <Properties>
-        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-          <Color blue="32" green="c8" red="64" type="rgb"/>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Noto Serif" size="11" style="0"/>
         </Property>
         <Property name="text" type="java.lang.String" value="Refresh"/>
       </Properties>
@@ -851,21 +846,33 @@
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel1">
       <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Noto Serif" size="11" style="0"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="Name"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel2">
       <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Noto Serif" size="11" style="0"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="Preis"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel3">
       <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Noto Serif" size="11" style="0"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="Change"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JButton" name="jButton2">
       <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Noto Serif" size="11" style="0"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="Ansehen"/>
       </Properties>
       <Events>
@@ -874,6 +881,9 @@
     </Component>
     <Component class="javax.swing.JButton" name="jButton3">
       <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Noto Serif" size="11" style="0"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="Ansehen"/>
       </Properties>
       <Events>
@@ -882,6 +892,9 @@
     </Component>
     <Component class="javax.swing.JButton" name="jButton4">
       <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Noto Serif" size="11" style="0"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="Ansehen"/>
       </Properties>
       <Events>
@@ -890,6 +903,9 @@
     </Component>
     <Component class="javax.swing.JButton" name="jButton5">
       <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Noto Serif" size="11" style="0"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="Ansehen"/>
       </Properties>
       <Events>
@@ -898,6 +914,9 @@
     </Component>
     <Component class="javax.swing.JButton" name="jButton6">
       <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Noto Serif" size="11" style="0"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="Ansehen"/>
       </Properties>
       <Events>
@@ -906,6 +925,9 @@
     </Component>
     <Component class="javax.swing.JButton" name="jButton7">
       <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Noto Serif" size="11" style="0"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="Ansehen"/>
       </Properties>
       <Events>
@@ -914,6 +936,9 @@
     </Component>
     <Component class="javax.swing.JButton" name="jButton8">
       <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Noto Serif" size="11" style="0"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="Ansehen"/>
       </Properties>
       <Events>
@@ -922,6 +947,9 @@
     </Component>
     <Component class="javax.swing.JButton" name="jButton9">
       <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Noto Serif" size="11" style="0"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="Ansehen"/>
       </Properties>
       <Events>
@@ -930,6 +958,9 @@
     </Component>
     <Component class="javax.swing.JButton" name="jButton10">
       <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Noto Serif" size="11" style="0"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="Ansehen"/>
       </Properties>
       <Events>
@@ -938,6 +969,9 @@
     </Component>
     <Component class="javax.swing.JButton" name="jButton11">
       <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Noto Serif" size="11" style="0"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="Ansehen"/>
       </Properties>
       <Events>
@@ -946,6 +980,9 @@
     </Component>
     <Component class="javax.swing.JButton" name="jButton20">
       <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Noto Serif" size="11" style="0"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="Ansehen"/>
       </Properties>
       <Events>
@@ -954,6 +991,9 @@
     </Component>
     <Component class="javax.swing.JButton" name="jButton21">
       <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Noto Serif" size="11" style="0"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="Ansehen"/>
       </Properties>
       <Events>
@@ -962,6 +1002,9 @@
     </Component>
     <Component class="javax.swing.JButton" name="jButton22">
       <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Noto Serif" size="11" style="0"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="Ansehen"/>
       </Properties>
       <Events>
@@ -970,6 +1013,9 @@
     </Component>
     <Component class="javax.swing.JButton" name="jButton23">
       <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Noto Serif" size="11" style="0"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="Ansehen"/>
       </Properties>
       <Events>
@@ -978,6 +1024,9 @@
     </Component>
     <Component class="javax.swing.JButton" name="jButton24">
       <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Noto Serif" size="11" style="0"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="Ansehen"/>
       </Properties>
       <Events>
@@ -986,6 +1035,9 @@
     </Component>
     <Component class="javax.swing.JButton" name="Leaderboard">
       <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Noto Serif" size="11" style="0"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="Leaderboard"/>
       </Properties>
       <Events>
@@ -994,8 +1046,8 @@
     </Component>
     <Component class="javax.swing.JButton" name="NaechsteSeite">
       <Properties>
-        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-          <Color blue="32" green="c8" red="c8" type="rgb"/>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Noto Serif" size="11" style="0"/>
         </Property>
         <Property name="text" type="java.lang.String" value="N&#xe4;chste Seite"/>
       </Properties>
@@ -1005,8 +1057,8 @@
     </Component>
     <Component class="javax.swing.JButton" name="VorherigeSeite">
       <Properties>
-        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-          <Color blue="c8" green="32" red="32" type="rgb"/>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Noto Serif" size="11" style="0"/>
         </Property>
         <Property name="text" type="java.lang.String" value="Vorherige Seite"/>
       </Properties>
