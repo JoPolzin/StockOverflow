@@ -49,15 +49,15 @@ public class ProfilFenster extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        StockOverflowProfil.setFont(new java.awt.Font("Penultimate", 1, 36)); // NOI18N
+        StockOverflowProfil.setFont(new java.awt.Font("Noto Serif", 1, 36)); // NOI18N
         StockOverflowProfil.setText("StockOverflow");
 
         ProfilBenutzername.setFont(new java.awt.Font("Penultimate", 0, 11)); // NOI18N
 
-        ProfilBenutzernameAnzeigen.setFont(new java.awt.Font("Penultimate", 0, 11)); // NOI18N
+        ProfilBenutzernameAnzeigen.setFont(new java.awt.Font("Noto Serif", 0, 11)); // NOI18N
         ProfilBenutzernameAnzeigen.setText("Benutzername");
 
-        ProfilPasswort.setFont(new java.awt.Font("Penultimate", 0, 11)); // NOI18N
+        ProfilPasswort.setFont(new java.awt.Font("Noto Serif", 0, 11)); // NOI18N
         ProfilPasswort.setText("Passwort");
 
         ProfilPasswortAnzeigen.addActionListener(new java.awt.event.ActionListener() {
@@ -66,7 +66,7 @@ public class ProfilFenster extends javax.swing.JFrame {
             }
         });
 
-        ProfilAbbrechen.setFont(new java.awt.Font("Penultimate", 0, 14)); // NOI18N
+        ProfilAbbrechen.setFont(new java.awt.Font("Noto Serif", 0, 14)); // NOI18N
         ProfilAbbrechen.setText("Abbrechen");
         ProfilAbbrechen.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -74,6 +74,7 @@ public class ProfilFenster extends javax.swing.JFrame {
             }
         });
 
+        ProfilPasswortÄndern.setFont(new java.awt.Font("Noto Serif", 0, 11)); // NOI18N
         ProfilPasswortÄndern.setText("Ändern");
         ProfilPasswortÄndern.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -83,10 +84,10 @@ public class ProfilFenster extends javax.swing.JFrame {
 
         ProfilGuthabneAnzeigen.setFont(new java.awt.Font("Penultimate", 0, 11)); // NOI18N
 
-        ProfilGuthaben.setFont(new java.awt.Font("Penultimate", 0, 11)); // NOI18N
+        ProfilGuthaben.setFont(new java.awt.Font("Noto Serif", 0, 11)); // NOI18N
         ProfilGuthaben.setText("Guthaben");
 
-        ProfilLogOut.setFont(new java.awt.Font("Penultimate", 0, 14)); // NOI18N
+        ProfilLogOut.setFont(new java.awt.Font("Noto Serif", 0, 14)); // NOI18N
         ProfilLogOut.setText("Log Out");
         ProfilLogOut.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -94,7 +95,7 @@ public class ProfilFenster extends javax.swing.JFrame {
             }
         });
 
-        ProfilLöschen.setFont(new java.awt.Font("Penultimate", 0, 14)); // NOI18N
+        ProfilLöschen.setFont(new java.awt.Font("Noto Serif", 0, 14)); // NOI18N
         ProfilLöschen.setText("Profil Löschen");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -102,7 +103,7 @@ public class ProfilFenster extends javax.swing.JFrame {
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(39, 39, 39)
+                .addGap(36, 36, 36)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(ProfilPasswort)
                     .addComponent(ProfilBenutzernameAnzeigen)
@@ -120,7 +121,7 @@ public class ProfilFenster extends javax.swing.JFrame {
                             .addComponent(ProfilAbbrechen, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                             .addComponent(ProfilLogOut, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                             .addComponent(ProfilLöschen, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
-                .addContainerGap(36, Short.MAX_VALUE))
+                .addContainerGap(39, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -147,7 +148,7 @@ public class ProfilFenster extends javax.swing.JFrame {
                 .addComponent(ProfilLogOut)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(ProfilLöschen)
-                .addContainerGap(15, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         pack();

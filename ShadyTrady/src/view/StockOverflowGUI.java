@@ -187,7 +187,7 @@ public class StockOverflowGUI extends javax.swing.JFrame {
         jLabel4 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setCursor(new java.awt.Cursor(java.awt.Cursor.WAIT_CURSOR));
+        setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
 
         ÜberschriftOverflow.setFont(new java.awt.Font("Noto Serif", 1, 36)); // NOI18N
         ÜberschriftOverflow.setText("Stock Overflow");

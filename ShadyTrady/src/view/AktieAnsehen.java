@@ -87,6 +87,7 @@ public class AktieAnsehen extends javax.swing.JFrame {
             }
         });
 
+        DepotAnsehen.setFont(new java.awt.Font("Noto Serif", 0, 10)); // NOI18N
         DepotAnsehen.setText("Depot");
         DepotAnsehen.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         DepotAnsehen.addActionListener(new java.awt.event.ActionListener() {
@@ -95,9 +96,10 @@ public class AktieAnsehen extends javax.swing.JFrame {
             }
         });
 
-        ÜberschriftAnsehen.setFont(new java.awt.Font("Penultimate", 1, 36)); // NOI18N
+        ÜberschriftAnsehen.setFont(new java.awt.Font("Noto Serif", 1, 36)); // NOI18N
         ÜberschriftAnsehen.setText("StockOverflow");
 
+        LogInAnsehen.setFont(new java.awt.Font("Noto Serif", 0, 10)); // NOI18N
         LogInAnsehen.setText("Log In");
         LogInAnsehen.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -105,6 +107,7 @@ public class AktieAnsehen extends javax.swing.JFrame {
             }
         });
 
+        zurückAktieAnsehen.setFont(new java.awt.Font("Noto Serif", 0, 11)); // NOI18N
         zurückAktieAnsehen.setText("Zurück");
         zurückAktieAnsehen.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -112,10 +115,10 @@ public class AktieAnsehen extends javax.swing.JFrame {
             }
         });
 
-        ChangeAnsehen.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        ChangeAnsehen.setFont(new java.awt.Font("Noto Serif", 0, 14)); // NOI18N
         ChangeAnsehen.setText("Change");
 
-        PreisAnsehen.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        PreisAnsehen.setFont(new java.awt.Font("Noto Serif", 0, 14)); // NOI18N
         PreisAnsehen.setText("Preis");
 
         KaufenAnsehen.setText("Kaufen");
@@ -139,6 +142,7 @@ public class AktieAnsehen extends javax.swing.JFrame {
         Change.setToolTipText("");
         ChangeAngabeAnsehen.setViewportView(Change);
 
+        TagAnsehen.setFont(new java.awt.Font("Noto Serif", 0, 11)); // NOI18N
         TagAnsehen.setText("Tag");
         TagAnsehen.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -146,6 +150,7 @@ public class AktieAnsehen extends javax.swing.JFrame {
             }
         });
 
+        WocheAnsehen.setFont(new java.awt.Font("Noto Serif", 0, 11)); // NOI18N
         WocheAnsehen.setText("Woche");
         WocheAnsehen.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -153,6 +158,7 @@ public class AktieAnsehen extends javax.swing.JFrame {
             }
         });
 
+        MonatAnsehen.setFont(new java.awt.Font("Noto Serif", 0, 11)); // NOI18N
         MonatAnsehen.setText("Monat");
         MonatAnsehen.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -160,6 +166,7 @@ public class AktieAnsehen extends javax.swing.JFrame {
             }
         });
 
+        HalbesJahrAnsehen.setFont(new java.awt.Font("Noto Serif", 0, 11)); // NOI18N
         HalbesJahrAnsehen.setText("6 Monate");
         HalbesJahrAnsehen.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -167,6 +174,7 @@ public class AktieAnsehen extends javax.swing.JFrame {
             }
         });
 
+        JahrAnsehen.setFont(new java.awt.Font("Noto Serif", 0, 11)); // NOI18N
         JahrAnsehen.setText("Jahr");
         JahrAnsehen.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -181,8 +189,10 @@ public class AktieAnsehen extends javax.swing.JFrame {
             }
         });
 
+        JLISIN.setFont(new java.awt.Font("Noto Serif", 0, 11)); // NOI18N
         JLISIN.setText("ISIN:");
 
+        laden.setFont(new java.awt.Font("Noto Serif", 0, 11)); // NOI18N
         laden.setText("Laden");
         laden.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -190,6 +200,7 @@ public class AktieAnsehen extends javax.swing.JFrame {
             }
         });
 
+        Aktualisieren.setFont(new java.awt.Font("Noto Serif", 0, 11)); // NOI18N
         Aktualisieren.setText("Aktualisieren");
         Aktualisieren.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -199,6 +210,7 @@ public class AktieAnsehen extends javax.swing.JFrame {
 
         Name.setEditable(false);
 
+        jLabel1.setFont(new java.awt.Font("Noto Serif", 0, 11)); // NOI18N
         jLabel1.setText("Name:");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -219,9 +231,9 @@ public class AktieAnsehen extends javax.swing.JFrame {
                                         .addComponent(MonatAnsehen, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE)
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                         .addComponent(HalbesJahrAnsehen)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                         .addComponent(JahrAnsehen, javax.swing.GroupLayout.PREFERRED_SIZE, 69, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addGap(0, 117, Short.MAX_VALUE))
+                                        .addGap(0, 119, Short.MAX_VALUE))
                                     .addGroup(layout.createSequentialGroup()
                                         .addComponent(AktienBild, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                                         .addGap(18, 18, 18)
@@ -308,7 +320,7 @@ public class AktieAnsehen extends javax.swing.JFrame {
                     .addComponent(MonatAnsehen)
                     .addComponent(HalbesJahrAnsehen)
                     .addComponent(JahrAnsehen))
-                .addGap(0, 41, Short.MAX_VALUE))
+                .addGap(0, 26, Short.MAX_VALUE))
         );
 
         pack();

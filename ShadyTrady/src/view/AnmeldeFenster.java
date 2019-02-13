@@ -46,13 +46,13 @@ public class AnmeldeFenster extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        StockOverflowAnmeldung.setFont(new java.awt.Font("Penultimate", 1, 36)); // NOI18N
+        StockOverflowAnmeldung.setFont(new java.awt.Font("Noto Serif", 1, 36)); // NOI18N
         StockOverflowAnmeldung.setText("StockOverflow");
 
-        AnmeldenBenutzername.setFont(new java.awt.Font("Penultimate", 0, 11)); // NOI18N
+        AnmeldenBenutzername.setFont(new java.awt.Font("Noto Serif", 0, 11)); // NOI18N
         AnmeldenBenutzername.setText("Benutzername");
 
-        AnmeldenPasswort.setFont(new java.awt.Font("Penultimate", 0, 11)); // NOI18N
+        AnmeldenPasswort.setFont(new java.awt.Font("Noto Serif", 0, 11)); // NOI18N
         AnmeldenPasswort.setText("Passwort");
 
         PasswortEingeben.addActionListener(new java.awt.event.ActionListener() {
@@ -61,7 +61,7 @@ public class AnmeldeFenster extends javax.swing.JFrame {
             }
         });
 
-        AnmeldenAnmelden.setFont(new java.awt.Font("Penultimate", 0, 14)); // NOI18N
+        AnmeldenAnmelden.setFont(new java.awt.Font("Noto Serif", 0, 14)); // NOI18N
         AnmeldenAnmelden.setText("Anmelden");
         AnmeldenAnmelden.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -69,7 +69,7 @@ public class AnmeldeFenster extends javax.swing.JFrame {
             }
         });
 
-        AnmeldenAbbrechen.setFont(new java.awt.Font("Penultimate", 0, 14)); // NOI18N
+        AnmeldenAbbrechen.setFont(new java.awt.Font("Noto Serif", 0, 14)); // NOI18N
         AnmeldenAbbrechen.setText("Abbrechen");
         AnmeldenAbbrechen.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -77,7 +77,7 @@ public class AnmeldeFenster extends javax.swing.JFrame {
             }
         });
 
-        AnmeldenRegistrieren.setFont(new java.awt.Font("Penultimate", 0, 14)); // NOI18N
+        AnmeldenRegistrieren.setFont(new java.awt.Font("Noto Serif", 0, 14)); // NOI18N
         AnmeldenRegistrieren.setText("Registrieren");
         AnmeldenRegistrieren.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -99,27 +99,27 @@ public class AnmeldeFenster extends javax.swing.JFrame {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
                         .addGap(39, 39, 39)
+                        .addComponent(StockOverflowAnmeldung))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(121, 121, 121)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(AnmeldenPasswort)
                             .addComponent(AnmeldenBenutzername)
-                            .addComponent(StockOverflowAnmeldung)
                             .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
                                 .addComponent(AnmeldenBenutzernameEingeben, javax.swing.GroupLayout.Alignment.LEADING)
-                                .addComponent(PasswortEingeben, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 117, Short.MAX_VALUE))))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(121, 121, 121)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(AnmeldenAbbrechen, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(AnmeldenAnmelden, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(AnmeldenRegistrieren, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
-                .addContainerGap(36, Short.MAX_VALUE))
+                                .addComponent(PasswortEingeben, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, 117, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                .addComponent(AnmeldenAbbrechen, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addComponent(AnmeldenAnmelden, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addComponent(AnmeldenRegistrieren, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))))
+                .addContainerGap(39, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(StockOverflowAnmeldung)
-                .addGap(20, 20, 20)
+                .addGap(18, 18, 18)
                 .addComponent(AnmeldenBenutzername)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(AnmeldenBenutzernameEingeben, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -127,13 +127,13 @@ public class AnmeldeFenster extends javax.swing.JFrame {
                 .addComponent(AnmeldenPasswort)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(PasswortEingeben, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(53, 53, 53)
+                .addGap(55, 55, 55)
                 .addComponent(AnmeldenAnmelden)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(AnmeldenRegistrieren, javax.swing.GroupLayout.PREFERRED_SIZE, 23, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(AnmeldenAbbrechen)
-                .addContainerGap(20, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         pack();
