@@ -5,7 +5,7 @@
  */
 package control;
 
-import Firebasezugriff.FirebaseZugriff;
+import model.FirebaseZugriff;
 import edu.emory.mathcs.backport.java.util.Collections;
 import java.util.ArrayList;
 import model.Benutzer;

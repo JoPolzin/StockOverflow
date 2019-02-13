@@ -51,12 +51,14 @@ public class Aktienkonto {
      * @param Preis
      */
     public void aktie_kaufen(String aid, int Stueckzahl, Float Preis) {
-
+OA.DnsConfig();
+        String name = OA.getName(aid);
+        
         if (!Gekaufte_Aktien.isEmpty()) {
 
             if (!this.Gekaufte_Aktien.containsKey(aid)) {
                 Gekaufte_Aktien.put(aid, Stueckzahl);
-                Aktien.add(new Aktie(aid, Preis));
+                Aktien.add(new Aktie(aid, name, Preis));
             } else {
 
                 this.Gekaufte_Aktien.replace(aid, this.Gekaufte_Aktien.get(aid) + Stueckzahl);
@@ -66,7 +68,7 @@ public class Aktienkonto {
         } else {
 
             Gekaufte_Aktien.put(aid, Stueckzahl);
-            Aktien.add(new Aktie(aid, Preis));
+            Aktien.add(new Aktie(aid,name, Preis));
         }
 
     }

@@ -5,7 +5,7 @@
  */
 package TEST;
 
-import Firebasezugriff.FirebaseZugriff;
+import model.FirebaseZugriff;
 import control.maincontrol;
 import java.util.ArrayList;
 import model.Aktie;

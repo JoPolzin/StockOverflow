@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package Firebasezugriff;
+package model;
 
 import control.maincontrol;
 import java.io.UnsupportedEncodingException;
@@ -97,10 +97,9 @@ public class FirebaseZugriff {
                     }
                     //int anzahl = (int) lhm2.get("anzahl");
                     //for (int i = 1; i <= anzahl; i = i + 1) {
-                    Aktie akt = new Aktie((String) lhm2.get("isin"), (double) lhm2.get("preis"));
-                    akt.setPreis((double) lhm2.get("preis"));
-                    akt.setStueckzahl((int) lhm2.get("anzahl"));
-                    tmp.getDepot().getAktien().add(akt);
+                  
+                   
+                     tmp.getDepot().aktie_kaufen((String) lhm2.get("isin"),(int) lhm2.get("anzahl"), Float.parseFloat((String) lhm2.get("preis")));
 
                     //}
                 }
@@ -257,14 +256,15 @@ public class FirebaseZugriff {
     }
 
     public static void main(String[] args) {
+        OA.DnsConfig();
         Benutzer b = new Benutzer();
         b.setBenutzername("TestNutzer");
         b.setEmail("j@kl.mn");
         b.setPasswort("informatik");
         b.setKontostand(1000);
-        Aktie a1 = new Aktie("DE0007164600", 45.78);
+        Aktie a1 = new Aktie("DE0007164600",OA.getName("DE0007164600"), 45.78);
         a1.setStueckzahl(4);
-        Aktie a2 = new Aktie("US02079K3059", 55);
+        Aktie a2 = new Aktie("US02079K3059",OA.getName("US02079K3059"), 55);
         a2.setStueckzahl(2);
         Aktienkonto ak = new Aktienkonto();
         ak.aktie_kaufen("DE0007164600", 4, Float.parseFloat("92.66"));
@@ -339,11 +339,9 @@ public class FirebaseZugriff {
                 }
                 //int anzahl = (int) lhm2.get("anzahl");
                 //for (int i = 1; i <= anzahl; i = i + 1) {
-                Aktie akt = new Aktie((String) lhm2.get("isin"), (double) lhm2.get("preis"));
-                akt.setPreis((double) lhm2.get("preis"));
-                akt.setStueckzahl((int) lhm2.get("anzahl"));
-                System.out.println(akt.toString());
-                b.getDepot().getAktien().add(akt);
+              
+                
+                b.getDepot().aktie_kaufen((String) lhm2.get("isin"),(int) lhm2.get("anzahl"), Float.parseFloat((String) lhm2.get("preis")));
 
             }
 

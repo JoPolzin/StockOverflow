@@ -5,7 +5,7 @@
  */
 package control;
 
-import Firebasezugriff.FirebaseZugriff;
+import model.FirebaseZugriff;
 import edu.emory.mathcs.backport.java.util.Collections;
 import view.*;
 import model.*;
@@ -344,6 +344,8 @@ public class maincontrol {
      */
     public void AktienDatenInitialisieren(int x) {
         OA.DnsConfig();
+        
+        
         stockOverflowGUI.PreisListe = new ArrayList<>();
         
         for (int i = 0; i < 15; i++) {
@@ -637,8 +639,8 @@ public class maincontrol {
                 int Preis = akt.getStueckzahl();
                 
                 this.eigenesDepot.getNamenFlds().get(i).setText(akt.getISIN());
-                this.eigenesDepot.getPreisFlds().get(i).setText("");
-                this.eigenesDepot.getStueckzahlFlds().get(i).setText("");
+                this.eigenesDepot.getPreisFlds().get(i).setText(akt.getName());
+                this.eigenesDepot.getStueckzahlFlds().get(i).setText(this.b.getDepot().getGekaufte_Aktien().get(akt.getISIN()).toString());
 
                 //   }
             }
