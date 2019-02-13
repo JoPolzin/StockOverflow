@@ -91,6 +91,11 @@ public class ProfilFenster extends javax.swing.JFrame {
 
         ProfilLogOut.setFont(new java.awt.Font("Penultimate", 0, 14)); // NOI18N
         ProfilLogOut.setText("Log Out");
+        ProfilLogOut.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                ProfilLogOutActionPerformed(evt);
+            }
+        });
 
         ProfilLöschen.setFont(new java.awt.Font("Penultimate", 0, 14)); // NOI18N
         ProfilLöschen.setText("Profil Löschen");
@@ -166,6 +171,10 @@ public class ProfilFenster extends javax.swing.JFrame {
     private void ProfilPasswortÄndernActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ProfilPasswortÄndernActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_ProfilPasswortÄndernActionPerformed
+
+    private void ProfilLogOutActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ProfilLogOutActionPerformed
+       this.c.logout();
+    }//GEN-LAST:event_ProfilLogOutActionPerformed
 
     /**
      * @param args the command line arguments

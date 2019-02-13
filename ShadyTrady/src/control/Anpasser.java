@@ -36,7 +36,7 @@ class Anpasser extends Thread {
     public void run() {
 
         try {
-            System.out.println("Demo-Thread");
+            System.out.println("Demo-Thread :D");
             fz = new FirebaseZugriff(c);
             //al = fz.benutzerAuslesen();
             //LeaderboardInit();

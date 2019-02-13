@@ -25,177 +25,189 @@
       <Group type="103" groupAlignment="0" attributes="0">
           <Group type="102" attributes="0">
               <Group type="103" groupAlignment="0" attributes="0">
-                  <Group type="102" alignment="0" attributes="0">
-                      <EmptySpace min="-2" pref="234" max="-2" attributes="0"/>
-                      <Component id="EigenesDepot" min="-2" max="-2" attributes="0"/>
-                  </Group>
-                  <Group type="102" alignment="0" attributes="0">
-                      <EmptySpace min="-2" pref="49" max="-2" attributes="0"/>
+                  <Group type="102" attributes="0">
                       <Group type="103" groupAlignment="0" attributes="0">
-                          <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
-                          <Group type="103" groupAlignment="1" attributes="0">
-                              <Group type="102" attributes="0">
-                                  <Component id="TFAktie1" min="-2" pref="132" max="-2" attributes="0"/>
-                                  <EmptySpace type="separate" max="-2" attributes="0"/>
-                                  <Component id="TFPreis1" min="-2" pref="83" max="-2" attributes="0"/>
-                                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                                  <Component id="TFAnzahl1" min="-2" pref="78" max="-2" attributes="0"/>
-                                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                                  <Component id="Verkaufen1" min="-2" max="-2" attributes="0"/>
-                              </Group>
-                              <Group type="102" attributes="0">
-                                  <Component id="TFAktie" min="-2" pref="132" max="-2" attributes="0"/>
-                                  <EmptySpace type="separate" max="-2" attributes="0"/>
-                                  <Group type="103" groupAlignment="0" attributes="0">
-                                      <Component id="StockOverflow" min="-2" max="-2" attributes="0"/>
-                                      <Group type="102" alignment="0" attributes="0">
-                                          <Group type="103" groupAlignment="0" attributes="0">
-                                              <Component id="TFPreis" alignment="0" min="-2" pref="83" max="-2" attributes="0"/>
-                                              <Component id="jLabel2" alignment="0" min="-2" max="-2" attributes="0"/>
-                                          </Group>
+                          <Group type="102" attributes="0">
+                              <EmptySpace min="-2" pref="49" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
+                                  <Group type="103" groupAlignment="1" attributes="0">
+                                      <Group type="102" attributes="0">
+                                          <Component id="TFAktie1" min="-2" pref="132" max="-2" attributes="0"/>
+                                          <EmptySpace type="separate" max="-2" attributes="0"/>
+                                          <Component id="TFPreis1" min="-2" pref="83" max="-2" attributes="0"/>
                                           <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                          <Component id="TFAnzahl1" min="-2" pref="78" max="-2" attributes="0"/>
+                                          <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                          <Component id="Verkaufen1" min="-2" max="-2" attributes="0"/>
+                                      </Group>
+                                      <Group type="102" attributes="0">
+                                          <Component id="TFAktie" min="-2" pref="132" max="-2" attributes="0"/>
+                                          <EmptySpace type="separate" max="-2" attributes="0"/>
                                           <Group type="103" groupAlignment="0" attributes="0">
-                                              <Component id="jLabel3" min="-2" max="-2" attributes="0"/>
-                                              <Group type="102" attributes="0">
-                                                  <Component id="TFAnzahl" min="-2" pref="78" max="-2" attributes="0"/>
+                                              <Component id="StockOverflow" min="-2" max="-2" attributes="0"/>
+                                              <Group type="102" alignment="0" attributes="0">
+                                                  <Group type="103" groupAlignment="0" attributes="0">
+                                                      <Component id="TFPreis" alignment="0" min="-2" pref="83" max="-2" attributes="0"/>
+                                                      <Component id="jLabel2" alignment="0" min="-2" max="-2" attributes="0"/>
+                                                  </Group>
                                                   <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                                                  <Component id="Verkaufen" min="-2" max="-2" attributes="0"/>
+                                                  <Group type="103" groupAlignment="0" attributes="0">
+                                                      <Component id="jLabel3" min="-2" max="-2" attributes="0"/>
+                                                      <Group type="102" attributes="0">
+                                                          <Component id="TFAnzahl" min="-2" pref="78" max="-2" attributes="0"/>
+                                                          <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                                          <Component id="Verkaufen" min="-2" max="-2" attributes="0"/>
+                                                      </Group>
+                                                  </Group>
                                               </Group>
                                           </Group>
                                       </Group>
+                                      <Group type="102" alignment="1" attributes="0">
+                                          <Component id="TFAktie3" min="-2" pref="132" max="-2" attributes="0"/>
+                                          <EmptySpace type="separate" max="-2" attributes="0"/>
+                                          <Component id="TFPreis3" min="-2" pref="83" max="-2" attributes="0"/>
+                                          <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                          <Component id="TFAnzahl3" min="-2" pref="78" max="-2" attributes="0"/>
+                                          <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                          <Component id="Verkaufen3" min="-2" max="-2" attributes="0"/>
+                                      </Group>
+                                      <Group type="102" alignment="1" attributes="0">
+                                          <Component id="TFAktie2" min="-2" pref="132" max="-2" attributes="0"/>
+                                          <EmptySpace type="separate" max="-2" attributes="0"/>
+                                          <Component id="TFPreis2" min="-2" pref="83" max="-2" attributes="0"/>
+                                          <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                          <Component id="TFAnzahl2" min="-2" pref="78" max="-2" attributes="0"/>
+                                          <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                          <Component id="Verkaufen2" min="-2" max="-2" attributes="0"/>
+                                      </Group>
+                                      <Group type="102" alignment="1" attributes="0">
+                                          <Component id="TFAktie4" min="-2" pref="132" max="-2" attributes="0"/>
+                                          <EmptySpace type="separate" max="-2" attributes="0"/>
+                                          <Component id="TFPreis4" min="-2" pref="83" max="-2" attributes="0"/>
+                                          <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                          <Component id="TFAnzahl4" min="-2" pref="78" max="-2" attributes="0"/>
+                                          <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                          <Component id="Verkaufen4" min="-2" max="-2" attributes="0"/>
+                                      </Group>
+                                      <Group type="102" alignment="1" attributes="0">
+                                          <Component id="TFAktie5" min="-2" pref="132" max="-2" attributes="0"/>
+                                          <EmptySpace type="separate" max="-2" attributes="0"/>
+                                          <Component id="TFPreis5" min="-2" pref="83" max="-2" attributes="0"/>
+                                          <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                          <Component id="TFAnzahl5" min="-2" pref="78" max="-2" attributes="0"/>
+                                          <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                          <Component id="Verkaufen5" min="-2" max="-2" attributes="0"/>
+                                      </Group>
+                                      <Group type="102" alignment="1" attributes="0">
+                                          <Component id="TFAktie6" min="-2" pref="132" max="-2" attributes="0"/>
+                                          <EmptySpace type="separate" max="-2" attributes="0"/>
+                                          <Component id="TFPreis6" min="-2" pref="83" max="-2" attributes="0"/>
+                                          <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                          <Component id="TFAnzahl6" min="-2" pref="78" max="-2" attributes="0"/>
+                                          <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                          <Component id="Verkaufen6" min="-2" max="-2" attributes="0"/>
+                                      </Group>
+                                      <Group type="102" alignment="1" attributes="0">
+                                          <Component id="TFAktie7" min="-2" pref="132" max="-2" attributes="0"/>
+                                          <EmptySpace type="separate" max="-2" attributes="0"/>
+                                          <Component id="TFPreis7" min="-2" pref="83" max="-2" attributes="0"/>
+                                          <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                          <Component id="TFAnzahl7" min="-2" pref="78" max="-2" attributes="0"/>
+                                          <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                          <Component id="Verkaufen7" min="-2" max="-2" attributes="0"/>
+                                      </Group>
+                                      <Group type="102" alignment="1" attributes="0">
+                                          <Component id="TFAktie8" min="-2" pref="132" max="-2" attributes="0"/>
+                                          <EmptySpace type="separate" max="-2" attributes="0"/>
+                                          <Component id="TFPreis8" min="-2" pref="83" max="-2" attributes="0"/>
+                                          <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                          <Component id="TFAnzahl8" min="-2" pref="78" max="-2" attributes="0"/>
+                                          <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                          <Component id="Verkaufen8" min="-2" max="-2" attributes="0"/>
+                                      </Group>
+                                      <Group type="102" alignment="1" attributes="0">
+                                          <Component id="TFAktie9" min="-2" pref="132" max="-2" attributes="0"/>
+                                          <EmptySpace type="separate" max="-2" attributes="0"/>
+                                          <Component id="TFPreis9" min="-2" pref="83" max="-2" attributes="0"/>
+                                          <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                          <Component id="TFAnzahl9" min="-2" pref="78" max="-2" attributes="0"/>
+                                          <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                          <Component id="Verkaufen9" min="-2" max="-2" attributes="0"/>
+                                      </Group>
+                                      <Group type="102" alignment="1" attributes="0">
+                                          <Component id="TFAktie10" min="-2" pref="132" max="-2" attributes="0"/>
+                                          <EmptySpace type="separate" max="-2" attributes="0"/>
+                                          <Component id="TFPreis10" min="-2" pref="83" max="-2" attributes="0"/>
+                                          <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                          <Component id="TFAnzahl10" min="-2" pref="78" max="-2" attributes="0"/>
+                                          <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                          <Component id="Verkaufen10" min="-2" max="-2" attributes="0"/>
+                                      </Group>
+                                      <Group type="102" alignment="1" attributes="0">
+                                          <Component id="TFAktie11" min="-2" pref="132" max="-2" attributes="0"/>
+                                          <EmptySpace type="separate" max="-2" attributes="0"/>
+                                          <Component id="TFPreis11" min="-2" pref="83" max="-2" attributes="0"/>
+                                          <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                          <Component id="TFAnzahl11" min="-2" pref="78" max="-2" attributes="0"/>
+                                          <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                          <Component id="Verkaufen11" min="-2" max="-2" attributes="0"/>
+                                      </Group>
+                                      <Group type="102" alignment="1" attributes="0">
+                                          <Component id="TFAktie13" min="-2" pref="132" max="-2" attributes="0"/>
+                                          <EmptySpace type="separate" max="-2" attributes="0"/>
+                                          <Component id="TFPreis13" min="-2" pref="83" max="-2" attributes="0"/>
+                                          <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                          <Component id="TFAnzahl13" min="-2" pref="78" max="-2" attributes="0"/>
+                                          <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                          <Component id="Verkaufen13" min="-2" max="-2" attributes="0"/>
+                                      </Group>
+                                      <Group type="102" alignment="1" attributes="0">
+                                          <Component id="TFAktie12" min="-2" pref="132" max="-2" attributes="0"/>
+                                          <EmptySpace type="separate" max="-2" attributes="0"/>
+                                          <Component id="TFPreis12" min="-2" pref="83" max="-2" attributes="0"/>
+                                          <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                          <Component id="TFAnzahl12" min="-2" pref="78" max="-2" attributes="0"/>
+                                          <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                          <Component id="Verkaufen12" min="-2" max="-2" attributes="0"/>
+                                      </Group>
+                                      <Group type="102" alignment="1" attributes="0">
+                                          <Component id="TFAktie15" min="-2" pref="132" max="-2" attributes="0"/>
+                                          <EmptySpace type="separate" max="-2" attributes="0"/>
+                                          <Component id="TFPreis15" min="-2" pref="83" max="-2" attributes="0"/>
+                                          <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                          <Component id="TFAnzahl15" min="-2" pref="78" max="-2" attributes="0"/>
+                                          <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                          <Component id="Verkaufen15" min="-2" max="-2" attributes="0"/>
+                                      </Group>
+                                      <Group type="102" alignment="1" attributes="0">
+                                          <Component id="TFAktie14" min="-2" pref="132" max="-2" attributes="0"/>
+                                          <EmptySpace type="separate" max="-2" attributes="0"/>
+                                          <Component id="TFPreis14" min="-2" pref="83" max="-2" attributes="0"/>
+                                          <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                          <Component id="TFAnzahl14" min="-2" pref="78" max="-2" attributes="0"/>
+                                          <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                          <Component id="Verkaufen14" min="-2" max="-2" attributes="0"/>
+                                      </Group>
                                   </Group>
                               </Group>
-                              <Group type="102" alignment="1" attributes="0">
-                                  <Component id="TFAktie3" min="-2" pref="132" max="-2" attributes="0"/>
-                                  <EmptySpace type="separate" max="-2" attributes="0"/>
-                                  <Component id="TFPreis3" min="-2" pref="83" max="-2" attributes="0"/>
-                                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                                  <Component id="TFAnzahl3" min="-2" pref="78" max="-2" attributes="0"/>
-                                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                                  <Component id="Verkaufen3" min="-2" max="-2" attributes="0"/>
-                              </Group>
-                              <Group type="102" alignment="1" attributes="0">
-                                  <Component id="TFAktie2" min="-2" pref="132" max="-2" attributes="0"/>
-                                  <EmptySpace type="separate" max="-2" attributes="0"/>
-                                  <Component id="TFPreis2" min="-2" pref="83" max="-2" attributes="0"/>
-                                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                                  <Component id="TFAnzahl2" min="-2" pref="78" max="-2" attributes="0"/>
-                                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                                  <Component id="Verkaufen2" min="-2" max="-2" attributes="0"/>
-                              </Group>
-                              <Group type="102" alignment="1" attributes="0">
-                                  <Component id="TFAktie4" min="-2" pref="132" max="-2" attributes="0"/>
-                                  <EmptySpace type="separate" max="-2" attributes="0"/>
-                                  <Component id="TFPreis4" min="-2" pref="83" max="-2" attributes="0"/>
-                                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                                  <Component id="TFAnzahl4" min="-2" pref="78" max="-2" attributes="0"/>
-                                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                                  <Component id="Verkaufen4" min="-2" max="-2" attributes="0"/>
-                              </Group>
-                              <Group type="102" alignment="1" attributes="0">
-                                  <Component id="TFAktie5" min="-2" pref="132" max="-2" attributes="0"/>
-                                  <EmptySpace type="separate" max="-2" attributes="0"/>
-                                  <Component id="TFPreis5" min="-2" pref="83" max="-2" attributes="0"/>
-                                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                                  <Component id="TFAnzahl5" min="-2" pref="78" max="-2" attributes="0"/>
-                                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                                  <Component id="Verkaufen5" min="-2" max="-2" attributes="0"/>
-                              </Group>
-                              <Group type="102" alignment="1" attributes="0">
-                                  <Component id="TFAktie6" min="-2" pref="132" max="-2" attributes="0"/>
-                                  <EmptySpace type="separate" max="-2" attributes="0"/>
-                                  <Component id="TFPreis6" min="-2" pref="83" max="-2" attributes="0"/>
-                                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                                  <Component id="TFAnzahl6" min="-2" pref="78" max="-2" attributes="0"/>
-                                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                                  <Component id="Verkaufen6" min="-2" max="-2" attributes="0"/>
-                              </Group>
-                              <Group type="102" alignment="1" attributes="0">
-                                  <Component id="TFAktie7" min="-2" pref="132" max="-2" attributes="0"/>
-                                  <EmptySpace type="separate" max="-2" attributes="0"/>
-                                  <Component id="TFPreis7" min="-2" pref="83" max="-2" attributes="0"/>
-                                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                                  <Component id="TFAnzahl7" min="-2" pref="78" max="-2" attributes="0"/>
-                                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                                  <Component id="Verkaufen7" min="-2" max="-2" attributes="0"/>
-                              </Group>
-                              <Group type="102" alignment="1" attributes="0">
-                                  <Component id="TFAktie8" min="-2" pref="132" max="-2" attributes="0"/>
-                                  <EmptySpace type="separate" max="-2" attributes="0"/>
-                                  <Component id="TFPreis8" min="-2" pref="83" max="-2" attributes="0"/>
-                                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                                  <Component id="TFAnzahl8" min="-2" pref="78" max="-2" attributes="0"/>
-                                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                                  <Component id="Verkaufen8" min="-2" max="-2" attributes="0"/>
-                              </Group>
-                              <Group type="102" alignment="1" attributes="0">
-                                  <Component id="TFAktie9" min="-2" pref="132" max="-2" attributes="0"/>
-                                  <EmptySpace type="separate" max="-2" attributes="0"/>
-                                  <Component id="TFPreis9" min="-2" pref="83" max="-2" attributes="0"/>
-                                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                                  <Component id="TFAnzahl9" min="-2" pref="78" max="-2" attributes="0"/>
-                                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                                  <Component id="Verkaufen9" min="-2" max="-2" attributes="0"/>
-                              </Group>
-                              <Group type="102" alignment="1" attributes="0">
-                                  <Component id="TFAktie10" min="-2" pref="132" max="-2" attributes="0"/>
-                                  <EmptySpace type="separate" max="-2" attributes="0"/>
-                                  <Component id="TFPreis10" min="-2" pref="83" max="-2" attributes="0"/>
-                                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                                  <Component id="TFAnzahl10" min="-2" pref="78" max="-2" attributes="0"/>
-                                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                                  <Component id="Verkaufen10" min="-2" max="-2" attributes="0"/>
-                              </Group>
-                              <Group type="102" alignment="1" attributes="0">
-                                  <Component id="TFAktie11" min="-2" pref="132" max="-2" attributes="0"/>
-                                  <EmptySpace type="separate" max="-2" attributes="0"/>
-                                  <Component id="TFPreis11" min="-2" pref="83" max="-2" attributes="0"/>
-                                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                                  <Component id="TFAnzahl11" min="-2" pref="78" max="-2" attributes="0"/>
-                                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                                  <Component id="Verkaufen11" min="-2" max="-2" attributes="0"/>
-                              </Group>
-                              <Group type="102" alignment="1" attributes="0">
-                                  <Component id="TFAktie13" min="-2" pref="132" max="-2" attributes="0"/>
-                                  <EmptySpace type="separate" max="-2" attributes="0"/>
-                                  <Component id="TFPreis13" min="-2" pref="83" max="-2" attributes="0"/>
-                                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                                  <Component id="TFAnzahl13" min="-2" pref="78" max="-2" attributes="0"/>
-                                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                                  <Component id="Verkaufen13" min="-2" max="-2" attributes="0"/>
-                              </Group>
-                              <Group type="102" alignment="1" attributes="0">
-                                  <Component id="TFAktie12" min="-2" pref="132" max="-2" attributes="0"/>
-                                  <EmptySpace type="separate" max="-2" attributes="0"/>
-                                  <Component id="TFPreis12" min="-2" pref="83" max="-2" attributes="0"/>
-                                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                                  <Component id="TFAnzahl12" min="-2" pref="78" max="-2" attributes="0"/>
-                                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                                  <Component id="Verkaufen12" min="-2" max="-2" attributes="0"/>
-                              </Group>
-                              <Group type="102" alignment="1" attributes="0">
-                                  <Component id="TFAktie15" min="-2" pref="132" max="-2" attributes="0"/>
-                                  <EmptySpace type="separate" max="-2" attributes="0"/>
-                                  <Component id="TFPreis15" min="-2" pref="83" max="-2" attributes="0"/>
-                                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                                  <Component id="TFAnzahl15" min="-2" pref="78" max="-2" attributes="0"/>
-                                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                                  <Component id="Verkaufen15" min="-2" max="-2" attributes="0"/>
-                              </Group>
-                              <Group type="102" alignment="1" attributes="0">
-                                  <Component id="TFAktie14" min="-2" pref="132" max="-2" attributes="0"/>
-                                  <EmptySpace type="separate" max="-2" attributes="0"/>
-                                  <Component id="TFPreis14" min="-2" pref="83" max="-2" attributes="0"/>
-                                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                                  <Component id="TFAnzahl14" min="-2" pref="78" max="-2" attributes="0"/>
-                                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                                  <Component id="Verkaufen14" min="-2" max="-2" attributes="0"/>
-                              </Group>
+                          </Group>
+                          <Group type="102" alignment="0" attributes="0">
+                              <EmptySpace min="-2" pref="234" max="-2" attributes="0"/>
+                              <Component id="EigenesDepot" min="-2" max="-2" attributes="0"/>
                           </Group>
                       </Group>
+                      <EmptySpace pref="13" max="32767" attributes="0"/>
+                      <Component id="jButton2" min="-2" pref="75" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="jButton1" min="-2" pref="74" max="-2" attributes="0"/>
+                  </Group>
+                  <Group type="102" alignment="1" attributes="0">
+                      <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                      <Component id="EigenesDepotZurück" min="-2" pref="74" max="-2" attributes="0"/>
                   </Group>
               </Group>
-              <EmptySpace pref="101" max="32767" attributes="0"/>
+              <EmptySpace max="-2" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
@@ -205,126 +217,140 @@
               <EmptySpace max="-2" attributes="0"/>
               <Component id="StockOverflow" min="-2" max="-2" attributes="0"/>
               <EmptySpace max="-2" attributes="0"/>
-              <Component id="EigenesDepot" min="-2" max="-2" attributes="0"/>
-              <EmptySpace min="-2" pref="44" max="-2" attributes="0"/>
-              <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="jLabel1" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="jLabel2" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="jLabel3" alignment="3" min="-2" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" attributes="0">
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="102" attributes="0">
+                              <Component id="EigenesDepot" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace min="-2" pref="48" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="3" attributes="0">
+                                  <Component id="jLabel1" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="jLabel2" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="jLabel3" alignment="3" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="3" attributes="0">
+                                  <Component id="TFAktie" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="TFPreis" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="TFAnzahl" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="Verkaufen" alignment="3" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                          </Group>
+                          <Component id="jButton2" min="-2" pref="30" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="TFAktie1" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="TFPreis1" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="TFAnzahl1" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="Verkaufen1" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="TFAktie2" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="TFPreis2" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="TFAnzahl2" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="Verkaufen2" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="TFAktie3" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="TFPreis3" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="TFAnzahl3" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="Verkaufen3" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="TFAktie5" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="TFPreis5" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="TFAnzahl5" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="Verkaufen5" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="TFAktie4" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="TFPreis4" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="TFAnzahl4" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="Verkaufen4" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="TFAktie7" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="TFPreis7" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="TFAnzahl7" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="Verkaufen7" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="TFAktie6" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="TFPreis6" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="TFAnzahl6" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="Verkaufen6" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="TFAktie9" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="TFPreis9" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="TFAnzahl9" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="Verkaufen9" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="TFAktie8" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="TFPreis8" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="TFAnzahl8" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="Verkaufen8" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="TFAktie11" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="TFPreis11" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="TFAnzahl11" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="Verkaufen11" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="TFAktie10" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="TFPreis10" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="TFAnzahl10" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="Verkaufen10" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="TFAktie12" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="TFPreis12" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="TFAnzahl12" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="Verkaufen12" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="TFAktie13" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="TFPreis13" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="TFAnzahl13" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="Verkaufen13" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="TFAktie14" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="TFPreis14" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="TFAnzahl14" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="Verkaufen14" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="TFAktie15" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="TFPreis15" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="TFAnzahl15" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="Verkaufen15" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                  </Group>
+                  <Group type="102" attributes="0">
+                      <Component id="jButton1" min="-2" pref="32" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="EigenesDepotZurück" min="-2" max="-2" attributes="0"/>
+                  </Group>
               </Group>
-              <EmptySpace type="unrelated" max="-2" attributes="0"/>
-              <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="TFAktie" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="TFPreis" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="TFAnzahl" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="Verkaufen" alignment="3" min="-2" max="-2" attributes="0"/>
-              </Group>
-              <EmptySpace max="-2" attributes="0"/>
-              <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="TFAktie1" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="TFPreis1" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="TFAnzahl1" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="Verkaufen1" alignment="3" min="-2" max="-2" attributes="0"/>
-              </Group>
-              <EmptySpace max="-2" attributes="0"/>
-              <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="TFAktie2" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="TFPreis2" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="TFAnzahl2" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="Verkaufen2" alignment="3" min="-2" max="-2" attributes="0"/>
-              </Group>
-              <EmptySpace max="-2" attributes="0"/>
-              <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="TFAktie3" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="TFPreis3" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="TFAnzahl3" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="Verkaufen3" alignment="3" min="-2" max="-2" attributes="0"/>
-              </Group>
-              <EmptySpace max="-2" attributes="0"/>
-              <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="TFAktie5" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="TFPreis5" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="TFAnzahl5" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="Verkaufen5" alignment="3" min="-2" max="-2" attributes="0"/>
-              </Group>
-              <EmptySpace max="-2" attributes="0"/>
-              <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="TFAktie4" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="TFPreis4" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="TFAnzahl4" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="Verkaufen4" alignment="3" min="-2" max="-2" attributes="0"/>
-              </Group>
-              <EmptySpace max="-2" attributes="0"/>
-              <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="TFAktie7" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="TFPreis7" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="TFAnzahl7" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="Verkaufen7" alignment="3" min="-2" max="-2" attributes="0"/>
-              </Group>
-              <EmptySpace max="-2" attributes="0"/>
-              <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="TFAktie6" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="TFPreis6" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="TFAnzahl6" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="Verkaufen6" alignment="3" min="-2" max="-2" attributes="0"/>
-              </Group>
-              <EmptySpace max="-2" attributes="0"/>
-              <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="TFAktie9" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="TFPreis9" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="TFAnzahl9" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="Verkaufen9" alignment="3" min="-2" max="-2" attributes="0"/>
-              </Group>
-              <EmptySpace max="-2" attributes="0"/>
-              <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="TFAktie8" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="TFPreis8" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="TFAnzahl8" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="Verkaufen8" alignment="3" min="-2" max="-2" attributes="0"/>
-              </Group>
-              <EmptySpace max="-2" attributes="0"/>
-              <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="TFAktie11" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="TFPreis11" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="TFAnzahl11" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="Verkaufen11" alignment="3" min="-2" max="-2" attributes="0"/>
-              </Group>
-              <EmptySpace max="-2" attributes="0"/>
-              <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="TFAktie10" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="TFPreis10" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="TFAnzahl10" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="Verkaufen10" alignment="3" min="-2" max="-2" attributes="0"/>
-              </Group>
-              <EmptySpace max="-2" attributes="0"/>
-              <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="TFAktie12" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="TFPreis12" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="TFAnzahl12" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="Verkaufen12" alignment="3" min="-2" max="-2" attributes="0"/>
-              </Group>
-              <EmptySpace max="-2" attributes="0"/>
-              <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="TFAktie13" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="TFPreis13" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="TFAnzahl13" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="Verkaufen13" alignment="3" min="-2" max="-2" attributes="0"/>
-              </Group>
-              <EmptySpace max="-2" attributes="0"/>
-              <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="TFAktie14" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="TFPreis14" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="TFAnzahl14" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="Verkaufen14" alignment="3" min="-2" max="-2" attributes="0"/>
-              </Group>
-              <EmptySpace max="-2" attributes="0"/>
-              <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="TFAktie15" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="TFPreis15" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="TFAnzahl15" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="Verkaufen15" alignment="3" min="-2" max="-2" attributes="0"/>
-              </Group>
-              <EmptySpace pref="98" max="32767" attributes="0"/>
+              <EmptySpace pref="97" max="32767" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
@@ -349,19 +375,22 @@
       <Properties>
         <Property name="text" type="java.lang.String" value="Verkaufen"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="VerkaufenActionPerformed"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JLabel" name="StockOverflow">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-          <Font name="Tahoma" size="24" style="0"/>
+          <Font name="Penultimate" size="24" style="0"/>
         </Property>
-        <Property name="text" type="java.lang.String" value="StockOverflow"/>
+        <Property name="text" type="java.lang.String" value="Stock Overflow"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JLabel" name="EigenesDepot">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-          <Font name="Tahoma" size="14" style="0"/>
+          <Font name="Penultimate" size="14" style="0"/>
         </Property>
         <Property name="text" type="java.lang.String" value="Eigens Depot"/>
       </Properties>
@@ -385,6 +414,9 @@
       <Properties>
         <Property name="text" type="java.lang.String" value="Verkaufen"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="Verkaufen1ActionPerformed"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JTextField" name="TFAktie2">
       <Properties>
@@ -405,6 +437,9 @@
       <Properties>
         <Property name="text" type="java.lang.String" value="Verkaufen"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="Verkaufen2ActionPerformed"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JTextField" name="TFAktie3">
       <Properties>
@@ -425,6 +460,9 @@
       <Properties>
         <Property name="text" type="java.lang.String" value="Verkaufen"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="Verkaufen3ActionPerformed"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JTextField" name="TFAktie4">
       <Properties>
@@ -445,6 +483,9 @@
       <Properties>
         <Property name="text" type="java.lang.String" value="Verkaufen"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="Verkaufen4ActionPerformed"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JTextField" name="TFAktie5">
       <Properties>
@@ -465,6 +506,9 @@
       <Properties>
         <Property name="text" type="java.lang.String" value="Verkaufen"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="Verkaufen5ActionPerformed"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JTextField" name="TFAktie6">
       <Properties>
@@ -485,6 +529,9 @@
       <Properties>
         <Property name="text" type="java.lang.String" value="Verkaufen"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="Verkaufen6ActionPerformed"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JTextField" name="TFAktie7">
       <Properties>
@@ -505,6 +552,9 @@
       <Properties>
         <Property name="text" type="java.lang.String" value="Verkaufen"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="Verkaufen7ActionPerformed"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JTextField" name="TFAktie8">
       <Properties>
@@ -525,6 +575,9 @@
       <Properties>
         <Property name="text" type="java.lang.String" value="Verkaufen"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="Verkaufen8ActionPerformed"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JTextField" name="TFAktie9">
       <Properties>
@@ -545,6 +598,9 @@
       <Properties>
         <Property name="text" type="java.lang.String" value="Verkaufen"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="Verkaufen9ActionPerformed"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JTextField" name="TFAktie10">
       <Properties>
@@ -565,6 +621,9 @@
       <Properties>
         <Property name="text" type="java.lang.String" value="Verkaufen"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="Verkaufen10ActionPerformed"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JTextField" name="TFAktie11">
       <Properties>
@@ -585,6 +644,9 @@
       <Properties>
         <Property name="text" type="java.lang.String" value="Verkaufen"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="Verkaufen11ActionPerformed"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JTextField" name="TFAktie12">
       <Properties>
@@ -605,6 +667,9 @@
       <Properties>
         <Property name="text" type="java.lang.String" value="Verkaufen"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="Verkaufen12ActionPerformed"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JTextField" name="TFAktie13">
       <Properties>
@@ -625,6 +690,9 @@
       <Properties>
         <Property name="text" type="java.lang.String" value="Verkaufen"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="Verkaufen13ActionPerformed"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JTextField" name="TFAktie14">
       <Properties>
@@ -645,6 +713,9 @@
       <Properties>
         <Property name="text" type="java.lang.String" value="Verkaufen"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="Verkaufen14ActionPerformed"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JTextField" name="TFAktie15">
       <Properties>
@@ -665,6 +736,9 @@
       <Properties>
         <Property name="text" type="java.lang.String" value="Verkaufen"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="Verkaufen15ActionPerformed"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel1">
       <Properties>
@@ -680,6 +754,30 @@
       <Properties>
         <Property name="text" type="java.lang.String" value="Preis"/>
       </Properties>
+    </Component>
+    <Component class="javax.swing.JButton" name="EigenesDepotZur&#xfc;ck">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Zur&#xfc;ck"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="EigenesDepotZur&#xfc;ckActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JButton" name="jButton1">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="LogOut"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton1ActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JButton" name="jButton2">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Profil"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton2ActionPerformed"/>
+      </Events>
     </Component>
   </SubComponents>
 </Form>

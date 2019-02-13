@@ -66,7 +66,30 @@ public class maincontrol {
 
     private Anpasser anpasser;
     private int x;
+    
+    private Timer timer = new Timer();
 
+    public void timerStart() {
+        AktienDatenInitialisieren(0);
+        timer.scheduleAtFixedRate(new TimerTask() {
+            @Override
+            public void run() {
+                AktienDatenAktualisieren(getX());
+            }
+        }, 5000, 5000);
+    }
+    public void timerReset() {
+        timer.cancel();
+        timer = new Timer();
+        timer.scheduleAtFixedRate(new TimerTask() {
+            @Override
+            public void run() {
+                AktienDatenAktualisieren(getX());
+            }
+        }, 5000, 5000);
+    }
+    
+    
     public maincontrol() {
         loading = new Loading();
         loading.setVisible(true);
@@ -102,17 +125,7 @@ public class maincontrol {
             JOptionPane.showMessageDialog(null, "Keine Benutzer geladen oder Firebase ungültig.");
         }*/
         leaderboard = new Leaderboard(this);
-
-        //LeaderboardInit();
-        AktienDatenInitialisieren(0);
-        Timer timer = new Timer();
-        timer.scheduleAtFixedRate(new TimerTask() {
-            @Override
-            public void run() {
-                System.out.println("hallo");
-                AktienDatenAktualisieren(getX());
-            }
-        }, 5000, 5000);
+        timerStart();
 
         loading.jProgressBar1.setValue(100);
         loading.setVisible(false);
@@ -121,6 +134,7 @@ public class maincontrol {
         anpasser.start();
 
     }
+    
     public int getX(){
         return x;
     }
@@ -209,12 +223,26 @@ public class maincontrol {
         }
 
     }
+    
+    public void login(){
+    if (eingeloggt){
+    this.logout();
+        return;
+    
+    }
+    else {
+    
+    this.switchTo("AnmeldeFenster");
+    }
+    
+    
+    
+    }
 
    
     public void login(String benutzername, String password) {
         if (eingeloggt){
-        this.logout();
-        return;
+        
         }
         Benutzer b = null;
         b = fz.EinenBenutzerAuslesen(benutzername);
@@ -232,6 +260,7 @@ public class maincontrol {
             System.out.println("Login erfolgreich");
             JOptionPane.showMessageDialog(null, "Login erfolgreich.\n Angemeldeter Benutzer:\n" + b.toString());
             System.out.println(this.b.getDepot().toString());
+            
 return;
             
             
@@ -256,6 +285,7 @@ return;
          JOptionPane.showMessageDialog(null, "Logout erfolgreich");
          
          this.stockOverflowGUI.getLogInGUI().setText("Login");
+         
         this.switchTo("StockOverflowGUI");
             
     
