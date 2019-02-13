@@ -327,7 +327,7 @@ public class FirebaseZugriff {
             b.setEmail((String) response.getBody().get("email"));
             b.setKontostand((double) response.getBody().get("kontostand"));
             b.setPasswort((String) response.getBody().get("passwort"));
-            response2 = firebase.get("depots" + benutzername);
+            response2 = firebase.get("depots/" + benutzername);
             it = response2.getBody().entrySet().iterator();
             while (it.hasNext()) {
                 Map.Entry pairs2 = (Map.Entry) it.next();
@@ -342,6 +342,7 @@ public class FirebaseZugriff {
                 Aktie akt = new Aktie((String) lhm2.get("isin"), (double) lhm2.get("preis"));
                 akt.setPreis((double) lhm2.get("preis"));
                 akt.setStueckzahl((int) lhm2.get("anzahl"));
+                System.out.println(akt.toString());
                 b.getDepot().getAktien().add(akt);
 
             }

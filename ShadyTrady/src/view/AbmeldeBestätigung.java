@@ -41,9 +41,10 @@ public class AbmeldeBestätigung extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        StockOverflowAbmeldeBestätigung.setFont(new java.awt.Font("Penultimate", 1, 36)); // NOI18N
+        StockOverflowAbmeldeBestätigung.setFont(new java.awt.Font("Noto Serif", 1, 36)); // NOI18N
         StockOverflowAbmeldeBestätigung.setText("StockOverflow");
 
+        OKAbmeldeBestätigung.setFont(new java.awt.Font("Noto Serif", 0, 18)); // NOI18N
         OKAbmeldeBestätigung.setText("OK");
         OKAbmeldeBestätigung.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -51,36 +52,36 @@ public class AbmeldeBestätigung extends javax.swing.JFrame {
             }
         });
 
-        NachrichtAbmeldeBestätigung.setFont(new java.awt.Font("Penultimate", 0, 18)); // NOI18N
+        NachrichtAbmeldeBestätigung.setFont(new java.awt.Font("Noto Serif", 0, 14)); // NOI18N
         NachrichtAbmeldeBestätigung.setText("Sie wurden erfolgreich abgemeldet!");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                .addGap(0, 46, Short.MAX_VALUE)
+                .addComponent(StockOverflowAbmeldeBestätigung)
+                .addGap(41, 41, 41))
             .addGroup(layout.createSequentialGroup()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(126, 126, 126)
-                        .addComponent(OKAbmeldeBestätigung, javax.swing.GroupLayout.PREFERRED_SIZE, 67, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(39, 39, 39)
-                        .addComponent(StockOverflowAbmeldeBestätigung))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(30, 30, 30)
-                        .addComponent(NachrichtAbmeldeBestätigung, javax.swing.GroupLayout.PREFERRED_SIZE, 270, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(22, Short.MAX_VALUE))
+                .addGap(144, 144, 144)
+                .addComponent(OKAbmeldeBestätigung, javax.swing.GroupLayout.PREFERRED_SIZE, 67, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(NachrichtAbmeldeBestätigung)
+                .addGap(60, 60, 60))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addContainerGap()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(StockOverflowAbmeldeBestätigung)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(NachrichtAbmeldeBestätigung, javax.swing.GroupLayout.PREFERRED_SIZE, 14, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(28, 28, 28)
+                .addGap(26, 26, 26)
                 .addComponent(OKAbmeldeBestätigung)
-                .addGap(32, 32, 32))
+                .addGap(34, 34, 34))
         );
 
         pack();
