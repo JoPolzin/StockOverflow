@@ -110,6 +110,8 @@ public class EigenesDepot extends javax.swing.JFrame {
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
+        EigenesDepotZurück = new javax.swing.JButton();
+        jButton1 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -120,11 +122,16 @@ public class EigenesDepot extends javax.swing.JFrame {
         TFAnzahl.setEditable(false);
 
         Verkaufen.setText("Verkaufen");
+        Verkaufen.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                VerkaufenActionPerformed(evt);
+            }
+        });
 
-        StockOverflow.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
-        StockOverflow.setText("StockOverflow");
+        StockOverflow.setFont(new java.awt.Font("Penultimate", 0, 24)); // NOI18N
+        StockOverflow.setText("Stock Overflow");
 
-        EigenesDepot.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        EigenesDepot.setFont(new java.awt.Font("Penultimate", 0, 14)); // NOI18N
         EigenesDepot.setText("Eigens Depot");
 
         TFAktie1.setEditable(false);
@@ -134,6 +141,11 @@ public class EigenesDepot extends javax.swing.JFrame {
         TFAnzahl1.setEditable(false);
 
         Verkaufen1.setText("Verkaufen");
+        Verkaufen1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                Verkaufen1ActionPerformed(evt);
+            }
+        });
 
         TFAktie2.setEditable(false);
 
@@ -142,6 +154,11 @@ public class EigenesDepot extends javax.swing.JFrame {
         TFAnzahl2.setEditable(false);
 
         Verkaufen2.setText("Verkaufen");
+        Verkaufen2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                Verkaufen2ActionPerformed(evt);
+            }
+        });
 
         TFAktie3.setEditable(false);
 
@@ -150,6 +167,11 @@ public class EigenesDepot extends javax.swing.JFrame {
         TFAnzahl3.setEditable(false);
 
         Verkaufen3.setText("Verkaufen");
+        Verkaufen3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                Verkaufen3ActionPerformed(evt);
+            }
+        });
 
         TFAktie4.setEditable(false);
 
@@ -158,6 +180,11 @@ public class EigenesDepot extends javax.swing.JFrame {
         TFAnzahl4.setEditable(false);
 
         Verkaufen4.setText("Verkaufen");
+        Verkaufen4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                Verkaufen4ActionPerformed(evt);
+            }
+        });
 
         TFAktie5.setEditable(false);
 
@@ -166,6 +193,11 @@ public class EigenesDepot extends javax.swing.JFrame {
         TFAnzahl5.setEditable(false);
 
         Verkaufen5.setText("Verkaufen");
+        Verkaufen5.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                Verkaufen5ActionPerformed(evt);
+            }
+        });
 
         TFAktie6.setEditable(false);
 
@@ -174,6 +206,11 @@ public class EigenesDepot extends javax.swing.JFrame {
         TFAnzahl6.setEditable(false);
 
         Verkaufen6.setText("Verkaufen");
+        Verkaufen6.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                Verkaufen6ActionPerformed(evt);
+            }
+        });
 
         TFAktie7.setEditable(false);
 
@@ -182,6 +219,11 @@ public class EigenesDepot extends javax.swing.JFrame {
         TFAnzahl7.setEditable(false);
 
         Verkaufen7.setText("Verkaufen");
+        Verkaufen7.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                Verkaufen7ActionPerformed(evt);
+            }
+        });
 
         TFAktie8.setEditable(false);
 
@@ -190,6 +232,11 @@ public class EigenesDepot extends javax.swing.JFrame {
         TFAnzahl8.setEditable(false);
 
         Verkaufen8.setText("Verkaufen");
+        Verkaufen8.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                Verkaufen8ActionPerformed(evt);
+            }
+        });
 
         TFAktie9.setEditable(false);
 
@@ -198,6 +245,11 @@ public class EigenesDepot extends javax.swing.JFrame {
         TFAnzahl9.setEditable(false);
 
         Verkaufen9.setText("Verkaufen");
+        Verkaufen9.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                Verkaufen9ActionPerformed(evt);
+            }
+        });
 
         TFAktie10.setEditable(false);
 
@@ -206,6 +258,11 @@ public class EigenesDepot extends javax.swing.JFrame {
         TFAnzahl10.setEditable(false);
 
         Verkaufen10.setText("Verkaufen");
+        Verkaufen10.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                Verkaufen10ActionPerformed(evt);
+            }
+        });
 
         TFAktie11.setEditable(false);
 
@@ -214,6 +271,11 @@ public class EigenesDepot extends javax.swing.JFrame {
         TFAnzahl11.setEditable(false);
 
         Verkaufen11.setText("Verkaufen");
+        Verkaufen11.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                Verkaufen11ActionPerformed(evt);
+            }
+        });
 
         TFAktie12.setEditable(false);
 
@@ -222,6 +284,11 @@ public class EigenesDepot extends javax.swing.JFrame {
         TFAnzahl12.setEditable(false);
 
         Verkaufen12.setText("Verkaufen");
+        Verkaufen12.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                Verkaufen12ActionPerformed(evt);
+            }
+        });
 
         TFAktie13.setEditable(false);
 
@@ -230,6 +297,11 @@ public class EigenesDepot extends javax.swing.JFrame {
         TFAnzahl13.setEditable(false);
 
         Verkaufen13.setText("Verkaufen");
+        Verkaufen13.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                Verkaufen13ActionPerformed(evt);
+            }
+        });
 
         TFAktie14.setEditable(false);
 
@@ -238,6 +310,11 @@ public class EigenesDepot extends javax.swing.JFrame {
         TFAnzahl14.setEditable(false);
 
         Verkaufen14.setText("Verkaufen");
+        Verkaufen14.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                Verkaufen14ActionPerformed(evt);
+            }
+        });
 
         TFAktie15.setEditable(false);
 
@@ -246,6 +323,11 @@ public class EigenesDepot extends javax.swing.JFrame {
         TFAnzahl15.setEditable(false);
 
         Verkaufen15.setText("Verkaufen");
+        Verkaufen15.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                Verkaufen15ActionPerformed(evt);
+            }
+        });
 
         jLabel1.setText("ISIN");
 
@@ -253,15 +335,26 @@ public class EigenesDepot extends javax.swing.JFrame {
 
         jLabel3.setText("Preis");
 
+        EigenesDepotZurück.setText("Zurück");
+        EigenesDepotZurück.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                EigenesDepotZurückActionPerformed(evt);
+            }
+        });
+
+        jButton1.setText("LogOut");
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(234, 234, 234)
-                        .addComponent(EigenesDepot))
                     .addGroup(layout.createSequentialGroup()
                         .addGap(49, 49, 49)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -402,8 +495,15 @@ public class EigenesDepot extends javax.swing.JFrame {
                                     .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                                     .addComponent(TFAnzahl14, javax.swing.GroupLayout.PREFERRED_SIZE, 78, javax.swing.GroupLayout.PREFERRED_SIZE)
                                     .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                    .addComponent(Verkaufen14))))))
-                .addContainerGap(101, Short.MAX_VALUE))
+                                    .addComponent(Verkaufen14)))))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(234, 234, 234)
+                        .addComponent(EigenesDepot)))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 17, Short.MAX_VALUE)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(jButton1, javax.swing.GroupLayout.DEFAULT_SIZE, 74, Short.MAX_VALUE)
+                    .addComponent(EigenesDepotZurück, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap())
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -411,8 +511,12 @@ public class EigenesDepot extends javax.swing.JFrame {
                 .addContainerGap()
                 .addComponent(StockOverflow)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(EigenesDepot)
-                .addGap(44, 44, 44)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(EigenesDepot)
+                    .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(14, 14, 14)
+                .addComponent(EigenesDepotZurück)
+                .addGap(3, 3, 3)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel1)
                     .addComponent(jLabel2)
@@ -513,11 +617,83 @@ public class EigenesDepot extends javax.swing.JFrame {
                     .addComponent(TFPreis15, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(TFAnzahl15, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(Verkaufen15))
-                .addContainerGap(98, Short.MAX_VALUE))
+                .addContainerGap(89, Short.MAX_VALUE))
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void VerkaufenActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_VerkaufenActionPerformed
+        this.c.switchTo("AktieVerkaufen");
+    }//GEN-LAST:event_VerkaufenActionPerformed
+
+    private void Verkaufen1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Verkaufen1ActionPerformed
+        this.c.switchTo("AktieVerkaufen");
+    }//GEN-LAST:event_Verkaufen1ActionPerformed
+
+    private void Verkaufen2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Verkaufen2ActionPerformed
+        this.c.switchTo("AktieVerkaufen");
+    }//GEN-LAST:event_Verkaufen2ActionPerformed
+
+    private void Verkaufen3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Verkaufen3ActionPerformed
+        this.c.switchTo("AktieVerkaufen");
+    }//GEN-LAST:event_Verkaufen3ActionPerformed
+
+    private void Verkaufen5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Verkaufen5ActionPerformed
+        this.c.switchTo("AktieVerkaufen");
+    }//GEN-LAST:event_Verkaufen5ActionPerformed
+
+    private void Verkaufen4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Verkaufen4ActionPerformed
+        this.c.switchTo("AktieVerkaufen");
+    }//GEN-LAST:event_Verkaufen4ActionPerformed
+
+    private void Verkaufen7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Verkaufen7ActionPerformed
+        this.c.switchTo("AktieVerkaufen");
+    }//GEN-LAST:event_Verkaufen7ActionPerformed
+
+    private void Verkaufen6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Verkaufen6ActionPerformed
+        this.c.switchTo("AktieVerkaufen");
+    }//GEN-LAST:event_Verkaufen6ActionPerformed
+
+    private void Verkaufen9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Verkaufen9ActionPerformed
+        this.c.switchTo("AktieVerkaufen");
+    }//GEN-LAST:event_Verkaufen9ActionPerformed
+
+    private void Verkaufen8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Verkaufen8ActionPerformed
+        this.c.switchTo("AktieVerkaufen");
+    }//GEN-LAST:event_Verkaufen8ActionPerformed
+
+    private void Verkaufen11ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Verkaufen11ActionPerformed
+        this.c.switchTo("AktieVerkaufen");
+    }//GEN-LAST:event_Verkaufen11ActionPerformed
+
+    private void Verkaufen10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Verkaufen10ActionPerformed
+        this.c.switchTo("AktieVerkaufen");
+    }//GEN-LAST:event_Verkaufen10ActionPerformed
+
+    private void Verkaufen12ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Verkaufen12ActionPerformed
+        this.c.switchTo("AktieVerkaufen");
+    }//GEN-LAST:event_Verkaufen12ActionPerformed
+
+    private void Verkaufen13ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Verkaufen13ActionPerformed
+        this.c.switchTo("AktieVerkaufen");
+    }//GEN-LAST:event_Verkaufen13ActionPerformed
+
+    private void Verkaufen14ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Verkaufen14ActionPerformed
+        this.c.switchTo("AktieVerkaufen");
+    }//GEN-LAST:event_Verkaufen14ActionPerformed
+
+    private void Verkaufen15ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Verkaufen15ActionPerformed
+        this.c.switchTo("AktieVerkaufen");
+    }//GEN-LAST:event_Verkaufen15ActionPerformed
+
+    private void EigenesDepotZurückActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_EigenesDepotZurückActionPerformed
+        this.c.switchTo("StockOverflowGUI");
+    }//GEN-LAST:event_EigenesDepotZurückActionPerformed
+
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+       this.c.logout();
+    }//GEN-LAST:event_jButton1ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -615,6 +791,7 @@ public class EigenesDepot extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel EigenesDepot;
+    private javax.swing.JButton EigenesDepotZurück;
     private javax.swing.JLabel StockOverflow;
     private javax.swing.JTextField TFAktie;
     private javax.swing.JTextField TFAktie1;
@@ -680,6 +857,7 @@ public class EigenesDepot extends javax.swing.JFrame {
     private javax.swing.JButton Verkaufen7;
     private javax.swing.JButton Verkaufen8;
     private javax.swing.JButton Verkaufen9;
+    private javax.swing.JButton jButton1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
