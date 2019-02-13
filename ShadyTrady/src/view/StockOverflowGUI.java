@@ -829,7 +829,7 @@ public class StockOverflowGUI extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void LogInGUIActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_LogInGUIActionPerformed
-        this.c.switchTo("AnmeldeFenster");
+        this.c.login();
         
     }//GEN-LAST:event_LogInGUIActionPerformed
 

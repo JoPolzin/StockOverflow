@@ -209,12 +209,26 @@ public class maincontrol {
         }
 
     }
+    
+    public void login(){
+    if (eingeloggt){
+    this.logout();
+        return;
+    
+    }
+    else {
+    
+    this.switchTo("AnmeldeFenster");
+    }
+    
+    
+    
+    }
 
    
     public void login(String benutzername, String password) {
         if (eingeloggt){
-        this.logout();
-        return;
+        
         }
         Benutzer b = null;
         b = fz.EinenBenutzerAuslesen(benutzername);
@@ -256,6 +270,7 @@ return;
          JOptionPane.showMessageDialog(null, "Logout erfolgreich");
          
          this.stockOverflowGUI.getLogInGUI().setText("Login");
+         
         this.switchTo("StockOverflowGUI");
             
     

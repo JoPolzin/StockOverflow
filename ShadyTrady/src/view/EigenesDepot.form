@@ -25,11 +25,7 @@
       <Group type="103" groupAlignment="0" attributes="0">
           <Group type="102" attributes="0">
               <Group type="103" groupAlignment="0" attributes="0">
-                  <Group type="102" alignment="0" attributes="0">
-                      <EmptySpace min="-2" pref="234" max="-2" attributes="0"/>
-                      <Component id="EigenesDepot" min="-2" max="-2" attributes="0"/>
-                  </Group>
-                  <Group type="102" alignment="0" attributes="0">
+                  <Group type="102" attributes="0">
                       <EmptySpace min="-2" pref="49" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" attributes="0">
                           <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
@@ -194,8 +190,17 @@
                           </Group>
                       </Group>
                   </Group>
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace min="-2" pref="234" max="-2" attributes="0"/>
+                      <Component id="EigenesDepot" min="-2" max="-2" attributes="0"/>
+                  </Group>
               </Group>
-              <EmptySpace pref="101" max="32767" attributes="0"/>
+              <EmptySpace pref="17" max="32767" attributes="0"/>
+              <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                  <Component id="jButton1" pref="74" max="32767" attributes="0"/>
+                  <Component id="EigenesDepotZurück" max="32767" attributes="0"/>
+              </Group>
+              <EmptySpace max="-2" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
@@ -205,8 +210,13 @@
               <EmptySpace max="-2" attributes="0"/>
               <Component id="StockOverflow" min="-2" max="-2" attributes="0"/>
               <EmptySpace max="-2" attributes="0"/>
-              <Component id="EigenesDepot" min="-2" max="-2" attributes="0"/>
-              <EmptySpace min="-2" pref="44" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="EigenesDepot" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="jButton1" alignment="3" min="-2" pref="32" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace min="-2" pref="14" max="-2" attributes="0"/>
+              <Component id="EigenesDepotZurück" min="-2" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="3" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
                   <Component id="jLabel1" alignment="3" min="-2" max="-2" attributes="0"/>
                   <Component id="jLabel2" alignment="3" min="-2" max="-2" attributes="0"/>
@@ -324,7 +334,7 @@
                   <Component id="TFAnzahl15" alignment="3" min="-2" max="-2" attributes="0"/>
                   <Component id="Verkaufen15" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
-              <EmptySpace pref="98" max="32767" attributes="0"/>
+              <EmptySpace pref="89" max="32767" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
@@ -349,19 +359,22 @@
       <Properties>
         <Property name="text" type="java.lang.String" value="Verkaufen"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="VerkaufenActionPerformed"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JLabel" name="StockOverflow">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-          <Font name="Tahoma" size="24" style="0"/>
+          <Font name="Penultimate" size="24" style="0"/>
         </Property>
-        <Property name="text" type="java.lang.String" value="StockOverflow"/>
+        <Property name="text" type="java.lang.String" value="Stock Overflow"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JLabel" name="EigenesDepot">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-          <Font name="Tahoma" size="14" style="0"/>
+          <Font name="Penultimate" size="14" style="0"/>
         </Property>
         <Property name="text" type="java.lang.String" value="Eigens Depot"/>
       </Properties>
@@ -385,6 +398,9 @@
       <Properties>
         <Property name="text" type="java.lang.String" value="Verkaufen"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="Verkaufen1ActionPerformed"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JTextField" name="TFAktie2">
       <Properties>
@@ -405,6 +421,9 @@
       <Properties>
         <Property name="text" type="java.lang.String" value="Verkaufen"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="Verkaufen2ActionPerformed"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JTextField" name="TFAktie3">
       <Properties>
@@ -425,6 +444,9 @@
       <Properties>
         <Property name="text" type="java.lang.String" value="Verkaufen"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="Verkaufen3ActionPerformed"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JTextField" name="TFAktie4">
       <Properties>
@@ -445,6 +467,9 @@
       <Properties>
         <Property name="text" type="java.lang.String" value="Verkaufen"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="Verkaufen4ActionPerformed"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JTextField" name="TFAktie5">
       <Properties>
@@ -465,6 +490,9 @@
       <Properties>
         <Property name="text" type="java.lang.String" value="Verkaufen"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="Verkaufen5ActionPerformed"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JTextField" name="TFAktie6">
       <Properties>
@@ -485,6 +513,9 @@
       <Properties>
         <Property name="text" type="java.lang.String" value="Verkaufen"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="Verkaufen6ActionPerformed"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JTextField" name="TFAktie7">
       <Properties>
@@ -505,6 +536,9 @@
       <Properties>
         <Property name="text" type="java.lang.String" value="Verkaufen"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="Verkaufen7ActionPerformed"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JTextField" name="TFAktie8">
       <Properties>
@@ -525,6 +559,9 @@
       <Properties>
         <Property name="text" type="java.lang.String" value="Verkaufen"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="Verkaufen8ActionPerformed"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JTextField" name="TFAktie9">
       <Properties>
@@ -545,6 +582,9 @@
       <Properties>
         <Property name="text" type="java.lang.String" value="Verkaufen"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="Verkaufen9ActionPerformed"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JTextField" name="TFAktie10">
       <Properties>
@@ -565,6 +605,9 @@
       <Properties>
         <Property name="text" type="java.lang.String" value="Verkaufen"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="Verkaufen10ActionPerformed"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JTextField" name="TFAktie11">
       <Properties>
@@ -585,6 +628,9 @@
       <Properties>
         <Property name="text" type="java.lang.String" value="Verkaufen"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="Verkaufen11ActionPerformed"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JTextField" name="TFAktie12">
       <Properties>
@@ -605,6 +651,9 @@
       <Properties>
         <Property name="text" type="java.lang.String" value="Verkaufen"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="Verkaufen12ActionPerformed"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JTextField" name="TFAktie13">
       <Properties>
@@ -625,6 +674,9 @@
       <Properties>
         <Property name="text" type="java.lang.String" value="Verkaufen"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="Verkaufen13ActionPerformed"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JTextField" name="TFAktie14">
       <Properties>
@@ -645,6 +697,9 @@
       <Properties>
         <Property name="text" type="java.lang.String" value="Verkaufen"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="Verkaufen14ActionPerformed"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JTextField" name="TFAktie15">
       <Properties>
@@ -665,6 +720,9 @@
       <Properties>
         <Property name="text" type="java.lang.String" value="Verkaufen"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="Verkaufen15ActionPerformed"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel1">
       <Properties>
@@ -680,6 +738,22 @@
       <Properties>
         <Property name="text" type="java.lang.String" value="Preis"/>
       </Properties>
+    </Component>
+    <Component class="javax.swing.JButton" name="EigenesDepotZur&#xfc;ck">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Zur&#xfc;ck"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="EigenesDepotZur&#xfc;ckActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JButton" name="jButton1">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="LogOut"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton1ActionPerformed"/>
+      </Events>
     </Component>
   </SubComponents>
 </Form>
