@@ -11,6 +11,7 @@ import java.util.ArrayList;
 import javax.swing.JButton;
 import javax.swing.JTextField;
 import model.OA;
+import javax.swing.ImageIcon;
 
 /**
  *
@@ -1006,6 +1007,12 @@ public class StockOverflowGUI extends javax.swing.JFrame {
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         c.switchTo("AktieAnsehen");
+        c.getAktieAnsehen().Change.setText("");
+        c.getAktieAnsehen().Preis.setText("");
+        c.getAktieAnsehen().ISIN.setText("");
+        c.getAktieAnsehen().Name.setText("");
+        ImageIcon emptyGraph = new ImageIcon();
+        c.getAktieAnsehen().AktienBild.setIcon(emptyGraph);
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void TFAktie1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_TFAktie1ActionPerformed

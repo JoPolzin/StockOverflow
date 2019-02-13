@@ -203,6 +203,8 @@ System.out.println("Fehler in prepareDocument()");
         }
 
     }
+    
+    
     /**
      * 
      * Gibt ein ImageIcon mit dem Graphen von einem bestimmten Zeitraum zurück.
