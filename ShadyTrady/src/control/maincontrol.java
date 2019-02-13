@@ -55,6 +55,8 @@ public class maincontrol {
     private Leaderboard leaderboard;
 
     private Loading loading;
+    
+    public String letztesFenster;
 
     private String aktIsin;
 
@@ -160,7 +162,7 @@ public class maincontrol {
         eigenesDepot.setVisible(false);
         stockOverflowGUI.setVisible(false);
         getLeaderboard().setVisible(false);
-
+        letztesFenster = Guiname;
         switch (Guiname) {
             case "AktieAnsehen":
 
@@ -256,7 +258,7 @@ public class maincontrol {
             this.stockOverflowGUI.getLogInGUI().setText("Logout");
             this.b = b;
             this.eingeloggt = true;
-            this.switchTo("StockOverflowGUI");
+            this.switchTo(letztesFenster);
             System.out.println("Login erfolgreich");
             JOptionPane.showMessageDialog(null, "Login erfolgreich.\n Angemeldeter Benutzer:\n" + b.toString());
             System.out.println(this.b.getDepot().toString());
