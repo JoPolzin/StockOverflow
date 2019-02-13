@@ -231,6 +231,7 @@ public class maincontrol {
             this.switchTo("StockOverflowGUI");
             System.out.println("Login erfolgreich");
             JOptionPane.showMessageDialog(null, "Login erfolgreich.\n Angemeldeter Benutzer:\n" + b.toString());
+            System.out.println(this.b.getDepot().toString());
 return;
             
             
