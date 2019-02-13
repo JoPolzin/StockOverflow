@@ -66,6 +66,7 @@ public class maincontrol {
 
     private Anpasser anpasser;
     private int x;
+    private boolean t = true;
     
     private Timer timer = new Timer();
 
@@ -74,7 +75,9 @@ public class maincontrol {
         timer.scheduleAtFixedRate(new TimerTask() {
             @Override
             public void run() {
+                while(t){
                 AktienDatenAktualisieren(getX());
+                }
             }
         }, 5000, 5000);
     }
@@ -84,7 +87,9 @@ public class maincontrol {
         timer.scheduleAtFixedRate(new TimerTask() {
             @Override
             public void run() {
+                while(t){
                 AktienDatenAktualisieren(getX());
+                }
             }
         }, 5000, 5000);
     }
@@ -414,17 +419,20 @@ return;
         aktieAnsehen.ausgewählteISIN = ISIN;
     }
 
-    public void aktiekaufen(String isin, Integer Stückzahl, Double Preis) {
+    public void aktiekaufen(String isin, Integer Stückzahl) {
         if (this.eingeloggt) {
             //getB().setKontostand(getB().getKontostand() - Preis);
             //getB().getDepot().aktie_kaufen(isin, Stückzahl, Preis);
+            this.t = false;
             OA.prepareDocument(isin);
+            float Preis = OA.getAsk();
 
             int neuer_preis = (int) Math.round(Preis) * Stückzahl;
             int Konto_Wert = (int) Math.round((double) getFz().WertEinerReferenz("users/" + b.getBenutzername(), "kontostand"));
 
             int neuer_Kontostand = Konto_Wert - neuer_preis;
             if (neuer_Kontostand <= 0) {
+                this.t = true;
                 return;
             }
             b.setKontostand(neuer_Kontostand);
@@ -437,7 +445,8 @@ return;
             this.switchTo("AnmeldeFenster");
 
         }
-
+        this.t = true;
+        
     }
 
     /**
