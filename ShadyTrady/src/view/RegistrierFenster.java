@@ -49,13 +49,13 @@ public class RegistrierFenster extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        StockOverflowRegistrierung.setFont(new java.awt.Font("Penultimate", 1, 36)); // NOI18N
+        StockOverflowRegistrierung.setFont(new java.awt.Font("Noto Serif", 1, 36)); // NOI18N
         StockOverflowRegistrierung.setText("StockOverflow");
 
-        RegistrierenBenutzername.setFont(new java.awt.Font("Penultimate", 0, 11)); // NOI18N
+        RegistrierenBenutzername.setFont(new java.awt.Font("Noto Serif", 0, 11)); // NOI18N
         RegistrierenBenutzername.setText("Benutzername");
 
-        RegistrierenPasswort.setFont(new java.awt.Font("Penultimate", 0, 11)); // NOI18N
+        RegistrierenPasswort.setFont(new java.awt.Font("Noto Serif", 0, 11)); // NOI18N
         RegistrierenPasswort.setText("Passwort");
 
         PasswortEingeben.addActionListener(new java.awt.event.ActionListener() {
@@ -64,7 +64,7 @@ public class RegistrierFenster extends javax.swing.JFrame {
             }
         });
 
-        RegistrierenRegistrieren.setFont(new java.awt.Font("Penultimate", 0, 14)); // NOI18N
+        RegistrierenRegistrieren.setFont(new java.awt.Font("Noto Serif", 0, 14)); // NOI18N
         RegistrierenRegistrieren.setText("Registrieren");
         RegistrierenRegistrieren.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -72,7 +72,7 @@ public class RegistrierFenster extends javax.swing.JFrame {
             }
         });
 
-        RegistrierenAbbrechen.setFont(new java.awt.Font("Penultimate", 0, 14)); // NOI18N
+        RegistrierenAbbrechen.setFont(new java.awt.Font("Noto Serif", 0, 14)); // NOI18N
         RegistrierenAbbrechen.setText("Abbrechen");
         RegistrierenAbbrechen.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -80,7 +80,7 @@ public class RegistrierFenster extends javax.swing.JFrame {
             }
         });
 
-        RegistrierenPasswortBestätigen.setFont(new java.awt.Font("Penultimate", 0, 11)); // NOI18N
+        RegistrierenPasswortBestätigen.setFont(new java.awt.Font("Noto Serif", 0, 11)); // NOI18N
         RegistrierenPasswortBestätigen.setText("Passwort bestätigen");
 
         PasswortBestätigenEingeben.addActionListener(new java.awt.event.ActionListener() {
@@ -89,7 +89,7 @@ public class RegistrierFenster extends javax.swing.JFrame {
             }
         });
 
-        RegistrierenEmail.setFont(new java.awt.Font("Penultimate", 0, 11)); // NOI18N
+        RegistrierenEmail.setFont(new java.awt.Font("Noto Serif", 0, 11)); // NOI18N
         RegistrierenEmail.setText("Email");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -122,7 +122,7 @@ public class RegistrierFenster extends javax.swing.JFrame {
                                 .addComponent(PasswortEingeben, javax.swing.GroupLayout.Alignment.LEADING)
                                 .addComponent(PasswortBestätigenEingeben, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, 117, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addComponent(RegistrierenPasswortBestätigen, javax.swing.GroupLayout.Alignment.LEADING)))
-                        .addContainerGap(36, Short.MAX_VALUE))))
+                        .addContainerGap(20, Short.MAX_VALUE))))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -149,7 +149,7 @@ public class RegistrierFenster extends javax.swing.JFrame {
                 .addComponent(RegistrierenRegistrieren)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(RegistrierenAbbrechen)
-                .addContainerGap(29, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         pack();

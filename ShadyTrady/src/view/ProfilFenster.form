@@ -24,7 +24,7 @@
     <DimensionLayout dim="0">
       <Group type="103" groupAlignment="0" attributes="0">
           <Group type="102" attributes="0">
-              <EmptySpace min="-2" pref="39" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="36" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="0" attributes="0">
                   <Component id="ProfilPasswort" alignment="0" min="-2" max="-2" attributes="0"/>
                   <Component id="ProfilBenutzernameAnzeigen" min="-2" max="-2" attributes="0"/>
@@ -46,7 +46,7 @@
                       </Group>
                   </Group>
               </Group>
-              <EmptySpace pref="36" max="32767" attributes="0"/>
+              <EmptySpace pref="39" max="32767" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
@@ -76,7 +76,7 @@
               <Component id="ProfilLogOut" min="-2" max="-2" attributes="0"/>
               <EmptySpace max="-2" attributes="0"/>
               <Component id="ProfilLöschen" min="-2" max="-2" attributes="0"/>
-              <EmptySpace pref="15" max="32767" attributes="0"/>
+              <EmptySpace max="32767" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
@@ -85,13 +85,14 @@
     <Component class="javax.swing.JLabel" name="StockOverflowProfil">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-          <Font name="Penultimate" size="36" style="1"/>
+          <Font name="Noto Serif" size="36" style="1"/>
         </Property>
         <Property name="text" type="java.lang.String" value="StockOverflow"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JTextPane" name="ProfilBenutzername">
       <Properties>
+        <Property name="editable" type="boolean" value="false"/>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Penultimate" size="11" style="0"/>
         </Property>
@@ -100,7 +101,7 @@
     <Component class="javax.swing.JLabel" name="ProfilBenutzernameAnzeigen">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-          <Font name="Penultimate" size="11" style="0"/>
+          <Font name="Noto Serif" size="11" style="0"/>
         </Property>
         <Property name="text" type="java.lang.String" value="Benutzername"/>
       </Properties>
@@ -108,12 +109,15 @@
     <Component class="javax.swing.JLabel" name="ProfilPasswort">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-          <Font name="Penultimate" size="11" style="0"/>
+          <Font name="Noto Serif" size="11" style="0"/>
         </Property>
         <Property name="text" type="java.lang.String" value="Passwort"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JPasswordField" name="ProfilPasswortAnzeigen">
+      <Properties>
+        <Property name="editable" type="boolean" value="false"/>
+      </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="ProfilPasswortAnzeigenActionPerformed"/>
       </Events>
@@ -121,7 +125,7 @@
     <Component class="javax.swing.JButton" name="ProfilAbbrechen">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-          <Font name="Penultimate" size="14" style="0"/>
+          <Font name="Noto Serif" size="14" style="0"/>
         </Property>
         <Property name="text" type="java.lang.String" value="Abbrechen"/>
       </Properties>
@@ -131,6 +135,9 @@
     </Component>
     <Component class="javax.swing.JButton" name="ProfilPasswort&#xc4;ndern">
       <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Noto Serif" size="11" style="0"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="&#xc4;ndern"/>
       </Properties>
       <Events>
@@ -139,6 +146,7 @@
     </Component>
     <Component class="javax.swing.JTextPane" name="ProfilGuthabneAnzeigen">
       <Properties>
+        <Property name="editable" type="boolean" value="false"/>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Penultimate" size="11" style="0"/>
         </Property>
@@ -147,7 +155,7 @@
     <Component class="javax.swing.JLabel" name="ProfilGuthaben">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-          <Font name="Penultimate" size="11" style="0"/>
+          <Font name="Noto Serif" size="11" style="0"/>
         </Property>
         <Property name="text" type="java.lang.String" value="Guthaben"/>
       </Properties>
@@ -155,7 +163,7 @@
     <Component class="javax.swing.JButton" name="ProfilLogOut">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-          <Font name="Penultimate" size="14" style="0"/>
+          <Font name="Noto Serif" size="14" style="0"/>
         </Property>
         <Property name="text" type="java.lang.String" value="Log Out"/>
       </Properties>
@@ -166,7 +174,7 @@
     <Component class="javax.swing.JButton" name="ProfilL&#xf6;schen">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-          <Font name="Penultimate" size="14" style="0"/>
+          <Font name="Noto Serif" size="14" style="0"/>
         </Property>
         <Property name="text" type="java.lang.String" value="Profil L&#xf6;schen"/>
       </Properties>

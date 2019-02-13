@@ -150,7 +150,7 @@ public class AktieKaufen extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void KaufenKaufenActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_KaufenKaufenActionPerformed
-            c.aktiekaufen(c.getAktieAnsehen().ausgewählteISIN, Integer.parseInt(this.KaufenGesamtpreisEingabe.getText()), (double)OA.getAsk());
+            c.aktiekaufen(c.getAktieAnsehen().ausgewählteISIN, Integer.parseInt(this.KaufenGesamtpreisEingabe.getText()));
             //c.aktiekaufen(this.KaufenNameDerAaktie.getText(), Integer.parseInt(this.KaufenStückzaahl.getText()), Float.parseFloat(this.KaufenGesamtpreis.getText()));
         this.c.switchTo("KaufBestätigung");    }//GEN-LAST:event_KaufenKaufenActionPerformed
 

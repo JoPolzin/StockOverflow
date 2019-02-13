@@ -67,7 +67,7 @@ public class Leaderboard extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        jLabel1.setFont(new java.awt.Font("Calibri", 0, 48)); // NOI18N
+        jLabel1.setFont(new java.awt.Font("Noto Serif", 1, 36)); // NOI18N
         jLabel1.setText("Leaderboard");
         jLabel1.setVerticalAlignment(javax.swing.SwingConstants.TOP);
 
@@ -149,20 +149,25 @@ public class Leaderboard extends javax.swing.JFrame {
             }
         });
 
-        Gesamtkapital.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        Gesamtkapital.setFont(new java.awt.Font("Noto Serif", 0, 14)); // NOI18N
         Gesamtkapital.setText("Gesamtkapital");
 
-        JLPlatz1.setFont(new java.awt.Font("Copperplate Gothic Light", 1, 14)); // NOI18N
+        JLPlatz1.setFont(new java.awt.Font("Noto Serif", 1, 14)); // NOI18N
         JLPlatz1.setText("Platz 1");
 
+        JLPlatz2.setFont(new java.awt.Font("Noto Serif", 0, 11)); // NOI18N
         JLPlatz2.setText("Platz 2");
 
+        JLPlatz3.setFont(new java.awt.Font("Noto Serif", 0, 11)); // NOI18N
         JLPlatz3.setText("Platz 3");
 
+        JLPlatz4.setFont(new java.awt.Font("Noto Serif", 0, 11)); // NOI18N
         JLPlatz4.setText("Platz 4");
 
+        JLPlatz5.setFont(new java.awt.Font("Noto Serif", 0, 11)); // NOI18N
         JLPlatz5.setText("Platz 5");
 
+        jButton1.setFont(new java.awt.Font("Noto Serif", 0, 11)); // NOI18N
         jButton1.setText("Zurück");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -170,6 +175,7 @@ public class Leaderboard extends javax.swing.JFrame {
             }
         });
 
+        aktualisieren.setFont(new java.awt.Font("Noto Serif", 0, 11)); // NOI18N
         aktualisieren.setText("aktualisieren");
         aktualisieren.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -177,12 +183,16 @@ public class Leaderboard extends javax.swing.JFrame {
             }
         });
 
+        jLabel2.setFont(new java.awt.Font("Noto Serif", 0, 11)); // NOI18N
         jLabel2.setText("Kapital:");
 
+        jLabel3.setFont(new java.awt.Font("Noto Serif", 0, 11)); // NOI18N
         jLabel3.setText("Name:");
 
+        jLabel4.setFont(new java.awt.Font("Noto Serif", 0, 11)); // NOI18N
         jLabel4.setText("Name:");
 
+        jLabel5.setFont(new java.awt.Font("Noto Serif", 0, 11)); // NOI18N
         jLabel5.setText("Kapital:");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -190,7 +200,7 @@ public class Leaderboard extends javax.swing.JFrame {
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(107, 107, 107)
+                .addGap(122, 122, 122)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
                     .addComponent(JLPlatz5, javax.swing.GroupLayout.DEFAULT_SIZE, 40, Short.MAX_VALUE)
                     .addComponent(JLPlatz4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
@@ -221,7 +231,7 @@ public class Leaderboard extends javax.swing.JFrame {
                                 .addGap(0, 0, Short.MAX_VALUE))
                             .addComponent(Punktzahl2)
                             .addComponent(Punktzahl3))))
-                .addGap(139, 139, 139))
+                .addGap(151, 151, 151))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                 .addGap(0, 0, Short.MAX_VALUE)
                 .addComponent(Gesamtkapital)
@@ -231,39 +241,40 @@ public class Leaderboard extends javax.swing.JFrame {
                     .addGroup(layout.createSequentialGroup()
                         .addGap(21, 21, 21)
                         .addComponent(aktualisieren)
-                        .addGap(155, 155, 155)
+                        .addGap(134, 134, 134)
                         .addComponent(JLPlatz1))
                     .addGroup(layout.createSequentialGroup()
                         .addGap(184, 184, 184)
                         .addComponent(jLabel4)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(Platz1, javax.swing.GroupLayout.PREFERRED_SIZE, 115, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap(275, Short.MAX_VALUE))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(jLabel5)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
                         .addComponent(Punktzahl1, javax.swing.GroupLayout.PREFERRED_SIZE, 292, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(151, 151, 151))
-                    .addGroup(layout.createSequentialGroup()
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                         .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 280, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(jButton1)
-                        .addContainerGap())))
+                        .addGap(72, 72, 72))))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(10, 10, 10)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jLabel1)
-                    .addComponent(jButton1))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(JLPlatz1)
-                    .addComponent(aktualisieren))
+                    .addGroup(layout.createSequentialGroup()
+                        .addContainerGap()
+                        .addComponent(jButton1)))
+                .addGap(21, 21, 21)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(aktualisieren)
+                    .addComponent(JLPlatz1))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(Platz1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -296,7 +307,7 @@ public class Leaderboard extends javax.swing.JFrame {
                     .addComponent(Platz5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(Punktzahl5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(JLPlatz5))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 87, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 85, Short.MAX_VALUE)
                 .addComponent(Gesamtkapital)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(GesamtPunktzahl, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
