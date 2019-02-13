@@ -152,7 +152,7 @@ public class FirebaseZugriff {
         Aktienkonto ak = b.getDepot();
         b.setDepot(null);//vorsichtiges Löschen, damit in der Firebase kein geschachteltes Objekt entsteht.
         dataMap.put(b.getBenutzername(), b);
-
+        
         //dataMap.put(b.getBenutzername(), b.getDepot());
         try {
             FirebaseResponse response = firebase.patch("users", dataMap);
@@ -379,12 +379,12 @@ public class FirebaseZugriff {
      * 
      * 
      */
-    public void AktieStückzahlAktualisieren(String isin,int Stückzahl){
+    public void AktieStückzahlAktualisieren(String isin,int Stückzahl,double Preis){
         int i = (int)this.WertEinerReferenz("depots/"+c.getB().getBenutzername()+"/"+isin, "anzahl");
         if(i - Stückzahl>0){
            Aktienkauf ak = new Aktienkauf(isin, i- Stückzahl);
             OA.prepareDocument(isin);
-            ak.setPreis(OA.getAsk());
+            ak.setPreis(Preis);
             this.aktieErgänzen(ak);
         }else{
             
