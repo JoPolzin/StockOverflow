@@ -92,6 +92,7 @@
     </Component>
     <Component class="javax.swing.JTextPane" name="ProfilBenutzername">
       <Properties>
+        <Property name="editable" type="boolean" value="false"/>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Penultimate" size="11" style="0"/>
         </Property>
@@ -114,6 +115,9 @@
       </Properties>
     </Component>
     <Component class="javax.swing.JPasswordField" name="ProfilPasswortAnzeigen">
+      <Properties>
+        <Property name="editable" type="boolean" value="false"/>
+      </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="ProfilPasswortAnzeigenActionPerformed"/>
       </Events>
@@ -142,6 +146,7 @@
     </Component>
     <Component class="javax.swing.JTextPane" name="ProfilGuthabneAnzeigen">
       <Properties>
+        <Property name="editable" type="boolean" value="false"/>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Penultimate" size="11" style="0"/>
         </Property>

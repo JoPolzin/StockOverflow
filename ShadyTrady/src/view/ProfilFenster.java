@@ -52,6 +52,7 @@ public class ProfilFenster extends javax.swing.JFrame {
         StockOverflowProfil.setFont(new java.awt.Font("Noto Serif", 1, 36)); // NOI18N
         StockOverflowProfil.setText("StockOverflow");
 
+        ProfilBenutzername.setEditable(false);
         ProfilBenutzername.setFont(new java.awt.Font("Penultimate", 0, 11)); // NOI18N
 
         ProfilBenutzernameAnzeigen.setFont(new java.awt.Font("Noto Serif", 0, 11)); // NOI18N
@@ -60,6 +61,7 @@ public class ProfilFenster extends javax.swing.JFrame {
         ProfilPasswort.setFont(new java.awt.Font("Noto Serif", 0, 11)); // NOI18N
         ProfilPasswort.setText("Passwort");
 
+        ProfilPasswortAnzeigen.setEditable(false);
         ProfilPasswortAnzeigen.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 ProfilPasswortAnzeigenActionPerformed(evt);
@@ -82,6 +84,7 @@ public class ProfilFenster extends javax.swing.JFrame {
             }
         });
 
+        ProfilGuthabneAnzeigen.setEditable(false);
         ProfilGuthabneAnzeigen.setFont(new java.awt.Font("Penultimate", 0, 11)); // NOI18N
 
         ProfilGuthaben.setFont(new java.awt.Font("Noto Serif", 0, 11)); // NOI18N
