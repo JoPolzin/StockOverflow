@@ -205,6 +205,7 @@ public class maincontrol {
                 break;
             case "EigenesDepot":
                 if (eingeloggt) {
+                    this.Depotausgeben();
                     eigenesDepot.setVisible(true);
                 } else {
                     anmeldeFenster.setVisible(true);
@@ -622,6 +623,32 @@ return;
      */
     public Leaderboard getLeaderboard() {
         return leaderboard;
+    }
+    
+    
+    public void Depotausgeben(){
+    
+   if (this.b.getDepot() != null){
+        
+        for (int i = 0; i < this.b.getDepot().getAktien().size() && i < 15; i++) {
+
+           Aktie  akt =  this.b.getDepot().getAktien().get(i);
+               
+               
+              System.out.println(akt.getISIN());
+                int Preis = akt.getStueckzahl();
+                
+                 this.eigenesDepot.getNamenFlds().get(i).setText(akt.getISIN());
+                 this.eigenesDepot.getPreisFlds().get(i).setText("");
+                 this.eigenesDepot.getStueckzahlFlds().get(i).setText("");
+
+       //   }
+            
+               
+            
+        }
+   }
+    
     }
 
 }

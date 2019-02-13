@@ -7,6 +7,7 @@ package view;
 
 import control.maincontrol;
 import java.util.ArrayList;
+import javax.swing.JTextField;
 
 /**
  *
@@ -16,9 +17,9 @@ public class EigenesDepot extends javax.swing.JFrame {
 
     maincontrol c;
 
-    private ArrayList<javax.swing.JTextField> NamenFlds;
-    private ArrayList<javax.swing.JTextField> StueckzahlFlds;
-    private ArrayList<javax.swing.JTextField> PreisFlds;
+    private ArrayList<javax.swing.JTextField> NamenFlds = new ArrayList();
+    private ArrayList<javax.swing.JTextField> StueckzahlFlds = new ArrayList();
+    private ArrayList<javax.swing.JTextField> PreisFlds = new ArrayList();
 
     /**
      * Creates new form EigensDepot2
@@ -26,6 +27,7 @@ public class EigenesDepot extends javax.swing.JFrame {
     public EigenesDepot(maincontrol c) {
         this.c = c;
         initComponents();
+        this.initArraylists();
     }
 
     public EigenesDepot() {
@@ -885,5 +887,29 @@ public class EigenesDepot extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     // End of variables declaration//GEN-END:variables
+
+    public ArrayList<JTextField> getNamenFlds() {
+        return NamenFlds;
+    }
+
+    public void setNamenFlds(ArrayList<JTextField> NamenFlds) {
+        this.NamenFlds = NamenFlds;
+    }
+
+    public ArrayList<JTextField> getStueckzahlFlds() {
+        return StueckzahlFlds;
+    }
+
+    public void setStueckzahlFlds(ArrayList<JTextField> StueckzahlFlds) {
+        this.StueckzahlFlds = StueckzahlFlds;
+    }
+
+    public ArrayList<JTextField> getPreisFlds() {
+        return PreisFlds;
+    }
+
+    public void setPreisFlds(ArrayList<JTextField> PreisFlds) {
+        this.PreisFlds = PreisFlds;
+    }
 
 }
