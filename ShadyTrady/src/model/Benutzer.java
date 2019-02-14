@@ -6,6 +6,7 @@
 package model;
 
 import java.util.Arrays;
+import model.DatenSpeicher;
 
 /**
  *
@@ -225,12 +226,20 @@ public class Benutzer {
      */
 
     public double GesamtKapital() {
-        double Kapital = this.getKontostand();
+        
+        int Kapital = (int) this.getKontostand();
         for (Aktie e : this.depot.getAktien()) {
-            
+            if(DatenSpeicher.AktienWerte.get(e.getISIN())!= null){
+                
+                int AktienWert = (int) DatenSpeicher.AktienWerte.get(e.getISIN()) * e.getStueckzahl();
+                Kapital = Kapital +  AktienWert;
+            }
             OA.prepareDocument(e.getISIN());
-            double Aktienwert  = (int) Math.round(OA.getAsk()) * e.getStueckzahl();
+            int StückWert = (int) Math.round(OA.getAsk());
+            int Aktienwert  = StückWert * e.getStueckzahl();
             Kapital = Kapital + Aktienwert;
+            DatenSpeicher.AktienWerte.put(e.getISIN(), StückWert);
+            
         }
         return Kapital;
 

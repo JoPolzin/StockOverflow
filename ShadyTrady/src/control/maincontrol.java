@@ -12,6 +12,7 @@ import model.*;
 import model.OA;
 import java.awt.Color;
 import java.util.ArrayList;
+import java.util.HashMap;
 import javax.swing.JOptionPane;
 import view.StockOverflowGUI;
 import java.util.Timer;
@@ -68,7 +69,17 @@ public class maincontrol {
     
     private Anpasser anpasser;
     private int x;
+    /**
+     * Variable für den Timer. Wenn true läuft der Timer.
+     * 
+     */
     private boolean t = true;
+    /**
+     * Speichert temporär die Daten der Aktien für das Leaderboard.
+     * 
+     * 
+     */
+    private HashMap<String, Object> WerteDerAktien;
     
     private Timer timer = new Timer();
     
@@ -532,6 +543,8 @@ public class maincontrol {
      * Initialisiert das Leaderboard.
      */
     public void LeaderboardInit() {
+        this.al = this.fz.benutzerAuslesen();
+        this.t = false;
         double GesamtKapital = 0;
         ArrayList<Benutzer> sortList = this.SortBenutzer(getAl());
         Collections.reverse(sortList);
@@ -554,6 +567,7 @@ public class maincontrol {
             getLeaderboard().GesamtPunktzahl.setText("" + RundenKommastellen(GesamtKapital));
             
         }
+        this.t = true;
         
     }
     
@@ -648,5 +662,15 @@ public class maincontrol {
         }
         
     }
+    
+    public void AktieKaufenInitialisieren(){
+        this.aktieKaufen.KaufenNameDerAktieEingabe.setText(this.aktieAnsehen.ausgewählteISIN);
+        this.t = false;
+        OA.prepareDocument(this.aktieAnsehen.ausgewählteISIN);
+        this.aktieKaufen.KaufenPreisProStückEingabe.setText(""+OA.getAsk());  
+        this.t = true;
+    }
+    
+    
     
 }

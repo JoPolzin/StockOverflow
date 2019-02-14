@@ -8,6 +8,7 @@ package TEST;
 import model.FirebaseZugriff;
 import control.maincontrol;
 import java.util.ArrayList;
+import java.util.HashMap;
 import model.Aktie;
 import model.Benutzer;
 import view.EigenesDepot;
@@ -45,12 +46,13 @@ public class andereTests {
         //benutzer = maincontrol.SortBenutzer(benutzer);
         System.out.println("sort:"+ benutzer.toString());
         System.out.println(b3.GesamtKapital());*/
-        maincontrol c = new maincontrol();
+        //maincontrol c = new maincontrol();
        // c.setB(b);
         //FirebaseZugriff fb = new FirebaseZugriff(c);
         //fb.ObjektLöschen("depots/Louie","a1");
-        EigenesDepot d = new EigenesDepot(c);
+        //EigenesDepot d = new EigenesDepot(c);
         //System.out.println(fb.WertEinerReferenz("depots/er/DE000A1EWWW0", "anzahl"));
+       
         
         
         

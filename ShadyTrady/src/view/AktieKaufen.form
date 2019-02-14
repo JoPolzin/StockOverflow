@@ -29,16 +29,16 @@
                       <EmptySpace min="-2" pref="67" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" attributes="0">
                           <Component id="KaufenNameDerAaktie" min="-2" max="-2" attributes="0"/>
-                          <Component id="KaufenStückzahlEingabe" min="-2" pref="139" max="-2" attributes="0"/>
-                          <Component id="KaufenGesamtpreisEingabe" alignment="0" min="-2" pref="139" max="-2" attributes="0"/>
                           <Component id="KaufenStückzaahl" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="KaufenNameDerAktieEingabe" min="-2" pref="139" max="-2" attributes="0"/>
+                          <Component id="KaufenStückzahlEingabe" alignment="0" min="-2" pref="139" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace min="-2" pref="103" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" attributes="0">
                           <Component id="KaufenGesamtpreis" min="-2" max="-2" attributes="0"/>
                           <Component id="KaufenPreisProStück" alignment="0" min="-2" max="-2" attributes="0"/>
-                          <Component id="KaufenNameDerAktieEingabe" alignment="0" min="-2" pref="139" max="-2" attributes="0"/>
                           <Component id="KaufenPreisProStückEingabe" min="-2" pref="139" max="-2" attributes="0"/>
+                          <Component id="KaufenGesamtpreisEingabe" alignment="0" min="-2" pref="139" max="-2" attributes="0"/>
                       </Group>
                   </Group>
                   <Group type="102" alignment="0" attributes="0">
@@ -68,25 +68,25 @@
                   <Component id="KaufenNameDerAaktie" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace type="unrelated" max="-2" attributes="0"/>
-              <Group type="103" groupAlignment="0" attributes="0">
-                  <Component id="KaufenStückzahlEingabe" min="-2" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="1" attributes="0">
                   <Component id="KaufenPreisProStückEingabe" min="-2" max="-2" attributes="0"/>
+                  <Component id="KaufenNameDerAktieEingabe" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace min="-2" pref="28" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
                   <Component id="KaufenStückzaahl" alignment="3" min="-2" max="-2" attributes="0"/>
                   <Component id="KaufenGesamtpreis" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
-              <EmptySpace type="unrelated" max="-2" attributes="0"/>
+              <EmptySpace max="-2" attributes="0"/>
               <Group type="103" groupAlignment="0" attributes="0">
-                  <Component id="KaufenNameDerAktieEingabe" min="-2" max="-2" attributes="0"/>
+                  <Component id="KaufenStückzahlEingabe" min="-2" max="-2" attributes="0"/>
                   <Component id="KaufenGesamtpreisEingabe" min="-2" max="-2" attributes="0"/>
               </Group>
-              <EmptySpace min="-2" pref="74" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="81" max="-2" attributes="0"/>
               <Component id="KaufenKaufen" min="-2" pref="40" max="-2" attributes="0"/>
               <EmptySpace min="-2" pref="28" max="-2" attributes="0"/>
               <Component id="KaufenAbbrechen" min="-2" pref="40" max="-2" attributes="0"/>
-              <EmptySpace pref="22" max="32767" attributes="0"/>
+              <EmptySpace pref="20" max="32767" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
@@ -109,6 +109,9 @@
           </Border>
         </Property>
       </Properties>
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
+      </AuxValues>
     </Component>
     <Component class="javax.swing.JLabel" name="KaufenGesamtpreis">
       <Properties>
@@ -128,13 +131,15 @@
     </Component>
     <Component class="javax.swing.JTextPane" name="KaufenSt&#xfc;ckzahlEingabe">
       <Properties>
-        <Property name="editable" type="boolean" value="false"/>
         <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
           <Border info="org.netbeans.modules.form.compat2.border.EtchedBorderInfo">
             <EtchetBorder/>
           </Border>
         </Property>
       </Properties>
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
+      </AuxValues>
     </Component>
     <Component class="javax.swing.JLabel" name="KaufenPreisProSt&#xfc;ck">
       <Properties>
@@ -153,6 +158,9 @@
           </Border>
         </Property>
       </Properties>
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
+      </AuxValues>
     </Component>
     <Component class="javax.swing.JLabel" name="KaufenSt&#xfc;ckzaahl">
       <Properties>
@@ -163,6 +171,9 @@
       </Properties>
     </Component>
     <Component class="javax.swing.JTextPane" name="KaufenGesamtpreisEingabe">
+      <Properties>
+        <Property name="editable" type="boolean" value="false"/>
+      </Properties>
     </Component>
     <Component class="javax.swing.JButton" name="KaufenAbbrechen">
       <Properties>

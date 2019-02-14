@@ -341,6 +341,9 @@ public class AktieAnsehen extends javax.swing.JFrame {
 
     private void KaufenAnsehenActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_KaufenAnsehenActionPerformed
         this.c.setAktIsin(this.ISIN.getText());
+        this.c.AktieKaufenInitialisieren();
+        
+        
         this.c.switchTo("AktieKaufen");    }//GEN-LAST:event_KaufenAnsehenActionPerformed
         
     private void VerkaufenAnsehenActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_VerkaufenAnsehenActionPerformed
