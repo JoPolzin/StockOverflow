@@ -334,9 +334,9 @@ public class EigenesDepot extends javax.swing.JFrame {
 
         jLabel1.setText("ISIN");
 
-        jLabel2.setText("Stückzahl");
+        jLabel2.setText("Name");
 
-        jLabel3.setText("Preis");
+        jLabel3.setText("Stückzahl");
 
         EigenesDepotZurück.setText("Zurück");
         EigenesDepotZurück.addActionListener(new java.awt.event.ActionListener() {

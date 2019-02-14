@@ -747,12 +747,12 @@
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel2">
       <Properties>
-        <Property name="text" type="java.lang.String" value="St&#xfc;ckzahl"/>
+        <Property name="text" type="java.lang.String" value="Name"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel3">
       <Properties>
-        <Property name="text" type="java.lang.String" value="Preis"/>
+        <Property name="text" type="java.lang.String" value="St&#xfc;ckzahl"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JButton" name="EigenesDepotZur&#xfc;ck">
