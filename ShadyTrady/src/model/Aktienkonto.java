@@ -50,7 +50,7 @@ public class Aktienkonto {
      * @param Stueckzahl
      * @param Preis
      */
-    public void aktie_kaufen(String aid, int Stueckzahl, Float Preis) {
+    public void aktie_kaufen(String aid, int Stueckzahl, double Preis) {
 OA.DnsConfig();
         String name = OA.getName(aid);
         

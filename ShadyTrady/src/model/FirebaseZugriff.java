@@ -341,7 +341,7 @@ public class FirebaseZugriff {
                 //for (int i = 1; i <= anzahl; i = i + 1) {
               
                 
-                b.getDepot().aktie_kaufen((String) lhm2.get("isin"),(int) lhm2.get("anzahl"), Float.parseFloat((String) lhm2.get("preis")));
+                b.getDepot().aktie_kaufen(lhm2.get("isin").toString(),(int) lhm2.get("anzahl"), (Double) lhm2.get("preis"));
 
             }
 
