@@ -51,7 +51,7 @@ public class Aktienkonto {
      * @param Preis
      */
     public void aktie_kaufen(String aid, int Stueckzahl, double Preis) {
-OA.DnsConfig();
+        OA.DnsConfig();
         String name = OA.getName(aid);
         
         if (!Gekaufte_Aktien.isEmpty()) {

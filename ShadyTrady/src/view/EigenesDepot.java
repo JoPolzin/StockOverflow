@@ -115,6 +115,7 @@ public class EigenesDepot extends javax.swing.JFrame {
         TFPreis15 = new javax.swing.JTextField();
         TFAnzahl15 = new javax.swing.JTextField();
         Verkaufen15 = new javax.swing.JButton();
+        Aktualisieren = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -381,6 +382,13 @@ public class EigenesDepot extends javax.swing.JFrame {
             }
         });
 
+        Aktualisieren.setText("Aktualisieren");
+        Aktualisieren.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                AktualisierenActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -541,7 +549,9 @@ public class EigenesDepot extends javax.swing.JFrame {
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 74, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                        .addGap(0, 0, Short.MAX_VALUE)
+                        .addContainerGap()
+                        .addComponent(Aktualisieren)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addComponent(EigenesDepotZurück, javax.swing.GroupLayout.PREFERRED_SIZE, 74, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addContainerGap())
             .addGroup(layout.createSequentialGroup()
@@ -560,7 +570,9 @@ public class EigenesDepot extends javax.swing.JFrame {
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(layout.createSequentialGroup()
                                 .addComponent(EigenesDepot)
-                                .addGap(48, 48, 48)
+                                .addGap(14, 14, 14)
+                                .addComponent(Aktualisieren)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                                     .addComponent(jLabel1)
                                     .addComponent(jLabel2)
@@ -776,6 +788,11 @@ public class EigenesDepot extends javax.swing.JFrame {
         this.c.switchTo("AktieVerkaufen");
     }//GEN-LAST:event_Verkaufen15ActionPerformed
 
+    private void AktualisierenActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_AktualisierenActionPerformed
+       this.c.setB(this.c.getFz().EinenBenutzerAuslesen(this.c.getB().getBenutzername()));
+        this.c.Depotausgeben();
+    }//GEN-LAST:event_AktualisierenActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -871,6 +888,7 @@ public class EigenesDepot extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton Aktualisieren;
     private javax.swing.JLabel EigenesDepot;
     private javax.swing.JButton EigenesDepotZurück;
     private javax.swing.JLabel StockOverflow;

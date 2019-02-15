@@ -18,6 +18,7 @@ import view.StockOverflowGUI;
 import java.util.Timer;
 import java.util.TimerTask;
 import model.DatenSpeicher;
+
 /**
  *
  * @author Commander
@@ -30,59 +31,59 @@ public class maincontrol {
     public AktieAnsehen getAktieAnsehen() {
         return aktieAnsehen;
     }
-    
+
     private AktieAnsehen aktieAnsehen;
-    
+
     private AktieKaufen aktieKaufen;
-    
+
     private KaufBestätigung kaufBestätigung;
-    
+
     public AktieVerkaufen aktieVerkaufen;
-    
+
     private VerkaufBestätigung verkaufBestätigung;
-    
+
     private AnmeldeFenster anmeldeFenster;
-    
+
     private AbmeldeBestätigung abmeldeBestätigung;
-    
+
     private RegistrierFenster registrierFenster;
-    
+
     private ProfilFenster profilFenster;
-    
+
     private EigenesDepot eigenesDepot;
-    
+
     private StockOverflowGUI stockOverflowGUI;
-    
+
     private Leaderboard leaderboard;
-    
+
     private Loading loading;
-    
+
     public String letztesFenster;
-    
+
     private String aktIsin;
-    
+
     private FirebaseZugriff fz;
     private ArrayList<Benutzer> al;
     private boolean eingeloggt;
-    
+
     private Benutzer b;
-    
+
     private Anpasser anpasser;
     private int x;
     /**
      * Variable für den Timer. Wenn true läuft der Timer.
-     * 
+     *
      */
     public boolean t = true;
     /**
      * Speichert temporär die Daten der Aktien für das Leaderboard.
-     * 
-     * 
+     *
+     *
      */
     private HashMap<String, Object> WerteDerAktien;
-    
+
     private Timer timer = new Timer();
-    
+
     public void timerStart() {
         AktienDatenInitialisieren(0);
         timer.scheduleAtFixedRate(new TimerTask() {
@@ -107,7 +108,7 @@ public class maincontrol {
             }
         }, 5000, 5000);
     }
-    
+
     public maincontrol() {
         loading = new Loading();
         loading.setVisible(true);
@@ -135,7 +136,7 @@ public class maincontrol {
         stockOverflowGUI = new StockOverflowGUI(this);
         loading.jProgressBar1.setValue(33);
         x = 0;
-        
+
         fz = new FirebaseZugriff(this);
         //al = fz.benutzerAuslesen();
         loading.jProgressBar1.setValue(80);
@@ -144,15 +145,15 @@ public class maincontrol {
         }*/
         leaderboard = new Leaderboard(this);
         timerStart();
-        
+
         loading.jProgressBar1.setValue(100);
         loading.setVisible(false);
         stockOverflowGUI.setVisible(true);
         this.anpasser = new Anpasser(this);
         anpasser.start();
-        
+
     }
-    
+
     public int getX() {
         return x;
     }
@@ -160,13 +161,13 @@ public class maincontrol {
     public void setX(int newX) {
         x = newX;
     }
-    
+
     public boolean getEingeloggt() {
         return eingeloggt;
     }
-    
+
     public void switchTo(String Guiname) {
-        
+
         getAktieAnsehen().setVisible(false);
         aktieKaufen.setVisible(false);
         kaufBestätigung.setVisible(false);
@@ -182,9 +183,9 @@ public class maincontrol {
         letztesFenster = Guiname;
         switch (Guiname) {
             case "AktieAnsehen":
-                
+
                 getAktieAnsehen().setVisible(true);
-                
+
                 break;
             case "AktieKaufen":
                 if (this.eingeloggt) {
@@ -236,29 +237,29 @@ public class maincontrol {
             case "Leaderboard":
                 getLeaderboard().setVisible(true);
                 break;
-            
+
             default:
                 break;
-            
+
         }
-        
+
     }
-    
+
     public void login() {
         if (eingeloggt) {
             this.logout();
             return;
-            
+
         } else {
-            
+
             this.switchTo("AnmeldeFenster");
         }
-        
+
     }
-    
+
     public void login(String benutzername, String password) {
         if (eingeloggt) {
-            
+
         }
         Benutzer b = null;
         b = fz.EinenBenutzerAuslesen(benutzername);
@@ -268,7 +269,7 @@ public class maincontrol {
             return;
         }
         if (b.getPasswort().equals(password)) {
-            
+
             this.stockOverflowGUI.getLogInGUI().setText("Logout");
             this.b = b;
             this.eingeloggt = true;
@@ -276,30 +277,30 @@ public class maincontrol {
             System.out.println("Login erfolgreich");
             JOptionPane.showMessageDialog(null, "Login erfolgreich.\n Angemeldeter Benutzer:\n" + b.toString());
             System.out.println(this.b.getDepot().toString());
-            
+
             return;
-            
+
         } else {
             System.out.println("falsches Passwort");
             JOptionPane.showMessageDialog(null, "falsches Passwort");
             this.eingeloggt = false;
             return;
-            
+
         }
-        
+
     }
-    
+
     public void logout() {
         this.eingeloggt = false;
         System.out.println("Logout erfolgreich");
         JOptionPane.showMessageDialog(null, "Logout erfolgreich");
-        
+
         this.stockOverflowGUI.getLogInGUI().setText("Login");
-        
+
         this.switchTo("StockOverflowGUI");
-        
+
     }
-    
+
     public boolean register(String benutzername, String password, String confPassword, String email) {
         /*FirebaseSaveObject fso = new FirebaseSaveObject();
         if (fso.userUpdates.containsKey(benutzername)) {
@@ -327,24 +328,24 @@ public class maincontrol {
             tmp.setKontostand(1000);
             getFz().ergaenzeBenutzer(tmp);
             JOptionPane.showMessageDialog(null, "Benutzername eingetragen: " + tmp.toString());
-            
+
             return true;
         } else {
             JOptionPane.showMessageDialog(null, "Passwortfelder nicht gleich");
-            
+
             return false;
         }
-        
+
     }
-    
+
     public String getAktIsin() {
         return aktIsin;
     }
-    
+
     public void setAktIsin(String aktIsin) {
         this.aktIsin = aktIsin;
     }
-    
+
     public static void main(String[] args) {
         new maincontrol();
     }
@@ -356,19 +357,18 @@ public class maincontrol {
     public void AktienDatenInitialisieren(int x) {
         this.t = false;
         OA.DnsConfig();
-        
-        
+
         stockOverflowGUI.PreisListe = new ArrayList<>();
-        
+
         for (int i = 0; i < 15; i++) {
-            
+
             if (i + x >= 0) {
                 OA.prepareDocument(OA.getDNS().get(OA.getDNSString().get(i + x)));
                 stockOverflowGUI.AktienFelder.get(i).setText(OA.getDNSString().get(i + x));
                 stockOverflowGUI.PreisFelder.get(i).setText(Float.toString(OA.getAsk()));
                 stockOverflowGUI.ChangeFelder.get(i).setText(Float.toString(OA.getChange()));
                 stockOverflowGUI.PreisListe.add(OA.getAsk());
-                
+
                 stockOverflowGUI.PreisFelder.get(i).setBackground(Color.white);
             } else {
                 stockOverflowGUI.AktienFelder.get(i).setText("");
@@ -386,7 +386,7 @@ public class maincontrol {
     public void AktienDatenAktualisieren(int x) {
         this.t = false;
         for (int i = 0; i < 15; i++) {
-            
+
             if (i + x >= 0) {
                 OA.prepareDocument(OA.getDNS().get(OA.getDNSString().get(i + x)));
                 stockOverflowGUI.AktienFelder.get(i).setText(OA.getDNSString().get(i + x));
@@ -396,7 +396,7 @@ public class maincontrol {
                     stockOverflowGUI.PreisFelder.get(i).setBackground(Color.red);
                 } else if ((float) stockOverflowGUI.PreisListe.get(i) < OA.getAsk()) {
                     stockOverflowGUI.PreisFelder.get(i).setBackground(Color.green);
-                    
+
                 } else {
                     stockOverflowGUI.PreisFelder.get(i).setBackground(Color.white);
                 }
@@ -427,41 +427,45 @@ public class maincontrol {
         aktieAnsehen.ausgewählteISIN = ISIN;
         this.t = true;
     }
-    
+
     public void aktiekaufen(String isin, Integer Stückzahl) {
-        
+
         if (this.eingeloggt) {
             //getB().setKontostand(getB().getKontostand() - Preis);
             //getB().getDepot().aktie_kaufen(isin, Stückzahl, Preis);
             this.t = false;
             OA.prepareDocument(isin);
             float Preis = OA.getAsk();
-            
+
             int neuer_preis = (int) Math.round(Preis) * Stückzahl;
             int Konto_Wert = (int) Math.round((double) getFz().WertEinerReferenz("users/" + b.getBenutzername(), "kontostand"));
-            
+
             int neuer_Kontostand = Konto_Wert - neuer_preis;
             if (neuer_Kontostand <= 0) {
                 this.t = true;
                 return;
             }
-            b.setKontostand(neuer_Kontostand);
+            b.setKontostand(neuer_Kontostand);;
+
             Aktienkauf ak = new Aktienkauf(isin, Stückzahl);
             ak.setPreis(Preis);
-            if(fz.WertEinerReferenz("depots/"+b.getBenutzername()+"/"+isin, "anzahl") != null){
-                ak.setAnzahl(Stückzahl + (int) fz.WertEinerReferenz("depots/"+b.getBenutzername()+"/"+isin, "anzahl"));
-            }else{
-            ak.setAnzahl(Stückzahl);
+            if (fz.WertEinerReferenz("depots/" + b.getBenutzername() + "/" + isin, "anzahl") != null) {
+                ak.setAnzahl(Stückzahl + (int) fz.WertEinerReferenz("depots/" + b.getBenutzername() + "/" + isin, "anzahl"));
+            } else {
+                ak.setAnzahl(Stückzahl);
             }
             getFz().aktieErgänzen(ak);
             getFz().aendereBenutzer(b);
-            
+            this.b = fz.EinenBenutzerAuslesen(b.getBenutzername());
+
         } else {
             this.switchTo("AnmeldeFenster");
-            
+
         }
         this.t = true;
-        
+
+        this.Depotausgeben();
+
     }
 
     /**
@@ -481,39 +485,39 @@ public class maincontrol {
                 // Your database code here
             }
         }, 2000, 2000);
-        
+
         OA.prepareDocument(getAktieAnsehen().ausgewählteISIN);
         getAktieAnsehen().Change.setText(Float.toString(OA.getChange()));
         getAktieAnsehen().Preis.setText(Float.toString(OA.getAsk()));
         if (getAktieAnsehen().momentanerPreis > OA.getAsk()) {
             getAktieAnsehen().Preis.setBackground(Color.red);
-            
+
         } else if (getAktieAnsehen().momentanerPreis < OA.getAsk()) {
             getAktieAnsehen().Preis.setBackground(Color.green);
-            
+
         } else {
             getAktieAnsehen().Preis.setBackground(Color.white);
         }
         this.t = true;
     }
-    
+
     public void aktieverkaufen(String isin, Integer Stückzahl) {
         if (this.eingeloggt) {
             this.t = false;
             OA.prepareDocument(isin);
             double aktienWert = OA.getAsk();
             this.fz.AktieStückzahlAktualisieren(isin, Stückzahl, aktienWert);
-            
+
             this.getB().setKontostand(this.RundenKommastellen(this.b.getKontostand() + aktienWert * Stückzahl));
             this.fz.aendereBenutzer(this.b);
             this.b = fz.EinenBenutzerAuslesen(b.getBenutzername());
             this.t = true;
-            
+
         } else {
             this.switchTo("AnmeldeFenster");
-            
+
         }
-        
+
     }
 
     /**
@@ -529,7 +533,7 @@ public class maincontrol {
         DatenSpeicher.AktienWerte = new HashMap<>();
         ArrayList<Benutzer> sort = Benutzer;
         boolean done = false;
-        
+
         while (!done) {
             done = true;
             for (int i = 0; i < sort.size(); i++) {
@@ -541,12 +545,12 @@ public class maincontrol {
                         done = false;
                     }
                 }
-                
+
             }
-            
+
         }
         return sort;
-        
+
     }
 
     /**
@@ -560,12 +564,10 @@ public class maincontrol {
         double GesamtKapital = 0;
         ArrayList<Benutzer> sortList = this.SortBenutzer(getAl());
         Collections.reverse(sortList);
-        for(Benutzer b:sortList){
-            System.out.println(b.getBenutzername()+"---"+b.GesamtKapital());
+        for (Benutzer b : sortList) {
+            System.out.println(b.getBenutzername() + "---" + b.GesamtKapital());
         }
-        
-        
-        
+
         if (sortList.size() >= 5) {
             getLeaderboard().Platz1.setText(sortList.get(0).getBenutzername());
             getLeaderboard().Platz2.setText(sortList.get(1).getBenutzername());
@@ -579,27 +581,27 @@ public class maincontrol {
             getLeaderboard().Punktzahl5.setText("" + RundenKommastellen(sortList.get(4).GesamtKapital()));
             for (Benutzer b : sortList) {
                 GesamtKapital = GesamtKapital + b.GesamtKapital();
-                
+
             }
-            
+
             getLeaderboard().GesamtPunktzahl.setText("" + RundenKommastellen(GesamtKapital));
-            
+
         }
         this.t = true;
-        
+
     }
-    
+
     public double RundenKommastellen(double Zahl) {
         Zahl = Zahl * 100;
         Zahl = Math.round(Zahl);
         return Zahl / 100;
-        
+
     }
-    
+
     public void aktualisiereLeaderboard() {
         this.setAl(this.getFz().benutzerAuslesen());
         this.LeaderboardInit();
-        
+
     }
 
     /**
@@ -643,12 +645,12 @@ public class maincontrol {
     public Anpasser getAnpasser() {
         return anpasser;
     }
-    
+
     public void LeaderboardAktu() {
         this.anpasser.start();
-        
+
     }
-    
+
     public boolean isEingeloggt() {
         return eingeloggt;
     }
@@ -659,18 +661,23 @@ public class maincontrol {
     public Leaderboard getLeaderboard() {
         return leaderboard;
     }
-    
+
     public void Depotausgeben() {
-        
+
         if (this.b.getDepot() != null) {
-            
+            for (int i = 0; i < 15; i++) {
+                this.eigenesDepot.getNamenFlds().get(i).setText("");
+                this.eigenesDepot.getPreisFlds().get(i).setText("");
+                this.eigenesDepot.getStueckzahlFlds().get(i).setText("");
+            }
+
             for (int i = 0; i < this.b.getDepot().getAktien().size() && i < 15; i++) {
-                
+
                 Aktie akt = this.b.getDepot().getAktien().get(i);
-                
+
                 System.out.println(akt.getISIN());
                 int Preis = akt.getStueckzahl();
-                
+
                 this.eigenesDepot.getNamenFlds().get(i).setText(akt.getISIN());
                 this.eigenesDepot.getPreisFlds().get(i).setText(akt.getName());
                 this.eigenesDepot.getStueckzahlFlds().get(i).setText(this.b.getDepot().getGekaufte_Aktien().get(akt.getISIN()).toString());
@@ -678,26 +685,20 @@ public class maincontrol {
                 //   }
             }
         }
-        
+
     }
-    
-    public void AktieKaufenInitialisieren(){
+
+    public void AktieKaufenInitialisieren() {
         this.aktieKaufen.KaufenNameDerAktieEingabe.setText(this.aktieAnsehen.ausgewählteISIN);
         this.t = false;
         OA.prepareDocument(this.aktieAnsehen.ausgewählteISIN);
-        this.aktieKaufen.KaufenPreisProStückEingabe.setText(""+OA.getAsk());  
+        this.aktieKaufen.KaufenPreisProStückEingabe.setText("" + OA.getAsk());
         this.t = true;
     }
-    
-    public void AktieVerkaufenInitilalisieren(String isin){
+
+    public void AktieVerkaufenInitilalisieren(String isin) {
         this.aktieVerkaufen.VerkaufenNameDerAktieEingabe.setText(isin);
-        
-        
-        
-        
-        
+
     }
-    
-    
-    
+
 }
