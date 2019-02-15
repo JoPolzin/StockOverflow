@@ -220,7 +220,12 @@ public class maincontrol {
                 abmeldeBestätigung.setVisible(true);
                 break;
             case "AnmeldeFenster":
-                anmeldeFenster.setVisible(true);
+                if(eingeloggt) {
+                      profilFenster.setVisible(true);
+                    
+        } else {
+                    anmeldeFenster.setVisible(true);
+        }
                 break;
             case "RegistrierFenster":
                 registrierFenster.setVisible(true);
@@ -289,10 +294,11 @@ public class maincontrol {
             this.stockOverflowGUI.getLogInGUI().setText("Logout");
             this.b = b;
             this.eingeloggt = true;
-            this.switchTo(letztesFenster);
+            
             System.out.println("Login erfolgreich");
             JOptionPane.showMessageDialog(null, "Login erfolgreich.\n Angemeldeter Benutzer:\n" + b.toString());
             System.out.println(this.b.getDepot().toString());
+            this.switchTo(letztesFenster);
 
             return;
 
@@ -328,11 +334,11 @@ public class maincontrol {
         this.al = fz.benutzerAuslesen();
         for (Benutzer b : getAl()) {
             if (this.fz.WertEinerReferenz("users/" + benutzername, "benutzername") != null) {
-                JOptionPane.showMessageDialog(null, "Benutzername schon vergeben");
+                JOptionPane.showMessageDialog(null, "Benutzername schon vergeben.");
                 return false;
             }
             if (b.getEmail().equalsIgnoreCase(benutzername)) {
-                JOptionPane.showMessageDialog(null, "Benutzername schon vergeben");
+                JOptionPane.showMessageDialog(null, "Benutzername schon vergeben.");
                 return false;
             }
         }
@@ -344,6 +350,7 @@ public class maincontrol {
             tmp.setKontostand(1000);
             getFz().ergaenzeBenutzer(tmp);
             JOptionPane.showMessageDialog(null, "Benutzername eingetragen: " + tmp.toString());
+            this.login(benutzername, password);
 
             return true;
         } else {

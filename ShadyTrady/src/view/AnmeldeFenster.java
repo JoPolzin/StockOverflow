@@ -150,6 +150,7 @@ public class AnmeldeFenster extends javax.swing.JFrame {
 
     private void AnmeldenActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_AnmeldenActionPerformed
         this.c.login(this.AnmeldenBenutzernameEingeben.getText(), new String(this.PasswortEingeben.getPassword()));
+        this.PasswortEingeben.setText("");
        
        
     }//GEN-LAST:event_AnmeldenActionPerformed

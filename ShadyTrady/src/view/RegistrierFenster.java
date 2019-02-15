@@ -165,6 +165,11 @@ public class RegistrierFenster extends javax.swing.JFrame {
             JOptionPane.showMessageDialog(null,"Benutzername ist leer");
             return;
         }
+        if(RegistrierenBenutzernameEingeben1.getText().contains(" ")){
+            JOptionPane.showMessageDialog(null,"Warnung: Leerzeichen im Benutzernamen");
+          
+        }
+        
         if(PasswortEingeben.getPassword().length==0){
             JOptionPane.showMessageDialog(null,"Passwortfeld ist leer");
             return;
@@ -173,12 +178,18 @@ public class RegistrierFenster extends javax.swing.JFrame {
             JOptionPane.showMessageDialog(null,"Passwortbestätigungsfeld ist leer");
             return;
         }
+        
         if(RegistrierenEmailEingeben.getText().equals("")){
             JOptionPane.showMessageDialog(null,"Email ist leer");
             return;
         }
         c.register(RegistrierenBenutzernameEingeben1.getText(), String.valueOf(PasswortEingeben.getPassword()), String.valueOf(PasswortBestätigenEingeben.getPassword()), RegistrierenEmailEingeben.getText());
-        this.c.switchTo("StockOverflowGUI");
+        this.RegistrierenBenutzernameEingeben1.setText("");
+        this.RegistrierenEmailEingeben.setText("");
+        this.PasswortEingeben.setText("");
+        this.PasswortBestätigenEingeben.setText("");
+        
+        
     }//GEN-LAST:event_RegistrierenRegistrierenActionPerformed
 
     // private void RegistrierActionPerformed(java.awt.event.ActionEvent evt) {                                         
