@@ -448,11 +448,11 @@ public class maincontrol {
             b.setKontostand(neuer_Kontostand);
             Aktienkauf ak = new Aktienkauf(isin, Stückzahl);
             ak.setPreis(Preis);
-            if(fz.WertEinerReferenz("depots/"+b.getBenutzername()+"/"+isin, "anzahl") != null){
+            if((int)fz.WertEinerReferenz("depots/"+b.getBenutzername()+"/"+isin, "anzahl") > 0){
                 ak.setAnzahl(Stückzahl + (int) fz.WertEinerReferenz("depots/"+b.getBenutzername()+"/"+isin, "anzahl"));
-            }
+            }else{
             ak.setAnzahl(Stückzahl);
- 
+            }
             getFz().aktieErgänzen(ak);
             getFz().aendereBenutzer(b);
             
