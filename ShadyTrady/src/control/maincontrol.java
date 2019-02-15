@@ -354,6 +354,7 @@ public class maincontrol {
      * StockOverflowGUI Initialisiert Aktien des Daxes.
      */
     public void AktienDatenInitialisieren(int x) {
+        this.t = false;
         OA.DnsConfig();
         
         
@@ -376,13 +377,14 @@ public class maincontrol {
                 stockOverflowGUI.PreisListe.add(OA.getAsk());
             }
         }
+        this.t = true;
     }
 
     /**
      * StockOverflowGUI Aktualisiert Aktien des Daxes und färbt diese.
      */
     public void AktienDatenAktualisieren(int x) {
-        
+        this.t = false;
         for (int i = 0; i < 15; i++) {
             
             if (i + x >= 0) {
@@ -403,7 +405,7 @@ public class maincontrol {
                 //dont do anything...
             }
         }
-        
+        this.t = true;
     }
 
     //AktieAnsehen:
@@ -414,6 +416,7 @@ public class maincontrol {
      * @param ISIN
      */
     public void AktieDatenInitialisieren(String ISIN, String name) {
+        this.t = false;
         OA.prepareDocument(ISIN);
         getAktieAnsehen().Change.setText(Float.toString(OA.getChange()));
         getAktieAnsehen().Preis.setText(Float.toString(OA.getAsk()));
@@ -422,9 +425,11 @@ public class maincontrol {
         getAktieAnsehen().AktienBild.setIcon(OA.getGraph("intraday"));
         aktieAnsehen.momentanerPreis = OA.getAsk();
         aktieAnsehen.ausgewählteISIN = ISIN;
+        this.t = true;
     }
     
     public void aktiekaufen(String isin, Integer Stückzahl) {
+        
         if (this.eingeloggt) {
             //getB().setKontostand(getB().getKontostand() - Preis);
             //getB().getDepot().aktie_kaufen(isin, Stückzahl, Preis);
@@ -463,6 +468,7 @@ public class maincontrol {
      *
      */
     public void AktieDatenAktualisieren() {
+        this.t = false;
         Timer timer = new Timer();
         timer.scheduleAtFixedRate(new TimerTask() {
             @Override
@@ -484,7 +490,7 @@ public class maincontrol {
         } else {
             getAktieAnsehen().Preis.setBackground(Color.white);
         }
-        
+        this.t = true;
     }
     
     public void aktieverkaufen(String isin, Integer Stückzahl) {
