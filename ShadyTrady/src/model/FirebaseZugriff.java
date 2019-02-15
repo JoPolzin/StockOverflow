@@ -81,7 +81,8 @@ public class FirebaseZugriff {
                 tmp.setBenutzername((String) lhm.get("benutzername"));
                 tmp.setEmail((String) lhm.get("email"));
                 
-                tmp.setKontostand((int) lhm.get("kontostand"));
+
+                tmp.setKontostand((Double)lhm.get("kontostand"));
                 tmp.setPasswort((String) lhm.get("passwort"));
                 response2 = firebase.get("depots/" + tmp.getBenutzername());
 

@@ -231,15 +231,17 @@ public class Benutzer {
         for (Aktie e : this.depot.getAktien()) {
             if(DatenSpeicher.AktienWerte.get(e.getISIN())!= null){
                 
-                int AktienWert = (int) DatenSpeicher.AktienWerte.get(e.getISIN()) * e.getStueckzahl();
+                int AktienWert = (int) DatenSpeicher.AktienWerte.get(e.getISIN()) * this.depot.getGekaufte_Aktien().get(e.getISIN());
                 Kapital = Kapital +  AktienWert;
-            }
+            }else{
+            System.out.println(e.getISIN());
             OA.prepareDocument(e.getISIN());
             int StückWert = (int) Math.round(OA.getAsk());
-            int Aktienwert  = StückWert * e.getStueckzahl();
+            int Aktienwert  = StückWert * this.depot.getGekaufte_Aktien().get(e.getISIN());
+            System.out.println(this.depot.getGekaufte_Aktien().get(e.getISIN()));
             Kapital = Kapital + Aktienwert;
             DatenSpeicher.AktienWerte.put(e.getISIN(), StückWert);
-            
+            }
         }
         return Kapital;
 

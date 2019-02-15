@@ -17,7 +17,7 @@ import javax.swing.JOptionPane;
 import view.StockOverflowGUI;
 import java.util.Timer;
 import java.util.TimerTask;
-
+import model.DatenSpeicher;
 /**
  *
  * @author Commander
@@ -526,6 +526,7 @@ public class maincontrol {
      * @return
      */
     public ArrayList<Benutzer> SortBenutzer(ArrayList<Benutzer> Benutzer) {
+        DatenSpeicher.AktienWerte = new HashMap<>();
         ArrayList<Benutzer> sort = Benutzer;
         boolean done = false;
         
@@ -559,6 +560,12 @@ public class maincontrol {
         double GesamtKapital = 0;
         ArrayList<Benutzer> sortList = this.SortBenutzer(getAl());
         Collections.reverse(sortList);
+        for(Benutzer b:sortList){
+            System.out.println(b.getBenutzername()+"---"+b.GesamtKapital());
+        }
+        
+        
+        
         if (sortList.size() >= 5) {
             getLeaderboard().Platz1.setText(sortList.get(0).getBenutzername());
             getLeaderboard().Platz2.setText(sortList.get(1).getBenutzername());
