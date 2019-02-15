@@ -359,24 +359,38 @@ public class AktieAnsehen extends javax.swing.JFrame {
     }//GEN-LAST:event_ladenActionPerformed
 
     private void TagAnsehenActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_TagAnsehenActionPerformed
-
+        this.c.t = false;
+        OA.prepareDocument(ausgewählteISIN);
         AktienBild.setIcon(OA.getGraph("intraday"));
+        this.c.t = true;
     }//GEN-LAST:event_TagAnsehenActionPerformed
 
     private void WocheAnsehenActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_WocheAnsehenActionPerformed
+        this.c.t = false;
+        OA.prepareDocument(ausgewählteISIN);
         AktienBild.setIcon(OA.getGraph("woche"));
+        this.c.t = true;
     }//GEN-LAST:event_WocheAnsehenActionPerformed
 
     private void MonatAnsehenActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_MonatAnsehenActionPerformed
+        this.c.t = false;
+        OA.prepareDocument(ausgewählteISIN);
         AktienBild.setIcon(OA.getGraph("monat"));
+        this.c.t = true;
     }//GEN-LAST:event_MonatAnsehenActionPerformed
 
     private void HalbesJahrAnsehenActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_HalbesJahrAnsehenActionPerformed
+        this.c.t = false;
+        OA.prepareDocument(ausgewählteISIN);
         AktienBild.setIcon(OA.getGraph("monat6"));
+        this.c.t = true;
     }//GEN-LAST:event_HalbesJahrAnsehenActionPerformed
 
     private void JahrAnsehenActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_JahrAnsehenActionPerformed
+        this.c.t = false;
+        OA.prepareDocument(ausgewählteISIN);
         AktienBild.setIcon(OA.getGraph("jahr"));
+        this.c.t = true;
     }//GEN-LAST:event_JahrAnsehenActionPerformed
 
     private void AktualisierenActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_AktualisierenActionPerformed
