@@ -504,7 +504,7 @@ public class maincontrol {
             double aktienWert = OA.getAsk();
             this.fz.AktieStückzahlAktualisieren(isin, Stückzahl, aktienWert);
             
-            this.getB().setKontostand((int) (this.b.getKontostand() + aktienWert * Stückzahl));
+            this.getB().setKontostand(this.RundenKommastellen(this.b.getKontostand() + aktienWert * Stückzahl));
             this.fz.aendereBenutzer(this.b);
             this.b = fz.EinenBenutzerAuslesen(b.getBenutzername());
             this.t = true;
