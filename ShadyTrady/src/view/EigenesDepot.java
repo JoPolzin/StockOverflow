@@ -124,6 +124,7 @@ public class EigenesDepot extends javax.swing.JFrame {
 
         TFAnzahl.setEditable(false);
 
+        Verkaufen.setFont(new java.awt.Font("Noto Serif", 0, 11)); // NOI18N
         Verkaufen.setText("Verkaufen");
         Verkaufen.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -131,10 +132,10 @@ public class EigenesDepot extends javax.swing.JFrame {
             }
         });
 
-        StockOverflow.setFont(new java.awt.Font("Penultimate", 0, 24)); // NOI18N
+        StockOverflow.setFont(new java.awt.Font("Noto Serif", 1, 36)); // NOI18N
         StockOverflow.setText("Stock Overflow");
 
-        EigenesDepot.setFont(new java.awt.Font("Penultimate", 0, 14)); // NOI18N
+        EigenesDepot.setFont(new java.awt.Font("Noto Serif", 0, 14)); // NOI18N
         EigenesDepot.setText("Eigens Depot");
 
         TFAktie1.setEditable(false);
@@ -143,6 +144,7 @@ public class EigenesDepot extends javax.swing.JFrame {
 
         TFAnzahl1.setEditable(false);
 
+        Verkaufen1.setFont(new java.awt.Font("Noto Serif", 0, 11)); // NOI18N
         Verkaufen1.setText("Verkaufen");
         Verkaufen1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -156,6 +158,7 @@ public class EigenesDepot extends javax.swing.JFrame {
 
         TFAnzahl2.setEditable(false);
 
+        Verkaufen2.setFont(new java.awt.Font("Noto Serif", 0, 11)); // NOI18N
         Verkaufen2.setText("Verkaufen");
         Verkaufen2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -169,6 +172,7 @@ public class EigenesDepot extends javax.swing.JFrame {
 
         TFAnzahl3.setEditable(false);
 
+        Verkaufen3.setFont(new java.awt.Font("Noto Serif", 0, 11)); // NOI18N
         Verkaufen3.setText("Verkaufen");
         Verkaufen3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -182,6 +186,7 @@ public class EigenesDepot extends javax.swing.JFrame {
 
         TFAnzahl4.setEditable(false);
 
+        Verkaufen4.setFont(new java.awt.Font("Noto Serif", 0, 11)); // NOI18N
         Verkaufen4.setText("Verkaufen");
         Verkaufen4.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -195,6 +200,7 @@ public class EigenesDepot extends javax.swing.JFrame {
 
         TFAnzahl5.setEditable(false);
 
+        Verkaufen5.setFont(new java.awt.Font("Noto Serif", 0, 11)); // NOI18N
         Verkaufen5.setText("Verkaufen");
         Verkaufen5.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -208,6 +214,7 @@ public class EigenesDepot extends javax.swing.JFrame {
 
         TFAnzahl6.setEditable(false);
 
+        Verkaufen6.setFont(new java.awt.Font("Noto Serif", 0, 11)); // NOI18N
         Verkaufen6.setText("Verkaufen");
         Verkaufen6.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -221,6 +228,7 @@ public class EigenesDepot extends javax.swing.JFrame {
 
         TFAnzahl7.setEditable(false);
 
+        Verkaufen7.setFont(new java.awt.Font("Noto Serif", 0, 11)); // NOI18N
         Verkaufen7.setText("Verkaufen");
         Verkaufen7.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -234,6 +242,7 @@ public class EigenesDepot extends javax.swing.JFrame {
 
         TFAnzahl8.setEditable(false);
 
+        Verkaufen8.setFont(new java.awt.Font("Noto Serif", 0, 11)); // NOI18N
         Verkaufen8.setText("Verkaufen");
         Verkaufen8.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -247,6 +256,7 @@ public class EigenesDepot extends javax.swing.JFrame {
 
         TFAnzahl9.setEditable(false);
 
+        Verkaufen9.setFont(new java.awt.Font("Noto Serif", 0, 11)); // NOI18N
         Verkaufen9.setText("Verkaufen");
         Verkaufen9.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -260,6 +270,7 @@ public class EigenesDepot extends javax.swing.JFrame {
 
         TFAnzahl10.setEditable(false);
 
+        Verkaufen10.setFont(new java.awt.Font("Noto Serif", 0, 11)); // NOI18N
         Verkaufen10.setText("Verkaufen");
         Verkaufen10.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -273,6 +284,7 @@ public class EigenesDepot extends javax.swing.JFrame {
 
         TFAnzahl11.setEditable(false);
 
+        Verkaufen11.setFont(new java.awt.Font("Noto Serif", 0, 11)); // NOI18N
         Verkaufen11.setText("Verkaufen");
         Verkaufen11.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -286,6 +298,7 @@ public class EigenesDepot extends javax.swing.JFrame {
 
         TFAnzahl12.setEditable(false);
 
+        Verkaufen12.setFont(new java.awt.Font("Noto Serif", 0, 11)); // NOI18N
         Verkaufen12.setText("Verkaufen");
         Verkaufen12.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -299,6 +312,7 @@ public class EigenesDepot extends javax.swing.JFrame {
 
         TFAnzahl13.setEditable(false);
 
+        Verkaufen13.setFont(new java.awt.Font("Noto Serif", 0, 11)); // NOI18N
         Verkaufen13.setText("Verkaufen");
         Verkaufen13.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -312,6 +326,7 @@ public class EigenesDepot extends javax.swing.JFrame {
 
         TFAnzahl14.setEditable(false);
 
+        Verkaufen14.setFont(new java.awt.Font("Noto Serif", 0, 11)); // NOI18N
         Verkaufen14.setText("Verkaufen");
         Verkaufen14.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -325,6 +340,7 @@ public class EigenesDepot extends javax.swing.JFrame {
 
         TFAnzahl15.setEditable(false);
 
+        Verkaufen15.setFont(new java.awt.Font("Noto Serif", 0, 11)); // NOI18N
         Verkaufen15.setText("Verkaufen");
         Verkaufen15.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -332,12 +348,16 @@ public class EigenesDepot extends javax.swing.JFrame {
             }
         });
 
+        jLabel1.setFont(new java.awt.Font("Noto Serif", 0, 11)); // NOI18N
         jLabel1.setText("ISIN");
 
+        jLabel2.setFont(new java.awt.Font("Noto Serif", 0, 11)); // NOI18N
         jLabel2.setText("Name");
 
+        jLabel3.setFont(new java.awt.Font("Noto Serif", 0, 11)); // NOI18N
         jLabel3.setText("Stückzahl");
 
+        EigenesDepotZurück.setFont(new java.awt.Font("Noto Serif", 0, 11)); // NOI18N
         EigenesDepotZurück.setText("Zurück");
         EigenesDepotZurück.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -345,6 +365,7 @@ public class EigenesDepot extends javax.swing.JFrame {
             }
         });
 
+        jButton1.setFont(new java.awt.Font("Noto Serif", 0, 11)); // NOI18N
         jButton1.setText("LogOut");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -352,6 +373,7 @@ public class EigenesDepot extends javax.swing.JFrame {
             }
         });
 
+        jButton2.setFont(new java.awt.Font("Noto Serif", 0, 11)); // NOI18N
         jButton2.setText("Profil");
         jButton2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -384,18 +406,16 @@ public class EigenesDepot extends javax.swing.JFrame {
                                             .addComponent(TFAktie, javax.swing.GroupLayout.PREFERRED_SIZE, 132, javax.swing.GroupLayout.PREFERRED_SIZE)
                                             .addGap(18, 18, 18)
                                             .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                                .addComponent(StockOverflow)
+                                                .addComponent(TFPreis, javax.swing.GroupLayout.PREFERRED_SIZE, 83, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                .addComponent(jLabel2))
+                                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                                .addComponent(jLabel3)
                                                 .addGroup(layout.createSequentialGroup()
-                                                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                                        .addComponent(TFPreis, javax.swing.GroupLayout.PREFERRED_SIZE, 83, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                                        .addComponent(jLabel2))
+                                                    .addComponent(TFAnzahl, javax.swing.GroupLayout.PREFERRED_SIZE, 78, javax.swing.GroupLayout.PREFERRED_SIZE)
                                                     .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                                        .addComponent(jLabel3)
-                                                        .addGroup(layout.createSequentialGroup()
-                                                            .addComponent(TFAnzahl, javax.swing.GroupLayout.PREFERRED_SIZE, 78, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                                            .addComponent(Verkaufen))))))
+                                                    .addComponent(Verkaufen)))
+                                            .addGap(18, 18, 18))
                                         .addGroup(layout.createSequentialGroup()
                                             .addComponent(TFAktie3, javax.swing.GroupLayout.PREFERRED_SIZE, 132, javax.swing.GroupLayout.PREFERRED_SIZE)
                                             .addGap(18, 18, 18)
@@ -511,7 +531,7 @@ public class EigenesDepot extends javax.swing.JFrame {
                             .addGroup(layout.createSequentialGroup()
                                 .addGap(234, 234, 234)
                                 .addComponent(EigenesDepot)))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 13, Short.MAX_VALUE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 74, javax.swing.GroupLayout.PREFERRED_SIZE))
@@ -519,6 +539,10 @@ public class EigenesDepot extends javax.swing.JFrame {
                         .addGap(0, 0, Short.MAX_VALUE)
                         .addComponent(EigenesDepotZurück, javax.swing.GroupLayout.PREFERRED_SIZE, 74, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addContainerGap())
+            .addGroup(layout.createSequentialGroup()
+                .addGap(151, 151, 151)
+                .addComponent(StockOverflow)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -637,7 +661,7 @@ public class EigenesDepot extends javax.swing.JFrame {
                         .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(EigenesDepotZurück)))
-                .addContainerGap(97, Short.MAX_VALUE))
+                .addContainerGap(85, Short.MAX_VALUE))
         );
 
         pack();
