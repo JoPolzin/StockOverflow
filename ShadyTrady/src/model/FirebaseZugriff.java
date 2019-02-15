@@ -75,12 +75,13 @@ public class FirebaseZugriff {
                 LinkedHashMap lhm = (LinkedHashMap) pairs.getValue();
                 Benutzer tmp = new Benutzer();
                 //Hier Ergänzen, wenn der Benutzer weitere Attribute bekommt!
-                if (!lhm.containsKey("benutzername") || !lhm.containsKey("email") || !lhm.containsKey("kontostand") || !lhm.containsKey("passwort")) {
-                    return null;
-                }
+                if (lhm.containsKey("benutzername") || lhm.containsKey("email") || lhm.containsKey("kontostand") || lhm.containsKey("passwort")) {
+                    
+                
                 tmp.setBenutzername((String) lhm.get("benutzername"));
                 tmp.setEmail((String) lhm.get("email"));
-                tmp.setKontostand((Double) lhm.get("kontostand"));
+                
+                tmp.setKontostand((int) lhm.get("kontostand"));
                 tmp.setPasswort((String) lhm.get("passwort"));
                 response2 = firebase.get("depots/" + tmp.getBenutzername());
 
@@ -92,18 +93,20 @@ public class FirebaseZugriff {
                     LinkedHashMap lhm2 = (LinkedHashMap) pairs2.getValue();
 
                     //Hier Ergänzen, wenn der Benutzer weitere Attribute bekommt!
-                    if (!lhm2.containsKey("anzahl") || !lhm2.containsKey("isin") || !lhm2.containsKey("preis")) {
-                        return null;
+                    if (lhm2.containsKey("anzahl") || lhm2.containsKey("isin") || lhm2.containsKey("preis")) {
+                        
+                        
                     }
                     //int anzahl = (int) lhm2.get("anzahl");
                     //for (int i = 1; i <= anzahl; i = i + 1) {
                   
                    
-                     tmp.getDepot().aktie_kaufen((String) lhm2.get("isin"),(int) lhm2.get("anzahl"), Float.parseFloat((String) lhm2.get("preis")));
+                    tmp.getDepot().aktie_kaufen(lhm2.get("isin").toString(),(int) lhm2.get("anzahl"), (Double) lhm2.get("preis"));
 
                     //}
                 }
                 al.add(tmp);
+            }
             }
         } catch (FirebaseException ex) {
             Logger.getLogger(FirebaseZugriff.class.getName()).log(Level.SEVERE, null, ex);

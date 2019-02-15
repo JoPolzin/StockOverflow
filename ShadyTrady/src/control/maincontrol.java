@@ -506,6 +506,7 @@ public class maincontrol {
             
             this.getB().setKontostand((int) (this.b.getKontostand() + aktienWert * Stückzahl));
             this.fz.aendereBenutzer(this.b);
+            this.b = fz.EinenBenutzerAuslesen(b.getBenutzername());
             this.t = true;
             
         } else {
