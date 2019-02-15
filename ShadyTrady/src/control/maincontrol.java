@@ -263,12 +263,13 @@ public class maincontrol {
         }
         Benutzer b = null;
         b = fz.EinenBenutzerAuslesen(benutzername);
-        if (b == null) {
+       
+        if (!b.Dflt) {
             System.out.println("Falscher Benutzer");
             JOptionPane.showMessageDialog(null, "Der Benutzer existiert nicht.");
             return;
         }
-        if (b.getPasswort().equals(password)) {
+        else if (b.getPasswort().equals(password)) {
 
             this.stockOverflowGUI.getLogInGUI().setText("Logout");
             this.b = b;

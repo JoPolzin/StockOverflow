@@ -1,3 +1,4 @@
+
 /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
@@ -70,7 +71,7 @@ public class Benutzer {
      * Name des Passwortes
      */
     private String Passwort;
-
+public  boolean Dflt; 
     /**
      * Name der Email
      */
@@ -91,6 +92,11 @@ public class Benutzer {
 
     public Benutzer() {
         depot = new Aktienkonto();
+    }
+    
+    public Benutzer(boolean Default) {
+        depot = new Aktienkonto();
+        this.Dflt = Default;
     }
 
     /**

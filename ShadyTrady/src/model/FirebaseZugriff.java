@@ -322,10 +322,11 @@ public class FirebaseZugriff {
     }
 
     public Benutzer EinenBenutzerAuslesen(String benutzername) {
-        Benutzer b = new Benutzer();
+      Benutzer b = new Benutzer(false);
         FirebaseResponse response, response2;
         Iterator it;
         try {
+            
             response = firebase.get("users/" + benutzername);
             b.setBenutzername((String) response.getBody().get("benutzername"));
             b.setEmail((String) response.getBody().get("email"));
@@ -346,16 +347,20 @@ public class FirebaseZugriff {
               
                 
                 b.getDepot().aktie_kaufen(lhm2.get("isin").toString(),(int) lhm2.get("anzahl"), (Double) lhm2.get("preis"));
-
+                b.Dflt  = true;
+                return b;
             }
 
-        } catch (FirebaseException ex) {
+        } catch (FirebaseException | UnsupportedEncodingException ex) {
             Logger.getLogger(FirebaseZugriff.class.getName()).log(Level.SEVERE, null, ex);
-        } catch (UnsupportedEncodingException ex) {
-            Logger.getLogger(FirebaseZugriff.class.getName()).log(Level.SEVERE, null, ex);
+        } finally {
+        
+       
+         return b;
+        
         }
 
-        return b;
+      
     }
     
     public void  ObjektLöschen(String Path, String Objekt){
