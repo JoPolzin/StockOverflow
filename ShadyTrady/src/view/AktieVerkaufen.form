@@ -103,9 +103,9 @@
       </Properties>
     </Component>
     <Component class="javax.swing.JTextPane" name="VerkaufenNameDerAktieEingabe">
-      <Properties>
-        <Property name="editable" type="boolean" value="false"/>
-      </Properties>
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="1"/>
+      </AuxValues>
     </Component>
     <Component class="javax.swing.JLabel" name="VerkaufenNameDerAktie">
       <Properties>

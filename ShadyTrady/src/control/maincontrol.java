@@ -37,7 +37,7 @@ public class maincontrol {
     
     private KaufBestätigung kaufBestätigung;
     
-    private AktieVerkaufen aktieVerkaufen;
+    public AktieVerkaufen aktieVerkaufen;
     
     private VerkaufBestätigung verkaufBestätigung;
     
@@ -679,6 +679,15 @@ public class maincontrol {
         OA.prepareDocument(this.aktieAnsehen.ausgewählteISIN);
         this.aktieKaufen.KaufenPreisProStückEingabe.setText(""+OA.getAsk());  
         this.t = true;
+    }
+    
+    public void AktieVerkaufenInitilalisieren(String isin){
+        this.aktieVerkaufen.VerkaufenNameDerAktieEingabe.setText(isin);
+        
+        
+        
+        
+        
     }
     
     

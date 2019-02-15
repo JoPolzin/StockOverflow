@@ -51,8 +51,6 @@ public class AktieVerkaufen extends javax.swing.JFrame {
         StockOverflowVerkaufen.setFont(new java.awt.Font("Noto Serif", 1, 36)); // NOI18N
         StockOverflowVerkaufen.setText("StockOverflow");
 
-        VerkaufenNameDerAktieEingabe.setEditable(false);
-
         VerkaufenNameDerAktie.setFont(new java.awt.Font("Noto Serif", 0, 11)); // NOI18N
         VerkaufenNameDerAktie.setText("Name der Aktie");
 
@@ -202,7 +200,7 @@ public class AktieVerkaufen extends javax.swing.JFrame {
     private javax.swing.JLabel VerkaufenGesamtpreis;
     private javax.swing.JTextPane VerkaufenGesamtpreisEingeben;
     private javax.swing.JLabel VerkaufenNameDerAktie;
-    private javax.swing.JTextPane VerkaufenNameDerAktieEingabe;
+    public javax.swing.JTextPane VerkaufenNameDerAktieEingabe;
     private javax.swing.JLabel VerkaufenPreisProStück;
     private javax.swing.JTextPane VerkaufenPreisProStückEingeben;
     private javax.swing.JLabel VerkaufenStückzahl;
