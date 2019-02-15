@@ -58,7 +58,8 @@ public class maincontrol {
 
     private Loading loading;
 
-    public String letztesFenster;
+    public String aktFenster = "StockOverflowGUI";
+    public String letztesFenster = "StockOverflowGUI";
 
     private String aktIsin;
 
@@ -180,7 +181,10 @@ public class maincontrol {
         eigenesDepot.setVisible(false);
         stockOverflowGUI.setVisible(false);
         getLeaderboard().setVisible(false);
-        letztesFenster = Guiname;
+        if (!this.aktFenster.equals(Guiname)) {
+            letztesFenster = aktFenster;
+            aktFenster = Guiname;
+        }
         switch (Guiname) {
             case "AktieAnsehen":
 
@@ -191,6 +195,8 @@ public class maincontrol {
                 if (this.eingeloggt) {
                     aktieKaufen.setVisible(true);
                 } else {
+                    letztesFenster = aktFenster;
+                    aktFenster = "AnmeldeFenster";
                     anmeldeFenster.setVisible(true);
                 }
                 break;
@@ -201,6 +207,9 @@ public class maincontrol {
                 if (this.eingeloggt) {
                     aktieVerkaufen.setVisible(true);
                 } else {
+                    letztesFenster = aktFenster;
+                    aktFenster = "AnmeldeFenster";
+                    anmeldeFenster.setVisible(true);
                     anmeldeFenster.setVisible(true);
                 }
                 break;
@@ -218,8 +227,12 @@ public class maincontrol {
                 break;
             case "ProfilFenster":
                 if (eingeloggt) {
+
                     profilFenster.setVisible(true);
                 } else {
+                    letztesFenster = aktFenster;
+                    aktFenster = "AnmeldeFenster";
+
                     anmeldeFenster.setVisible(true);
                 }
                 break;
@@ -228,6 +241,9 @@ public class maincontrol {
                     this.Depotausgeben();
                     eigenesDepot.setVisible(true);
                 } else {
+                    letztesFenster = aktFenster;
+                    aktFenster = "AnmeldeFenster";
+
                     anmeldeFenster.setVisible(true);
                 }
                 break;
@@ -263,13 +279,12 @@ public class maincontrol {
         }
         Benutzer b = null;
         b = fz.EinenBenutzerAuslesen(benutzername);
-       
+
         if (!b.Dflt) {
             System.out.println("Falscher Benutzer");
             JOptionPane.showMessageDialog(null, "Der Benutzer existiert nicht.");
             return;
-        }
-        else if (b.getPasswort().equals(password)) {
+        } else if (b.getPasswort().equals(password)) {
 
             this.stockOverflowGUI.getLogInGUI().setText("Logout");
             this.b = b;
@@ -312,7 +327,7 @@ public class maincontrol {
         }*/
         this.al = fz.benutzerAuslesen();
         for (Benutzer b : getAl()) {
-            if (this.fz.WertEinerReferenz("users/"+benutzername, "benutzername")!=null) {
+            if (this.fz.WertEinerReferenz("users/" + benutzername, "benutzername") != null) {
                 JOptionPane.showMessageDialog(null, "Benutzername schon vergeben");
                 return false;
             }
