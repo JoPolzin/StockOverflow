@@ -73,7 +73,7 @@ public class maincontrol {
      * Variable für den Timer. Wenn true läuft der Timer.
      * 
      */
-    private boolean t = true;
+    public boolean t = true;
     /**
      * Speichert temporär die Daten der Aktien für das Leaderboard.
      * 

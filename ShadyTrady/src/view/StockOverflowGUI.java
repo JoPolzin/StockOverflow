@@ -924,7 +924,9 @@ public class StockOverflowGUI extends javax.swing.JFrame {
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
         c.switchTo("AktieAnsehen");
+        this.c.t = false;
         c.AktieDatenInitialisieren(OA.getDNS().get(OA.getDNSString().get(this.c.getX())), OA.getDNSString().get(this.c.getX()));
+        this.c.t = true;
     }//GEN-LAST:event_jButton2ActionPerformed
 
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
