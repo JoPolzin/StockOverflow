@@ -311,7 +311,7 @@ public class maincontrol {
         }*/
         this.al = fz.benutzerAuslesen();
         for (Benutzer b : getAl()) {
-            if (b.getBenutzername().equalsIgnoreCase(benutzername)) {
+            if (this.fz.WertEinerReferenz("users/"+benutzername, "benutzername")!=null) {
                 JOptionPane.showMessageDialog(null, "Benutzername schon vergeben");
                 return false;
             }
