@@ -71,7 +71,7 @@ public class maincontrol {
     private Anpasser anpasser;
     private int x;
     /**
-     * Variable für den Timer. Wenn true läuft der Timer.
+     * Variable für den Timer. Wenn true läuft der Timer weiter.
      *
      */
     public boolean t = true;
