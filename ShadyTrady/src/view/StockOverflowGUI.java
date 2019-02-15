@@ -229,6 +229,11 @@ public class StockOverflowGUI extends javax.swing.JFrame {
         TFPreis1.setEditable(false);
 
         TFChange1.setEditable(false);
+        TFChange1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                TFChange1ActionPerformed(evt);
+            }
+        });
 
         TFAktie2.setEditable(false);
         TFAktie2.addActionListener(new java.awt.event.ActionListener() {
@@ -687,7 +692,7 @@ public class StockOverflowGUI extends javax.swing.JFrame {
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addComponent(TFPreis1, javax.swing.GroupLayout.PREFERRED_SIZE, 82, javax.swing.GroupLayout.PREFERRED_SIZE)
                                     .addComponent(jLabel2))
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addComponent(jLabel3)
                                     .addGroup(layout.createSequentialGroup()
@@ -695,7 +700,7 @@ public class StockOverflowGUI extends javax.swing.JFrame {
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                                         .addComponent(jButton2))))
                             .addComponent(AktienGUIÜberschrift))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 54, Short.MAX_VALUE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addComponent(Leaderboard)
                         .addGap(54, 54, 54))))
             .addGroup(layout.createSequentialGroup()
@@ -709,7 +714,7 @@ public class StockOverflowGUI extends javax.swing.JFrame {
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                         .addComponent(LogInGUI, javax.swing.GroupLayout.PREFERRED_SIZE, 83, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(16, 16, 16)))
-                .addGap(0, 0, Short.MAX_VALUE))
+                .addGap(0, 5, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -1011,6 +1016,10 @@ public class StockOverflowGUI extends javax.swing.JFrame {
         c.timerReset();
         c.AktienDatenInitialisieren(x);
     }//GEN-LAST:event_NaechsteSeiteActionPerformed
+
+    private void TFChange1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_TFChange1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_TFChange1ActionPerformed
 
     /**
      * @param args the command line arguments
