@@ -48,6 +48,7 @@ public class RegistrierFenster extends javax.swing.JFrame {
         RegistrierenEmailEingeben = new javax.swing.JTextField();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setResizable(false);
 
         StockOverflowRegistrierung.setFont(new java.awt.Font("Noto Serif", 1, 36)); // NOI18N
         StockOverflowRegistrierung.setText("StockOverflow");

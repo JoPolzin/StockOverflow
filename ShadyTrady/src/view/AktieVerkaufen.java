@@ -47,6 +47,7 @@ public class AktieVerkaufen extends javax.swing.JFrame {
         VerkaufenVerkaufen = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setResizable(false);
 
         StockOverflowVerkaufen.setFont(new java.awt.Font("Noto Serif", 1, 36)); // NOI18N
         StockOverflowVerkaufen.setText("StockOverflow");

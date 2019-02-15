@@ -40,6 +40,7 @@ public class AbmeldeBestätigung extends javax.swing.JFrame {
         NachrichtAbmeldeBestätigung = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setResizable(false);
 
         StockOverflowAbmeldeBestätigung.setFont(new java.awt.Font("Noto Serif", 1, 36)); // NOI18N
         StockOverflowAbmeldeBestätigung.setText("StockOverflow");

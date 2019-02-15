@@ -118,6 +118,7 @@ public class EigenesDepot extends javax.swing.JFrame {
         Aktualisieren = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setResizable(false);
 
         TFAktie.setEditable(false);
 

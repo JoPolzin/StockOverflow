@@ -81,6 +81,7 @@ public class AktieAnsehen extends javax.swing.JFrame {
         jCheckBoxMenuItem1.setText("jCheckBoxMenuItem1");
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setResizable(false);
         addComponentListener(new java.awt.event.ComponentAdapter() {
             public void componentShown(java.awt.event.ComponentEvent evt) {
                 formComponentShown(evt);
@@ -182,7 +183,6 @@ public class AktieAnsehen extends javax.swing.JFrame {
             }
         });
 
-        ISIN.setEditable(false);
         ISIN.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 ISINActionPerformed(evt);

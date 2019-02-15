@@ -40,6 +40,7 @@ public class VerkaufBestätigung extends javax.swing.JFrame {
         NachrichtVerkaufBestätigung = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setResizable(false);
 
         StockOverflowAnmeldung.setFont(new java.awt.Font("Noto Serif", 1, 36)); // NOI18N
         StockOverflowAnmeldung.setText("StockOverflow");

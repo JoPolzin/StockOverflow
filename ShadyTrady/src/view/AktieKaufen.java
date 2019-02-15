@@ -48,6 +48,7 @@ public class AktieKaufen extends javax.swing.JFrame {
         KaufenKaufen = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setResizable(false);
 
         StockOverflowKaufen.setFont(new java.awt.Font("Noto Serif", 1, 36)); // NOI18N
         StockOverflowKaufen.setText("StockOverflow");

@@ -45,6 +45,7 @@ public class AnmeldeFenster extends javax.swing.JFrame {
         AnmeldenBenutzernameEingeben = new javax.swing.JTextField();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setResizable(false);
 
         StockOverflowAnmeldung.setFont(new java.awt.Font("Noto Serif", 1, 36)); // NOI18N
         StockOverflowAnmeldung.setText("StockOverflow");

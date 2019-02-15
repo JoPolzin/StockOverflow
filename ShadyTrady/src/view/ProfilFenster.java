@@ -48,6 +48,7 @@ public class ProfilFenster extends javax.swing.JFrame {
         ProfilLöschen = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setResizable(false);
 
         StockOverflowProfil.setFont(new java.awt.Font("Noto Serif", 1, 36)); // NOI18N
         StockOverflowProfil.setText("StockOverflow");
