@@ -106,6 +106,11 @@ public class ProfilFenster extends javax.swing.JFrame {
 
         ProfilLöschen.setFont(new java.awt.Font("Noto Serif", 0, 14)); // NOI18N
         ProfilLöschen.setText("Profil Löschen");
+        ProfilLöschen.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                ProfilLöschenActionPerformed(evt);
+            }
+        });
 
         ProfilGesamtwertAnzeigen.setEditable(false);
         ProfilGesamtwertAnzeigen.setFont(new java.awt.Font("Penultimate", 0, 11)); // NOI18N
@@ -234,6 +239,10 @@ public class ProfilFenster extends javax.swing.JFrame {
     private void ProfilLogOutActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ProfilLogOutActionPerformed
        this.c.logout();
     }//GEN-LAST:event_ProfilLogOutActionPerformed
+
+    private void ProfilLöschenActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ProfilLöschenActionPerformed
+        this.c.benutzerloeschen();
+    }//GEN-LAST:event_ProfilLöschenActionPerformed
 
     /**
      * @param args the command line arguments

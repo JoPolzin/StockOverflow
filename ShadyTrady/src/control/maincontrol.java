@@ -737,5 +737,15 @@ public class maincontrol {
         this.profilFenster.getProfilGesamtwertAnzeigen().setText(Double.toString(this.b.GesamtKapital()));
         
     }
+    
+    public void benutzerloeschen(){
+    
+    
+     fz.ObjektLöschen("depots/", b.getBenutzername());
+     fz.ObjektLöschen("users/", b.getBenutzername());
+     this.logout();
+     
+    
+    }
 
 }

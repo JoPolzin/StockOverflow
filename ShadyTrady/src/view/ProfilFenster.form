@@ -215,6 +215,9 @@
         </Property>
         <Property name="text" type="java.lang.String" value="Profil L&#xf6;schen"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="ProfilL&#xf6;schenActionPerformed"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JTextPane" name="ProfilGesamtwertAnzeigen">
       <Properties>
