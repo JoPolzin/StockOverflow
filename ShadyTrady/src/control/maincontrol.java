@@ -221,6 +221,7 @@ public class maincontrol {
                 break;
             case "AnmeldeFenster":
                 if (eingeloggt) {
+                    this.ProfilfensterFensterInit();
                     profilFenster.setVisible(true);
 
                 } else {
