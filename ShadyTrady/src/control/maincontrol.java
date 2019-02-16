@@ -454,7 +454,7 @@ public class maincontrol {
 
     public void aktiekaufen(String isin, Integer Stückzahl) {
 
-        if (this.eingeloggt) {
+        if (this.eingeloggt ) {
             //getB().setKontostand(getB().getKontostand() - Preis);
             //getB().getDepot().aktie_kaufen(isin, Stückzahl, Preis);
             this.t = false;
@@ -526,7 +526,8 @@ public class maincontrol {
     }
 
     public void aktieverkaufen(String isin, Integer Stückzahl) {
-        if (this.eingeloggt) {
+        if (this.eingeloggt ) {
+            if (Stückzahl <= this.b.getDepot().getGekaufte_Aktien().get(isin)){
             this.t = false;
             OA.prepareDocument(isin);
             double aktienWert = OA.getAsk();
@@ -537,7 +538,12 @@ public class maincontrol {
             this.b = fz.EinenBenutzerAuslesen(b.getBenutzername());
             this.t = true;
             this.switchTo("EigenesDepot");
-
+            }
+            else {
+                JOptionPane.showMessageDialog(null, "zu wenig Aktien im Depot");
+            
+            
+            }
         } else {
             this.switchTo("AnmeldeFenster");
 

@@ -45,6 +45,8 @@ public class Loading extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setResizable(false);
 
+        jProgressBar1.setForeground(new java.awt.Color(6, 86, 110));
+
         jLabel1.setText("Loading...");
 
         jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/view/Kugel.gif"))); // NOI18N
