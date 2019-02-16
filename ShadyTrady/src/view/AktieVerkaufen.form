@@ -125,6 +125,9 @@
       </Properties>
     </Component>
     <Component class="javax.swing.JTextPane" name="VerkaufenSt&#xfc;ckzahlEingeben">
+      <Events>
+        <EventHandler event="keyTyped" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="VerkaufenSt&#xfc;ckzahlEingebenKeyTyped"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JLabel" name="VerkaufenPreisProSt&#xfc;ck">
       <Properties>

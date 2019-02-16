@@ -5,6 +5,7 @@
  */
 package view;
 import control.maincontrol;
+import javax.swing.JTextPane;
 
 
 /**
@@ -57,6 +58,12 @@ public class AktieVerkaufen extends javax.swing.JFrame {
 
         VerkaufenStückzahl.setFont(new java.awt.Font("Noto Serif", 0, 11)); // NOI18N
         VerkaufenStückzahl.setText("Stückzahl");
+
+        VerkaufenStückzahlEingeben.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                VerkaufenStückzahlEingebenKeyTyped(evt);
+            }
+        });
 
         VerkaufenPreisProStück.setFont(new java.awt.Font("Noto Serif", 0, 11)); // NOI18N
         VerkaufenPreisProStück.setText("Preis pro Stück");
@@ -152,6 +159,35 @@ public class AktieVerkaufen extends javax.swing.JFrame {
     private void VerkaufenVerkaufenActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_VerkaufenVerkaufenActionPerformed
         this.c.aktieverkaufen(this.VerkaufenNameDerAktieEingabe.getText(), Integer.parseInt(this.VerkaufenStückzahlEingeben.getText()));
     }//GEN-LAST:event_VerkaufenVerkaufenActionPerformed
+
+    public JTextPane getVerkaufenPreisProStückEingeben() {
+        return VerkaufenPreisProStückEingeben;
+    }
+
+    public void setVerkaufenPreisProStückEingeben(JTextPane VerkaufenPreisProStückEingeben) {
+        this.VerkaufenPreisProStückEingeben = VerkaufenPreisProStückEingeben;
+    }
+
+    private void VerkaufenStückzahlEingebenKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_VerkaufenStückzahlEingebenKeyTyped
+        try {
+        
+
+           
+        int stueck = Integer.parseInt(this.VerkaufenStückzahlEingeben.getText());
+        if(stueck <= this.c.getB().getDepot().getGekaufte_Aktien().get(this.VerkaufenNameDerAktieEingabe.getText())){
+        double preis = Double.parseDouble(this.VerkaufenPreisProStückEingeben.getText());
+        this.VerkaufenGesamtpreisEingeben.setText(Double.toString(stueck * preis) );}
+        else{
+         this.VerkaufenGesamtpreisEingeben.setText("fehler");
+        
+        }
+
+        }
+        catch(Exception e){
+        
+        System.out.println(e);
+        }
+    }//GEN-LAST:event_VerkaufenStückzahlEingebenKeyTyped
 
     /**
      * @param args the command line arguments

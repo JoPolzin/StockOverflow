@@ -63,6 +63,11 @@ public class AktieKaufen extends javax.swing.JFrame {
         KaufenNameDerAaktie.setText("Name der Aktie");
 
         KaufenStückzahlEingabe.setBorder(javax.swing.BorderFactory.createEtchedBorder());
+        KaufenStückzahlEingabe.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                KaufenStückzahlEingabeKeyTyped(evt);
+            }
+        });
 
         KaufenPreisProStück.setFont(new java.awt.Font("Noto Serif", 0, 11)); // NOI18N
         KaufenPreisProStück.setText("Preis pro Stück");
@@ -74,6 +79,11 @@ public class AktieKaufen extends javax.swing.JFrame {
         KaufenStückzaahl.setText("Stückzahl");
 
         KaufenGesamtpreisEingabe.setEditable(false);
+        KaufenGesamtpreisEingabe.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                KaufenGesamtpreisEingabeKeyTyped(evt);
+            }
+        });
 
         KaufenAbbrechen.setFont(new java.awt.Font("Noto Serif", 0, 11)); // NOI18N
         KaufenAbbrechen.setText("Abbrechen");
@@ -158,6 +168,39 @@ public class AktieKaufen extends javax.swing.JFrame {
 
     private void KaufenAbbrechenActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_KaufenAbbrechenActionPerformed
         this.c.switchTo("StockOverflowGUI");    }//GEN-LAST:event_KaufenAbbrechenActionPerformed
+
+    private void KaufenGesamtpreisEingabeKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_KaufenGesamtpreisEingabeKeyTyped
+        try {
+               
+        this.KaufenGesamtpreisEingabe.setText(Double.toString(Integer.parseInt(this.KaufenStückzahlEingabe.getText()) * Double.parseDouble(this.KaufenPreisProStückEingabe.getText())));
+
+        }
+        catch(Exception e){
+        
+        System.out.println(e);
+        }
+    }//GEN-LAST:event_KaufenGesamtpreisEingabeKeyTyped
+
+    private void KaufenStückzahlEingabeKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_KaufenStückzahlEingabeKeyTyped
+       try {
+         System.out.println(this.KaufenStückzahlEingabe.getText());
+
+           
+        int stueck = Integer.parseInt(this.KaufenStückzahlEingabe.getText());
+        
+        System.out.println(stueck);
+        
+        double preis = Double.parseDouble(this.KaufenPreisProStückEingabe.getText());
+               
+        
+        this.KaufenGesamtpreisEingabe.setText(Double.toString(stueck * preis) );
+
+        }
+        catch(Exception e){
+        
+        System.out.println(e);
+        }
+    }//GEN-LAST:event_KaufenStückzahlEingabeKeyTyped
 
     /**
      * @param args the command line arguments

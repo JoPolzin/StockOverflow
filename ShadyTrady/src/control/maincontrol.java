@@ -535,6 +535,7 @@ public class maincontrol {
             this.fz.aendereBenutzer(this.b);
             this.b = fz.EinenBenutzerAuslesen(b.getBenutzername());
             this.t = true;
+            this.switchTo("EigenesDepot");
 
         } else {
             this.switchTo("AnmeldeFenster");
@@ -721,6 +722,9 @@ public class maincontrol {
 
     public void AktieVerkaufenInitilalisieren(String isin) {
         this.aktieVerkaufen.VerkaufenNameDerAktieEingabe.setText(isin);
+        OA.prepareDocument(isin);
+        this.aktieVerkaufen.getVerkaufenPreisProStückEingeben().setText("" + OA.getAsk());
+        
 
     }
 
