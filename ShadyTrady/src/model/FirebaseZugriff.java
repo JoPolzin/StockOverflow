@@ -321,21 +321,22 @@ public class FirebaseZugriff {
 
     }
 
-    public Benutzer EinenBenutzerAuslesen(String benutzername) {
-      Benutzer b = new Benutzer(false);
+ 
+    
+     public Benutzer EinenBenutzerAuslesen(String benutzername) {
+        Benutzer b = new Benutzer();
+        b.Dflt = false;
         FirebaseResponse response, response2;
         Iterator it;
         try {
-             
             response = firebase.get("users/" + benutzername);
+            if (response.getBody().get("benutzername") != null){
             b.setBenutzername((String) response.getBody().get("benutzername"));
-            System.out.println(b.getBenutzername());
+            
+           
             b.setEmail((String) response.getBody().get("email"));
-            System.out.println(b.getEmail());
             b.setKontostand((double) response.getBody().get("kontostand"));
-            System.out.println(b.getKontostand());
             b.setPasswort((String) response.getBody().get("passwort"));
-             b.Dflt  = true;
             response2 = firebase.get("depots/" + benutzername);
             it = response2.getBody().entrySet().iterator();
             while (it.hasNext()) {
@@ -351,20 +352,17 @@ public class FirebaseZugriff {
               
                 
                 b.getDepot().aktie_kaufen(lhm2.get("isin").toString(),(int) lhm2.get("anzahl"), (Double) lhm2.get("preis"));
-               
-                return b;
-            }
 
-        } catch (FirebaseException | UnsupportedEncodingException ex) {
+            }
+            b.Dflt = true;
+            }
+        } catch (FirebaseException ex) {
             Logger.getLogger(FirebaseZugriff.class.getName()).log(Level.SEVERE, null, ex);
-        } finally {
-        
-       
-         return b;
-        
+        } catch (UnsupportedEncodingException ex) {
+            Logger.getLogger(FirebaseZugriff.class.getName()).log(Level.SEVERE, null, ex);
         }
 
-      
+        return b;
     }
     
     public void  ObjektLöschen(String Path, String Objekt){
