@@ -399,7 +399,24 @@ public class FirebaseZugriff {
             
             this.ObjektLöschen("depots/"+c.getB().getBenutzername(), isin);
         }
-       
+    }
+        
+        
+         public void passwortAktualisieren(String Password){
+        
+        /**     
+            
+        try {
+            this.ObjektLöschen("depots/"+c.getB().getBenutzername(), "passwort");
+            this.firebase.patch("depots/"+c.getB().getBenutzername(), "passwort");
+            this.firebase.patch("depots/"+c.getB().getBenutzername()+"/passwort" , Password);
+        } catch (UnsupportedEncodingException ex) {
+            Logger.getLogger(FirebaseZugriff.class.getName()).log(Level.SEVERE, null, ex);
+        } catch (FirebaseException ex) {
+            Logger.getLogger(FirebaseZugriff.class.getName()).log(Level.SEVERE, null, ex);
+        }
+      
+       **/
         
         
         

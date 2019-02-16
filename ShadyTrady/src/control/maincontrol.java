@@ -747,5 +747,14 @@ public class maincontrol {
      
     
     }
+    
+    public void passwortaendern(String p){
+        
+        
+        
+        fz.passwortAktualisieren(p);
+         JOptionPane.showMessageDialog(null, "Passwort geandert.");
+        
+    }
 
 }

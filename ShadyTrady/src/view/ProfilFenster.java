@@ -67,7 +67,6 @@ public class ProfilFenster extends javax.swing.JFrame {
         ProfilPasswort.setFont(new java.awt.Font("Noto Serif", 0, 11)); // NOI18N
         ProfilPasswort.setText("Passwort");
 
-        ProfilPasswortAnzeigen.setEditable(false);
         ProfilPasswortAnzeigen.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 ProfilPasswortAnzeigenActionPerformed(evt);
@@ -217,7 +216,7 @@ public class ProfilFenster extends javax.swing.JFrame {
     }//GEN-LAST:event_ProfilPasswortAnzeigenActionPerformed
 
     private void ProfilPasswortÄndernActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ProfilPasswortÄndernActionPerformed
-        // TODO add your handling code here:
+       this.c.passwortaendern(new String(this.ProfilPasswortAnzeigen.getPassword()));
     }//GEN-LAST:event_ProfilPasswortÄndernActionPerformed
 
     public JTextPane getProfilBenutzername() {
