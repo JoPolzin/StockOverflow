@@ -6,6 +6,7 @@
 package view;
 import control.maincontrol;
 import java.util.Arrays;
+import javax.swing.JTextPane;
 
 
 /**
@@ -46,6 +47,10 @@ public class ProfilFenster extends javax.swing.JFrame {
         ProfilGuthaben = new javax.swing.JLabel();
         ProfilLogOut = new javax.swing.JButton();
         ProfilLöschen = new javax.swing.JButton();
+        ProfilGesamtwertAnzeigen = new javax.swing.JTextPane();
+        ProfilGuthaben1 = new javax.swing.JLabel();
+        ProfilemailAnzeige = new javax.swing.JTextPane();
+        ProfilBenutzernameAnzeigen1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setResizable(false);
@@ -102,6 +107,18 @@ public class ProfilFenster extends javax.swing.JFrame {
         ProfilLöschen.setFont(new java.awt.Font("Noto Serif", 0, 14)); // NOI18N
         ProfilLöschen.setText("Profil Löschen");
 
+        ProfilGesamtwertAnzeigen.setEditable(false);
+        ProfilGesamtwertAnzeigen.setFont(new java.awt.Font("Penultimate", 0, 11)); // NOI18N
+
+        ProfilGuthaben1.setFont(new java.awt.Font("Noto Serif", 0, 11)); // NOI18N
+        ProfilGuthaben1.setText("Gesmantwert");
+
+        ProfilemailAnzeige.setEditable(false);
+        ProfilemailAnzeige.setFont(new java.awt.Font("Penultimate", 0, 11)); // NOI18N
+
+        ProfilBenutzernameAnzeigen1.setFont(new java.awt.Font("Noto Serif", 0, 11)); // NOI18N
+        ProfilBenutzernameAnzeigen1.setText("E-mail");
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -110,11 +127,7 @@ public class ProfilFenster extends javax.swing.JFrame {
                 .addGap(36, 36, 36)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(ProfilPasswort)
-                    .addComponent(ProfilBenutzernameAnzeigen)
                     .addComponent(StockOverflowProfil)
-                    .addComponent(ProfilBenutzername, javax.swing.GroupLayout.PREFERRED_SIZE, 115, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(ProfilGuthaben)
-                    .addComponent(ProfilGuthabneAnzeigen, javax.swing.GroupLayout.PREFERRED_SIZE, 115, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGroup(layout.createSequentialGroup()
                         .addComponent(ProfilPasswortAnzeigen, javax.swing.GroupLayout.PREFERRED_SIZE, 117, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -124,7 +137,23 @@ public class ProfilFenster extends javax.swing.JFrame {
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                             .addComponent(ProfilAbbrechen, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                             .addComponent(ProfilLogOut, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(ProfilLöschen, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
+                            .addComponent(ProfilLöschen, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(ProfilGuthaben)
+                            .addComponent(ProfilGuthabneAnzeigen, javax.swing.GroupLayout.PREFERRED_SIZE, 115, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(ProfilGesamtwertAnzeigen, javax.swing.GroupLayout.PREFERRED_SIZE, 115, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(ProfilGuthaben1)))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(ProfilBenutzernameAnzeigen)
+                            .addComponent(ProfilBenutzername, javax.swing.GroupLayout.PREFERRED_SIZE, 115, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(ProfilemailAnzeige, javax.swing.GroupLayout.PREFERRED_SIZE, 115, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(ProfilBenutzernameAnzeigen1))))
                 .addContainerGap(39, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
@@ -133,14 +162,26 @@ public class ProfilFenster extends javax.swing.JFrame {
                 .addContainerGap()
                 .addComponent(StockOverflowProfil)
                 .addGap(20, 20, 20)
-                .addComponent(ProfilBenutzernameAnzeigen)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(ProfilBenutzername, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(ProfilGuthaben)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(ProfilGuthabneAnzeigen, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addGroup(layout.createSequentialGroup()
+                        .addComponent(ProfilBenutzernameAnzeigen)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(ProfilBenutzername, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(layout.createSequentialGroup()
+                        .addComponent(ProfilBenutzernameAnzeigen1)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(ProfilemailAnzeige, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addGap(18, 18, 18)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addGroup(layout.createSequentialGroup()
+                        .addComponent(ProfilGuthaben)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(ProfilGuthabneAnzeigen, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(layout.createSequentialGroup()
+                        .addComponent(ProfilGuthaben1)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(ProfilGesamtwertAnzeigen, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(ProfilPasswort)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
@@ -173,6 +214,22 @@ public class ProfilFenster extends javax.swing.JFrame {
     private void ProfilPasswortÄndernActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ProfilPasswortÄndernActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_ProfilPasswortÄndernActionPerformed
+
+    public JTextPane getProfilBenutzername() {
+        return ProfilBenutzername;
+    }
+
+    public JTextPane getProfilGesamtwertAnzeigen() {
+        return ProfilGesamtwertAnzeigen;
+    }
+
+    public JTextPane getProfilGuthabneAnzeigen() {
+        return ProfilGuthabneAnzeigen;
+    }
+
+    public JTextPane getProfilemailAnzeige() {
+        return ProfilemailAnzeige;
+    }
 
     private void ProfilLogOutActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ProfilLogOutActionPerformed
        this.c.logout();
@@ -224,13 +281,17 @@ public class ProfilFenster extends javax.swing.JFrame {
     private javax.swing.JButton ProfilAbbrechen;
     private javax.swing.JTextPane ProfilBenutzername;
     private javax.swing.JLabel ProfilBenutzernameAnzeigen;
+    private javax.swing.JLabel ProfilBenutzernameAnzeigen1;
+    private javax.swing.JTextPane ProfilGesamtwertAnzeigen;
     private javax.swing.JLabel ProfilGuthaben;
+    private javax.swing.JLabel ProfilGuthaben1;
     private javax.swing.JTextPane ProfilGuthabneAnzeigen;
     private javax.swing.JButton ProfilLogOut;
     private javax.swing.JButton ProfilLöschen;
     private javax.swing.JLabel ProfilPasswort;
     private javax.swing.JPasswordField ProfilPasswortAnzeigen;
     private javax.swing.JButton ProfilPasswortÄndern;
+    private javax.swing.JTextPane ProfilemailAnzeige;
     private javax.swing.JLabel StockOverflowProfil;
     // End of variables declaration//GEN-END:variables
 }

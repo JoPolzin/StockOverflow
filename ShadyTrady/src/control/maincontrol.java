@@ -220,19 +220,19 @@ public class maincontrol {
                 abmeldeBestätigung.setVisible(true);
                 break;
             case "AnmeldeFenster":
-                if(eingeloggt) {
-                      profilFenster.setVisible(true);
-                    
-        } else {
+                if (eingeloggt) {
+                    profilFenster.setVisible(true);
+
+                } else {
                     anmeldeFenster.setVisible(true);
-        }
+                }
                 break;
             case "RegistrierFenster":
                 registrierFenster.setVisible(true);
                 break;
             case "ProfilFenster":
                 if (eingeloggt) {
-
+                    this.ProfilfensterFensterInit();
                     profilFenster.setVisible(true);
                 } else {
                     letztesFenster = aktFenster;
@@ -294,7 +294,7 @@ public class maincontrol {
             this.stockOverflowGUI.getLogInGUI().setText("Logout");
             this.b = b;
             this.eingeloggt = true;
-            
+
             System.out.println("Login erfolgreich");
             JOptionPane.showMessageDialog(null, "Login erfolgreich.\n Angemeldeter Benutzer:\n" + b.toString());
             System.out.println(this.b.getDepot().toString());
@@ -722,6 +722,15 @@ public class maincontrol {
     public void AktieVerkaufenInitilalisieren(String isin) {
         this.aktieVerkaufen.VerkaufenNameDerAktieEingabe.setText(isin);
 
+    }
+
+    public void ProfilfensterFensterInit() {
+
+        this.profilFenster.getProfilBenutzername().setText(this.b.getBenutzername());
+        this.profilFenster.getProfilemailAnzeige().setText(this.b.getEmail());
+        this.profilFenster.getProfilGuthabneAnzeigen().setText(Double.toString(this.b.getKontostand()));
+        this.profilFenster.getProfilGesamtwertAnzeigen().setText(Double.toString(this.b.GesamtKapital()));
+        
     }
 
 }
