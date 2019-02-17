@@ -399,13 +399,13 @@ public class StockOverflowGUI extends javax.swing.JFrame {
             }
         });
 
-        jLabel1.setFont(new java.awt.Font("Noto Serif", 0, 11)); // NOI18N
+        jLabel1.setFont(new java.awt.Font("Noto Serif", 0, 14)); // NOI18N
         jLabel1.setText("Name");
 
-        jLabel2.setFont(new java.awt.Font("Noto Serif", 0, 11)); // NOI18N
+        jLabel2.setFont(new java.awt.Font("Noto Serif", 0, 14)); // NOI18N
         jLabel2.setText("Preis");
 
-        jLabel3.setFont(new java.awt.Font("Noto Serif", 0, 11)); // NOI18N
+        jLabel3.setFont(new java.awt.Font("Noto Serif", 0, 14)); // NOI18N
         jLabel3.setText("Change");
 
         jButton2.setFont(new java.awt.Font("Noto Serif", 0, 11)); // NOI18N
@@ -715,7 +715,7 @@ public class StockOverflowGUI extends javax.swing.JFrame {
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                         .addComponent(LogInGUI, javax.swing.GroupLayout.PREFERRED_SIZE, 83, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(16, 16, 16)))
-                .addGap(0, 5, Short.MAX_VALUE))
+                .addGap(0, 0, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -838,7 +838,7 @@ public class StockOverflowGUI extends javax.swing.JFrame {
                     .addComponent(jButton1)
                     .addComponent(NaechsteSeite)
                     .addComponent(VorherigeSeite))
-                .addContainerGap(26, Short.MAX_VALUE))
+                .addContainerGap(23, Short.MAX_VALUE))
         );
 
         pack();

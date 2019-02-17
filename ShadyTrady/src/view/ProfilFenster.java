@@ -74,7 +74,7 @@ public class ProfilFenster extends javax.swing.JFrame {
         });
 
         ProfilAbbrechen.setFont(new java.awt.Font("Noto Serif", 0, 14)); // NOI18N
-        ProfilAbbrechen.setText("Abbrechen");
+        ProfilAbbrechen.setText("Zurück");
         ProfilAbbrechen.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 ProfilAbbrechenActionPerformed(evt);
