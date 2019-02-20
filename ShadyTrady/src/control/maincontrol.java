@@ -17,6 +17,8 @@ import javax.swing.JOptionPane;
 import view.StockOverflowGUI;
 import java.util.Timer;
 import java.util.TimerTask;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 import model.DatenSpeicher;
 
 /**
@@ -91,6 +93,13 @@ public class maincontrol {
             @Override
             public void run() {
                 while (t) {
+                    try {
+                        Thread.sleep(1000);
+                        System.out.println("Thread running");
+                        
+                    } catch (InterruptedException ex) {
+                        Logger.getLogger(maincontrol.class.getName()).log(Level.SEVERE, null, ex);
+                    }
                     AktienDatenAktualisieren(getX());
                 }
             }
@@ -168,7 +177,7 @@ public class maincontrol {
     }
 
     public void switchTo(String Guiname) {
-
+        t = false;
         getAktieAnsehen().setVisible(false);
         aktieKaufen.setVisible(false);
         kaufBestätigung.setVisible(false);
@@ -254,6 +263,7 @@ public class maincontrol {
                 }
                 break;
             case "StockOverflowGUI":
+                t = true;
                 stockOverflowGUI.setVisible(true);
                 break;
             case "Leaderboard":
@@ -425,8 +435,6 @@ public class maincontrol {
                     stockOverflowGUI.PreisFelder.get(i).setBackground(Color.white);
                 }
                 stockOverflowGUI.PreisListe.set(i, OA.getAsk());
-            } else {
-                //dont do anything...
             }
         }
         this.t = true;
@@ -440,7 +448,7 @@ public class maincontrol {
      * @param ISIN
      */
     public void AktieDatenInitialisieren(String ISIN, String name) {
-        this.t = false;
+        
         OA.prepareDocument(ISIN);
         getAktieAnsehen().Change.setText(Float.toString(OA.getChange()));
         getAktieAnsehen().Preis.setText(Float.toString(OA.getAsk()));
@@ -449,7 +457,7 @@ public class maincontrol {
         getAktieAnsehen().AktienBild.setIcon(OA.getGraph("intraday"));
         aktieAnsehen.momentanerPreis = OA.getAsk();
         aktieAnsehen.ausgewählteISIN = ISIN;
-        this.t = true;
+       
     }
 
     public void aktiekaufen(String isin, Integer Stückzahl) {
@@ -457,7 +465,7 @@ public class maincontrol {
         if (this.eingeloggt ) {
             //getB().setKontostand(getB().getKontostand() - Preis);
             //getB().getDepot().aktie_kaufen(isin, Stückzahl, Preis);
-            this.t = false;
+            
             OA.prepareDocument(isin);
             float Preis = OA.getAsk();
 
@@ -466,7 +474,7 @@ public class maincontrol {
 
             double neuer_Kontostand = Konto_Wert - neuer_preis;
             if (neuer_Kontostand <= 0) {
-                this.t = true;
+                
                 return;
             }
             b.setKontostand(neuer_Kontostand);;
@@ -486,7 +494,7 @@ public class maincontrol {
             this.switchTo("AnmeldeFenster");
 
         }
-        this.t = true;
+        
 
         this.Depotausgeben();
 
@@ -500,15 +508,8 @@ public class maincontrol {
      *
      */
     public void AktieDatenAktualisieren() {
-        this.t = false;
-        Timer timer = new Timer();
-        timer.scheduleAtFixedRate(new TimerTask() {
-            @Override
-            public void run() {
-                System.out.println("hallo");
-                // Your database code here
-            }
-        }, 2000, 2000);
+        
+        
 
         OA.prepareDocument(getAktieAnsehen().ausgewählteISIN);
         getAktieAnsehen().Change.setText(Float.toString(OA.getChange()));
@@ -522,13 +523,13 @@ public class maincontrol {
         } else {
             getAktieAnsehen().Preis.setBackground(Color.white);
         }
-        this.t = true;
+       
     }
 
     public void aktieverkaufen(String isin, Integer Stückzahl) {
         if (this.eingeloggt ) {
             if (Stückzahl <= this.b.getDepot().getGekaufte_Aktien().get(isin)){
-            this.t = false;
+           
             OA.prepareDocument(isin);
             double aktienWert = OA.getAsk();
             this.fz.AktieStückzahlAktualisieren(isin, Stückzahl, aktienWert);
@@ -536,7 +537,7 @@ public class maincontrol {
             this.getB().setKontostand(this.RundenKommastellen(this.b.getKontostand() + aktienWert * Stückzahl));
             this.fz.aendereBenutzer(this.b);
             this.b = fz.EinenBenutzerAuslesen(b.getBenutzername());
-            this.t = true;
+            
             this.switchTo("EigenesDepot");
             }
             else {
@@ -591,7 +592,7 @@ public class maincontrol {
      */
     public void LeaderboardInit() {
         this.al = this.fz.benutzerAuslesen();
-        this.t = false;
+        
         double GesamtKapital = 0;
         ArrayList<Benutzer> sortList = this.SortBenutzer(getAl());
         Collections.reverse(sortList);
@@ -618,7 +619,7 @@ public class maincontrol {
             getLeaderboard().GesamtPunktzahl.setText("" + RundenKommastellen(GesamtKapital));
 
         }
-        this.t = true;
+        
 
     }
 
@@ -721,14 +722,14 @@ public class maincontrol {
 
     public void AktieKaufenInitialisieren() {
         this.aktieKaufen.KaufenNameDerAktieEingabe.setText(this.aktieAnsehen.ausgewählteISIN);
-        this.t = false;
+       
         OA.prepareDocument(this.aktieAnsehen.ausgewählteISIN);
         this.aktieKaufen.KaufenPreisProStückEingabe.setText("" + OA.getAsk());
-        this.t = true;
+        
     }
 
     public void AktieVerkaufenInitilalisieren(String isin) {
-        this.t = false;
+       
         OA.prepareDocument(isin);
         double Preis = OA.getAsk();
         this.aktieVerkaufen.VerkaufenNameDerAktieEingabe.setText(isin);
@@ -736,7 +737,7 @@ public class maincontrol {
         this.aktieVerkaufen.VerkaufenGewinnAusgabe.setText(""+this.RundenKommastellen(Math.abs(Preis-(double)this.fz.WertEinerReferenz("depots/"+b.getBenutzername()+"/"+isin, "preis"))));
         
         
-        t = true;
+       
 
     }
 

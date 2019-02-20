@@ -213,7 +213,7 @@ public class StockOverflowGUI extends javax.swing.JFrame {
         AktienGUIÜberschrift.setText("Aktien");
 
         jButton1.setFont(new java.awt.Font("Noto Serif", 0, 11)); // NOI18N
-        jButton1.setText("Weitere Aktien");
+        jButton1.setText("ISIN eingeben");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton1ActionPerformed(evt);
