@@ -82,7 +82,7 @@ public class FirebaseZugriff {
                 tmp.setEmail((String) lhm.get("email"));
                 
 
-                tmp.setKontostand((Double)lhm.get("kontostand"));
+                tmp.setKontostand((double)lhm.get("kontostand"));
                 tmp.setPasswort((String) lhm.get("passwort"));
                 response2 = firebase.get("depots/" + tmp.getBenutzername());
 

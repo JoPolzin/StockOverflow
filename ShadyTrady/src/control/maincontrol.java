@@ -461,10 +461,10 @@ public class maincontrol {
             OA.prepareDocument(isin);
             float Preis = OA.getAsk();
 
-            int neuer_preis = (int) Math.round(Preis) * Stückzahl;
-            int Konto_Wert = (int) Math.round((double) getFz().WertEinerReferenz("users/" + b.getBenutzername(), "kontostand"));
+            double neuer_preis =  Preis * Stückzahl;
+            double Konto_Wert =  (double) getFz().WertEinerReferenz("users/" + b.getBenutzername(), "kontostand");
 
-            int neuer_Kontostand = Konto_Wert - neuer_preis;
+            double neuer_Kontostand = Konto_Wert - neuer_preis;
             if (neuer_Kontostand <= 0) {
                 this.t = true;
                 return;
