@@ -46,6 +46,16 @@ public class FirebaseZugriff {
         }
 
     }
+    public FirebaseZugriff(){
+        try {
+            firebase = new Firebase(firebase_baseUrl);
+
+        } catch (FirebaseException ex) {
+            Logger.getLogger(FirebaseZugriff.class.getName()).log(Level.SEVERE, null, ex);
+        }
+        
+    }
+    
 
     /**
      * Die Methode benutzerAuslesen() liest alle als Benutzer in der Firebase
@@ -422,6 +432,23 @@ public class FirebaseZugriff {
         
         
     }
+         
+         public boolean WertEinerReferenzVerändern(String Reference, String child, String Wert) {
+        Map<String, Object> dataMap = new LinkedHashMap<String, Object>();
+        dataMap.put(child, Wert);
+        try {
+            FirebaseResponse response = firebase.patch(Reference, dataMap);
+            return true;
+        } catch (FirebaseException ex) {
+            return false;
+        } catch (JacksonUtilityException ex) {
+            return false;
+        } catch (UnsupportedEncodingException ex) {
+            return false;
+        }
+
+    }
+         
     
     
     

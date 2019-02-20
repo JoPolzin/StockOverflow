@@ -591,8 +591,9 @@ public class maincontrol {
      * Initialisiert das Leaderboard.
      */
     public void LeaderboardInit() {
-        this.al = this.fz.benutzerAuslesen();
         
+        if(fz.WertEinerReferenz("Config/AllowLeaderboard", "AllowLeaderboard").equals("true")){
+            this.al = this.fz.benutzerAuslesen();
         double GesamtKapital = 0;
         ArrayList<Benutzer> sortList = this.SortBenutzer(getAl());
         Collections.reverse(sortList);
@@ -621,6 +622,12 @@ public class maincontrol {
         }
         
 
+    }else{
+            JOptionPane.showMessageDialog(null, "Bitte aktualisiere deine Version. Das Leaderboard wird nicht mehr unterstützt.");
+            
+            
+            
+        }
     }
 
     public double RundenKommastellen(double Zahl) {
