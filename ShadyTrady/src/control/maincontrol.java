@@ -728,10 +728,15 @@ public class maincontrol {
     }
 
     public void AktieVerkaufenInitilalisieren(String isin) {
-        this.aktieVerkaufen.VerkaufenNameDerAktieEingabe.setText(isin);
+        this.t = false;
         OA.prepareDocument(isin);
-        this.aktieVerkaufen.getVerkaufenPreisProStückEingeben().setText("" + OA.getAsk());
+        double Preis = OA.getAsk();
+        this.aktieVerkaufen.VerkaufenNameDerAktieEingabe.setText(isin);
+        this.aktieVerkaufen.getVerkaufenPreisProStückEingeben().setText("" + this.RundenKommastellen(Preis));
+        this.aktieVerkaufen.VerkaufenGewinnAusgabe.setText(""+this.RundenKommastellen(Math.abs(Preis-(double)this.fz.WertEinerReferenz("depots/"+b.getBenutzername()+"/"+isin, "preis"))));
         
+        
+        t = true;
 
     }
 

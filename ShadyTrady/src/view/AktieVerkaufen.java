@@ -46,6 +46,8 @@ public class AktieVerkaufen extends javax.swing.JFrame {
         VerkaufenGesamtpreisEingeben = new javax.swing.JTextPane();
         VerkaufenAbbrechen = new javax.swing.JButton();
         VerkaufenVerkaufen = new javax.swing.JButton();
+        VerkaufenGewinnAusgabe = new javax.swing.JTextPane();
+        VerkaufenPreisProStück1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setResizable(false);
@@ -91,6 +93,11 @@ public class AktieVerkaufen extends javax.swing.JFrame {
             }
         });
 
+        VerkaufenGewinnAusgabe.setEditable(false);
+
+        VerkaufenPreisProStück1.setFont(new java.awt.Font("Noto Serif", 0, 11)); // NOI18N
+        VerkaufenPreisProStück1.setText("Gewinn");
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -109,7 +116,9 @@ public class AktieVerkaufen extends javax.swing.JFrame {
                                     .addGap(46, 46, 46)
                                     .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                         .addComponent(VerkaufenPreisProStück)
-                                        .addComponent(VerkaufenPreisProStückEingeben, javax.swing.GroupLayout.PREFERRED_SIZE, 139, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                        .addComponent(VerkaufenPreisProStückEingeben, javax.swing.GroupLayout.PREFERRED_SIZE, 139, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addComponent(VerkaufenGewinnAusgabe, javax.swing.GroupLayout.PREFERRED_SIZE, 139, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addComponent(VerkaufenPreisProStück1))
                                     .addGap(2, 2, 2)))
                             .addComponent(VerkaufenGesamtpreis)
                             .addComponent(VerkaufenNameDerAktie)
@@ -132,17 +141,22 @@ public class AktieVerkaufen extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(VerkaufenNameDerAktieEingabe, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(VerkaufenStückzahl, javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(VerkaufenPreisProStück, javax.swing.GroupLayout.Alignment.TRAILING))
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addGroup(layout.createSequentialGroup()
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(VerkaufenStückzahl, javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(VerkaufenPreisProStück, javax.swing.GroupLayout.Alignment.TRAILING))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(VerkaufenPreisProStückEingeben, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(VerkaufenStückzahlEingeben, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(15, 15, 15)
+                        .addComponent(VerkaufenGesamtpreis))
+                    .addComponent(VerkaufenPreisProStück1))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(VerkaufenPreisProStückEingeben, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(VerkaufenStückzahlEingeben, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(15, 15, 15)
-                .addComponent(VerkaufenGesamtpreis)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(VerkaufenGesamtpreisEingeben, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(VerkaufenGesamtpreisEingeben, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(VerkaufenGewinnAusgabe, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(42, 42, 42)
                 .addComponent(VerkaufenVerkaufen, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(28, 28, 28)
@@ -236,9 +250,11 @@ public class AktieVerkaufen extends javax.swing.JFrame {
     private javax.swing.JButton VerkaufenAbbrechen;
     private javax.swing.JLabel VerkaufenGesamtpreis;
     private javax.swing.JTextPane VerkaufenGesamtpreisEingeben;
+    public javax.swing.JTextPane VerkaufenGewinnAusgabe;
     private javax.swing.JLabel VerkaufenNameDerAktie;
     public javax.swing.JTextPane VerkaufenNameDerAktieEingabe;
     private javax.swing.JLabel VerkaufenPreisProStück;
+    private javax.swing.JLabel VerkaufenPreisProStück1;
     private javax.swing.JTextPane VerkaufenPreisProStückEingeben;
     private javax.swing.JLabel VerkaufenStückzahl;
     private javax.swing.JTextPane VerkaufenStückzahlEingeben;
