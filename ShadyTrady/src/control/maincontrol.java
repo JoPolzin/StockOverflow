@@ -350,17 +350,14 @@ public class maincontrol {
         if (password == confPassword) {
             fso.userUpdates.put(benutzername, password);
         }*/
-        this.al = fz.benutzerAuslesen();
-        for (Benutzer b : getAl()) {
+       
+       
             if (this.fz.WertEinerReferenz("users/" + benutzername, "benutzername") != null) {
                 JOptionPane.showMessageDialog(null, "Benutzername schon vergeben.");
                 return false;
             }
-            if (b.getEmail().equalsIgnoreCase(benutzername)) {
-                JOptionPane.showMessageDialog(null, "Benutzername schon vergeben.");
-                return false;
-            }
-        }
+           
+        
         if (password.equals(confPassword)) {
             Benutzer tmp = new Benutzer();
             tmp.setBenutzername(benutzername);

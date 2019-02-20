@@ -96,7 +96,7 @@ public class AktieVerkaufen extends javax.swing.JFrame {
         VerkaufenGewinnAusgabe.setEditable(false);
 
         VerkaufenPreisProStück1.setFont(new java.awt.Font("Noto Serif", 0, 11)); // NOI18N
-        VerkaufenPreisProStück1.setText("Gewinn");
+        VerkaufenPreisProStück1.setText("GewinnProStück");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
