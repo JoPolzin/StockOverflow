@@ -52,9 +52,9 @@ public class andereTests {
         //fb.ObjektLöschen("depots/Louie","a1");
         //EigenesDepot d = new EigenesDepot(c);
         //System.out.println(fb.WertEinerReferenz("depots/er/DE000A1EWWW0", "anzahl"));
-      fb.WertEinerReferenzVerändern("Config/AllowLeaderboard", "AllowLeaderboard", "false");
-        
-        
+     // fb.WertEinerReferenzVerändern("Config/AllowLeaderboard", "AllowLeaderboard", "true");
+      fb.WertEinerReferenzVerändern("Config/Version1/allowed", "allowed", "true");
+     fb.WertEinerReferenzVerändern("Config/Version1/AllowLeaderboard", "AllowLeaderboard", "true");
         
         
         

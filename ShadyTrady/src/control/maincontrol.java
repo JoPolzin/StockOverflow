@@ -148,6 +148,13 @@ public class maincontrol {
         x = 0;
 
         fz = new FirebaseZugriff(this);
+        if(fz.WertEinerReferenz("Config/Version1/allowed", "allowed").equals("false")){
+            loading.setVisible(false);
+            JOptionPane.showMessageDialog(null, "Diese Version wird nicht mehr unterstützt.[V.1.0]");
+            System.exit(0);
+            
+            
+        }
         //al = fz.benutzerAuslesen();
         loading.jProgressBar1.setValue(80);
         /*if (al == null) {
@@ -593,7 +600,7 @@ public class maincontrol {
      */
     public void LeaderboardInit() {
         
-        if(fz.WertEinerReferenz("Config/AllowLeaderboard", "AllowLeaderboard").equals("true")){
+        if(fz.WertEinerReferenz("Config/Version1/AllowLeaderboard", "AllowLeaderboard").equals("true")){
             this.al = this.fz.benutzerAuslesen();
         double GesamtKapital = 0;
         ArrayList<Benutzer> sortList = this.SortBenutzer(getAl());
