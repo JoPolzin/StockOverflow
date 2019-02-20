@@ -760,10 +760,11 @@ public class maincontrol {
     }
     
     public void passwortaendern(String p){
+        b.setPasswort(p);
+        fz.aendereBenutzer(b);
         
         
         
-        fz.passwortAktualisieren(p);
          JOptionPane.showMessageDialog(null, "Passwort geandert.");
         
     }
