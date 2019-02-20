@@ -158,6 +158,7 @@ public class maincontrol {
 
         loading.jProgressBar1.setValue(100);
         loading.setVisible(false);
+        stockOverflowGUI.VorherigeSeite.setEnabled(false);
         stockOverflowGUI.setVisible(true);
         this.anpasser = new Anpasser(this);
         anpasser.start();

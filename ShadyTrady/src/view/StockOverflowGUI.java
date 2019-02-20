@@ -1003,6 +1003,8 @@ public class StockOverflowGUI extends javax.swing.JFrame {
     }//GEN-LAST:event_LeaderboardActionPerformed
 
     private void VorherigeSeiteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_VorherigeSeiteActionPerformed
+        
+        
         c.setX(c.getX() - 15);
         //x -= 15;
         if (c.getX() < 0) {
@@ -1010,12 +1012,18 @@ public class StockOverflowGUI extends javax.swing.JFrame {
         }
         c.timerReset();
         c.AktienDatenInitialisieren(x);
+        this.NaechsteSeite.setEnabled(true);
+        this.VorherigeSeite.setEnabled(false);
     }//GEN-LAST:event_VorherigeSeiteActionPerformed
 
     private void NaechsteSeiteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_NaechsteSeiteActionPerformed
+        
         c.setX(c.getX() + 15);
         c.timerReset();
         c.AktienDatenInitialisieren(x);
+        
+        this.NaechsteSeite.setEnabled(false);
+        this.VorherigeSeite.setEnabled(true);
     }//GEN-LAST:event_NaechsteSeiteActionPerformed
 
     private void TFChange1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_TFChange1ActionPerformed
@@ -1069,7 +1077,7 @@ public class StockOverflowGUI extends javax.swing.JFrame {
     private javax.swing.JButton DepotGUI;
     private javax.swing.JButton Leaderboard;
     private javax.swing.JButton LogInGUI;
-    private javax.swing.JButton NaechsteSeite;
+    public javax.swing.JButton NaechsteSeite;
     private javax.swing.JButton Refresh;
     public javax.swing.JTextField TFAktie1;
     public javax.swing.JTextField TFAktie10;
@@ -1116,8 +1124,8 @@ public class StockOverflowGUI extends javax.swing.JFrame {
     public javax.swing.JTextField TFPreis7;
     public javax.swing.JTextField TFPreis8;
     public javax.swing.JTextField TFPreis9;
-    private javax.swing.JButton VorherigeSeite;
-    private javax.swing.JButton jButton1;
+    public javax.swing.JButton VorherigeSeite;
+    public javax.swing.JButton jButton1;
     private javax.swing.JButton jButton10;
     private javax.swing.JButton jButton11;
     private javax.swing.JButton jButton2;
