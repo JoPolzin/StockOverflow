@@ -233,17 +233,17 @@ public  boolean Dflt;
 
     public double GesamtKapital() {
         
-        int Kapital = (int) this.getKontostand();
+        double Kapital = (double) this.getKontostand();
         for (Aktie e : this.depot.getAktien()) {
             if(DatenSpeicher.AktienWerte.get(e.getISIN())!= null){
                 
-                int AktienWert = (int) DatenSpeicher.AktienWerte.get(e.getISIN()) * this.depot.getGekaufte_Aktien().get(e.getISIN());
+                double AktienWert = (double)DatenSpeicher.AktienWerte.get(e.getISIN()) * this.depot.getGekaufte_Aktien().get(e.getISIN());
                 Kapital = Kapital +  AktienWert;
             }else{
             System.out.println(e.getISIN());
             OA.prepareDocument(e.getISIN());
-            int StückWert = (int) Math.round(OA.getAsk());
-            int Aktienwert  = StückWert * this.depot.getGekaufte_Aktien().get(e.getISIN());
+            double StückWert = OA.getAsk();
+            double Aktienwert  = StückWert * this.depot.getGekaufte_Aktien().get(e.getISIN());
             System.out.println(this.depot.getGekaufte_Aktien().get(e.getISIN()));
             Kapital = Kapital + Aktienwert;
             DatenSpeicher.AktienWerte.put(e.getISIN(), StückWert);
