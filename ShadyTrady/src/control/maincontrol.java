@@ -6,7 +6,8 @@
 package control;
 
 import model.FirebaseZugriff;
-import edu.emory.mathcs.backport.java.util.Collections;
+//import edu.emory.mathcs.backport.java.util.Collections;
+import java.util.Collections;
 import view.*;
 import model.*;
 import model.OA;
@@ -95,7 +96,7 @@ public class maincontrol {
                 while (t) {
                     try {
                         Thread.sleep(1000);
-                        System.out.println("Thread running");
+                        //System.out.println("Thread running");
                         
                     } catch (InterruptedException ex) {
                         Logger.getLogger(maincontrol.class.getName()).log(Level.SEVERE, null, ex);

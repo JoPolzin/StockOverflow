@@ -6,7 +6,8 @@
 package control;
 
 import model.FirebaseZugriff;
-import edu.emory.mathcs.backport.java.util.Collections;
+//import edu.emory.mathcs.backport.java.util.Collections;
+import java.util.Collections;
 import java.util.ArrayList;
 import model.Benutzer;
 
@@ -36,7 +37,7 @@ class Anpasser extends Thread {
     public void run() {
 
         try {
-            System.out.println("Demo-Thread :D");
+            //System.out.println("Demo-Thread :D");
             fz = new FirebaseZugriff(c);
             //al = fz.benutzerAuslesen();
             //LeaderboardInit();
@@ -45,7 +46,7 @@ class Anpasser extends Thread {
 
         } catch (InterruptedException e) {
         }
-        System.out.println("Demo-Thread");
+        //System.out.println("Demo-Thread");
 
     }
 
